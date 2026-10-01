@@ -115,8 +115,7 @@ def main():
                 ok += 1
                 print(f"   {tipo:<17} {total}  [{seg:.1f}s]", flush=True)
             if SOLO_PRUEBA:
-                print("
-PRUEBA: una sola consulta, se corta acá.")
+                print("\nPRUEBA: una sola consulta, se corta acá.")
                 return 0 if ok else 1
     print("\nFuente: Global Fishing Watch (CC BY-NC 4.0), sólo uso no comercial.")
     print("Tramos: cajas aproximadas, no el trazado oficial de la vía.")
