@@ -1,0 +1,19 @@
+name: Colector Global Fishing Watch (conteos)
+
+# Manual. Cuenta eventos por tramo del corredor y los imprime en el registro.
+# No guarda datos crudos ni escribe nada en el repositorio.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  contar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Contar eventos por tramo
+        env:
+          GFW_TOKEN: ${{ secrets.GFW_TOKEN }}
+        run: python3 colectores/gfw_resumen.py
