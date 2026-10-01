@@ -13,6 +13,7 @@ La clave llega por la variable de entorno GFW_TOKEN y nunca se imprime.
 """
 import datetime
 import json
+import time
 import os
 import sys
 import urllib.error
@@ -21,7 +22,9 @@ import urllib.request
 BASE = "https://gateway.api.globalfishingwatch.org/v3"
 # Nos identificamos con nombre: el filtro de Cloudflare rechaza el cliente anónimo de Python.
 USER_AGENT = "Ysyry/0.1 (Fundacion Sherman Kent; +https://github.com/fundacion-sherman-kent/ysyry)"
-DIAS = 90
+DIAS = int(os.environ.get("DIAS", "90"))
+TIEMPO = 25  # segundos por consulta; si GFW demora más, se anota y se sigue
+SOLO_PRUEBA = os.environ.get("PRUEBA") == "1"  # una sola consulta, para medir tiempo y respuesta
 
 # (lon_min, lat_min, lon_max, lat_max). Aproximadas.
 TRAMOS = {
@@ -64,7 +67,7 @@ def llamar(token, dataset, geometria, desde, hasta, paginacion_en_cuerpo=False):
         method="POST",
     )
     try:
-        with urllib.request.urlopen(req, timeout=60) as r:
+        with urllib.request.urlopen(req, timeout=TIEMPO) as r:
             return r.status, json.loads(r.read().decode())
     except urllib.error.HTTPError as e:
         try:
@@ -101,14 +104,20 @@ def main():
     print(f"Ventana: {desde} a {hasta} (fin exclusivo). Conteos, sin datos crudos.\n")
     ok = 0
     for nombre, b in TRAMOS.items():
-        print(nombre)
+        print(nombre, flush=True)
         for tipo, nombres in TIPOS.items():
+            t0 = time.time()
             total, nota = contar(token, nombres, caja(b), desde, hasta)
+            seg = time.time() - t0
             if total is None:
-                print(f"   {tipo:<17} sin dato  ({nota})")
+                print(f"   {tipo:<17} sin dato  ({nota}) [{seg:.1f}s]", flush=True)
             else:
                 ok += 1
-                print(f"   {tipo:<17} {total}")
+                print(f"   {tipo:<17} {total}  [{seg:.1f}s]", flush=True)
+            if SOLO_PRUEBA:
+                print("
+PRUEBA: una sola consulta, se corta acá.")
+                return 0 if ok else 1
     print("\nFuente: Global Fishing Watch (CC BY-NC 4.0), sólo uso no comercial.")
     print("Tramos: cajas aproximadas, no el trazado oficial de la vía.")
     return 0 if ok else 1

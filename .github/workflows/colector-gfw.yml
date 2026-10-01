@@ -4,6 +4,13 @@ name: Colector Global Fishing Watch (conteos)
 # No guarda datos crudos ni escribe nada en el repositorio.
 on:
   workflow_dispatch:
+    inputs:
+      prueba:
+        description: "1 = una sola consulta, para medir tiempo y respuesta"
+        default: "1"
+      dias:
+        description: "Días hacia atrás"
+        default: "90"
 
 permissions:
   contents: read
@@ -11,9 +18,12 @@ permissions:
 jobs:
   contar:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - name: Contar eventos por tramo
         env:
           GFW_TOKEN: ${{ secrets.GFW_TOKEN }}
-        run: python3 colectores/gfw_resumen.py
+          PRUEBA: ${{ inputs.prueba }}
+          DIAS: ${{ inputs.dias }}
+        run: python3 -u colectores/gfw_resumen.py
