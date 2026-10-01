@@ -93,7 +93,7 @@ def contar(token, nombres, geometria, desde, hasta):
     return None, ultimo
 
 
-def pedir(token, metodo, ruta, cuerpo=None):
+def pedir(token, metodo, ruta, cuerpo=None, tiempo=None):
     """Una llamada suelta; devuelve (estado, texto corto). Para el diagnóstico."""
     datos = json.dumps(cuerpo).encode() if cuerpo is not None else None
     req = urllib.request.Request(
@@ -107,7 +107,7 @@ def pedir(token, metodo, ruta, cuerpo=None):
         method=metodo,
     )
     try:
-        with urllib.request.urlopen(req, timeout=TIEMPO) as r:
+        with urllib.request.urlopen(req, timeout=tiempo or TIEMPO) as r:
             texto = r.read().decode()
             try:
                 j = json.loads(texto)
@@ -130,19 +130,20 @@ def diagnostico(token):
     enc1 = "public-global-encounter-events:latest"
     pesca = "public-global-fishing-events:latest"
     qs = "?offset=0&limit=1&start-date=%s&end-date=%s" % (desde, hasta)
+    # Caja chica alrededor de Rosario (puerto grande del tramo inferior).
+    chica = caja((-60.9, -33.1, -60.5, -32.7))
+    cuerpo_g = {"datasets": [enc], "startDate": desde, "endDate": hasta, "geometry": g}
+    cuerpo_c = {"datasets": [enc], "startDate": desde, "endDate": hasta, "geometry": chica}
     variantes = [
-        ("A GET  eventos pesca (el ejemplo de la documentación)", "GET", "/events?datasets[0]=" + pesca + "&offset=0&limit=1", None),
-        ("B GET  encuentros (plural) con fechas", "GET", "/events?datasets[0]=" + enc + qs.replace("?", "&"), None),
-        ("C GET  encuentros (singular) con fechas", "GET", "/events?datasets[0]=" + enc1 + qs.replace("?", "&"), None),
-        ("D POST encuentros (plural) con geometría", "POST", "/events?offset=0&limit=1",
-         {"datasets": [enc], "startDate": desde, "endDate": hasta, "geometry": g}),
-        ("E POST pesca con geometría", "POST", "/events?offset=0&limit=1",
-         {"datasets": [pesca], "startDate": desde, "endDate": hasta, "geometry": g}),
+        ("F POST encuentros, caja chica (Rosario), 7 días", "POST", "/events?offset=0&limit=1",
+         dict(cuerpo_c, startDate=(hoy - datetime.timedelta(days=7)).isoformat()), 100),
+        ("G POST encuentros, caja chica (Rosario), 30 días", "POST", "/events?offset=0&limit=1", cuerpo_c, 100),
+        ("H POST encuentros, tramo 5 completo, 30 días", "POST", "/events?offset=0&limit=1", cuerpo_g, 100),
     ]
-    print("DIAGNÓSTICO de la consulta de eventos (sólo códigos de respuesta)\n", flush=True)
-    for nombre, metodo, ruta, cuerpo in variantes:
+    print("DIAGNÓSTICO de la consulta de eventos con geometría (sólo códigos y tiempos)\n", flush=True)
+    for nombre, metodo, ruta, cuerpo, tiempo in variantes:
         t0 = time.time()
-        estado, texto = pedir(token, metodo, ruta, cuerpo)
+        estado, texto = pedir(token, metodo, ruta, cuerpo, tiempo)
         print("%s -> HTTP %s [%.1fs] %s" % (nombre, estado, time.time() - t0, texto), flush=True)
     return 0
 
