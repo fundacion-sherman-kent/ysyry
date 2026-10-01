@@ -28,7 +28,8 @@ except ImportError:
     print("Falta el paquete 'websocket-client' (pip install websocket-client)")
     sys.exit(1)
 
-URL = "wss://stream.aisstream.io/v0/stream"
+URL = os.environ.get("AIS_WS_URL", "wss://stream.aisstream.io/v0/stream")
+# Alternativa compatible, sin cuenta: wss://ais.openwaters.io/v0/stream
 
 # Mismos cinco tramos que el colector de GFW, como [[lat_min,lon_min],[lat_max,lon_max]]
 TRAMOS = {
