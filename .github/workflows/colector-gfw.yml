@@ -11,6 +11,9 @@ on:
       dias:
         description: "Días hacia atrás"
         default: "90"
+      diagnostico:
+        description: "1 = probar variantes de la consulta y mostrar sólo los códigos"
+        default: "0"
 
 permissions:
   contents: read
@@ -26,4 +29,5 @@ jobs:
           GFW_TOKEN: ${{ secrets.GFW_TOKEN }}
           PRUEBA: ${{ inputs.prueba }}
           DIAS: ${{ inputs.dias }}
+          DIAGNOSTICO: ${{ inputs.diagnostico }}
         run: python3 -u colectores/gfw_resumen.py

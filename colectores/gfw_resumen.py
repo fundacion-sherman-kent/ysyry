@@ -93,11 +93,67 @@ def contar(token, nombres, geometria, desde, hasta):
     return None, ultimo
 
 
+def pedir(token, metodo, ruta, cuerpo=None):
+    """Una llamada suelta; devuelve (estado, texto corto). Para el diagnóstico."""
+    datos = json.dumps(cuerpo).encode() if cuerpo is not None else None
+    req = urllib.request.Request(
+        BASE + ruta,
+        data=datos,
+        headers={
+            "Authorization": "Bearer " + token,
+            "Content-Type": "application/json",
+            "User-Agent": USER_AGENT,
+        },
+        method=metodo,
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=TIEMPO) as r:
+            texto = r.read().decode()
+            try:
+                j = json.loads(texto)
+                return r.status, "total=%s entradas=%s" % (j.get("total"), len(j.get("entries", [])))
+            except Exception:
+                return r.status, texto[:80]
+    except urllib.error.HTTPError as e:
+        return e.code, e.read().decode()[:160].replace("\n", " ")
+    except Exception as e:
+        return 0, str(e)[:120]
+
+
+def diagnostico(token):
+    """Prueba variantes de la consulta de eventos para saber cuál acepta la API."""
+    hoy = datetime.datetime.now(datetime.timezone.utc).date()
+    desde = (hoy - datetime.timedelta(days=30)).isoformat()
+    hasta = (hoy + datetime.timedelta(days=1)).isoformat()
+    g = caja(TRAMOS["5 Paraná inferior y Delta (Rosario-Río de la Plata)"])
+    enc = "public-global-encounters-events:latest"
+    enc1 = "public-global-encounter-events:latest"
+    pesca = "public-global-fishing-events:latest"
+    qs = "?offset=0&limit=1&start-date=%s&end-date=%s" % (desde, hasta)
+    variantes = [
+        ("A GET  eventos pesca (el ejemplo de la documentación)", "GET", "/events?datasets[0]=" + pesca + "&offset=0&limit=1", None),
+        ("B GET  encuentros (plural) con fechas", "GET", "/events?datasets[0]=" + enc + qs.replace("?", "&"), None),
+        ("C GET  encuentros (singular) con fechas", "GET", "/events?datasets[0]=" + enc1 + qs.replace("?", "&"), None),
+        ("D POST encuentros (plural) con geometría", "POST", "/events?offset=0&limit=1",
+         {"datasets": [enc], "startDate": desde, "endDate": hasta, "geometry": g}),
+        ("E POST pesca con geometría", "POST", "/events?offset=0&limit=1",
+         {"datasets": [pesca], "startDate": desde, "endDate": hasta, "geometry": g}),
+    ]
+    print("DIAGNÓSTICO de la consulta de eventos (sólo códigos de respuesta)\n", flush=True)
+    for nombre, metodo, ruta, cuerpo in variantes:
+        t0 = time.time()
+        estado, texto = pedir(token, metodo, ruta, cuerpo)
+        print("%s -> HTTP %s [%.1fs] %s" % (nombre, estado, time.time() - t0, texto), flush=True)
+    return 0
+
+
 def main():
     token = os.environ.get("GFW_TOKEN", "")
     if not token:
         print("SIN CLAVE: GFW_TOKEN está vacío")
         return 1
+    if os.environ.get("DIAGNOSTICO") == "1":
+        return diagnostico(token)
     hoy = datetime.datetime.now(datetime.timezone.utc).date()
     desde = (hoy - datetime.timedelta(days=DIAS)).isoformat()
     hasta = (hoy + datetime.timedelta(days=1)).isoformat()
