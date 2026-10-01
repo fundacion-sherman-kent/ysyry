@@ -19,6 +19,8 @@ import urllib.error
 import urllib.request
 
 BASE = "https://gateway.api.globalfishingwatch.org/v3"
+# Nos identificamos con nombre: el filtro de Cloudflare rechaza el cliente anónimo de Python.
+USER_AGENT = "Ysyry/0.1 (Fundacion Sherman Kent; +https://github.com/fundacion-sherman-kent/ysyry)"
 DIAS = 90
 
 # (lon_min, lat_min, lon_max, lat_max). Aproximadas.
@@ -54,7 +56,11 @@ def llamar(token, dataset, geometria, desde, hasta, paginacion_en_cuerpo=False):
     req = urllib.request.Request(
         url,
         data=json.dumps(cuerpo).encode(),
-        headers={"Authorization": "Bearer " + token, "Content-Type": "application/json"},
+        headers={
+            "Authorization": "Bearer " + token,
+            "Content-Type": "application/json",
+            "User-Agent": USER_AGENT,
+        },
         method="POST",
     )
     try:
