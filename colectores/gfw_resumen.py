@@ -23,7 +23,7 @@ BASE = "https://gateway.api.globalfishingwatch.org/v3"
 # Nos identificamos con nombre: el filtro de Cloudflare rechaza el cliente anónimo de Python.
 USER_AGENT = "Ysyry/0.1 (Fundacion Sherman Kent; +https://github.com/fundacion-sherman-kent/ysyry)"
 DIAS = int(os.environ.get("DIAS", "90"))
-TIEMPO = 25  # segundos por consulta; si GFW demora más, se anota y se sigue
+TIEMPO = 120  # segundos por consulta: las de geometría tardan de 30 a 70 s
 SOLO_PRUEBA = os.environ.get("PRUEBA") == "1"  # una sola consulta, para medir tiempo y respuesta
 
 # (lon_min, lat_min, lon_max, lat_max). Aproximadas.
@@ -37,7 +37,7 @@ TRAMOS = {
 
 # Cada tipo con los nombres de dataset a probar, en orden.
 TIPOS = {
-    "ENCUENTROS": ["public-global-encounters-events:latest", "public-global-encounter-events:latest"],
+    "ENCUENTROS": ["public-global-encounters-events:latest"],
     "MERODEOS": ["public-global-loitering-events:latest"],
     "APAGADOS AIS": ["public-global-gaps-events:latest"],
     "VISITAS A PUERTO": ["public-global-port-visits-events:latest"],
@@ -85,7 +85,7 @@ def contar(token, nombres, geometria, desde, hasta):
     for ds in nombres:
         for en_cuerpo in (False, True):
             estado, resp = llamar(token, ds, geometria, desde, hasta, en_cuerpo)
-            if estado == 200 and isinstance(resp, dict):
+            if estado in (200, 201) and isinstance(resp, dict):
                 return resp.get("total"), f"{ds}{' (paginación en cuerpo)' if en_cuerpo else ''}"
             ultimo = f"HTTP {estado}: {resp}"
             if estado not in (400, 422):
