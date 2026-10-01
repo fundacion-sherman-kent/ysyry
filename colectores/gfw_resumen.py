@@ -157,15 +157,21 @@ def demora(token):
     No imprime ni guarda identidades de buques.
     """
     hoy = datetime.datetime.now(datetime.timezone.utc)
-    desde = (hoy.date() - datetime.timedelta(days=2)).isoformat()
     hasta = (hoy.date() + datetime.timedelta(days=1)).isoformat()
     g = caja(TRAMOS["5 Paraná inferior y Delta (Rosario-Río de la Plata)"])
-    cuerpo = {"datasets": ["public-global-port-visits-events:latest"],
-              "startDate": desde, "endDate": hasta, "geometry": g}
-    t0 = time.time()
-    estado, resp = llamar_cuerpo(token, "/events?offset=0&limit=500", cuerpo)
-    print("HTTP %s [%.1fs]" % (estado, time.time() - t0), flush=True)
-    if estado not in (200, 201) or not isinstance(resp, dict):
+    resp = None
+    # Se amplía la ventana hacia atrás hasta encontrar el primer evento.
+    for d in (2, 4, 7, 10, 14, 21, 30, 45, 60):
+        desde = (hoy.date() - datetime.timedelta(days=d)).isoformat()
+        cuerpo = {"datasets": ["public-global-port-visits-events:latest"],
+                  "startDate": desde, "endDate": hasta, "geometry": g}
+        t0 = time.time()
+        estado, resp = llamar_cuerpo(token, "/events?offset=0&limit=500", cuerpo)
+        total = resp.get("total") if isinstance(resp, dict) else None
+        print("Últimos %2d días: HTTP %s total=%s [%.1fs]" % (d, estado, total, time.time() - t0), flush=True)
+        if estado in (200, 201) and isinstance(resp, dict) and resp.get("entries"):
+            break
+    if not isinstance(resp, dict):
         print("sin dato:", str(resp)[:200])
         return 1
     entradas = resp.get("entries", [])
