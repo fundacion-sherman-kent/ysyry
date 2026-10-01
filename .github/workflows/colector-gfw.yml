@@ -14,6 +14,9 @@ on:
       diagnostico:
         description: "1 = probar variantes de la consulta y mostrar sólo los códigos"
         default: "0"
+      modo:
+        description: "demora = mide la demora de las visitas a puerto (tramo 5)"
+        default: ""
 
 permissions:
   contents: read
@@ -30,4 +33,5 @@ jobs:
           PRUEBA: ${{ inputs.prueba }}
           DIAS: ${{ inputs.dias }}
           DIAGNOSTICO: ${{ inputs.diagnostico }}
+          MODO: ${{ inputs.modo }}
         run: python3 -u colectores/gfw_resumen.py

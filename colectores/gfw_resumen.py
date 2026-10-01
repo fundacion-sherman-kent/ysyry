@@ -148,11 +148,87 @@ def diagnostico(token):
     return 0
 
 
+def demora(token):
+    """Mide cuánto tarda GFW en publicar una visita a puerto, en el tramo 5.
+
+    Trae los eventos de los últimos 2 días SÓLO EN MEMORIA y escribe en la
+    salida: la hora actual, la hora del evento más reciente y la demora; el
+    conteo por tipo de buque; y los NOMBRES de los campos (no sus valores).
+    No imprime ni guarda identidades de buques.
+    """
+    hoy = datetime.datetime.now(datetime.timezone.utc)
+    desde = (hoy.date() - datetime.timedelta(days=2)).isoformat()
+    hasta = (hoy.date() + datetime.timedelta(days=1)).isoformat()
+    g = caja(TRAMOS["5 Paraná inferior y Delta (Rosario-Río de la Plata)"])
+    cuerpo = {"datasets": ["public-global-port-visits-events:latest"],
+              "startDate": desde, "endDate": hasta, "geometry": g}
+    t0 = time.time()
+    estado, resp = llamar_cuerpo(token, "/events?offset=0&limit=500", cuerpo)
+    print("HTTP %s [%.1fs]" % (estado, time.time() - t0), flush=True)
+    if estado not in (200, 201) or not isinstance(resp, dict):
+        print("sin dato:", str(resp)[:200])
+        return 1
+    entradas = resp.get("entries", [])
+    print("Hora actual (UTC): %s" % hoy.strftime("%Y-%m-%dT%H:%M:%SZ"))
+    print("Eventos en la ventana: total=%s, traídos=%d" % (resp.get("total"), len(entradas)))
+    if resp.get("total") and resp["total"] > len(entradas):
+        print("AVISO: hay más eventos que los traídos; el máximo puede estar incompleto.")
+
+    def a_fecha(t):
+        try:
+            return datetime.datetime.fromisoformat(t.replace("Z", "+00:00"))
+        except Exception:
+            return None
+
+    inicios = [f for f in (a_fecha(e.get("start", "")) for e in entradas) if f]
+    fines = [f for f in (a_fecha(e.get("end", "") or "") for e in entradas) if f]
+    if inicios:
+        ult = max(inicios)
+        print("Inicio más reciente: %s (hace %.1f h)" % (ult.strftime("%Y-%m-%dT%H:%M:%SZ"), (hoy - ult).total_seconds() / 3600))
+    if fines:
+        ulf = max(fines)
+        print("Fin más reciente: %s (hace %.1f h)" % (ulf.strftime("%Y-%m-%dT%H:%M:%SZ"), (hoy - ulf).total_seconds() / 3600))
+    abiertos = sum(1 for e in entradas if not e.get("end"))
+    print("Eventos sin hora de fin (visita abierta): %d" % abiertos)
+    tipos = {}
+    for e in entradas:
+        t = (e.get("vessel") or {}).get("type") or "(sin tipo)"
+        tipos[t] = tipos.get(t, 0) + 1
+    print("Por tipo de buque (conteo):", json.dumps(dict(sorted(tipos.items(), key=lambda x: -x[1])), ensure_ascii=False))
+    if entradas:
+        e0 = entradas[0]
+        print("Campos del evento:", sorted(e0.keys()))
+        print("Campos del buque:", sorted((e0.get("vessel") or {}).keys()))
+        pv = e0.get("port_visit") or e0.get("portVisit") or {}
+        if pv:
+            print("Campos de la visita:", sorted(pv.keys()))
+    return 0
+
+
+def llamar_cuerpo(token, ruta, cuerpo):
+    """POST suelto que devuelve (estado, JSON o texto corto)."""
+    req = urllib.request.Request(
+        BASE + ruta,
+        data=json.dumps(cuerpo).encode(),
+        headers={"Authorization": "Bearer " + token, "Content-Type": "application/json", "User-Agent": USER_AGENT},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=TIEMPO) as r:
+            return r.status, json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        return e.code, e.read().decode()[:200]
+    except Exception as e:
+        return 0, str(e)[:200]
+
+
 def main():
     token = os.environ.get("GFW_TOKEN", "")
     if not token:
         print("SIN CLAVE: GFW_TOKEN está vacío")
         return 1
+    if os.environ.get("MODO") == "demora":
+        return demora(token)
     if os.environ.get("DIAGNOSTICO") == "1":
         return diagnostico(token)
     hoy = datetime.datetime.now(datetime.timezone.utc).date()
