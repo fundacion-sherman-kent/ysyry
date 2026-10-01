@@ -1,0 +1,33 @@
+name: Nivel del río (Paraguay)
+
+# Diario, público (el dato no es sensible: son lecturas institucionales de
+# río, como las que SIWA ya publica). No consume tokens de Claude.
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  leer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Leer nivel del río
+        env:
+          DATOS_DIR: datos/publico
+        run: python3 -u colectores/nivel_rio_py.py
+      - name: Guardar
+        run: |
+          git config user.name "ysyry-robot"
+          git config user.email "ysyry-robot@users.noreply.github.com"
+          git add datos/publico/nivel-rio-py.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Nivel del río: actualización diaria (Meteorología Paraguay)"
+            git push
+          fi
