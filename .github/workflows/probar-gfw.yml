@@ -1,0 +1,24 @@
+name: Probar conexión con Global Fishing Watch
+
+# Prueba manual: hace una sola llamada y sólo imprime el código de respuesta.
+# No imprime ni guarda el contenido ni la clave.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Una llamada de identidad de buque, sólo el código HTTP
+        env:
+          GFW_TOKEN: ${{ secrets.GFW_TOKEN }}
+        run: |
+          if [ -z "$GFW_TOKEN" ]; then echo "SIN CLAVE: el secreto GFW_TOKEN está vacío"; exit 1; fi
+          code=$(curl -s -g -o /dev/null -w "%{http_code}" --max-time 30 \
+            -H "Authorization: Bearer $GFW_TOKEN" \
+            "https://gateway.api.globalfishingwatch.org/v3/vessels/search?query=7831410&datasets[0]=public-global-vessel-identity:latest")
+          echo "Código HTTP: $code"
+          [ "$code" = "200" ]
