@@ -140,5 +140,5 @@ def bloque_html(calc, hist, fecha, hechos, contexto=None, pie_contexto=""):
             'o con el prefijo de su designación (ARA, GC, ARP, PGN, LP): las que apagan el AIS o no lo tienen no figuran. '
             'Un buque se cuenta como distinto por su IMO, nombre e indicativo. La comparación necesita %d días de historia en el mismo tramo y se calcula sobre la mediana de buques por captura. Día de referencia: %s (UTC).</p>%s</div>'
             % ("".join(filas), DIAS_PARA_COMPARAR, e(fecha),
-               ('<p class="sub">%s Las cifras son de la provincia, departamento o estado completo que toca el tramo, no del tramo: una unidad grande suma más, y cada tramo toca las unidades que la Fundación listó en el código. '
+               ('<p class="sub">%s Las cifras son de la provincia, departamento o estado completo que toca el tramo, no del tramo: una unidad grande suma más, y cada tramo toca las unidades que la Fundación listó en el código. Se dejaron fuera Mato Grosso do Sul y Paraná (Brasil): son estados muy grandes que tocan el corredor de costado y dominaban las sumas. '
                 'ACLED codifica prensa y fuentes locales (base secundaria, no oficial) y un foco de calor es una anomalía térmica, no un incendio confirmado; «sin dato» no equivale a cero.</p>' % e(pie_contexto)) if contexto else ""))

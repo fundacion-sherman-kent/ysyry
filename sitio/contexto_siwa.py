@@ -90,13 +90,14 @@ def pie(fuentes):
 
 
 # provincias, departamentos y estados que tocan cada tramo del pulso (juicio de la Fundación sobre el mapa, no un límite
-# administrativo: un tramo puede tocar parte de una unidad y la cifra es la de toda la unidad)
+# administrativo: un tramo puede tocar parte de una unidad y la cifra es la de toda la unidad). Quedan fuera Mato Grosso do Sul
+# y Paraná (Brasil), por decisión del director del 2/10/2026: son estados enormes que tocan el corredor de costado y dominaban la suma)
 UNIDADES_POR_ZONA = {
     "z1": [("ARG", "Buenos Aires"), ("ARG", "Ciudad Autónoma de Buenos Aires"), ("ARG", "Entre Ríos"), ("URY", "Colonia"), ("URY", "Soriano"), ("URY", "Montevideo")],
     "z2": [("ARG", "Santa Fe"), ("ARG", "Buenos Aires")],
     "z3": [("ARG", "Santa Fe"), ("ARG", "Entre Ríos"), ("ARG", "Corrientes"), ("ARG", "Chaco")],
-    "z4": [("ARG", "Misiones"), ("PRY", "Alto Paraná"), ("PRY", "Canindeyú"), ("PRY", "Itapúa"), ("PRY", "Misiones"), ("BRA", "Paraná")],
-    "z5": [("PRY", "Asunción"), ("PRY", "Central"), ("PRY", "Presidente Hayes"), ("PRY", "Concepción"), ("PRY", "Alto Paraguay"), ("PRY", "Ñeembucú"), ("ARG", "Formosa"), ("BRA", "Mato Grosso do Sul")],
+    "z4": [("ARG", "Misiones"), ("PRY", "Alto Paraná"), ("PRY", "Canindeyú"), ("PRY", "Itapúa"), ("PRY", "Misiones")],
+    "z5": [("PRY", "Asunción"), ("PRY", "Central"), ("PRY", "Presidente Hayes"), ("PRY", "Concepción"), ("PRY", "Alto Paraguay"), ("PRY", "Ñeembucú"), ("ARG", "Formosa")],
 }
 
 
