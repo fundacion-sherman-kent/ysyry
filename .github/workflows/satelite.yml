@@ -1,0 +1,39 @@
+name: "Satélite (NASA GIBS)"
+
+# Cada 3 horas, público: las imágenes de GOES-East y VIIRS no son sensibles y el
+# repositorio es público (minutos de Actions sin límite). No consume tokens de
+# Claude. Las imágenes se publican en la rama aparte "datos-satelite", que se
+# reescribe en cada corrida (un solo commit): así el historial no crece ~700 KB
+# cada 3 horas. Si la descarga falla, la rama no se toca y queda la imagen anterior.
+on:
+  schedule:
+    - cron: "10 */3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  bajar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar Pillow (detección de cuadros incompletos)
+        run: pip install --quiet pillow
+      - name: Bajar imágenes
+        env:
+          DATOS_DIR: salida
+        run: python3 -u colectores/satelite_gibs.py
+      - name: Publicar en la rama datos-satelite
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd salida
+          git init -q -b datos-satelite
+          git config user.name "ysyry-robot"
+          git config user.email "ysyry-robot@users.noreply.github.com"
+          git add satelite
+          git commit -q -m "Satélite: imágenes de NASA GIBS ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push -q --force origin datos-satelite
