@@ -71,8 +71,7 @@ def sondear_fechas(token):
     ventanas = [(hoy - datetime.timedelta(days=d + 30), hoy - datetime.timedelta(days=d))
                 for d in (3, 60, 120, 240, 365, 540, 730)]
     for nombre in ("CONTROL mar: Atlántico frente a Uruguay y Buenos Aires", "Delta y Rosario (río inferior)"):
-        print("
-== %s ==" % nombre, flush=True)
+        print("== %s ==" % nombre, flush=True)
         for desde, hasta in ventanas:
             estado, resp = consultar(token, AREAS[nombre], desde, hasta, "false")
             if estado != 200 or not isinstance(resp, dict):
