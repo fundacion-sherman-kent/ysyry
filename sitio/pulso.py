@@ -211,7 +211,7 @@ def info_zona(z, calc, hist, fecha, hechos, contexto):
     return out
 
 
-def boya(z, calc):
+def boya(z, calc, aviso=False):
     """(svg de la boya, x, y, etiqueta). Con anillos animados si la zona tiene datos; punteada y quieta si no."""
     lat, lon = BOYAS[z]
     x, y = AX * lon + BX, AY * lat + BY
@@ -219,5 +219,5 @@ def boya(z, calc):
     nombre = [n for i, n, c in ZONAS if i == z][0]
     svg = ('<g class="boya-g clicable %s" data-i="p%s" data-familia="seguridad comercio estado regulatorio" transform="translate(%.1f,%.1f)">'
            '<circle class="hit" r="14"/><circle class="boya-aro" r="9"/><circle class="boya-aro a2" r="9"/><circle class="boya-n" r="3.6"/></g>'
-           % ("boya-vivo" if vivo else "boya-sd", z, x, y))
+           % (("boya-vivo" if vivo else "boya-sd") + (" boya-aviso" if aviso else ""), z, x, y))
     return svg, x, y, "Pulso · " + nombre + ("" if vivo else " (sin datos)")

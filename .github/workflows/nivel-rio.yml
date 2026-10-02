@@ -25,6 +25,7 @@ jobs:
           git config user.name "ysyry-robot"
           git config user.email "ysyry-robot@users.noreply.github.com"
           git add datos/publico/nivel-rio-py.json
+          git add datos/publico/nivel-rio-py-historial.jsonl
           if git diff --cached --quiet; then
             echo "Sin cambios"
           else

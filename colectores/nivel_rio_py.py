@@ -71,6 +71,25 @@ def main():
     with open(carpeta / "nivel-rio-py.json", "w", encoding="utf-8", newline="\n") as fh:
         json.dump(salida, fh, ensure_ascii=False, indent=1, sort_keys=True)
 
+    # historial: una línea por estación y día de lectura; sin duplicar si el organismo no actualizó
+    hist = carpeta / "nivel-rio-py-historial.jsonl"
+    vistos = set()
+    if hist.exists():
+        for linea in open(hist, encoding="utf-8"):
+            if linea.strip():
+                j = json.loads(linea)
+                vistos.add((j["estacion"], j["lectura"]))
+    nuevos = 0
+    with open(hist, "a", encoding="utf-8", newline="\n") as fh:
+        for e in estaciones:
+            m = re.match(r"\s*(-?\d+(?:[.,]\d+)?)", e["nivel"] or "")
+            lectura = e["fecha_lectura"]
+            if not m or (e["estacion"], lectura) in vistos:
+                continue
+            fh.write(json.dumps({"estacion": e["estacion"], "lectura": lectura, "nivel_m": float(m.group(1).replace(",", ".")),
+                                 "obtenido": salida["obtenido"]}, ensure_ascii=False) + "\n")
+            nuevos += 1
+    print("Historial: %d lecturas nuevas" % nuevos)
     print("Estaciones leídas: %d" % len(estaciones))
     for e in estaciones[:3]:
         print("  %s: %s (%s)" % (e["estacion"], e["nivel"], e["fecha_lectura"]))

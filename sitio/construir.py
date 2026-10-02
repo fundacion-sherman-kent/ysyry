@@ -478,6 +478,7 @@ import pulso as _pulso
 from datetime import datetime as _dtm, timedelta as _td
 PULSO = os.environ.get("SITIO_PULSO") or str(D / "pulso.json")
 _pulso_html = ""
+_indicios_html = ""
 zona_pulso_info = []
 if marcos:
     _fin = _dtm.strptime(marcos[-1]["hora"], "%Y-%m-%dT%H:%M:%SZ")
@@ -491,11 +492,45 @@ if marcos:
     _hechos.setdefault("z4", []).append("Presencia atribuida al PCC, según medios y la Presidencia de Paraguay, en Canindeyú y Alto Paraná: atribución, no sentencia")
     _ctx_zonas = {z: _siwa.resumen_unidades(_FUENTES_SIWA, un) for z, un in _siwa.UNIDADES_POR_ZONA.items()}
     _pulso_html = _pulso.bloque_html(_calc, _hist, _fecha, _hechos, _ctx_zonas, _siwa.pie(_FUENTES_SIWA))
-    for _z, *_ in _pulso.ZONAS:
-        zona_pulso_info.append(_pulso.info_zona(_z, _calc, _hist, _fecha, _hechos, _ctx_zonas))
-        _sv, _bx, _by, _bt = _pulso.boya(_z, _calc)
+    # --- libro de indicios: nivel del río, presencia del Estado, interrupciones, violencia política y hechos citados ---
+    import indicios as _ind
+    _raiz = Path(os.environ.get("SITIO_RAIZ") or Path(__file__).resolve().parents[1])
+    _geo = json.load(open(D / "estaciones_geo.json", encoding="utf-8")) if (D / "estaciones_geo.json").exists() else {}
+    _nivel = Path(os.environ.get("SITIO_NIVEL") or (_raiz / "datos" / "publico" / "nivel-rio-py.json"))
+    _segs = _ind._segmentos(d["rio_parana"]) + _ind._segmentos(d["rio_paraguay"])
+    _ests, _nivel_obtenido = ([], "")
+    if _nivel.exists():
+        _ests, _nivel_obtenido = _ind.estaciones(_nivel, _geo, _segs, _dtm.strptime(_fecha, "%Y-%m-%d").date())
+    _prensa = lambda n: {"nombre": n, "familia": "prensa", "calificacion": "C3"}
+    _hechos_f = {
+        _pulso.zona_de(d["riesgos"][0]["x"], d["riesgos"][0]["y"]) if d["riesgos"] else "z2": [{
+            "id": "HEC-PIR", "tipo": "Seguridad", "titulo": "Piratería fluvial, km 340 (hecho puntual, oct. 2025)",
+            "texto": "Motonave «Rosa» asaltada en octubre de 2025; informado por cuatro medios. Presunto, sin condena.",
+            "fuentes": [_prensa("SL24"), _prensa("La Nación"), _prensa("Weekend / Perfil"), _prensa("Diario El Norte")],
+            "no_dice": "Un hecho puntual no establece un patrón ni dice que el lugar sea hoy peligroso; no se atribuye autor."}],
+        "z4": [{
+            "id": "HEC-PCC", "tipo": "Seguridad", "titulo": "Presencia atribuida al PCC en Canindeyú y Alto Paraná",
+            "texto": "La informan dos medios y comunicados de la Presidencia de Paraguay: atribución periodística y oficial, no sentencia.",
+            "fuentes": [_prensa("La Política Online"), _prensa("ABC Color"), {"nombre": "Presidencia de la República del Paraguay", "familia": "oficial", "calificacion": "B2"}],
+            "no_dice": "No implica que ocurra en todo el departamento ni involucra a sus habitantes; la fuente oficial no es independiente del Estado."}],
+    }
+    _indicios = _ind.indicios(_calc, _ventana, es_estado, _ests, _FUENTES_SIWA, _siwa.UNIDADES_POR_ZONA, _hechos_f, _siwa)
+    _indicios_html = _ind.tabla_html(_indicios, _fecha)
+    _candidatas = _ind.candidatas(_indicios, _ests, _fecha)
+    if os.environ.get("SITIO_CANDIDATAS"):
+        json.dump({"fecha": _fecha, "candidatas": _candidatas}, open(os.environ["SITIO_CANDIDATAS"], "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    for _i, _e in enumerate(_ests):
+        if _e["pos"]:
+            poi_svg.append(_ind.marca_estacion(_i, _e))
+            zona_pulso_info.append(_ind.info_estacion(_i, _e, _nivel_obtenido))
+    _con_aviso = {c["zona"] for c in _candidatas}
+    for _z, _nom, _cob in _pulso.ZONAS:
+        _zi = _pulso.info_zona(_z, _calc, _hist, _fecha, _hechos, _ctx_zonas)
+        _zi["ctx"] = ["Evidencia %s · %s: %s" % (i["nivel"], i["titulo"], i["texto"]) for i in _indicios.get(_z, [])] + _zi["ctx"]
+        zona_pulso_info.append(_zi)
+        _sv, _bx, _by, _bt = _pulso.boya(_z, _calc, aviso=(_nom in _con_aviso))
         poi_svg.append(_sv)
-        poi_etq_svg.append(callout(_bx, _by, _bt, "boya", "seguridad comercio estado regulatorio"))
+        poi_etq_svg.append(callout(_bx, _by, _bt, "boya", "seguridad comercio estado regulatorio indicios"))
 
 # Las imágenes se incrustan en la página (data URI), una sola vez por imagen:
 # el visor de artefactos no carga imágenes enlazadas desde otro dominio.
@@ -666,6 +701,17 @@ svg.zoom-a .amar-a,svg.zoom-b .amar-b{display:inline}
 .chip-ciudad{background:#1b2a38;color:#dfe6e9;border:.6px solid rgba(255,255,255,.25)}
 .chip-tf{background:var(--naranja);color:var(--azul-profundo)}
 .chip-riesgo{background:var(--naranja);color:var(--azul-profundo)}
+.est-g .gota{fill:#8fd9c4;stroke:var(--azul-noche);stroke-width:1}
+.est-bajo .gota{fill:var(--naranja)}
+.est-alto .gota{fill:#cdeee4}
+.est-regulada .gota{fill:#7fb0d6;opacity:.7}
+.est-vencida .gota{fill:transparent;stroke:#667B89;stroke-dasharray:2 1.5}
+.boya-aviso .boya-n{fill:var(--naranja)}
+.boya-aviso .boya-aro{stroke:var(--naranja)}
+.ev{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.03em;padding:2px 7px;border-radius:999px;border:1px solid var(--gris-acero);color:var(--gris-acero);white-space:nowrap}
+.ev-fuerte{background:var(--azul-profundo);color:#F9F9F7;border-color:var(--azul-profundo)}
+.ev-corroborado{border-color:var(--azul-profundo);color:var(--fg)}
+.gauge{width:100%;height:auto;display:block}
 .chip-boya{background:#0f2a2a;color:#cdeee4;border:.6px solid #8fd9c4}
 .boya-n{fill:#8fd9c4;stroke:var(--azul-noche);stroke-width:.8}
 .boya-aro{fill:none;stroke:#8fd9c4;stroke-width:1.2;opacity:0;transform-box:fill-box;transform-origin:center;animation:sonar 3s ease-out infinite;pointer-events:none}
@@ -720,6 +766,7 @@ svg.zoom-a .amar-a,svg.zoom-b .amar-b{display:inline}
 .cover-ciudad{background:linear-gradient(135deg,#17222d,#324a5e)}
 .cover-tf{background:linear-gradient(135deg,#7a3300,var(--naranja))}
 .cover-riesgo{background:linear-gradient(135deg,#7a3300,var(--naranja))}
+.cover-estacion{background:linear-gradient(135deg,#00121E,#2b5f7a)}
 .cover-boya{background:linear-gradient(135deg,#00121E,#1f5c55)}
 .cover-zona{background:linear-gradient(135deg,#5c1f00,var(--naranja))}
 .cover-estado{background:linear-gradient(135deg,#0b2a66,#2f7bff)}
@@ -840,6 +887,7 @@ footer{flex-direction:column}
   <button class="familia-tab" data-familia="comercio">Comercio y puertos</button>
   <button class="familia-tab" data-familia="estado">Fuerzas del Estado</button>
   <button class="familia-tab" data-familia="regulatorio">Regulatorio</button>
+  <button class="familia-tab" data-familia="indicios">Indicios y nivel del río</button>
 </div>
 
 <div class="col-mapa entra r3">
@@ -909,9 +957,13 @@ footer{flex-direction:column}
   <span><span class="dot" style="background:#9aa7ad"></span>Otro — click para nombre, bandera y destino</span>
   <span><span class="dot" style="background:var(--naranja)"></span>Hecho informado (piratería) · ciudades de la Triple Frontera, nodo de contexto: no implica actividad ilícita</span>
   <span><span class="sw" style="background:var(--naranja);opacity:.3"></span>Zona con presencia atribuida (según fuentes citadas)</span>
+  <span><svg width="11" height="13" viewBox="-6 -7 12 14"><path d="M0,-5.5C3,-1.3 4.6,1 4.6,2.9A4.6,4.6 0 1 1 -4.6,2.9C-4.6,1 -3,-1.3 0,-5.5Z" fill="#8fd9c4" stroke="#00121E" stroke-width="1"/></svg>Estación de nivel del río (Meteorología de Paraguay) · naranja: en el cuarto inferior de su rango histórico · azul apagado: tramo regulado por represas, no mide sequía · hueca: lectura vencida</span>
+  <span><span class="dot" style="background:#8fd9c4"></span>Boya de pulso por zona · naranja: hay un indicio a mirar · punteada: sin datos de AIS</span>
 </div>
 
 __pulso__
+
+__indicios__
 
 __alertas_fem__
 
@@ -1221,6 +1273,7 @@ const ICONOS = {
   riesgo: '<path d="M12 3 22 20H2z"/><path d="M12 9v5"/><circle cx="12" cy="17" r="0.9" fill="#fff"/>',
   zona: '<path d="M12 3 22 20H2z"/><path d="M12 9v5"/><circle cx="12" cy="17" r="0.9" fill="#fff"/>',
   estado: '<path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/>',
+  estacion: '<path d="M12 3c3 4 6 7 6 11a6 6 0 01-12 0c0-4 3-7 6-11z"/>',
   boya: '<circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="10.5" stroke-dasharray="2 2"/>',
   amarre: '<path d="M12 3v13m0 0l-4-3m4 3l4-3"/><path d="M5 14a7 7 0 0014 0"/><circle cx="12" cy="5" r="1.6" fill="#fff"/>',
   buque: '<path d="M4 16h16l-2.5 5h-11z"/><path d="M12 16V6"/><path d="M12 6l5 4h-5z"/>'
@@ -1379,6 +1432,7 @@ SUST = {
     "agua_osm": agua_osm_html,
     "alertas_fem": _ALERTAS_FEM,
     "pulso": _pulso_html,
+    "indicios": _indicios_html,
     "ultima_iso": marcos[-1]["hora"] if marcos else "",
     "poi_etq": "\n    ".join(poi_etq_svg),
     "grupos_hora": "\n    ".join(grupos_hora),

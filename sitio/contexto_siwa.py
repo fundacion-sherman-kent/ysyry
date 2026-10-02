@@ -129,3 +129,16 @@ def resumen_unidades(fuentes, unidades):
                 total += u["focos"]
         r["focos"] = {"dias": (d.get("resumen") or {}).get("ventana_dias", "pocos"), "total": total, "con_dato": con_dato}
     return r
+
+
+def serie_acled(fuentes, unidades):
+    """Eventos de ACLED por año, sumados sobre las unidades dadas: {"anios": [..], "eventos": {anio: n}}. Sólo años con dato en alguna unidad."""
+    if "acled" not in fuentes:
+        return None
+    d = fuentes["acled"]["datos"]
+    ev = {}
+    for iso, nombre in unidades:
+        u = _unidad(d, iso, nombre)
+        for s in (u or {}).get("serie", []):
+            ev[s["anio"]] = ev.get(s["anio"], 0) + s["eventos"]
+    return {"anios": sorted(ev), "eventos": ev}

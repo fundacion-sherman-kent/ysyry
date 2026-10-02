@@ -1,0 +1,168 @@
+{
+ "Puerto Ladario - Brasil": {
+  "lat": -19.00366,
+  "lon": -57.60283,
+  "osm": "Ladário, Mato Grosso do Sul, Região Centro-Oeste, Brasil",
+  "consulta": "Ladário, Mato Grosso do Sul, Brasil"
+ },
+ "Puerto Murtinho - Brasil": {
+  "lat": -21.69808,
+  "lon": -57.88359,
+  "osm": "Porto Murtinho, Mato Grosso do Sul, Região Centro-Oeste, 79280-000, Brasil",
+  "consulta": "Porto Murtinho, Mato Grosso do Sul, Brasil"
+ },
+ "Cáceres - Brasil": {
+  "lat": -16.06441,
+  "lon": -57.6879,
+  "osm": "Cáceres, Mato Grosso, Região Centro-Oeste, Brasil",
+  "consulta": "Cáceres, Mato Grosso, Brasil"
+ },
+ "Isla Margarita": {
+  "lat": -21.6888,
+  "lon": -57.88839,
+  "osm": "Isla Margarita (Paraguay), Puerto Carmelo Peralta, Carmelo Peralta, Alto Paraguay, Región Occidental, Paraguay / Paraguái",
+  "consulta": "Isla Margarita, Paraguay"
+ },
+ "Fuerte Olimpo": {
+  "lat": -21.03854,
+  "lon": -57.87481,
+  "osm": "Fuerte Olimpo, Alto Paraguay, Región Occidental, Paraguay / Paraguái",
+  "consulta": "Fuerte Olimpo, Paraguay"
+ },
+ "Bahía Negra": {
+  "lat": -19.96036,
+  "lon": -60.03639,
+  "osm": "Bahía Negra, Alto Paraguay, Región Occidental, Paraguay / Paraguái",
+  "consulta": "Bahía Negra, Paraguay"
+ },
+ "Vallemi": {
+  "lat": -22.15653,
+  "lon": -57.95166,
+  "osm": "Vallemí, Concepción, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Vallemí, Concepción, Paraguay"
+ },
+ "Concepción": {
+  "lat": -23.1775,
+  "lon": -57.1675,
+  "osm": "Concepción, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Concepción, Paraguay"
+ },
+ "Rosario": {
+  "lat": -24.42333,
+  "lon": -57.11296,
+  "osm": "Villa del Rosario, San Pedro, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Rosario, San Pedro, Paraguay"
+ },
+ "Puerto Antequera": {
+  "lat": -24.0857,
+  "lon": -57.20026,
+  "osm": "Antequera, San Pedro, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Puerto Antequera, Paraguay"
+ },
+ "Villeta": {
+  "lat": -25.50452,
+  "lon": -57.56938,
+  "osm": "Villeta, Central, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Villeta, Paraguay"
+ },
+ "Asunción": {
+  "lat": -25.28005,
+  "lon": -57.63438,
+  "osm": "Distrito Capital, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Asunción, Paraguay"
+ },
+ "Ita Enramada": {
+  "lat": -25.35392,
+  "lon": -57.63943,
+  "osm": "Itá Enramada, Asunción, Lambaré, Distrito Capital, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Itá Enramada, Asunción, Paraguay"
+ },
+ "Humaitá": {
+  "lat": -27.06931,
+  "lon": -58.50747,
+  "osm": "Humaitá, Ñeembucú, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Humaitá, Paraguay"
+ },
+ "Alberdi": {
+  "lat": -26.18541,
+  "lon": -58.14249,
+  "osm": "Alberdi, Ñeembucú, Región Oriental, 2980, Paraguay / Paraguái",
+  "consulta": "Alberdi, Paraguay"
+ },
+ "Pilar": {
+  "lat": -26.85826,
+  "lon": -58.30343,
+  "osm": "Pilar, Ñeembucú, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Pilar, Paraguay"
+ },
+ "Puerto Tigre": null,
+ "Salto del Guairá": {
+  "lat": -24.06166,
+  "lon": -54.30564,
+  "osm": "Salto del Guairá, Canindeyú, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Salto del Guairá, Paraguay"
+ },
+ "Ciudad del Este": {
+  "lat": -25.5169,
+  "lon": -54.61686,
+  "osm": "Ciudad del Este, Alto Paraná, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Ciudad del Este, Paraguay"
+ },
+ "Cerrito": {
+  "lat": -27.33937,
+  "lon": -57.63977,
+  "osm": "Cerrito, Ñeembucú, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Cerrito, Paraguay"
+ },
+ "Ita Pirú": {
+  "lat": -25.53278,
+  "lon": -54.60757,
+  "osm": "Itapirú, Área 2, Ciudad del Este, Alto Paraná, Región Oriental, 100151, Paraguay / Paraguái",
+  "consulta": "Itapirú, Paraguay"
+ },
+ "Paso de Patria": {
+  "lat": -27.24275,
+  "lon": -58.5417,
+  "osm": "Paso de Patria, Ñeembucú, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Paso de Patria, Paraguay"
+ },
+ "Ayolas": {
+  "lat": -27.38987,
+  "lon": -56.84472,
+  "osm": "Ayolas, Misiones, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Ayolas, Paraguay"
+ },
+ "Panchito López": {
+  "lat": -27.38761,
+  "lon": -57.28709,
+  "osm": "Panchito López, Misiones, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Panchito López, Paraguay"
+ },
+ "Coratei": {
+  "lat": -27.41863,
+  "lon": -56.96475,
+  "osm": "Corateí, Misiones, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Coratei, Paraguay"
+ },
+ "Ita Corá": null,
+ "San Cosme y San Damían": {
+  "lat": -27.31595,
+  "lon": -56.33127,
+  "osm": "San Cosme y Damián, Itapúa, Región Oriental, Paraguay / Paraguái",
+  "consulta": "San Cosme y Damián, Itapúa, Paraguay"
+ },
+ "Encarnación": {
+  "lat": -27.33761,
+  "lon": -55.86695,
+  "osm": "Encarnación, Itapúa, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Encarnación, Paraguay"
+ },
+ "Pozo Hondo": null,
+ "Villa Florida": {
+  "lat": -26.40843,
+  "lon": -57.12521,
+  "osm": "Villa Florida, Misiones, Región Oriental, Paraguay / Paraguái",
+  "consulta": "Villa Florida, Paraguay"
+ },
+ "Estación Arirai": null
+}
