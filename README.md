@@ -19,6 +19,9 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
   embarcación son verificadas por número IMO sólo en una parte de los casos y el resto son imágenes
   ilustrativas, rotuladas como tales.
 - **Pulso por zona:** cinco tramos del corredor con los buques que se ven en las últimas 24 horas, cuántos están en movimiento, qué unidades del Estado transmiten AIS y cómo se compara con los días anteriores de ese mismo tramo (la comparación aparece con 7 días de historia, que se guarda en la rama `datos-pulso`). Mide huellas observables, no la conducta de ningún actor; donde el AIS no llega dice «sin datos», no «sin tráfico». Cada tramo suma además, de las provincias, departamentos o estados que toca, los eventos de violencia política de ACLED (último año del conjunto) y los focos de calor de NASA FIRMS (últimos días), tomados de [SIWA](https://siwa.fundacionkent.org/sitio/index.html): son cifras de la unidad completa, no del tramo, y cada celda dice cuántas unidades tenían dato. Se dejaron fuera Mato Grosso do Sul y Paraná (Brasil) porque, por su tamaño, dominaban las sumas.
+- **Libro de indicios:** cada observación del corredor con sus fuentes, la familia de cada fuente y su nivel de evidencia (*fuente única*, *corroborado* o *fuerte*; varias estaciones de un mismo organismo cuentan como una sola fuente), y lo que no dice. Incluye el nivel del río (estaciones de la Dirección de Meteorología e Hidrología de Paraguay, en el mapa como gotas), la presencia visible del Estado por AIS, las interrupciones de señal, la violencia política de ACLED y los hechos citados con sus fuentes. Un indicio no es una alerta.
+- **Alertas candidatas y preguntas con probabilidad:** las reglas de `sitio/indicios.py` proponen candidatas en un repositorio privado para la curaduría; nada se publica solo. Las preguntas publicadas viven en `preguntas/` (ver su `LEEME.md`): binarias, con plazo, banda de probabilidad en el léxico de Kent y criterio mecánico; el robot diario las resuelve al vencer y el marcador (Brier) se muestra «en calibración» hasta las 20 vencidas.
+- **Guía de ayuda:** botón-robot que responde con textos escritos de antemano (no es un modelo de IA) y lleva a buques, puertos y estaciones del mapa.
 - **Prospectiva:** todavía no se publica ninguna estimación.
 
 ## Cómo está hecho
@@ -38,6 +41,7 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
   (rutas, geocodificación) se rigen por la ODbL.
 - **AIS:** AISHub y aisstream.io, a través de Open Waters AIS. AISHub permite redistribuir citándolo;
   aisstream.io no publica términos de uso.
+- **Nivel del río:** Dirección de Meteorología e Hidrología de Paraguay (lecturas diarias; historial en `datos/publico/nivel-rio-py-historial.jsonl`); ubicación de las estaciones geocodificada con OpenStreetMap.
 - **Cauces del Paraná bajo, el Delta y el Uruguay:** © colaboradores de OpenStreetMap (ODbL), simplificados (`sitio/datos/agua_osm.json`).
 - **Límites:** geoBoundaries (CC BY 4.0). **Ríos:** Natural Earth. **Rutas:** © colaboradores de
   OpenStreetMap (ODbL).
