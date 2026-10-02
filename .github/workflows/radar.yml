@@ -1,0 +1,50 @@
+name: "Radar Sentinel-1 sobre el río"
+
+# Diario, público: las imágenes de radar de Sentinel-1 son datos abiertos de Copernicus y
+# lo que se guarda (posiciones de objetos brillantes sobre el agua) no identifica a nadie.
+# Procesar una pasada tarda ~6 min, por eso corre acá y no en el repositorio privado, donde
+# los minutos de Actions son limitados. No consume tokens de Claude. Las pasadas llegan cada
+# pocos días, así que la mayoría de las corridas no encuentra nada nuevo y termina enseguida.
+#
+# Contiene datos modificados de Copernicus Sentinel.
+on:
+  schedule:
+    - cron: "0 15 * * *"
+  workflow_dispatch:
+    inputs:
+      desde:
+        description: "Buscar pasadas desde AAAA-MM-DD (vacío = últimos 10 días)"
+        default: ""
+      max_pasadas:
+        description: "Tope de pasadas nuevas en esta corrida"
+        default: "4"
+
+permissions:
+  contents: write
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar dependencias
+        run: pip install --quiet numpy scipy rasterio pyproj pystac-client planetary-computer
+      - name: Procesar pasadas nuevas
+        env:
+          DATOS_DIR: datos/publico
+          DESDE: ${{ inputs.desde }}
+          MAX_PASADAS: ${{ inputs.max_pasadas || '4' }}
+        run: python3 -u colectores/radar_s1.py
+      - name: Guardar
+        run: |
+          git config user.name "ysyry-robot"
+          git config user.email "ysyry-robot@users.noreply.github.com"
+          git add datos/publico/radar
+          if git diff --cached --quiet; then
+            echo "Sin pasadas nuevas"
+          else
+            git commit -m "Radar Sentinel-1: pasadas nuevas sobre el río (corrida automática)"
+            git pull --rebase --quiet
+            git push
+          fi
