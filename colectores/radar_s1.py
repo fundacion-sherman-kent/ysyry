@@ -62,8 +62,8 @@ def buscar_pasadas(desde):
     return sorted(pasadas, key=lambda p: p["inicio"])
 
 
-def leer_recuadro(items, bbox):
-    """Mosaico VV (potencia) del recuadro con todos los cuadros de la pasada que lo tocan.
+def leer_recuadro(items, bbox, banda="vv"):
+    """Mosaico de la banda pedida (vv o vh, potencia) del recuadro con todos los cuadros de la pasada que lo tocan.
     Devuelve (matriz, transform, crs) o None si casi no hay datos."""
     import rasterio
     from rasterio.warp import transform_bounds
@@ -75,7 +75,7 @@ def leer_recuadro(items, bbox):
         if b[2] < bbox[0] or b[0] > bbox[2] or b[3] < bbox[1] or b[1] > bbox[3]:
             continue
         try:
-            with rasterio.open(it.assets["vv"].href) as ds:
+            with rasterio.open(it.assets[banda].href) as ds:
                 nb = transform_bounds("EPSG:4326", ds.crs, *bbox)
                 win = from_bounds(*nb, transform=ds.transform)
                 a = ds.read(1, window=win, boundless=True, fill_value=SIN_DATO).astype("float32")
@@ -109,7 +109,11 @@ def procesar_pasada(p):
         leidos += 1
         mosaico, tr, crs = r
         valido = mosaico > -1000
-        objs, _ = rd.detectar(np.where(valido, mosaico, 0).astype("float32"), valido)
+        rvh = leer_recuadro(p["items"], bbox, "vh")
+        if rvh is None or rvh[0].shape != mosaico.shape:
+            continue  # sin VH no hay máscara de agua confiable
+        vh = np.where(rvh[0] > -1000, rvh[0], 0).astype("float32")
+        objs, _ = rd.detectar(np.where(valido, mosaico, 0).astype("float32"), valido, vh)
         if not objs:
             continue
         lon, lat = a_lonlat([o["fila"] for o in objs], [o["col"] for o in objs], tr, crs)

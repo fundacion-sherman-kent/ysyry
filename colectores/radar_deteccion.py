@@ -23,7 +23,9 @@ que no hay un AIS recibido en ese lugar. Todo lo que sale de acá es una CANDIDA
 import numpy as np
 from scipy import ndimage as ndi
 
-UMBRAL_AGUA_DB = -16.5      # sobre la imagen suavizada 9x9
+PICO_MIN_DB, PICO_MAX_DB = -32.0, -21.0  # dónde buscar el pico oscuro del agua en VH
+ANCHO_AGUA_DB = 2.5         # el umbral de agua queda 2,5 dB sobre ese pico (el valle hacia la tierra)
+FRACCION_AGUA_RECUADRO_MIN = 0.015  # si menos del 1,5 % del recuadro es agua, no se detecta nada
 VENTANA_FONDO = 41          # píxeles (410 m a 10 m/px)
 K_CFAR = 6.0                # desvíos por encima del fondo de agua
 MINIMO_DB = -8.0            # y un mínimo absoluto: lo más débil es ruido y vegetación; -5 dB perdía buques evidentes, -12 dB dejaba pasar ruido
@@ -39,9 +41,33 @@ def a_db(lineal):
     return 10.0 * np.log10(np.clip(lineal, 1e-5, None))
 
 
-def mascara_agua(lineal, valido):
-    suave = ndi.uniform_filter(lineal, 9)
-    agua = (a_db(suave) < UMBRAL_AGUA_DB) & valido
+def umbral_agua(suave_db, valido):
+    """Umbral de agua propio de este recuadro, medido en VH, o None si no hay agua.
+
+    La máscara se hace con la polarización VH y no con VV porque el viento riza el agua y su retorno en
+    VV sube hasta mezclarse con la tierra (medido el 13/9/2026: el agua estaba entre -19 y -14 dB en VV,
+    sin modo propio, y con un umbral fijo el detector dio 3 objetos contra 143 en otra pasada de la misma
+    órbita). En VH el agua conserva su modo oscuro (~ -24 dB) en ambas fechas, casi idéntico.
+    Se busca el pico de ese modo y el umbral queda ANCHO_AGUA_DB por encima (el valle hacia la tierra)."""
+    v = suave_db[valido]
+    if v.size < 10_000:
+        return None
+    h, e = np.histogram(v, bins=int((PICO_MAX_DB - PICO_MIN_DB) / 0.25), range=(PICO_MIN_DB, PICO_MAX_DB))
+    h = ndi.uniform_filter1d(h.astype('float64'), 5)
+    k = int(h.argmax())
+    pico = float(e[k] + 0.125)
+    umbral = pico + ANCHO_AGUA_DB
+    if (v < umbral).mean() < FRACCION_AGUA_RECUADRO_MIN:
+        return None
+    return umbral
+
+
+def mascara_agua(lineal_vh, valido):
+    suave = ndi.uniform_filter(lineal_vh, 9)
+    umbral = umbral_agua(a_db(suave), valido)
+    if umbral is None:
+        return np.zeros(lineal_vh.shape, dtype=bool)
+    agua = (a_db(suave) < umbral) & valido
     agua = ndi.binary_opening(agua, iterations=1)
     # un buque es un "agujero" brillante dentro del agua: se rellena para no perder el contexto
     agua = ndi.binary_closing(agua, structure=np.ones((5, 5)), iterations=1)
@@ -59,15 +85,17 @@ def fondo_agua(lineal, agua):
     return m, sd, n
 
 
-def detectar(lineal, valido=None):
-    """lineal: retorno VV en potencia (no dB). Devuelve (lista de objetos, máscara de agua).
+def detectar(lineal, valido=None, lineal_vh=None):
+    """lineal: retorno VV en potencia (no dB); lineal_vh: retorno VH, con el que se hace la máscara de agua. Devuelve (lista de objetos, máscara de agua).
 
     Cada objeto: dict con fila, col (centroide en píxeles), area_px, largo_px, pico_db,
     fraccion_agua y clase ('agua' o 'orilla')."""
     lineal = lineal.astype('float32')
     if valido is None:
         valido = lineal > 0
-    agua = mascara_agua(lineal, valido)
+    if lineal_vh is None:
+        raise ValueError("se necesita VH para la máscara de agua: VV solo no es confiable con agua rizada")
+    agua = mascara_agua(lineal_vh.astype("float32"), valido)
     m, sd, n = fondo_agua(lineal, agua)
     cerca_de_agua = ndi.binary_dilation(agua, iterations=6)
     cuerpos, _n = ndi.label(agua)
