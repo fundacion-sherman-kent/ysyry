@@ -473,6 +473,10 @@ for i, m in enumerate(marcos):
     oculto = "" if i == marco_inicial else ' style="display:none"'
     grupos_hora.append('<g class="marco-hora" data-i="%d"%s>%s</g>' % (i, oculto, "".join(partes + partes_estado)))
 
+# --- guía de ayuda (catálogo escrito de antemano; ver guia.py) ---
+import guia as _guia
+_GUIA = []   # se completa más abajo, cuando se conocen las estaciones y las unidades del Estado
+
 # --- prospectiva: preguntas publicadas por la dirección (carpeta preguntas/ del repositorio) y su marcador ---
 import preguntas as _preg
 _RAIZ_P = Path(os.environ.get("SITIO_RAIZ") or Path(__file__).resolve().parents[1])
@@ -522,6 +526,9 @@ if marcos:
     }
     _indicios = _ind.indicios(_calc, _ventana, es_estado, _ests, _FUENTES_SIWA, _siwa.UNIDADES_POR_ZONA, _hechos_f, _siwa)
     _indicios_html = _ind.tabla_html(_indicios, _fecha)
+    _GUIA = _guia.catalogo({"n_buques": len(marcos[-1]["puntos"]), "ultima": marcos[-1]["hora"][:16].replace("T", " ") + " UTC",
+                            "n_estaciones": len([e for e in _ests if e["pos"]]), "n_bajas": len([e for e in _ests if e["estado"] == "bajo"]),
+                            "n_unidades_estado": len([p for p in marcos[-1]["puntos"] if es_estado(p)])})
     _candidatas = _ind.candidatas(_indicios, _ests, _fecha)
     if os.environ.get("SITIO_CANDIDATAS"):
         json.dump({"fecha": _fecha, "candidatas": _candidatas}, open(os.environ["SITIO_CANDIDATAS"], "w", encoding="utf-8"), ensure_ascii=False, indent=1)
@@ -718,6 +725,31 @@ svg.zoom-a .amar-a,svg.zoom-b .amar-b{display:inline}
 .ev-fuerte{background:var(--azul-profundo);color:#F9F9F7;border-color:var(--azul-profundo)}
 .ev-corroborado{border-color:var(--azul-profundo);color:var(--fg)}
 .gauge{width:100%;height:auto;display:block}
+.guia-btn{position:fixed;right:18px;bottom:18px;z-index:35;display:flex;align-items:center;gap:8px;padding:9px 15px 9px 11px;border-radius:999px;border:1px solid var(--azul-profundo);background:var(--azul-profundo);color:#F9F9F7;font:700 13px/1 inherit;font-family:inherit;cursor:pointer;box-shadow:0 6px 20px rgba(0,18,30,.35)}
+.guia-btn svg{width:24px;height:24px;stroke:#F9F9F7;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.guia-btn:hover{background:#0b2a3d}
+body.ficha-abierta .guia-btn{right:calc(340px + 18px)}
+.guia{position:fixed;right:18px;bottom:74px;z-index:36;width:380px;max-width:calc(100vw - 24px);height:min(560px,calc(100vh - 150px));display:none;flex-direction:column;background:var(--papel);color:var(--fg);border:1px solid var(--linea);border-radius:14px;box-shadow:0 14px 40px rgba(0,18,30,.35);overflow:hidden}
+.guia.abierta{display:flex}
+body.ficha-abierta .guia{right:calc(340px + 18px)}
+.guia-cab{display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--azul-profundo);color:#F9F9F7}
+.guia-cab svg{width:26px;height:26px;stroke:#F9F9F7;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+.guia-cab b{font-size:14px;display:block}
+.guia-cab small{font-size:11px;opacity:.8;display:block}
+.guia-cab button{margin-left:auto;background:transparent;border:0;color:#F9F9F7;font-size:22px;line-height:1;cursor:pointer;padding:2px 6px}
+.guia-msgs{flex:1;overflow-y:auto;padding:12px 14px;display:flex;flex-direction:column;gap:10px;font-size:13px;line-height:1.5}
+.guia-m{max-width:92%;padding:9px 12px;border-radius:12px;background:var(--linea);color:var(--fg);white-space:pre-line}
+.guia-m.yo{align-self:flex-end;background:var(--azul-profundo);color:#F9F9F7}
+.guia-m.nota{font-size:11.5px;color:var(--gris-acero);background:transparent;padding:0 2px}
+.guia-acc{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.guia-acc button,.guia-chips button{font:600 12px/1.2 inherit;font-family:inherit;padding:6px 10px;border-radius:999px;border:1px solid var(--azul-profundo);background:transparent;color:var(--fg);cursor:pointer;text-align:left}
+.guia-acc button:hover,.guia-chips button:hover{background:var(--azul-profundo);color:#F9F9F7}
+.guia-chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px}
+.guia-in{display:flex;gap:8px;padding:10px 12px;border-top:1px solid var(--linea)}
+.guia-in input{flex:1;min-width:0;padding:9px 11px;border-radius:9px;border:1px solid var(--linea);background:var(--papel);color:var(--fg);font:inherit;font-size:13px}
+.guia-in button{padding:0 14px;border-radius:9px;border:0;background:var(--azul-profundo);color:#F9F9F7;font:700 13px/1 inherit;font-family:inherit;cursor:pointer}
+@media (max-width:760px){.guia{right:8px;left:8px;bottom:70px;width:auto;max-width:none;height:min(70vh,520px)}body.ficha-abierta .guia-btn{display:none}body.ficha-abierta .guia{display:none}.guia-btn{right:12px;bottom:12px}}
+@media print{.guia-btn,.guia{display:none!important}}
 .chip-boya{background:#0f2a2a;color:#cdeee4;border:.6px solid #8fd9c4}
 .boya-n{fill:#8fd9c4;stroke:var(--azul-noche);stroke-width:.8}
 .boya-aro{fill:none;stroke:#8fd9c4;stroke-width:1.2;opacity:0;transform-box:fill-box;transform-origin:center;animation:sonar 3s ease-out infinite;pointer-events:none}
@@ -1023,6 +1055,23 @@ __prospectiva__
   </div>
 </div>
 
+<button type="button" class="guia-btn" id="guia-btn" aria-expanded="false" aria-controls="guia" title="Preguntale a la guía de Ysyry">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="10" width="20" height="15" rx="4"/><path d="M16 10V5"/><circle cx="16" cy="4" r="1.6" fill="#FB6500" stroke="none"/><circle cx="12" cy="17" r="1.7" fill="#F9F9F7" stroke="none"/><circle cx="20" cy="17" r="1.7" fill="#F9F9F7" stroke="none"/><path d="M12.5 21.5h7"/><path d="M3 16v4M29 16v4"/></svg>
+  Guía
+</button>
+<section class="guia" id="guia" role="dialog" aria-label="Guía de Ysyry" aria-modal="false">
+  <div class="guia-cab">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="10" width="20" height="15" rx="4"/><path d="M16 10V5"/><circle cx="16" cy="4" r="1.6" fill="#FB6500" stroke="none"/><circle cx="12" cy="17" r="1.7" fill="#F9F9F7" stroke="none"/><circle cx="20" cy="17" r="1.7" fill="#F9F9F7" stroke="none"/><path d="M12.5 21.5h7"/></svg>
+    <div><b>Guía de Ysyry</b><small>Respuestas escritas de antemano · no es un modelo de IA</small></div>
+    <button type="button" id="guia-cerrar" aria-label="Cerrar la guía">&times;</button>
+  </div>
+  <div class="guia-msgs" id="guia-msgs" aria-live="polite"></div>
+  <div class="guia-chips" id="guia-chips"></div>
+  <form class="guia-in" id="guia-form" autocomplete="off">
+    <input type="text" id="guia-q" placeholder="Preguntá o buscá un buque, puerto o estación" aria-label="Tu pregunta">
+    <button type="submit">Enviar</button>
+  </form>
+</section>
 <script>
 const INFO = __info_json__;
 const FOTOS = __fotos_json__;
@@ -1197,6 +1246,18 @@ const SAT = __sat_meta_json__;
   document.getElementById("zoom-mas").addEventListener("click", function(){ zoom(0.7); });
   document.getElementById("zoom-menos").addEventListener("click", function(){ zoom(1/0.7); });
   document.getElementById("zoom-reset").addEventListener("click", function(){ vb={x:0,y:0,w:W0,h:H0}; aplicar(); });
+  // la usa la guía: centra el mapa en un punto, acerca y abre su ficha
+  window.__irA = function(id){
+    const el = svg.querySelector('[data-i="' + id + '"]'); if (!el) return false;
+    const m = /translate\(([-\d.]+),\s*([-\d.]+)\)/.exec(el.getAttribute("transform") || "");
+    if (m){
+      const w = W0 * 0.04, h = w * H0 / W0;
+      vb = {x: Math.max(0, Math.min(W0 - w, +m[1] - w / 2)), y: Math.max(0, Math.min(H0 - h, +m[2] - h / 2)), w: w, h: h};
+      aplicar();
+    }
+    setTimeout(function(){ el.dispatchEvent(new MouseEvent("click", {bubbles: true})); }, 80);
+    return true;
+  };
   svg.addEventListener("wheel", function(ev){
     ev.preventDefault();
     const p = puntoSvg(ev);
@@ -1388,6 +1449,97 @@ document.querySelectorAll(".clicable").forEach(function(el){
   medir(); window.addEventListener("resize", medir);
   if (window.ResizeObserver && cab) new ResizeObserver(medir).observe(cab);
 })();
+
+/* --- Guía de ayuda: busca en respuestas escritas de antemano y en los nombres del mapa; no usa ningún modelo ni servicio --- */
+(function(){
+  const CAT = __guia_json__, SUG = __guia_sug__;
+  const btn = document.getElementById("guia-btn"), caja = document.getElementById("guia"), msgs = document.getElementById("guia-msgs"),
+        chips = document.getElementById("guia-chips"), form = document.getElementById("guia-form"), q = document.getElementById("guia-q");
+  if (!btn || !caja) return;
+  const PARASITAS = new Set("de del la las el los lo un una unos unas que es son y o a en por para con se me mi mis tu tus al como cual cuales cuando donde hay esta este esto ese eso hola quiero puedo podes saber decime dime mostrame buscar busca buscame buscas encontrar encontrame ver mostra".split(" "));
+  function norm(s){ return (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9ñ ]+/g, " ").replace(/\s+/g, " ").trim(); }
+  function toks(s){ return norm(s).split(" ").filter(function(t){ return t && !PARASITAS.has(t); }); }
+  CAT.forEach(function(e){ e._t = new Set(toks(e.k)); });
+  function agrega(txt, clase){ const d = document.createElement("div"); d.className = "guia-m " + (clase || ""); d.textContent = txt; msgs.appendChild(d); msgs.scrollTop = msgs.scrollHeight; return d; }
+  function acciones(d, lista){
+    if (!lista || !lista.length) return;
+    const w = document.createElement("div"); w.className = "guia-acc";
+    lista.forEach(function(a){ const b = document.createElement("button"); b.type = "button"; b.textContent = a[2]; b.addEventListener("click", function(){ ejecuta(a[0], a[1]); }); w.appendChild(b); });
+    d.appendChild(w); msgs.scrollTop = msgs.scrollHeight;
+  }
+  function irMapa(){ const m = document.getElementById("mapa"); if (m) m.scrollIntoView({behavior: "smooth", block: "start"}); }
+  function ejecuta(tipo, v){
+    if (tipo === "sec"){ const el = document.getElementById(v); if (el) el.scrollIntoView({behavior: "smooth", block: "start"}); cierra(); }
+    else if (tipo === "tab"){ const t = document.querySelector('.familia-tab[data-familia="' + v + '"]'); if (t) t.click(); irMapa(); cierra(); }
+    else if (tipo === "ir"){
+      const t = document.querySelector('.familia-tab[data-familia=""]'); if (t) t.click();
+      irMapa(); cierra();
+      setTimeout(function(){ if (window.__irA) window.__irA(v); }, 350);
+    }
+  }
+  function entidades(texto){
+    const t = toks(texto).filter(function(x){ return x.length >= 3; });
+    if (!t.length) return [];
+    const vistos = {}, out = [];
+    document.querySelectorAll("#svg-mapa [data-i]").forEach(function(el){
+      const id = el.getAttribute("data-i");
+      if (el.closest(".marco-hora") && el.closest(".marco-hora").style.display === "none") return;
+      const x = (typeof porId !== "undefined") ? porId[id] : null; if (!x || !x.titulo) return;
+      const n = norm(x.titulo); if (vistos[n]) return;
+      if (t.every(function(w){ return n.indexOf(w) !== -1; })) { vistos[n] = 1; out.push({id: id, titulo: x.titulo, cat: x.categoria || ""}); }
+    });
+    return out.slice(0, 8);
+  }
+  function responde(texto){
+    const t = toks(texto);
+    const ents = entidades(texto);
+    let mejor = null, puntaje = 0, otros = [];
+    if (!t.length && !ents.length){ mejor = CAT[0]; puntaje = 9; }
+    CAT.forEach(function(e){
+      let p = 0, n = 0;
+      t.forEach(function(w){
+        if (e._t.has(w)) { p += 2; n += 1; }
+        else if (w.length >= 4){ let hit = false; e._t.forEach(function(k){ if (k.length >= 4 && (k.indexOf(w) === 0 || w.indexOf(k) === 0)) hit = true; }); if (hit){ p += 1; n += 1; } }
+      });
+      if (n < Math.min(2, t.length)) p = 0;      // una sola palabra suelta en una pregunta larga no alcanza
+      if (p > 0) otros.push([p, e]);
+      if (p > puntaje){ puntaje = p; mejor = e; }
+    });
+    otros.sort(function(a, b){ return b[0] - a[0]; });
+    if (ents.length && (!mejor || puntaje < 4)){
+      const d = agrega("Encontré esto en el mapa. Tocá uno y te llevo hasta ahí:");
+      acciones(d, ents.map(function(e){ return ["ir", e.id, e.titulo + (e.cat ? " · " + e.cat.split(" · ")[0] : "")]; }));
+      return;
+    }
+    if (mejor && puntaje >= 2){
+      const d = agrega(mejor.r);
+      acciones(d, mejor.a);
+      const rel = otros.filter(function(o){ return o[1] !== mejor && o[0] >= 2; }).slice(0, 2);
+      if (rel.length){ const w = document.createElement("div"); w.className = "guia-acc"; rel.forEach(function(o){ const b = document.createElement("button"); b.type = "button"; b.textContent = "Ver también: " + o[1].t; b.addEventListener("click", function(){ const dd = agrega(o[1].r); acciones(dd, o[1].a); }); w.appendChild(b); });
+        d.appendChild(w); }
+      if (ents.length){ const d2 = agrega("Y esto en el mapa:"); acciones(d2, ents.map(function(e){ return ["ir", e.id, e.titulo]; })); }
+      return;
+    }
+    const d = agrega("No encontré eso y prefiero no inventar. Probá con otras palabras, buscá un buque, puerto o estación por su nombre, o elegí una de estas preguntas. Si es un error de un dato, podés pedir una corrección desde «Método y límites».");
+    acciones(d, [["sec", "metodo", "Ver método y límites"]]);
+  }
+  function abre(){
+    caja.classList.add("abierta"); btn.setAttribute("aria-expanded", "true");
+    if (!msgs.children.length){
+      agrega("Hola, soy la guía de Ysyry. No soy un modelo de IA: respondo con textos escritos de antemano sobre esta plataforma y puedo buscar buques, puertos y estaciones en el mapa. Si no sé algo, te lo digo.");
+      SUG.forEach(function(s){ const b = document.createElement("button"); b.type = "button"; b.textContent = s; b.addEventListener("click", function(){ agrega(s, "yo"); responde(s); }); chips.appendChild(b); });
+    }
+    setTimeout(function(){ q.focus(); }, 50);
+  }
+  function cierra(){ caja.classList.remove("abierta"); btn.setAttribute("aria-expanded", "false"); }
+  btn.addEventListener("click", function(){ caja.classList.contains("abierta") ? cierra() : abre(); });
+  document.getElementById("guia-cerrar").addEventListener("click", cierra);
+  document.addEventListener("keydown", function(ev){ if (ev.key === "Escape" && caja.classList.contains("abierta")) cierra(); });
+  form.addEventListener("submit", function(ev){ ev.preventDefault(); const v = q.value.trim(); if (!v) return; agrega(v, "yo"); q.value = ""; responde(v); });
+  // cuando la ficha del mapa está abierta, la guía se corre para no taparla
+  const panel = document.getElementById("panel");
+  if (panel && window.MutationObserver) new MutationObserver(function(){ document.body.classList.toggle("ficha-abierta", panel.classList.contains("abierto")); }).observe(panel, {attributes: true, attributeFilter: ["class"]});
+})();
 document.getElementById("panel-cerrar").addEventListener("click", function(){ panel.classList.remove("abierto"); });
 // Tema: el claro es siempre el predeterminado; «Fondo oscuro» lo cambia y se recuerda (con try/catch:
 // si el navegador bloquea el almacenamiento, el botón igual funciona, sólo que no se recuerda).
@@ -1436,6 +1588,8 @@ SUST = {
     "alertas_fem": _ALERTAS_FEM,
     "pulso": _pulso_html,
     "prospectiva": _prospectiva_html,
+    "guia_json": json.dumps(_GUIA, ensure_ascii=False),
+    "guia_sug": json.dumps(_guia.PREGUNTAS_SUGERIDAS, ensure_ascii=False),
     "indicios": _indicios_html,
     "ultima_iso": marcos[-1]["hora"] if marcos else "",
     "poi_etq": "\n    ".join(poi_etq_svg),
