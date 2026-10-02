@@ -1,0 +1,12 @@
+{
+  "_nota": "Parámetros iniciales de las reglas de indicios y alertas candidatas. Los fijó la Oficina como punto de partida, sin historial para calibrarlos: la curaduría los cambia acá, sin tocar código. Cada candidata cita cuántos días se disparó su regla para ver si es demasiado sensible.",
+  "pct_bajo": {"valor": 25.0, "que_es": "Una estación está «baja» si su nivel está en este porcentaje inferior de su rango histórico (mínimo a máximo)."},
+  "var_baja_cm": {"valor": -2, "que_es": "Una estación «baja» si pierde esta cantidad de centímetros o más en 24 horas."},
+  "dias_vencida": {"valor": 3, "que_es": "Una lectura de más de estos días ya no describe el río de hoy y no cuenta."},
+  "min_buques_brecha": {"valor": 20, "que_es": "Buques por captura (mediana) desde los que la ausencia del Estado en el AIS es un indicio."},
+  "caps_brecha": {"valor": 12, "que_es": "Capturas seguidas (horas) sin ninguna unidad del Estado visible para que dispare PRES-1."},
+  "interrupcion_caps": {"valor": 4, "que_es": "Un buque «se interrumpe» si entre dos avistajes pasan al menos estas capturas (faltó en estas menos una seguidas)."},
+  "cobertura_continua": {"valor": 0.8, "que_es": "Fracción de capturas en que una celda de 0,25° vio al menos un buque para considerarla de cobertura continua; una interrupción ahí es más llamativa que en un hueco de cobertura."},
+  "min_medios_prensa": {"valor": 2, "que_es": "Medios distintos en 7 días para que un tema de prensa sea «corroborado»."},
+  "ajuste_max_unidades": {"valor": 2.3, "que_es": "Distancia máxima (unidades del mapa, ~2,57 km cada una) a la que una estación se acerca al cauce dibujado."}
+}

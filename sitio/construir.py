@@ -524,12 +524,15 @@ if marcos:
             "fuentes": [_prensa("La Política Online"), _prensa("ABC Color"), {"nombre": "Presidencia de la República del Paraguay", "familia": "oficial", "calificacion": "B2"}],
             "no_dice": "No implica que ocurra en todo el departamento ni involucra a sus habitantes; la fuente oficial no es independiente del Estado."}],
     }
-    _indicios = _ind.indicios(_calc, _ventana, es_estado, _ests, _FUENTES_SIWA, _siwa.UNIDADES_POR_ZONA, _hechos_f, _siwa)
+    _prensa_ind = _ind.indicios_prensa(os.environ.get("SITIO_NOTICIAS") or (_raiz / "datos" / "publico" / "noticias.json"))
+    _indicios = _ind.indicios(_calc, _ventana, es_estado, _ests, _FUENTES_SIWA, _siwa.UNIDADES_POR_ZONA, _hechos_f, _siwa, _prensa_ind)
     _indicios_html = _ind.tabla_html(_indicios, _fecha)
     _GUIA = _guia.catalogo({"n_buques": len(marcos[-1]["puntos"]), "ultima": marcos[-1]["hora"][:16].replace("T", " ") + " UTC",
                             "n_estaciones": len([e for e in _ests if e["pos"]]), "n_bajas": len([e for e in _ests if e["estado"] == "bajo"]),
                             "n_unidades_estado": len([p for p in marcos[-1]["puntos"] if es_estado(p)])})
-    _candidatas = _ind.candidatas(_indicios, _ests, _fecha)
+    _reglas_previas = (json.load(open(PULSO, encoding="utf-8")).get("reglas", {}) if Path(PULSO).exists() else {})
+    _candidatas = _ind.candidatas(_indicios, _ests, _fecha, _reglas_previas)
+    _ind.registrar_disparos(PULSO, _fecha, _candidatas)
     if os.environ.get("SITIO_CANDIDATAS"):
         json.dump({"fecha": _fecha, "candidatas": _candidatas}, open(os.environ["SITIO_CANDIDATAS"], "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     for _i, _e in enumerate(_ests):

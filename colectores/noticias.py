@@ -63,8 +63,8 @@ def norm(s):
 def consultar(q, idioma):
     url = API + "?" + urllib.parse.urlencode({"query": "%s sourcelang:%s" % (q, idioma), "mode": "artlist", "maxrecords": 40,
                                               "format": "json", "timespan": "7d", "sort": "datedesc"})
-    for intento in range(4):
-        time.sleep(PAUSA * (intento + 1))
+    for intento, espera in enumerate((PAUSA, 30, 60, 120)):      # GDELT limita por dirección: se espera cada vez más
+        time.sleep(espera)
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=60) as r:
                 texto = r.read().decode("utf-8", "replace")
@@ -85,16 +85,32 @@ def zona(titulo):
 
 
 def main():
+    carpeta = Path(os.environ.get("DATOS_DIR", "datos/publico"))
+    previo = {}
+    if (carpeta / "noticias.json").exists():
+        try:
+            previo = json.load(open(carpeta / "noticias.json", encoding="utf-8"))
+        except Exception:
+            previo = {}
     salida = {"obtenido": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
               "fuente": {"nombre": "GDELT Project (API DOC 2.0)", "url": "https://www.gdeltproject.org/",
                          "nota": "Detección automática por palabras clave sobre titulares de los últimos 7 días. No verificada por una persona."},
               "temas": {}}
+    fallas, frescos = [], []
     for t in TEMAS:
         print("Tema:", t["id"])
         arts = consultar(t["q"], t["idioma"])
         if arts is None:
-            salida["temas"][t["id"]] = {"rotulo": t["rotulo"], "error": "GDELT no respondió", "articulos": []}
+            # se conserva lo último bueno de este tema, rotulado con su fecha, y se cuenta como falla
+            viejo = (previo.get("temas") or {}).get(t["id"].replace("_pt", ""))
+            if viejo and viejo.get("articulos") and not viejo.get("error"):
+                viejo = dict(viejo, desactualizado_desde=viejo.get("desactualizado_desde") or previo.get("obtenido", ""))
+                salida["temas"][t["id"].replace("_pt", "")] = viejo
+            else:
+                salida["temas"].setdefault(t["id"].replace("_pt", ""), {"rotulo": t["rotulo"], "error": "GDELT no respondió", "articulos": []})
+            fallas.append(t["id"])
             continue
+        frescos.append(t["id"])
         vistos, lista = set(), []
         for a in arts:
             tit = (a.get("title") or "").strip()
@@ -113,11 +129,11 @@ def main():
         print("  %d titulares útiles de %d" % (len(lista), len(arts)))
     for v in salida["temas"].values():
         v["dominios_distintos"] = len({a["dominio"] for a in v["articulos"]})
-    carpeta = Path(os.environ.get("DATOS_DIR", "datos/publico"))
     carpeta.mkdir(parents=True, exist_ok=True)
-    if all(v.get("error") for v in salida["temas"].values()):
-        print("GDELT no respondió en ningún tema: no se toca el archivo anterior")
+    if not frescos:
+        print("GDELT no respondió en ningún tema (limita las consultas): no se toca el archivo anterior")
         return 1
+    salida["frescos"], salida["fallas"] = frescos, fallas
     with open(carpeta / "noticias.json", "w", encoding="utf-8", newline="\n") as fh:
         json.dump(salida, fh, ensure_ascii=False, indent=1)
     print("Temas: %d, titulares: %d" % (len(salida["temas"]), sum(len(v["articulos"]) for v in salida["temas"].values())))

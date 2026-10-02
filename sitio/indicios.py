@@ -19,12 +19,23 @@ from pathlib import Path
 import pulso as _pulso
 
 NIVELES = ("Fuente única", "Corroborado", "Fuerte")
-PCT_BAJO = 25.0          # «cuarto inferior de su rango histórico»: parámetro inicial, a calibrar por la curaduría
-VAR_BAJA_CM = -2         # baja de 2 cm o más en 24 h
-DIAS_VENCIDA = 3         # una lectura de más de 3 días ya no describe el río de hoy
-MIN_BUQUES_BRECHA = 20   # tráfico por captura desde el que la ausencia del Estado en el AIS es un indicio
-CAPS_BRECHA = 12         # capturas seguidas (horas) sin ninguna unidad del Estado visible
-AJUSTE_MAX_UNIDADES = 2.3   # ~6 km: se acerca la estación al cauce dibujado sólo si ya está cerca
+_PARAMS = json.load(open(Path(__file__).resolve().parent / "datos" / "parametros_reglas.json", encoding="utf-8"))
+
+
+def _par(nombre):
+    return _PARAMS[nombre]["valor"]
+
+
+# parámetros iniciales: se cambian en sitio/datos/parametros_reglas.json, sin tocar código (ver ese archivo)
+PCT_BAJO = float(_par("pct_bajo"))
+VAR_BAJA_CM = _par("var_baja_cm")
+DIAS_VENCIDA = _par("dias_vencida")
+MIN_BUQUES_BRECHA = _par("min_buques_brecha")
+CAPS_BRECHA = _par("caps_brecha")
+AJUSTE_MAX_UNIDADES = float(_par("ajuste_max_unidades"))
+INTERRUPCION_CAPS = _par("interrupcion_caps")
+COBERTURA_CONTINUA = float(_par("cobertura_continua"))
+MIN_MEDIOS = _par("min_medios_prensa")
 
 FUENTE_NIVEL = {"nombre": "Dirección de Meteorología e Hidrología, Paraguay", "familia": "oficial", "calificacion": "A2",
                 "url": "https://www.meteorologia.gov.py/nivel-rio/indexconvencional.php"}
@@ -182,10 +193,11 @@ def _nivel_por_zona(ests):
     return por
 
 
-def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_zona, hechos_fuentes, siwa_mod):
+def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_zona, hechos_fuentes, siwa_mod, prensa=None):
     """{zona: [indicio]}; cada indicio: id, titulo, texto, fuentes, nivel, no_dice, tipo."""
     por_nivel = _nivel_por_zona(ests)
     res = {z[0]: [] for z in _pulso.ZONAS}
+    res["gen"] = []
     for z, lista in por_nivel.items():
         vivas = [e for e in lista if e["estado"] not in ("vencida", "regulada")]
         if not vivas:
@@ -218,10 +230,12 @@ def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_z
     # interrupciones de señal de AIS (buques que dejan de verse y reaparecen)
     inter = _interrupciones(marcos_ventana)
     for z, n in inter.items():
-        if n:
-            res[z].append({"id": "INT", "tipo": "Calidad de la señal", "titulo": "Buques con interrupciones de señal", "texto": "%d buques dejaron de verse durante 3 o más capturas seguidas y reaparecieron en la zona." % n,
+        if n["continua"] or n["hueco"]:
+            res[z].append({"id": "INT", "tipo": "Calidad de la señal", "titulo": "Buques con interrupciones de señal",
+                           "texto": "%d %s dejaron de verse durante %d o más capturas seguidas y reaparecieron: %d en celdas de cobertura continua (más llamativo) y %d en probables huecos de cobertura."
+                                    % (n["continua"] + n["hueco"], "buques" if n["continua"] + n["hueco"] != 1 else "buque", INTERRUPCION_CAPS - 1, n["continua"], n["hueco"]),
                            "fuentes": [FUENTE_AIS], "nivel": nivel_evidencia([FUENTE_AIS]),
-                           "no_dice": "Una interrupción no es un apagado deliberado: hay tramos sin receptores, buques que entran a puerto y fallas de la propia fuente.", "dato": {"n": n}})
+                           "no_dice": "Una interrupción no es un apagado deliberado: hay buques que entran a puerto, tramos con pocos receptores y fallas de la propia fuente. Que ocurra donde otros buques se ven siempre sólo lo hace más llamativo.", "dato": dict(n)})
     # violencia política (ACLED) y focos de calor, por las unidades que toca la zona
     for z, uni in unidades_por_zona.items():
         sa = siwa_mod.serie_acled(fuentes_siwa, uni) if fuentes_siwa else None
@@ -238,24 +252,75 @@ def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_z
         for h in lst:
             res[z].append({"id": h["id"], "tipo": h["tipo"], "titulo": h["titulo"], "texto": h["texto"], "fuentes": h["fuentes"],
                            "nivel": nivel_evidencia(h["fuentes"]), "no_dice": h["no_dice"], "dato": {}})
+    for z, lst in (prensa or {}).items():
+        res.setdefault(z, []).extend(lst)
     return res
 
 
+def _celda(x, y):
+    lat, lon = _pulso.latlon(x, y)
+    return (math.floor(lat / 0.25), math.floor(lon / 0.25))
+
+
 def _interrupciones(marcos):
-    """Buques vistos antes y después de una pausa de 3 o más capturas, contados por la zona de su última posición."""
-    if len(marcos) < 5:
-        return {z[0]: 0 for z in _pulso.ZONAS}
+    """Por zona: buques que dejaron de verse INTERRUPCION_CAPS capturas o más y reaparecieron, separando los que se perdieron en una celda de
+    cobertura continua (otros buques se ven ahí casi siempre: más llamativo) de los que se perdieron en un probable hueco de cobertura."""
+    vacio = {z[0]: {"continua": 0, "hueco": 0} for z in _pulso.ZONAS}
+    if len(marcos) < INTERRUPCION_CAPS + 1:
+        return vacio
+    celdas_por_captura = [{_celda(p["x"], p["y"]) for p in m["puntos"]} for m in marcos]
+    n = len(marcos)
+    cobertura = {}
+    for cs in celdas_por_captura:
+        for c in cs:
+            cobertura[c] = cobertura.get(c, 0) + 1
     vistos = {}
     for i, m in enumerate(marcos):
         for p in m["puntos"]:
-            k = _pulso._clave(p)
-            vistos.setdefault(k, []).append((i, _pulso.zona_de(p["x"], p["y"])))
-    out = {z[0]: 0 for z in _pulso.ZONAS}
+            vistos.setdefault(_pulso._clave(p), []).append((i, p))
+    out = vacio
     for k, lst in vistos.items():
-        for (i0, _), (i1, z1) in zip(lst, lst[1:]):
-            if i1 - i0 >= 4:        # faltó en 3 o más capturas seguidas
-                out[z1] += 1
+        for (i0, p0), (i1, p1) in zip(lst, lst[1:]):
+            if i1 - i0 >= INTERRUPCION_CAPS:
+                z = _pulso.zona_de(p1["x"], p1["y"])
+                otras = cobertura.get(_celda(p0["x"], p0["y"]), 0) / float(n)
+                out[z]["continua" if otras >= COBERTURA_CONTINUA else "hueco"] += 1
                 break
+    return out
+
+
+# ---------------------------------------------------------------- prensa (segunda familia de fuentes)
+TEMAS_PRENSA = {"pirateria": "Piratería y robo de carga fluvial", "crimen_organizado": "Crimen organizado transnacional",
+                "narcotrafico": "Narcotráfico por la vía fluvial", "navegabilidad": "Bajante, calado y navegabilidad",
+                "regulatorio": "Licitación, dragado y peaje", "gremial": "Conflictos gremiales en puertos", "operativos": "Operativos de fuerzas de seguridad"}
+
+
+def indicios_prensa(ruta):
+    """{zona|'gen': [indicio]} a partir de noticias.json: medios DISTINTOS por tema y zona en los últimos 7 días. Detección automática."""
+    if not ruta or not Path(ruta).exists():
+        return {}
+    d = json.load(open(ruta, encoding="utf-8"))
+    out = {}
+    for tid, t in d.get("temas", {}).items():
+        if t.get("desactualizado_desde"):      # un tema que ya no se pudo actualizar no cuenta como cobertura de esta semana
+            continue
+        por = {}
+        for a in t.get("articulos", []):
+            if a.get("dominio") and a.get("url", "").startswith(("http://", "https://")):
+                por.setdefault(a.get("zona") or "general", []).append(a)
+        for z, arts in por.items():
+            medios = {}
+            for a in arts:
+                medios.setdefault(a["dominio"], a)
+            fuentes = [{"nombre": dom, "familia": "prensa", "calificacion": "C3"} for dom in medios]
+            muestra = list(medios.values())[:2]
+            out.setdefault("gen" if z == "general" else z, []).append({
+                "id": "PRE-" + tid, "tipo": "Prensa", "titulo": "Cobertura de prensa: " + TEMAS_PRENSA.get(tid, t.get("rotulo", tid)),
+                "texto": "%s en los últimos 7 días (%d %s). Ejemplos: %s" % (
+                    ("1 medio" if len(medios) == 1 else "%d medios distintos" % len(medios)), len(arts), "titular" if len(arts) == 1 else "titulares", "; ".join("«%s» (%s)" % (a["titulo"][:110], a["dominio"]) for a in muestra)),
+                "fuentes": fuentes, "nivel": nivel_evidencia(fuentes) if len(medios) >= MIN_MEDIOS else "Fuente única",
+                "no_dice": "Detección automática por palabras clave sobre titulares, no verificada por una persona: un titular no es un hecho confirmado, y varios medios pueden repetir la misma agencia. Leé las notas antes de sacar conclusiones.",
+                "dato": {"medios": len(medios), "tema": tid}, "enlaces": [a["url"] for a in muestra]})
     return out
 
 
@@ -264,16 +329,19 @@ def tabla_html(ind, fecha):
     import html
     e = html.escape
     filas = []
-    for z, nombre, _ in _pulso.ZONAS:
+    for z, nombre, _ in _pulso.ZONAS + [("gen", "Corredor en general", "")]:
         lst = ind.get(z, [])
+        if not lst and z == "gen":
+            continue
         if not lst:
             filas.append('<tr><th scope="row">%s</th><td colspan="4" class="sd">Sin indicios con datos en esta zona hoy. No significa que no pase nada: significa que no lo vemos.</td></tr>' % e(nombre))
             continue
         for k, i in enumerate(lst):
-            f = "; ".join("%s (%s)" % (x["nombre"], x["familia"]) for x in i["fuentes"])
+            f = "; ".join("%s (%s)" % (x["nombre"], x["familia"]) for x in i["fuentes"][:6]) + (" y %d más" % (len(i["fuentes"]) - 6) if len(i["fuentes"]) > 6 else "")
+            enl = "".join('<br><a href="%s" target="_blank" rel="noopener nofollow">nota ↗</a>' % e(u_) for u_ in i.get("enlaces", []) if u_.startswith(("http://", "https://")))
             filas.append('<tr>%s<td><b>%s</b><br>%s</td><td><span class="ev ev-%s">%s</span></td><td>%s</td><td>%s</td></tr>'
                          % ('<th scope="row" rowspan="%d">%s</th>' % (len(lst), e(nombre)) if k == 0 else "",
-                            e(i["titulo"]), e(i["texto"]), e(i["nivel"].split()[0].lower()), e(i["nivel"]), e(f), e(i["no_dice"])))
+                            e(i["titulo"]), e(i["texto"]), e(i["nivel"].split()[0].lower()), e(i["nivel"]), e(f) + enl, e(i["no_dice"])))
     return ('<div class="pulso" id="indicios-zonas"><h2>Libro de indicios por zona</h2>'
             '<p class="sub">Cada observación con sus fuentes, su familia de fuente y su nivel de evidencia. <b>Fuente única</b>: una sola. <b>Corroborado</b>: dos o más fuentes independientes de la misma familia. '
             '<b>Fuerte</b>: dos o más independientes de al menos dos familias. Varias estaciones de un mismo organismo, o las dos redes de AIS, cuentan como una fuente. '
@@ -283,12 +351,17 @@ def tabla_html(ind, fecha):
 
 
 # ---------------------------------------------------------------- alertas candidatas (sólo para la curaduría, nunca se publican)
-def candidatas(ind, ests, fecha):
+def candidatas(ind, ests, fecha, hist_reglas=None):
     """Reglas de disparo, con parámetros iniciales a calibrar. Una candidata es un aviso interno para quien cura, no una alerta."""
     out = []
-    for z, nombre, _ in _pulso.ZONAS:
+    for z, nombre, _ in _pulso.ZONAS + [("gen", "Corredor en general", "")]:
         for i in ind.get(z, []):
             d = i["dato"]
+            if i["id"].startswith("PRE-") and d.get("tema") in ("pirateria", "crimen_organizado", "narcotrafico") and d.get("medios", 0) >= MIN_MEDIOS:
+                out.append({"clave": "PRENSA-1|%s|%s|%s" % (d["tema"], z, fecha), "regla": "PRENSA-1 · " + d["tema"], "zona": nombre,
+                            "titulo": "Cobertura de prensa sobre %s en %s" % (TEMAS_PRENSA.get(d["tema"], d["tema"]).lower(), nombre.lower() if z != "gen" else "el corredor"),
+                            "indicio": i["texto"], "evidencia": i["nivel"] + " (detección automática)", "estaciones": [],
+                            "pregunta_posible": "¿Se confirmará por una fuente oficial un hecho de este tipo en la zona en los próximos 14 días?"})
             if i["id"] == "NAV" and d.get("ambas", 0) >= 2:
                 bajos = [e["nombre"] for e in ests if e["pos"] and e["pos"]["zona"] == z and e["estado"] == "bajo" and e["var_cm"] is not None and e["var_cm"] <= VAR_BAJA_CM]
                 out.append({"clave": "NAV-1|%s|%s" % (z, fecha), "regla": "NAV-1", "zona": nombre,
@@ -300,4 +373,20 @@ def candidatas(ind, ests, fecha):
                             "titulo": "Brecha de presencia del Estado visible en %s" % nombre,
                             "indicio": i["texto"], "evidencia": i["nivel"], "estaciones": [],
                             "pregunta_posible": "¿Habrá una unidad del Estado visible por AIS en la zona en las próximas 24 horas?"})
+    for c in out:
+        previos = (hist_reglas or {})
+        dias = [f for f, lst in previos.items() if f != fecha]
+        disp = [f for f in dias if (c["regla"] + "|" + c["zona"]) in previos[f]]
+        c["calibracion"] = ("Esta regla se disparó %d de %d días registrados antes de hoy en esta zona." % (len(disp), len(dias))) if dias else "Sin días previos registrados para calibrar."
     return out
+
+
+def registrar_disparos(ruta_historial, fecha, cands):
+    """Anota qué reglas se dispararon hoy en cada zona, para poder ver después si son demasiado sensibles."""
+    p = Path(ruta_historial)
+    hist = json.load(open(p, encoding="utf-8")) if p.exists() else {"zonas": {}}
+    hist.setdefault("reglas", {})[fecha] = sorted({c["regla"] + "|" + c["zona"] for c in cands})
+    for viejo in sorted(hist["reglas"])[:-120]:
+        del hist["reglas"][viejo]
+    json.dump(hist, open(p, "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
+    return hist["reglas"]
