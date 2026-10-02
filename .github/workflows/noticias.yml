@@ -1,0 +1,35 @@
+name: Noticias (segunda familia de fuentes)
+
+# Cada 6 horas, público. Baja de GDELT los titulares de los últimos 7 días sobre los temas del corredor (piratería, crimen organizado,
+# narcotráfico fluvial, bajante, licitación, conflictos gremiales, operativos) y los guarda con su medio y su fecha. Es detección
+# automática por palabras clave, no verificada por una persona. No consume tokens de Claude.
+on:
+  schedule:
+    - cron: "5 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  leer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Leer titulares
+        env:
+          DATOS_DIR: datos/publico
+        run: python3 -u colectores/noticias.py
+      - name: Guardar
+        run: |
+          git config user.name "ysyry-robot"
+          git config user.email "ysyry-robot@users.noreply.github.com"
+          git add datos/publico/noticias.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Noticias: titulares de los últimos 7 días (corrida automática)"
+            git pull --rebase --quiet
+            git push
+          fi
