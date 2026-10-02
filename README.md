@@ -25,7 +25,11 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
 - `colectores/`: robots que corren solos en GitHub Actions (sin gastar tokens de ningún modelo) y
   bajan datos abiertos: nivel del río, imágenes satelitales (`satelite_gibs.py`) y radar
   Sentinel-1 (`radar_*.py`, método en validación, **no se publica**).
-- `docs/`: el sitio, una sola página estática.
+- `sitio/`: el generador de la página (`construir.py`) y sus insumos. El flujo `sitio.yml` **se
+  actualiza solo cada hora**: baja la última captura de AIS (`ais_marco.py`), la suma al historial
+  de las últimas 24 horas (rama `datos-ais`), reconstruye la página con la imagen satelital más
+  reciente y la despliega en GitHub Pages. Si el AIS no responde, el sitio conserva la última captura
+  buena, con su fecha a la vista.
 
 ## Fuentes y licencias
 
