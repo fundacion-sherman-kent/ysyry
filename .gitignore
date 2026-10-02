@@ -1,2 +1,3 @@
 # Archivos de trabajo con identidades de embarcaciones: nunca al repositorio público
 _*.json
+sitio/datos/osm_amarres_crudo.json

@@ -218,7 +218,7 @@ for i, q in enumerate(d["poi"]):
     if q["nombre"] == "Terminal Timbúes":
         familia = FAMILIA_PUERTO + " " + FAMILIA_TIMBUES_EXTRA
     poi_svg.append('<g class="%s clicable" data-i="%s" data-familia="%s" transform="translate(%s,%s)">'
-                    '<circle r="%s" class="punto"/></g>'
+                    '<circle class="hit" r="14"/><circle r="%s" class="punto"/></g>'
                     % (cls, gid, familia, q["x"], q["y"], r))
     poi_etq_svg.append(callout(q["x"], q["y"], q["nombre"], clase_chip, familia))
     nombre_real, tipo, fuente = datos_poi(q)
@@ -234,7 +234,7 @@ riesgos_etq_svg = []
 for i, r in enumerate(d["riesgos"]):
     gid = "rz%d" % i
     riesgos_svg.append('<g class="riesgo-g clicable" data-i="%s" data-familia="seguridad" transform="translate(%s,%s)">'
-                        '<circle class="riesgo" r="5"/></g>'
+                        '<circle class="hit" r="14"/><circle class="riesgo" r="5"/></g>'
                         % (gid, r["x"], r["y"]))
     riesgos_etq_svg.append(callout(r["x"], r["y"], "Piratería, km 340", "riesgo", "seguridad"))
     riesgo_info.append({"id": gid, "categoria": "Hecho informado por prensa", "titulo": "Piratería fluvial, km 340 (hecho puntual)",
@@ -343,6 +343,24 @@ def foto_de_pagina(clave):
         return None
     return _con_credito(pag["thumb"], pag["url"], False)
 
+# --- puertos, terminales, muelles y amarraderos de OpenStreetMap (instantánea fechada) ---
+P_ = json.load(open(D / "proyeccion.json"))
+_AM = json.load(open(D / "amarres_osm.json", encoding="utf-8"))
+NIVEL_A = {"puerto", "area_portuaria", "ferry", "marina", "darsena", "atracadero"}   # se ven desde un zoom moderado
+GRUPO_AM = {"puerto": "pu", "area_portuaria": "pu", "darsena": "pu", "ferry": "pu",
+            "marina": "mu", "atracadero": "mu", "muelle": "mu", "rampa": "ra", "amarradero": "ra"}
+amarres_svg = []
+amarres_json = []
+for _i, _a in enumerate(_AM["items"]):
+    _x = round(P_["ax"] * _a["lon"] + P_["bx"], 1)
+    _y = round(P_["ay"] * _a["lat"] + P_["by"], 1)
+    _niv = "a" if _a["t"] in NIVEL_A else "b"
+    _g = GRUPO_AM[_a["t"]]
+    amarres_svg.append('<g class="amar amar-%s amar-%s clicable" data-i="am%d" data-familia="comercio" transform="translate(%s,%s)">'
+                       '<circle class="hit" r="11"/><rect class="m" x="-3" y="-3" width="6" height="6"/></g>'
+                       % (_niv, _g, _i, _x, _y))
+    amarres_json.append([_a["t"], _a["n"], _a["lon"], _a["lat"], _a["x"]])
+
 AZUL_ESTADO = "#2f7bff"
 buque_info = []
 grupos_hora = []
@@ -360,19 +378,20 @@ for i, m in enumerate(marcos):
             cog = p.get("cog") if p.get("cog") is not None else 0
             partes_estado.append('<g class="buque-g buque-estado clicable" data-i="%s" data-familia="%s" '
                            'transform="translate(%s,%s) rotate(%s)">'
-                           '<path d="M0,-8 L6,6 L-6,6 Z" style="fill:%s;stroke:#fff;stroke-width:1.2;stroke-linejoin:round"/></g>'
+                           '<circle class="hit" r="13"/><path d="M0,-8 L6,6 L-6,6 Z" style="fill:%s;stroke:#fff;stroke-width:1.2;stroke-linejoin:round"/></g>'
                            % (bid, fam, p["x"], p["y"], round(cog, 1), AZUL_ESTADO))
             rumbo = "%s°" % round(cog) if p.get("cog") is not None else "sin dato"
             cat = "embarcación del Estado (AIS tipo %s)" % p.get("tipo_ais")
         elif p.get("cog") is not None:
             partes.append('<g class="buque-g clicable" data-i="%s" data-familia="%s" '
                            'transform="translate(%s,%s) rotate(%s)">'
-                           '<path class="buque-flecha" d="M0,-5 L3.4,3.6 L0,1.4 L-3.4,3.6 Z" style="fill:%s"/></g>'
+                           '<circle class="hit" r="13"/><path class="buque-flecha" d="M0,-5 L3.4,3.6 L0,1.4 L-3.4,3.6 Z" style="fill:%s"/></g>'
                            % (bid, fam, p["x"], p["y"], round(p["cog"], 1), color))
             rumbo = "%s°" % round(p["cog"])
         else:
-            partes.append('<circle class="buque clicable" data-i="%s" data-familia="%s" '
-                           'cx="%s" cy="%s" r="4" style="fill:%s"/>' % (bid, fam, p["x"], p["y"], color))
+            partes.append('<g class="buque-g clicable" data-i="%s" data-familia="%s" transform="translate(%s,%s)">'
+                           '<circle class="hit" r="13"/><circle class="buque" r="4" style="fill:%s"/></g>'
+                           % (bid, fam, p["x"], p["y"], color))
             rumbo = "sin dato"
         bandera = BANDERAS.get(p.get("bandera"), p.get("bandera") or "sin dato")
         vel = p.get("velocidad")
@@ -466,21 +485,21 @@ header{padding:16px 0;border-bottom:1px solid var(--linea);display:flex;align-it
 /* Franja superior como la de SIWA: siempre clara, también en modo oscuro, porque el texto del logo
    de la Fundación es azul oscuro y desaparecería sobre un fondo oscuro. */
 .topbar{background:var(--papel);color:var(--fg);border-bottom:1px solid var(--linea);margin-inline:-16px}
-.topbar-in{max-width:1480px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.topbar-in{max-width:1480px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:20px;min-width:0}
 .marca-enlace{display:flex;align-items:center}
 .logo{height:44px;width:auto;display:block}
 .logo.oscuro{display:none}
 :root[data-theme="dark"] .aviso{background:var(--gris-acero)}
 :root[data-theme="dark"] .logo.claro{display:none}
 :root[data-theme="dark"] .logo.oscuro{display:block}
-.sep{width:1px;height:30px;background:var(--linea);flex:0 0 auto}
-.inicio{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--fg)}
+.sep{width:1px;height:38px;background:var(--linea);flex:0 0 auto}
+.inicio{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--fg)}
 .inicio .isotipo{color:var(--acento-texto)}
-.inicio .nombre{display:block;font-weight:700;letter-spacing:-0.02em;font-size:21px;line-height:1.05}
+.inicio .nombre{display:block;font-weight:700;letter-spacing:-0.02em;font-size:22px;line-height:1.15;margin-bottom:4px}
 .inicio small{display:block;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--gris-acero);line-height:1.25}
-.franja-derecha{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
-.topbar nav{gap:16px}
+.franja-derecha{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.topbar nav{gap:26px}
 .topbar nav a{color:var(--gris-acero)}
 .topbar nav a:hover{color:var(--fg)}
 .ultima{font-size:12px;color:var(--gris-acero);white-space:nowrap}
@@ -535,7 +554,15 @@ svg.mapa[data-sat] .prov{display:none}
 .zona-actor{fill:var(--naranja);fill-opacity:.14;stroke:var(--naranja);stroke-opacity:.55;stroke-width:1.6px;stroke-dasharray:5 5;cursor:pointer}
 .zona-actor:hover{fill-opacity:.26}
 .punto{fill:#fff;stroke:var(--azul-noche);stroke-width:1.1}
-.clicable{cursor:pointer}
+.clicable,.clicable *{cursor:pointer}
+.amar{display:none}
+svg.zoom-a .amar-a,svg.zoom-b .amar-b{display:inline}
+.amar-pu .m{fill:#667B89;stroke:#F9F9F7;stroke-width:.9}
+.amar-mu .m{fill:#C6C6C5;stroke:#07131E;stroke-width:.8;transform:scale(.8)}
+.amar-ra .m{fill:transparent;stroke:#C6C6C5;stroke-width:1.1;transform:scale(.8)}
+.cuad{width:9px;height:9px;display:inline-block;flex:0 0 auto}
+.hit{fill:transparent;stroke:none;pointer-events:all}
+.clicable:hover .hit{fill:rgba(249,249,247,.18)}
 .poi.puerto .punto{fill:var(--gris-acero)}
 .poi.tf .punto{fill:var(--naranja)}
 .buque{fill:#ffd400;stroke:var(--azul-noche);stroke-width:.8}
@@ -593,6 +620,7 @@ svg.mapa[data-sat] .prov{display:none}
 .cover-riesgo{background:linear-gradient(135deg,#7a3300,var(--naranja))}
 .cover-zona{background:linear-gradient(135deg,#5c1f00,var(--naranja))}
 .cover-estado{background:linear-gradient(135deg,#0b2a66,#2f7bff)}
+.cover-amarre{background:linear-gradient(135deg,#00121E,#667B89)}
 .cover-buque{background:linear-gradient(135deg,var(--azul-noche),#223241)}
 .panel .cerrar{position:absolute;top:12px;right:12px;background:rgba(255,255,255,.18);border:none;
   color:#fff;font-size:15px;cursor:pointer;width:26px;height:26px;border-radius:50%;z-index:1}
@@ -727,6 +755,7 @@ footer{flex-direction:column}
     __rio_parana__
     __rio_paraguay__
     __zonas__
+    __amarres__
     __poi__
     __grupos_hora__
     __riesgos__
@@ -749,6 +778,9 @@ footer{flex-direction:column}
   <span><span class="sw" style="background:var(--gris-acero)"></span>Ríos (trazado real)</span>
   <span><span class="sw" style="background:#f0c674"></span>Ruta troncal</span>
   <span><span class="sw" style="background:var(--naranja);opacity:.8"></span>Corredor bioceánico (esquemático)</span>
+  <span><span class="cuad" style="background:#667B89"></span>Puerto, terminal, ferry o dársena (OpenStreetMap)</span>
+  <span><span class="cuad" style="background:#C6C6C5"></span>Muelle, atracadero o marina</span>
+  <span><span class="cuad" style="background:transparent;border:1.5px solid #C6C6C5"></span>Rampa o amarradero · se ven al acercar</span>
   <span><span class="dot" style="background:#fff"></span>Ciudad</span>
   <span><span class="dot" style="background:var(--gris-acero)"></span>Terminal portuaria</span>
   <span><span class="dot" style="background:#ffd400"></span>Carga</span>
@@ -773,6 +805,7 @@ footer{flex-direction:column}
     <li><b>Embarcaciones.</b> Posiciones que transmiten los propios buques por AIS, recopiladas por redes colaborativas (AISHub y aisstream.io, a través de Open Waters AIS), una captura por hora. La identidad es la que transmite cada buque. <b>Límite:</b> el AIS no cubre el río alto (Alto Paraguay y el tramo Asunción–Corrientes no devolvieron datos), y lo que no transmite AIS no aparece: un mapa sin buques en un tramo no significa que no haya tráfico.</li>
     <li><b>Triángulo azul — embarcación del Estado.</b> Se marca cuando el propio buque transmite el tipo militar (35) o de fuerzas del orden (55), o por el prefijo de su nombre (ARA, GC). La fuerza que aparece en la ficha está <b>inferida</b> del nombre, no transmitida. Hoy sólo se detectan unidades argentinas; no es que no existan otras, sino que no las vemos.</li>
     <li><b>Fotos.</b> Tres niveles, y cada ficha dice cuál es: foto verificada por el número IMO del buque; coincidencia por nombre, sólo cuando el buque no transmite IMO; o imagen ilustrativa de su tipo, que <b>no es una foto de ese buque</b>. Autor y licencia en cada una.</li>
+    <li><b>Puertos, muelles, amarraderos y rampas.</b> Salen de OpenStreetMap, una instantánea del __fecha_amarres__: son aportes de colaboradores, <b>fuente única</b>, y pueden faltar, estar desactualizados o ser privados; que figuren no significa que operen hoy. Hay unos 2.900 puntos, la mayoría muelles pequeños del Delta, y por eso se muestran por niveles al acercar el mapa. OpenStreetMap casi no registra «caletas» en este corredor: si conocés una, abrí un pedido de corrección.</li>
     <li><b>Puertos y ciudades.</b> Posición geocodificada con OpenStreetMap; el tipo de terminal figura sólo donde hay fuente (Bolsa de Comercio de Rosario).</li>
     <li><b>Zonas y riesgos.</b> Cada afirmación lleva dos fuentes independientes o se marca como fuente única. Las zonas son departamentos porque la fuente no da un punto exacto.</li>
     <li><b>Satélite.</b> Imágenes de NASA GIBS (GOES-East y VIIRS), capturas con su fecha y hora: no es tiempo real. Con esa resolución no se ven buques ni muelles; sirve para nubes, humo y sedimento.</li>
@@ -918,9 +951,6 @@ const SAT = __sat_meta_json__;
     const m = RE_T.exec(g.getAttribute("transform"));
     if (m) items.push({tipo:"g", el:g, x:+m[1], y:+m[2], r:(m[3]===undefined ? null : +m[3])});
   });
-  svg.querySelectorAll("circle.buque").forEach(function(c){
-    items.push({tipo:"c", el:c, r0:+c.getAttribute("r")});
-  });
   svg.querySelectorAll(".etq-g").forEach(function(g){
     const l = g.querySelector(".etq-linea");
     items.push({tipo:"e", el:g, x:+l.getAttribute("x1"), y:+l.getAttribute("y1")});
@@ -953,6 +983,8 @@ const SAT = __sat_meta_json__;
     svg.setAttribute("viewBox", vb.x+" "+vb.y+" "+vb.w+" "+vb.h);
     // más detalle (nombres de ciudad/puerto) sólo a partir de 2.3x de zoom
     svg.classList.toggle("zoom-cerca", (W0/vb.w) > 2.3);
+    svg.classList.toggle("zoom-a", (W0/vb.w) > 1.7);
+    svg.classList.toggle("zoom-b", (W0/vb.w) > 3.8);
     escalar();
     solicitarDeclutter();
   }
@@ -1033,6 +1065,21 @@ INFO.forEach(function(x){ porId[x.id] = x; });
 // Sin foto real del lugar — no tenemos fuente verificada para eso. En su
 // lugar, un ícono por categoría sobre un degradé de marca, honesto sobre
 // lo que es (una categoría, no una fotografía del sitio).
+const AMARRES = __amarres_json__;
+const ETIQ_AM = {puerto:"Puerto", area_portuaria:"Área portuaria o terminal", ferry:"Terminal de ferry", marina:"Marina o club náutico",
+  darsena:"Dársena o astillero", atracadero:"Atracadero", muelle:"Muelle", rampa:"Rampa de botadura", amarradero:"Amarradero"};
+function infoAmarre(id){
+  if (id.indexOf("am") !== 0) return null;
+  const a = AMARRES[+id.slice(2)]; if (!a) return null;
+  const x = a[4] || {}, lin = [ETIQ_AM[a[0]] || "Infraestructura"];
+  if (x.operator) lin.push("Operador según OpenStreetMap: " + x.operator);
+  if (x.access) lin.push("Acceso según OpenStreetMap: " + ({private:"privado", permissive:"permitido", yes:"público", no:"cerrado"}[x.access] || x.access));
+  if (x.ref) lin.push("Referencia: " + x.ref);
+  lin.push("Es un aporte colaborativo: puede estar incompleto o desactualizado, y no indica que opere hoy");
+  return {categoria: ETIQ_AM[a[0]] + " (OpenStreetMap)", titulo: a[1] || (ETIQ_AM[a[0]] + " sin nombre en OpenStreetMap"),
+    tipo: lin.join(" · "), fuente: "OpenStreetMap (© colaboradores, ODbL), instantánea del __fecha_amarres__ · fuente única",
+    clase: "amarre", coord: a[3].toFixed(4) + ", " + a[2].toFixed(4), foto: null};
+}
 const ICONOS = {
   puerto: '<path d="M12 3v7m0 0l2.5-1.6M12 10l-2.5-1.6"/><path d="M5 11a7 7 0 0014 0" /><path d="M3 18h18" /><circle cx="12" cy="6" r="1.4" fill="#fff"/>',
   ciudad: '<rect x="6" y="3" width="12" height="18" rx="1"/><path d="M9 7h1.5M13.5 7H15M9 11h1.5M13.5 11H15M9 15h1.5M13.5 15H15"/>',
@@ -1040,6 +1087,7 @@ const ICONOS = {
   riesgo: '<path d="M12 3 22 20H2z"/><path d="M12 9v5"/><circle cx="12" cy="17" r="0.9" fill="#fff"/>',
   zona: '<path d="M12 3 22 20H2z"/><path d="M12 9v5"/><circle cx="12" cy="17" r="0.9" fill="#fff"/>',
   estado: '<path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/>',
+  amarre: '<path d="M12 3v13m0 0l-4-3m4 3l4-3"/><path d="M5 14a7 7 0 0014 0"/><circle cx="12" cy="5" r="1.6" fill="#fff"/>',
   buque: '<path d="M4 16h16l-2.5 5h-11z"/><path d="M12 16V6"/><path d="M12 6l5 4h-5z"/>'
 };
 
@@ -1063,7 +1111,7 @@ document.querySelectorAll(".pregunta .barra i").forEach(function(b){
 
 document.querySelectorAll(".clicable").forEach(function(el){
   el.addEventListener("click", function(){
-    const info = porId[el.dataset.i];
+    const info = porId[el.dataset.i] || infoAmarre(el.dataset.i);
     if (!info) return;
     const clase = info.clase || "ciudad";
     pCov.className = "panel-cover cover-" + clase + (info.foto ? " con-foto" : "");
@@ -1140,6 +1188,9 @@ SUST = {
     "zonas": "\n    ".join(zonas_svg),
     "zonas_etq": "\n    ".join(zonas_etq_svg),
     "poi": "\n    ".join(poi_svg),
+    "amarres": "\n    ".join(amarres_svg),
+    "amarres_json": json.dumps(amarres_json, ensure_ascii=False, separators=(",", ":")),
+    "fecha_amarres": _AM["fecha"],
     "poi_etq": "\n    ".join(poi_etq_svg),
     "grupos_hora": "\n    ".join(grupos_hora),
     "riesgos": "\n    ".join(riesgos_svg),
