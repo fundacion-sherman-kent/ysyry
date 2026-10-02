@@ -231,6 +231,11 @@ def contexto_poi(nombre):
     iso, unidad = UNIDAD_POI[nombre]
     return _siwa.lineas(_FUENTES_SIWA, iso, unidad), "%s (%s)" % (unidad, iso)
 
+# --- alertas tempranas de FEMÓNOE sobre el corredor (se leen de su sitio público al construir) ---
+import alertas_femonoe as _fem
+import datetime as _dt
+_ALERTAS_FEM = _fem.bloque_html(_fem.consultar(), _dt.datetime.now(_dt.timezone.utc).strftime("%Y-%m-%d"))
+
 # --- puntos de interés: clicables, con panel ---
 poi_svg = []
 poi_etq_svg = []
@@ -702,6 +707,9 @@ nav a:hover{color:var(--fg)}
 .prospectiva{padding:26px 0 8px}
 .prospectiva h2{font-weight:700;letter-spacing:-0.02em;font-size:19px;margin:0 0 4px}
 .prospectiva .sub{color:var(--gris-acero);font-size:12.5px;margin:0 0 16px}
+.alertas-fem{margin:0 0 10px;padding-left:18px;max-width:880px}
+.alertas-fem li{font-size:13px;line-height:1.55;margin:0 0 10px}
+.alertas-fem .gris{color:var(--gris-acero);font-size:12px}
 .metodo{padding:8px 0 20px}
 .metodo a{color:var(--acento-texto);text-decoration:underline}
 .hero .estados{margin:-6px 0 14px;font-size:13px;color:var(--gris-acero)}
@@ -831,6 +839,8 @@ footer{flex-direction:column}
   <span><span class="dot" style="background:var(--naranja)"></span>Hecho informado (piratería) · ciudades de la Triple Frontera, nodo de contexto: no implica actividad ilícita</span>
   <span><span class="sw" style="background:var(--naranja);opacity:.3"></span>Zona con presencia atribuida (según fuentes citadas)</span>
 </div>
+
+__alertas_fem__
 
 <div class="prospectiva" id="prospectiva">
   <h2>Prospectiva — todavía no publicamos estimaciones</h2>
@@ -1249,6 +1259,7 @@ SUST = {
     "amarres": "\n    ".join(amarres_svg),
     "amarres_json": json.dumps(amarres_json, ensure_ascii=False, separators=(",", ":")),
     "fecha_amarres": _AM["fecha"],
+    "alertas_fem": _ALERTAS_FEM,
     "poi_etq": "\n    ".join(poi_etq_svg),
     "grupos_hora": "\n    ".join(grupos_hora),
     "riesgos": "\n    ".join(riesgos_svg),
