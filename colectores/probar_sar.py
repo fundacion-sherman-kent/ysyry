@@ -65,11 +65,32 @@ def aplanar(resp):
     return filas
 
 
+def sondear_fechas(token):
+    """¿Hasta cuándo tiene datos el conjunto? Ventanas de 30 días, mar y Delta."""
+    hoy = datetime.date.today()
+    ventanas = [(hoy - datetime.timedelta(days=d + 30), hoy - datetime.timedelta(days=d))
+                for d in (3, 60, 120, 240, 365, 540, 730)]
+    for nombre in ("CONTROL mar: Atlántico frente a Uruguay y Buenos Aires", "Delta y Rosario (río inferior)"):
+        print("
+== %s ==" % nombre, flush=True)
+        for desde, hasta in ventanas:
+            estado, resp = consultar(token, AREAS[nombre], desde, hasta, "false")
+            if estado != 200 or not isinstance(resp, dict):
+                print("  %s a %s -> HTTP %s: %s" % (desde, hasta, estado, str(resp)[:160]), flush=True)
+                continue
+            filas = aplanar(resp)
+            total = sum(float(f.get("detections", f.get("value", 0)) or 0) for f in filas)
+            print("  %s a %s -> %d celdas, %.0f detecciones sin AIS" % (desde, hasta, len(filas), total), flush=True)
+    return 0
+
+
 def main():
     token = os.environ.get("GFW_TOKEN", "")
     if not token:
         print("Falta GFW_TOKEN")
         return 2
+    if os.environ.get("FECHAS") == "1":
+        return sondear_fechas(token)
     dias = int(os.environ.get("DIAS", "30"))
     hasta = datetime.date.today() - datetime.timedelta(days=3)  # los últimos días suelen estar incompletos
     desde = hasta - datetime.timedelta(days=dias)

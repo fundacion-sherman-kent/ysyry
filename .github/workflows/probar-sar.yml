@@ -3,7 +3,11 @@ name: "Sonda de detecciones por radar (GFW)"
 # Manual. Consulta la API de Global Fishing Watch y sólo imprime conteos
 # agregados (ninguna identidad); sirve para decidir si el río está cubierto.
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      fechas:
+        description: "1 = sondear hasta qué fecha hay datos"
+        default: "0"
 
 permissions:
   contents: read
@@ -17,4 +21,5 @@ jobs:
       - name: Consultar
         env:
           GFW_TOKEN: ${{ secrets.GFW_TOKEN }}
+          FECHAS: ${{ inputs.fechas }}
         run: python3 -u colectores/probar_sar.py
