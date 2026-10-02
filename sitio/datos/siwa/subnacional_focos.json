@@ -1,0 +1,1138 @@
+{
+  "procedencia": {
+    "colector": "subnacional_focos",
+    "capa": "publico",
+    "obtenido_en": "2026-10-02T13:03:03+00:00",
+    "fuente": {
+      "nombre": "Focos de calor por unidad de primer orden — NASA FIRMS agregado sobre geoBoundaries ADM1",
+      "url": "https://firms.modaps.eosdis.nasa.gov/"
+    },
+    "calificacion": {
+      "fiabilidad": "A",
+      "credibilidad": 2,
+      "corroborado": false,
+      "nota": "Detección satelital de NASA cruzada con geometrías abiertas. Credibilidad 2: un foco es una anomalía térmica detectada, no un incendio confirmado ni su tamaño, y la asignación a la unidad depende de la precisión de la geometría simplificada."
+    },
+    "vacios_declarados": [
+      "UN FOCO NO ES UN INCENDIO CONFIRMADO ni mide su tamaño o daño: es una detección de anomalía térmica por satélite.",
+      "ES RECUENTO POR UNIDAD, NO TASA, y en la VENTANA de pocos días de FIRMS, no un año.",
+      "La asignación usa la geometría SIMPLIFICADA de geoBoundaries: un punto sobre el límite puede caer en la unidad vecina. Los puntos fuera de toda unidad no se cuentan."
+    ],
+    "restriccion_de_uso": null,
+    "cantidad": 23,
+    "atribucion": {
+      "obra": "SIWA — Reporte de situación de América Latina y el Caribe",
+      "autor": "Fundación Sherman Kent — Oficina de Generación de Inteligencia",
+      "sitio": "https://siwa.fundacionkent.org/sitio/index.html",
+      "uso": "Acceso libre y gratuito. El aporte de la Fundación —recolección, calificación de fuentes y declaración de vacíos— se publica bajo licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/. Se permite reproducir, redistribuir y derivar citando la fuente de este modo: «SIWA, Fundación Sherman Kent». Los datos de base pertenecen a los productores citados en cada indicador y conservan la licencia de su fuente; cuando una fuente impone condiciones adicionales, se declaran en «restriccion_de_uso».",
+      "licencia": "CC BY 4.0",
+      "licencia_url": "https://creativecommons.org/licenses/by/4.0/",
+      "no_implica": "La cita no implica aval de la Fundación sobre el uso que se haga de estos datos, ni sobre las conclusiones ajenas."
+    }
+  },
+  "registros": [
+    {
+      "iso": "ARG",
+      "pais": "Argentina",
+      "bloque": "Cono Sur",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 18,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Corrientes",
+          "focos": 184
+        },
+        {
+          "nombre": "Santa Fe",
+          "focos": 83
+        },
+        {
+          "nombre": "Santiago del Estero",
+          "focos": 78
+        },
+        {
+          "nombre": "Chaco",
+          "focos": 46
+        },
+        {
+          "nombre": "Buenos Aires",
+          "focos": 37
+        },
+        {
+          "nombre": "Mendoza",
+          "focos": 26
+        },
+        {
+          "nombre": "Córdoba",
+          "focos": 23
+        },
+        {
+          "nombre": "Formosa",
+          "focos": 23
+        },
+        {
+          "nombre": "Neuquén",
+          "focos": 22
+        },
+        {
+          "nombre": "San Juan",
+          "focos": 22
+        },
+        {
+          "nombre": "San Luis",
+          "focos": 16
+        },
+        {
+          "nombre": "Entre Ríos",
+          "focos": 11
+        },
+        {
+          "nombre": "La Rioja",
+          "focos": 11
+        },
+        {
+          "nombre": "Catamarca",
+          "focos": 11
+        },
+        {
+          "nombre": "Misiones",
+          "focos": 2
+        },
+        {
+          "nombre": "Santa Cruz",
+          "focos": 1
+        },
+        {
+          "nombre": "Tucumán",
+          "focos": 1
+        },
+        {
+          "nombre": "Salta",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "BLZ",
+      "pais": "Belice",
+      "bloque": "México y Centroamérica",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 4,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Corozal",
+          "focos": 10
+        },
+        {
+          "nombre": "Orange Walk",
+          "focos": 9
+        },
+        {
+          "nombre": "Belize",
+          "focos": 3
+        },
+        {
+          "nombre": "Cayo",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "BOL",
+      "pais": "Bolivia",
+      "bloque": "Andina",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 9,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Beni",
+          "focos": 56
+        },
+        {
+          "nombre": "La Paz",
+          "focos": 31
+        },
+        {
+          "nombre": "Santa Cruz",
+          "focos": 15
+        },
+        {
+          "nombre": "Potosí",
+          "focos": 12
+        },
+        {
+          "nombre": "Oruro",
+          "focos": 6
+        },
+        {
+          "nombre": "Cochabamba",
+          "focos": 1
+        },
+        {
+          "nombre": "Pando",
+          "focos": 1
+        },
+        {
+          "nombre": "Tarija",
+          "focos": 1
+        },
+        {
+          "nombre": "Chuquisaca",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "BRA",
+      "pais": "Brasil",
+      "bloque": "Cono Sur",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 25,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Para",
+          "focos": 5022
+        },
+        {
+          "nombre": "Bahia",
+          "focos": 3265
+        },
+        {
+          "nombre": "Piaui",
+          "focos": 1400
+        },
+        {
+          "nombre": "Maranhao",
+          "focos": 1328
+        },
+        {
+          "nombre": "Mato Grosso",
+          "focos": 1288
+        },
+        {
+          "nombre": "Minas Gerais",
+          "focos": 1281
+        },
+        {
+          "nombre": "Tocantins",
+          "focos": 1004
+        },
+        {
+          "nombre": "Amazonas",
+          "focos": 835
+        },
+        {
+          "nombre": "Goias",
+          "focos": 371
+        },
+        {
+          "nombre": "Amapa",
+          "focos": 141
+        },
+        {
+          "nombre": "Acre",
+          "focos": 124
+        },
+        {
+          "nombre": "Pernambuco",
+          "focos": 88
+        },
+        {
+          "nombre": "Rondonia",
+          "focos": 76
+        },
+        {
+          "nombre": "Espirito Santo",
+          "focos": 74
+        },
+        {
+          "nombre": "Ceara",
+          "focos": 73
+        },
+        {
+          "nombre": "Roraima",
+          "focos": 66
+        },
+        {
+          "nombre": "Sao Paulo",
+          "focos": 55
+        },
+        {
+          "nombre": "Alagoas",
+          "focos": 30
+        },
+        {
+          "nombre": "Paraiba",
+          "focos": 29
+        },
+        {
+          "nombre": "Rio de Janeiro",
+          "focos": 21
+        },
+        {
+          "nombre": "Distrito Federal",
+          "focos": 15
+        },
+        {
+          "nombre": "Sergipe",
+          "focos": 10
+        },
+        {
+          "nombre": "Rio Grande do Norte",
+          "focos": 8
+        },
+        {
+          "nombre": "Parana",
+          "focos": 4
+        },
+        {
+          "nombre": "Rio Grande do Sul",
+          "focos": 2
+        }
+      ]
+    },
+    {
+      "iso": "CHL",
+      "pais": "Chile",
+      "bloque": "Cono Sur",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 10,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Región de Antofagasta",
+          "focos": 13
+        },
+        {
+          "nombre": "Región de Arica y Parinacota",
+          "focos": 3
+        },
+        {
+          "nombre": "Región Metropolitana de Santiago",
+          "focos": 3
+        },
+        {
+          "nombre": "Región de Ñuble",
+          "focos": 3
+        },
+        {
+          "nombre": "Región de Atacama",
+          "focos": 2
+        },
+        {
+          "nombre": "Región del Libertador Bernardo O'Higgins",
+          "focos": 2
+        },
+        {
+          "nombre": "Región de Coquimbo",
+          "focos": 2
+        },
+        {
+          "nombre": "Región de Valparaíso",
+          "focos": 1
+        },
+        {
+          "nombre": "Región del Maule",
+          "focos": 1
+        },
+        {
+          "nombre": "Región de Tarapacá",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "COL",
+      "pais": "Colombia",
+      "bloque": "Andina",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 24,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Vichada",
+          "focos": 125
+        },
+        {
+          "nombre": "Meta",
+          "focos": 73
+        },
+        {
+          "nombre": "Putumayo",
+          "focos": 58
+        },
+        {
+          "nombre": "Antioquia",
+          "focos": 20
+        },
+        {
+          "nombre": "Bolívar",
+          "focos": 19
+        },
+        {
+          "nombre": "Cesar",
+          "focos": 17
+        },
+        {
+          "nombre": "Caquetá",
+          "focos": 14
+        },
+        {
+          "nombre": "Casanare",
+          "focos": 13
+        },
+        {
+          "nombre": "Norte de Santander",
+          "focos": 12
+        },
+        {
+          "nombre": "Tolima",
+          "focos": 10
+        },
+        {
+          "nombre": "Santander",
+          "focos": 9
+        },
+        {
+          "nombre": "La Guajira",
+          "focos": 6
+        },
+        {
+          "nombre": "Boyacá",
+          "focos": 6
+        },
+        {
+          "nombre": "Cauca",
+          "focos": 6
+        },
+        {
+          "nombre": "Guaviare",
+          "focos": 6
+        },
+        {
+          "nombre": "Cundinamarca",
+          "focos": 6
+        },
+        {
+          "nombre": "Arauca",
+          "focos": 6
+        },
+        {
+          "nombre": "Vaupés",
+          "focos": 4
+        },
+        {
+          "nombre": "Chocó",
+          "focos": 4
+        },
+        {
+          "nombre": "Amazonas",
+          "focos": 3
+        },
+        {
+          "nombre": "Magdalena",
+          "focos": 3
+        },
+        {
+          "nombre": "Huila",
+          "focos": 1
+        },
+        {
+          "nombre": "Córdoba",
+          "focos": 1
+        },
+        {
+          "nombre": "Sucre",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "CRI",
+      "pais": "Costa Rica",
+      "bloque": "México y Centroamérica",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 1,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Provincia Heredia",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "CUB",
+      "pais": "Cuba",
+      "bloque": "Caribe hispano y Haití",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 3,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Holguín",
+          "focos": 2
+        },
+        {
+          "nombre": "Guantánamo",
+          "focos": 1
+        },
+        {
+          "nombre": "Matanzas",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "DOM",
+      "pais": "República Dominicana",
+      "bloque": "Caribe hispano y Haití",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 6,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Santiago Rodríguez",
+          "focos": 2
+        },
+        {
+          "nombre": "La Altagracia",
+          "focos": 2
+        },
+        {
+          "nombre": "Independencia",
+          "focos": 2
+        },
+        {
+          "nombre": "Azua",
+          "focos": 2
+        },
+        {
+          "nombre": "Valverde",
+          "focos": 2
+        },
+        {
+          "nombre": "Santiago",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "ECU",
+      "pais": "Ecuador",
+      "bloque": "Andina",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 14,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Morona Santiago",
+          "focos": 52
+        },
+        {
+          "nombre": "Orellana",
+          "focos": 24
+        },
+        {
+          "nombre": "Sucumbios",
+          "focos": 22
+        },
+        {
+          "nombre": "Chimborazo",
+          "focos": 11
+        },
+        {
+          "nombre": "Napo",
+          "focos": 10
+        },
+        {
+          "nombre": "Loja",
+          "focos": 10
+        },
+        {
+          "nombre": "Imbabura",
+          "focos": 6
+        },
+        {
+          "nombre": "Zamora Chinchipe",
+          "focos": 4
+        },
+        {
+          "nombre": "Tungurahua",
+          "focos": 3
+        },
+        {
+          "nombre": "Manabi",
+          "focos": 2
+        },
+        {
+          "nombre": "Santa Elena",
+          "focos": 1
+        },
+        {
+          "nombre": "Pastaza",
+          "focos": 1
+        },
+        {
+          "nombre": "Carchi",
+          "focos": 1
+        },
+        {
+          "nombre": "Los Ríos",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "GTM",
+      "pais": "Guatemala",
+      "bloque": "México y Centroamérica",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 4,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Chimaltenango",
+          "focos": 7
+        },
+        {
+          "nombre": "Zacapa",
+          "focos": 1
+        },
+        {
+          "nombre": "Izabal",
+          "focos": 1
+        },
+        {
+          "nombre": "Petén",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "GUY",
+      "pais": "Guyana",
+      "bloque": "Guayanas",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 8,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Upper Takutu-Upper Essequibo",
+          "focos": 126
+        },
+        {
+          "nombre": "East Berbice-Corentyne",
+          "focos": 28
+        },
+        {
+          "nombre": "Mahaica-Berbice",
+          "focos": 16
+        },
+        {
+          "nombre": "Demerara-Mahaica",
+          "focos": 11
+        },
+        {
+          "nombre": "Upper Demerara-Berbice",
+          "focos": 10
+        },
+        {
+          "nombre": "Cuyuni-Mazaruni",
+          "focos": 7
+        },
+        {
+          "nombre": "Essequibo Islands-West Demerara",
+          "focos": 6
+        },
+        {
+          "nombre": "Potaro-Siparuni",
+          "focos": 3
+        }
+      ]
+    },
+    {
+      "iso": "HND",
+      "pais": "Honduras",
+      "bloque": "México y Centroamérica",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 5,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Colón",
+          "focos": 6
+        },
+        {
+          "nombre": "Cortés",
+          "focos": 5
+        },
+        {
+          "nombre": "Santa Bárbara",
+          "focos": 3
+        },
+        {
+          "nombre": "Olancho",
+          "focos": 2
+        },
+        {
+          "nombre": "Yoro",
+          "focos": 2
+        }
+      ]
+    },
+    {
+      "iso": "HTI",
+      "pais": "Haití",
+      "bloque": "Caribe hispano y Haití",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 1,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Artibonite Department",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "JAM",
+      "pais": "Jamaica",
+      "bloque": "Caribe oriental",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 1,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Clarendon",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "MEX",
+      "pais": "México",
+      "bloque": "México y Centroamérica",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 21,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Tabasco",
+          "focos": 321
+        },
+        {
+          "nombre": "Veracruz de Ignacio de la Llave",
+          "focos": 86
+        },
+        {
+          "nombre": "Chiapas",
+          "focos": 77
+        },
+        {
+          "nombre": "Campeche",
+          "focos": 20
+        },
+        {
+          "nombre": "Tamaulipas",
+          "focos": 15
+        },
+        {
+          "nombre": "Quintana Roo",
+          "focos": 12
+        },
+        {
+          "nombre": "Sonora",
+          "focos": 11
+        },
+        {
+          "nombre": "Guanajuato",
+          "focos": 10
+        },
+        {
+          "nombre": "Baja California",
+          "focos": 9
+        },
+        {
+          "nombre": "Oaxaca",
+          "focos": 5
+        },
+        {
+          "nombre": "San Luis Potosi",
+          "focos": 5
+        },
+        {
+          "nombre": "Chihuahua",
+          "focos": 3
+        },
+        {
+          "nombre": "Jalisco",
+          "focos": 3
+        },
+        {
+          "nombre": "Nuevo Leon",
+          "focos": 2
+        },
+        {
+          "nombre": "Coahuila de Zaragoza",
+          "focos": 2
+        },
+        {
+          "nombre": "Puebla",
+          "focos": 2
+        },
+        {
+          "nombre": "Hidalgo",
+          "focos": 2
+        },
+        {
+          "nombre": "Sinaloa",
+          "focos": 1
+        },
+        {
+          "nombre": "Guerrero",
+          "focos": 1
+        },
+        {
+          "nombre": "Nayarit",
+          "focos": 1
+        },
+        {
+          "nombre": "Yucatan",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "PER",
+      "pais": "Perú",
+      "bloque": "Andina",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 21,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Ancash",
+          "focos": 114
+        },
+        {
+          "nombre": "Junín",
+          "focos": 105
+        },
+        {
+          "nombre": "San Martín",
+          "focos": 93
+        },
+        {
+          "nombre": "Loreto",
+          "focos": 91
+        },
+        {
+          "nombre": "Lima",
+          "focos": 67
+        },
+        {
+          "nombre": "Cusco",
+          "focos": 66
+        },
+        {
+          "nombre": "Cajamarca",
+          "focos": 63
+        },
+        {
+          "nombre": "Huancavelica",
+          "focos": 54
+        },
+        {
+          "nombre": "Ayacucho",
+          "focos": 53
+        },
+        {
+          "nombre": "Amazonas",
+          "focos": 48
+        },
+        {
+          "nombre": "La Libertad",
+          "focos": 47
+        },
+        {
+          "nombre": "Apurímac",
+          "focos": 39
+        },
+        {
+          "nombre": "Ucayali",
+          "focos": 35
+        },
+        {
+          "nombre": "Arequipa",
+          "focos": 32
+        },
+        {
+          "nombre": "Huánuco",
+          "focos": 30
+        },
+        {
+          "nombre": "Pasco",
+          "focos": 29
+        },
+        {
+          "nombre": "Madre de Dios",
+          "focos": 27
+        },
+        {
+          "nombre": "Puno",
+          "focos": 19
+        },
+        {
+          "nombre": "Moquegua",
+          "focos": 7
+        },
+        {
+          "nombre": "Ica",
+          "focos": 5
+        },
+        {
+          "nombre": "Lambayeque",
+          "focos": 4
+        }
+      ]
+    },
+    {
+      "iso": "PRY",
+      "pais": "Paraguay",
+      "bloque": "Cono Sur",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 6,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "PRESIDENTE HAYES",
+          "focos": 70
+        },
+        {
+          "nombre": "ÑEEMBUCU",
+          "focos": 8
+        },
+        {
+          "nombre": "MISIONES",
+          "focos": 3
+        },
+        {
+          "nombre": "PARAGUARI",
+          "focos": 3
+        },
+        {
+          "nombre": "ALTO PARAGUAY",
+          "focos": 2
+        },
+        {
+          "nombre": "CAAZAPA",
+          "focos": 2
+        }
+      ]
+    },
+    {
+      "iso": "SLV",
+      "pais": "El Salvador",
+      "bloque": "México y Centroamérica",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 2,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "San Vicente",
+          "focos": 2
+        },
+        {
+          "nombre": "Departamento de Santa Ana",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "SUR",
+      "pais": "Surinam",
+      "bloque": "Guayanas",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 9,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Sipaliwini",
+          "focos": 39
+        },
+        {
+          "nombre": "Marowijne",
+          "focos": 31
+        },
+        {
+          "nombre": "Brokopondo",
+          "focos": 30
+        },
+        {
+          "nombre": "Para",
+          "focos": 16
+        },
+        {
+          "nombre": "Wanica",
+          "focos": 6
+        },
+        {
+          "nombre": "Saramacca",
+          "focos": 6
+        },
+        {
+          "nombre": "Commewijne",
+          "focos": 4
+        },
+        {
+          "nombre": "Nickerie",
+          "focos": 4
+        },
+        {
+          "nombre": "Paramaribo",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "TTO",
+      "pais": "Trinidad y Tobago",
+      "bloque": "Caribe oriental",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 1,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Mayaro/Rio Claro",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "URY",
+      "pais": "Uruguay",
+      "bloque": "Cono Sur",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 2,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Canelones",
+          "focos": 2
+        },
+        {
+          "nombre": "Rivera",
+          "focos": 1
+        }
+      ]
+    },
+    {
+      "iso": "VEN",
+      "pais": "Venezuela",
+      "bloque": "Andina",
+      "nombre_unidad": "unidad de primer orden",
+      "cuantas": 15,
+      "organismo": "NASA FIRMS (detección satelital) + geoBoundaries (geometrías)",
+      "licencia": "NASA (dominio público) + geoBoundaries (CC BY)",
+      "unidades": [
+        {
+          "nombre": "Monagas",
+          "focos": 284
+        },
+        {
+          "nombre": "Anzoátegui",
+          "focos": 137
+        },
+        {
+          "nombre": "Bolívar",
+          "focos": 78
+        },
+        {
+          "nombre": "Falcón",
+          "focos": 35
+        },
+        {
+          "nombre": "Zulia",
+          "focos": 22
+        },
+        {
+          "nombre": "Apure",
+          "focos": 22
+        },
+        {
+          "nombre": "Guárico",
+          "focos": 13
+        },
+        {
+          "nombre": "Trujillo",
+          "focos": 6
+        },
+        {
+          "nombre": "Amazonas",
+          "focos": 6
+        },
+        {
+          "nombre": "Portuguesa",
+          "focos": 4
+        },
+        {
+          "nombre": "Carabobo",
+          "focos": 3
+        },
+        {
+          "nombre": "Sucre",
+          "focos": 2
+        },
+        {
+          "nombre": "Táchira",
+          "focos": 2
+        },
+        {
+          "nombre": "Miranda",
+          "focos": 2
+        },
+        {
+          "nombre": "Lara",
+          "focos": 2
+        }
+      ]
+    }
+  ],
+  "resumen": {
+    "estados_con_focos_por_unidad": 23,
+    "unidades_con_focos": 210,
+    "puntos_fuera_del_padron": 938,
+    "sin_geometria": [],
+    "ventana_dias": 3,
+    "es_prototipo": true,
+    "capa_subnacional": "APAGADA — alimenta el prototipo, no el mapa",
+    "consultado": "2026-10-02T13:03:03+00:00"
+  }
+}

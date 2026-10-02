@@ -203,6 +203,32 @@ for i, z in enumerate(d["actores"]["zonas"]):
 FAMILIA_PUERTO = "comercio"
 FAMILIA_TIMBUES_EXTRA = "regulatorio"  # Timbúes es además el límite de la licitación
 
+# --- contexto por provincia/departamento (SIWA, CC BY 4.0): homicidios oficiales, ACLED y focos de calor ---
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import contexto_siwa as _siwa
+_FUENTES_SIWA = _siwa.cargar(D / "siwa")
+# unidad de primer orden de cada punto, leída de la geocodificación (ciudad o provincia de OSM)
+UNIDAD_POI = {
+    "Asunción": ("PRY", "Asunción"), "Puerto de Asunción": ("PRY", "Asunción"), "Puerto de Villeta": ("PRY", "Central"),
+    "Concepción": ("PRY", "Concepción"), "Ciudad del Este": ("PRY", "Alto Paraná"),
+    "Puerto Iguazú": ("ARG", "Misiones"), "Foz do Iguaçu": ("BRA", "Paraná"),
+    "Corrientes": ("ARG", "Corrientes"), "Santa Fe": ("ARG", "Santa Fe"), "Rosario": ("ARG", "Santa Fe"),
+    "Puerto de Rosario": ("ARG", "Santa Fe"), "Puerto General San Martín": ("ARG", "Santa Fe"), "Terminal Timbúes": ("ARG", "Santa Fe"),
+    "Buenos Aires": ("ARG", "Ciudad Autónoma de Buenos Aires"), "Puerto de Buenos Aires": ("ARG", "Ciudad Autónoma de Buenos Aires"),
+    "Zárate": ("ARG", "Buenos Aires"), "Puerto de Zárate": ("ARG", "Buenos Aires"),
+    "Montevideo": ("URY", "Montevideo"), "Colonia del Sacramento": ("URY", "Colonia"),
+    "Nueva Palmira": ("URY", "Colonia"), "Puerto Nueva Palmira": ("URY", "Colonia"),
+    "Corumbá": ("BRA", "Mato Grosso do Sul"), "Puerto de Corumbá": ("BRA", "Mato Grosso do Sul"),
+    "Porto Murtinho": ("BRA", "Mato Grosso do Sul"), "Porto Cáceres": ("BRA", "Mato Grosso"),
+}
+_SIN_UNIDAD = [q["nombre"] for q in d["poi"] if q["nombre"] not in UNIDAD_POI]
+assert not _SIN_UNIDAD, "puntos sin unidad de primer orden asignada: %s" % _SIN_UNIDAD
+
+def contexto_poi(nombre):
+    iso, unidad = UNIDAD_POI[nombre]
+    return _siwa.lineas(_FUENTES_SIWA, iso, unidad), "%s (%s)" % (unidad, iso)
+
 # --- puntos de interés: clicables, con panel ---
 poi_svg = []
 poi_etq_svg = []
@@ -225,8 +251,10 @@ for i, q in enumerate(d["poi"]):
     if q["nombre"] == "Terminal Timbúes":
         tipo += " · límite de la concesión de dragado a 40 pies, Res. 36/2026 (Jan De Nul–Servimagnus)"
     cat_poi = "Terminal portuaria" if q["clase"] == "puerto" else "Ciudad del corredor"
+    _ctx, _unid = contexto_poi(q["nombre"])
     poi_info.append({"id": gid, "categoria": cat_poi, "titulo": nombre_real, "tipo": tipo, "fuente": fuente,
-                      "clase": clase_chip, "coord": coord_de(q["nombre"]), "foto": foto_de(q["nombre"])})
+                      "clase": clase_chip, "coord": coord_de(q["nombre"]), "foto": foto_de(q["nombre"]),
+                      "ctx": _ctx, "ctx_t": "Contexto de la unidad: " + _unid, "ctx_f": _siwa.pie(_FUENTES_SIWA)})
 
 riesgo_info = []
 riesgos_svg = []
@@ -252,6 +280,14 @@ zona_info = [
      "fuente": "La Política Online y ABC Color (medios) y Presidencia de Paraguay (oficial): 3 fuentes, dos de ellas medios",
      "clase": "zona", "coord": None, "foto": foto_generica("Departamento de Alto Paraná")},
 ]
+# contexto adicional para las zonas (ACLED codifica prensa y fuentes locales, así que no se la presenta como independiente): mide violencia política, no al PCC; por eso se rotula
+# como contexto y no como confirmación ni desmentida de la atribución
+for _z, _u in ((zona_info[0], "Canindeyú"), (zona_info[1], "Alto Paraná")):
+    _l = [x for x in _siwa.lineas(_FUENTES_SIWA, "PRY", _u) if x.startswith("Violencia política")]
+    if _l:
+        _z["ctx"] = _l + ["Este conjunto cuenta eventos y víctimas por departamento, sin atribuirlos a ningún grupo: sirve de contexto, no confirma ni desmiente lo que informan los medios y la Presidencia"]
+        _z["ctx_t"] = "Contexto adicional, no es la misma fuente: " + _u + " (PRY)"
+        _z["ctx_f"] = _siwa.pie(_FUENTES_SIWA)
 # ambas zonas de actor son de la familia «seguridad»
 zonas_svg = [z.replace('class="zona-actor"', 'class="zona-actor clicable" data-familia="seguridad"', 1) for z in zonas_svg]
 
@@ -634,6 +670,7 @@ svg.zoom-a .amar-a,svg.zoom-b .amar-b{display:inline}
   text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px}
 .panel .coord{font-size:11px;color:var(--gris-acero);font-variant-numeric:tabular-nums;
   display:flex;align-items:center;gap:5px;margin-top:10px}
+.panel .dato.ctx{border-top:0;padding:3px 0 3px 10px;border-left:2px solid var(--linea)}
 .panel .nota-foto{font-size:10.5px;color:var(--gris-acero);margin:0 0 8px;font-style:italic}
 .panel .fuente{font-size:11px;color:var(--acento-texto);font-weight:700;margin-top:12px}
 @media (max-width: 760px){
@@ -806,6 +843,7 @@ footer{flex-direction:column}
     <li><b>Triángulo azul — embarcación del Estado.</b> Se marca cuando el propio buque transmite el tipo militar (35) o de fuerzas del orden (55), o por el prefijo de su nombre (ARA, GC). La fuerza que aparece en la ficha está <b>inferida</b> del nombre, no transmitida. Hoy sólo se detectan unidades argentinas; no es que no existan otras, sino que no las vemos.</li>
     <li><b>Fotos.</b> Tres niveles, y cada ficha dice cuál es: foto verificada por el número IMO del buque; coincidencia por nombre, sólo cuando el buque no transmite IMO; o imagen ilustrativa de su tipo, que <b>no es una foto de ese buque</b>. Autor y licencia en cada una.</li>
     <li><b>Puertos, muelles, amarraderos y rampas.</b> Salen de OpenStreetMap, una instantánea del __fecha_amarres__: son aportes de colaboradores, <b>fuente única</b>, y pueden faltar, estar desactualizados o ser privados; que figuren no significa que operen hoy. Hay unos 2.900 puntos, la mayoría muelles pequeños del Delta, y por eso se muestran por niveles al acercar el mapa. OpenStreetMap casi no registra «caletas» en este corredor: si conocés una, abrí un pedido de corrección.</li>
+    <li><b>Contexto por provincia o departamento.</b> Cada ficha de puerto o ciudad suma tres cifras de la unidad donde está, tomadas de los datos abiertos de <a href="https://siwa.fundacionkent.org/sitio/index.html">SIWA</a> (Fundación Sherman Kent, CC BY 4.0, rotulados allí como prototipo): homicidios de la fuente oficial de cada Estado, eventos de violencia política de ACLED (base secundaria sobre prensa y fuentes locales, no oficial) y focos de calor de NASA FIRMS de los últimos días. Son recuentos de toda la provincia, no del puerto, y no son tasas: una provincia grande tiene más aunque sea más segura. Los homicidios no son comparables entre países. Un foco de calor no es un incendio confirmado. Donde el conjunto no trae la unidad, la ficha no inventa el dato.</li>
     <li><b>Puertos y ciudades.</b> Posición geocodificada con OpenStreetMap; el tipo de terminal figura sólo donde hay fuente (Bolsa de Comercio de Rosario).</li>
     <li><b>Zonas y riesgos.</b> Cada afirmación lleva dos fuentes independientes o se marca como fuente única. Las zonas son departamentos porque la fuente no da un punto exacto.</li>
     <li><b>Satélite.</b> Imágenes de NASA GIBS (GOES-East y VIIRS), capturas con su fecha y hora: no es tiempo real. Con esa resolución no se ven buques ni muelles; sirve para nubes, humo y sedimento.</li>
@@ -1136,6 +1174,24 @@ document.querySelectorAll(".clicable").forEach(function(el){
       row.textContent = linea;
       pD.appendChild(row);
     });
+    if (info.ctx && info.ctx.length){
+      const cab = document.createElement("div");
+      cab.className = "dato";
+      const b = document.createElement("b");
+      b.textContent = info.ctx_t;
+      cab.appendChild(b);
+      pD.appendChild(cab);
+      info.ctx.forEach(function(linea){
+        const row = document.createElement("div");
+        row.className = "dato ctx";
+        row.textContent = linea;
+        pD.appendChild(row);
+      });
+      const pie = document.createElement("div");
+      pie.className = "nota-foto";
+      pie.textContent = info.ctx_f;
+      pD.appendChild(pie);
+    }
     if (info.coord){
       pCoTxt.textContent = info.coord + " (lat, lon)";
       pCo.style.display = "flex";

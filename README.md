@@ -43,6 +43,7 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
 - **Radar:** contiene datos modificados de Copernicus Sentinel.
 - **Fotos:** Wikipedia y Wikimedia Commons, con autor y licencia en cada ficha.
 - **Comercio:** Bolsa de Comercio de Rosario.
+- **Contexto por provincia o departamento:** [SIWA](https://siwa.fundacionkent.org/sitio/index.html), Fundación Sherman Kent (CC BY 4.0): homicidios de la fuente oficial de cada Estado, ACLED (atribución) y focos de calor de NASA FIRMS. Se bajan al construir el sitio, con copia fechada en `sitio/datos/siwa/` si SIWA no responde.
 
 ## Correcciones y derecho de réplica
 
