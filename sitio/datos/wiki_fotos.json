@@ -1,0 +1,164 @@
+{
+ "redir": {
+  "Corrientes (Argentina)": "Corrientes (ciudad)",
+  "Zárate (Buenos Aires)": "Zárate"
+ },
+ "paginas": {
+  "Asunción": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Palacio_de_Gobierno2.jpg/960px-Palacio_de_Gobierno2.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Asunci%C3%B3n"
+  },
+  "Buenos Aires": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/CABA_-_Avenida_9_de_Julio.jpg/960px-CABA_-_Avenida_9_de_Julio.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Buenos_Aires"
+  },
+  "Ciudad del Este": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Downtown_Ciudad_del_Este_view_134135.jpg/960px-Downtown_Ciudad_del_Este_view_134135.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Ciudad_del_Este"
+  },
+  "Colonia del Sacramento": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Calle_de_los_Suspiros%2C_Colonia_del_Sacramento%2C_Uruguay_-_panoramio.jpg/960px-Calle_de_los_Suspiros%2C_Colonia_del_Sacramento%2C_Uruguay_-_panoramio.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Colonia_del_Sacramento"
+  },
+  "Concepción (Paraguay)": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Street_and_Se%C3%B1ora_de_la_Concepci%C3%B3n.jpg/960px-Street_and_Se%C3%B1ora_de_la_Concepci%C3%B3n.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Concepci%C3%B3n_(Paraguay)"
+  },
+  "Corumbá": {
+   "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/44/Corumb_1_galleryfull.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+   "url": "https://es.wikipedia.org/wiki/Corumb%C3%A1"
+  },
+  "Cáceres (Mato Grosso)": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Catedral_de_S%C3%A3o_Lu%C3%ADs2.JPG/960px-Catedral_de_S%C3%A3o_Lu%C3%ADs2.JPG?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/C%C3%A1ceres_(Mato_Grosso)"
+  },
+  "Foz do Iguaçu": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/SkylineFoz.JPG/960px-SkylineFoz.JPG?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Foz_do_Igua%C3%A7u"
+  },
+  "Montevideo": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/PALACIO_LEGISLATIVO_01.JPG/960px-PALACIO_LEGISLATIVO_01.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Montevideo"
+  },
+  "Nueva Palmira": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/OdacirAr_128.JPG/960px-OdacirAr_128.JPG?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Nueva_Palmira"
+  },
+  "Porto Murtinho": {
+   "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/04/Prefeitura_Municipal_de_Porto_Murtinho_-_panoramio.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+   "url": "https://es.wikipedia.org/wiki/Porto_Murtinho"
+  },
+  "Puerto Iguazú": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Avenida_Victoria_Aguirre_en_Puerto_Iguaz%C3%BA%2C_Provincia_de_Misiones_%28Argentina%29.jpg/960px-Avenida_Victoria_Aguirre_en_Puerto_Iguaz%C3%BA%2C_Provincia_de_Misiones_%28Argentina%29.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Puerto_Iguaz%C3%BA"
+  },
+  "Rosario (Argentina)": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Acto_del_bicentenario_de_la_creaci%C3%B3n_de_la_bandera.jpg/960px-Acto_del_bicentenario_de_la_creaci%C3%B3n_de_la_bandera.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Rosario_(Argentina)"
+  },
+  "Santa Fe (Argentina)": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Santa_Fe%2C_Argentina_2019_%28letras%29.jpg/960px-Santa_Fe%2C_Argentina_2019_%28letras%29.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Santa_Fe_(Argentina)"
+  },
+  "Corrientes (ciudad)": {
+   "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Puente_General_Manuel_Belgrano.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+   "url": "https://es.wikipedia.org/wiki/Corrientes_(ciudad)"
+  },
+  "Zárate": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Zaratemunicipalidad2.jpg/960px-Zaratemunicipalidad2.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Z%C3%A1rate"
+  },
+  "San Lorenzo (Santa Fe)": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Avenida_del_Combate%2C_San_Lorenzo.jpg/960px-Avenida_del_Combate%2C_San_Lorenzo.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/San_Lorenzo_(Santa_Fe)"
+  },
+  "Villeta (Paraguay)": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Villeta_bienvenidos_a_la_ciudad.jpg/960px-Villeta_bienvenidos_a_la_ciudad.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Villeta_(Paraguay)"
+  },
+  "Departamento de Alto Paraná": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Downtown_Ciudad_del_Este_view_134135.jpg/960px-Downtown_Ciudad_del_Este_view_134135.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Departamento_de_Alto_Paran%C3%A1"
+  },
+  "Departamento de Canindeyú": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Route_10_20110829_264.jpg/960px-Route_10_20110829_264.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Departamento_de_Canindey%C3%BA"
+  },
+  "Río Paraná": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Paran%C3%A1.jpg/960px-Paran%C3%A1.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/R%C3%ADo_Paran%C3%A1"
+  },
+  "Barcaza": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Parana-barge.JPG/960px-Parana-barge.JPG?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Barcaza"
+  },
+  "Barco pesquero": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Krabbenkutter_Ivonne_Pellworm_P5242390jm.JPG/960px-Krabbenkutter_Ivonne_Pellworm_P5242390jm.JPG?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Barco_pesquero"
+  },
+  "Buque de carga": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Ribeira_GDFL040825_054.jpg/960px-Ribeira_GDFL040825_054.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Buque_de_carga"
+  },
+  "Buque portacontenedores": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Maersk_at_montevideo.JPG/960px-Maersk_at_montevideo.JPG?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Buque_portacontenedores"
+  },
+  "Canoa": {
+   "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Canoa.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+   "url": "https://es.wikipedia.org/wiki/Canoa"
+  },
+  "Granelero": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Sabrina_I_cropped.jpg/960px-Sabrina_I_cropped.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Granelero"
+  },
+  "Lancha": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/1910_Mathis_Launch.jpg/960px-1910_Mathis_Launch.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Lancha"
+  },
+  "Petrolero": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Supertanker_AbQaiq.jpg/960px-Supertanker_AbQaiq.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Petrolero"
+  },
+  "Prefectura Naval Argentina": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Logo_de_la_Prefectura_Naval_Argentina.svg/960px-Logo_de_la_Prefectura_Naval_Argentina.svg.png?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Prefectura_Naval_Argentina"
+  },
+  "Remolcador": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Remolcador_tipo_ASD_2810_CARUAO.jpg/960px-Remolcador_tipo_ASD_2810_CARUAO.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Remolcador"
+  },
+  "Transbordador": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Hkstarferry.JPG/960px-Hkstarferry.JPG?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Transbordador"
+  },
+  "Yate": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/JSJ-volunteer_turning.jpg/960px-JSJ-volunteer_turning.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Yate"
+  },
+  "ARA Almirante Irízar (Q-5)": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Irizar_after_refurbishment.jpg/960px-Irizar_after_refurbishment.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/ARA_Almirante_Ir%C3%ADzar_(Q-5)"
+  },
+  "Guardia costera": {
+   "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/0f/USCG_National_Security_Cutter_BERTHOLF_%28WMSL-750%29.jpeg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+   "url": "https://es.wikipedia.org/wiki/Guardia_costera"
+  },
+  "ARA Ciudad de Zárate (Q-61)": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Q61_Ciudad_de_Z%C3%A1rate.jpg/960px-Q61_Ciudad_de_Z%C3%A1rate.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/ARA_Ciudad_de_Z%C3%A1rate_(Q-61)"
+  },
+  "Clase Halcón": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Mantilla.jpg/960px-Mantilla.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/Clase_Halc%C3%B3n"
+  },
+  "PNA Azopardo (GC-25)": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Macri_en_la_Isla_Demarchi_01.jpg/960px-Macri_en_la_Isla_Demarchi_01.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/PNA_Azopardo_(GC-25)"
+  },
+  "PNA Mantilla (GC-24)": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Mantilla.jpg/960px-Mantilla.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "url": "https://es.wikipedia.org/wiki/PNA_Mantilla_(GC-24)"
+  }
+ }
+}

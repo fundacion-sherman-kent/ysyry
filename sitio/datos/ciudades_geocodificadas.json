@@ -1,0 +1,107 @@
+[
+ {
+  "consulta": "Asunción, Paraguay",
+  "pais": "PY",
+  "lat": -25.2800459,
+  "lon": -57.6343814,
+  "nombre_osm": "Asunción, Distrito Capital, Región Oriental, 001013, Paraguay / Paraguái"
+ },
+ {
+  "consulta": "Puerto Iguazú, Argentina",
+  "pais": "AR",
+  "lat": -25.6107508,
+  "lon": -54.5764199,
+  "nombre_osm": "Municipio de Puerto Iguazú, Departamento Iguazú, Misiones, Argentina"
+ },
+ {
+  "consulta": "Foz do Iguaçu, Brasil",
+  "pais": "BR",
+  "lat": -25.5304023,
+  "lon": -54.5830692,
+  "nombre_osm": "Foz do Iguaçu, Paraná, Região Sul, Brasil"
+ },
+ {
+  "consulta": "Ciudad del Este, Paraguay",
+  "pais": "PY",
+  "lat": -25.5169015,
+  "lon": -54.6168645,
+  "nombre_osm": "Ciudad del Este, Alto Paraná, Región Oriental, Paraguay / Paraguái"
+ },
+ {
+  "consulta": "Corrientes, Argentina",
+  "pais": "AR",
+  "lat": -27.4687004,
+  "lon": -58.8311982,
+  "nombre_osm": "Corrientes, Departamento Capital, Corrientes, Argentina (corregido)"
+ },
+ {
+  "consulta": "Santa Fe, Argentina",
+  "pais": "AR",
+  "lat": -30.3154739,
+  "lon": -61.1645076,
+  "nombre_osm": "Santa Fe, Argentina"
+ },
+ {
+  "consulta": "Rosario, Argentina",
+  "pais": "AR",
+  "lat": -32.9593609,
+  "lon": -60.6617024,
+  "nombre_osm": "Rosario, Municipio de Rosario, Gran Rosario, Departamento Rosario, Santa Fe, S2000, Argentina"
+ },
+ {
+  "consulta": "Buenos Aires, Argentina",
+  "pais": "AR",
+  "lat": -34.6095579,
+  "lon": -58.3887904,
+  "nombre_osm": "Buenos Aires, Comuna 1, Ciudad Autónoma de Buenos Aires, Argentina"
+ },
+ {
+  "consulta": "Montevideo, Uruguay",
+  "pais": "UY",
+  "lat": -34.9058916,
+  "lon": -56.1913095,
+  "nombre_osm": "Montevideo, Uruguay"
+ },
+ {
+  "consulta": "Colonia del Sacramento, Uruguay",
+  "pais": "UY",
+  "lat": -34.4698592,
+  "lon": -57.8433679,
+  "nombre_osm": "Colonia del Sacramento, Colonia, 70000, Uruguay"
+ },
+ {
+  "consulta": "Nueva Palmira, Uruguay",
+  "pais": "UY",
+  "lat": -33.8710911,
+  "lon": -58.4068884,
+  "nombre_osm": "Nueva Palmira, Colonia, 70101, Uruguay"
+ },
+ {
+  "consulta": "Zárate, Argentina",
+  "pais": "AR",
+  "lat": -34.0954713,
+  "lon": -59.0245097,
+  "nombre_osm": "Zárate, Partido de Zárate, Buenos Aires, 2800, Argentina"
+ },
+ {
+  "consulta": "Corumbá, Brasil",
+  "pais": "BR",
+  "lat": -19.0006027,
+  "lon": -57.6507535,
+  "nombre_osm": "Corumbá, Mato Grosso do Sul, Região Centro-Oeste, Brasil"
+ },
+ {
+  "consulta": "Porto Cáceres, Mato Grosso, Brasil",
+  "pais": "BR",
+  "lat": -16.0644068,
+  "lon": -57.6878972,
+  "nombre_osm": "Cáceres, Mato Grosso, Brasil (corregido)"
+ },
+ {
+  "consulta": "Concepción, Paraguay",
+  "pais": "PY",
+  "lat": -23.1775,
+  "lon": -57.1675,
+  "nombre_osm": "Concepción, Región Oriental, Paraguay / Paraguái"
+ }
+]

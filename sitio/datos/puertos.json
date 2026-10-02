@@ -1,0 +1,74 @@
+[
+ {
+  "consulta": "Puerto de Rosario, Argentina",
+  "pais": "AR",
+  "tipo": "terminal",
+  "lat": -32.9724789,
+  "lon": -60.6205749,
+  "osm": "CAPS Puerto Rosario, Ruta Provincial 2, Panambi Kilometro 15, Municipio de Panambí, Departamento Oberá, Misiones, Argentina"
+ },
+ {
+  "consulta": "Puerto General San Martín, Santa Fe, Argentina",
+  "pais": "AR",
+  "tipo": "terminal",
+  "lat": -32.7116197,
+  "lon": -60.7341243,
+  "osm": "Puerto General San Martín, Municipio de Puerto General San Martín, Gran Rosario, Departamento San Lorenzo, Santa Fe, Argentina"
+ },
+ {
+  "consulta": "Puerto de Zárate, Argentina",
+  "pais": "AR",
+  "tipo": "terminal",
+  "lat": -34.1173854,
+  "lon": -59.0652235,
+  "osm": "Barrio Puerto del Sol, Zárate, Partido de Zárate, Buenos Aires, 2800, Argentina"
+ },
+ {
+  "consulta": "Puerto de Buenos Aires, Argentina",
+  "pais": "AR",
+  "tipo": "terminal",
+  "lat": -34.5830906,
+  "lon": -58.3636467,
+  "osm": "Puerto de Buenos Aires, Buenos Aires, Distrito del Diseño, Comuna 1, Ciudad Autónoma de Buenos Aires, Argentina"
+ },
+ {
+  "consulta": "Puerto Nueva Palmira, Uruguay",
+  "pais": "UY",
+  "tipo": "terminal",
+  "lat": -33.8857273,
+  "lon": -58.4183187,
+  "osm": "Puerto de Nueva Palmira, Nueva Palmira, Colonia, 70101, Uruguay"
+ },
+ {
+  "consulta": "Puerto de Asunción, Paraguay",
+  "pais": "PY",
+  "tipo": "terminal",
+  "lat": -25.2740225,
+  "lon": -57.6457018,
+  "osm": "Puerto de Asunción, Teniente César Díaz Pefaur, Doctor Francia, Asunción, Distrito Capital, Región Oriental, 001011, Paraguay / Paraguái"
+ },
+ {
+  "consulta": "Puerto de Villeta, Paraguay",
+  "pais": "PY",
+  "tipo": "terminal",
+  "lat": -25.5976885,
+  "lon": -57.6034766,
+  "osm": "Puerto Guyratí, Villeta, Central, Región Oriental, Paraguay / Paraguái"
+ },
+ {
+  "consulta": "Puerto de Corumbá, Brasil",
+  "pais": "BR",
+  "tipo": "terminal",
+  "lat": -19.0006027,
+  "lon": -57.6507535,
+  "osm": "Frontera Bolivia - Brasil, RN4: Arroyo Concepción-Corumbá (Brasil), Puerto Quijarro, Arroyo Concepción, Puerto Quijarro, Germán Busch, Santa Cruz, Bolivia"
+ },
+ {
+  "consulta": "Porto Murtinho, Mato Grosso do Sul, Brasil",
+  "pais": "BR",
+  "tipo": "terminal",
+  "lat": -21.698078,
+  "lon": -57.883586,
+  "osm": "Porto Murtinho, Mato Grosso do Sul, Região Centro-Oeste, 79280-000, Brasil"
+ }
+]

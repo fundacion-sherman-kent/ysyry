@@ -1,0 +1,84 @@
+name: "Sitio: actualización horaria"
+
+# Cada hora, público: baja la última captura de AIS, la suma al historial (rama datos-ais, un solo
+# commit que se reescribe), reconstruye la página con la imagen satelital más reciente y la despliega
+# en GitHub Pages directamente, sin commitear los ~7 MB del sitio en cada vuelta. No consume tokens
+# de Claude. Si el AIS no responde, el sitio sigue mostrando la última captura buena con su fecha.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  construir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Traer el historial de capturas (rama datos-ais)
+        run: |
+          if curl -sf "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/datos-ais/marcos.json" -o sitio/datos/marcos.json; then
+            echo "Historial recuperado: $(wc -c < sitio/datos/marcos.json) bytes"
+          else
+            echo "Todavía no hay historial: se empieza de cero"; echo "[]" > sitio/datos/marcos.json
+          fi
+
+      - name: Traer la imagen satelital más reciente (rama datos-satelite)
+        run: |
+          base="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/datos-satelite/satelite"
+          for f in goes.jpg viirs.jpg satelite.json; do
+            if curl -sf "$base/$f" -o "/tmp/$f"; then cp "/tmp/$f" "sitio/datos/satelite/$f"; else echo "No se pudo traer $f: queda la copia del repositorio"; fi
+          done
+
+      - name: Sumar la captura de AIS
+        run: python3 -u sitio/ais_marco.py sitio/datos/marcos.json
+
+      - name: Construir la página
+        env:
+          SITIO_SALIDA: salida/index.html
+        run: |
+          python3 -u sitio/construir.py
+          test "$(wc -c < salida/index.html)" -gt 1000000 || { echo "La página salió sospechosamente chica"; exit 1; }
+          grep -q 'id="svg-mapa"' salida/index.html || { echo "La página no tiene el mapa"; exit 1; }
+          touch salida/.nojekyll
+
+      - name: Guardar el historial en la rama datos-ais
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p /tmp/historial && cp sitio/datos/marcos.json /tmp/historial/marcos.json
+          cd /tmp/historial
+          git init -q -b datos-ais
+          git config user.name "ysyry-robot"
+          git config user.email "ysyry-robot@users.noreply.github.com"
+          git add marcos.json
+          git commit -q -m "Historial de capturas de AIS ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push -q --force origin datos-ais
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: salida
+
+  desplegar:
+    needs: construir
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - id: despliegue
+        uses: actions/deploy-pages@v4
