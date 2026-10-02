@@ -87,3 +87,44 @@ def pie(fuentes):
     vivo = all(f["en_vivo"] for f in fuentes.values())
     return ("Contexto por unidad: SIWA, Fundación Sherman Kent (CC BY 4.0), prototipo; datos de base de los organismos oficiales de cada Estado, "
             "ACLED (atribución) y NASA FIRMS · consultado el %s%s" % (", ".join(fechas), "" if vivo else " (copia fechada: SIWA no respondió)"))
+
+
+# provincias, departamentos y estados que tocan cada tramo del pulso (juicio de la Fundación sobre el mapa, no un límite
+# administrativo: un tramo puede tocar parte de una unidad y la cifra es la de toda la unidad)
+UNIDADES_POR_ZONA = {
+    "z1": [("ARG", "Buenos Aires"), ("ARG", "Ciudad Autónoma de Buenos Aires"), ("ARG", "Entre Ríos"), ("URY", "Colonia"), ("URY", "Soriano"), ("URY", "Montevideo")],
+    "z2": [("ARG", "Santa Fe"), ("ARG", "Buenos Aires")],
+    "z3": [("ARG", "Santa Fe"), ("ARG", "Entre Ríos"), ("ARG", "Corrientes"), ("ARG", "Chaco")],
+    "z4": [("ARG", "Misiones"), ("PRY", "Alto Paraná"), ("PRY", "Canindeyú"), ("PRY", "Itapúa"), ("PRY", "Misiones"), ("BRA", "Paraná")],
+    "z5": [("PRY", "Asunción"), ("PRY", "Central"), ("PRY", "Presidente Hayes"), ("PRY", "Concepción"), ("PRY", "Alto Paraguay"), ("PRY", "Ñeembucú"), ("ARG", "Formosa"), ("BRA", "Mato Grosso do Sul")],
+}
+
+
+def resumen_unidades(fuentes, unidades):
+    """ACLED (último año del conjunto) y focos de calor sumados sobre las unidades dadas. Distingue «cero» de «sin dato»."""
+    r = {"unidades": len(unidades), "acled": None, "focos": None}
+    if "acled" in fuentes:
+        d = fuentes["acled"]["datos"]
+        anio = max((u["ultimo"]["anio"] for reg in d["registros"] for u in reg["unidades"] if u.get("ultimo")), default=None)
+        ev = vi = con_dato = 0
+        for iso, nombre in unidades:
+            u = _unidad(d, iso, nombre)
+            if u is None:
+                continue
+            con_dato += 1
+            if u.get("ultimo") and u["ultimo"]["anio"] == anio:
+                ev += u["ultimo"]["eventos"]
+                vi += u["ultimo"]["victimas"]
+        r["acled"] = {"anio": anio, "eventos": ev, "victimas": vi, "con_dato": con_dato}
+    if "focos" in fuentes:
+        d = fuentes["focos"]["datos"]
+        total = con_dato = 0
+        for iso, nombre in unidades:
+            if not any(reg.get("iso") == iso for reg in d["registros"]):
+                continue
+            u = _unidad(d, iso, nombre)
+            if u is not None:
+                con_dato += 1
+                total += u["focos"]
+        r["focos"] = {"dias": (d.get("resumen") or {}).get("ventana_dias", "pocos"), "total": total, "con_dato": con_dato}
+    return r

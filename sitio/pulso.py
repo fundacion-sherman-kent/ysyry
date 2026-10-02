@@ -104,7 +104,7 @@ def comparar(hist, z, fecha, mediana):
     return "%+.0f %% frente al promedio de sus %d días previos" % (100 * (mediana - prom) / prom, len(previos))
 
 
-def bloque_html(calc, hist, fecha, hechos):
+def bloque_html(calc, hist, fecha, hechos, contexto=None, pie_contexto=""):
     """hechos: {zona: [textos ya redactados]}; todo se escapa."""
     e = html.escape
     filas = []
@@ -119,15 +119,26 @@ def bloque_html(calc, hist, fecha, hechos):
                       "<td>%d de %d capturas (%d %s)</td>" % (m["estado_capturas"], m["capturas"], m["estado_distintos"], "unidad" if m["estado_distintos"] == 1 else "unidades")]
         comp = comparar(hist, z, fecha, m["mediana"]) if m["distintos"] else "—"
         hx = "<br>".join(e(t) for t in hechos.get(z, [])) or "Ninguno cargado"
-        filas.append('<tr><th scope="row">%s<small>%s</small></th>%s<td>%s</td><td>%s</td></tr>'
-                     % (e(nombre), e(cobertura), "".join(celdas), e(comp), hx))
+        c = (contexto or {}).get(z)
+        if c and c["acled"] and c["focos"]:
+            ac, fo = c["acled"], c["focos"]
+            cx = ("ACLED %s: %d %s, %d %s (%d de %d unidades con dato)<br>Focos de calor, %s días: %d (%d de %d unidades con dato)"
+                  % (ac["anio"], ac["eventos"], "evento" if ac["eventos"] == 1 else "eventos", ac["victimas"],
+                     "víctima" if ac["victimas"] == 1 else "víctimas", ac["con_dato"], c["unidades"],
+                     fo["dias"], fo["total"], fo["con_dato"], c["unidades"]))
+        else:
+            cx = "Sin contexto cargado"
+        filas.append('<tr><th scope="row">%s<small>%s</small></th>%s<td>%s</td><td>%s</td><td>%s</td></tr>'
+                     % (e(nombre), e(cobertura), "".join(celdas), e(comp), hx, cx))
     return ('<div class="pulso" id="pulso-zonas"><h2>Pulso por zona · últimas 24 horas</h2>'
             '<p class="sub">Qué se observa en cada tramo del corredor a partir de las posiciones AIS, y cómo se compara con los días anteriores del mismo tramo. '
             'Mide huellas observables de buques que transmiten, <b>no la conducta de ningún actor</b>: no dice qué hace un grupo criminal ni qué patrulla una fuerza, '
             'sólo qué unidades con AIS se ven y dónde. Un tramo vacío puede ser un tramo sin cobertura.</p>'
             '<div class="tabla-pulso"><table><thead><tr><th>Zona</th><th>Buques por captura (mediana)</th><th>Distintos en 24 h</th><th>Ahora</th>'
-            '<th>Unidades del Estado visibles</th><th>Comparación con su propia historia</th><th>Hechos informados en la zona</th></tr></thead><tbody>%s</tbody></table></div>'
+            '<th>Unidades del Estado visibles</th><th>Comparación con su propia historia</th><th>Hechos informados en la zona</th><th>Contexto de las provincias que toca (SIWA)</th></tr></thead><tbody>%s</tbody></table></div>'
             '<p class="sub">Las zonas son cajas aproximadas sobre el mapa, no límites administrativos. «Estado» cuenta sólo las unidades que transmiten AIS con tipo militar o de fuerzas del orden, '
             'o con el prefijo de su designación (ARA, GC, ARP, PGN, LP): las que apagan el AIS o no lo tienen no figuran. '
-            'Un buque se cuenta como distinto por su IMO, nombre e indicativo. La comparación necesita %d días de historia en el mismo tramo y se calcula sobre la mediana de buques por captura. Día de referencia: %s (UTC).</p></div>'
-            % ("".join(filas), DIAS_PARA_COMPARAR, e(fecha)))
+            'Un buque se cuenta como distinto por su IMO, nombre e indicativo. La comparación necesita %d días de historia en el mismo tramo y se calcula sobre la mediana de buques por captura. Día de referencia: %s (UTC).</p>%s</div>'
+            % ("".join(filas), DIAS_PARA_COMPARAR, e(fecha),
+               ('<p class="sub">%s Las cifras son de la provincia, departamento o estado completo que toca el tramo, no del tramo: una unidad grande suma más, y cada tramo toca las unidades que la Fundación listó en el código. '
+                'ACLED codifica prensa y fuentes locales (base secundaria, no oficial) y un foco de calor es una anomalía térmica, no un incendio confirmado; «sin dato» no equivale a cero.</p>' % e(pie_contexto)) if contexto else ""))

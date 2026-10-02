@@ -488,7 +488,8 @@ if marcos:
     for _r in d["riesgos"]:
         _hechos.setdefault(_pulso.zona_de(_r["x"], _r["y"]), []).append("Piratería, km 340 (hecho puntual informado por prensa, oct. 2025)")
     _hechos.setdefault("z4", []).append("Presencia atribuida al PCC, según medios y la Presidencia de Paraguay, en Canindeyú y Alto Paraná: atribución, no sentencia")
-    _pulso_html = _pulso.bloque_html(_calc, _hist, _fecha, _hechos)
+    _ctx_zonas = {z: _siwa.resumen_unidades(_FUENTES_SIWA, un) for z, un in _siwa.UNIDADES_POR_ZONA.items()}
+    _pulso_html = _pulso.bloque_html(_calc, _hist, _fecha, _hechos, _ctx_zonas, _siwa.pie(_FUENTES_SIWA))
 
 # Las imágenes se incrustan en la página (data URI), una sola vez por imagen:
 # el visor de artefactos no carga imágenes enlazadas desde otro dominio.
@@ -739,7 +740,7 @@ nav a:hover{color:var(--fg)}
 .pulso h2{font-weight:700;letter-spacing:-0.02em;font-size:19px;margin:0 0 4px}
 .pulso .sub{color:var(--gris-acero);font-size:12.5px;margin:0 0 12px;max-width:880px}
 .tabla-pulso{overflow-x:auto;margin:0 0 10px;border:1px solid var(--linea);border-radius:8px}
-.tabla-pulso table{border-collapse:collapse;width:100%;min-width:820px;font-size:12.5px}
+.tabla-pulso table{border-collapse:collapse;width:100%;min-width:1080px;font-size:12.5px}
 .tabla-pulso th,.tabla-pulso td{padding:9px 10px;text-align:left;vertical-align:top;border-top:1px solid var(--linea)}
 .tabla-pulso thead th{border-top:0;font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--gris-acero)}
 .tabla-pulso tbody th small{display:block;font-weight:400;color:var(--gris-acero);font-size:11px;margin-top:2px}
