@@ -6,6 +6,12 @@ aisstream.io — en un solo endpoint HTTP, sin necesidad de clave para leer.
 Escrito contra su protocolo público y documentado, sin copiar código de
 ningún repositorio de terceros.
 
+Además de los eventos crudos, mantiene un índice de identidades por MMSI
+(datos/identidades-ais.json) con el número IMO, que identifica de verdad un
+casco (el nombre se repite entre buques distintos). Sólo lo transmiten las
+embarcaciones de clase A; las menores no. Un IMO se guarda únicamente si pasa
+su dígito de control (7 dígitos; el último verifica a los seis primeros).
+
 Guarda sólo en el repositorio PRIVADO de registro. No imprime identidades;
 sólo conteos. Si el servidor responde con un error, se informa como tal,
 nunca se confunde con "no hay buques".
@@ -39,6 +45,87 @@ TRAMOS = {
 }
 
 
+CAMPOS_IDENTIDAD = ("name", "callsign", "flag", "type", "length", "beam")
+
+
+def imo_valido(valor):
+    """IMO de 7 dígitos con dígito de control correcto; si no, None."""
+    try:
+        s = str(int(valor))
+    except (TypeError, ValueError):
+        return None
+    if len(s) != 7:
+        return None
+    suma = sum(int(c) * w for c, w in zip(s[:6], range(7, 1, -1)))
+    return int(s) if suma % 10 == int(s[6]) else None
+
+
+def actualizar_identidades(indice, evento, obtenido):
+    """Funde un evento en el índice. Nunca pisa un dato conocido con uno vacío.
+    Devuelve True si el MMSI es nuevo en el índice."""
+    p = evento.get("properties") or {}
+    mmsi = str(evento.get("id") or p.get("mmsi") or "")
+    if not mmsi:
+        return False
+    nuevo = mmsi not in indice
+    reg = indice.setdefault(mmsi, {"visto_primera": obtenido})
+    reg["visto_ultima"] = max(obtenido, reg.get("visto_ultima", obtenido))
+    reg["visto_primera"] = min(obtenido, reg["visto_primera"])
+    for campo in CAMPOS_IDENTIDAD:
+        v = p.get(campo)
+        if v not in (None, "", 0):
+            reg[campo] = v.strip() if isinstance(v, str) else v
+    crudo = p.get("imo")
+    imo = imo_valido(crudo)
+    if imo:
+        if reg.get("imo") and reg["imo"] != imo:
+            anteriores = reg.setdefault("imo_anteriores", [])
+            if reg["imo"] not in anteriores:
+                anteriores.append(reg["imo"])
+        reg["imo"] = imo
+    elif crudo not in (None, "", 0):
+        reg["imo_invalido_visto"] = True
+    return nuevo
+
+
+def cargar_indice(carpeta):
+    """Lee el índice; si todavía no existe, lo reconstruye desde lo acumulado
+    para no arrancar de cero y perder el historial."""
+    ruta = carpeta / "identidades-ais.json"
+    if ruta.exists():
+        return json.loads(ruta.read_text(encoding="utf-8"))
+    return indice_desde_vivo(carpeta)
+
+
+def guardar_indice(carpeta, indice):
+    ruta = carpeta / "identidades-ais.json"
+    ruta.write_text(json.dumps(indice, ensure_ascii=False, sort_keys=True, indent=1) + chr(10),
+                    encoding="utf-8", newline=chr(10))
+
+
+def resumen_indice(indice):
+    con_imo = sum(1 for r in indice.values() if r.get("imo"))
+    return "Identidades en el índice: %d, con IMO válido: %d" % (len(indice), con_imo)
+
+
+def indice_desde_vivo(carpeta):
+    """Índice a partir de los eventos ya guardados (datos/vivo/*.jsonl)."""
+    indice = {}
+    for archivo in sorted((carpeta / "vivo").glob("*.jsonl")):
+        with open(archivo, encoding="utf-8") as fh:
+            for linea in fh:
+                r = json.loads(linea)
+                if "evento" in r:
+                    actualizar_identidades(indice, r["evento"], r["obtenido"])
+    return indice
+
+
+def reconstruir(carpeta):
+    indice = indice_desde_vivo(carpeta)
+    guardar_indice(carpeta, indice)
+    print(resumen_indice(indice))
+
+
 def pedir(bbox):
     """(estado, dict|texto). Nunca confunde un error de red con 'sin buques'."""
     url = BASE + "?bbox=%s,%s,%s,%s" % bbox
@@ -62,6 +149,8 @@ def main():
     conteo = {}
     embarcaciones = set()
     errores = 0
+    indice = cargar_indice(carpeta)
+    nuevos = 0
 
     for nombre, (lo_lat, lo_lon, hi_lat, hi_lon) in TRAMOS.items():
         t0 = time.time()
@@ -77,6 +166,7 @@ def main():
             mmsi = f.get("id") or (f.get("properties") or {}).get("mmsi")
             if mmsi:
                 embarcaciones.add(mmsi)
+            nuevos += actualizar_identidades(indice, f, obtenido)
             eventos.append({"obtenido": obtenido, "tramo": nombre, "evento": f,
                              "fuente": {"nombre": "Open Waters AIS", "atribucion": resp.get("attribution")}})
         print("%s -> %d buques [%.1fs]" % (nombre, len(feats), time.time() - t0), flush=True)
@@ -89,10 +179,16 @@ def main():
     print("\nResumen:")
     for t, n in conteo.items():
         print("  %s: %s" % (t, "sin dato (error)" if n is None else n))
-    print("Embarcaciones distintas vistas:", len(embarcaciones))
+    if eventos:
+        guardar_indice(carpeta, indice)
+    print("Embarcaciones distintas vistas:", len(embarcaciones), "| nuevas en el índice:", nuevos)
+    print(resumen_indice(indice))
     print("Fuente: Open Waters AIS (agrega AISHub + aisstream.io).")
     return 1 if errores == len(TRAMOS) else 0
 
 
 if __name__ == "__main__":
+    if "--reconstruir" in sys.argv:
+        reconstruir(Path(os.environ.get("DATOS_DIR", "datos")))
+        sys.exit(0)
     sys.exit(main())
