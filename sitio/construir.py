@@ -183,7 +183,7 @@ NOMBRE_CORTO = {
 # tiempo real y oculta la de menor prioridad cuando dos cajas se pisan. ---
 DIRS = [(18, -13), (18, 15), (-18, -13), (-18, 15), (18, 2), (-18, 2)]
 _contador_callout = [0]
-PRIORIDAD = {"puerto": 4, "riesgo": 3, "tf": 3, "zona": 2, "ciudad": 1}
+PRIORIDAD = {"boya": 2, "puerto": 4, "riesgo": 3, "tf": 3, "zona": 2, "ciudad": 1}
 
 def callout(x, y, texto, clase, familia):
     indice = _contador_callout[0]
@@ -478,10 +478,11 @@ import pulso as _pulso
 from datetime import datetime as _dtm, timedelta as _td
 PULSO = os.environ.get("SITIO_PULSO") or str(D / "pulso.json")
 _pulso_html = ""
+zona_pulso_info = []
 if marcos:
     _fin = _dtm.strptime(marcos[-1]["hora"], "%Y-%m-%dT%H:%M:%SZ")
     _ventana = [m for m in marcos if _dtm.strptime(m["hora"], "%Y-%m-%dT%H:%M:%SZ") > _fin - _td(hours=24)]
-    _calc = _pulso.calcular(_ventana, es_estado)
+    _calc = _pulso.calcular(_ventana, es_estado, categoria_ais, fuerza_inferida)
     _fecha = marcos[-1]["hora"][:10]
     _hist = _pulso.actualizar_historial(PULSO, _fecha, _calc)
     _hechos = {}
@@ -490,6 +491,11 @@ if marcos:
     _hechos.setdefault("z4", []).append("Presencia atribuida al PCC, según medios y la Presidencia de Paraguay, en Canindeyú y Alto Paraná: atribución, no sentencia")
     _ctx_zonas = {z: _siwa.resumen_unidades(_FUENTES_SIWA, un) for z, un in _siwa.UNIDADES_POR_ZONA.items()}
     _pulso_html = _pulso.bloque_html(_calc, _hist, _fecha, _hechos, _ctx_zonas, _siwa.pie(_FUENTES_SIWA))
+    for _z, *_ in _pulso.ZONAS:
+        zona_pulso_info.append(_pulso.info_zona(_z, _calc, _hist, _fecha, _hechos, _ctx_zonas))
+        _sv, _bx, _by, _bt = _pulso.boya(_z, _calc)
+        poi_svg.append(_sv)
+        poi_etq_svg.append(callout(_bx, _by, _bt, "boya", "seguridad comercio estado regulatorio"))
 
 # Las imágenes se incrustan en la página (data URI), una sola vez por imagen:
 # el visor de artefactos no carga imágenes enlazadas desde otro dominio.
@@ -530,7 +536,7 @@ sat_meta_json = json.dumps({k: _SAT.get(k) for k in ("goes", "viirs")} | {"obten
                            ensure_ascii=False)
 
 horas_json = json.dumps([m["hora"] for m in marcos])
-info_json = json.dumps(poi_info + riesgo_info + zona_info + buque_info, ensure_ascii=False)
+info_json = json.dumps(poi_info + riesgo_info + zona_info + zona_pulso_info + buque_info, ensure_ascii=False)
 
 TPL = r"""<!doctype html>
 <title>Ysyry — corredor Hidrovía</title>
@@ -554,7 +560,8 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,s
 header{padding:16px 0;border-bottom:1px solid var(--linea);display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
 /* Franja superior como la de SIWA: siempre clara, también en modo oscuro, porque el texto del logo
    de la Fundación es azul oscuro y desaparecería sobre un fondo oscuro. */
-.topbar{background:var(--papel);color:var(--fg);border-bottom:1px solid var(--linea);margin-inline:-16px}
+.topbar{background:var(--papel);color:var(--fg);border-bottom:1px solid var(--linea);margin-inline:-16px;position:sticky;top:0;z-index:50}
+html{scroll-padding-top:var(--alto-cab,72px)}
 .topbar-in{max-width:1480px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:20px;min-width:0}
 .marca-enlace{display:flex;align-items:center}
@@ -577,6 +584,9 @@ header{padding:16px 0;border-bottom:1px solid var(--linea);display:flex;align-it
 .tema{border:1px solid var(--linea);background:var(--papel);color:var(--fg);border-radius:20px;padding:5px 12px;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit}
 .tema:hover{border-color:var(--gris-acero)}
 @media (max-width:560px){.logo{height:34px}.inicio small{display:none}.sep{height:24px}.topbar nav{gap:12px;font-size:12.5px}.ultima{display:none}}
+/* cabecera fija y compacta en el teléfono: la web de la Fundación queda en el logo, y el enlace de texto se oculta para ganar alto */
+@media (max-width:560px){.topbar-in{padding:6px 14px;gap:4px}.franja-derecha{width:100%;justify-content:space-between;gap:10px;flex-wrap:nowrap}
+.topbar nav a:nth-child(3){display:none}.tema{padding:4px 10px;font-size:12px}.logo{height:30px}.inicio .nombre{font-size:19px;margin-bottom:0}}
 .isotipo{flex:0 0 auto;animation:latido2 2.4s ease-out infinite}
 .isotipo .punta{animation:latido 2.4s ease-out infinite}
 @keyframes latido{0%{filter:drop-shadow(0 0 0 rgba(251,101,0,.5))}70%{filter:drop-shadow(0 0 5px rgba(251,101,0,0))}100%{filter:drop-shadow(0 0 0 rgba(251,101,0,0))}}
@@ -656,6 +666,26 @@ svg.zoom-a .amar-a,svg.zoom-b .amar-b{display:inline}
 .chip-ciudad{background:#1b2a38;color:#dfe6e9;border:.6px solid rgba(255,255,255,.25)}
 .chip-tf{background:var(--naranja);color:var(--azul-profundo)}
 .chip-riesgo{background:var(--naranja);color:var(--azul-profundo)}
+.chip-boya{background:#0f2a2a;color:#cdeee4;border:.6px solid #8fd9c4}
+.boya-n{fill:#8fd9c4;stroke:var(--azul-noche);stroke-width:.8}
+.boya-aro{fill:none;stroke:#8fd9c4;stroke-width:1.2;opacity:0;transform-box:fill-box;transform-origin:center;animation:sonar 3s ease-out infinite;pointer-events:none}
+.boya-aro.a2{animation-delay:1.5s}
+.boya-sd .boya-n{fill:transparent;stroke:#667B89;stroke-width:1.2;stroke-dasharray:2 1.5}
+.boya-sd .boya-aro{animation:none;display:none}
+@keyframes sonar{0%{transform:scale(.4);opacity:.9}100%{transform:scale(1.7);opacity:0}}
+@media (prefers-reduced-motion:reduce){.boya-aro{animation:none;opacity:.45}}
+.spark{display:block;margin:4px 0 2px}
+.spark rect{fill:var(--gris-acero)}
+.spark .pe{fill:#2f7bff}
+.panel .spark-panel{padding:8px 0;border-top:1px solid var(--linea)}
+.panel .spark-panel svg{width:100%;height:auto}
+.latido{display:inline-flex;align-items:center;gap:7px;letter-spacing:.06em;white-space:nowrap}
+.latido i{width:9px;height:9px;border-radius:50%;background:#8fd9c4;position:relative;flex:0 0 auto}
+.latido i::after{content:"";position:absolute;inset:-1px;border-radius:50%;border:1.5px solid #8fd9c4;animation:sonar 2.4s ease-out infinite}
+.latido.retrasada i,.latido.sinsenal i{background:var(--naranja)}
+.latido.retrasada i::after,.latido.sinsenal i::after{border-color:var(--naranja)}
+.latido.sinsenal i::after{animation:none}
+@media (prefers-reduced-motion:reduce){.latido i::after{animation:none}}
 .chip-zona{background:#2a1808;color:#ffd9bf;border:.6px solid var(--naranja)}
 .reproductor{display:flex;align-items:center;gap:10px;padding:12px 2px;flex-wrap:wrap}
 .reproductor button{background:var(--acento);border:none;color:var(--acento-sobre);width:32px;height:32px;border-radius:50%;
@@ -669,7 +699,7 @@ svg.zoom-a .amar-a,svg.zoom-b .amar-b{display:inline}
 .dot{width:7px;height:7px;border-radius:50%;display:inline-block}
 /* Barra lateral de ficha — fija a la derecha en pantallas anchas, hoja
    inferior en celular. Nunca se superpone al mapa: lo empuja. */
-.panel{position:fixed;right:0;top:0;bottom:0;width:340px;max-width:88vw;background:var(--papel);
+.panel{position:fixed;right:0;top:var(--alto-cab,0px);bottom:0;width:340px;max-width:88vw;background:var(--papel);
   border-left:1px solid var(--linea);box-shadow:-8px 0 24px rgba(0,0,0,.18);
   transform:translateX(100%);transition:transform .25s ease;z-index:20;overflow-y:auto}
 .panel.abierto{transform:translateX(0)}
@@ -690,6 +720,7 @@ svg.zoom-a .amar-a,svg.zoom-b .amar-b{display:inline}
 .cover-ciudad{background:linear-gradient(135deg,#17222d,#324a5e)}
 .cover-tf{background:linear-gradient(135deg,#7a3300,var(--naranja))}
 .cover-riesgo{background:linear-gradient(135deg,#7a3300,var(--naranja))}
+.cover-boya{background:linear-gradient(135deg,#00121E,#1f5c55)}
 .cover-zona{background:linear-gradient(135deg,#5c1f00,var(--naranja))}
 .cover-estado{background:linear-gradient(135deg,#0b2a66,#2f7bff)}
 .cover-amarre{background:linear-gradient(135deg,#00121E,#667B89)}
@@ -818,7 +849,8 @@ footer{flex-direction:column}
       <button id="zoom-menos" aria-label="Alejar">&minus;</button>
       <button id="zoom-reset" aria-label="Restablecer">&#8634;</button>
     </span>
-    <span>Corredor — click en un punto o zona para ver su fuente · arrastrá o usá la rueda para acercar</span>
+    <span class="latido" id="latido" data-ultima="__ultima_iso__" title="Viva: la captura horaria de AIS llegó a tiempo. No dice nada sobre el río ni sobre el tráfico: sólo que el sistema está recibiendo datos."><i></i><b id="latido-txt">Verificando señal…</b></span>
+    <span>Corredor — click en un punto, zona o boya para ver su fuente · arrastrá o usá la rueda para acercar</span>
   </div>
   <div class="sat-ctrl" role="group" aria-label="Capa satelital">
     <span class="sat-tit">Satélite</span>
@@ -1189,6 +1221,7 @@ const ICONOS = {
   riesgo: '<path d="M12 3 22 20H2z"/><path d="M12 9v5"/><circle cx="12" cy="17" r="0.9" fill="#fff"/>',
   zona: '<path d="M12 3 22 20H2z"/><path d="M12 9v5"/><circle cx="12" cy="17" r="0.9" fill="#fff"/>',
   estado: '<path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/>',
+  boya: '<circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="10.5" stroke-dasharray="2 2"/>',
   amarre: '<path d="M12 3v13m0 0l-4-3m4 3l4-3"/><path d="M5 14a7 7 0 0014 0"/><circle cx="12" cy="5" r="1.6" fill="#fff"/>',
   buque: '<path d="M4 16h16l-2.5 5h-11z"/><path d="M12 16V6"/><path d="M12 6l5 4h-5z"/>'
 };
@@ -1256,6 +1289,16 @@ document.querySelectorAll(".clicable").forEach(function(el){
       pie.textContent = info.ctx_f;
       pD.appendChild(pie);
     }
+    if (info.spark_svg){
+      const sp = document.createElement("div");
+      sp.className = "spark-panel";
+      sp.innerHTML = info.spark_svg;
+      const cap = document.createElement("div");
+      cap.className = "nota-foto";
+      cap.textContent = info.spark_pie || "";
+      sp.appendChild(cap);
+      pD.appendChild(sp);
+    }
     if (info.coord){
       pCoTxt.textContent = info.coord + " (lat, lon)";
       pCo.style.display = "flex";
@@ -1267,6 +1310,28 @@ document.querySelectorAll(".clicable").forEach(function(el){
     panel.scrollTop = 0;
   });
 });
+(function(){
+  const el = document.getElementById("latido"), tx = document.getElementById("latido-txt");
+  if (!el || !tx) return;
+  function pinta(){
+    const t = Date.parse(el.dataset.ultima);
+    if (isNaN(t)) { tx.textContent = "Sin dato de captura"; el.className = "latido sinsenal"; return; }
+    const min = Math.max(0, Math.round((Date.now() - t) / 60000));
+    const hh = new Date(t).toISOString().slice(11, 16) + " UTC";
+    const hace = min < 90 ? min + " min" : Math.floor(min / 60) + " h " + (min % 60) + " min";
+    if (min < 95) { el.className = "latido viva"; tx.textContent = "Señal viva · última captura " + hh + " · hace " + hace; }
+    else if (min < 240) { el.className = "latido retrasada"; tx.textContent = "Captura retrasada · última " + hh + " · hace " + hace; }
+    else { el.className = "latido sinsenal"; tx.textContent = "Sin captura reciente · última " + hh + " · hace " + hace; }
+  }
+  pinta(); setInterval(pinta, 60000);
+})();
+(function(){
+  // la cabecera queda siempre a la vista: se mide su alto para que el panel y los anclas no queden debajo de ella
+  const cab = document.querySelector(".topbar");
+  function medir(){ if (cab) document.documentElement.style.setProperty("--alto-cab", Math.ceil(cab.getBoundingClientRect().height) + "px"); }
+  medir(); window.addEventListener("resize", medir);
+  if (window.ResizeObserver && cab) new ResizeObserver(medir).observe(cab);
+})();
 document.getElementById("panel-cerrar").addEventListener("click", function(){ panel.classList.remove("abierto"); });
 // Tema: el claro es siempre el predeterminado; «Fondo oscuro» lo cambia y se recuerda (con try/catch:
 // si el navegador bloquea el almacenamiento, el botón igual funciona, sólo que no se recuerda).
@@ -1314,6 +1379,7 @@ SUST = {
     "agua_osm": agua_osm_html,
     "alertas_fem": _ALERTAS_FEM,
     "pulso": _pulso_html,
+    "ultima_iso": marcos[-1]["hora"] if marcos else "",
     "poi_etq": "\n    ".join(poi_etq_svg),
     "grupos_hora": "\n    ".join(grupos_hora),
     "riesgos": "\n    ".join(riesgos_svg),
