@@ -473,6 +473,12 @@ for i, m in enumerate(marcos):
     oculto = "" if i == marco_inicial else ' style="display:none"'
     grupos_hora.append('<g class="marco-hora" data-i="%d"%s>%s</g>' % (i, oculto, "".join(partes + partes_estado)))
 
+# --- prospectiva: preguntas publicadas por la dirección (carpeta preguntas/ del repositorio) y su marcador ---
+import preguntas as _preg
+_RAIZ_P = Path(os.environ.get("SITIO_RAIZ") or Path(__file__).resolve().parents[1])
+_PREGUNTAS = _preg.cargar(Path(os.environ.get("SITIO_PREGUNTAS") or (_RAIZ_P / "preguntas")))
+_prospectiva_html = _preg.bloque_html(_PREGUNTAS, __import__("datetime").datetime.now(__import__("datetime").timezone.utc).strftime("%Y-%m-%d"))
+
 # --- pulso por zona: qué se observa en cada tramo (AIS de las últimas 24 h) y su comparación con días anteriores ---
 import pulso as _pulso
 from datetime import datetime as _dtm, timedelta as _td
@@ -967,10 +973,7 @@ __indicios__
 
 __alertas_fem__
 
-<div class="prospectiva" id="prospectiva">
-  <h2>Prospectiva — todavía no publicamos estimaciones</h2>
-  <p class="sub">Hoy no hay ninguna pregunta ni probabilidad publicada. Cuando las haya, seguirán el método de FEMÓNOE: preguntas con fecha de cierre, dictamen del décimo hombre antes de publicar y un marcador que se muestra «en calibración» hasta reunir 20 preguntas vencidas. Preferimos dejar este espacio vacío antes que mostrar un número sin respaldo.</p>
-</div>
+__prospectiva__
 
 <div class="metodo" id="metodo">
   <h2>Método y límites</h2>
@@ -1432,6 +1435,7 @@ SUST = {
     "agua_osm": agua_osm_html,
     "alertas_fem": _ALERTAS_FEM,
     "pulso": _pulso_html,
+    "prospectiva": _prospectiva_html,
     "indicios": _indicios_html,
     "ultima_iso": marcos[-1]["hora"] if marcos else "",
     "poi_etq": "\n    ".join(poi_etq_svg),

@@ -1,0 +1,32 @@
+name: Preguntas (resolver las vencidas)
+
+# Diario, público. Resuelve solas las preguntas publicadas que ya vencieron, contra un criterio mecánico fijado al nacer.
+# No crea ni cambia preguntas: sólo escribe el resultado. No consume tokens de Claude.
+on:
+  schedule:
+    - cron: "30 13 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  resolver:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Resolver las vencidas
+        run: python3 -u colectores/resolver_preguntas.py
+      - name: Guardar
+        run: |
+          git config user.name "ysyry-robot"
+          git config user.email "ysyry-robot@users.noreply.github.com"
+          git add preguntas
+          if git diff --cached --quiet; then
+            echo "Nada que resolver"
+          else
+            git commit -m "Preguntas: resultados al vencer (corrida automática)"
+            git pull --rebase --quiet
+            git push
+          fi
