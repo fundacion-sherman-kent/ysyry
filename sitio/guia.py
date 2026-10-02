@@ -18,7 +18,7 @@ TITULOS = [
     "Qué es Ysyry", "Cómo leer el mapa", "De dónde vienen los buques", "Por qué faltan buques en el río alto", "Cada cuánto se actualiza",
     "El latido y las boyas", "Las fotos de los buques", "El nivel del río", "Indicios y evidencia", "Las alertas", "Preguntas y marcador", "El pulso por zona",
     "Unidades del Estado", "Zonas atribuidas al PCC", "Piratería en el km 340", "Puertos y muelles", "ACLED, focos y homicidios", "SIWA y FEMÓNOE",
-    "Satélite y radar", "Cómo pedir una corrección", "Licencias y créditos", "Privacidad", "Auspicios y independencia", "Cómo usar el mapa", "Tema claro y oscuro", "Límites",
+    "Satélite y radar", "Cómo pedir una corrección", "Licencias y créditos", "Privacidad", "Auspicios y independencia", "Cómo usar el mapa", "Tema claro y oscuro", "Límites", "Prensa como fuente", "Cómo se mejora la plataforma",
 ]
 
 
@@ -77,6 +77,10 @@ def catalogo(c):
          "r": "El botón «Fondo oscuro» de la cabecera cambia el tema; la página abre siempre en claro y recuerda tu elección en este navegador."},
         {"k": "no hace limites que no cubre limitaciones confiable seguro verdad precision", "a": [["sec", "metodo", "Ver método y límites"]],
          "r": "Límites principales: el AIS no cubre el río alto ni a las embarcaciones menores; las unidades del Estado sin AIS no figuran; el nivel del río es de una sola fuente oficial y diaria; las zonas del pulso son cajas aproximadas; y los indicios no son alertas. La sección «Método y límites» los detalla uno por uno."},
+        {"k": "prensa noticias medios titulares gdelt periodicos cobertura diarios notas", "a": [["sec", "indicios-zonas", "Ver el libro de indicios"]],
+         "r": "La prensa es una segunda familia de fuentes: cada pocas horas el robot busca titulares de los últimos 7 días sobre piratería, crimen organizado, narcotráfico fluvial, bajante, licitación, conflictos gremiales y operativos, en la API abierta de GDELT, y cuenta cuántos medios distintos los cubren. Es una detección automática por palabras clave, no la verificó una persona: un titular no es un hecho confirmado y varios medios pueden repetir una misma agencia. GDELT limita las consultas, así que a veces el robot no logra actualizar y esa parte queda vacía en lugar de inventarse."},
+        {"k": "mejora automejora autoescala propone salud fuentes aprende crece se actualiza solo robot sugerencias", "a": [],
+         "r": "Dos robots privados trabajan sin gastar tokens de ningún modelo: uno mide cada día la salud de las fuentes y avisa si algo se degradó; otro propone cada semana unidades del Estado, puntos del mapa y fuentes nuevas a partir de los datos reales. Proponen y nunca aplican: una persona confirma o descarta. Los umbrales de las reglas están en un archivo editable y cada alerta candidata dice cuántos días se disparó su regla, para calibrarlas."},
     ]
     assert len(lista) == len(TITULOS), (len(lista), len(TITULOS))
     for e, t in zip(lista, TITULOS):
