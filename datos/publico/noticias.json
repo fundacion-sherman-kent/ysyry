@@ -1,0 +1,54 @@
+{
+ "obtenido": "2026-10-02T22:44:08Z",
+ "fuente": {
+  "nombre": "GDELT Project (API DOC 2.0)",
+  "url": "https://www.gdeltproject.org/",
+  "nota": "Detección automática por palabras clave sobre titulares de los últimos 7 días. No verificada por una persona."
+ },
+ "temas": {
+  "pirateria": {
+   "rotulo": "Piratería y robo de carga fluvial",
+   "articulos": [],
+   "dominios_distintos": 0
+  },
+  "crimen_organizado": {
+   "rotulo": "Crimen organizado transnacional en la Triple Frontera y el Alto Paraná",
+   "error": "GDELT no respondió",
+   "articulos": [],
+   "dominios_distintos": 0
+  },
+  "crimen_organizado_pt": {
+   "rotulo": "Crimen organizado transnacional en la Triple Frontera y el Alto Paraná",
+   "error": "GDELT no respondió",
+   "articulos": [],
+   "dominios_distintos": 0
+  },
+  "narcotrafico": {
+   "rotulo": "Narcotráfico por la vía fluvial",
+   "articulos": [],
+   "dominios_distintos": 0
+  },
+  "navegabilidad": {
+   "rotulo": "Bajante, calado y navegabilidad",
+   "error": "GDELT no respondió",
+   "articulos": [],
+   "dominios_distintos": 0
+  },
+  "regulatorio": {
+   "rotulo": "Licitación, dragado y peaje de la Hidrovía",
+   "articulos": [],
+   "dominios_distintos": 0
+  },
+  "gremial": {
+   "rotulo": "Conflictos gremiales en puertos y navegación",
+   "error": "GDELT no respondió",
+   "articulos": [],
+   "dominios_distintos": 0
+  },
+  "operativos": {
+   "rotulo": "Operativos de fuerzas de seguridad en el corredor",
+   "articulos": [],
+   "dominios_distintos": 0
+  }
+ }
+}
