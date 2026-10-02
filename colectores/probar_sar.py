@@ -27,6 +27,8 @@ USER_AGENT = "Ysyry/0.1 (Fundacion Sherman Kent; +https://github.com/fundacion-s
 AREAS = {
     "Delta y Rosario (río inferior)": (-61.0, -34.9, -57.6, -32.5),
     "Corredor completo": (-62.0, -35.5, -56.0, -15.0),
+    "Río de la Plata (estuario)": (-58.5, -35.6, -55.0, -34.0),
+    "CONTROL mar: Atlántico frente a Uruguay y Buenos Aires": (-56.0, -39.0, -51.0, -35.0),
 }
 
 
@@ -80,6 +82,8 @@ def main():
                 print("  matched=%s -> HTTP %s: %s" % (matched, estado, str(resp)[:250]), flush=True)
                 continue
             filas = aplanar(resp)
+            if not filas:
+                print("    forma de la respuesta: %s" % json.dumps(resp)[:300], flush=True)
             claves = sorted({k for f in filas for k in f}) if filas else []
             total = sum(float(f.get("detections", f.get("value", 0)) or 0) for f in filas)
             print("  matched=%s -> %d celdas, %.0f detecciones. Campos: %s" % (matched, len(filas), total, claves), flush=True)
