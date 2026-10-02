@@ -44,6 +44,8 @@ def categoria_ais(tipo):
     if 80 <= t < 90: return ("tanque", "#ff8a5c")
     return ("otro/sin clasificar", "#9aa7ad")
 colores = d["colores_pais"]
+# Ysyry es azul: los países se distinguen por tonos del gris azul de la casa (el violeta es de FEMÓNOE)
+colores = {"ARG": "#667B89", "PRY": "#C6C6C5", "BRA": "#3d5566", "URY": "#8aa0ae", "BOL": "#2b3a44", "CHL": "#1f3b4d"}
 W, H = d["W"], d["H"]
 
 # --- coordenadas reales (lat/lon), ya geocodificadas con Nominatim/OSM antes
@@ -1027,7 +1029,7 @@ const SAT = __sat_meta_json__;
     solicitarDeclutter();
   }
   function zoom(factor, cx, cy){
-    const nw = Math.min(W0, Math.max(W0*0.025, vb.w*factor));
+    const nw = Math.min(W0, Math.max(W0*0.0065, vb.w*factor));
     const nh = nw * (H0/W0);
     const px = (cx===undefined) ? vb.x+vb.w/2 : cx;
     const py = (cy===undefined) ? vb.y+vb.h/2 : cy;
