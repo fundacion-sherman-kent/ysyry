@@ -725,9 +725,10 @@ svg.zoom-a .amar-a,svg.zoom-b .amar-b{display:inline}
 .ev-fuerte{background:var(--azul-profundo);color:#F9F9F7;border-color:var(--azul-profundo)}
 .ev-corroborado{border-color:var(--azul-profundo);color:var(--fg)}
 .gauge{width:100%;height:auto;display:block}
-.guia-btn{position:fixed;right:18px;bottom:18px;z-index:35;display:flex;align-items:center;gap:8px;padding:9px 15px 9px 11px;border-radius:999px;border:1px solid var(--azul-profundo);background:var(--azul-profundo);color:#F9F9F7;font:700 13px/1 inherit;font-family:inherit;cursor:pointer;box-shadow:0 6px 20px rgba(0,18,30,.35)}
-.guia-btn svg{width:24px;height:24px;stroke:#F9F9F7;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.guia-btn:hover{background:#0b2a3d}
+.guia-btn{position:fixed;right:18px;bottom:18px;z-index:35;display:flex;align-items:center;gap:8px;padding:9px 16px 9px 11px;border-radius:999px;border:2px solid #667B89;background:#F9F9F7;color:#00121E;font:700 13px/1 inherit;font-family:inherit;cursor:pointer;box-shadow:0 6px 20px rgba(0,18,30,.35)}
+.guia-btn svg{width:26px;height:26px;stroke:#00121E;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.guia-btn:hover{background:#ffffff;border-color:#00121E}
+.guia-btn:focus-visible{outline:3px solid #FB6500;outline-offset:2px}
 body.ficha-abierta .guia-btn{right:calc(340px + 18px)}
 .guia{position:fixed;right:18px;bottom:74px;z-index:36;width:380px;max-width:calc(100vw - 24px);height:min(560px,calc(100vh - 150px));display:none;flex-direction:column;background:var(--papel);color:var(--fg);border:1px solid var(--linea);border-radius:14px;box-shadow:0 14px 40px rgba(0,18,30,.35);overflow:hidden}
 .guia.abierta{display:flex}
@@ -1055,15 +1056,15 @@ __prospectiva__
   </div>
 </div>
 
-<button type="button" class="guia-btn" id="guia-btn" aria-expanded="false" aria-controls="guia" title="Preguntale a la guía de Ysyry">
-  <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="10" width="20" height="15" rx="4"/><path d="M16 10V5"/><circle cx="16" cy="4" r="1.6" fill="#FB6500" stroke="none"/><circle cx="12" cy="17" r="1.7" fill="#F9F9F7" stroke="none"/><circle cx="20" cy="17" r="1.7" fill="#F9F9F7" stroke="none"/><path d="M12.5 21.5h7"/><path d="M3 16v4M29 16v4"/></svg>
-  Guía
+<button type="button" class="guia-btn" id="guia-btn" aria-expanded="false" aria-controls="guia" title="Ayuda de Ysyry: preguntá o buscá un buque, puerto o estación" aria-label="Abrir la ayuda de Ysyry">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="10" width="20" height="15" rx="4"/><path d="M16 10V5"/><circle cx="16" cy="4" r="1.6" fill="#FB6500" stroke="none"/><circle cx="12" cy="17" r="1.7" fill="#00121E" stroke="none"/><circle cx="20" cy="17" r="1.7" fill="#00121E" stroke="none"/><path d="M12.5 21.5h7"/><path d="M3 16v4M29 16v4"/></svg>
+  Ayuda
 </button>
-<section class="guia" id="guia" role="dialog" aria-label="Guía de Ysyry" aria-modal="false">
+<section class="guia" id="guia" role="dialog" aria-label="Ayuda de Ysyry" aria-modal="false">
   <div class="guia-cab">
     <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="10" width="20" height="15" rx="4"/><path d="M16 10V5"/><circle cx="16" cy="4" r="1.6" fill="#FB6500" stroke="none"/><circle cx="12" cy="17" r="1.7" fill="#F9F9F7" stroke="none"/><circle cx="20" cy="17" r="1.7" fill="#F9F9F7" stroke="none"/><path d="M12.5 21.5h7"/></svg>
-    <div><b>Guía de Ysyry</b><small>Respuestas escritas de antemano · no es un modelo de IA</small></div>
-    <button type="button" id="guia-cerrar" aria-label="Cerrar la guía">&times;</button>
+    <div><b>Ayuda de Ysyry</b><small>Respuestas escritas de antemano · no es un modelo de IA</small></div>
+    <button type="button" id="guia-cerrar" aria-label="Cerrar la ayuda">&times;</button>
   </div>
   <div class="guia-msgs" id="guia-msgs" aria-live="polite"></div>
   <div class="guia-chips" id="guia-chips"></div>
@@ -1526,7 +1527,7 @@ document.querySelectorAll(".clicable").forEach(function(el){
   function abre(){
     caja.classList.add("abierta"); btn.setAttribute("aria-expanded", "true");
     if (!msgs.children.length){
-      agrega("Hola, soy la guía de Ysyry. No soy un modelo de IA: respondo con textos escritos de antemano sobre esta plataforma y puedo buscar buques, puertos y estaciones en el mapa. Si no sé algo, te lo digo.");
+      agrega("Hola, soy el ayudante de Ysyry. No soy un modelo de IA: respondo con textos escritos de antemano sobre esta plataforma y puedo buscar buques, puertos y estaciones en el mapa. Si no sé algo, te lo digo.");
       SUG.forEach(function(s){ const b = document.createElement("button"); b.type = "button"; b.textContent = s; b.addEventListener("click", function(){ agrega(s, "yo"); responde(s); }); chips.appendChild(b); });
     }
     setTimeout(function(){ q.focus(); }, 50);

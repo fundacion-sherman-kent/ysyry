@@ -1,4 +1,4 @@
-"""Catálogo de la guía de ayuda de Ysyry. La guía NO es un modelo de IA: busca en estas respuestas escritas de antemano y en los
+"""Catálogo de la ayuda de Ysyry. El ayudante NO es un modelo de IA: busca en estas respuestas escritas de antemano y en los
 nombres del mapa (buques, puertos, estaciones, zonas). No inventa: si no encuentra, lo dice. No gasta tokens ni llama a ningún servicio.
 
 Cada entrada: k = palabras clave (sin tildes ni mayúsculas, el buscador también las quita), r = respuesta, a = acciones
