@@ -1041,7 +1041,11 @@ const SAT = __sat_meta_json__;
   const items = [];
   svg.querySelectorAll("g[transform]").forEach(function(g){
     const m = RE_T.exec(g.getAttribute("transform"));
-    if (m) items.push({tipo:"g", el:g, x:+m[1], y:+m[2], r:(m[3]===undefined ? null : +m[3])});
+    if (m) {
+      const h = g.querySelector(".hit");
+      items.push({tipo:"g", el:g, x:+m[1], y:+m[2], r:(m[3]===undefined ? null : +m[3]),
+        buque:g.classList.contains("buque-g"), amar:g.classList.contains("amar"), hit:h, rh:(h ? +h.getAttribute("r") : 0)});
+    }
   });
   svg.querySelectorAll(".etq-g").forEach(function(g){
     const l = g.querySelector(".etq-linea");
@@ -1058,10 +1062,16 @@ const SAT = __sat_meta_json__;
     const b = 1 + 1.4 * (1 - s);
     const sm = s * (0.8 + 0.2 * s) * b;    // marcadores
     const sc = s * (0.85 + 0.15 * s) * b;  // etiquetas
+    // Con zoom, los buques crecen más que lo demás y los muelles menos: a escala de puerto lo que importa son los buques,
+    // y los cientos de muelles de OpenStreetMap no deben taparlos. El área de clic del buque no crece con él.
+    const smB = s * (0.8 + 0.2 * s) * (1 + 3.6 * (1 - s));
+    const smA = s * (0.8 + 0.2 * s) * (1 + 0.6 * (1 - s));
     items.forEach(function(it){
       if (it.tipo === "g") {
+        const k = it.buque ? smB : (it.amar ? smA : sm);
+        if (it.buque && it.hit) it.hit.setAttribute("r", it.rh * sm / smB);
         it.el.setAttribute("transform", "translate(" + it.x + "," + it.y + ")" +
-          (it.r === null ? "" : " rotate(" + it.r + ")") + " scale(" + sm + ")");
+          (it.r === null ? "" : " rotate(" + it.r + ")") + " scale(" + k + ")");
       } else if (it.tipo === "c") {
         it.el.setAttribute("r", it.r0 * sm);
         it.el.style.strokeWidth = (0.8 * sm) + "px";  // el borde también, o queda un aro negro enorme
