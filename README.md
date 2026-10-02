@@ -37,6 +37,7 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
   (rutas, geocodificación) se rigen por la ODbL.
 - **AIS:** AISHub y aisstream.io, a través de Open Waters AIS. AISHub permite redistribuir citándolo;
   aisstream.io no publica términos de uso.
+- **Cauces del Paraná bajo, el Delta y el Uruguay:** © colaboradores de OpenStreetMap (ODbL), simplificados (`sitio/datos/agua_osm.json`).
 - **Límites:** geoBoundaries (CC BY 4.0). **Ríos:** Natural Earth. **Rutas:** © colaboradores de
   OpenStreetMap (ODbL).
 - **Satélite:** NASA GIBS (NASA ESDIS); GOES-East de NOAA; VIIRS NOAA-20.

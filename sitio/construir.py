@@ -147,8 +147,17 @@ def datos_poi(q):
 # --- capas geométricas ---
 paises_svg = ['<path class="pais" d="%s" fill="none" stroke="#dfe6e9" stroke-opacity="0.85" stroke-width="2"/>' % p["d"] for p in d["paths_pais"]]
 prov_svg = ['<path class="prov" d="%s" fill="%s" fill-opacity="0.20" stroke="none"/>' % (p["d"], colores.get(p["pais"], "#667B89")) for p in d["paths_prov"]]
-rio_parana_html = '<path class="rio-real" d="%s" fill="none"/>' % d["rio_parana"]
-rio_paraguay_html = '<path class="rio-paraguay" d="%s" fill="none"/>' % d["rio_paraguay"]
+# cauces anchos (Paraná, Delta, Uruguay) de OpenStreetMap, ODbL: el río como superficie de agua, no sólo como línea,
+# para que los buques y puertos queden sobre el agua. Cuadros que fallaron: ver el README (el Paraná medio y el alto
+# quedan con la línea más una franja de ancho aproximado).
+_AGUA = json.load(open(D / "agua_osm.json", encoding="utf-8"))
+agua_osm_html = '<path class="agua-osm" d="%s" fill-rule="evenodd"/>' % _AGUA["d"]
+# Aguas arriba de Rosario no hay cauce de OpenStreetMap: el río es la línea de Natural Earth más una franja de ancho
+# geográfico aproximado (crece al acercar), porque medimos que los buques quedan hasta ~3 km a un lado de esa línea.
+rio_parana_html = ('<path class="rio-banda" d="%s" fill="none" stroke-width="1.2"/>' % d["rio_parana"]
+                   + '<path class="rio-real" d="%s" fill="none"/>' % d["rio_parana"])
+rio_paraguay_html = ('<path class="rio-banda" d="%s" fill="none" stroke-width="0.8"/>' % d["rio_paraguay"]
+                     + '<path class="rio-paraguay" d="%s" fill="none"/>' % d["rio_paraguay"])
 rio_pilco_html = '<path class="afluente" d="%s" fill="none"/>' % d["rio_pilcomayo"]
 rio_bermejo_html = '<path class="afluente" d="%s" fill="none"/>' % d["rio_bermejo"]
 rutas_html = '<path class="ruta" d="%s" fill="none"/>' % d["rutas_reales"]
@@ -589,6 +598,8 @@ svg.mapa[data-sat] .prov{display:none}
    anchos están en píxeles. */
 .rio-real,.rio-paraguay,.afluente,.ruta,.bioceanico,.pais,.zona-actor{vector-effect:non-scaling-stroke}
 .pais{stroke-width:1.6px}
+.agua-osm{fill:#23475f;fill-opacity:.9;stroke:none}
+.rio-banda{stroke:#23475f;stroke-opacity:.9;stroke-linejoin:round;stroke-linecap:round}
 .rio-real{stroke:var(--gris-acero);stroke-width:3.5px;stroke-linejoin:round;stroke-linecap:round}
 .rio-paraguay{stroke:var(--gris-acero);stroke-width:3px;stroke-linejoin:round;stroke-linecap:round;opacity:.6}
 .afluente{stroke:#6b8fa3;stroke-width:1.6px;stroke-linejoin:round;stroke-linecap:round;opacity:.65}
@@ -794,6 +805,7 @@ footer{flex-direction:column}
   <svg class="mapa" id="svg-mapa" viewBox="0 0 __W__ __H__" preserveAspectRatio="xMidYMid meet">
     __sat_imgs__
     __provincias__
+    __agua_osm__
     __paises__
     __rutas__
     __bioceanico__
@@ -854,6 +866,7 @@ __alertas_fem__
     <li><b>Embarcaciones.</b> Posiciones que transmiten los propios buques por AIS, recopiladas por redes colaborativas (AISHub y aisstream.io, a través de Open Waters AIS), una captura por hora. La identidad es la que transmite cada buque. <b>Límite:</b> el AIS no cubre el río alto (Alto Paraguay y el tramo Asunción–Corrientes no devolvieron datos), y lo que no transmite AIS no aparece: un mapa sin buques en un tramo no significa que no haya tráfico.</li>
     <li><b>Triángulo azul — embarcación del Estado.</b> Se marca cuando el propio buque transmite el tipo militar (35) o de fuerzas del orden (55), o por el prefijo de su nombre (ARA, GC). La fuerza que aparece en la ficha está <b>inferida</b> del nombre, no transmitida. Hoy sólo se detectan unidades argentinas; no es que no existan otras, sino que no las vemos.</li>
     <li><b>Fotos.</b> Tres niveles, y cada ficha dice cuál es: foto verificada por el número IMO del buque; coincidencia por nombre, sólo cuando el buque no transmite IMO; o imagen ilustrativa de su tipo, que <b>no es una foto de ese buque</b>. Autor y licencia en cada una.</li>
+    <li><b>Cauce de los ríos.</b> Del Paraná bajo, el Delta y el Uruguay se dibuja la superficie de agua con OpenStreetMap (© colaboradores, ODbL, simplificada: no es cartografía náutica y no sirve para navegar). Aguas arriba de Rosario, y donde la consulta falló, el río es una línea con una franja de ancho aproximado. Las posiciones AIS no se corrigen nunca: si un buque aparece fuera del agua dibujada, es el dibujo el que es aproximado.</li>
     <li><b>Puertos, muelles, amarraderos y rampas.</b> Salen de OpenStreetMap, una instantánea del __fecha_amarres__: son aportes de colaboradores, <b>fuente única</b>, y pueden faltar, estar desactualizados o ser privados; que figuren no significa que operen hoy. Hay unos 2.900 puntos, la mayoría muelles pequeños del Delta, y por eso se muestran por niveles al acercar el mapa. OpenStreetMap casi no registra «caletas» en este corredor: si conocés una, abrí un pedido de corrección.</li>
     <li><b>Contexto por provincia o departamento.</b> Cada ficha de puerto o ciudad suma tres cifras de la unidad donde está, tomadas de los datos abiertos de <a href="https://siwa.fundacionkent.org/sitio/index.html">SIWA</a> (Fundación Sherman Kent, CC BY 4.0, rotulados allí como prototipo): homicidios de la fuente oficial de cada Estado, eventos de violencia política de ACLED (base secundaria sobre prensa y fuentes locales, no oficial) y focos de calor de NASA FIRMS de los últimos días. Son recuentos de toda la provincia, no del puerto, y no son tasas: una provincia grande tiene más aunque sea más segura. Los homicidios no son comparables entre países. Un foco de calor no es un incendio confirmado. Donde el conjunto no trae la unidad, la ficha no inventa el dato.</li>
     <li><b>Puertos y ciudades.</b> Posición geocodificada con OpenStreetMap; el tipo de terminal figura sólo donde hay fuente (Bolsa de Comercio de Rosario).</li>
@@ -1259,6 +1272,7 @@ SUST = {
     "amarres": "\n    ".join(amarres_svg),
     "amarres_json": json.dumps(amarres_json, ensure_ascii=False, separators=(",", ":")),
     "fecha_amarres": _AM["fecha"],
+    "agua_osm": agua_osm_html,
     "alertas_fem": _ALERTAS_FEM,
     "poi_etq": "\n    ".join(poi_etq_svg),
     "grupos_hora": "\n    ".join(grupos_hora),
