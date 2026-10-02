@@ -22,6 +22,7 @@ import urllib.request
 
 BASE = "https://gateway.api.globalfishingwatch.org/v3/4wings/report"
 DATASET = "public-global-sar-presence:latest"
+USER_AGENT = "Ysyry/0.1 (Fundacion Sherman Kent; +https://github.com/fundacion-sherman-kent/ysyry)"
 
 AREAS = {
     "Delta y Rosario (río inferior)": (-61.0, -34.9, -57.6, -32.5),
@@ -42,7 +43,7 @@ def consultar(token, bbox, desde, hasta, matched, resolucion="HIGH", temporal="E
     url = BASE + "?" + urllib.parse.urlencode(q)
     cuerpo = json.dumps({"geojson": poligono(bbox)}).encode()
     req = urllib.request.Request(url, data=cuerpo, method="POST", headers={
-        "Authorization": "Bearer " + token, "Content-Type": "application/json"})
+        "Authorization": "Bearer " + token, "Content-Type": "application/json", "User-Agent": USER_AGENT})
     try:
         with urllib.request.urlopen(req, timeout=120) as r:
             return r.status, json.loads(r.read().decode())
