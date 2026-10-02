@@ -473,6 +473,23 @@ for i, m in enumerate(marcos):
     oculto = "" if i == marco_inicial else ' style="display:none"'
     grupos_hora.append('<g class="marco-hora" data-i="%d"%s>%s</g>' % (i, oculto, "".join(partes + partes_estado)))
 
+# --- pulso por zona: qué se observa en cada tramo (AIS de las últimas 24 h) y su comparación con días anteriores ---
+import pulso as _pulso
+from datetime import datetime as _dtm, timedelta as _td
+PULSO = os.environ.get("SITIO_PULSO") or str(D / "pulso.json")
+_pulso_html = ""
+if marcos:
+    _fin = _dtm.strptime(marcos[-1]["hora"], "%Y-%m-%dT%H:%M:%SZ")
+    _ventana = [m for m in marcos if _dtm.strptime(m["hora"], "%Y-%m-%dT%H:%M:%SZ") > _fin - _td(hours=24)]
+    _calc = _pulso.calcular(_ventana, es_estado)
+    _fecha = marcos[-1]["hora"][:10]
+    _hist = _pulso.actualizar_historial(PULSO, _fecha, _calc)
+    _hechos = {}
+    for _r in d["riesgos"]:
+        _hechos.setdefault(_pulso.zona_de(_r["x"], _r["y"]), []).append("Piratería, km 340 (hecho puntual informado por prensa, oct. 2025)")
+    _hechos.setdefault("z4", []).append("Presencia atribuida al PCC, según medios y la Presidencia de Paraguay, en Canindeyú y Alto Paraná: atribución, no sentencia")
+    _pulso_html = _pulso.bloque_html(_calc, _hist, _fecha, _hechos)
+
 # Las imágenes se incrustan en la página (data URI), una sola vez por imagen:
 # el visor de artefactos no carga imágenes enlazadas desde otro dominio.
 import base64, hashlib
@@ -718,6 +735,15 @@ nav a:hover{color:var(--fg)}
 .prospectiva{padding:26px 0 8px}
 .prospectiva h2{font-weight:700;letter-spacing:-0.02em;font-size:19px;margin:0 0 4px}
 .prospectiva .sub{color:var(--gris-acero);font-size:12.5px;margin:0 0 16px}
+.pulso{padding:22px 0 8px}
+.pulso h2{font-weight:700;letter-spacing:-0.02em;font-size:19px;margin:0 0 4px}
+.pulso .sub{color:var(--gris-acero);font-size:12.5px;margin:0 0 12px;max-width:880px}
+.tabla-pulso{overflow-x:auto;margin:0 0 10px;border:1px solid var(--linea);border-radius:8px}
+.tabla-pulso table{border-collapse:collapse;width:100%;min-width:820px;font-size:12.5px}
+.tabla-pulso th,.tabla-pulso td{padding:9px 10px;text-align:left;vertical-align:top;border-top:1px solid var(--linea)}
+.tabla-pulso thead th{border-top:0;font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--gris-acero)}
+.tabla-pulso tbody th small{display:block;font-weight:400;color:var(--gris-acero);font-size:11px;margin-top:2px}
+.tabla-pulso td.sd{color:var(--gris-acero)}
 .alertas-fem{margin:0 0 10px;padding-left:18px;max-width:880px}
 .alertas-fem li{font-size:13px;line-height:1.55;margin:0 0 10px}
 .alertas-fem .gris{color:var(--gris-acero);font-size:12px}
@@ -851,6 +877,8 @@ footer{flex-direction:column}
   <span><span class="dot" style="background:var(--naranja)"></span>Hecho informado (piratería) · ciudades de la Triple Frontera, nodo de contexto: no implica actividad ilícita</span>
   <span><span class="sw" style="background:var(--naranja);opacity:.3"></span>Zona con presencia atribuida (según fuentes citadas)</span>
 </div>
+
+__pulso__
 
 __alertas_fem__
 
@@ -1274,6 +1302,7 @@ SUST = {
     "fecha_amarres": _AM["fecha"],
     "agua_osm": agua_osm_html,
     "alertas_fem": _ALERTAS_FEM,
+    "pulso": _pulso_html,
     "poi_etq": "\n    ".join(poi_etq_svg),
     "grupos_hora": "\n    ".join(grupos_hora),
     "riesgos": "\n    ".join(riesgos_svg),

@@ -18,6 +18,7 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
   importante: el AIS no cubre el río alto; los buques sin AIS no aparecen; las fotos de cada
   embarcación son verificadas por número IMO sólo en una parte de los casos y el resto son imágenes
   ilustrativas, rotuladas como tales.
+- **Pulso por zona:** cinco tramos del corredor con los buques que se ven en las últimas 24 horas, cuántos están en movimiento, qué unidades del Estado transmiten AIS y cómo se compara con los días anteriores de ese mismo tramo (la comparación aparece con 7 días de historia, que se guarda en la rama `datos-pulso`). Mide huellas observables, no la conducta de ningún actor; donde el AIS no llega dice «sin datos», no «sin tráfico».
 - **Prospectiva:** todavía no se publica ninguna estimación.
 
 ## Cómo está hecho

@@ -32,6 +32,14 @@ jobs:
             echo "Todavía no hay historial: se empieza de cero"; echo "[]" > sitio/datos/marcos.json
           fi
 
+      - name: Traer el historial del pulso por zona (rama datos-pulso)
+        run: |
+          if curl -sf "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/datos-pulso/pulso.json" -o sitio/datos/pulso.json; then
+            echo "Pulso recuperado: $(wc -c < sitio/datos/pulso.json) bytes"
+          else
+            echo "Todavía no hay historial del pulso: se empieza de cero"; rm -f sitio/datos/pulso.json
+          fi
+
       - name: Traer la imagen satelital más reciente (rama datos-satelite)
         run: |
           base="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/datos-satelite/satelite"
@@ -64,6 +72,21 @@ jobs:
           git commit -q -m "Historial de capturas de AIS ($(date -u +%Y-%m-%dT%H:%MZ))"
           git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git push -q --force origin datos-ais
+
+      - name: Guardar el historial del pulso en la rama datos-pulso
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          test -f sitio/datos/pulso.json || { echo "No hay pulso que guardar"; exit 0; }
+          mkdir -p /tmp/pulso && cp sitio/datos/pulso.json /tmp/pulso/pulso.json
+          cd /tmp/pulso
+          git init -q -b datos-pulso
+          git config user.name "ysyry-robot"
+          git config user.email "ysyry-robot@users.noreply.github.com"
+          git add pulso.json
+          git commit -q -m "Historial del pulso por zona ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push -q --force origin datos-pulso
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
