@@ -1,0 +1,25 @@
+{
+ "obtenido": "2026-10-03T18:39:29Z",
+ "bbox": [
+  -72.4,
+  -37.4,
+  -50.9,
+  -14.1
+ ],
+ "ancho": 1300,
+ "alto": 1409,
+ "atribucion": "Imágenes: NASA GIBS (NASA ESDIS). GOES-East GeoColor: NOAA, producto de CIRA/CSU. VIIRS: satélite NOAA-20.",
+ "fuente": "NASA GIBS",
+ "goes": {
+  "capa": "GOES-East_ABI_GeoColor",
+  "tiempo": "2026-10-03T17:20:00Z",
+  "bytes": 406051,
+  "archivo": "goes.jpg"
+ },
+ "viirs": {
+  "capa": "VIIRS_NOAA20_CorrectedReflectance_TrueColor",
+  "tiempo": "2026-10-02",
+  "bytes": 420969,
+  "archivo": "viirs.jpg"
+ }
+}
