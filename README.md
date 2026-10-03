@@ -38,6 +38,19 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
   reciente y la despliega en GitHub Pages. Si el AIS no responde, el sitio conserva la última captura
   buena, con su fecha a la vista.
 
+## Robots que corren solos (GitHub Actions, sin tokens de ningún modelo)
+
+| Flujo | Cuándo | Qué hace |
+|---|---|---|
+| `sitio.yml` | cada hora | Baja la captura de AIS, reconstruye la página y la despliega |
+| `satelite.yml` | cada 3 horas | Imagen satelital más reciente (GOES y VIIRS) |
+| `nivel-rio.yml` | diario | Lee el nivel del río y suma al historial |
+| `noticias.yml` | cada 6 horas | Titulares de prensa de los últimos 7 días (GDELT) |
+| `preguntas.yml` | diario | Resuelve las preguntas publicadas que ya vencieron |
+| `radar.yml` | diario | Procesa pasadas de radar (en validación, no se publica) |
+
+Hay además robots privados (alertas candidatas para la curaduría, salud de las fuentes y autoescala) que abren Issues en un repositorio privado y nunca publican ni aplican nada solos.
+
 ## Fuentes y licencias
 
 - **Código:** GPL-3.0. **Datos propios:** CC BY 4.0. Los datos derivados de OpenStreetMap
