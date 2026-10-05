@@ -22,6 +22,7 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
 - **Libro de indicios:** cada observación del corredor con sus fuentes, la familia de cada fuente y su nivel de evidencia (*fuente única*, *corroborado* o *fuerte*; varias estaciones de un mismo organismo cuentan como una sola fuente), y lo que no dice. Incluye el nivel del río (estaciones de la Dirección de Meteorología e Hidrología de Paraguay, en el mapa como gotas), la presencia visible del Estado por AIS, las interrupciones de señal, la violencia política de ACLED y los hechos citados con sus fuentes. Un indicio no es una alerta.
 - **Alertas candidatas y preguntas con probabilidad:** las reglas de `sitio/indicios.py` proponen candidatas en un repositorio privado para la curaduría; nada se publica solo. Las preguntas publicadas viven en `preguntas/` (ver su `LEEME.md`): binarias, con plazo, banda de probabilidad en el léxico de Kent y criterio mecánico; el robot diario las resuelve al vencer y el marcador (Brier) se muestra «en calibración» hasta las 20 vencidas.
 - **Prensa como segunda familia de fuentes:** titulares de los últimos 7 días de la API abierta de GDELT, por tema y zona, contando medios distintos (detección automática por palabras clave, no verificada por una persona). GDELT limita las consultas: si un tema no se puede actualizar, queda vacío y no se inventa.
+- **Focos de calor cerca del río:** NASA FIRMS (VIIRS Suomi NPP y NOAA-20, archivos regionales de acceso libre, sin clave), los detectados a menos de 25 km del río en los últimos 3 días, como puntos en el mapa y como indicio por tramo. Una anomalía térmica no es un incendio confirmado ni dice su causa; dos satélites pueden ver el mismo foco.
 - **Parámetros de las reglas:** en `sitio/datos/parametros_reglas.json`, editables sin tocar código; cada alerta candidata dice cuántos días se disparó su regla.
 - **Autoescala y salud (privados):** un robot semanal propone unidades del Estado, puntos del mapa y fuentes candidatas a partir de los datos, sin ningún modelo, y uno diario mide la salud de las fuentes. Proponen; nunca aplican.
 - **Ayuda:** botón-robot que responde con textos escritos de antemano (no es un modelo de IA) y lleva a buques, puertos y estaciones del mapa.
@@ -44,6 +45,7 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
 |---|---|---|
 | `sitio.yml` | cada hora | Baja la captura de AIS, reconstruye la página y la despliega |
 | `satelite.yml` | cada 3 horas | Imagen satelital más reciente (GOES y VIIRS) |
+| `focos.yml` | cada 3 horas | Focos de calor a menos de 25 km del río (NASA FIRMS) |
 | `nivel-rio.yml` | diario | Lee el nivel del río y suma al historial |
 | `noticias.yml` | cada 6 horas | Titulares de prensa de los últimos 7 días (GDELT) |
 | `preguntas.yml` | diario | Resuelve las preguntas publicadas que ya vencieron |
