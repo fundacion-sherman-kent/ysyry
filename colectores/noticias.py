@@ -182,9 +182,9 @@ def main():
             lista.append({"titulo": tit[:220], "url": a.get("url", ""), "dominio": a.get("domain", ""), "fecha": (a.get("seendate") or "")[:8],
                           "pais": a.get("sourcecountry", ""), "zona": zona(tit)})
         base = t["id"].replace("_pt", "")
-        previo = salida["temas"].get(base)
-        if previo and not previo.get("error"):
-            previo["articulos"] += lista
+        acum = salida["temas"].get(base)
+        if acum and not acum.get("error"):
+            acum["articulos"] += lista
         else:
             salida["temas"][base] = {"rotulo": t["rotulo"], "articulos": lista}
         print("  %d titulares útiles de %d" % (len(lista), len(arts)))
