@@ -3,9 +3,9 @@ name: Noticias (segunda familia de fuentes)
 # Cada 6 horas, público. Baja de GDELT los titulares de los últimos 7 días sobre los temas del corredor (piratería, crimen organizado,
 # narcotráfico fluvial, bajante, licitación, conflictos gremiales, operativos) y los guarda con su medio y su fecha. Es detección
 # automática por palabras clave, no verificada por una persona. No consume tokens de Claude.
+# Programación apagada el 5/10/2026: GDELT bloquea las consultas desde GitHub y lo cubre el escáner propio (escaner.yml). Se puede lanzar a mano.
+# Para reactivarla: agregar bajo `on:` un `schedule:` con `- cron: "5 */6 * * *"`.
 on:
-  schedule:
-    - cron: "5 */6 * * *"
   workflow_dispatch: {}
 
 permissions:

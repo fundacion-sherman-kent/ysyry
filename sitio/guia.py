@@ -18,7 +18,7 @@ TITULOS = [
     "Qué es Ysyry", "Cómo leer el mapa", "De dónde vienen los buques", "Por qué faltan buques en el río alto", "Cada cuánto se actualiza",
     "El latido y las boyas", "Las fotos de los buques", "El nivel del río", "Indicios y evidencia", "Las alertas", "Preguntas y marcador", "El pulso por zona",
     "Unidades del Estado", "Zonas atribuidas al PCC", "Piratería en el km 340", "Puertos y muelles", "ACLED, focos y homicidios", "SIWA y FEMÓNOE",
-    "Satélite y radar", "Cómo pedir una corrección", "Licencias y créditos", "Privacidad", "Auspicios y independencia", "Cómo usar el mapa", "Tema claro y oscuro", "Límites", "Prensa como fuente", "Cómo se mejora la plataforma", "Focos de calor cerca del río", "Flujos ilícitos y su frescura",
+    "Satélite y radar", "Cómo pedir una corrección", "Licencias y créditos", "Privacidad", "Auspicios y independencia", "Cómo usar el mapa", "Tema claro y oscuro", "Límites", "Prensa como fuente", "Cómo se mejora la plataforma", "Focos de calor cerca del río", "Flujos ilícitos y su frescura", "El escáner propio",
 ]
 
 
@@ -85,6 +85,8 @@ def catalogo(c):
          "r": "Los puntos naranjas chicos son focos de calor que NASA FIRMS detectó con los satélites VIIRS a menos de 25 km del río en los últimos 3 días (más grandes y con borde blanco: confianza alta). Un foco es una anomalía térmica, no un incendio confirmado ni dice su causa: puede ser una quema agrícola, un incendio forestal o una antorcha industrial. Dos satélites pueden ver el mismo foco y una semana nublada lo esconde. El conteo por tramo está en el libro de indicios."},
         {"k": "flujos ilicitos rutas corredores narcotrafico contrabando trata armas hidrovia siwa frescura vigia activos activa cocaina cigarrillos", "a": [["tab", "flujos", "Ver flujos en el mapa"], ["sec", "flujos-siwa", "Ver frescura de los flujos"]],
          "r": "Con la pestaña «Flujos ilícitos (SIWA)» se ven las rutas registradas por terceros que SIWA publica y que pasan a menos de 40 km del río: en naranja las registradas en los últimos 24 meses, en claro las más antiguas. Son registros, no flujos medidos, y el trazo une puntos de paso: no es el recorrido real. Cada ficha dice la fuente, la confianza según SIWA y desde qué año está registrada. La tabla de frescura cruza cada familia (narcotráfico, contrabando, armas, trata…) con lo atrasada que está según SIWA y con el Vigía de fuentes, que avisa si cambió la página de una fuente de edición anual."},
+        {"k": "escaner scanner hechos detectados rombos titulares reglas sin modelo cero tokens decomisos detenciones piraterias deteccion automatica noticias", "a": [["sec", "escaner", "Ver los hechos detectados"]],
+         "r": "El escáner es un programa propio de Ysyry que no usa ningún modelo: lee canales RSS públicos de medios regionales y de organismos (SENAD y Policía Nacional de Paraguay, entre otros) y detecta, con reglas escritas, titulares que nombran un lugar o el río del corredor y un tipo de hecho (decomiso, detención, piratería, siniestro, bajante, conflicto gremial, operativo del Estado), con cantidades cuando las hay. Los junta si varios medios cubren lo mismo y comprueba que el enlace responda. Son candidatos, no hechos confirmados: no entiende el texto ni puede probar que dos medios sean independientes. Los rombos del mapa marcan el lugar mencionado, no el del hecho."},
     ]
     assert len(lista) == len(TITULOS), (len(lista), len(TITULOS))
     for e, t in zip(lista, TITULOS):

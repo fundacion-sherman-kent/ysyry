@@ -13,7 +13,7 @@ lo impugna el décimo hombre y publica la dirección; acá sólo se acumulan los
 import json
 import math
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import pulso as _pulso
@@ -254,8 +254,8 @@ def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_z
                            "nivel": nivel_evidencia(h["fuentes"]), "no_dice": h["no_dice"], "dato": {}})
     for z, ind_f in (focos_z or {}).items():
         res.setdefault(z, []).append(ind_f)
-    for z, ind_x in (extra or {}).items():
-        res.setdefault(z, []).append(ind_x)
+    for z, lista_x in (extra or {}).items():
+        res.setdefault(z, []).extend(lista_x)
     for z, lst in (prensa or {}).items():
         res.setdefault(z, []).extend(lst)
     return res
@@ -291,6 +291,88 @@ def _interrupciones(marcos):
                 out[z]["continua" if otras >= COBERTURA_CONTINUA else "hueco"] += 1
                 break
     return out
+
+
+# ---------------------------------------------------------------- escáner propio: hechos detectados por reglas en titulares
+ROTULO_TIPO = {"decomiso": "Decomiso o incautación", "detencion": "Detención u operativo contra el crimen organizado", "pirateria": "Piratería o robo de carga",
+               "siniestro": "Siniestro náutico", "navegabilidad": "Bajante, calado y navegabilidad", "regulatorio": "Licitación, peaje o conflicto gremial",
+               "estado": "Operativo de una fuerza del Estado"}
+
+
+def escaner(ruta, hoy):
+    """(eventos de los últimos 7 días con ubicación, indicios por zona). Detección automática: nunca más que «corroborado»."""
+    if not ruta or not Path(ruta).exists():
+        return [], [], {}
+    d = json.load(open(ruta, encoding="utf-8"))
+    evs = d.get("eventos", [])
+    por_zona = {}
+    for e in evs:
+        por_zona.setdefault(e.get("zona") or "general", []).append(e)
+    ind = {}
+    for z, lst in por_zona.items():
+        medios = {m["dominio"]: m for e in lst for m in e["medios"]}
+        fuentes = [{"nombre": dom, "familia": "oficial" if m.get("clase") == "oficial" else "prensa", "calificacion": "C3"} for dom, m in medios.items()]
+        tipos = {}
+        for e in lst:
+            for t, r in e["tipos"]:
+                tipos[r] = tipos.get(r, 0) + 1
+        nivel = nivel_evidencia(fuentes) if len(medios) >= MIN_MEDIOS else "Fuente única"
+        if nivel == "Fuerte":
+            nivel = "Corroborado"            # un escáner automático no puede probar independencia: tope «corroborado»
+        mejor = sorted(lst, key=lambda e: (e["fecha"], e["puntaje"]), reverse=True)[:2]
+        ind["gen" if z == "general" else z] = {
+            "id": "ESC", "tipo": "Hechos detectados", "titulo": "Hechos detectados por el escáner en titulares, últimos 14 días",
+            "texto": "%d %s (%s). Más recientes: %s" % (len(lst), "hecho detectado" if len(lst) == 1 else "hechos detectados",
+                                                         ", ".join("%s %d" % (k, v) for k, v in sorted(tipos.items(), key=lambda kv: -kv[1])),
+                                                         "; ".join("«%s» (%s, %s)" % (e["titulo"][:100], e["medios"][0]["dominio"], e["fecha"]) for e in mejor)),
+            "fuentes": fuentes, "nivel": nivel + " (detección automática)" if nivel != "Fuente única" else nivel,
+            "no_dice": "Detección automática por palabras clave, lugares y cantidades: no la verificó una persona y un titular no es un hecho confirmado. No puede probar que dos medios sean independientes (muchos copian a una agencia o a un comunicado oficial), así que nunca pasa de «corroborado».",
+            "dato": {"n": len(lst)}, "enlaces": [e["medios"][0]["url"] for e in mejor]}
+    recientes = [e for e in evs if e.get("ubicacion") and e["fecha"] >= (datetime.strptime(hoy, "%Y-%m-%d") - timedelta(days=7)).strftime("%Y-%m-%d")]
+    return recientes, evs, ind
+
+
+def marcas_escaner(recientes):
+    """Un rombo por lugar con los hechos de los últimos 7 días; devuelve (svg, info del panel) por lugar."""
+    por = {}
+    for e in recientes:
+        lat, lon = e["ubicacion"]
+        por.setdefault((lat, lon), []).append(e)
+    svgs, infos = [], []
+    for k, ((lat, lon), lst) in enumerate(sorted(por.items())):
+        x, y = _pulso.AX * lon + _pulso.BX, _pulso.AY * lat + _pulso.BY
+        lugar = lst[0]["lugares"][0] if lst[0]["lugares"] else "Corredor"
+        svgs.append('<g class="esc-g clicable" data-i="ev%d" data-familia="indicios" transform="translate(%.1f,%.1f)"><circle class="hit" r="12"/><path class="esc" d="M0,-5.5L5.5,0L0,5.5L-5.5,0Z"/></g>' % (k, x, y))
+        ctx = []
+        for e in sorted(lst, key=lambda e: (e["fecha"], e["puntaje"]), reverse=True)[:6]:
+            q = (" · %s %s" % (("%g" % e["cantidad"]["valor"]).replace(".", ","), e["cantidad"]["unidad"])) if e.get("cantidad") else ""
+            ctx.append("%s · %s%s: «%s» — %s%s %s" % (e["fecha"], "; ".join(r for _, r in e["tipos"]), q, e["titulo"][:150],
+                                                   ", ".join(m["dominio"] for m in e["medios"]), " (enlace verificado)" if e.get("verificado") else " (enlace sin verificar)", e["medios"][0]["url"]))
+        infos.append({"id": "ev%d" % k, "categoria": "Hechos detectados por el escáner · últimos 7 días", "titulo": "%s: %d %s" % (lugar, len(lst), "hecho" if len(lst) == 1 else "hechos"),
+                      "tipo": "Candidatos detectados por reglas en titulares de prensa y de organismos · la ubicación es la del lugar mencionado, no la del hecho",
+                      "fuente": "Escáner propio de Ysyry sobre canales RSS públicos de medios regionales y de organismos (sin modelo)", "clase": "escaner", "coord": None, "foto": None,
+                      "ctx": ctx, "ctx_t": "Titulares detectados (candidatos, no verificados)",
+                      "ctx_f": "No los verificó una persona y un titular no es un hecho confirmado. Lee la nota completa en el medio antes de sacar conclusiones."})
+    return svgs, infos
+
+
+def tabla_escaner(evs, hoy):
+    import html
+    e = html.escape
+    filas = []
+    for h in sorted(evs, key=lambda x: (x["fecha"], x["puntaje"]), reverse=True)[:25]:
+        q = ("%s %s" % (("%g" % h["cantidad"]["valor"]).replace(".", ","), h["cantidad"]["unidad"])) if h.get("cantidad") else "—"
+        med = "; ".join('<a href="%s" target="_blank" rel="noopener nofollow">%s</a>%s' % (e(m["url"]), e(m["dominio"]), " (oficial)" if m.get("clase") == "oficial" else "")
+                        for m in h["medios"] if m["url"].startswith(("http://", "https://")))
+        filas.append("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>"
+                     % (e(h["fecha"]), e("; ".join(r for _, r in h["tipos"])), e(", ".join(h.get("lugares") or ["—"])), e(h["titulo"][:170]), med, e(q),
+                        "sí" if h.get("verificado") else ("no" if h.get("verificado") is False else "—")))
+    cuerpo = ('<div class="tabla-pulso"><table><thead><tr><th>Fecha</th><th>Tipo</th><th>Lugar</th><th>Titular</th><th>Medios</th><th>Cantidad</th><th>Enlace responde</th></tr></thead><tbody>%s</tbody></table></div>' % "".join(filas)) \
+        if filas else '<p class="sub">En los canales que lee el escáner no apareció, en los últimos 14 días, ningún titular que nombre un lugar o el río del corredor y un tipo de hecho de la lista. Eso no significa que no haya pasado nada: sólo lee titulares recientes de pocos medios.</p>'
+    return ('<div class="pulso" id="escaner"><h2>Hechos detectados por el escáner propio · últimos 14 días</h2>'
+            '<p class="sub">Un programa sin ningún modelo lee los canales RSS públicos de medios regionales y de organismos (SENAD y Policía Nacional de Paraguay, entre otros) y detecta, con reglas escritas, titulares que nombran un lugar o el río del corredor y un tipo de hecho: decomiso, detención, piratería, siniestro, bajante, conflicto gremial u operativo del Estado. '
+            '<b>Son candidatos, no hechos confirmados:</b> no entiende el texto, no verifica que sea cierto y no puede probar que dos medios sean independientes. Los rombos del mapa marcan el lugar mencionado, no el del hecho.</p>%s'
+            '<p class="sub">Consultado el %s (UTC).</p></div>' % (cuerpo, e(hoy)))
 
 
 # ---------------------------------------------------------------- focos de calor cerca del río (NASA FIRMS)
