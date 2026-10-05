@@ -1,0 +1,35 @@
+name: Focos de calor cerca del río
+
+# Cada 3 horas, público. Baja de NASA FIRMS (archivos regionales de acceso libre, sin clave) los focos de calor del corredor,
+# se queda con los de menos de 25 km del río y acumula tres días. Un foco es una anomalía térmica, no un incendio confirmado.
+# No consume tokens de Claude.
+on:
+  schedule:
+    - cron: "35 */3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  leer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Leer focos
+        env:
+          DATOS_DIR: datos/publico
+        run: python3 -u colectores/focos_corredor.py
+      - name: Guardar
+        run: |
+          git config user.name "ysyry-robot"
+          git config user.email "ysyry-robot@users.noreply.github.com"
+          git add datos/publico/focos_corredor.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Focos de calor cerca del río (corrida automática)"
+            git pull --rebase --quiet
+            git push
+          fi

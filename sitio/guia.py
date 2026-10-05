@@ -18,7 +18,7 @@ TITULOS = [
     "Qué es Ysyry", "Cómo leer el mapa", "De dónde vienen los buques", "Por qué faltan buques en el río alto", "Cada cuánto se actualiza",
     "El latido y las boyas", "Las fotos de los buques", "El nivel del río", "Indicios y evidencia", "Las alertas", "Preguntas y marcador", "El pulso por zona",
     "Unidades del Estado", "Zonas atribuidas al PCC", "Piratería en el km 340", "Puertos y muelles", "ACLED, focos y homicidios", "SIWA y FEMÓNOE",
-    "Satélite y radar", "Cómo pedir una corrección", "Licencias y créditos", "Privacidad", "Auspicios y independencia", "Cómo usar el mapa", "Tema claro y oscuro", "Límites", "Prensa como fuente", "Cómo se mejora la plataforma",
+    "Satélite y radar", "Cómo pedir una corrección", "Licencias y créditos", "Privacidad", "Auspicios y independencia", "Cómo usar el mapa", "Tema claro y oscuro", "Límites", "Prensa como fuente", "Cómo se mejora la plataforma", "Focos de calor cerca del río",
 ]
 
 
@@ -81,6 +81,8 @@ def catalogo(c):
          "r": "La prensa es una segunda familia de fuentes: cada pocas horas el robot busca titulares de los últimos 7 días sobre piratería, crimen organizado, narcotráfico fluvial, bajante, licitación, conflictos gremiales y operativos, en la API abierta de GDELT, y cuenta cuántos medios distintos los cubren. Es una detección automática por palabras clave, no la verificó una persona: un titular no es un hecho confirmado y varios medios pueden repetir una misma agencia. GDELT limita las consultas, así que a veces el robot no logra actualizar y esa parte queda vacía en lugar de inventarse."},
         {"k": "mejora automejora autoescala propone salud fuentes aprende crece se actualiza solo robot sugerencias", "a": [],
          "r": "Dos robots privados trabajan sin gastar tokens de ningún modelo: uno mide cada día la salud de las fuentes y avisa si algo se degradó; otro propone cada semana unidades del Estado, puntos del mapa y fuentes nuevas a partir de los datos reales. Proponen y nunca aplican: una persona confirma o descarta. Los umbrales de las reglas están en un archivo editable y cada alerta candidata dice cuántos días se disparó su regla, para calibrarlas."},
+        {"k": "focos de calor fuego incendios quemas satelite firms nasa humo cerca del rio puntos naranjas viirs", "a": [["tab", "indicios", "Ver indicios en el mapa"]],
+         "r": "Los puntos naranjas chicos son focos de calor que NASA FIRMS detectó con los satélites VIIRS a menos de 25 km del río en los últimos 3 días (más grandes y con borde blanco: confianza alta). Un foco es una anomalía térmica, no un incendio confirmado ni dice su causa: puede ser una quema agrícola, un incendio forestal o una antorcha industrial. Dos satélites pueden ver el mismo foco y una semana nublada lo esconde. El conteo por tramo está en el libro de indicios."},
     ]
     assert len(lista) == len(TITULOS), (len(lista), len(TITULOS))
     for e, t in zip(lista, TITULOS):

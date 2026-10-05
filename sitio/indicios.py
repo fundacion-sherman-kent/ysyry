@@ -41,7 +41,7 @@ FUENTE_NIVEL = {"nombre": "Dirección de Meteorología e Hidrología, Paraguay",
                 "url": "https://www.meteorologia.gov.py/nivel-rio/indexconvencional.php"}
 FUENTE_AIS = {"nombre": "AIS vía Open Waters (AISHub y aisstream.io)", "familia": "sensor", "calificacion": "B3"}
 FUENTE_ACLED = {"nombre": "ACLED vía SIWA", "familia": "base secundaria", "calificacion": "B2"}
-FUENTE_FIRMS = {"nombre": "NASA FIRMS vía SIWA", "familia": "sensor", "calificacion": "A2"}
+FUENTE_FIRMS = {"nombre": "NASA FIRMS (VIIRS Suomi NPP y NOAA-20)", "familia": "sensor", "calificacion": "A2"}
 
 
 def nivel_evidencia(fuentes):
@@ -193,7 +193,7 @@ def _nivel_por_zona(ests):
     return por
 
 
-def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_zona, hechos_fuentes, siwa_mod, prensa=None):
+def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_zona, hechos_fuentes, siwa_mod, prensa=None, focos_z=None):
     """{zona: [indicio]}; cada indicio: id, titulo, texto, fuentes, nivel, no_dice, tipo."""
     por_nivel = _nivel_por_zona(ests)
     res = {z[0]: [] for z in _pulso.ZONAS}
@@ -252,6 +252,8 @@ def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_z
         for h in lst:
             res[z].append({"id": h["id"], "tipo": h["tipo"], "titulo": h["titulo"], "texto": h["texto"], "fuentes": h["fuentes"],
                            "nivel": nivel_evidencia(h["fuentes"]), "no_dice": h["no_dice"], "dato": {}})
+    for z, ind_f in (focos_z or {}).items():
+        res.setdefault(z, []).append(ind_f)
     for z, lst in (prensa or {}).items():
         res.setdefault(z, []).extend(lst)
     return res
@@ -287,6 +289,35 @@ def _interrupciones(marcos):
                 out[z]["continua" if otras >= COBERTURA_CONTINUA else "hueco"] += 1
                 break
     return out
+
+
+# ---------------------------------------------------------------- focos de calor cerca del río (NASA FIRMS)
+def focos(ruta):
+    """(puntos con x, y, zona; indicios por zona). Cuenta los focos de los últimos 3 días a menos de 25 km del río."""
+    if not ruta or not Path(ruta).exists():
+        return [], {}
+    d = json.load(open(ruta, encoding="utf-8"))
+    pts, por = [], {}
+    for lat, lon, fecha, hora, frp, conf, dn, sensor, km in d.get("puntos", []):
+        x, y = _pulso.AX * lon + _pulso.BX, _pulso.AY * lat + _pulso.BY
+        z = _pulso.zona_de(x, y)
+        pts.append({"x": x, "y": y, "z": z, "frp": frp, "conf": conf, "dn": dn, "fecha": fecha})
+        c = por.setdefault(z, {"n": 0, "alta": 0, "noche": 0})
+        c["n"] += 1
+        c["alta"] += 1 if conf == "h" else 0
+        c["noche"] += 1 if dn == "N" else 0
+    out = {}
+    for z, c in por.items():
+        out[z] = {"id": "FOC", "tipo": "Focos de calor", "titulo": "Focos de calor cerca del río, últimos 3 días",
+                  "texto": "%d detecciones a menos de %d km del río (%d de confianza alta, %d nocturnas), de dos satélites VIIRS." % (c["n"], int(d.get("radio_km", 25)), c["alta"], c["noche"]),
+                  "fuentes": [FUENTE_FIRMS], "nivel": nivel_evidencia([FUENTE_FIRMS]),
+                  "no_dice": "Una anomalía térmica no es un incendio confirmado ni dice su causa (quema agrícola, incendio forestal, antorcha industrial). Dos satélites pueden ver el mismo foco, y una semana nublada lo esconde.",
+                  "dato": c}
+    return pts, out
+
+
+def marca_foco(p):
+    return '<g class="foco-g" data-familia="indicios" transform="translate(%.1f,%.1f)"><circle class="foco%s" r="%s"/></g>' % (p["x"], p["y"], " foco-alto" if p["conf"] == "h" else "", "2.6" if p["conf"] == "h" else "2")
 
 
 # ---------------------------------------------------------------- prensa (segunda familia de fuentes)

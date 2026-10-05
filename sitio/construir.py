@@ -525,7 +525,10 @@ if marcos:
             "no_dice": "No implica que ocurra en todo el departamento ni involucra a sus habitantes; la fuente oficial no es independiente del Estado."}],
     }
     _prensa_ind = _ind.indicios_prensa(os.environ.get("SITIO_NOTICIAS") or (_raiz / "datos" / "publico" / "noticias.json"))
-    _indicios = _ind.indicios(_calc, _ventana, es_estado, _ests, _FUENTES_SIWA, _siwa.UNIDADES_POR_ZONA, _hechos_f, _siwa, _prensa_ind)
+    _focos_pts, _focos_ind = _ind.focos(os.environ.get("SITIO_FOCOS") or (_raiz / "datos" / "publico" / "focos_corredor.json"))
+    for _fp in sorted(_focos_pts, key=lambda q: (q["conf"] != "h", -q["frp"]))[:1500]:      # tope de peso de la página: primero los de confianza alta y más intensos
+        poi_svg.append(_ind.marca_foco(_fp))
+    _indicios = _ind.indicios(_calc, _ventana, es_estado, _ests, _FUENTES_SIWA, _siwa.UNIDADES_POR_ZONA, _hechos_f, _siwa, _prensa_ind, _focos_ind)
     _indicios_html = _ind.tabla_html(_indicios, _fecha)
     _GUIA = _guia.catalogo({"n_buques": len(marcos[-1]["puntos"]), "ultima": marcos[-1]["hora"][:16].replace("T", " ") + " UTC",
                             "n_estaciones": len([e for e in _ests if e["pos"]]), "n_bajas": len([e for e in _ests if e["estado"] == "bajo"]),
@@ -754,6 +757,8 @@ body.ficha-abierta .guia{right:calc(340px + 18px)}
 .guia-in button{padding:0 14px;border-radius:9px;border:0;background:var(--azul-profundo);color:#F9F9F7;font:700 13px/1 inherit;font-family:inherit;cursor:pointer}
 @media (max-width:760px){.guia{right:8px;left:8px;bottom:70px;width:auto;max-width:none;height:min(70vh,520px)}body.ficha-abierta .guia-btn{display:none}body.ficha-abierta .guia{display:none}.guia-btn{right:12px;bottom:12px}}
 @media print{.guia-btn,.guia{display:none!important}}
+.foco{fill:var(--naranja);fill-opacity:.55;stroke:none}
+.foco-alto{fill-opacity:.9;stroke:#fff;stroke-width:.5}
 .chip-boya{background:#0f2a2a;color:#cdeee4;border:.6px solid #8fd9c4}
 .boya-n{fill:#8fd9c4;stroke:var(--azul-noche);stroke-width:.8}
 .boya-aro{fill:none;stroke:#8fd9c4;stroke-width:1.2;opacity:0;transform-box:fill-box;transform-origin:center;animation:sonar 3s ease-out infinite;pointer-events:none}
@@ -1000,6 +1005,7 @@ footer{flex-direction:column}
   <span><span class="dot" style="background:var(--naranja)"></span>Hecho informado (piratería) · ciudades de la Triple Frontera, nodo de contexto: no implica actividad ilícita</span>
   <span><span class="sw" style="background:var(--naranja);opacity:.3"></span>Zona con presencia atribuida (según fuentes citadas)</span>
   <span><svg width="11" height="13" viewBox="-6 -7 12 14"><path d="M0,-5.5C3,-1.3 4.6,1 4.6,2.9A4.6,4.6 0 1 1 -4.6,2.9C-4.6,1 -3,-1.3 0,-5.5Z" fill="#8fd9c4" stroke="#00121E" stroke-width="1"/></svg>Estación de nivel del río (Meteorología de Paraguay) · naranja: en el cuarto inferior de su rango histórico · azul apagado: tramo regulado por represas, no mide sequía · hueca: lectura vencida</span>
+  <span><span class="dot" style="background:var(--naranja);opacity:.6"></span>Foco de calor a menos de 25 km del río (NASA FIRMS, últimos 3 días; no es un incendio confirmado)</span>
   <span><span class="dot" style="background:#8fd9c4"></span>Boya de pulso por zona · naranja: hay un indicio a mirar · punteada: sin datos de AIS</span>
 </div>
 
