@@ -488,6 +488,7 @@ import pulso as _pulso
 from datetime import datetime as _dtm, timedelta as _td
 PULSO = os.environ.get("SITIO_PULSO") or str(D / "pulso.json")
 _pulso_html = ""
+_flujos_html = ""
 _indicios_html = ""
 zona_pulso_info = []
 if marcos:
@@ -528,7 +529,21 @@ if marcos:
     _focos_pts, _focos_ind = _ind.focos(os.environ.get("SITIO_FOCOS") or (_raiz / "datos" / "publico" / "focos_corredor.json"))
     for _fp in sorted(_focos_pts, key=lambda q: (q["conf"] != "h", -q["frp"]))[:1500]:      # tope de peso de la página: primero los de confianza alta y más intensos
         poi_svg.append(_ind.marca_foco(_fp))
-    _indicios = _ind.indicios(_calc, _ventana, es_estado, _ests, _FUENTES_SIWA, _siwa.UNIDADES_POR_ZONA, _hechos_f, _siwa, _prensa_ind, _focos_ind)
+    # --- flujos ilícitos que usan el corredor, tomados de SIWA (rutas, frescura de los flujos y Vigía de fuentes) ---
+    import flujos_siwa as _flu
+    _flu_datos = _flu.cargar(D / "siwa" / "flujos_corredor.json")
+    _flu_rutas, _flu_ind, _flujos_html = [], {}, ""
+    if _flu_datos:
+        _flu_rutas = _flu.seleccionar(_flu_datos, _segs, int(_fecha[:4]))
+        for _k, _r in enumerate(_flu_rutas):
+            poi_svg.append(_flu.trazo_svg(_k, _r))
+            zona_pulso_info.append(_flu.info_ruta(_k, _r, _fecha))
+        _flu_ind = _flu.indicios_por_zona(_flu_rutas)
+        _flujos_html = _flu.tabla_html(_flu_rutas, _flu_datos, _fecha)
+        if os.environ.get("SITIO_GUARDAR_FLUJOS") and _flu_datos.get("en_vivo"):
+            json.dump(_flu.instantanea(_flu_datos, _flu_rutas), open(os.environ["SITIO_GUARDAR_FLUJOS"], "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    _flu_extra = {z: i for z, i in _flu_ind.items()}
+    _indicios = _ind.indicios(_calc, _ventana, es_estado, _ests, _FUENTES_SIWA, _siwa.UNIDADES_POR_ZONA, _hechos_f, _siwa, _prensa_ind, _focos_ind, _flu_extra)
     _indicios_html = _ind.tabla_html(_indicios, _fecha)
     _GUIA = _guia.catalogo({"n_buques": len(marcos[-1]["puntos"]), "ultima": marcos[-1]["hora"][:16].replace("T", " ") + " UTC",
                             "n_estaciones": len([e for e in _ests if e["pos"]]), "n_bajas": len([e for e in _ests if e["estado"] == "bajo"]),
@@ -759,6 +774,13 @@ body.ficha-abierta .guia{right:calc(340px + 18px)}
 @media print{.guia-btn,.guia{display:none!important}}
 .foco{fill:var(--naranja);fill-opacity:.55;stroke:none}
 .foco-alto{fill-opacity:.9;stroke:#fff;stroke-width:.5}
+.solo-fam{display:none}
+svg.fam-flujos .solo-fam{display:inline}
+.flujo{fill:none;stroke:#e9e3d2;stroke-width:1.8px;stroke-dasharray:6 4;stroke-linecap:round;stroke-linejoin:round;opacity:.75;vector-effect:non-scaling-stroke}
+.flujo-act{stroke:var(--naranja);opacity:.95;stroke-width:2.2px}
+.flujo-hit{fill:none;stroke:transparent;stroke-width:12px;vector-effect:non-scaling-stroke;pointer-events:stroke}
+.flujo-pt{fill:#e9e3d2;stroke:var(--azul-noche);stroke-width:1}
+.flujo-pt.flujo-act{fill:var(--naranja)}
 .chip-boya{background:#0f2a2a;color:#cdeee4;border:.6px solid #8fd9c4}
 .boya-n{fill:#8fd9c4;stroke:var(--azul-noche);stroke-width:.8}
 .boya-aro{fill:none;stroke:#8fd9c4;stroke-width:1.2;opacity:0;transform-box:fill-box;transform-origin:center;animation:sonar 3s ease-out infinite;pointer-events:none}
@@ -814,6 +836,7 @@ body.ficha-abierta .guia{right:calc(340px + 18px)}
 .cover-tf{background:linear-gradient(135deg,#7a3300,var(--naranja))}
 .cover-riesgo{background:linear-gradient(135deg,#7a3300,var(--naranja))}
 .cover-estacion{background:linear-gradient(135deg,#00121E,#2b5f7a)}
+.cover-flujo{background:linear-gradient(135deg,#00121E,#6b4a1e)}
 .cover-boya{background:linear-gradient(135deg,#00121E,#1f5c55)}
 .cover-zona{background:linear-gradient(135deg,#5c1f00,var(--naranja))}
 .cover-estado{background:linear-gradient(135deg,#0b2a66,#2f7bff)}
@@ -935,6 +958,7 @@ footer{flex-direction:column}
   <button class="familia-tab" data-familia="estado">Fuerzas del Estado</button>
   <button class="familia-tab" data-familia="regulatorio">Regulatorio</button>
   <button class="familia-tab" data-familia="indicios">Indicios y nivel del río</button>
+  <button class="familia-tab" data-familia="flujos">Flujos ilícitos (SIWA)</button>
 </div>
 
 <div class="col-mapa entra r3">
@@ -1005,6 +1029,7 @@ footer{flex-direction:column}
   <span><span class="dot" style="background:var(--naranja)"></span>Hecho informado (piratería) · ciudades de la Triple Frontera, nodo de contexto: no implica actividad ilícita</span>
   <span><span class="sw" style="background:var(--naranja);opacity:.3"></span>Zona con presencia atribuida (según fuentes citadas)</span>
   <span><svg width="11" height="13" viewBox="-6 -7 12 14"><path d="M0,-5.5C3,-1.3 4.6,1 4.6,2.9A4.6,4.6 0 1 1 -4.6,2.9C-4.6,1 -3,-1.3 0,-5.5Z" fill="#8fd9c4" stroke="#00121E" stroke-width="1"/></svg>Estación de nivel del río (Meteorología de Paraguay) · naranja: en el cuarto inferior de su rango histórico · azul apagado: tramo regulado por represas, no mide sequía · hueca: lectura vencida</span>
+  <span><span class="sw" style="background:var(--naranja)"></span>Ruta de flujo ilícito registrada por SIWA en los últimos 24 meses (pestaña «Flujos ilícitos»); en claro, las más antiguas: registros de terceros, no flujos medidos</span>
   <span><span class="dot" style="background:var(--naranja);opacity:.6"></span>Foco de calor a menos de 25 km del río (NASA FIRMS, últimos 3 días; no es un incendio confirmado)</span>
   <span><span class="dot" style="background:#8fd9c4"></span>Boya de pulso por zona · naranja: hay un indicio a mirar · punteada: sin datos de AIS</span>
 </div>
@@ -1012,6 +1037,8 @@ footer{flex-direction:column}
 __pulso__
 
 __indicios__
+
+__flujos__
 
 __alertas_fem__
 
@@ -1348,6 +1375,7 @@ const ICONOS = {
   zona: '<path d="M12 3 22 20H2z"/><path d="M12 9v5"/><circle cx="12" cy="17" r="0.9" fill="#fff"/>',
   estado: '<path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/>',
   estacion: '<path d="M12 3c3 4 6 7 6 11a6 6 0 01-12 0c0-4 3-7 6-11z"/>',
+  flujo: '<path d="M3 18c4-9 8-3 12-9 2-3 4-3 6-3" stroke-dasharray="3 3"/><circle cx="4" cy="18" r="1.5"/><circle cx="20" cy="6" r="1.5"/>',
   boya: '<circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="10.5" stroke-dasharray="2 2"/>',
   amarre: '<path d="M12 3v13m0 0l-4-3m4 3l4-3"/><path d="M5 14a7 7 0 0014 0"/><circle cx="12" cy="5" r="1.6" fill="#fff"/>',
   buque: '<path d="M4 16h16l-2.5 5h-11z"/><path d="M12 16V6"/><path d="M12 6l5 4h-5z"/>'
@@ -1363,6 +1391,7 @@ document.querySelectorAll(".familia-tab").forEach(function(btn){
       const coincide = !fam || suyas.indexOf(fam) !== -1;
       el.classList.toggle("dim", !coincide);
     });
+    document.getElementById("svg-mapa").classList.toggle("fam-flujos", fam === "flujos");
   });
 });
 
@@ -1597,6 +1626,7 @@ SUST = {
     "agua_osm": agua_osm_html,
     "alertas_fem": _ALERTAS_FEM,
     "pulso": _pulso_html,
+    "flujos": _flujos_html,
     "prospectiva": _prospectiva_html,
     "guia_json": json.dumps(_GUIA, ensure_ascii=False),
     "guia_sug": json.dumps(_guia.PREGUNTAS_SUGERIDAS, ensure_ascii=False),

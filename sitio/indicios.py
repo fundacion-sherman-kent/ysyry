@@ -193,7 +193,7 @@ def _nivel_por_zona(ests):
     return por
 
 
-def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_zona, hechos_fuentes, siwa_mod, prensa=None, focos_z=None):
+def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_zona, hechos_fuentes, siwa_mod, prensa=None, focos_z=None, extra=None):
     """{zona: [indicio]}; cada indicio: id, titulo, texto, fuentes, nivel, no_dice, tipo."""
     por_nivel = _nivel_por_zona(ests)
     res = {z[0]: [] for z in _pulso.ZONAS}
@@ -254,6 +254,8 @@ def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_z
                            "nivel": nivel_evidencia(h["fuentes"]), "no_dice": h["no_dice"], "dato": {}})
     for z, ind_f in (focos_z or {}).items():
         res.setdefault(z, []).append(ind_f)
+    for z, ind_x in (extra or {}).items():
+        res.setdefault(z, []).append(ind_x)
     for z, lst in (prensa or {}).items():
         res.setdefault(z, []).extend(lst)
     return res
