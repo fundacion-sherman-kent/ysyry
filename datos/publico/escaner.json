@@ -1,0 +1,108 @@
+{
+ "obtenido": "2026-10-05T21:57:59Z",
+ "dias": 14,
+ "fuentes": [
+  {
+   "dominio": "abc.com.py",
+   "ok": true,
+   "items": 100,
+   "candidatos": 0
+  },
+  {
+   "dominio": "abc.com.py",
+   "ok": true,
+   "items": 19,
+   "candidatos": 0
+  },
+  {
+   "dominio": "lanacion.com.py",
+   "ok": true,
+   "items": 100,
+   "candidatos": 0
+  },
+  {
+   "dominio": "lacapital.com.ar",
+   "ok": true,
+   "items": 44,
+   "candidatos": 0
+  },
+  {
+   "dominio": "clarin.com",
+   "ok": true,
+   "items": 10,
+   "candidatos": 0
+  },
+  {
+   "dominio": "infobae.com",
+   "ok": true,
+   "items": 100,
+   "candidatos": 0
+  },
+  {
+   "dominio": "perfil.com",
+   "ok": true,
+   "items": 50,
+   "candidatos": 0
+  },
+  {
+   "dominio": "lanacion.com.ar",
+   "ok": true,
+   "items": 88,
+   "candidatos": 0
+  },
+  {
+   "dominio": "g1.globo.com",
+   "ok": true,
+   "items": 100,
+   "candidatos": 1
+  },
+  {
+   "dominio": "senad.gov.py",
+   "ok": true,
+   "items": 10,
+   "candidatos": 1
+  },
+  {
+   "dominio": "policianacional.gov.py",
+   "ok": true,
+   "items": 5,
+   "candidatos": 0
+  }
+ ],
+ "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
+ "eventos": [
+  {
+   "titulo": "SENAD CONCRETA EXPULSIÓN DE INTEGRANTE DEL COMANDO VERMELHOI",
+   "url": "https://senad.gov.py/senad-concreta-expulsion-de-integrante-del-comando-vermelhoi/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-10-02",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Pedro Juan Caballero"
+   ],
+   "ubicacion": [
+    -22.55,
+    -55.73
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/senad-concreta-expulsion-de-integrante-del-comando-vermelhoi/"
+    }
+   ],
+   "id": "bc1cc27ffe",
+   "verificado": true
+  }
+ ]
+}
