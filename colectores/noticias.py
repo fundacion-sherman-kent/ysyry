@@ -155,10 +155,12 @@ def main():
               "fuente": {"nombre": "GDELT Project (API DOC 2.0)", "url": "https://www.gdeltproject.org/",
                          "nota": "Detección automática por palabras clave sobre titulares de los últimos 7 días. No verificada por una persona."},
               "temas": {}}
-    fallas, frescos = [], []
+    fallas, frescos, bloqueos = [], [], 0
     for t in TEMAS:
         print("Tema:", t["id"])
-        arts = consultar(t["q"], t["idioma"])
+        # disyuntor: si GDELT ya falló del todo en dos temas seguidos, bloquea esta dirección y no se pierde más tiempo
+        arts = None if bloqueos >= 2 else consultar(t["q"], t["idioma"])
+        bloqueos = bloqueos + 1 if arts is None else 0
         if arts is None:
             # se conserva lo último bueno de este tema, rotulado con su fecha, y se cuenta como falla
             viejo = (previo.get("temas") or {}).get(t["id"].replace("_pt", ""))
