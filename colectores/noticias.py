@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Segunda familia de fuentes: titulares de prensa sobre el corredor, de la API abierta de GDELT (gdeltproject.org).
+"""Segunda familia de fuentes: titulares de prensa sobre el corredor, de la API abierta de GDELT (gdeltproject.org) y, cuando GDELT
+limita las consultas (lo hace seguido), de los canales RSS públicos de seis medios regionales.
 
 Se guardan sólo el titular, el enlace, el medio y la fecha (nunca el texto de la nota), por tema y por zona, para que Ysyry cuente
 cuántos MEDIOS DISTINTOS cubren un tema. Es una detección automática por palabras clave: no la verificó una persona, así que
@@ -8,6 +9,7 @@ nada de lo que sale de acá es un hecho, es un indicio de que hay cobertura. Se 
 
 Escribe DATOS_DIR/noticias.json (dato público: titulares y enlaces ya públicos)."""
 import json
+import html as _html
 import os
 import re
 import sys
@@ -15,7 +17,8 @@ import time
 import unicodedata
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+import xml.etree.ElementTree as ET
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 API = "https://api.gdeltproject.org/api/v2/doc/doc"
@@ -48,6 +51,62 @@ TEMAS = [
      "q": '(Prefectura OR "Prefectura Naval" OR "Armada Paraguaya" OR "Gendarmeria") (operativo OR secuestro OR incautacion OR detenidos) (Parana OR "rio Paraguay" OR hidrovia OR barcaza)',
      "exige": RIO, "excluye": r"(pesca deportiva|regata)"},
 ]
+# Respaldo: canales RSS públicos de medios regionales (hecho para que lo lean programas; se guarda sólo titular, enlace, medio y fecha).
+FEEDS = [("abc.com.py", "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml"),
+         ("lanacion.com.py", "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml"),
+         ("lacapital.com.ar", "https://www.lacapital.com.ar/rss/ultimo-momento.xml"),
+         ("clarin.com", "https://www.clarin.com/rss/lo-ultimo/"),
+         ("infobae.com", "https://www.infobae.com/arc/outboundfeeds/rss/"),
+         ("perfil.com", "https://www.perfil.com/feed")]
+# cada tema del respaldo exige que el titular (o su bajada) cumpla TODAS estas expresiones
+RSS_REGLAS = {
+    "pirateria": [r"(pirater|piratas|robo de carga|asalto|asaltan|ataque a (buque|barcaza)|abordaje)", RIO],
+    "crimen_organizado": [r"(\bpcc\b|primer comando|comando vermelho)", r"(paraguay|canindeyu|alto parana|triple frontera|pedro juan|hidrovia)"],
+    "narcotrafico": [r"(narco|cocaina|cargamento|droga|estupefaciente)", r"(barcaza|hidrovia|rio parana|rio paraguay|puerto de rosario|convoy)"],
+    "navegabilidad": [r"(bajante|calado|nivel del rio|altura del rio)", r"(parana|paraguay|hidrovia|rosario|asuncion)"],
+    "regulatorio": [r"(hidrovia|via navegable)", r"(licitacion|dragado|peaje|concesion|jan de nul|deme\b)"],
+    "gremial": [r"(practicos|\bparo\b|huelga|conflicto gremial)", r"(hidrovia|portuari|puerto de|navegacion|barcazas|buques)"],
+    "operativos": [r"(prefectura|armada paraguaya|gendarmeria)", r"(operativo|secuestro|incautacion|detenid)", r"(rio parana|rio paraguay|hidrovia|barcaza|puerto)"],
+}
+
+
+def bajar_feeds():
+    """[(dominio, titulo, bajada_normalizada, url, fecha)] de los canales RSS que responden."""
+    out = []
+    for dominio, url in FEEDS:
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; " + UA + ")"}), timeout=40) as r:
+                raiz = ET.fromstring(r.read())
+        except Exception as e:
+            print("  RSS %s no respondió: %s" % (dominio, str(e)[:60]))
+            continue
+        n = 0
+        for it in raiz.iter("item"):
+            tit = _html.unescape((it.findtext("title") or "").strip())
+            desc = re.sub(r"<[^>]+>", " ", _html.unescape(it.findtext("description") or ""))
+            link = (it.findtext("link") or "").strip()
+            if tit and link.startswith(("http://", "https://")):
+                f = (it.findtext("pubDate") or "")[5:16]
+                out.append((dominio, tit, norm(tit + " " + desc[:300]), link, f))
+                n += 1
+        print("  RSS %s: %d items" % (dominio, n))
+    return out
+
+
+def desde_feeds(tema_id, feeds):
+    reglas = RSS_REGLAS.get(tema_id)
+    if not reglas:
+        return []
+    lista, vistos = [], set()
+    for dominio, tit, texto, link, f in feeds:
+        nt = norm(tit)
+        if nt in vistos or not all(re.search(rx, texto) for rx in reglas):
+            continue
+        vistos.add(nt)
+        lista.append({"titulo": tit[:220], "url": link, "dominio": dominio, "fecha": f, "pais": "", "zona": zona(tit)})
+    return lista
+
+
 # palabras que ubican el titular en una zona del pulso; lo que no coincide queda «general»
 ZONAS = [("z4", r"(triple frontera|ciudad del este|foz do iguacu|puerto iguazu|alto parana|canindeyu|pedro juan|ponta pora|posadas|encarnacion|itaipu|yacyreta)"),
          ("z5", r"(rio paraguay|asuncion|concepcion|corumba|pilar|alberdi|villeta|ladario|porto murtinho|formosa|bahia negra)"),
@@ -127,6 +186,24 @@ def main():
         else:
             salida["temas"][base] = {"rotulo": t["rotulo"], "articulos": lista}
         print("  %d titulares útiles de %d" % (len(lista), len(arts)))
+    if fallas:
+        print("GDELT falló en %d temas: se completan con los canales RSS de seis medios" % len(fallas))
+        feeds = bajar_feeds()
+        if feeds:
+            for tid in {f.replace("_pt", "") for f in fallas}:
+                arts = desde_feeds(tid, feeds)
+                hoy = salida["obtenido"][:10]
+                for x in arts:
+                    x["visto"] = hoy
+                # los canales sólo muestran lo más reciente: se acumula lo ya visto durante 7 días
+                corte = (datetime.now(timezone.utc) - timedelta(days=7)).strftime("%Y-%m-%d")
+                ya = {x["url"] for x in arts}
+                arts += [x for x in ((previo.get("temas") or {}).get(tid, {}).get("articulos") or []) if x.get("visto", "") >= corte and x.get("url") not in ya]
+                rot = next((t["rotulo"] for t in TEMAS if t["id"].replace("_pt", "") == tid), tid)
+                salida["temas"][tid] = {"rotulo": rot, "articulos": arts, "origen": "rss de 6 medios (GDELT limitó las consultas)"}
+                if "%s" % tid not in frescos:
+                    frescos.append(tid)
+            fallas = [f for f in fallas if f.replace("_pt", "") not in frescos]
     for v in salida["temas"].values():
         v["dominios_distintos"] = len({a["dominio"] for a in v["articulos"]})
     carpeta.mkdir(parents=True, exist_ok=True)

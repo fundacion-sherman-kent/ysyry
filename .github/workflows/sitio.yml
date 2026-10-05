@@ -7,6 +7,7 @@ name: "Sitio: actualización horaria"
 on:
   schedule:
     - cron: "17 * * * *"
+    - cron: "47 * * * *"
   workflow_dispatch: {}
 
 concurrency:
