@@ -24,6 +24,7 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
 - **Prensa como segunda familia de fuentes:** titulares de los últimos 7 días de la API abierta de GDELT, por tema y zona, contando medios distintos (detección automática por palabras clave, no verificada por una persona). GDELT limita las consultas: si un tema no se puede actualizar, queda vacío y no se inventa.
 - **Focos de calor cerca del río:** NASA FIRMS (VIIRS Suomi NPP y NOAA-20, archivos regionales de acceso libre, sin clave), los detectados a menos de 25 km del río en los últimos 3 días, como puntos en el mapa y como indicio por tramo. Una anomalía térmica no es un incendio confirmado ni dice su causa; dos satélites pueden ver el mismo foco.
 - **Flujos ilícitos que usan el corredor (de SIWA):** las rutas registradas por terceros que SIWA publica y que pasan a menos de 40 km del río (20 de 289), en el mapa (pestaña «Flujos ilícitos») y por tramo en el libro de indicios, cruzadas con el termómetro de frescura de los flujos, la cola de refresco y el Vigía de fuentes de SIWA. Son registros, no flujos medidos; «activa» significa registrada en los últimos 24 meses. Datos: SIWA, Fundación Sherman Kent (CC BY 4.0), con copia fechada en `sitio/datos/siwa/flujos_corredor.json`.
+- **Escáner propio, sin modelo (cero tokens):** `colectores/escaner.py` + `escaner.yml` (cada 3 horas) lee 11 canales RSS/Atom públicos de medios regionales y de organismos (SENAD y Policía Nacional de Paraguay entre ellos), descarta lo que no nombra un lugar del corredor o el río, clasifica por palabras clave (decomiso, detención, piratería, siniestro, bajante, regulatorio o gremial, operativo del Estado), extrae lugar, zona y cantidades con expresiones regulares, junta los titulares casi iguales, comprueba el enlace y guarda 14 días. Se ve como rombos en el mapa (el lugar mencionado, no el del hecho), como tabla «Hechos detectados» y como indicio por tramo, nunca por encima de «corroborado». Son candidatos: no entiende el texto ni prueba independencia entre medios.
 - **Parámetros de las reglas:** en `sitio/datos/parametros_reglas.json`, editables sin tocar código; cada alerta candidata dice cuántos días se disparó su regla.
 - **Autoescala y salud (privados):** un robot semanal propone unidades del Estado, puntos del mapa y fuentes candidatas a partir de los datos, sin ningún modelo, y uno diario mide la salud de las fuentes. Proponen; nunca aplican.
 - **Ayuda:** botón-robot que responde con textos escritos de antemano (no es un modelo de IA) y lleva a buques, puertos y estaciones del mapa.
@@ -48,7 +49,8 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
 | `satelite.yml` | cada 3 horas | Imagen satelital más reciente (GOES y VIIRS) |
 | `focos.yml` | cada 3 horas | Focos de calor a menos de 25 km del río (NASA FIRMS) |
 | `nivel-rio.yml` | diario | Lee el nivel del río y suma al historial |
-| `noticias.yml` | cada 6 horas | Titulares de prensa de los últimos 7 días (GDELT) |
+| `escaner.yml` | cada 3 horas | Escáner propio de hechos del corredor en canales RSS (sin modelo) |
+| `noticias.yml` | a mano | GDELT (programación apagada: bloquea las consultas) |
 | `preguntas.yml` | diario | Resuelve las preguntas publicadas que ya vencieron |
 | `radar.yml` | diario | Procesa pasadas de radar (en validación, no se publica) |
 
