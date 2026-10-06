@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-06T15:52:53Z",
+ "obtenido": "2026-10-06T22:37:10Z",
  "dias": 14,
  "fuentes": [
   {
@@ -11,14 +11,14 @@
   {
    "dominio": "abc.com.py",
    "ok": true,
-   "items": 23,
+   "items": 32,
    "candidatos": 0
   },
   {
    "dominio": "lanacion.com.py",
    "ok": true,
    "items": 100,
-   "candidatos": 0
+   "candidatos": 1
   },
   {
    "dominio": "lacapital.com.ar",
@@ -47,7 +47,7 @@
   {
    "dominio": "lanacion.com.ar",
    "ok": true,
-   "items": 82,
+   "items": 90,
    "candidatos": 0
   },
   {
@@ -97,6 +97,39 @@
     }
    ],
    "id": "1c8bed3301",
+   "verificado": true
+  },
+  {
+   "titulo": "En el Este extraditaron a un brasileño con causa pendiente por narcotráfico en su país",
+   "url": "http://www.lanacion.com.py/pais/2026/10/06/en-el-este-extraditaron-a-un-brasileno-con-causa-pendiente-por-narcotrafico-en-su-pais/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-06",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 4,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/06/en-el-este-extraditaron-a-un-brasileno-con-causa-pendiente-por-narcotrafico-en-su-pais/"
+    }
+   ],
+   "id": "44e9190158",
    "verificado": true
   },
   {
