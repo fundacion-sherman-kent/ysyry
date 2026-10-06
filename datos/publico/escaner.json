@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-05T21:57:59Z",
+ "obtenido": "2026-10-06T06:12:06Z",
  "dias": 14,
  "fuentes": [
   {
@@ -11,7 +11,7 @@
   {
    "dominio": "abc.com.py",
    "ok": true,
-   "items": 19,
+   "items": 22,
    "candidatos": 0
   },
   {
@@ -48,7 +48,7 @@
    "dominio": "lanacion.com.ar",
    "ok": true,
    "items": 88,
-   "candidatos": 0
+   "candidatos": 1
   },
   {
    "dominio": "g1.globo.com",
@@ -71,6 +71,34 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Una revelación del “narco de la hidrovía” precipitó la caída del fiscal general de Bolivia, acusado por los Estados Unidos de proteger al narcotráfico",
+   "url": "https://www.lanacion.com.ar/seguridad/escandalo-narco-cayo-la-cupula-de-la-fiscalia-de-bolivia-tras-la-difusion-de-videos-en-los-que-nid02102026/",
+   "dominio": "lanacion.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-10-06",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 4,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.ar",
+     "clase": "prensa",
+     "url": "https://www.lanacion.com.ar/seguridad/escandalo-narco-cayo-la-cupula-de-la-fiscalia-de-bolivia-tras-la-difusion-de-videos-en-los-que-nid02102026/"
+    }
+   ],
+   "id": "1c8bed3301",
+   "verificado": true
+  },
   {
    "titulo": "SENAD CONCRETA EXPULSIÓN DE INTEGRANTE DEL COMANDO VERMELHOI",
    "url": "https://senad.gov.py/senad-concreta-expulsion-de-integrante-del-comando-vermelhoi/",
