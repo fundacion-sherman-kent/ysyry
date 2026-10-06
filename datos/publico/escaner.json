@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-06T06:12:06Z",
+ "obtenido": "2026-10-06T15:52:53Z",
  "dias": 14,
  "fuentes": [
   {
@@ -11,7 +11,7 @@
   {
    "dominio": "abc.com.py",
    "ok": true,
-   "items": 22,
+   "items": 23,
    "candidatos": 0
   },
   {
@@ -47,8 +47,8 @@
   {
    "dominio": "lanacion.com.ar",
    "ok": true,
-   "items": 88,
-   "candidatos": 1
+   "items": 82,
+   "candidatos": 0
   },
   {
    "dominio": "g1.globo.com",
