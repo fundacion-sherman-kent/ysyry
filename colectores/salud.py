@@ -78,6 +78,8 @@ def chequeos():
         return edad < horas_max, "%s: hace %.0f h (máximo %d h)" % (etiqueta, edad, horas_max)
 
     uno("Nivel del río en Argentina (Prefectura vía INA)", "leído hace menos de 36 horas", lambda: frescura("nivel-rio-ar.json", "obtenido", 36, "leído"))
+    uno("Nivel del río en Brasil (ANA)", "leído hace menos de 12 horas", lambda: frescura("nivel-rio-br.json", "obtenido", 12, "leído"))
+    uno("Mareógrafos de la Hidrografía Naval", "leídos hace menos de 12 horas", lambda: frescura("nivel-rio-shn.json", "obtenido", 12, "leídos"))
     uno("Escáner propio de hechos", "corrió hace menos de 12 horas", lambda: frescura("escaner.json", "obtenido", 12, "corrió"))
     uno("Focos de calor cerca del río", "corrió hace menos de 12 horas", lambda: frescura("focos_corredor.json", "obtenido", 12, "corrió"))
     uno("Lista de sanciones OFAC", "leída hace menos de 10 días", lambda: frescura("ofac_buques.json", "obtenido", 240, "leída"))

@@ -1,0 +1,34 @@
+name: Nivel del río (Hidrografía Naval)
+
+# Cada 3 horas, público. Mareógrafos del Servicio de Hidrografía Naval (Martín García, San Fernando, Buenos Aires), dato abierto oficial.
+# No consume tokens de Claude.
+on:
+  schedule:
+    - cron: "55 */3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  leer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Leer mareógrafos
+        env:
+          DATOS_DIR: datos/publico
+        run: python3 -u colectores/nivel_rio_shn.py
+      - name: Guardar
+        run: |
+          git config user.name "ysyry-robot"
+          git config user.email "ysyry-robot@users.noreply.github.com"
+          git add datos/publico/nivel-rio-shn.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Nivel del río: mareógrafos de la Hidrografía Naval (corrida automática)"
+            git pull --rebase --quiet
+            git push
+          fi

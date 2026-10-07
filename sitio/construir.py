@@ -529,7 +529,8 @@ if marcos:
     _ests_br, _ = _ind.estaciones_br(os.environ.get("SITIO_NIVEL_BR") or (_raiz / "datos" / "publico" / "nivel-rio-br.json"), _segs, _dtm.strptime(_fecha, "%Y-%m-%d").date())
     if _ests_br:       # la ANA es la fuente primaria de Cáceres y Ladário: se quitan las copias que republica Paraguay para no contarlas dos veces
         _ests = [e for e in _ests if not (e["nombre"] in ("Cáceres - Brasil", "Puerto Ladario - Brasil"))]
-    _ests = _ests + _ests_ar + _ests_br
+    _ests_shn, _ = _ind.estaciones_shn(os.environ.get("SITIO_NIVEL_SHN") or (_raiz / "datos" / "publico" / "nivel-rio-shn.json"), _segs, _dtm.strptime(_fecha, "%Y-%m-%d").date())
+    _ests = _ests + _ests_ar + _ests_br + _ests_shn
     _prensa = lambda n: {"nombre": n, "familia": "prensa", "calificacion": "C3"}
     _hechos_f = {
         _pulso.zona_de(d["riesgos"][0]["x"], d["riesgos"][0]["y"]) if d["riesgos"] else "z2": [{
