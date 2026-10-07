@@ -6,8 +6,9 @@ Fuentes (todas de acceso libre, sin clave):
     Porto Murtinho, Cáceres, Foz do Iguaçu, Ponta Porã, Guaíra).
   · Dirección de Meteorología e Hidrología de Paraguay: la página de avisos dice si hay un aviso vigente (se lee el título de la página).
   · GDACS (ONU y Comisión Europea): alertas de desastres del mundo; se conservan las que caen dentro del corredor.
-NO consultadas, y declaradas así en el archivo: el Servicio Meteorológico Nacional de Argentina (su API exige una clave) y el INUMET de Uruguay
-(sin API pública). Un «sin avisos» sólo vale para las fuentes consultadas.
+  · Servicio Meteorológico Nacional de Argentina (SMN): feed GeoRSS de avisos (licencia CC BY 4.0, sin clave); se conservan los que tocan provincias
+    del corredor con un vértice del polígono dentro de la franja Paraná-Paraguay-Uruguay. (Su API de pronósticos sí exige clave: no se usa.)
+NO consultado, y declarado así en el archivo: el INUMET de Uruguay (sin API pública). Un «sin avisos» sólo vale para las fuentes consultadas.
 
 Escribe DATOS_DIR/avisos_oficiales.json."""
 import json
@@ -55,6 +56,43 @@ def dmh():
              "lugares": ["Paraguay"], "riesgos": "", "id": "dmh-vigente"}]
 
 
+PROVINCIAS_AR = ("FORMOSA", "CHACO", "CORRIENTES", "MISIONES", "SANTA FE", "ENTRE RIOS", "BUENOS AIRES", "CIUDAD AUTONOMA", "CAPITAL FEDERAL")
+FRANJA_AR = (-35.3, -61.5, -24.0, -53.0)      # lat mín, lon mín, lat máx, lon máx: de Posadas y Formosa al Delta y el Plata
+
+
+def smn():
+    t = bajar("https://ssl.smn.gob.ar/feeds/avisocorto_GeoRSS.xml")
+    if "<item>" not in t and "<channel>" not in t:
+        raise ValueError("el feed cambió")
+    out = []
+    for it in re.findall(r"<item>(.*?)</item>", t, re.S):
+        tit = re.search(r"<title><!\[CDATA\[(.*?)\]\]></title>", it, re.S)
+        desc = re.search(r"<description>\s*<!\[CDATA\[(.*?)\]\]>", it, re.S)
+        fecha = re.search(r"<dc:date>([^<]+)", it)
+        poli = re.search(r"<georss:polygon>([^<]+)", it)
+        if not (tit and desc):
+            continue
+        cuerpo = desc.group(1)
+        fen = re.search(r"<b>(.*?)</b>", cuerpo)
+        fenomeno = re.sub(r"\s+", " ", fen.group(1)).strip() if fen else tit.group(1)
+        provs = [re.sub(r"\s+", " ", p).strip() for p in re.findall(r"<b>([A-ZÁÉÍÓÚÑ .]+):</b>", cuerpo)]
+        provs_corredor = [p for p in provs if any(k in p.upper().replace("Ó", "O").replace("Í", "I") for k in PROVINCIAS_AR)]
+        if not provs_corredor:
+            continue
+        if poli:
+            n = [float(x) for x in poli.group(1).split()]
+            pts = list(zip(n[0::2], n[1::2]))
+            if not any(FRANJA_AR[0] <= la <= FRANJA_AR[2] and FRANJA_AR[1] <= lo <= FRANJA_AR[3] for la, lo in pts):
+                continue
+        lugares = re.sub(r"<[^>]+>", " ", re.sub(r"<br\s*/>", "; ", cuerpo.split("Departamentos:")[-1]))
+        lugares = re.sub(r"\s+", " ", re.sub(r"https?://\S+", "", lugares)).strip(" ;")[:300]
+        num = re.search(r"N° (\d+)", tit.group(1))
+        out.append({"fuente": "Servicio Meteorológico Nacional (Argentina)", "pais": "ARG", "fenomeno": fenomeno[:200], "severidad": "", "color": "",
+                    "inicio": fecha.group(1)[:16].replace("T", " ") if fecha else "", "fin": "", "lugares": [lugares] if lugares else provs_corredor,
+                    "riesgos": "", "id": "smn-%s" % (num.group(1) if num else tit.group(1)[:30])})
+    return out
+
+
 def gdacs():
     t = bajar("https://www.gdacs.org/xml/rss.xml")
     out = []
@@ -75,7 +113,7 @@ def main():
     carpeta = Path(os.environ.get("DATOS_DIR", "datos/publico"))
     carpeta.mkdir(parents=True, exist_ok=True)
     avisos, fuentes = [], []
-    for nombre, f in (("INMET (Brasil)", inmet), ("Meteorología de Paraguay", dmh), ("GDACS", gdacs)):
+    for nombre, f in (("INMET (Brasil)", inmet), ("Meteorología de Paraguay", dmh), ("SMN (Argentina)", smn), ("GDACS", gdacs)):
         try:
             r = f()
             avisos += r
@@ -88,7 +126,7 @@ def main():
         print("Ninguna fuente respondió: no se toca el archivo anterior")
         return 1
     salida = {"obtenido": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "fuentes": fuentes, "avisos": avisos,
-              "no_consultadas": ["Servicio Meteorológico Nacional de Argentina (su API exige una clave)", "INUMET de Uruguay (sin API pública)"],
+              "no_consultadas": ["INUMET de Uruguay (sin API pública)"],
               "aviso": "Sólo vale para las fuentes consultadas: «sin avisos» no significa que no haya en los países no consultados."}
     with open(carpeta / "avisos_oficiales.json", "w", encoding="utf-8", newline="\n") as fh:
         json.dump(salida, fh, ensure_ascii=False, indent=1)

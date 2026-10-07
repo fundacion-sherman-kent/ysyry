@@ -585,7 +585,7 @@ def avisos(ruta):
             fuentes = [{"nombre": fuente, "familia": "oficial", "calificacion": "A2"}]
             out.setdefault(z, []).append({"id": "AVI", "tipo": "Avisos oficiales", "titulo": "Avisos vigentes de %s que nombran este tramo" % fuente.split(" (")[0],
                                           "texto": "%d %s: %s." % (len(propios), "aviso" if len(propios) == 1 else "avisos", "; ".join(partes)), "fuentes": fuentes, "nivel": nivel_evidencia(fuentes),
-                                          "no_dice": "Es un aviso general del servicio oficial para esos municipios o esa zona, no dice cómo afecta la navegación. Sólo cubre las fuentes consultadas: no se consulta el SMN de Argentina (exige una clave) ni el INUMET de Uruguay.",
+                                          "no_dice": "Es un aviso general del servicio oficial para esos municipios o esa zona, no dice cómo afecta la navegación. Sólo cubre las fuentes consultadas: no se consulta el INUMET de Uruguay.",
                                           "dato": {"n": len(propios)}})
     fs = d.get("fuentes", [])
     out.setdefault("gen", []).append({"id": "AVC", "tipo": "Avisos oficiales", "titulo": "Fuentes de avisos oficiales consultadas",
