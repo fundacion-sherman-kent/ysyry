@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-07T13:26:25Z",
+ "obtenido": "2026-10-07T20:41:25Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 3
   },
   {
    "nombre": "GDACS",
@@ -149,13 +149,41 @@
    "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-07 09:28",
+   "inicio": "2026-10-07 17:32",
    "fin": "",
    "lugares": [
-    "SANTA FE: Belgrano - Caseros - Constitucion - Iriondo - Rosario - San Lorenzo.; ; ENTRE RIOS: Gualeguay - Victoria.; ; BUENOS AIRES: Ramallo - San Nicolas."
+    "SANTA FE: Iriondo - San Jeronimo - San Lorenzo.; ; ENTRE RIOS: Diamante - Gualeguay - Gualeguaychu - Islas del Ibicuy - Nogoya - Victoria."
    ],
    "riesgos": "",
-   "id": "smn-3564"
+   "id": "smn-3590"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-10-07 17:09",
+   "fin": "",
+   "lugares": [
+    "SANTA FE: Belgrano - Castellanos - Iriondo - Las Colonias - San Jeronimo - San Martin.; ; CORDOBA: Marcos Juarez - San Justo."
+   ],
+   "riesgos": "",
+   "id": "smn-3588"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-10-07 16:23",
+   "fin": "",
+   "lugares": [
+    "SANTA FE: Belgrano - Caseros - Iriondo - San Martin.; ; CORDOBA: Marcos Juarez - Union."
+   ],
+   "riesgos": "",
+   "id": "smn-3585"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
