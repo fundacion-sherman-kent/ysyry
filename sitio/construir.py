@@ -573,6 +573,8 @@ if marcos:
     _actores_html = _act.tabla_html(_actores, _vinc, _ops, _fecha_ops, _fecha)
 
     _flu_extra = {z: [i] for z, i in _flu_ind.items()}
+    for _z, _l in _ind.avisos(os.environ.get("SITIO_AVISOS") or (_raiz / "datos" / "publico" / "avisos_oficiales.json")).items():
+        _flu_extra.setdefault(_z, []).extend(_l)
     if _OFAC:
         _imos_vistos = {str(_imo_valido(p.get("imo"))) for m in _ventana for p in m["puntos"] if _imo_valido(p.get("imo"))}
         _coinc = {k: v for k, v in _OFAC_VISTOS.items()}

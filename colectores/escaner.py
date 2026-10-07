@@ -50,7 +50,13 @@ FUENTES = [
     ("agenciabrasil.ebc.com.br", "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml", "prensa", "pt"),
     ("g1.globo.com", "https://g1.globo.com/rss/g1/mato-grosso/", "prensa", "pt"),
     ("elobservador.com.uy", "https://www.elobservador.com.uy/rss/pages/home.xml", "prensa", "es"),
-    ("senad.gov.py", "https://www.senad.gov.py/feed/", "oficial", "es"),
+    ("annp.gov.py", "https://annp.gov.py/?feed=rss2", "oficial", "es"),
+    ("armadaparaguaya.mil.py", "https://armadaparaguaya.mil.py/feed", "oficial", "es"),
+    ("pagina12.com.ar", "https://www.pagina12.com.ar/arc/outboundfeeds/rss/?outputType=xml", "prensa", "es"),
+    ("npy.com.py", "https://www.npy.com.py/index.rss", "prensa", "es"),
+    ("ladiaria.com.uy", "https://ladiaria.com.uy/feeds/articulos/", "prensa", "es"),
+    ("mpf.mp.br", "https://www.mpf.mp.br/rss.xml", "oficial", "pt"),
+    ("senad.gov.py", "https://senad.gov.py/feed", "oficial", "es"),
     ("policianacional.gov.py", "https://www.policianacional.gov.py/feed/", "oficial", "es"),
 ]
 
@@ -120,6 +126,8 @@ def items(raiz):
         l = g("link")
         if l is not None:
             link = (l.get("href") or l.text or "").strip()
+        if not link.startswith(("http://", "https://")) and g("guid") is not None:        # algunos canales (MPF) no traen <link>: sirve el guid
+            link = (g("guid").text or "").strip()
         fecha = ""
         for n in ("pubDate", "published", "updated"):
             if g(n) is not None and g(n).text:
@@ -202,7 +210,7 @@ def main():
             raiz = ET.fromstring(bajar(url))
         except Exception as e:
             print("  %-24s no respondió: %s" % (dominio, str(e)[:60]))
-            consultadas.append({"dominio": dominio, "ok": False, "items": 0, "candidatos": 0})
+            consultadas.append({"dominio": dominio, "url": url, "ok": False, "items": 0, "candidatos": 0, "error": str(e)[:80]})
             continue
         n = c = 0
         for titulo, desc, link, fecha in items(raiz):
@@ -212,7 +220,7 @@ def main():
                 c += 1
                 nuevos.append({"titulo": titulo[:220], "url": link, "dominio": dominio, "clase": clase, "fecha": fecha_iso(fecha) or hoy, **a})
         print("  %-24s %3d items, %d candidatos" % (dominio, n, c))
-        consultadas.append({"dominio": dominio, "ok": True, "items": n, "candidatos": c})
+        consultadas.append({"dominio": dominio, "url": url, "ok": True, "items": n, "candidatos": c})
     if not any(x["ok"] for x in consultadas):
         print("Ninguna fuente respondió: no se toca el archivo anterior")
         return 1
@@ -243,6 +251,10 @@ def main():
     for h in out[:40]:                                  # sólo se comprueba el enlace de los 40 mejores y recientes
         if h["verificado"] is None:
             h["verificado"] = verificar(h["url"])
+    # fallos seguidos por canal: lo usa la autoescala para buscar el canal que reemplaza a uno caído
+    antes = {(f.get("dominio"), f.get("url")): f.get("fallos_seguidos", 0) for f in previo.get("fuentes", [])}
+    for x in consultadas:
+        x["fallos_seguidos"] = 0 if x["ok"] else antes.get((x["dominio"], x["url"]), 0) + 1
     salida = {"obtenido": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "dias": DIAS, "fuentes": consultadas,
               "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
               "eventos": out[:200]}

@@ -468,6 +468,42 @@ def tabla_escaner(evs, hoy):
             '<p class="sub">Consultado el %s (UTC).</p></div>' % (cuerpo, e(hoy)))
 
 
+# ---------------------------------------------------------------- avisos oficiales (INMET, Meteorología de Paraguay, GDACS)
+ZONA_LUGAR = {"Corumbá": "z5", "Ladário": "z5", "Porto Murtinho": "z5", "Cáceres": "z5", "Paraguay": "z5", "Foz do Iguaçu": "z4", "Ponta Porã": "z4", "Guaíra": "z4"}
+
+
+def avisos(ruta):
+    """{zona: [indicio]}: avisos oficiales vigentes que nombran lugares de cada tramo, más el estado de cobertura de las fuentes en «gen»."""
+    if not ruta or not Path(ruta).exists():
+        return {}
+    d = json.load(open(ruta, encoding="utf-8"))
+    por = {}
+    for a in d.get("avisos", []):
+        if a.get("lat") is not None:
+            zs = {_pulso.zona_de(_pulso.AX * a["lon"] + _pulso.BX, _pulso.AY * a["lat"] + _pulso.BY)}
+        else:
+            zs = {ZONA_LUGAR[l] for l in a.get("lugares", []) if l in ZONA_LUGAR} or {"gen"}
+        for z in zs:
+            por.setdefault(z, []).append(a)
+    out = {}
+    for z, lst in por.items():
+        fuentes = [{"nombre": n, "familia": "oficial", "calificacion": "A2"} for n in sorted({a["fuente"] for a in lst})]
+        partes = []
+        for a in lst[:5]:
+            partes.append("%s%s (%s%s)" % (a["fenomeno"][:70], (", " + a["severidad"]) if a.get("severidad") else "", ("hasta " + a["fin"]) if a.get("fin") else "vigente", (", " + a["fuente"].split(" (")[0]) if a.get("fuente") else ""))
+        out[z] = [{"id": "AVI", "tipo": "Avisos oficiales", "titulo": "Avisos meteorológicos o de desastre vigentes que nombran este tramo",
+                   "texto": "%d %s: %s." % (len(lst), "aviso" if len(lst) == 1 else "avisos", "; ".join(partes)), "fuentes": fuentes, "nivel": nivel_evidencia(fuentes),
+                   "no_dice": "Es un aviso general del servicio oficial para esos municipios o esa zona, no dice cómo afecta la navegación. Sólo cubre las fuentes consultadas: no se consulta el SMN de Argentina (exige una clave) ni el INUMET de Uruguay.",
+                   "dato": {"n": len(lst)}}]
+    fs = d.get("fuentes", [])
+    out.setdefault("gen", []).append({"id": "AVC", "tipo": "Avisos oficiales", "titulo": "Fuentes de avisos oficiales consultadas",
+                                       "texto": "Consultadas hoy: %s. %d avisos vigentes sobre el corredor. No consultadas: %s." % (
+                                           ", ".join("%s%s" % (f["nombre"], "" if f.get("ok") else " (no respondió)") for f in fs), len(d.get("avisos", [])), "; ".join(d.get("no_consultadas", []))),
+                                       "fuentes": [{"nombre": "Servicios meteorológicos y GDACS", "familia": "oficial", "calificacion": "A2"}], "nivel": "Fuente única",
+                                       "no_dice": "«Sin avisos» sólo vale para las fuentes consultadas.", "dato": {}})
+    return out
+
+
 # ---------------------------------------------------------------- focos de calor cerca del río (NASA FIRMS)
 def focos(ruta):
     """(puntos con x, y, zona; indicios por zona). Cuenta los focos de los últimos 3 días a menos de 25 km del río."""
@@ -549,11 +585,11 @@ def tabla_html(ind, fecha):
             enl = "".join('<br><a href="%s" target="_blank" rel="noopener nofollow">nota ↗</a>' % e(u_) for u_ in i.get("enlaces", []) if u_.startswith(("http://", "https://")))
             filas.append('<tr>%s<td><b>%s</b><br>%s</td><td><span class="ev ev-%s">%s</span></td><td>%s</td><td>%s</td></tr>'
                          % ('<th scope="row" rowspan="%d">%s</th>' % (len(lst), e(nombre)) if k == 0 else "",
-                            e(i["titulo"]), e(i["texto"]), e(i["nivel"].split()[0].lower()), e(i["nivel"]), e(f) + enl, e(i["no_dice"])))
+                            e(i["titulo"]), e(i["texto"]), e(i["nivel"].split()[0].lower()), e(i["nivel"]) + ("<br><small>no verificado: falta una segunda fuente</small>" if i["nivel"].startswith("Fuente única") else ""), e(f) + enl, e(i["no_dice"])))
     return ('<div class="pulso" id="indicios-zonas"><h2>Libro de indicios por zona</h2>'
             '<p class="sub">Cada observación con sus fuentes, su familia de fuente y su nivel de evidencia. <b>Fuente única</b>: una sola. <b>Corroborado</b>: dos o más fuentes independientes de la misma familia. '
             '<b>Fuerte</b>: dos o más independientes de al menos dos familias. Varias estaciones de un mismo organismo, o las dos redes de AIS, cuentan como una fuente. '
-            '<b>Un indicio no es una alerta:</b> las alertas las escribe una persona, las impugna el décimo hombre y las publica la dirección. Hoy no hay ninguna publicada.</p>'
+            '<b>Regla de verificación de la casa: dos fuentes independientes como mínimo.</b> Con una sola, el indicio se rotula «fuente única, no verificado» y no se presenta como un hecho; con dos o más, «corroborado» o «fuerte». ' + '<b>Un indicio no es una alerta:</b> las alertas las escribe una persona, las impugna el décimo hombre y las publica la dirección. Hoy no hay ninguna publicada.</p>'
             '<div class="tabla-pulso"><table><thead><tr><th>Zona</th><th>Indicio</th><th>Evidencia</th><th>Fuentes</th><th>Lo que no dice</th></tr></thead><tbody>%s</tbody></table></div>'
             '<p class="sub">Consultado el %s (UTC).</p></div>' % ("".join(filas), e(fecha)))
 
