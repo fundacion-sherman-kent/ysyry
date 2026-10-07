@@ -1,21 +1,20 @@
 {
- "obtenido": "2026-10-07T20:34:39Z",
+ "obtenido": "2026-10-07T21:26:38Z",
  "dias": 14,
  "fuentes": [
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
-   "ok": false,
-   "items": 0,
-   "candidatos": 0,
-   "error": "no element found: line 1, column 38",
-   "fallos_seguidos": 1
+   "ok": true,
+   "items": 100,
+   "candidatos": 1,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 28,
+   "items": 29,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -72,7 +71,7 @@
    "url": "https://g1.globo.com/rss/g1/mato-grosso-do-sul/",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -94,11 +93,10 @@
   {
    "dominio": "hoy.com.py",
    "url": "https://www.hoy.com.py/feed",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 10,
    "candidatos": 0,
-   "error": "HTTP Error 415: Unsupported Media Type",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "ip.gov.py",
@@ -168,8 +166,8 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 329,
-   "candidatos": 1,
+   "items": 333,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -306,6 +304,62 @@
    "verificado": true
   },
   {
+   "titulo": "Video: pobladores de San Cosme y Damián piden asistencia ante crecida del río Paraná",
+   "url": "https://www.abc.com.py/economia/2026/10/07/video-pobladores-de-san-cosme-y-damian-piden-asistencia-ante-crecida-del-rio-parana-aguas-abajo-del-brazo-ana-cua/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-07",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/economia/2026/10/07/video-pobladores-de-san-cosme-y-damian-piden-asistencia-ante-crecida-del-rio-parana-aguas-abajo-del-brazo-ana-cua/"
+    }
+   ],
+   "id": "187a619e03",
+   "verificado": true
+  },
+  {
+   "titulo": "Salto y Concordia refuerzan su integración regional ante posibles crecientes del río Uruguay",
+   "url": "https://ladiaria.com.uy/salto/articulo/2026/10/salto-y-concordia-refuerzan-su-integracion-regional-ante-posibles-crecientes-del-rio-uruguay/",
+   "dominio": "ladiaria.com.uy",
+   "clase": "prensa",
+   "fecha": "2026-10-07",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "ladiaria.com.uy",
+     "clase": "prensa",
+     "url": "https://ladiaria.com.uy/salto/articulo/2026/10/salto-y-concordia-refuerzan-su-integracion-regional-ante-posibles-crecientes-del-rio-uruguay/"
+    }
+   ],
+   "id": "1977f71dd0",
+   "verificado": true
+  },
+  {
    "titulo": "Una revelación del “narco de la hidrovía” precipitó la caída del fiscal general de Bolivia, acusado por los Estados Unidos de proteger al narcotráfico",
    "url": "https://www.lanacion.com.ar/seguridad/escandalo-narco-cayo-la-cupula-de-la-fiscalia-de-bolivia-tras-la-difusion-de-videos-en-los-que-nid02102026/",
    "dominio": "lanacion.com.ar",
@@ -402,6 +456,15 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Itaipú: ¿qué gobierno de Brasil le conviene más a Paraguay, Lula o Flávio Bolsonaro?",
+   "url": "https://www.abc.com.py/economia/2026/10/07/itaipu-que-gobierno-de-brasil-le-conviene-mas-a-paraguay-lula-o-flavio-bolsonaro/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-07",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Hallan en un sojal la camioneta del empresario asesinado y buscan a su expareja",
    "url": "http://www.lanacion.com.py/pais/2026/10/07/hallan-en-un-sojal-la-camioneta-del-empresario-asesinado-y-buscan-a-su-expareja/",
    "dominio": "lanacion.com.py",
@@ -489,122 +552,6 @@
    "fecha": "2026-10-06",
    "lugares": [
     "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "MINGA AMBIENTAL EN LA CIUDAD DE VILLETA",
-   "url": "https://armadaparaguaya.mil.py/minga-ambiental-en-la-ciudad-de-villeta/",
-   "dominio": "armadaparaguaya.mil.py",
-   "fecha": "2026-08-31",
-   "lugares": [
-    "Villeta"
-   ]
-  },
-  {
-   "titulo": "UN MOMENTO HISTÓRICO PARA LA NAVEGACIÓN DEL PARAGUAY",
-   "url": "https://annp.gov.py/?p=23356",
-   "dominio": "annp.gov.py",
-   "fecha": "2026-08-21",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "FORO ASU 500 AÑOS EN EL PUERTO DE ASUNCIÓN",
-   "url": "https://annp.gov.py/?p=23241",
-   "dominio": "annp.gov.py",
-   "fecha": "2026-08-13",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "RITN RECONOCE LA EXCELENCIA OPERATIVA DE LA ESTACIÓN ASUNCIÓN PY DE LA ARMADA PARAGUAYA",
-   "url": "https://armadaparaguaya.mil.py/ritn-reconoce-la-excelencia-operativa-de-la-estacion-asuncion-py-de-la-armada-paraguaya/",
-   "dominio": "armadaparaguaya.mil.py",
-   "fecha": "2026-08-12",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Asunción | Capacitación en gestión de personas desaparecidas",
-   "url": "https://policianacional.gov.py/asuncion-capacitacion-en-gestion-de-personas-desaparecidas/",
-   "dominio": "policianacional.gov.py",
-   "fecha": "2025-10-03",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Lo que hacemos en nuestros ríos: Investigación sobre procedencia de la contaminación fecal de aguas del Río Uruguay y el Santa Lucía muestra aportes muy similares de humanos y ganado vacuno",
-   "url": "https://ladiaria.com.uy/ciencia/articulo/2019/6/lo-que-hacemos-en-nuestros-rios-investigacion-sobre-procedencia-de-la-contaminacion-fecal-de-aguas-del-rio-uruguay-y-el-santa-lucia-muestra-aportes-muy-similares-de-humanos-y-ganado-vacuno/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2019-06-18",
-   "lugares": []
-  },
-  {
-   "titulo": "Cianobacterias, conocimiento científico y acciones políticas",
-   "url": "https://ladiaria.com.uy/opinion/articulo/2019/3/cianobacterias-conocimiento-cientifico-y-acciones-politicas/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2019-03-07",
-   "lugares": []
-  },
-  {
-   "titulo": "Volvieron las cianobacterias a las playas del Río de la Plata: recomiendan no bañarse",
-   "url": "https://ladiaria.com.uy/salud/articulo/2019/1/volvieron-las-cianobacterias-a-las-playas-del-rio-de-la-plata-recomiendan-no-banarse/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2019-01-29",
-   "lugares": []
-  },
-  {
-   "titulo": "Mulher corre risco de perder bebê após ser agredida a socos e chutes",
-   "url": "https://g1.globo.com/ms/sul-e-leste/noticia/2018/07/21/mulher-corre-risco-de-perder-bebe-apos-ser-agredida-a-socos-e-chutes.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2018-07-21",
-   "lugares": [
-    "Ponta Porã"
-   ]
-  },
-  {
-   "titulo": "Traficante abandona carro com 403 quilos de maconha em rodovia de MS",
-   "url": "https://g1.globo.com/ms/sul-e-leste/noticia/2018/07/19/traficante-abandona-carro-com-403-quilos-de-maconha-em-rodovia-de-ms.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2018-07-19",
-   "lugares": [
-    "Ponta Porã"
-   ]
-  },
-  {
-   "titulo": "Três suspeitos de roubos em Corumbá são mortos em troca de tiros com a PM",
-   "url": "https://g1.globo.com/ms/corumba-e-regiao/noticia/tres-suspeitos-de-roubos-em-corumba-sao-mortos-em-troca-de-tiros-com-a-pm.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2018-07-10",
-   "lugares": [
-    "Corumbá"
-   ]
-  },
-  {
-   "titulo": "¿Podemos comer lo que pescamos en Montevideo?",
-   "url": "https://ladiaria.com.uy/rioabierto/articulo/2018/2/podemos-comer-lo-que-pescamos-en-montevideo/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2018-02-19",
-   "lugares": []
-  },
-  {
-   "titulo": "Las perspectivas para este verano con las cianobacterias",
-   "url": "https://ladiaria.com.uy/ciencia/articulo/2018/1/las-perspectivas-para-este-verano-con-las-cianobacterias/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2018-01-16",
-   "lugares": []
-  },
-  {
-   "titulo": "Maconha é transportada com crianças em MS",
-   "url": "https://g1.globo.com/mato-grosso-do-sul/noticia/maconha-e-transportada-com-criancas-em-ms.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2017-11-03",
-   "lugares": [
-    "Ponta Porã"
    ]
   }
  ]
