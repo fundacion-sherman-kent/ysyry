@@ -159,7 +159,7 @@ Te paso titulares de prensa y de organismos, con el medio, la fecha y el lugar q
 Reglas estrictas:
 - No inventes nada. Usá únicamente lo que dice el titular. Si un dato no está en el titular, poné null.
 - "hecho_real": true sólo si el titular cuenta un hecho YA OCURRIDO (decomiso, detención, operativo, asalto o robo, siniestro, bajante, conflicto gremial, medida regulatoria). Es false si es una opinión, un anuncio de algo futuro, una nota deportiva, una nota de espectáculos o una mención sin hecho.
-- "pertinente": true sólo si el hecho ocurrió en el corredor (el río Paraná, el Paraguay, el Uruguay o el Río de la Plata, sus puertos y sus ciudades ribereñas, la Triple Frontera o el Alto Paraná) o involucra directamente a su tráfico fluvial. Una nota sobre otra región es false.
+- "pertinente": true sólo si el hecho ocurrió en el corredor (el río Paraná, el Paraguay, el Uruguay o el Río de la Plata, sus puertos y sus ciudades ribereñas, la Triple Frontera o el Alto Paraná) o involucra directamente a su tráfico fluvial, o a organizaciones criminales que operan en el entramado de la Triple Frontera y la Hidrovía (por ejemplo, la detención o extradición de uno de sus integrantes). Una nota sobre otra región es false.
 - "tipo" es uno de: decomiso, detencion, pirateria, siniestro, navegabilidad, regulatorio, estado, otro, o null.
 - "lugar" es el lugar que nombra el titular, o null. "que" resume en una línea qué pasó, sin agregar nada que no esté en el titular.
 - Devolvé sólo un JSON: {"resultados":[{"indice":int,"hecho_real":bool,"pertinente":bool,"tipo":str|null,"lugar":str|null,"que":str|null}]} con un resultado por titular."""
@@ -210,7 +210,7 @@ def clasificar(items):
 def resumen(clasificados, modelo):
     ok, desc = [], 0
     for x, r in clasificados:
-        if r and r.get("hecho_real") is True and r.get("pertinente") is True:
+        if r and r.get("hecho_real") is True and r.get("pertinente") is True and r.get("tipo") not in (None, "otro"):   # sin tipo de hecho reconocido no es candidato (p. ej. una minga ambiental)
             c = comprobar(x["url"])
             if c["responde"]:
                 ok.append((x, r))
