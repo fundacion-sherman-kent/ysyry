@@ -677,7 +677,44 @@ sat_meta_json = json.dumps({k: _SAT.get(k) for k in ("goes", "viirs")} | {"obten
                            ensure_ascii=False)
 
 horas_json = json.dumps([m["hora"] for m in marcos])
-info_json = json.dumps(poi_info + riesgo_info + zona_info + zona_pulso_info + buque_info, ensure_ascii=False)
+def _comprimir(lista):
+    """Las fichas de buques se repiten casi iguales en las 24 capturas: los textos y fotos que se repiten van a una tabla y cada ficha guarda un número.
+    El navegador los vuelve a expandir al cargar, así que lo que se ve no cambia; sólo baja el peso de la página."""
+    from collections import Counter
+    cuenta = Counter()
+    for x in lista:
+        for k in ("fuente", "categoria", "ctx_f", "ctx_t", "foto"):
+            v = x.get(k)
+            if isinstance(v, (str, dict)) and len(json.dumps(v, ensure_ascii=False)) > 24:
+                cuenta[json.dumps(v, ensure_ascii=False, sort_keys=True)] += 1
+        for t in (x.get("tipo") or "").split(" · "):
+            if len(t) > 12:
+                cuenta["t:" + t] += 1
+    ref, idx = [], {}
+
+    def numero(clave, valor):
+        if clave not in idx:
+            idx[clave] = len(ref)
+            ref.append(valor)
+        return idx[clave]
+    out = []
+    for x in lista:
+        y = dict(x)
+        for k in ("fuente", "categoria", "ctx_f", "ctx_t", "foto"):
+            v = y.get(k)
+            if isinstance(v, (str, dict)) and len(json.dumps(v, ensure_ascii=False)) > 24:
+                clave = json.dumps(v, ensure_ascii=False, sort_keys=True)
+                if cuenta[clave] >= 2:
+                    y[k] = {"$": numero(clave, v)}
+        partes = (y.get("tipo") or "").split(" · ")
+        if len(partes) > 1 or (partes and len(partes[0]) > 12):
+            y["tipo"] = {"$t": [numero("t:" + t, t) if (len(t) > 12 and cuenta["t:" + t] >= 2) else t for t in partes]}
+        out.append(y)
+    return out, ref
+
+
+_info_lista, _info_ref = _comprimir(poi_info + riesgo_info + zona_info + zona_pulso_info + buque_info)
+info_json = json.dumps(_info_lista, ensure_ascii=False, separators=(",", ":"))
 
 TPL = r"""<!doctype html>
 <title>Ysyry — corredor Hidrovía</title>
@@ -1198,6 +1235,16 @@ __prospectiva__
 </section>
 <script>
 const INFO = __info_json__;
+const REF = __info_ref__;
+INFO.forEach(function(x){
+  for (const k in x){
+    const v = x[k];
+    if (v && typeof v === "object" && !Array.isArray(v)){
+      if (v.$ !== undefined) x[k] = REF[v.$];
+      else if (v.$t !== undefined) x[k] = v.$t.map(function(t){ return typeof t === "number" ? REF[t] : t; }).join(" · ");
+    }
+  }
+});
 const FOTOS = __fotos_json__;
 const horas = __horas_json__;
 const MARCO_INICIAL = __marco_inicial__;
@@ -1744,6 +1791,7 @@ SUST = {
                        .strftime("%d/%m %H:%M UTC")) if marcos else "—",
     "marco_inicial": marco_inicial,
     "info_json": info_json,
+    "info_ref": json.dumps(_info_ref, ensure_ascii=False, separators=(",", ":")),
     "fotos_json": fotos_json,
     "horas_json": horas_json,
 }

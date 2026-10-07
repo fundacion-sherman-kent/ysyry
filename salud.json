@@ -1,0 +1,71 @@
+{
+ "hecho": "2026-10-07T12:14:16Z",
+ "chequeos": [
+  {
+   "chequeo": "Nivel del río en Argentina (Prefectura vía INA)",
+   "umbral": "leído hace menos de 36 horas",
+   "ok": true,
+   "hallado": "leído: hace 0 h (máximo 36 h)"
+  },
+  {
+   "chequeo": "Escáner propio de hechos",
+   "umbral": "corrió hace menos de 12 horas",
+   "ok": true,
+   "hallado": "corrió: hace 0 h (máximo 12 h)"
+  },
+  {
+   "chequeo": "Focos de calor cerca del río",
+   "umbral": "corrió hace menos de 12 horas",
+   "ok": true,
+   "hallado": "corrió: hace 2 h (máximo 12 h)"
+  },
+  {
+   "chequeo": "Lista de sanciones OFAC",
+   "umbral": "leída hace menos de 10 días",
+   "ok": true,
+   "hallado": "leída: hace 0 h (máximo 240 h)"
+  },
+  {
+   "chequeo": "Sitio público",
+   "umbral": "responde y trae el mapa y el latido",
+   "ok": true,
+   "hallado": "responde, 14472 KB"
+  },
+  {
+   "chequeo": "Capturas de AIS",
+   "umbral": "última captura de menos de 3 horas",
+   "ok": true,
+   "hallado": "última captura hace 0.2 h, con 369 buques; 24 capturas guardadas"
+  },
+  {
+   "chequeo": "Nivel del río (Meteorología de Paraguay)",
+   "umbral": "leído hace menos de 36 horas",
+   "ok": true,
+   "hallado": "leído hace 18 h, 31 estaciones"
+  },
+  {
+   "chequeo": "Historial del nivel del río",
+   "umbral": "al menos una lectura",
+   "ok": true,
+   "hallado": "91 lecturas acumuladas"
+  },
+  {
+   "chequeo": "SIWA, conjuntos subnacionales",
+   "umbral": "los 3 responden con registros",
+   "ok": true,
+   "hallado": "responden los 3 conjuntos"
+  },
+  {
+   "chequeo": "FEMÓNOE, índice de alertas",
+   "umbral": "se puede leer y lista al menos una alerta",
+   "ok": true,
+   "hallado": "el índice lista 5 alertas (si bajara a 0 es que cambió la página)"
+  },
+  {
+   "chequeo": "Historial del pulso",
+   "umbral": "al menos un día guardado",
+   "ok": true,
+   "hallado": "6 días de historia del pulso"
+  }
+ ]
+}
