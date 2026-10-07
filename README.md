@@ -10,6 +10,10 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
 
 **Estado: versión inicial, en construcción.**
 
+## Regla de verificación
+
+**Dos fuentes independientes como mínimo.** Ningún dato se presenta como un hecho verificado con una sola: se rotula «fuente única, no verificado». Con dos o más independientes de la misma familia (por ejemplo, varios medios) es «corroborado»; con dos o más de al menos dos familias (por ejemplo, prensa y una fuente oficial), «fuerte». Varias estaciones de un mismo organismo, las dos redes de AIS o varios medios que copian a una misma agencia cuentan como una sola fuente. Un detector automático, como el escáner de titulares, nunca pasa de «corroborado». La corroboración es por afirmación: dos hechos distintos no se corroboran entre sí. Está en `sitio/indicios.py` y se ve en la página.
+
 ## Qué hay
 
 - **Mapa del corredor** con embarcaciones (AIS), puertos y ciudades, zonas y hechos de riesgo con sus
@@ -29,6 +33,8 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
 - **Sanciones:** cruce por número IMO de los buques que transmiten AIS con la lista SDN de OFAC (dominio público, 1.524 buques con IMO). Hoy no hay coincidencias; una coincidencia sería una pista para mirar, no una acusación.
 - **Actores del corredor:** registro de 16 actores (crimen organizado, delitos en el río, Estado y organismos, sector privado, grupos de presión) con qué se sabe y con qué fuentes y nivel de evidencia, qué NO se sabe, y los rastros propios que mide Ysyry; más los operadores de puertos y muelles que figuran en OpenStreetMap. Un actor no es un acusado.
 - **Datos abiertos y canal Atom:** `datos/indicios.json` (libro de indicios y hechos detectados, CC BY 4.0 citando a Ysyry) y `feed.xml` para suscribirse desde un lector de noticias.
+- **Avisos oficiales:** INMET (Brasil), Meteorología de Paraguay y GDACS (ONU y Comisión Europea), cada 3 horas, sin clave; el SMN de Argentina exige una clave y el INUMET de Uruguay no tiene API pública, y la página lo dice. Canales recuperados para el escáner: ANNP, Armada Paraguaya, Página/12, NPY, La Diaria y MPF.
+- **Estado de las fuentes en vivo:** tabla pública con la cadencia prevista y la última lectura de cada fuente.
 - **Parámetros de las reglas:** en `sitio/datos/parametros_reglas.json`, editables sin tocar código; cada alerta candidata dice cuántos días se disparó su regla.
 - **Autoescala y salud (privados):** un robot semanal propone unidades del Estado, puntos del mapa y fuentes candidatas a partir de los datos, sin ningún modelo, y uno diario mide la salud de las fuentes. Proponen; nunca aplican.
 - **Ayuda:** botón-robot que responde con textos escritos de antemano (no es un modelo de IA) y lleva a buques, puertos y estaciones del mapa.
@@ -56,6 +62,7 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
 | `escaner.yml` | cada 3 horas | Escáner propio de hechos del corredor en canales RSS (sin modelo) |
 | `nivel-rio-ar.yml` | diario (dos veces) | Escalas de la Prefectura vía INA, con umbrales oficiales |
 | `ofac.yml` | semanal | Buques con IMO de la lista de sanciones SDN de OFAC |
+| `avisos.yml` | cada 3 horas | Avisos oficiales (INMET, Meteorología de Paraguay, GDACS) |
 | `noticias.yml` | a mano | GDELT (programación apagada: bloquea las consultas) |
 | `preguntas.yml` | diario | Resuelve las preguntas publicadas que ya vencieron |
 | `radar.yml` | diario | Procesa pasadas de radar (en validación, no se publica) |
