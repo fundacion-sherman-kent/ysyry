@@ -257,6 +257,8 @@ def main():
         n = c = 0
         for titulo, desc, link, fecha in items(raiz):
             n += 1
+            if (fecha_iso(fecha) or hoy) < corte:      # nota más vieja que la memoria del escáner: archivo, no hecho reciente
+                continue
             a = analizar(titulo, desc, dominio, clase)
             if a:
                 c += 1

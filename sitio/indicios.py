@@ -601,7 +601,7 @@ VIENTO_EMPUJA = ("este", "sudeste", "sureste")
 VIENTO_FUERTE_KMH = 20
 
 
-def viento(ruta, hoy):
+def viento(ruta, hoy, ests_nivel=None):
     """{zona: [indicio]}: contexto del nivel del Plata. Un viento sostenido del Este o el Sudeste sube el nivel del Plata aunque el río venga bajando."""
     if not ruta or not Path(ruta).exists():
         return {}
@@ -618,7 +618,16 @@ def viento(ruta, hoy):
     else:
         lectura = "Sin viento sostenido del Este o del Sudeste de %d km/h o más en la mayoría de las estaciones." % VIENTO_FUERTE_KMH
     fuente = {"nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente", "familia": "oficial", "calificacion": "A2", "url": "https://www.smn.gob.ar/"}
-    return {"z1": [{"id": "VIE", "tipo": "Contexto del nivel", "titulo": "Viento en el Río de la Plata", "texto": "%s %s." % (lectura, detalle), "fuentes": [fuente], "nivel": "Contexto",
+    # divergencia: las escalas del río bajan mientras los mareógrafos del Plata suben; el viento puede explicarla, pero no la prueba
+    extra = ""
+    z1 = [e for e in (ests_nivel or []) if e.get("pos") and e["pos"]["zona"] == "z1" and e["estado"] != "vencida" and e.get("var_cm") is not None]
+    rio_baja = [e for e in z1 if e.get("red") == "ar" and e.get("org") != "caru" and e["var_cm"] <= VAR_BAJA_CM]
+    plata_sube = [e for e in z1 if (e.get("red") == "shn" or e.get("org") == "caru") and e["var_cm"] >= -VAR_BAJA_CM]
+    if rio_baja and plata_sube:
+        extra = (" Divergencia: %d escalas de la Prefectura marcan baja del río y %d mediciones de la SHN y la CARU marcan suba del Plata en las últimas 24 h. %s"
+                 % (len(rio_baja), len(plata_sube), "El viento del Este o del Sudeste es compatible con esa suba, pero no la prueba: no corrobora ni contradice la baja del río." if empujan and len(empujan) * 2 > len(ests)
+                    else "El viento no la explica hoy: queda sin explicar y la baja del río sigue sin una segunda fuente."))
+    return {"z1": [{"id": "VIE", "tipo": "Contexto del nivel", "titulo": "Viento en el Río de la Plata", "texto": "%s %s.%s" % (lectura, detalle, extra), "fuentes": [fuente], "nivel": "Contexto",
                     "no_dice": "Es la última observación de cada estación, no una tendencia ni un pronóstico, y no mide el nivel. Sirve para leer los mareógrafos y las escalas del Plata: con viento del Este o el Sudeste el nivel puede subir sin que el río haya crecido.",
                     "dato": {"empujan": len(empujan), "estaciones": len(ests)}}]}
 
