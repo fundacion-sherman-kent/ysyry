@@ -95,6 +95,35 @@ def fuentes_que_responden():
     return out
 
 
+LISTA_DE_ESPERA = ["https://www.ultimahora.com", "https://www.montevideo.com.uy", "https://www.ellitoral.com", "https://www.elpais.com.uy", "https://www.ministeriopublico.gov.py",
+                   "https://www.argentina.gob.ar/prefecturanaval", "https://www.rosario3.com", "https://www.elterritorio.com.ar", "https://www.marinha.mil.br", "https://www.subrayado.com.uy"]
+
+
+def canales():
+    """Canales del escáner que fallan seguido y canales de la lista de espera que ya responden: sólo propone, no cambia nada."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import descubrir_canales as dc
+    activos = set()
+    caidos = []
+    try:
+        d = json.load(urllib.request.urlopen(urllib.request.Request("https://raw.githubusercontent.com/fundacion-sherman-kent/ysyry/main/datos/publico/escaner.json", headers=UA), timeout=40))
+        for f in d.get("fuentes", []):
+            activos.add(f["dominio"])
+            if not f.get("ok") and f.get("fallos_seguidos", 0) >= 3:
+                caidos.append(f)
+    except Exception:
+        pass
+    out = []
+    for f in caidos:
+        out.append(("Caído %d veces seguidas" % f["fallos_seguidos"], f["dominio"], dc.descubrir("https://" + f["dominio"])))
+    for portada in LISTA_DE_ESPERA:
+        dom = portada.split("//")[1].replace("www.", "").split("/")[0]
+        if dom in activos:
+            continue
+        out.append(("En la lista de espera", dom, dc.descubrir(portada)))
+    return out
+
+
 def main():
     marcos = json.load(open(sys.argv[1], encoding="utf-8"))
     L = ["# Autoescala: propuestas sin calificar\n",
@@ -106,6 +135,12 @@ def main():
     L.append("\n## Destinos que declaran los buques y no tienen punto en el mapa (%d)\n" % len(d))
     L.append("Texto libre que el capitán escribió, sin validar. Si es un puerto real, se puede sumar al mapa con su fuente.\n")
     L += ["- «%s», declarado en %d de las últimas 6 capturas" % (x["destino"], x["capturas"]) for x in d] or ["- Ninguno repetido."]
+    L.append("\n## Canales de noticias: caídos o en la lista de espera (el robot busca su RSS)\n")
+    try:
+        for estado, dom, hallado in canales():
+            L.append("- **%s** (%s): %s" % (dom, estado, ("hay canal que responde: " + "; ".join("%s (%d ítems)" % h for h in hallado) + ". Para activarlo, agregarlo a FUENTES de `colectores/escaner.py`.") if hallado else "ningún canal que responda"))
+    except Exception as e:
+        L.append("- No se pudo revisar: %s" % str(e)[:80])
     L.append("\n## Fuentes candidatas y si hay un dato que responde\n")
     for nombre, url, nota, est in fuentes_que_responden():
         L.append("- **%s** (%s): %s. %s" % (nombre, url, est, nota))
