@@ -17,7 +17,8 @@ from pathlib import Path
 API = "https://alerta.ina.gob.ar/a5/obs/puntual/"
 UA = {"User-Agent": "Ysyry-FUSK/1.0 (+https://github.com/fundacion-sherman-kent/ysyry)"}
 # estaciones del INA (id) sobre el corredor
-ESTACIONES = [14, 15, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36, 38, 39, 40, 41, 43, 45, 57, 79, 85]
+ESTACIONES = [14, 15, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36, 38, 39, 40, 41, 43, 45, 57, 79, 85,
+               1699]   # 1699: Nueva Palmira, de la Comisión Administradora del Río Uruguay (CARU), otro organismo; lecturas cada 30 minutos
 DIAS = 12
 
 
@@ -44,7 +45,13 @@ def main():
         except Exception as ex:
             print("  %s sin observaciones: %s" % (e["nombre"], str(ex)[:60]))
             continue
-        lect = sorted(((o["timestart"][:10], o["valor"]) for o in obs if o.get("valor") is not None))
+        crudo = [(o["timestart"][:10], o["valor"]) for o in obs if o.get("valor") is not None]
+        por_dia = {}
+        for f, v in crudo:
+            por_dia.setdefault(f, []).append(v)
+        hoy_iso = hoy.strftime("%Y-%m-%d")
+        # escalas con varias lecturas por día: media diaria, sin el día en curso (incompleto) para que la variación compare días enteros
+        lect = sorted((f, round(sum(vs) / len(vs), 3)) for f, vs in por_dia.items() if len(vs) == 1 or f != hoy_iso)
         if not lect:
             continue
         ult, prev = lect[-1], (lect[-2] if len(lect) > 1 else None)

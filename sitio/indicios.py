@@ -41,6 +41,8 @@ REGULADAS_AR = {14, 15, 79}      # escalas dentro de embalses (Yacyretá, Salto 
 
 FUENTE_NIVEL_AR = {"nombre": "Prefectura Naval Argentina (escalas), vía INA", "familia": "oficial", "calificacion": "A2",
                   "url": "https://alerta.ina.gob.ar/"}
+FUENTE_NIVEL_CARU = {"nombre": "CARU (Comisión Administradora del Río Uruguay), escala de Nueva Palmira, vía INA", "familia": "oficial", "calificacion": "A2",
+                    "url": "https://alerta.ina.gob.ar/"}
 FUENTE_NIVEL_BR = {"nombre": "ANA (Brasil), telemetría de escalas del SGB-CPRM", "familia": "oficial", "calificacion": "A2", "url": "https://telemetriaws1.ana.gov.br/"}
 FUENTE_NIVEL = {"nombre": "Dirección de Meteorología e Hidrología, Paraguay", "familia": "oficial", "calificacion": "A2",
                 "url": "https://www.meteorologia.gov.py/nivel-rio/indexconvencional.php"}
@@ -176,7 +178,7 @@ def estaciones_ar(ruta, segs_rio, hoy):
             estado = "alto"
         else:
             estado = "medio"
-        out.append({"red": "ar", "id_ina": e["id"], "nombre": e["nombre"], "rio": e["rio"], "nivel": e["nivel_m"], "var_cm": e.get("var_cm"), "umbral": umbral, "alerta": alerta,
+        out.append({"red": "ar", "org": "caru" if (e.get("propietario") or "").upper() == "CARU" else "pna", "id_ina": e["id"], "nombre": e["nombre"], "rio": e["rio"], "nivel": e["nivel_m"], "var_cm": e.get("var_cm"), "umbral": umbral, "alerta": alerta,
                     "evacuacion": e.get("nivel_evacuacion"), "margen_cm": margen, "lectura": e["fecha"], "edad": edad, "estado": estado, "regulada": regulada,
                     "pct": None, "min": None, "max": None, "pos": {"x": x2, "y": y2, "zona": _pulso.zona_de(x2, y2), "ajustada": 0.05 < dist <= AJUSTE_MAX_UNIDADES}})
     return out, d.get("obtenido", "")
@@ -242,6 +244,13 @@ def info_estacion_ar(i, est):
         tipo.append("Escala dentro de un embalse: su nivel lo fija la operación de la represa, no mide sequía")
     if est["estado"] == "vencida":
         tipo.append("Lectura vencida: tiene %d días y no describe el río de hoy" % est["edad"])
+    if est.get("org") == "caru":
+        ctx = ["Evidencia: Fuente única (CARU, organismo binacional Argentina-Uruguay; publicada por el INA). Es un organismo distinto de la Prefectura: sí cuenta como segunda fuente de la tendencia del nivel en el Río de la Plata y el Delta.",
+               "Lo que no dice: no publica umbrales, así que no puede decir si el nivel es bajo; la escala está sobre el río Uruguay, cerca de su boca, las mareas y el viento del Plata la mueven. Se compara la media diaria."]
+        return {"id": "es%d" % i, "categoria": "Nivel del río · escala de la CARU (vía INA)", "titulo": est["nombre"] + " · " + est["rio"].title(), "tipo": " · ".join(tipo),
+                "fuente": "Comisión Administradora del Río Uruguay (CARU), publicada por el INA · ubicación según el INA%s" % (", ajustada al cauce dibujado" if est["pos"]["ajustada"] else ""),
+                "clase": "estacion", "coord": None, "foto": None, "ctx": ctx, "ctx_t": "Indicio y su evidencia",
+                "ctx_f": "Se publican las lecturas tal como las informa el organismo."}
     ctx = ["Evidencia: Fuente única (Prefectura Naval Argentina, escalas oficiales, publicadas por el INA). Otras escalas del mismo organismo cuentan como la misma fuente; sí corrobora una estación de otro organismo sobre el mismo tramo.",
            "Lo que no dice: es la altura de la escala, no el calado ni el límite de navegación de la vía; los umbrales son los de esa escala. La lectura es diaria."]
     return {"id": "es%d" % i, "categoria": "Nivel del río · escala de la Prefectura (vía INA)", "titulo": est["nombre"] + " · " + est["rio"].title(), "tipo": " · ".join(tipo),
@@ -318,11 +327,17 @@ def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_z
         en_obs = bajas + cerca
         ambas = [e for e in en_obs if e in bajando]
         py = [e for e in vivas if e.get("red") not in ("ar", "br")]
-        ar = [e for e in vivas if e.get("red") == "ar"]
+        ar = [e for e in vivas if e.get("red") == "ar" and e.get("org") != "caru"]
+        caru = [e for e in vivas if e.get("org") == "caru"]
         br = [e for e in vivas if e.get("red") == "br"]
-        orgs = {"py": FUENTE_NIVEL, "ar": FUENTE_NIVEL_AR, "br": FUENTE_NIVEL_BR}
-        con_lectura = [orgs[k] for k, g in (("py", py), ("ar", ar), ("br", br)) if g]
-        con_aviso = [orgs[k] for k, g in (("py", py), ("ar", ar), ("br", br)) if any(e in en_obs for e in g)]
+        orgs = {"py": FUENTE_NIVEL, "ar": FUENTE_NIVEL_AR, "br": FUENTE_NIVEL_BR, "caru": FUENTE_NIVEL_CARU}
+        grupos = (("py", py), ("ar", ar), ("br", br), ("caru", caru))
+        con_lectura = [orgs[k] for k, g in grupos if g]
+        con_aviso = [orgs[k] for k, g in grupos if k != "caru" and any(e in en_obs for e in g)]
+        # La CARU no publica umbrales: no puede decir «aguas bajas». Sólo corrobora la tendencia (baja de nivel) cuando otro organismo ya marca el aviso.
+        caru_tendencia = [e for e in caru if e in bajando] if con_aviso else []
+        if caru_tendencia:
+            con_aviso = con_aviso + [FUENTE_NIVEL_CARU]
         fuentes = con_aviso or con_lectura
         partes = []
         if py:
@@ -331,11 +346,13 @@ def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_z
             partes.append("%d de la Prefectura Naval Argentina, vía INA" % len(ar))
         if br:
             partes.append("%d de la ANA de Brasil" % len(br))
+        if caru:
+            partes.append("%d de la CARU (sin umbrales: sólo confirma la tendencia)" % len(caru))
         txt = "%d estaciones con lectura al día (%s): %d en el cuarto inferior de su rango histórico o por debajo del umbral oficial de aguas bajas; %d a menos de %d cm de ese umbral; %d bajan %d cm o más en 24 h." % (
             len(vivas), "; ".join(partes), len(bajas), len(cerca), MARGEN_CERCA_CM, len(bajando), abs(VAR_BAJA_CM))
         res[z].append({"id": "NAV", "tipo": "Navegabilidad", "titulo": "Nivel del río frente a su historia y a sus umbrales", "texto": txt, "fuentes": fuentes,
                        "nivel": nivel_evidencia(fuentes),
-                       "no_dice": "No es el calado ni una restricción de navegación; mide el nivel de cada escala contra su propia historia (Paraguay) o contra sus umbrales oficiales (Argentina). Varias estaciones de un mismo organismo son una sola fuente: sólo corrobora un organismo distinto sobre el mismo tramo.",
+                       "no_dice": "No es el calado ni una restricción de navegación; mide el nivel de cada escala contra su propia historia (Paraguay) o contra sus umbrales oficiales (Argentina). La CARU sólo corrobora la baja de nivel, no el umbral (no publica umbrales) y su escala está sobre el río Uruguay, cerca de su boca en el Río de la Plata. Varias estaciones de un mismo organismo son una sola fuente: sólo corrobora un organismo distinto sobre el mismo tramo.",
                        "dato": {"vivas": len(vivas), "bajas": len(bajas), "cerca": len(cerca), "bajando": len(bajando), "ambas": len(ambas)}})
     # presencia del Estado en el AIS
     for z, *_ in _pulso.ZONAS:
