@@ -1,0 +1,50 @@
+{
+ "obtenido": "2026-10-07T13:31:52Z",
+ "fuente": {
+  "nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente",
+  "url": "https://www.smn.gob.ar/",
+  "nota": "Última observación de cada estación (km/h). Licencia CC BY 4.0."
+ },
+ "estaciones": [
+  {
+   "nombre": "La Plata",
+   "fecha": "07-octubre-2026",
+   "hora": "10:00",
+   "direccion": "Noreste",
+   "kmh": 18,
+   "estado": "Nublado"
+  },
+  {
+   "nombre": "Punta Indio B.A.",
+   "fecha": "07-octubre-2026",
+   "hora": "09:00",
+   "direccion": "Sudeste",
+   "kmh": 24,
+   "estado": "Cubierto"
+  },
+  {
+   "nombre": "San Fernando",
+   "fecha": "07-octubre-2026",
+   "hora": "10:00",
+   "direccion": "Este",
+   "kmh": 25,
+   "estado": "Cubierto con lluvia"
+  },
+  {
+   "nombre": "Aeroparque Buenos Aires",
+   "fecha": "07-octubre-2026",
+   "hora": "10:00",
+   "direccion": "Este",
+   "kmh": 20,
+   "estado": "Cubierto con lluvia"
+  },
+  {
+   "nombre": "Buenos Aires",
+   "fecha": "07-octubre-2026",
+   "hora": "10:00",
+   "direccion": "Noreste",
+   "kmh": 9,
+   "estado": "Nublado con llovizna"
+  }
+ ]
+}

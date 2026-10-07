@@ -13,6 +13,7 @@ FUENTES = [
     ("Focos de calor cerca del río (NASA FIRMS)", "focos_corredor.json", "obtenido", 3, "Dos satélites VIIRS"),
     ("Escalas de la Prefectura vía INA (nivel del río, Argentina)", "nivel-rio-ar.json", "obtenido", 24, "Lectura diaria de cada escala"),
     ("Telemetría de la ANA (nivel del río, Brasil)", "nivel-rio-br.json", "obtenido", 6, "Lecturas cada 15 minutos"),
+    ("Viento en el Plata (SMN Argentina)", "viento-smn.json", "obtenido", 6, "Última observación de cada estación"),
     ("Mareógrafos del Servicio de Hidrografía Naval (Río de la Plata)", "nivel-rio-shn.json", "obtenido", 6, "Alturas horarias"),
     ("Nivel del río, Meteorología de Paraguay", "nivel-rio-py.json", "obtenido", 24, "El organismo actualiza a diario, no en vivo"),
     ("Lista de sanciones OFAC (buques con IMO)", "ofac_buques.json", "obtenido", 24 * 7, "Semanal"),

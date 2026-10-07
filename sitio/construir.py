@@ -582,6 +582,8 @@ if marcos:
     _flu_extra = {z: [i] for z, i in _flu_ind.items()}
     for _z, _l in _ind.avisos(os.environ.get("SITIO_AVISOS") or (_raiz / "datos" / "publico" / "avisos_oficiales.json")).items():
         _flu_extra.setdefault(_z, []).extend(_l)
+    for _z, _l in _ind.viento(os.environ.get("SITIO_VIENTO") or (_raiz / "datos" / "publico" / "viento-smn.json"), _dtm.strptime(_fecha, "%Y-%m-%d").date()).items():
+        _flu_extra.setdefault(_z, []).extend(_l)
     if _OFAC:
         _imos_vistos = {str(_imo_valido(p.get("imo"))) for m in _ventana for p in m["puntos"] if _imo_valido(p.get("imo"))}
         _coinc = {k: v for k, v in _OFAC_VISTOS.items()}

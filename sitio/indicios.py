@@ -596,6 +596,33 @@ def avisos(ruta):
     return out
 
 
+# ---------------------------------------------------------------- viento en el Plata (contexto del nivel)
+VIENTO_EMPUJA = ("este", "sudeste", "sureste")
+VIENTO_FUERTE_KMH = 20
+
+
+def viento(ruta, hoy):
+    """{zona: [indicio]}: contexto del nivel del Plata. Un viento sostenido del Este o el Sudeste sube el nivel del Plata aunque el río venga bajando."""
+    if not ruta or not Path(ruta).exists():
+        return {}
+    d = json.load(open(ruta, encoding="utf-8"))
+    ests = d.get("estaciones", [])
+    if not ests:
+        return {}
+    if (hoy - _fecha_iso(d.get("obtenido", "")[:10])).days > DIAS_VENCIDA:
+        return {}
+    empujan = [e for e in ests if e["direccion"].lower() in VIENTO_EMPUJA and e["kmh"] >= VIENTO_FUERTE_KMH]
+    detalle = "; ".join("%s: %s %d km/h (%s)" % (e["nombre"], e["direccion"], e["kmh"], e["hora"]) for e in ests)
+    if len(empujan) * 2 > len(ests):
+        lectura = "Viento del Este o del Sudeste de %d km/h o más en %d de %d estaciones: empuja agua hacia el interior del Plata y sube su nivel y el del bajo Delta, aunque el río venga bajando." % (VIENTO_FUERTE_KMH, len(empujan), len(ests))
+    else:
+        lectura = "Sin viento sostenido del Este o del Sudeste de %d km/h o más en la mayoría de las estaciones." % VIENTO_FUERTE_KMH
+    fuente = {"nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente", "familia": "oficial", "calificacion": "A2", "url": "https://www.smn.gob.ar/"}
+    return {"z1": [{"id": "VIE", "tipo": "Contexto del nivel", "titulo": "Viento en el Río de la Plata", "texto": "%s %s." % (lectura, detalle), "fuentes": [fuente], "nivel": "Contexto",
+                    "no_dice": "Es la última observación de cada estación, no una tendencia ni un pronóstico, y no mide el nivel. Sirve para leer los mareógrafos y las escalas del Plata: con viento del Este o el Sudeste el nivel puede subir sin que el río haya crecido.",
+                    "dato": {"empujan": len(empujan), "estaciones": len(ests)}}]}
+
+
 # ---------------------------------------------------------------- focos de calor cerca del río (NASA FIRMS)
 def focos(ruta):
     """(puntos con x, y, zona; indicios por zona). Cuenta los focos de los últimos 3 días a menos de 25 km del río."""

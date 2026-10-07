@@ -1,7 +1,7 @@
 name: Avisos oficiales (meteorología y desastres)
 
-# Cada 3 horas, público. INMET (Brasil), Meteorología de Paraguay y GDACS (ONU y Comisión Europea): avisos vigentes que tocan el corredor.
-# No consume tokens de Claude. No consulta (y lo declara) el SMN de Argentina, que exige una clave, ni el INUMET de Uruguay.
+# Cada 3 horas, público. INMET (Brasil), Meteorología de Paraguay, SMN de Argentina (feed abierto) y GDACS (ONU y Comisión Europea): avisos vigentes que tocan el corredor.
+# No consume tokens de Claude. No consulta (y lo declara) el INUMET de Uruguay, que no tiene API pública.
 on:
   schedule:
     - cron: "25 */3 * * *"
