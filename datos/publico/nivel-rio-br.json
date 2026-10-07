@@ -1,0 +1,40 @@
+{
+ "obtenido": "2026-10-07T12:56:48Z",
+ "fuente": {
+  "nombre": "ANA (Brasil), telemetría; escalas del Serviço Geológico do Brasil (SGB-CPRM)",
+  "url": "https://telemetriaws1.ana.gov.br/",
+  "nota": "Lecturas cada 15 minutos (hora local de Brasil). Altura de la escala, no el calado de la vía. Sin umbrales oficiales en esta interfaz."
+ },
+ "estaciones": [
+  {
+   "codigo": "66070004",
+   "nombre": "Cáceres (ANA)",
+   "lat": -16.0761,
+   "lon": -57.7022,
+   "hora_local": "2026-10-07 09:00",
+   "nivel_m": 0.95,
+   "caudal_m3s": 214.17,
+   "var_cm": -4
+  },
+  {
+   "codigo": "66825000",
+   "nombre": "Ladário (ANA)",
+   "lat": -19.0017,
+   "lon": -57.5942,
+   "hora_local": "2026-10-07 09:00",
+   "nivel_m": 1.21,
+   "caudal_m3s": null,
+   "var_cm": -2
+  },
+  {
+   "codigo": "66960008",
+   "nombre": "Porto Esperança (ANA)",
+   "lat": -19.6006,
+   "lon": -57.4372,
+   "hora_local": "2026-10-07 09:00",
+   "nivel_m": 0.53,
+   "caudal_m3s": null,
+   "var_cm": 1
+  }
+ ]
+}

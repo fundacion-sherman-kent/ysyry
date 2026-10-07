@@ -41,6 +41,7 @@ REGULADAS_AR = {14, 15, 79}      # escalas dentro de embalses (Yacyretá, Salto 
 
 FUENTE_NIVEL_AR = {"nombre": "Prefectura Naval Argentina (escalas), vía INA", "familia": "oficial", "calificacion": "A2",
                   "url": "https://alerta.ina.gob.ar/"}
+FUENTE_NIVEL_BR = {"nombre": "ANA (Brasil), telemetría de escalas del SGB-CPRM", "familia": "oficial", "calificacion": "A2", "url": "https://telemetriaws1.ana.gov.br/"}
 FUENTE_NIVEL = {"nombre": "Dirección de Meteorología e Hidrología, Paraguay", "familia": "oficial", "calificacion": "A2",
                 "url": "https://www.meteorologia.gov.py/nivel-rio/indexconvencional.php"}
 FUENTE_AIS = {"nombre": "AIS vía Open Waters (AISHub y aisstream.io)", "familia": "sensor", "calificacion": "B3"}
@@ -181,6 +182,35 @@ def estaciones_ar(ruta, segs_rio, hoy):
     return out, d.get("obtenido", "")
 
 
+def estaciones_br(ruta, segs_rio, hoy):
+    """Escalas de la ANA de Brasil (telemetría cada 15 minutos). Son la fuente primaria de las mismas escalas que Paraguay republica."""
+    if not ruta or not Path(ruta).exists():
+        return [], ""
+    d = json.load(open(ruta, encoding="utf-8"))
+    out = []
+    for e in d["estaciones"]:
+        lect = _fecha_iso(e["hora_local"][:10])
+        edad = (hoy - lect).days if lect else 999
+        x, y = _pulso.AX * e["lon"] + _pulso.BX, _pulso.AY * e["lat"] + _pulso.BY
+        (x2, y2), dist = _al_rio(x, y, segs_rio)
+        out.append({"red": "br", "nombre": e["nombre"], "nivel": e["nivel_m"], "caudal": e.get("caudal_m3s"), "var_cm": e.get("var_cm"), "lectura": e["hora_local"],
+                    "edad": edad, "estado": "vencida" if edad > DIAS_VENCIDA else "medio", "regulada": False, "pct": None, "min": None, "max": None,
+                    "pos": {"x": x2, "y": y2, "zona": _pulso.zona_de(x2, y2), "ajustada": 0.05 < dist <= AJUSTE_MAX_UNIDADES}})
+    return out, d.get("obtenido", "")
+
+
+def info_estacion_br(i, est):
+    tipo = [("Nivel %.2f m (lectura del %s hora de Brasil), %s en 24 h" % (est["nivel"], est["lectura"], ("%+d cm" % est["var_cm"]) if est["var_cm"] is not None else "variación sin dato")).replace(".", ",")]
+    if est.get("caudal"):
+        tipo.append(("Caudal %.0f m³/s" % est["caudal"]).replace(".", ","))
+    tipo.append("Sin umbrales oficiales en esta interfaz: no se puede decir si el nivel es bajo ni alto")
+    ctx = ["Evidencia: Fuente única (ANA, Brasil: telemetría de escalas del Serviço Geológico do Brasil). Es la fuente primaria de la misma escala que Meteorología de Paraguay republica: NO son dos fuentes distintas para esta escala.",
+           "Lo que no dice: es la altura de la escala, no el calado ni el límite de navegación; sin historial propio todavía no hay comparación con su rango."]
+    return {"id": "es%d" % i, "categoria": "Nivel del río · telemetría de la ANA (Brasil)", "titulo": est["nombre"], "tipo": " · ".join(tipo),
+            "fuente": "ANA (Brasil), telemetría cada 15 minutos; escalas del SGB-CPRM · ubicación según la ANA", "clase": "estacion", "coord": None, "foto": None,
+            "ctx": ctx, "ctx_t": "Indicio y su evidencia", "ctx_f": "Se publican las lecturas tal como las informa el organismo."}
+
+
 def _fecha_iso(s):
     try:
         return datetime.strptime(s, "%Y-%m-%d").date()
@@ -234,6 +264,8 @@ def gauge_svg(est, ancho=260, alto=46):
 
 
 def info_estacion(i, est, fecha_obtenido):
+    if est.get("red") == "br":
+        return info_estacion_br(i, est)
     if est.get("red") == "ar":
         return info_estacion_ar(i, est)
     pos = est["pos"]
@@ -285,17 +317,20 @@ def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_z
         bajando = [e for e in vivas if e["var_cm"] is not None and e["var_cm"] <= VAR_BAJA_CM]
         en_obs = bajas + cerca
         ambas = [e for e in en_obs if e in bajando]
-        py = [e for e in vivas if e.get("red") != "ar"]
+        py = [e for e in vivas if e.get("red") not in ("ar", "br")]
         ar = [e for e in vivas if e.get("red") == "ar"]
-        orgs = {"py": FUENTE_NIVEL, "ar": FUENTE_NIVEL_AR}
-        con_lectura = [orgs[k] for k, g in (("py", py), ("ar", ar)) if g]
-        con_aviso = [orgs[k] for k, g in (("py", py), ("ar", ar)) if any(e in en_obs for e in g)]
+        br = [e for e in vivas if e.get("red") == "br"]
+        orgs = {"py": FUENTE_NIVEL, "ar": FUENTE_NIVEL_AR, "br": FUENTE_NIVEL_BR}
+        con_lectura = [orgs[k] for k, g in (("py", py), ("ar", ar), ("br", br)) if g]
+        con_aviso = [orgs[k] for k, g in (("py", py), ("ar", ar), ("br", br)) if any(e in en_obs for e in g)]
         fuentes = con_aviso or con_lectura
         partes = []
         if py:
             partes.append("%d de Meteorología de Paraguay" % len(py))
         if ar:
             partes.append("%d de la Prefectura Naval Argentina, vía INA" % len(ar))
+        if br:
+            partes.append("%d de la ANA de Brasil" % len(br))
         txt = "%d estaciones con lectura al día (%s): %d en el cuarto inferior de su rango histórico o por debajo del umbral oficial de aguas bajas; %d a menos de %d cm de ese umbral; %d bajan %d cm o más en 24 h." % (
             len(vivas), "; ".join(partes), len(bajas), len(cerca), MARGEN_CERCA_CM, len(bajando), abs(VAR_BAJA_CM))
         res[z].append({"id": "NAV", "tipo": "Navegabilidad", "titulo": "Nivel del río frente a su historia y a sus umbrales", "texto": txt, "fuentes": fuentes,

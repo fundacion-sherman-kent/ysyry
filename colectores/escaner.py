@@ -86,7 +86,7 @@ TIPOS = [
                                                                            r"(narco|trafico|contraband|banda|organizacion criminal|pcc|comando vermelho|crimen organizado|lavado|traffick|gang|criminal)"]),
     ("pirateria", "Piratería o robo de carga", 3, [r"(pirater|piratas|piracy|river pirates|cargo theft|robo de carga|asalt\w+ (a|al|una) (barcaza|buque|embarcacion|convoy)|abordaje|roubo de carga)"]),
     ("siniestro", "Siniestro náutico", 2, [r"(colision|choque|varadur|encall|hundimient|naufrag|derrame|incendio)", r"(barcaza|buque|convoy|embarcacion|remolcador|balsa|navio|barco)"]),
-    ("navegabilidad", "Bajante, calado y navegabilidad", 1, [r"(bajante|calado|altura del rio|nivel del rio|dragado|dragagem|vazante)"]),
+    ("navegabilidad", "Bajante, calado y navegabilidad", 1, [r"(bajante|calado|altura del rio|nivel del rio|dragado|dragagem|vazante|crecida|creciente|inundaci)"]),
     ("regulatorio", "Licitación, peaje o conflicto gremial", 1, [r"(licitacion|peaje|concesion|paro\b|huelga|practicos|conflicto gremial|greve)", r"(hidrovia|puerto|portuari|navegacion|via navegable|porto)"]),
     ("estado", "Operativo de una fuerza del Estado", 1, [r"(prefectura|armada|gendarmeria|policia nacional|senad|fuerza naval|marinha)", r"(operativo|patrull|control|secuestro|incaut|detenc|apreens)"]),
 ]
@@ -146,8 +146,36 @@ def fecha_iso(s):
         return m.group(1) if m else ""
 
 
-def lugares_en(texto):
-    return [(k, v) for k, v in LUGARES.items() if re.search(r"\b" + re.escape(k) + r"\b", texto)]
+# Nombres de lugar que también son apellidos, santos o ciudades de otro país: sin su contexto no cuentan (la misma trampa que «Ciudad del Este»
+# con el centro comercial de Costa Rica). `excluye` anula el lugar si aparece; `exige` pide una pista del corredor en el mismo titular.
+AMBIGUOS = {
+    "caceres": {"exige": r"(mato grosso|\bmt\b|porto caceres|puerto caceres|pantanal|paraguai|corumba|hidrovia)"},
+    "rosario": {"excluye": r"(rosario central|del rosario|virgen del rosario|villa del rosario|rosario del tala|rosario oeste|rezar|parroquia|rosario de santa fe y)",
+                "exige": r"(santa fe|puerto|puertos|\brio\b|parana|hidrovia|terminal|agro|aceit|granos|gran rosario|san lorenzo|barcaza)"},
+    "san lorenzo": {"exige": r"(santa fe|rosario|puerto|parana|aceit|agro|granos|barcaza)", "no_py": True},
+    "pilar": {"exige": r"(neembucu|rio paraguay|puerto pilar|formosa|paraguay)"},
+    "concepcion": {"exige": r"(paraguay|rio paraguay|puerto concepcion|vallemi|norte)"},
+    "campana": {"exige": r"(zarate|buenos aires|parana de las palmas|puerto|atucha|delta)"},
+    "formosa": {"exige": r"(rio paraguay|clorinda|argentina|provincia de formosa|puerto|frontera)"},
+    "goya": {"exige": r"(corrientes|\brio\b|parana|puerto)"},
+}
+
+
+def lugares_en(texto, dominio=""):
+    out = []
+    for k, v in LUGARES.items():
+        if not re.search(r"\b" + re.escape(k) + r"\b", texto):
+            continue
+        a = AMBIGUOS.get(k)
+        if a:
+            if a.get("excluye") and re.search(a["excluye"], texto):
+                continue
+            if a.get("exige") and not re.search(a["exige"], texto):
+                continue
+            if a.get("no_py") and dominio.endswith(".py") and not re.search(r"(santa fe|rosario)", texto):
+                continue
+        out.append((k, v))
+    return out
 
 
 def clasificar(texto):
@@ -160,7 +188,7 @@ def clasificar(texto):
 
 def analizar(titulo, desc, dominio, clase):
     t = norm(titulo + " " + desc)
-    lugs = lugares_en(t)
+    lugs = lugares_en(t, dominio)
     rio = bool(RIO.search(t))
     if not lugs and not rio:
         return None
@@ -181,6 +209,20 @@ def analizar(titulo, desc, dominio, clase):
     puntaje = sum(p for _, _, p in tipos) + (2 if rio else 0) + (2 if lugs else 0) + (1 if cantidad else 0) + (1 if clase == "oficial" else 0)
     return {"tipos": [(a, b) for a, b, _ in tipos], "lugares": [v[0] for _, v in lugs][:4], "ubicacion": ([lugs[0][1][1], lugs[0][1][2]] if lugs else None),
             "zona": zona, "cantidad": cantidad, "puntaje": puntaje, "rio": rio}
+
+
+# palabras de interés para la segunda lectura: sin alguna de ellas, un titular que sólo nombra una ciudad es ruido (elecciones, lotería, escuelas)
+INTERES = re.compile(r"(\brio\b|puerto|portuari|itaipu|yacyreta|represa|crecida|creciente|inundaci|frontera|aduana|narco|droga|contraband|policia|fiscal|armada|prefectura|embarcacion|barcaza|buque|navegacion)")
+
+
+def casi(titulo, desc, dominio=""):
+    """Titular que nombra un lugar del corredor o el río pero que ninguna regla de tipo reconoció: la segunda lectura con modelo (escaner_modelo.py)
+    lo mira, porque un escáner por reglas no se adapta a un hecho con palabras nuevas."""
+    t = norm(titulo + " " + desc)
+    lugs = lugares_en(t, dominio)
+    if not (lugs or RIO.search(t)) or clasificar(t) or not INTERES.search(t):
+        return None
+    return {"lugares": [v[0] for _, v in lugs][:3]}
 
 
 def similares(a, b):
@@ -204,7 +246,7 @@ def main():
     previo = json.load(open(destino, encoding="utf-8")) if destino.exists() else {"eventos": []}
     hoy = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     corte = (datetime.now(timezone.utc) - timedelta(days=DIAS)).strftime("%Y-%m-%d")
-    consultadas, nuevos = [], []
+    consultadas, nuevos, sin_tipo = [], [], []
     for dominio, url, clase, idioma in FUENTES:
         try:
             raiz = ET.fromstring(bajar(url))
@@ -219,6 +261,10 @@ def main():
             if a:
                 c += 1
                 nuevos.append({"titulo": titulo[:220], "url": link, "dominio": dominio, "clase": clase, "fecha": fecha_iso(fecha) or hoy, **a})
+            else:
+                k = casi(titulo, desc, dominio)
+                if k:
+                    sin_tipo.append({"titulo": titulo[:220], "url": link, "dominio": dominio, "fecha": fecha_iso(fecha) or hoy, **k})
         print("  %-24s %3d items, %d candidatos" % (dominio, n, c))
         consultadas.append({"dominio": dominio, "url": url, "ok": True, "items": n, "candidatos": c})
     if not any(x["ok"] for x in consultadas):
@@ -257,7 +303,8 @@ def main():
         x["fallos_seguidos"] = 0 if x["ok"] else antes.get((x["dominio"], x["url"]), 0) + 1
     salida = {"obtenido": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "dias": DIAS, "fuentes": consultadas,
               "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
-              "eventos": out[:200]}
+              "eventos": out[:200],
+              "sin_tipo": sorted({x["url"]: x for x in sin_tipo + [y for y in previo.get("sin_tipo", []) if y.get("fecha", "") >= corte]}.values(), key=lambda x: x["fecha"], reverse=True)[:120]}
     json.dump(salida, open(destino, "w", encoding="utf-8", newline="\n"), ensure_ascii=False, indent=1)
     print("Candidatos guardados: %d (%d con 2 o más medios)" % (len(out), len([h for h in out if len(h["medios"]) >= 2])))
     return 0

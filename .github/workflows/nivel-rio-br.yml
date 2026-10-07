@@ -1,0 +1,34 @@
+name: Nivel del río (Brasil, ANA)
+
+# Cada 3 horas, público. Telemetría de la ANA de Brasil (lecturas cada 15 minutos) de las escalas de Cáceres, Ladário y Porto Esperança.
+# Es la fuente primaria de las mismas escalas que Paraguay republica. No consume tokens de Claude.
+on:
+  schedule:
+    - cron: "45 */3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  leer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Leer escalas
+        env:
+          DATOS_DIR: datos/publico
+        run: python3 -u colectores/nivel_rio_br.py
+      - name: Guardar
+        run: |
+          git config user.name "ysyry-robot"
+          git config user.email "ysyry-robot@users.noreply.github.com"
+          git add datos/publico/nivel-rio-br.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Nivel del río en Brasil: telemetría de la ANA (corrida automática)"
+            git pull --rebase --quiet
+            git push
+          fi
