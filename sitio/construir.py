@@ -498,6 +498,7 @@ import pulso as _pulso
 from datetime import datetime as _dtm, timedelta as _td
 PULSO = os.environ.get("SITIO_PULSO") or str(D / "pulso.json")
 _pulso_html = ""
+_vivas_html = ""
 _actores_html = ""
 _escaner_html = ""
 _flujos_html = ""
@@ -571,6 +572,8 @@ if marcos:
     _vinc = _act.vincular(_actores, _esc_evs, _flu_rutas, _ais_fuerza)
     _ops, _fecha_ops = _act.operadores_osm(D / "amarres_osm.json")
     _actores_html = _act.tabla_html(_actores, _vinc, _ops, _fecha_ops, _fecha)
+    import fuentes_vivas as _fv
+    _vivas_html = _fv.tabla_html(_raiz / "datos" / "publico", marcos[-1]["hora"])
 
     _flu_extra = {z: [i] for z, i in _flu_ind.items()}
     for _z, _l in _ind.avisos(os.environ.get("SITIO_AVISOS") or (_raiz / "datos" / "publico" / "avisos_oficiales.json")).items():
@@ -1166,6 +1169,8 @@ __escaner__
 
 __actores__
 
+__vivas__
+
 __alertas_fem__
 
 __prospectiva__
@@ -1179,6 +1184,7 @@ __prospectiva__
     <li><b>Fotos.</b> Tres niveles, y cada ficha dice cuál es: foto verificada por el número IMO del buque; coincidencia por nombre, sólo cuando el buque no transmite IMO; o imagen ilustrativa de su tipo, que <b>no es una foto de ese buque</b>. Autor y licencia en cada una.</li>
     <li><b>Cauce de los ríos.</b> Del Paraná bajo, el Delta y el Uruguay se dibuja la superficie de agua con OpenStreetMap (© colaboradores, ODbL, simplificada: no es cartografía náutica y no sirve para navegar). Aguas arriba de Rosario, y donde la consulta falló, el río es una línea con una franja de ancho aproximado. Las posiciones AIS no se corrigen nunca: si un buque aparece fuera del agua dibujada, es el dibujo el que es aproximado.</li>
     <li><b>Puertos, muelles, amarraderos y rampas.</b> Salen de OpenStreetMap, una instantánea del __fecha_amarres__: son aportes de colaboradores, <b>fuente única</b>, y pueden faltar, estar desactualizados o ser privados; que figuren no significa que operen hoy. Hay unos 2.900 puntos, la mayoría muelles pequeños del Delta, y por eso se muestran por niveles al acercar el mapa. OpenStreetMap casi no registra «caletas» en este corredor: si conocés una, abrí un pedido de corrección.</li>
+    <li><b>Regla de verificación: dos fuentes independientes como mínimo.</b> Ningún dato se presenta como un hecho verificado con una sola fuente. Con una, se rotula «fuente única, no verificado»; con dos o más fuentes independientes, «corroborado» (de la misma familia, por ejemplo varios medios) o «fuerte» (de dos o más familias, por ejemplo prensa y una fuente oficial). Varias estaciones de un mismo organismo, las dos redes de AIS o varios medios que copian a una misma agencia cuentan como una sola fuente. Un detector automático (como el escáner de titulares) nunca pasa de «corroborado», porque no puede probar independencia. Las atribuciones se rotulan como atribuciones.</li>
     <li><b>Contexto por provincia o departamento.</b> Cada ficha de puerto o ciudad suma tres cifras de la unidad donde está, tomadas de los datos abiertos de <a href="https://siwa.fundacionkent.org/sitio/index.html">SIWA</a> (Fundación Sherman Kent, CC BY 4.0, rotulados allí como prototipo): homicidios de la fuente oficial de cada Estado, eventos de violencia política de ACLED (base secundaria sobre prensa y fuentes locales, no oficial) y focos de calor de NASA FIRMS de los últimos días. Son recuentos de toda la provincia, no del puerto, y no son tasas: una provincia grande tiene más aunque sea más segura. Los homicidios no son comparables entre países. Un foco de calor no es un incendio confirmado. Donde el conjunto no trae la unidad, la ficha no inventa el dato.</li>
     <li><b>Puertos y ciudades.</b> Posición geocodificada con OpenStreetMap; el tipo de terminal figura sólo donde hay fuente (Bolsa de Comercio de Rosario).</li>
     <li><b>Zonas y riesgos.</b> Cada afirmación lleva dos fuentes independientes o se marca como fuente única. Las zonas son departamentos porque la fuente no da un punto exacto.</li>
@@ -1772,6 +1778,7 @@ SUST = {
     "flujos": _flujos_html,
     "escaner": _escaner_html,
     "actores": _actores_html,
+    "vivas": _vivas_html,
     "prospectiva": _prospectiva_html,
     "guia_json": json.dumps(_GUIA, ensure_ascii=False),
     "guia_sug": json.dumps(_guia.PREGUNTAS_SUGERIDAS, ensure_ascii=False),

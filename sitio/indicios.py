@@ -487,14 +487,20 @@ def avisos(ruta):
             por.setdefault(z, []).append(a)
     out = {}
     for z, lst in por.items():
-        fuentes = [{"nombre": n, "familia": "oficial", "calificacion": "A2"} for n in sorted({a["fuente"] for a in lst})]
-        partes = []
-        for a in lst[:5]:
-            partes.append("%s%s (%s%s)" % (a["fenomeno"][:70], (", " + a["severidad"]) if a.get("severidad") else "", ("hasta " + a["fin"]) if a.get("fin") else "vigente", (", " + a["fuente"].split(" (")[0]) if a.get("fuente") else ""))
-        out[z] = [{"id": "AVI", "tipo": "Avisos oficiales", "titulo": "Avisos meteorológicos o de desastre vigentes que nombran este tramo",
-                   "texto": "%d %s: %s." % (len(lst), "aviso" if len(lst) == 1 else "avisos", "; ".join(partes)), "fuentes": fuentes, "nivel": nivel_evidencia(fuentes),
-                   "no_dice": "Es un aviso general del servicio oficial para esos municipios o esa zona, no dice cómo afecta la navegación. Sólo cubre las fuentes consultadas: no se consulta el SMN de Argentina (exige una clave) ni el INUMET de Uruguay.",
-                   "dato": {"n": len(lst)}}]
+        # un indicio por fuente: dos avisos de servicios distintos casi nunca hablan del mismo hecho, así que no se corroboran entre sí
+        for fuente in sorted({a["fuente"] for a in lst}):
+            propios = [a for a in lst if a["fuente"] == fuente]
+            grupos = {}
+            for a in propios:
+                g = grupos.setdefault((a["fenomeno"][:70], a.get("severidad", "")), {"fin": "", "n": 0})
+                g["n"] += 1
+                g["fin"] = max(g["fin"], a.get("fin") or "")
+            partes = ["%s%s%s" % (k[0], (" (" + k[1] + ")") if k[1] else "", (", hasta " + g["fin"]) if g["fin"] else ", vigente") for k, g in list(grupos.items())[:5]]
+            fuentes = [{"nombre": fuente, "familia": "oficial", "calificacion": "A2"}]
+            out.setdefault(z, []).append({"id": "AVI", "tipo": "Avisos oficiales", "titulo": "Avisos vigentes de %s que nombran este tramo" % fuente.split(" (")[0],
+                                          "texto": "%d %s: %s." % (len(propios), "aviso" if len(propios) == 1 else "avisos", "; ".join(partes)), "fuentes": fuentes, "nivel": nivel_evidencia(fuentes),
+                                          "no_dice": "Es un aviso general del servicio oficial para esos municipios o esa zona, no dice cómo afecta la navegación. Sólo cubre las fuentes consultadas: no se consulta el SMN de Argentina (exige una clave) ni el INUMET de Uruguay.",
+                                          "dato": {"n": len(propios)}})
     fs = d.get("fuentes", [])
     out.setdefault("gen", []).append({"id": "AVC", "tipo": "Avisos oficiales", "titulo": "Fuentes de avisos oficiales consultadas",
                                        "texto": "Consultadas hoy: %s. %d avisos vigentes sobre el corredor. No consultadas: %s." % (

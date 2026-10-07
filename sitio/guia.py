@@ -18,7 +18,7 @@ TITULOS = [
     "Qué es Ysyry", "Cómo leer el mapa", "De dónde vienen los buques", "Por qué faltan buques en el río alto", "Cada cuánto se actualiza",
     "El latido y las boyas", "Las fotos de los buques", "El nivel del río", "Indicios y evidencia", "Las alertas", "Preguntas y marcador", "El pulso por zona",
     "Unidades del Estado", "Zonas atribuidas al PCC", "Piratería en el km 340", "Puertos y muelles", "ACLED, focos y homicidios", "SIWA y FEMÓNOE",
-    "Satélite y radar", "Cómo pedir una corrección", "Licencias y créditos", "Privacidad", "Auspicios y independencia", "Cómo usar el mapa", "Tema claro y oscuro", "Límites", "Prensa como fuente", "Cómo se mejora la plataforma", "Focos de calor cerca del río", "Flujos ilícitos y su frescura", "El escáner propio", "Actores del corredor", "Sanciones y datos abiertos",
+    "Satélite y radar", "Cómo pedir una corrección", "Licencias y créditos", "Privacidad", "Auspicios y independencia", "Cómo usar el mapa", "Tema claro y oscuro", "Límites", "Prensa como fuente", "Cómo se mejora la plataforma", "Focos de calor cerca del río", "Flujos ilícitos y su frescura", "El escáner propio", "Actores del corredor", "Sanciones y datos abiertos", "Regla de dos fuentes", "Qué tan en vivo es",
 ]
 
 
@@ -91,6 +91,10 @@ def catalogo(c):
          "r": "El registro de actores dice quién es cada uno, qué se sabe y con qué fuentes, con el nivel de evidencia de cada afirmación, y qué no se sabe. Incluye organizaciones criminales (con sus atribuciones rotuladas como tales), delitos en el río, organismos del Estado, sector privado y grupos de presión, más los operadores de puertos y muelles que figuran en OpenStreetMap. Un actor no es un acusado: nada de esto atribuye un hecho a una persona. Cada ficha suma los rastros propios que mide Ysyry: titulares detectados, rutas de SIWA y unidades visibles por AIS."},
         {"k": "sanciones ofac sdn lista buques sancionados imo datos abiertos descargar json feed atom rss suscribirse api", "a": [],
          "r": "Ysyry cruza por número IMO los buques que transmiten AIS con la lista de sanciones SDN de OFAC (EE.UU., dominio público): hoy no hay coincidencias, y si las hubiera serían una pista para mirar, no una acusación. Los datos abiertos del libro de indicios están en datos/indicios.json (CC BY 4.0, citando a Ysyry) y hay un canal Atom en feed.xml con los hechos detectados y los indicios, para suscribirse desde un lector de noticias."},
+        {"k": "regla dos fuentes verificacion verificado verificar fuente unica no verificado independientes corroborado fuerte confiable seguro cierto", "a": [["sec", "indicios-zonas", "Ver el libro de indicios"]],
+         "r": "La regla de la casa: dos fuentes independientes como mínimo. Con una sola, el dato se rotula «fuente única, no verificado» y no se presenta como un hecho. Con dos o más independientes de la misma familia (por ejemplo, varios medios) es «corroborado»; de dos o más familias (por ejemplo, prensa y una fuente oficial) es «fuerte». Varias estaciones de un mismo organismo, las dos redes de AIS o varios medios que copian a una agencia cuentan como una sola fuente, y un detector automático nunca pasa de «corroborado»."},
+        {"k": "en vivo tiempo real actualiza cada cuanto fuentes frescas retrasada cadencia online hora actualizacion", "a": [["sec", "fuentes-vivas", "Ver el estado de las fuentes"]],
+         "r": "Depende de cada fuente: los buques (AIS) se capturan por hora, el escáner de hechos, los avisos oficiales y los focos de calor cada 3 horas, el nivel del río y las escalas una vez por día y las sanciones una vez por semana. La tabla «Fuentes en vivo» muestra cuándo se leyó cada una por última vez y si está retrasada. Los robots programados de GitHub a veces se atrasan: el latido de la cabecera del mapa avisa si la última captura de AIS es vieja."},
     ]
     assert len(lista) == len(TITULOS), (len(lista), len(TITULOS))
     for e, t in zip(lista, TITULOS):
