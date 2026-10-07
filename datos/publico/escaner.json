@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-07T05:48:31Z",
+ "obtenido": "2026-10-07T12:10:54Z",
  "dias": 14,
  "fuentes": [
   {
@@ -11,14 +11,14 @@
   {
    "dominio": "abc.com.py",
    "ok": true,
-   "items": 31,
+   "items": 33,
    "candidatos": 0
   },
   {
    "dominio": "lanacion.com.py",
    "ok": true,
    "items": 100,
-   "candidatos": 1
+   "candidatos": 0
   },
   {
    "dominio": "lacapital.com.ar",
@@ -47,7 +47,7 @@
   {
    "dominio": "lanacion.com.ar",
    "ok": true,
-   "items": 90,
+   "items": 85,
    "candidatos": 0
   },
   {
@@ -55,6 +55,48 @@
    "ok": true,
    "items": 100,
    "candidatos": 1
+  },
+  {
+   "dominio": "insightcrime.org",
+   "ok": true,
+   "items": 11,
+   "candidatos": 0
+  },
+  {
+   "dominio": "es.mongabay.com",
+   "ok": true,
+   "items": 30,
+   "candidatos": 0
+  },
+  {
+   "dominio": "hoy.com.py",
+   "ok": true,
+   "items": 10,
+   "candidatos": 0
+  },
+  {
+   "dominio": "ip.gov.py",
+   "ok": true,
+   "items": 10,
+   "candidatos": 0
+  },
+  {
+   "dominio": "agenciabrasil.ebc.com.br",
+   "ok": true,
+   "items": 10,
+   "candidatos": 0
+  },
+  {
+   "dominio": "g1.globo.com",
+   "ok": true,
+   "items": 100,
+   "candidatos": 0
+  },
+  {
+   "dominio": "elobservador.com.uy",
+   "ok": true,
+   "items": 20,
+   "candidatos": 0
   },
   {
    "dominio": "senad.gov.py",
