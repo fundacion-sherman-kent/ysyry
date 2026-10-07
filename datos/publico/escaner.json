@@ -1,20 +1,21 @@
 {
- "obtenido": "2026-10-07T13:13:11Z",
+ "obtenido": "2026-10-07T20:34:39Z",
  "dias": 14,
  "fuentes": [
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
-   "ok": true,
-   "items": 100,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "no element found: line 1, column 38",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 32,
+   "items": 28,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +63,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 89,
+   "items": 83,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -93,10 +94,11 @@
   {
    "dominio": "hoy.com.py",
    "url": "https://www.hoy.com.py/feed",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "HTTP Error 415: Unsupported Media Type",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "ip.gov.py",
@@ -159,15 +161,15 @@
    "url": "https://www.npy.com.py/index.rss",
    "ok": true,
    "items": 18,
-   "candidatos": 0,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 312,
-   "candidatos": 0,
+   "items": 329,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -197,6 +199,50 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "SENAD intercepta camión con más de 50 kilos de droga en Remansito",
+   "url": "https://www.npy.com.py/noticias/nacionales/senad-intercepta-camion-con-mas-de-50-kilos-de-droga-en-remansito",
+   "dominio": "npy.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-07",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Asunción"
+   ],
+   "ubicacion": [
+    -25.28,
+    -57.63
+   ],
+   "zona": "z5",
+   "cantidad": {
+    "valor": 50.0,
+    "unidad": "kilos"
+   },
+   "puntaje": 9,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "npy.com.py",
+     "clase": "prensa",
+     "url": "https://www.npy.com.py/noticias/nacionales/senad-intercepta-camion-con-mas-de-50-kilos-de-droga-en-remansito"
+    }
+   ],
+   "id": "9de23c49eb",
+   "verificado": true
+  },
   {
    "titulo": "Itaipú refuerza el monitoreo del río Paraná y prevé asistencia por crecida en Ciudad del Este",
    "url": "http://www.lanacion.com.py/pais/2026/10/07/itaipu-refuerza-el-monitoreo-del-rio-parana-y-preve-asistencia-por-crecida-en-ciudad-del-este/",
@@ -229,6 +275,34 @@
     }
    ],
    "id": "3815cee93c",
+   "verificado": true
+  },
+  {
+   "titulo": "El río Uruguay continuará en ascenso y la próxima semana podría superar los 7 metros",
+   "url": "https://ladiaria.com.uy/paysandu/articulo/2026/10/el-rio-uruguay-continuara-en-ascenso-y-la-proxima-semana-podria-superar-los-7-metros/",
+   "dominio": "ladiaria.com.uy",
+   "clase": "prensa",
+   "fecha": "2026-10-07",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "ladiaria.com.uy",
+     "clase": "prensa",
+     "url": "https://ladiaria.com.uy/paysandu/articulo/2026/10/el-rio-uruguay-continuara-en-ascenso-y-la-proxima-semana-podria-superar-los-7-metros/"
+    }
+   ],
+   "id": "c470cc19b3",
    "verificado": true
   },
   {
@@ -328,8 +402,26 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Itaipú reporta transferencia de USD 345 millones",
-   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/10/07/itaipu-reporta-transferencia-de-usd-345-millones/",
+   "titulo": "Hallan en un sojal la camioneta del empresario asesinado y buscan a su expareja",
+   "url": "http://www.lanacion.com.py/pais/2026/10/07/hallan-en-un-sojal-la-camioneta-del-empresario-asesinado-y-buscan-a-su-expareja/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-07",
+   "lugares": [
+    "Alto Paraná"
+   ]
+  },
+  {
+   "titulo": "Itaipú suministró 21.619 GWh de energía a la Ande entre enero y septiembre de 2026",
+   "url": "http://www.lanacion.com.py/negocios/2026/10/07/itaipu-suministro-21619-gwh-de-energia-a-la-ande-entre-enero-y-septiembre-de-2026/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-07",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Itaipú promueve la cultura y movilidad sustentable en los World Skate Games ASU26",
+   "url": "http://www.lanacion.com.py/pais/2026/10/07/itaipu-promueve-la-cultura-y-movilidad-sustentable-en-los-world-skate-games-asu26/",
    "dominio": "lanacion.com.py",
    "fecha": "2026-10-07",
    "lugares": [
@@ -352,6 +444,42 @@
    "fecha": "2026-10-07",
    "lugares": [
     "Asunción"
+   ]
+  },
+  {
+   "titulo": "MASIVA CONCURRENCIA EN EL INICIO DE LA ACCIÓN COMUNITARIA EN PILAR",
+   "url": "https://armadaparaguaya.mil.py/masiva-concurrencia-en-el-inicio-de-la-accion-comunitaria-en-pilar/",
+   "dominio": "armadaparaguaya.mil.py",
+   "fecha": "2026-10-07",
+   "lugares": [
+    "Pilar"
+   ]
+  },
+  {
+   "titulo": "¡EL BUQUE HOSPITAL DE LA ARMADA PARAGUAYA EN LA CIUDAD DE PILAR!",
+   "url": "https://armadaparaguaya.mil.py/el-buque-hospital-de-la-armada-paraguaya-en-la-ciudad-de-pilar/",
+   "dominio": "armadaparaguaya.mil.py",
+   "fecha": "2026-10-07",
+   "lugares": [
+    "Pilar"
+   ]
+  },
+  {
+   "titulo": "Hallan muerto a un hombre en su vivienda de San Alberto",
+   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/hallan-muerto-a-un-hombre-en-su-vivienda-de-san-alberto",
+   "dominio": "npy.com.py",
+   "fecha": "2026-10-07",
+   "lugares": [
+    "Alto Paraná"
+   ]
+  },
+  {
+   "titulo": "Itaipú reporta transferencia de USD 345 millones",
+   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/10/07/itaipu-reporta-transferencia-de-usd-345-millones/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-07",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
