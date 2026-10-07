@@ -505,7 +505,7 @@ def avisos(ruta):
     out.setdefault("gen", []).append({"id": "AVC", "tipo": "Avisos oficiales", "titulo": "Fuentes de avisos oficiales consultadas",
                                        "texto": "Consultadas hoy: %s. %d avisos vigentes sobre el corredor. No consultadas: %s." % (
                                            ", ".join("%s%s" % (f["nombre"], "" if f.get("ok") else " (no respondió)") for f in fs), len(d.get("avisos", [])), "; ".join(d.get("no_consultadas", []))),
-                                       "fuentes": [{"nombre": "Servicios meteorológicos y GDACS", "familia": "oficial", "calificacion": "A2"}], "nivel": "Fuente única",
+                                       "fuentes": [{"nombre": "Servicios meteorológicos y GDACS", "familia": "oficial", "calificacion": "A2"}], "nivel": "Estado de cobertura",
                                        "no_dice": "«Sin avisos» sólo vale para las fuentes consultadas.", "dato": {}})
     return out
 
