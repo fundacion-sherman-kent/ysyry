@@ -1,0 +1,31 @@
+{
+ "id": "Q-2026-001",
+ "estado": "publicada",
+ "origen": "Alerta candidata NAV-1 · Río Paraguay (Issue #1 de ysyry-registro), 2/10/2026. Reformulada el 7/10/2026 porque el río empezó a subir el 3/10 y el umbral original quedó fuera de alcance.",
+ "enunciado": "¿El nivel del río en la estación Asunción marcará 0,50 m o menos al menos un día entre el 8 y el 31 de octubre de 2026?",
+ "creada": "2026-10-07",
+ "vence": "2026-10-31",
+ "banda": "muy improbable",
+ "confianza": "media",
+ "criterio": {
+  "tipo": "nivel_estacion",
+  "estacion": "Asunción",
+  "operador": "<=",
+  "umbral_m": 0.5,
+  "desde": "2026-10-08",
+  "hasta": "2026-10-31"
+ },
+ "datos_de_partida": "Meteorología de Paraguay, Asunción: 0,49 m (2/10), 0,46 m (3/10), 0,65 m (6/10), 0,73 m (7/10). Aguas arriba también sube entre el 2 y el 7/10: Vallemí +36 cm, Concepción +21 cm, Puerto Murtinho de 2,33 m a 4,45 m el 6/10 (valor por confirmar).",
+ "estimaciones": {
+  "metodo": "Estimación de la dirección asistida por un modelo (no es un panel de analistas independientes). La dirección fijó la banda sin ver la del modelo, que había quedado sellada con un hash SHA-256 publicado en el registro privado antes de conocer la de la dirección.",
+  "direccion": "muy improbable",
+  "modelo_claude": "muy improbable (12 %)",
+  "sello_sha256": "2c09bc026800a31ff5aa5c3aa1c46f2a9257d3fa1a2346b76134dcb51d7a8ad9"
+ },
+ "disenso": {
+  "decimo_hombre": "Sostiene que SÍ ocurrirá (el consenso dice que no).",
+  "dictamen": "La onda de crecida que viene de aguas arriba puede ser corta: si el pulso es de unas decenas de centímetros, el río vuelve a bajar a un ritmo de 2 a 4 cm por día en plena estación seca y pasaría de nuevo por 0,50 m antes del 31/10. El salto de Puerto Murtinho puede ser lluvia local o un error de lectura que no se traduzca en una onda. Además el río estuvo en 0,46 m hace cuatro días, es decir a menos de 5 cm del umbral. Evidencia en contra de este dictamen: la subida es generalizada en toda la cuenca del Paraguay y del Alto Paraná, no en una sola estación."
+ },
+ "publicada_el": "2026-10-07",
+ "resolucion": "Automática el 31/10/2026 contra las lecturas de Asunción de Meteorología de Paraguay (historial público del repositorio). Si hay menos lecturas que la mitad de los días del período, queda «sin datos suficientes» y no cuenta."
+}
