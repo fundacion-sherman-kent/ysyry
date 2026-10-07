@@ -1,0 +1,35 @@
+name: Nivel del río (Argentina, Prefectura vía INA)
+
+# Diario, público. Baja de la API pública del INA las escalas de la Prefectura Naval Argentina sobre la Hidrovía, con sus umbrales
+# oficiales, y las suma al historial. Segunda fuente de nivel, de otro organismo que Meteorología de Paraguay. No consume tokens.
+on:
+  schedule:
+    - cron: "20 15 * * *"
+    - cron: "50 19 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  leer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Leer escalas
+        env:
+          DATOS_DIR: datos/publico
+        run: python3 -u colectores/nivel_rio_ar.py
+      - name: Guardar
+        run: |
+          git config user.name "ysyry-robot"
+          git config user.email "ysyry-robot@users.noreply.github.com"
+          git add datos/publico/nivel-rio-ar.json datos/publico/nivel-rio-ar-historial.jsonl
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Nivel del río en Argentina: escalas de la Prefectura vía INA (corrida automática)"
+            git pull --rebase --quiet
+            git push
+          fi

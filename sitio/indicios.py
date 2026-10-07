@@ -36,7 +36,11 @@ AJUSTE_MAX_UNIDADES = float(_par("ajuste_max_unidades"))
 INTERRUPCION_CAPS = _par("interrupcion_caps")
 COBERTURA_CONTINUA = float(_par("cobertura_continua"))
 MIN_MEDIOS = _par("min_medios_prensa")
+MARGEN_CERCA_CM = _par("margen_cerca_cm")
+REGULADAS_AR = {14, 15, 79}      # escalas dentro de embalses (Yacyretá, Salto Grande): su nivel lo fija la operación de la represa
 
+FUENTE_NIVEL_AR = {"nombre": "Prefectura Naval Argentina (escalas), vía INA", "familia": "oficial", "calificacion": "A2",
+                  "url": "https://alerta.ina.gob.ar/"}
 FUENTE_NIVEL = {"nombre": "Dirección de Meteorología e Hidrología, Paraguay", "familia": "oficial", "calificacion": "A2",
                 "url": "https://www.meteorologia.gov.py/nivel-rio/indexconvencional.php"}
 FUENTE_AIS = {"nombre": "AIS vía Open Waters (AISHub y aisstream.io)", "familia": "sensor", "calificacion": "B3"}
@@ -145,6 +149,78 @@ def estaciones(ruta_nivel, geo, segs_rio, hoy):
     return out, d.get("obtenido", "")
 
 
+def estaciones_ar(ruta, segs_rio, hoy):
+    """Escalas de la Prefectura Naval Argentina publicadas por el INA, con los umbrales oficiales de cada escala."""
+    if not ruta or not Path(ruta).exists():
+        return [], ""
+    d = json.load(open(ruta, encoding="utf-8"))
+    out = []
+    for e in d["estaciones"]:
+        lect = _fecha_iso(e["fecha"])
+        edad = (hoy - lect).days if lect else 999
+        umbral, alerta = e.get("nivel_aguas_bajas"), e.get("nivel_alerta")
+        margen = round((e["nivel_m"] - umbral) * 100) if umbral is not None else None
+        x, y = _pulso.AX * e["lon"] + _pulso.BX, _pulso.AY * e["lat"] + _pulso.BY
+        (x2, y2), dist = _al_rio(x, y, segs_rio)
+        regulada = e["id"] in REGULADAS_AR
+        if edad > DIAS_VENCIDA:
+            estado = "vencida"
+        elif regulada:
+            estado = "regulada"
+        elif margen is not None and margen <= 0:
+            estado = "bajo"
+        elif margen is not None and margen <= MARGEN_CERCA_CM:
+            estado = "cerca"
+        elif alerta is not None and e["nivel_m"] >= alerta:
+            estado = "alto"
+        else:
+            estado = "medio"
+        out.append({"red": "ar", "id_ina": e["id"], "nombre": e["nombre"], "rio": e["rio"], "nivel": e["nivel_m"], "var_cm": e.get("var_cm"), "umbral": umbral, "alerta": alerta,
+                    "evacuacion": e.get("nivel_evacuacion"), "margen_cm": margen, "lectura": e["fecha"], "edad": edad, "estado": estado, "regulada": regulada,
+                    "pct": None, "min": None, "max": None, "pos": {"x": x2, "y": y2, "zona": _pulso.zona_de(x2, y2), "ajustada": 0.05 < dist <= AJUSTE_MAX_UNIDADES}})
+    return out, d.get("obtenido", "")
+
+
+def _fecha_iso(s):
+    try:
+        return datetime.strptime(s, "%Y-%m-%d").date()
+    except Exception:
+        return None
+
+
+def gauge_ar(est, ancho=260, alto=50):
+    """De 0 a la cota de alerta: el umbral de aguas bajas, la alerta y el nivel de la última lectura."""
+    tope = max(est["alerta"] or 0, est["nivel"], est["umbral"] or 0) * 1.05 or 1
+    px = lambda v: 8 + (ancho - 16) * max(0.0, v) / tope
+    partes = ['<line x1="8" y1="24" x2="%d" y2="24" stroke="var(--gris-acero)" stroke-width="3" stroke-linecap="round"/>' % (ancho - 8)]
+    if est["umbral"] is not None:
+        partes.append('<line x1="%.1f" y1="16" x2="%.1f" y2="32" stroke="#FB6500" stroke-width="2"/><text x="%.1f" y="46" font-size="9" fill="var(--gris-acero)" text-anchor="middle">aguas bajas %.2f</text>' % (px(est["umbral"]), px(est["umbral"]), px(est["umbral"]), est["umbral"]))
+    if est["alerta"] is not None:
+        partes.append('<line x1="%.1f" y1="16" x2="%.1f" y2="32" stroke="#667B89" stroke-width="2"/><text x="%.1f" y="46" font-size="9" fill="var(--gris-acero)" text-anchor="end">alerta %.2f</text>' % (px(est["alerta"]), px(est["alerta"]), px(est["alerta"]), est["alerta"]))
+    partes.append('<circle cx="%.1f" cy="24" r="6" fill="%s" stroke="#00121E" stroke-width="1.2"/>' % (px(est["nivel"]), "#FB6500" if est["estado"] in ("bajo", "cerca") else "#8fd9c4"))
+    return ('<svg class="gauge" viewBox="0 0 %d %d" role="img" aria-label="Nivel actual frente a los umbrales oficiales de la escala">%s</svg>' % (ancho, alto, "".join(partes))).replace(".", ",")
+
+
+def info_estacion_ar(i, est):
+    f = est["lectura"]
+    tipo = [("Nivel %.2f m (lectura del %s), %s en 24 h" % (est["nivel"], f, ("%+d cm" % est["var_cm"]) if est["var_cm"] is not None else "variación sin dato")).replace(".", ",")]
+    if est["umbral"] is not None:
+        tipo.append(("Umbral oficial de aguas bajas %.2f m: está %d cm %s" % (est["umbral"], abs(est["margen_cm"]), "por encima" if est["margen_cm"] > 0 else "por debajo")).replace(".", ","))
+    if est["alerta"] is not None:
+        tipo.append(("Cota de alerta %.2f m%s" % (est["alerta"], (", de evacuación %.2f m" % est["evacuacion"]) if est["evacuacion"] else "")).replace(".", ","))
+    if est["estado"] == "regulada":
+        tipo.append("Escala dentro de un embalse: su nivel lo fija la operación de la represa, no mide sequía")
+    if est["estado"] == "vencida":
+        tipo.append("Lectura vencida: tiene %d días y no describe el río de hoy" % est["edad"])
+    ctx = ["Evidencia: Fuente única (Prefectura Naval Argentina, escalas oficiales, publicadas por el INA). Otras escalas del mismo organismo cuentan como la misma fuente; sí corrobora una estación de otro organismo sobre el mismo tramo.",
+           "Lo que no dice: es la altura de la escala, no el calado ni el límite de navegación de la vía; los umbrales son los de esa escala. La lectura es diaria."]
+    return {"id": "es%d" % i, "categoria": "Nivel del río · escala de la Prefectura (vía INA)", "titulo": est["nombre"] + " · " + est["rio"].title(), "tipo": " · ".join(tipo),
+            "fuente": "Prefectura Naval Argentina (escalas), publicadas por el INA (Sistema de Alerta Hidrológico) · ubicación según el INA%s" % (", ajustada al cauce dibujado" if est["pos"]["ajustada"] else ""),
+            "clase": "estacion", "coord": None, "foto": None, "ctx": ctx, "ctx_t": "Indicio y su evidencia",
+            "ctx_f": "Se publican las lecturas tal como las informa el organismo. Estar cerca del umbral de aguas bajas es un indicio, no una alerta.",
+            "spark_svg": gauge_ar(est), "spark_pie": "Posición del nivel entre los umbrales oficiales de la escala (el naranja marca las aguas bajas)."}
+
+
 def gauge_svg(est, ancho=260, alto=46):
     """Rango histórico de la estación con el nivel de hoy marcado."""
     x = 8 + (ancho - 16) * est["pct"] / 100.0
@@ -158,6 +234,8 @@ def gauge_svg(est, ancho=260, alto=46):
 
 
 def info_estacion(i, est, fecha_obtenido):
+    if est.get("red") == "ar":
+        return info_estacion_ar(i, est)
     pos = est["pos"]
     tipo = [("Nivel %.2f m, %s en 24 h" % (est["nivel"], ("%+d cm" % est["var_cm"]) if est["var_cm"] is not None else "variación sin dato")).replace(".", ","),
             ("%d cm sobre su mínimo histórico (%.2f m, %s)" % (est["sobre_min_cm"], est["min"], est["f_min"])).replace(".", ","),
@@ -203,12 +281,27 @@ def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_z
         if not vivas:
             continue
         bajas = [e for e in vivas if e["estado"] == "bajo"]
+        cerca = [e for e in vivas if e["estado"] == "cerca"]
         bajando = [e for e in vivas if e["var_cm"] is not None and e["var_cm"] <= VAR_BAJA_CM]
-        txt = "%d estaciones con lectura al día; %d en el cuarto inferior de su rango histórico; %d bajan %d cm o más en 24 h." % (len(vivas), len(bajas), len(bajando), abs(VAR_BAJA_CM))
-        res[z].append({"id": "NAV", "tipo": "Navegabilidad", "titulo": "Nivel del río frente a su historia", "texto": txt, "fuentes": [FUENTE_NIVEL],
-                       "nivel": nivel_evidencia([FUENTE_NIVEL]),
-                       "no_dice": "No es el calado ni una restricción de navegación; mide el nivel de cada estación contra su propia historia. Varias estaciones del mismo organismo son una sola fuente.",
-                       "dato": {"vivas": len(vivas), "bajas": len(bajas), "bajando": len(bajando), "ambas": len([e for e in vivas if e in bajas and e in bajando])}})
+        en_obs = bajas + cerca
+        ambas = [e for e in en_obs if e in bajando]
+        py = [e for e in vivas if e.get("red") != "ar"]
+        ar = [e for e in vivas if e.get("red") == "ar"]
+        orgs = {"py": FUENTE_NIVEL, "ar": FUENTE_NIVEL_AR}
+        con_lectura = [orgs[k] for k, g in (("py", py), ("ar", ar)) if g]
+        con_aviso = [orgs[k] for k, g in (("py", py), ("ar", ar)) if any(e in en_obs for e in g)]
+        fuentes = con_aviso or con_lectura
+        partes = []
+        if py:
+            partes.append("%d de Meteorología de Paraguay" % len(py))
+        if ar:
+            partes.append("%d de la Prefectura Naval Argentina, vía INA" % len(ar))
+        txt = "%d estaciones con lectura al día (%s): %d en el cuarto inferior de su rango histórico o por debajo del umbral oficial de aguas bajas; %d a menos de %d cm de ese umbral; %d bajan %d cm o más en 24 h." % (
+            len(vivas), "; ".join(partes), len(bajas), len(cerca), MARGEN_CERCA_CM, len(bajando), abs(VAR_BAJA_CM))
+        res[z].append({"id": "NAV", "tipo": "Navegabilidad", "titulo": "Nivel del río frente a su historia y a sus umbrales", "texto": txt, "fuentes": fuentes,
+                       "nivel": nivel_evidencia(fuentes),
+                       "no_dice": "No es el calado ni una restricción de navegación; mide el nivel de cada escala contra su propia historia (Paraguay) o contra sus umbrales oficiales (Argentina). Varias estaciones de un mismo organismo son una sola fuente: sólo corrobora un organismo distinto sobre el mismo tramo.",
+                       "dato": {"vivas": len(vivas), "bajas": len(bajas), "cerca": len(cerca), "bajando": len(bajando), "ambas": len(ambas)}})
     # presencia del Estado en el AIS
     for z, *_ in _pulso.ZONAS:
         m = calc.get(z)
@@ -478,7 +571,7 @@ def candidatas(ind, ests, fecha, hist_reglas=None):
                             "indicio": i["texto"], "evidencia": i["nivel"] + " (detección automática)", "estaciones": [],
                             "pregunta_posible": "¿Se confirmará por una fuente oficial un hecho de este tipo en la zona en los próximos 14 días?"})
             if i["id"] == "NAV" and d.get("ambas", 0) >= 2:
-                bajos = [e["nombre"] for e in ests if e["pos"] and e["pos"]["zona"] == z and e["estado"] == "bajo" and e["var_cm"] is not None and e["var_cm"] <= VAR_BAJA_CM]
+                bajos = [e["nombre"] for e in ests if e["pos"] and e["pos"]["zona"] == z and e["estado"] in ("bajo", "cerca") and e["var_cm"] is not None and e["var_cm"] <= VAR_BAJA_CM]
                 out.append({"clave": "NAV-1|%s|%s" % (z, fecha), "regla": "NAV-1", "zona": nombre,
                             "titulo": "Nivel bajo y a la baja en %s" % nombre,
                             "indicio": i["texto"], "evidencia": i["nivel"], "estaciones": bajos,

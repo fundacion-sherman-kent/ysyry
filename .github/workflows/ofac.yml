@@ -1,0 +1,34 @@
+name: Sanciones OFAC (buques con IMO)
+
+# Semanal, público. Baja la lista SDN de OFAC (dominio público) y se queda con los buques que tienen número IMO, para cruzarlos con los
+# que transmiten AIS en el corredor. No consume tokens de Claude.
+on:
+  schedule:
+    - cron: "30 9 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  leer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Leer la lista
+        env:
+          DATOS_DIR: datos/publico
+        run: python3 -u colectores/ofac_buques.py
+      - name: Guardar
+        run: |
+          git config user.name "ysyry-robot"
+          git config user.email "ysyry-robot@users.noreply.github.com"
+          git add datos/publico/ofac_buques.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Sanciones OFAC: buques con IMO (corrida automática)"
+            git pull --rebase --quiet
+            git push
+          fi

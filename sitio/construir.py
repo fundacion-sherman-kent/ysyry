@@ -414,6 +414,12 @@ for _i, _a in enumerate(_AM["items"]):
     amarres_json.append([_a["t"], _a["n"], _a["lon"], _a["lat"], _a["x"]])
 
 AZUL_ESTADO = "#2f7bff"
+# buques de la lista SDN de OFAC con IMO (dominio público): se cruzan sólo por IMO, que es exacto
+try:
+    _OFAC = json.load(open(Path(os.environ.get("SITIO_OFAC") or (Path(__file__).resolve().parents[1] / "datos" / "publico" / "ofac_buques.json")), encoding="utf-8"))
+except Exception:
+    _OFAC = None
+_OFAC_VISTOS = {}     # imo -> (nombre transmitido, ficha de OFAC)
 buque_info = []
 grupos_hora = []
 for i, m in enumerate(marcos):
@@ -462,6 +468,10 @@ for i, m in enumerate(marcos):
         _imo = _imo_valido(p.get("imo"))
         if _imo:
             tipo_txt += " · IMO %s" % _imo
+            if _OFAC and _imo in _OFAC["buques"]:
+                _o = _OFAC["buques"][_imo]
+                _OFAC_VISTOS[_imo] = (nombre, _o)
+                tipo_txt += " · El IMO que transmite este buque figura en la lista de sanciones SDN de OFAC (EE.UU.), programa %s, con el nombre «%s». Es una pista para mirar, no una acusación: el IMO transmitido por AIS puede estar mal cargado y estar en esa lista es una decisión de un Estado extranjero" % (_o["programa"], _o["nombre"])
         if estado:
             tipo_txt += " · Fuerza probable (inferida del nombre, no la transmite el buque y puede ser incorrecta): " + fuerza_inferida(p)
         buque_info.append({"id": bid,
@@ -488,6 +498,7 @@ import pulso as _pulso
 from datetime import datetime as _dtm, timedelta as _td
 PULSO = os.environ.get("SITIO_PULSO") or str(D / "pulso.json")
 _pulso_html = ""
+_actores_html = ""
 _escaner_html = ""
 _flujos_html = ""
 _indicios_html = ""
@@ -513,6 +524,8 @@ if marcos:
     _ests, _nivel_obtenido = ([], "")
     if _nivel.exists():
         _ests, _nivel_obtenido = _ind.estaciones(_nivel, _geo, _segs, _dtm.strptime(_fecha, "%Y-%m-%d").date())
+    _ests_ar, _ = _ind.estaciones_ar(os.environ.get("SITIO_NIVEL_AR") or (_raiz / "datos" / "publico" / "nivel-rio-ar.json"), _segs, _dtm.strptime(_fecha, "%Y-%m-%d").date())
+    _ests = _ests + _ests_ar
     _prensa = lambda n: {"nombre": n, "familia": "prensa", "calificacion": "C3"}
     _hechos_f = {
         _pulso.zona_de(d["riesgos"][0]["x"], d["riesgos"][0]["y"]) if d["riesgos"] else "z2": [{
@@ -548,11 +561,62 @@ if marcos:
     poi_svg.extend(_esc_svgs)
     zona_pulso_info.extend(_esc_infos)
     _escaner_html = _ind.tabla_escaner(_esc_evs, _fecha)
+    # --- actores del corredor y los rastros propios que se miden de cada uno ---
+    import actores as _act
+    _actores = _act.cargar(D / "actores.json")
+    _ais_fuerza = {}
+    for _p in marcos[-1]["puntos"]:
+        if es_estado(_p):
+            _ais_fuerza.setdefault(fuerza_inferida(_p), []).append((_p.get("nombre") or "sin nombre").strip())
+    _vinc = _act.vincular(_actores, _esc_evs, _flu_rutas, _ais_fuerza)
+    _ops, _fecha_ops = _act.operadores_osm(D / "amarres_osm.json")
+    _actores_html = _act.tabla_html(_actores, _vinc, _ops, _fecha_ops, _fecha)
+
     _flu_extra = {z: [i] for z, i in _flu_ind.items()}
+    if _OFAC:
+        _imos_vistos = {str(_imo_valido(p.get("imo"))) for m in _ventana for p in m["puntos"] if _imo_valido(p.get("imo"))}
+        _coinc = {k: v for k, v in _OFAC_VISTOS.items()}
+        _f_ofac = {"nombre": "OFAC, lista SDN (Departamento del Tesoro de EE.UU.)", "familia": "oficial", "calificacion": "A2"}
+        _flu_extra.setdefault("gen", []).append({
+            "id": "SAN", "tipo": "Sanciones", "titulo": "Buques del corredor cuyo IMO figura en la lista SDN de OFAC",
+            "texto": ("%d coincidencias entre %d números IMO transmitidos en las últimas 24 h y %d buques de la lista SDN%s." % (
+                len(_coinc), len(_imos_vistos), len(_OFAC["buques"]), (": " + "; ".join("%s (IMO %s, programa %s)" % (n, i, o["programa"]) for i, (n, o) in _coinc.items())) if _coinc else "")),
+            "fuentes": [_f_ofac], "nivel": "Fuente única",
+            "no_dice": "Se cruza sólo por IMO. Una coincidencia es una pista para mirar, no una acusación: el IMO transmitido por AIS puede estar mal cargado, estar en la lista es una decisión de un Estado extranjero y los buques sin IMO transmitido no se pueden cruzar.",
+            "dato": {"coincidencias": len(_coinc)}})
     for _z, _i in _esc_ind.items():
         _flu_extra.setdefault(_z, []).append(_i)
     _indicios = _ind.indicios(_calc, _ventana, es_estado, _ests, _FUENTES_SIWA, _siwa.UNIDADES_POR_ZONA, _hechos_f, _siwa, _prensa_ind, _focos_ind, _flu_extra)
     _indicios_html = _ind.tabla_html(_indicios, _fecha)
+    # --- datos abiertos: el libro de indicios en JSON y un canal Atom con los hechos detectados y los indicios ---
+    import xml.sax.saxutils as _sx
+    _base = "https://fundacion-sherman-kent.github.io/ysyry/"
+    _dir_salida = Path(SALIDA).parent
+    (_dir_salida / "datos").mkdir(parents=True, exist_ok=True)
+    _nombre_z = {z[0]: z[1] for z in _pulso.ZONAS}
+    _nombre_z["gen"] = "Corredor en general"
+    _abierto = {"generado": marcos[-1]["hora"], "licencia": "Datos propios de Ysyry: CC BY 4.0, citando «Ysyry, Fundación Sherman Kent». Cada indicio cita sus fuentes, que conservan sus licencias (ODbL, CC BY 4.0, dominio público, atribución de ACLED).",
+                "aviso": "Un indicio no es una alerta. Los hechos detectados por el escáner son candidatos sin verificar.",
+                "indicios": {_nombre_z.get(z, z): [{"id": i["id"], "tipo": i["tipo"], "titulo": i["titulo"], "texto": i["texto"], "nivel_de_evidencia": i["nivel"],
+                                                   "fuentes": [{"nombre": f["nombre"], "familia": f["familia"]} for f in i["fuentes"]], "lo_que_no_dice": i["no_dice"]} for i in lst]
+                             for z, lst in _indicios.items() if lst},
+                "hechos_detectados": [{"fecha": h["fecha"], "tipo": [r for _, r in h["tipos"]], "lugares": h.get("lugares"), "titulo": h["titulo"], "medios": [{"dominio": m["dominio"], "url": m["url"]} for m in h["medios"]]} for h in _esc_evs[:100]]}
+    json.dump(_abierto, open(_dir_salida / "datos" / "indicios.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    _ahora = marcos[-1]["hora"]
+    _ent = []
+    for _h in sorted(_esc_evs, key=lambda x: x["fecha"], reverse=True)[:25]:
+        _ent.append("<entry><id>%s</id><title>%s</title><updated>%sT00:00:00Z</updated><link href=\"%s\"/><summary>%s</summary></entry>" % (
+            _sx.escape("ysyry:escaner:" + _h["id"]), _sx.escape("Hecho detectado: " + _h["titulo"][:160]), _h["fecha"], _sx.escape(_h["medios"][0]["url"]),
+            _sx.escape("Candidato detectado por reglas, no verificado. %s. Medios: %s." % ("; ".join(r for _, r in _h["tipos"]), ", ".join(m["dominio"] for m in _h["medios"])))))
+    for _z, _lst in _indicios.items():
+        for _i in _lst:
+            if _i["id"] in ("NAV", "PRES", "FLU", "SAN", "ESC", "FOC") or _i["id"].startswith(("PRE-", "HEC-")):
+                _ent.append("<entry><id>%s</id><title>%s</title><updated>%s</updated><link href=\"%s\"/><summary>%s</summary></entry>" % (
+                    _sx.escape("ysyry:indicio:%s:%s:%s" % (_z, _i["id"], _fecha)), _sx.escape("%s · %s" % (_nombre_z.get(_z, _z), _i["titulo"])), _ahora, _base + "#indicios-zonas",
+                    _sx.escape("%s Evidencia: %s. %s" % (_i["texto"], _i["nivel"], _i["no_dice"]))))
+    (_dir_salida / "feed.xml").write_text('<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><id>%s</id><title>Ysyry: hechos detectados e indicios del corredor</title><updated>%s</updated>'
+                                          '<link rel="self" href="%sfeed.xml"/><link href="%s"/><author><name>Fundación Sherman Kent</name></author><rights>Datos propios CC BY 4.0; cada entrada cita sus fuentes.</rights>%s</feed>'
+                                          % (_base, _ahora, _base, _base, "".join(_ent)), encoding="utf-8")
     _GUIA = _guia.catalogo({"n_buques": len(marcos[-1]["puntos"]), "ultima": marcos[-1]["hora"][:16].replace("T", " ") + " UTC",
                             "n_estaciones": len([e for e in _ests if e["pos"]]), "n_bajas": len([e for e in _ests if e["estado"] == "bajo"]),
                             "n_unidades_estado": len([p for p in marcos[-1]["puntos"] if es_estado(p)])})
@@ -617,6 +681,7 @@ info_json = json.dumps(poi_info + riesgo_info + zona_info + zona_pulso_info + bu
 
 TPL = r"""<!doctype html>
 <title>Ysyry — corredor Hidrovía</title>
+<link rel="alternate" type="application/atom+xml" title="Ysyry: hechos detectados e indicios" href="feed.xml">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
@@ -746,6 +811,7 @@ svg.zoom-a .amar-a,svg.zoom-b .amar-b{display:inline}
 .est-g .gota{fill:#8fd9c4;stroke:var(--azul-noche);stroke-width:1}
 .est-bajo .gota{fill:var(--naranja)}
 .est-alto .gota{fill:#cdeee4}
+.est-cerca .gota{fill:#ffb27a}
 .est-regulada .gota{fill:#7fb0d6;opacity:.7}
 .est-vencida .gota{fill:transparent;stroke:#667B89;stroke-dasharray:2 1.5}
 .boya-aviso .boya-n{fill:var(--naranja)}
@@ -790,6 +856,12 @@ svg.fam-flujos .solo-fam{display:inline}
 .flujo-pt{fill:#e9e3d2;stroke:var(--azul-noche);stroke-width:1}
 .flujo-pt.flujo-act{fill:var(--naranja)}
 .esc{fill:#e9e3d2;stroke:var(--naranja);stroke-width:1.4}
+details.actor{border:1px solid var(--linea);border-radius:8px;padding:8px 12px;margin:0 0 8px;max-width:980px}
+details.actor summary{cursor:pointer;font-size:14px}
+details.actor p,details.actor li{font-size:13px;line-height:1.55}
+details.actor .afirm{padding-left:18px}
+details.actor .gris{color:var(--gris-acero);font-size:12px;margin-left:8px}
+.pulso h3{font-size:15px;margin:16px 0 8px}
 .chip-boya{background:#0f2a2a;color:#cdeee4;border:.6px solid #8fd9c4}
 .boya-n{fill:#8fd9c4;stroke:var(--azul-noche);stroke-width:.8}
 .boya-aro{fill:none;stroke:#8fd9c4;stroke-width:1.2;opacity:0;transform-box:fill-box;transform-origin:center;animation:sonar 3s ease-out infinite;pointer-events:none}
@@ -1038,7 +1110,7 @@ footer{flex-direction:column}
   <span><span class="dot" style="background:#9aa7ad"></span>Otro — click para nombre, bandera y destino</span>
   <span><span class="dot" style="background:var(--naranja)"></span>Hecho informado (piratería) · ciudades de la Triple Frontera, nodo de contexto: no implica actividad ilícita</span>
   <span><span class="sw" style="background:var(--naranja);opacity:.3"></span>Zona con presencia atribuida (según fuentes citadas)</span>
-  <span><svg width="11" height="13" viewBox="-6 -7 12 14"><path d="M0,-5.5C3,-1.3 4.6,1 4.6,2.9A4.6,4.6 0 1 1 -4.6,2.9C-4.6,1 -3,-1.3 0,-5.5Z" fill="#8fd9c4" stroke="#00121E" stroke-width="1"/></svg>Estación de nivel del río (Meteorología de Paraguay) · naranja: en el cuarto inferior de su rango histórico · azul apagado: tramo regulado por represas, no mide sequía · hueca: lectura vencida</span>
+  <span><svg width="11" height="13" viewBox="-6 -7 12 14"><path d="M0,-5.5C3,-1.3 4.6,1 4.6,2.9A4.6,4.6 0 1 1 -4.6,2.9C-4.6,1 -3,-1.3 0,-5.5Z" fill="#8fd9c4" stroke="#00121E" stroke-width="1"/></svg>Estación de nivel del río (Meteorología de Paraguay) · naranja: en el cuarto inferior de su rango (Paraguay) o por debajo del umbral oficial de aguas bajas (Argentina), naranja claro: a menos de 30 cm de ese umbral · azul apagado: tramo regulado por represas, no mide sequía · hueca: lectura vencida</span>
   <span><span class="sw" style="background:var(--naranja)"></span>Ruta de flujo ilícito registrada por SIWA en los últimos 24 meses (pestaña «Flujos ilícitos»); en claro, las más antiguas: registros de terceros, no flujos medidos</span>
   <span><svg width="12" height="12" viewBox="-7 -7 14 14"><path d="M0,-5.5L5.5,0L0,5.5L-5.5,0Z" fill="#e9e3d2" stroke="#FB6500" stroke-width="1.4"/></svg>Hechos detectados por el escáner en los últimos 7 días (candidatos sin verificar; el rombo marca el lugar mencionado, no el del hecho)</span>
   <span><span class="dot" style="background:var(--naranja);opacity:.6"></span>Foco de calor a menos de 25 km del río (NASA FIRMS, últimos 3 días; no es un incendio confirmado)</span>
@@ -1052,6 +1124,8 @@ __indicios__
 __flujos__
 
 __escaner__
+
+__actores__
 
 __alertas_fem__
 
@@ -1648,6 +1722,7 @@ SUST = {
     "pulso": _pulso_html,
     "flujos": _flujos_html,
     "escaner": _escaner_html,
+    "actores": _actores_html,
     "prospectiva": _prospectiva_html,
     "guia_json": json.dumps(_GUIA, ensure_ascii=False),
     "guia_sug": json.dumps(_guia.PREGUNTAS_SUGERIDAS, ensure_ascii=False),

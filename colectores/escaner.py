@@ -43,6 +43,13 @@ FUENTES = [
     ("perfil.com", "https://www.perfil.com/feed", "prensa", "es"),
     ("lanacion.com.ar", "https://www.lanacion.com.ar/arcio/rss/", "prensa", "es"),
     ("g1.globo.com", "https://g1.globo.com/rss/g1/mato-grosso-do-sul/", "prensa", "pt"),
+    ("insightcrime.org", "https://insightcrime.org/feed/", "prensa", "en"),
+    ("es.mongabay.com", "https://es.mongabay.com/feed/", "prensa", "es"),
+    ("hoy.com.py", "https://www.hoy.com.py/feed", "prensa", "es"),
+    ("ip.gov.py", "https://www.ip.gov.py/ip/feed/", "oficial", "es"),
+    ("agenciabrasil.ebc.com.br", "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml", "prensa", "pt"),
+    ("g1.globo.com", "https://g1.globo.com/rss/g1/mato-grosso/", "prensa", "pt"),
+    ("elobservador.com.uy", "https://www.elobservador.com.uy/rss/pages/home.xml", "prensa", "es"),
     ("senad.gov.py", "https://www.senad.gov.py/feed/", "oficial", "es"),
     ("policianacional.gov.py", "https://www.policianacional.gov.py/feed/", "oficial", "es"),
 ]
@@ -65,13 +72,13 @@ LUGARES = {
     "corumba": ("Corumbá", -19.01, -57.65), "ladario": ("Ladário", -19.00, -57.60), "porto murtinho": ("Porto Murtinho", -21.70, -57.88), "caceres": ("Cáceres", -16.07, -57.68),
     "bahia negra": ("Bahía Negra", -20.23, -58.17), "fuerte olimpo": ("Fuerte Olimpo", -21.04, -57.87), "puerto quijarro": ("Puerto Quijarro", -17.78, -57.77),
 }
-RIO = re.compile(r"\b(hidrovia|rio parana|rio paraguay|rio uruguay|rio de la plata|rio paraguai|barcazas?|convoyes? fluviales?|empujador|puerto fluvial|via navegable|puerto de rosario)\b")
+RIO = re.compile(r"\b(hidrovia|parana river|paraguay river|paraguay parana waterway|waterway|rio parana|rio paraguay|rio uruguay|rio de la plata|rio paraguai|barcazas?|convoyes? fluviales?|empujador|puerto fluvial|via navegable|puerto de rosario)\b")
 TIPOS = [
-    ("decomiso", "Decomiso o incautación", 3, [r"(decomis|incaut|secuestr\w* .{0,25}(kilos|kg|toneladas|cargamento)|cargamento de|kilos de|toneladas de|apreensao|apreendid)",
+    ("decomiso", "Decomiso o incautación", 3, [r"(decomis|incaut|secuestr\w* .{0,25}(kilos|kg|toneladas|cargamento)|cargamento de|kilos de|toneladas de|apreensao|apreendid|seiz|bust\b|haul)",
                                                 r"(cocain|marihuan|cannabis|droga|estupefac|cigarrill|armas|municion|combustible|oro\b|madera|contraband|maconha|mercaderia)"]),
-    ("detencion", "Detención u operativo contra el crimen organizado", 2, [r"(operativo|allanamiento|detien\w+|deten\w+|detuv\w+|aprehend|capturad|desbarat|desarticul|prision|presos?|expuls\w+)",
-                                                                           r"(narco|trafico|contraband|banda|organizacion criminal|pcc|comando vermelho|crimen organizado|lavado)"]),
-    ("pirateria", "Piratería o robo de carga", 3, [r"(pirater|piratas|robo de carga|asalt\w+ (a|al|una) (barcaza|buque|embarcacion|convoy)|abordaje|roubo de carga)"]),
+    ("detencion", "Detención u operativo contra el crimen organizado", 2, [r"(operativo|allanamiento|detien\w+|deten\w+|detuv\w+|aprehend|capturad|desbarat|desarticul|prision|presos?|expuls\w+|arrest|raid\b|dismantl)",
+                                                                           r"(narco|trafico|contraband|banda|organizacion criminal|pcc|comando vermelho|crimen organizado|lavado|traffick|gang|criminal)"]),
+    ("pirateria", "Piratería o robo de carga", 3, [r"(pirater|piratas|piracy|river pirates|cargo theft|robo de carga|asalt\w+ (a|al|una) (barcaza|buque|embarcacion|convoy)|abordaje|roubo de carga)"]),
     ("siniestro", "Siniestro náutico", 2, [r"(colision|choque|varadur|encall|hundimient|naufrag|derrame|incendio)", r"(barcaza|buque|convoy|embarcacion|remolcador|balsa|navio|barco)"]),
     ("navegabilidad", "Bajante, calado y navegabilidad", 1, [r"(bajante|calado|altura del rio|nivel del rio|dragado|dragagem|vazante)"]),
     ("regulatorio", "Licitación, peaje o conflicto gremial", 1, [r"(licitacion|peaje|concesion|paro\b|huelga|practicos|conflicto gremial|greve)", r"(hidrovia|puerto|portuari|navegacion|via navegable|porto)"]),

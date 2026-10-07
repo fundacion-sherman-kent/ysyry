@@ -1,0 +1,568 @@
+{
+ "fecha": "2026-10-07",
+ "nota": "Registro de actores curado por la Oficina a partir de las fuentes citadas en cada afirmación. Cada afirmación lleva sus fuentes; el nivel de evidencia lo calcula el motor de indicios. Nada de esto atribuye un hecho a una persona.",
+ "actores": [
+  {
+   "id": "pcc",
+   "nombre": "PCC (Primeiro Comando da Capital)",
+   "tipo": "Crimen organizado transnacional",
+   "zonas": [
+    "z4"
+   ],
+   "resumen": "Organización criminal de origen brasileño con presencia atribuida en el departamento paraguayo de Canindeyú y el de Alto Paraná, que dan a la Triple Frontera y a la ribera del Paraná.",
+   "alias": [
+    "\\bpcc\\b",
+    "primer comando",
+    "primeiro comando"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Presencia atribuida en Canindeyú y Alto Paraná (Paraguay), con las localidades Pindó, Siete Montes y Catueté. Es una atribución periodística y oficial, no una sentencia.",
+     "fuentes": [
+      {
+       "nombre": "La Política Online",
+       "familia": "prensa"
+      },
+      {
+       "nombre": "ABC Color",
+       "familia": "prensa"
+      },
+      {
+       "nombre": "Presidencia de la República del Paraguay",
+       "familia": "oficial"
+      }
+     ],
+     "fecha": "2026-10-01"
+    },
+    {
+     "texto": "Paraguay declaró organizaciones terroristas al PCC y al Comando Vermelho el 31 de octubre de 2025 (decisión de Estado, no un lugar).",
+     "fuentes": [
+      {
+       "nombre": "Infobae",
+       "familia": "prensa"
+      },
+      {
+       "nombre": "UPI",
+       "familia": "prensa"
+      },
+      {
+       "nombre": "Presidencia de la República del Paraguay",
+       "familia": "oficial"
+      }
+     ],
+     "fecha": "2025-10-31"
+    }
+   ],
+   "no_se_sabe": [
+    "Qué hace hoy en el río: ningún dato abierto lo mide. El mapa muestra zonas por departamento porque la fuente no da un punto exacto.",
+    "Si las localidades citadas tienen relación con el tráfico fluvial y no sólo terrestre."
+   ]
+  },
+  {
+   "id": "cv",
+   "nombre": "Comando Vermelho",
+   "tipo": "Crimen organizado transnacional",
+   "zonas": [
+    "z4"
+   ],
+   "resumen": "Organización criminal de origen carioca. Su presencia en el corredor es la alerta y la designación de Estado, no un lugar propio.",
+   "alias": [
+    "comando vermelho"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Paraguay lo declaró organización terrorista el 31 de octubre de 2025, junto con el PCC.",
+     "fuentes": [
+      {
+       "nombre": "Infobae",
+       "familia": "prensa"
+      },
+      {
+       "nombre": "UPI",
+       "familia": "prensa"
+      },
+      {
+       "nombre": "Presidencia de la República del Paraguay",
+       "familia": "oficial"
+      }
+     ],
+     "fecha": "2025-10-31"
+    },
+    {
+     "texto": "Originó una alerta máxima el 29 de octubre de 2025 en las tres fronteras por desborde de violencia desde Río de Janeiro. Dato tomado del análisis de la orquestadora, no re-verificado por Ysyry.",
+     "fuentes": [
+      {
+       "nombre": "Diario de Cuyo",
+       "familia": "prensa"
+      }
+     ],
+     "fecha": "2025-10-29"
+    }
+   ],
+   "no_se_sabe": [
+    "Actividad propia en el río o los puertos del corredor: no hay fuente específica."
+   ]
+  },
+  {
+   "id": "hezbola",
+   "nombre": "Células vinculadas a Hezbolá (financiamiento)",
+   "tipo": "Financiamiento de organizaciones terroristas",
+   "zonas": [
+    "z4"
+   ],
+   "resumen": "Señalamiento de los tres gobiernos de la Triple Frontera sobre presencia de células con fines de financiamiento, en el marco del Comando Tripartito.",
+   "alias": [
+    "hezbol",
+    "hizbul",
+    "hezbollah"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Presencia de células señalada por los tres gobiernos (Argentina, Brasil y Paraguay) en el acuerdo del Comando Tripartito de mayo de 2025. Es un señalamiento gubernamental citado por la prensa, no un hecho verificado por Ysyry.",
+     "fuentes": [
+      {
+       "nombre": "Infobae",
+       "familia": "prensa"
+      },
+      {
+       "nombre": "El Estratégico",
+       "familia": "prensa"
+      }
+     ],
+     "fecha": "2025-05-01"
+    }
+   ],
+   "no_se_sabe": [
+    "Hechos puntuales, personas o empresas: no hay ninguno en las fuentes consultadas y Ysyry no los busca. Nada de esto involucra a la comunidad que vive en la zona."
+   ]
+  },
+  {
+   "id": "pirateria",
+   "nombre": "Piratería fluvial",
+   "tipo": "Delito en el río",
+   "zonas": [
+    "z2"
+   ],
+   "resumen": "Grupos oportunistas que asaltan embarcaciones. El único caso documentado por la Fundación es el del km 340 del Paraná, cerca de San Nicolás.",
+   "alias": [
+    "pirater",
+    "piratas? fluvial",
+    "abordaje"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Asalto a la motonave «Rosa» (Naviship Paraguay S.A., 2.628 t de carga contenerizada, Buenos Aires→Asunción) en octubre de 2025, km 340 del Paraná. Presunto, sin condena; no se atribuye autor.",
+     "fuentes": [
+      {
+       "nombre": "SL24",
+       "familia": "prensa"
+      },
+      {
+       "nombre": "La Nación",
+       "familia": "prensa"
+      },
+      {
+       "nombre": "Weekend / Perfil",
+       "familia": "prensa"
+      },
+      {
+       "nombre": "Diario El Norte",
+       "familia": "prensa"
+      }
+     ],
+     "fecha": "2025-10-01"
+    }
+   ],
+   "no_se_sabe": [
+    "Si es un patrón: no existe una base que sistematice estos casos. Construirla es una contribución original de esta plataforma, y hoy tiene un caso."
+   ]
+  },
+  {
+   "id": "robo_carga",
+   "nombre": "Robo de carga portuario",
+   "tipo": "Delito en el río",
+   "zonas": [
+    "z2"
+   ],
+   "resumen": "Redes que operan mientras la barcaza espera para cargar, en el propio puerto.",
+   "alias": [
+    "robo de carga",
+    "roubo de carga"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Patrón de robo de hasta 100 toneladas con baldes mientras la barcaza espera para cargar. Una sola fuente.",
+     "fuentes": [
+      {
+       "nombre": "Coolt",
+       "familia": "prensa"
+      }
+     ],
+     "fecha": "2026-09-01"
+    }
+   ],
+   "no_se_sabe": [
+    "En qué puerto concreto y con qué frecuencia: ninguna fuente lo señala todavía."
+   ]
+  },
+  {
+   "id": "contrabando_cde",
+   "nombre": "Contrabando y lavado desde Ciudad del Este",
+   "tipo": "Contrabando y lavado de activos",
+   "zonas": [
+    "z4"
+   ],
+   "resumen": "Rutas de contrabando de cigarrillos, electrónica y medicamentos desde Ciudad del Este y la ribera paraguaya, registradas por SIWA.",
+   "alias": [
+    "contraband",
+    "contrabando",
+    "lavado"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "SIWA registra rutas de contrabando desde Ciudad del Este y Salto del Guairá, algunas por el río Paraná en lanchas (ver la tabla de flujos).",
+     "fuentes": [
+      {
+       "nombre": "SIWA, rutas registradas por tercero",
+       "familia": "base secundaria"
+      }
+     ],
+     "fecha": "2026-10-05"
+    }
+   ],
+   "no_se_sabe": [
+    "La señalada zona franca de Ciudad del Este como centro de lavado figura en el análisis de la Fundación como «pendiente de verificar con una fuente específica»: no se afirma acá."
+   ]
+  },
+  {
+   "id": "annp",
+   "nombre": "ANNP, Administración Nacional de Navegación y Puertos (Paraguay)",
+   "tipo": "Estado y organismos",
+   "zonas": [
+    "z5"
+   ],
+   "resumen": "Autoridad portuaria y fluvial de Paraguay. Opera un sistema de monitoreo permanente de la hidrovía.",
+   "alias": [
+    "\\bannp\\b",
+    "administracion nacional de navegacion"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Presentó un sistema de monitoreo permanente de la hidrovía con cinco puntos remotos (antena satelital, AIS, radar, cámaras, estación meteorológica, hidrómetros y boyas) y alertas de anomalías náuticas. Los artículos no dicen si es público.",
+     "fuentes": [
+      {
+       "nombre": "La Nación (Paraguay)",
+       "familia": "prensa"
+      },
+      {
+       "nombre": "Portal Portuario",
+       "familia": "prensa"
+      },
+      {
+       "nombre": "ArgenPorts",
+       "familia": "prensa"
+      }
+     ],
+     "fecha": "2026-04-05"
+    }
+   ],
+   "no_se_sabe": [
+    "Si sus datos o alertas se publican: no se encontró un tablero público."
+   ]
+  },
+  {
+   "id": "pna",
+   "nombre": "Prefectura Naval Argentina",
+   "tipo": "Estado y organismos",
+   "zonas": [
+    "z1",
+    "z2",
+    "z3"
+   ],
+   "ais_fuerza": "Prefectura Naval Argentina",
+   "resumen": "Fuerza de seguridad y autoridad de la navegación en los ríos argentinos. Mantiene las escalas de nivel del río que publica el INA y un sistema de seguimiento de buques.",
+   "alias": [
+    "prefectura naval",
+    "\\bpna\\b",
+    "prefectura"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Sus escalas hidrométricas se publican en el Sistema de Alerta Hidrológico del INA, con umbrales de aguas bajas, alerta y evacuación (Ysyry las usa).",
+     "fuentes": [
+      {
+       "nombre": "INA, Sistema de Alerta Hidrológico",
+       "familia": "oficial"
+      }
+     ],
+     "fecha": "2026-10-06"
+    },
+    {
+     "texto": "Su sistema de seguimiento en tiempo real de buques (ArcGIS GeoEvent Server) alerta al ingresar a aguas argentinas. El AIS de acceso libre existe, pero sin acceso programático hasta que la dirección complete el registro.",
+     "fuentes": [
+      {
+       "nombre": "Esri, ArcNews",
+       "familia": "prensa"
+      }
+     ],
+     "fecha": "2025-01-01"
+    }
+   ],
+   "no_se_sabe": [
+    "Su despliegue real en el río: sólo se ven las unidades que transmiten AIS."
+   ]
+  },
+  {
+   "id": "armada_py",
+   "nombre": "Armada Paraguaya y Prefectura General Naval (Paraguay)",
+   "tipo": "Estado y organismos",
+   "zonas": [
+    "z5"
+   ],
+   "ais_fuerza": "Armada Paraguaya",
+   "resumen": "Fuerzas que operan sobre el río Paraguay. Sus unidades llevan las designaciones ARP, PGN y LP.",
+   "alias": [
+    "armada paraguaya",
+    "prefectura general naval"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "La Armada designa sus unidades con el prefijo ARP (por ejemplo, P-05 Itaipú) y las lanchas patrulleras LP-101 a LP-106.",
+     "fuentes": [
+      {
+       "nombre": "Armada Paraguaya (sitio oficial)",
+       "familia": "oficial"
+      },
+      {
+       "nombre": "Wikipedia, Armada Paraguaya",
+       "familia": "prensa"
+      }
+     ],
+     "fecha": "2026-10-02"
+    }
+   ],
+   "no_se_sabe": [
+    "Ninguna unidad paraguaya transmitió AIS en el área cubierta: el río alto no tiene cobertura de receptores. Que no se vean no significa que no estén."
+   ]
+  },
+  {
+   "id": "tripartito",
+   "nombre": "Comando Tripartito (Argentina, Brasil y Paraguay)",
+   "tipo": "Estado y organismos",
+   "zonas": [
+    "z4"
+   ],
+   "resumen": "Mecanismo de cooperación de los tres Estados en la Triple Frontera.",
+   "alias": [
+    "comando tripartito"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Acuerdo de mayo de 2025 entre los tres gobiernos, en el que señalaron la presencia de células de financiamiento.",
+     "fuentes": [
+      {
+       "nombre": "Infobae",
+       "familia": "prensa"
+      },
+      {
+       "nombre": "El Estratégico",
+       "familia": "prensa"
+      }
+     ],
+     "fecha": "2025-05-01"
+    }
+   ],
+   "no_se_sabe": [
+    "Qué operativos conjuntos ejecuta y con qué resultados."
+   ]
+  },
+  {
+   "id": "cih",
+   "nombre": "CIH, Comité Intergubernamental de la Hidrovía Paraguay-Paraná",
+   "tipo": "Estado y organismos",
+   "zonas": [
+    "z1",
+    "z2",
+    "z3",
+    "z4",
+    "z5"
+   ],
+   "resumen": "Organismo de los cinco países parte, con secretaría en Asunción y sede en Buenos Aires. Publica estadísticas de tráfico y carga.",
+   "alias": [
+    "\\bcih\\b",
+    "comite intergubernamental"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Existe, con secretaría en Asunción y sede en Buenos Aires; su sitio (hidrovia.org) respondió por HTTP, con el certificado HTTPS vencido.",
+     "fuentes": [
+      {
+       "nombre": "hidrovia.org (CIH)",
+       "familia": "oficial"
+      }
+     ],
+     "fecha": "2026-10-01"
+    }
+   ],
+   "no_se_sabe": [
+    "Sus estadísticas más recientes: no se consultaron."
+   ]
+  },
+  {
+   "id": "unodc",
+   "nombre": "UNODC, Programa de Control de Contenedores",
+   "tipo": "Estado y organismos",
+   "zonas": [
+    "z1",
+    "z2",
+    "z5"
+   ],
+   "resumen": "Programa de la ONU con presencia en 14 países de la región, con una reunión específica sobre esta hidrovía entre aduanas de Paraguay, Argentina y Uruguay.",
+   "alias": [
+    "unodc",
+    "control de contenedores"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Opera en 14 países de la región y tuvo una reunión sobre esta hidrovía entre aduanas de Paraguay, Argentina y Uruguay.",
+     "fuentes": [
+      {
+       "nombre": "UNODC (búsqueda)",
+       "familia": "oficial"
+      }
+     ],
+     "fecha": "2026-10-01"
+    }
+   ],
+   "no_se_sabe": [
+    "Resultados concretos en el corredor."
+   ]
+  },
+  {
+   "id": "dragado",
+   "nombre": "Concesión de dragado: Jan De Nul y Servimagnus",
+   "tipo": "Sector privado",
+   "zonas": [
+    "z1",
+    "z2"
+   ],
+   "resumen": "Consorcio adjudicatario de la concesión de dragado a 40 pies hasta Timbúes.",
+   "alias": [
+    "jan de nul",
+    "servimagnus",
+    "\\bdeme\\b",
+    "dragado"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Adjudicación por la Resolución 36/2026, publicada en el Boletín Oficial: Jan De Nul–Servimagnus. El otro finalista era DEME.",
+     "fuentes": [
+      {
+       "nombre": "Boletín Oficial de la República Argentina (Res. 36/2026)",
+       "familia": "oficial"
+      }
+     ],
+     "fecha": "2026-06-01"
+    }
+   ],
+   "no_se_sabe": [
+    "Condiciones del contrato y fechas de obra: no se leyeron."
+   ]
+  },
+  {
+   "id": "basc",
+   "nombre": "BASC (Business Alliance for Secure Commerce)",
+   "tipo": "Sector privado",
+   "zonas": [
+    "z1",
+    "z2",
+    "z5"
+   ],
+   "resumen": "Alianza de empresas certificadas en seguridad de la cadena de comercio, con directorio público por país.",
+   "alias": [
+    "\\bbasc\\b"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Más de 4.700 empresas certificadas, con directorio público por país (Argentina y Paraguay incluidos).",
+     "fuentes": [
+      {
+       "nombre": "BASC (búsqueda)",
+       "familia": "oficial"
+      }
+     ],
+     "fecha": "2026-10-01"
+    }
+   ],
+   "no_se_sabe": [
+    "Cuáles de esas empresas operan en el corredor: no se cruzó."
+   ]
+  },
+  {
+   "id": "humedales",
+   "nombre": "Ambientalistas y Ley de Humedales",
+   "tipo": "Grupos de presión",
+   "zonas": [
+    "z1",
+    "z2"
+   ],
+   "resumen": "Proyecto de ley en el Congreso argentino desde 2013, que perdió estado parlamentario tres veces y se reactiva con los incendios del Delta.",
+   "alias": [
+    "ley de humedales",
+    "humedales"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Patrón cíclico desde 2013: perdió estado parlamentario tres veces y se reactiva con cada gran incendio del Delta. Entre 2020 y 2022 el fuego afectó cerca de un millón de hectáreas.",
+     "fuentes": [
+      {
+       "nombre": "Infobae",
+       "familia": "prensa"
+      },
+      {
+       "nombre": "PIECAS-DP (gob.ar)",
+       "familia": "oficial"
+      },
+      {
+       "nombre": "Chequeado",
+       "familia": "prensa"
+      }
+     ],
+     "fecha": "2026-10-01"
+    }
+   ],
+   "no_se_sabe": [
+    "Cuándo se reabrirá el debate. Es candidata natural a una pregunta con probabilidad."
+   ]
+  },
+  {
+   "id": "practicos",
+   "nombre": "Prácticos de navegación (gremio)",
+   "tipo": "Grupos de presión",
+   "zonas": [
+    "z1",
+    "z2"
+   ],
+   "resumen": "Conflicto de agosto de 2026 que paralizó buques en la hidrovía.",
+   "alias": [
+    "practicos",
+    "prácticos"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Conflicto de prácticos de agosto de 2026, registrado en la auditoría de la Terminal Zárate del 24 de septiembre. Una sola fuente de prensa citada.",
+     "fuentes": [
+      {
+       "nombre": "El País",
+       "familia": "prensa"
+      }
+     ],
+     "fecha": "2026-08-01"
+    }
+   ],
+   "no_se_sabe": [
+    "Frecuencia y duración de los paros, y qué gremio exactamente."
+   ]
+  }
+ ]
+}
