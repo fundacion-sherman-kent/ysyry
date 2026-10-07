@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-07T12:40:51Z",
+ "obtenido": "2026-10-07T13:13:11Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 33,
+   "items": 32,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 86,
+   "items": 89,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -101,11 +101,10 @@
   {
    "dominio": "ip.gov.py",
    "url": "https://www.ip.gov.py/ip/feed/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 10,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "agenciabrasil.ebc.com.br",
@@ -134,20 +133,18 @@
   {
    "dominio": "annp.gov.py",
    "url": "https://annp.gov.py/?feed=rss2",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 10,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "armadaparaguaya.mil.py",
    "url": "https://armadaparaguaya.mil.py/feed",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 10,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "pagina12.com.ar",
@@ -184,24 +181,56 @@
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
-   "ok": false,
-   "items": 0,
-   "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "ok": true,
+   "items": 10,
+   "candidatos": 1,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "policianacional.gov.py",
    "url": "https://www.policianacional.gov.py/feed/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 5,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   }
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Itaipú refuerza el monitoreo del río Paraná y prevé asistencia por crecida en Ciudad del Este",
+   "url": "http://www.lanacion.com.py/pais/2026/10/07/itaipu-refuerza-el-monitoreo-del-rio-parana-y-preve-asistencia-por-crecida-en-ciudad-del-este/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-07",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este",
+    "Itaipú"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/07/itaipu-refuerza-el-monitoreo-del-rio-parana-y-preve-asistencia-por-crecida-en-ciudad-del-este/"
+    }
+   ],
+   "id": "3815cee93c",
+   "verificado": true
+  },
   {
    "titulo": "Una revelación del “narco de la hidrovía” precipitó la caída del fiscal general de Bolivia, acusado por los Estados Unidos de proteger al narcotráfico",
    "url": "https://www.lanacion.com.ar/seguridad/escandalo-narco-cayo-la-cupula-de-la-fiscalia-de-bolivia-tras-la-difusion-de-videos-en-los-que-nid02102026/",
@@ -295,6 +324,160 @@
    ],
    "id": "bc1cc27ffe",
    "verificado": true
+  }
+ ],
+ "sin_tipo": [
+  {
+   "titulo": "Itaipú reporta transferencia de USD 345 millones",
+   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/10/07/itaipu-reporta-transferencia-de-usd-345-millones/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-07",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "ANNP RECIBE A DELEGACIÓN EMPRESARIAL DE LOS PAÍSES BAJOS PARA FORTALECER VÍNCULOS COMERCIALES A TRAVÉS DE LA HIDROVÍA",
+   "url": "https://annp.gov.py/?p=23791",
+   "dominio": "annp.gov.py",
+   "fecha": "2026-10-07",
+   "lugares": [
+    "Cáceres"
+   ]
+  },
+  {
+   "titulo": "EL PRESIDENTE ING. JULIO CÉSAR VERA CÁCERES INTEGRÓ PANEL SOBRE EL MANTENIMIENTO DE LAS VÍAS NAVEGABLES",
+   "url": "https://annp.gov.py/?p=23779",
+   "dominio": "annp.gov.py",
+   "fecha": "2026-10-07",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Caso Tía Chela: Corbeta cuestiona compras de CDE y habla de una “licitación fraguada”",
+   "url": "http://www.lanacion.com.py/politica/2026/10/06/caso-tia-chela-corbeta-cuestiona-compras-de-cde-y-habla-de-una-licitacion-fraguada/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-06",
+   "lugares": [
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "MINGA AMBIENTAL EN LA CIUDAD DE VILLETA",
+   "url": "https://armadaparaguaya.mil.py/minga-ambiental-en-la-ciudad-de-villeta/",
+   "dominio": "armadaparaguaya.mil.py",
+   "fecha": "2026-08-31",
+   "lugares": [
+    "Villeta"
+   ]
+  },
+  {
+   "titulo": "UN MOMENTO HISTÓRICO PARA LA NAVEGACIÓN DEL PARAGUAY",
+   "url": "https://annp.gov.py/?p=23356",
+   "dominio": "annp.gov.py",
+   "fecha": "2026-08-21",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "FORO ASU 500 AÑOS EN EL PUERTO DE ASUNCIÓN",
+   "url": "https://annp.gov.py/?p=23241",
+   "dominio": "annp.gov.py",
+   "fecha": "2026-08-13",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "RITN RECONOCE LA EXCELENCIA OPERATIVA DE LA ESTACIÓN ASUNCIÓN PY DE LA ARMADA PARAGUAYA",
+   "url": "https://armadaparaguaya.mil.py/ritn-reconoce-la-excelencia-operativa-de-la-estacion-asuncion-py-de-la-armada-paraguaya/",
+   "dominio": "armadaparaguaya.mil.py",
+   "fecha": "2026-08-12",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Asunción | Capacitación en gestión de personas desaparecidas",
+   "url": "https://policianacional.gov.py/asuncion-capacitacion-en-gestion-de-personas-desaparecidas/",
+   "dominio": "policianacional.gov.py",
+   "fecha": "2025-10-03",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Lo que hacemos en nuestros ríos: Investigación sobre procedencia de la contaminación fecal de aguas del Río Uruguay y el Santa Lucía muestra aportes muy similares de humanos y ganado vacuno",
+   "url": "https://ladiaria.com.uy/ciencia/articulo/2019/6/lo-que-hacemos-en-nuestros-rios-investigacion-sobre-procedencia-de-la-contaminacion-fecal-de-aguas-del-rio-uruguay-y-el-santa-lucia-muestra-aportes-muy-similares-de-humanos-y-ganado-vacuno/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2019-06-18",
+   "lugares": []
+  },
+  {
+   "titulo": "Cianobacterias, conocimiento científico y acciones políticas",
+   "url": "https://ladiaria.com.uy/opinion/articulo/2019/3/cianobacterias-conocimiento-cientifico-y-acciones-politicas/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2019-03-07",
+   "lugares": []
+  },
+  {
+   "titulo": "Volvieron las cianobacterias a las playas del Río de la Plata: recomiendan no bañarse",
+   "url": "https://ladiaria.com.uy/salud/articulo/2019/1/volvieron-las-cianobacterias-a-las-playas-del-rio-de-la-plata-recomiendan-no-banarse/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2019-01-29",
+   "lugares": []
+  },
+  {
+   "titulo": "Mulher corre risco de perder bebê após ser agredida a socos e chutes",
+   "url": "https://g1.globo.com/ms/sul-e-leste/noticia/2018/07/21/mulher-corre-risco-de-perder-bebe-apos-ser-agredida-a-socos-e-chutes.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2018-07-21",
+   "lugares": [
+    "Ponta Porã"
+   ]
+  },
+  {
+   "titulo": "Traficante abandona carro com 403 quilos de maconha em rodovia de MS",
+   "url": "https://g1.globo.com/ms/sul-e-leste/noticia/2018/07/19/traficante-abandona-carro-com-403-quilos-de-maconha-em-rodovia-de-ms.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2018-07-19",
+   "lugares": [
+    "Ponta Porã"
+   ]
+  },
+  {
+   "titulo": "Três suspeitos de roubos em Corumbá são mortos em troca de tiros com a PM",
+   "url": "https://g1.globo.com/ms/corumba-e-regiao/noticia/tres-suspeitos-de-roubos-em-corumba-sao-mortos-em-troca-de-tiros-com-a-pm.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2018-07-10",
+   "lugares": [
+    "Corumbá"
+   ]
+  },
+  {
+   "titulo": "¿Podemos comer lo que pescamos en Montevideo?",
+   "url": "https://ladiaria.com.uy/rioabierto/articulo/2018/2/podemos-comer-lo-que-pescamos-en-montevideo/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2018-02-19",
+   "lugares": []
+  },
+  {
+   "titulo": "Las perspectivas para este verano con las cianobacterias",
+   "url": "https://ladiaria.com.uy/ciencia/articulo/2018/1/las-perspectivas-para-este-verano-con-las-cianobacterias/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2018-01-16",
+   "lugares": []
+  },
+  {
+   "titulo": "Maconha é transportada com crianças em MS",
+   "url": "https://g1.globo.com/mato-grosso-do-sul/noticia/maconha-e-transportada-com-criancas-em-ms.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2017-11-03",
+   "lugares": [
+    "Ponta Porã"
+   ]
   }
  ]
 }
