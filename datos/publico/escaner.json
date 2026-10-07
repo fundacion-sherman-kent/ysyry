@@ -1,114 +1,203 @@
 {
- "obtenido": "2026-10-07T12:10:54Z",
+ "obtenido": "2026-10-07T12:40:51Z",
  "dias": 14,
  "fuentes": [
   {
    "dominio": "abc.com.py",
+   "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0
+   "candidatos": 0,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
+   "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
    "items": 33,
-   "candidatos": 0
+   "candidatos": 0,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.py",
+   "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0
+   "candidatos": 0,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "lacapital.com.ar",
+   "url": "https://www.lacapital.com.ar/rss/ultimo-momento.xml",
    "ok": true,
    "items": 44,
-   "candidatos": 0
+   "candidatos": 0,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "clarin.com",
+   "url": "https://www.clarin.com/rss/lo-ultimo/",
    "ok": true,
    "items": 10,
-   "candidatos": 0
+   "candidatos": 0,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "infobae.com",
+   "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 0
+   "candidatos": 0,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "perfil.com",
+   "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 0
+   "candidatos": 0,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
+   "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 85,
-   "candidatos": 0
+   "items": 86,
+   "candidatos": 0,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "g1.globo.com",
+   "url": "https://g1.globo.com/rss/g1/mato-grosso-do-sul/",
    "ok": true,
    "items": 100,
-   "candidatos": 1
+   "candidatos": 1,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "insightcrime.org",
+   "url": "https://insightcrime.org/feed/",
    "ok": true,
    "items": 11,
-   "candidatos": 0
+   "candidatos": 0,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "es.mongabay.com",
+   "url": "https://es.mongabay.com/feed/",
    "ok": true,
    "items": 30,
-   "candidatos": 0
+   "candidatos": 0,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "hoy.com.py",
+   "url": "https://www.hoy.com.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 0
+   "candidatos": 0,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "ip.gov.py",
-   "ok": true,
-   "items": 10,
-   "candidatos": 0
+   "url": "https://www.ip.gov.py/ip/feed/",
+   "ok": false,
+   "items": 0,
+   "candidatos": 0,
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "agenciabrasil.ebc.com.br",
+   "url": "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml",
    "ok": true,
    "items": 10,
-   "candidatos": 0
+   "candidatos": 0,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "g1.globo.com",
+   "url": "https://g1.globo.com/rss/g1/mato-grosso/",
    "ok": true,
    "items": 100,
-   "candidatos": 0
+   "candidatos": 0,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "elobservador.com.uy",
+   "url": "https://www.elobservador.com.uy/rss/pages/home.xml",
    "ok": true,
    "items": 20,
-   "candidatos": 0
+   "candidatos": 0,
+   "fallos_seguidos": 0
+  },
+  {
+   "dominio": "annp.gov.py",
+   "url": "https://annp.gov.py/?feed=rss2",
+   "ok": false,
+   "items": 0,
+   "candidatos": 0,
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
+  },
+  {
+   "dominio": "armadaparaguaya.mil.py",
+   "url": "https://armadaparaguaya.mil.py/feed",
+   "ok": false,
+   "items": 0,
+   "candidatos": 0,
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
+  },
+  {
+   "dominio": "pagina12.com.ar",
+   "url": "https://www.pagina12.com.ar/arc/outboundfeeds/rss/?outputType=xml",
+   "ok": true,
+   "items": 25,
+   "candidatos": 0,
+   "fallos_seguidos": 0
+  },
+  {
+   "dominio": "npy.com.py",
+   "url": "https://www.npy.com.py/index.rss",
+   "ok": true,
+   "items": 18,
+   "candidatos": 0,
+   "fallos_seguidos": 0
+  },
+  {
+   "dominio": "ladiaria.com.uy",
+   "url": "https://ladiaria.com.uy/feeds/articulos/",
+   "ok": true,
+   "items": 312,
+   "candidatos": 0,
+   "fallos_seguidos": 0
+  },
+  {
+   "dominio": "mpf.mp.br",
+   "url": "https://www.mpf.mp.br/rss.xml",
+   "ok": true,
+   "items": 15,
+   "candidatos": 0,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "senad.gov.py",
-   "ok": true,
-   "items": 10,
-   "candidatos": 1
+   "url": "https://senad.gov.py/feed",
+   "ok": false,
+   "items": 0,
+   "candidatos": 0,
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "policianacional.gov.py",
-   "ok": true,
-   "items": 5,
-   "candidatos": 0
+   "url": "https://www.policianacional.gov.py/feed/",
+   "ok": false,
+   "items": 0,
+   "candidatos": 0,
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   }
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
