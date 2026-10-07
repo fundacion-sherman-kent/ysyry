@@ -4,7 +4,7 @@ name: Nivel del río (Paraguay)
 # río, como las que SIWA ya publica). No consume tokens de Claude.
 on:
   schedule:
-    - cron: "0 12 * * *"
+    - cron: "0 3,9,15,21 * * *"
   workflow_dispatch: {}
 
 permissions:
