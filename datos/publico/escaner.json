@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-07T21:26:38Z",
+ "obtenido": "2026-10-08T00:56:48Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 29,
+   "items": 28,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 83,
+   "items": 89,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 333,
+   "items": 351,
    "candidatos": 2,
    "fallos_seguidos": 0
   },
@@ -276,6 +276,39 @@
    "verificado": true
   },
   {
+   "titulo": "Ayolas: evacúan a las primeras familias por crecida del río Paraná",
+   "url": "https://www.abc.com.py/economia/2026/10/07/ayolas-evacuan-a-las-primeras-familias-por-crecida-del-rio-parana/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-07",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ayolas"
+   ],
+   "ubicacion": [
+    -27.39,
+    -56.84
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/economia/2026/10/07/ayolas-evacuan-a-las-primeras-familias-por-crecida-del-rio-parana/"
+    }
+   ],
+   "id": "c5391c5003",
+   "verificado": true
+  },
+  {
    "titulo": "El río Uruguay continuará en ascenso y la próxima semana podría superar los 7 metros",
    "url": "https://ladiaria.com.uy/paysandu/articulo/2026/10/el-rio-uruguay-continuara-en-ascenso-y-la-proxima-semana-podria-superar-los-7-metros/",
    "dominio": "ladiaria.com.uy",
@@ -357,6 +390,34 @@
     }
    ],
    "id": "1977f71dd0",
+   "verificado": true
+  },
+  {
+   "titulo": "Evacúan a algunas familias del barrio San Rafael ante inminente crecida del río Paraná",
+   "url": "https://www.abc.com.py/este/2026/10/07/evacuan-a-algunas-familias-del-barrio-san-rafael-ante-inminente-crecida-del-rio-parana/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-07",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/este/2026/10/07/evacuan-a-algunas-familias-del-barrio-san-rafael-ante-inminente-crecida-del-rio-parana/"
+    }
+   ],
+   "id": "195642a27c",
    "verificado": true
   },
   {
@@ -456,15 +517,6 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Itaipú: ¿qué gobierno de Brasil le conviene más a Paraguay, Lula o Flávio Bolsonaro?",
-   "url": "https://www.abc.com.py/economia/2026/10/07/itaipu-que-gobierno-de-brasil-le-conviene-mas-a-paraguay-lula-o-flavio-bolsonaro/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-07",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
    "titulo": "Hallan en un sojal la camioneta del empresario asesinado y buscan a su expareja",
    "url": "http://www.lanacion.com.py/pais/2026/10/07/hallan-en-un-sojal-la-camioneta-del-empresario-asesinado-y-buscan-a-su-expareja/",
    "dominio": "lanacion.com.py",
@@ -534,6 +586,15 @@
    "fecha": "2026-10-07",
    "lugares": [
     "Alto Paraná"
+   ]
+  },
+  {
+   "titulo": "Itaipú: ¿qué gobierno de Brasil le conviene más a Paraguay, Lula o Flávio Bolsonaro?",
+   "url": "https://www.abc.com.py/economia/2026/10/07/itaipu-que-gobierno-de-brasil-le-conviene-mas-a-paraguay-lula-o-flavio-bolsonaro/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-07",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
