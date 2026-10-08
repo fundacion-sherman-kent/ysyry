@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-07T20:41:25Z",
+ "obtenido": "2026-10-08T01:05:49Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -146,44 +146,44 @@
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-07 17:32",
+   "inicio": "2026-10-07 21:21",
    "fin": "",
    "lugares": [
-    "SANTA FE: Iriondo - San Jeronimo - San Lorenzo.; ; ENTRE RIOS: Diamante - Gualeguay - Gualeguaychu - Islas del Ibicuy - Nogoya - Victoria."
+    "SANTA FE: Garay - San Javier.; ; CORRIENTES: Esquina.; ; ENTRE RIOS: Colon - Concordia - Federacion - Federal - La Paz - S. J. de Feliciano - San Salvador - Villaguay."
    ],
    "riesgos": "",
-   "id": "smn-3590"
+   "id": "smn-3600"
   },
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-07 17:09",
+   "inicio": "2026-10-07 21:17",
    "fin": "",
    "lugares": [
-    "SANTA FE: Belgrano - Castellanos - Iriondo - Las Colonias - San Jeronimo - San Martin.; ; CORDOBA: Marcos Juarez - San Justo."
+    "SANTIAGO DEL ESTERO: Rivadavia.; ; SANTA FE: 9 de Julio - San Cristobal.; ; CORDOBA: San Justo."
    ],
    "riesgos": "",
-   "id": "smn-3588"
+   "id": "smn-3599"
   },
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-07 16:23",
+   "inicio": "2026-10-07 21:10",
    "fin": "",
    "lugares": [
-    "SANTA FE: Belgrano - Caseros - Iriondo - San Martin.; ; CORDOBA: Marcos Juarez - Union."
+    "SANTA FE: Castellanos - Las Colonias - San Cristobal.; ; CORDOBA: San Justo."
    ],
    "riesgos": "",
-   "id": "smn-3585"
+   "id": "smn-3598"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
