@@ -1,20 +1,20 @@
 {
- "obtenido": "2026-10-08T01:05:49Z",
+ "obtenido": "2026-10-08T10:45:11Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 7
+   "avisos_en_el_corredor": 5
   },
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 3
+   "avisos_en_el_corredor": 4
   },
   {
    "nombre": "GDACS",
@@ -23,40 +23,6 @@
   }
  ],
  "avisos": [
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-10-07 00:00",
-   "fin": "2026-10-07 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28429"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-10-07 18:00",
-   "fin": "2026-10-07 23:59",
-   "lugares": [
-    "Foz do Iguaçu",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28435"
-  },
   {
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
@@ -144,46 +110,74 @@
    "id": "inmet-28444"
   },
   {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
+   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
+   "pais": "PRY",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la probabilidad de caída de granizos",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-07 21:21",
+   "inicio": "",
    "fin": "",
    "lugares": [
-    "SANTA FE: Garay - San Javier.; ; CORRIENTES: Esquina.; ; ENTRE RIOS: Colon - Concordia - Federacion - Federal - La Paz - S. J. de Feliciano - San Salvador - Villaguay."
+    "Paraguay"
    ],
    "riesgos": "",
-   "id": "smn-3600"
+   "id": "dmh-vigente"
   },
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-07 21:17",
+   "inicio": "2026-10-08 07:19",
    "fin": "",
    "lugares": [
-    "SANTIAGO DEL ESTERO: Rivadavia.; ; SANTA FE: 9 de Julio - San Cristobal.; ; CORDOBA: San Justo."
+    "CHACO: Gral Donovan - 1 de Mayo - 25 de Mayo - Bermejo - Ldor Gral S. Martin - Libertad - Pres de la Plaza - Sargento Cabral.; ; CORRIENTES: San Cosme."
    ],
    "riesgos": "",
-   "id": "smn-3599"
+   "id": "smn-3622"
   },
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-07 21:10",
+   "inicio": "2026-10-08 06:42",
    "fin": "",
    "lugares": [
-    "SANTA FE: Castellanos - Las Colonias - San Cristobal.; ; CORDOBA: San Justo."
+    "CHACO: 1 de Mayo - Bermejo - Libertad - San Fernando.; ; CORRIENTES: Beron de Astrada - Concepcion - Corrientes - Empedrado - Gral Paz - Itati - Ituzaingo - Mburucuya - Saladas - San Cosme - San Luis del Palmar - San Miguel - Santo Tome.; ; MISIONES: Apostoles - Concepcion - Leandro N. Alem - Posada"
    ],
    "riesgos": "",
-   "id": "smn-3598"
+   "id": "smn-3621"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-10-08 06:39",
+   "fin": "",
+   "lugares": [
+    "CHACO: 1 de Mayo - Bermejo - Libertad - San Fernando.; ; CORRIENTES: Beron de Astrada - Concepcion - Corrientes - Empedrado - Gral Paz - Itati - Ituzaingo - Mburucuya - Saladas - San Cosme - San Luis del Palmar - San Miguel - Santo Tome.; ; MISIONES: Apostoles - Concepcion - Leandro N. Alem - Posada"
+   ],
+   "riesgos": "",
+   "id": "smn-3620"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-10-08 07:34",
+   "fin": "",
+   "lugares": [
+    "SANTA FE: Gral Obligado.; ; CORRIENTES: Bella Vista - Lavalle - San Roque."
+   ],
+   "riesgos": "",
+   "id": "smn-3623"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
