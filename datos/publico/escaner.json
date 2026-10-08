@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-08T10:26:48Z",
+ "obtenido": "2026-10-08T18:49:01Z",
  "dias": 14,
  "fuentes": [
   {
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 98,
+   "items": 84,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -159,14 +159,14 @@
    "url": "https://www.npy.com.py/index.rss",
    "ok": true,
    "items": 18,
-   "candidatos": 2,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 304,
+   "items": 312,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -183,7 +183,7 @@
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -197,6 +197,69 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Crecida del río Paraná ya causa desplazamientos en el barrio esteño de San Rafael",
+   "url": "http://www.lanacion.com.py/pais/2026/10/08/crecida-del-rio-parana-ya-causa-desplazamientos-en-el-barrio-esteno-de-san-rafael/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-08",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ayolas",
+    "Ciudad del Este",
+    "Itaipú"
+   ],
+   "ubicacion": [
+    -27.39,
+    -56.84
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/08/crecida-del-rio-parana-ya-causa-desplazamientos-en-el-barrio-esteno-de-san-rafael/"
+    }
+   ],
+   "id": "614a938579",
+   "verificado": true
+  },
+  {
+   "titulo": "Walter Román, el empresario que se asoció con El Rey del Cloro para quedarse con AySA",
+   "url": "https://www.perfil.com/noticias/politica/walter-roman-el-empresario-que-se-asocio-con-el-rey-del-cloro-para-quedarse-con-aysa.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-08",
+   "tipos": [
+    [
+     "regulatorio",
+     "Licitación, peaje o conflicto gremial"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/politica/walter-roman-el-empresario-que-se-asocio-con-el-rey-del-cloro-para-quedarse-con-aysa.phtml"
+    }
+   ],
+   "id": "7dc8b9eca6",
+   "verificado": true
+  },
   {
    "titulo": "SENAD intercepta camión con más de 50 kilos de droga en Remansito",
    "url": "https://www.npy.com.py/noticias/nacionales/senad-intercepta-camion-con-mas-de-50-kilos-de-droga-en-remansito",
@@ -517,6 +580,43 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Yacyretá prevé aguas altas del Paraná en Ayolas",
+   "url": "https://www.abc.com.py/economia/2026/10/08/yacyreta-preve-aguas-altas-del-parana-en-ayolas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-08",
+   "lugares": [
+    "Ayolas",
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Video: amenaza de bomba en Fiscalía de Asunción movilizó a la Policía",
+   "url": "https://www.abc.com.py/policiales/2026/10/08/video-amenaza-de-bomba-en-fiscalia-de-asuncion-movilizo-a-la-policia/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-08",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Asunción: evacúan sede de la Fiscalía por amenaza de bomba que resultó ser falsa",
+   "url": "http://www.lanacion.com.py/pais/2026/10/08/asuncion-evacuan-sede-de-la-fiscalia-por-amenaza-de-bomba-que-resulto-ser-falsa/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-08",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Fuerza Aérea Paraguaya incorpora el Cessna SkyCourier como primer operador en Sudamérica",
+   "url": "http://www.lanacion.com.py/politica/2026/10/08/fuerza-aerea-paraguaya-incorpora-el-cessna-skycourier-como-primer-operador-en-sudamerica/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-08",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Empresas neerlandesas miran oportunidades en infraestructura fluvial de Paraguay",
    "url": "http://www.lanacion.com.py/foco/2026/10/08/empresas-neerlandesas-miran-oportunidades-en-infraestructura-fluvial-de-paraguay/",
    "dominio": "lanacion.com.py",
@@ -524,12 +624,21 @@
    "lugares": []
   },
   {
-   "titulo": "Hallan en un sojal la camioneta del empresario asesinado y buscan a su expareja",
-   "url": "http://www.lanacion.com.py/pais/2026/10/07/hallan-en-un-sojal-la-camioneta-del-empresario-asesinado-y-buscan-a-su-expareja/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-07",
+   "titulo": "Policía realiza incursión en barrios de Asunción para localizar a personas requeridas por la Justicia",
+   "url": "https://www.npy.com.py/noticias/nacionales/policia-realiza-incursion-en-barrios-de-asuncion-para-localizar-a-personas-requeridas-por-la-justicia",
+   "dominio": "npy.com.py",
+   "fecha": "2026-10-08",
    "lugares": [
-    "Alto Paraná"
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "DESMANTELAN CENTRO DE PRODUCCIÓN CON VARIOS SECTORES DE PROCESAMIENTO EN CERRO CORÁ",
+   "url": "https://senad.gov.py/desmantelan-centro-de-produccion-con-varios-sectores-de-procesamiento-en-cerro-cora/",
+   "dominio": "senad.gov.py",
+   "fecha": "2026-10-08",
+   "lugares": [
+    "Pedro Juan Caballero"
    ]
   },
   {
@@ -572,6 +681,15 @@
    "titulo": "Hallan muerto a un hombre en su vivienda de San Alberto",
    "url": "https://www.npy.com.py/noticias/nacionales/sucesos/hallan-muerto-a-un-hombre-en-su-vivienda-de-san-alberto",
    "dominio": "npy.com.py",
+   "fecha": "2026-10-07",
+   "lugares": [
+    "Alto Paraná"
+   ]
+  },
+  {
+   "titulo": "Hallan en un sojal la camioneta del empresario asesinado y buscan a su expareja",
+   "url": "http://www.lanacion.com.py/pais/2026/10/07/hallan-en-un-sojal-la-camioneta-del-empresario-asesinado-y-buscan-a-su-expareja/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-10-07",
    "lugares": [
     "Alto Paraná"
