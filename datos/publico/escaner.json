@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-09T01:11:08Z",
+ "obtenido": "2026-10-09T10:25:17Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 27,
+   "items": 29,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 93,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 338,
+   "items": 316,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -580,6 +580,22 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "De 1961: el bodegón donde comían los obreros del puerto y hoy es un ícono de Rosario",
+   "url": "https://www.lanacion.com.ar/sabado/el-bodegon-donde-comian-los-obreros-del-puerto-y-hoy-es-un-icono-de-rosario-nid09102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-09",
+   "lugares": [
+    "Rosario"
+   ]
+  },
+  {
+   "titulo": "Conozcan a Characidium mariposita, una nueva especie de pez descubierta en el río Uruguay",
+   "url": "https://ladiaria.com.uy/ciencia/articulo/2026/10/conozcan-a-characidium-mariposita-una-nueva-especie-de-pez-descubierta-en-el-rio-uruguay/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-09",
+   "lugares": []
+  },
+  {
    "titulo": "Video: amenaza de bomba en Fiscalía de Asunción movilizó a la Policía",
    "url": "https://www.abc.com.py/policiales/2026/10/08/video-amenaza-de-bomba-en-fiscalia-de-asuncion-movilizo-a-la-policia/",
    "dominio": "abc.com.py",
@@ -595,6 +611,24 @@
    "fecha": "2026-10-08",
    "lugares": [
     "Asunción"
+   ]
+  },
+  {
+   "titulo": "Policía realiza incursión en barrios de Asunción para localizar a personas requeridas por la Justicia",
+   "url": "https://www.npy.com.py/noticias/nacionales/policia-realiza-incursion-en-barrios-de-asuncion-para-localizar-a-personas-requeridas-por-la-justicia",
+   "dominio": "npy.com.py",
+   "fecha": "2026-10-08",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "DESMANTELAN CENTRO DE PRODUCCIÓN CON VARIOS SECTORES DE PROCESAMIENTO EN CERRO CORÁ",
+   "url": "https://senad.gov.py/desmantelan-centro-de-produccion-con-varios-sectores-de-procesamiento-en-cerro-cora/",
+   "dominio": "senad.gov.py",
+   "fecha": "2026-10-08",
+   "lugares": [
+    "Pedro Juan Caballero"
    ]
   },
   {
@@ -614,30 +648,12 @@
    "lugares": []
   },
   {
-   "titulo": "Policía realiza incursión en barrios de Asunción para localizar a personas requeridas por la Justicia",
-   "url": "https://www.npy.com.py/noticias/nacionales/policia-realiza-incursion-en-barrios-de-asuncion-para-localizar-a-personas-requeridas-por-la-justicia",
-   "dominio": "npy.com.py",
-   "fecha": "2026-10-08",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
    "titulo": "En noviembre se inaugurarán las obras de remodelación del puerto de Colonia del Sacramento",
    "url": "https://ladiaria.com.uy/colonia/articulo/2026/10/en-noviembre-se-inauguraran-las-obras-de-remodelacion-del-puerto-de-colonia-del-sacramento/",
    "dominio": "ladiaria.com.uy",
    "fecha": "2026-10-08",
    "lugares": [
     "Colonia"
-   ]
-  },
-  {
-   "titulo": "DESMANTELAN CENTRO DE PRODUCCIÓN CON VARIOS SECTORES DE PROCESAMIENTO EN CERRO CORÁ",
-   "url": "https://senad.gov.py/desmantelan-centro-de-produccion-con-varios-sectores-de-procesamiento-en-cerro-cora/",
-   "dominio": "senad.gov.py",
-   "fecha": "2026-10-08",
-   "lugares": [
-    "Pedro Juan Caballero"
    ]
   },
   {
