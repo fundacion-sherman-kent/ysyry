@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-08T18:49:01Z",
+ "obtenido": "2026-10-09T01:11:08Z",
  "dias": 14,
  "fuentes": [
   {
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 84,
+   "items": 92,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 312,
+   "items": 338,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -580,16 +580,6 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Yacyretá prevé aguas altas del Paraná en Ayolas",
-   "url": "https://www.abc.com.py/economia/2026/10/08/yacyreta-preve-aguas-altas-del-parana-en-ayolas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-08",
-   "lugares": [
-    "Ayolas",
-    "Yacyretá"
-   ]
-  },
-  {
    "titulo": "Video: amenaza de bomba en Fiscalía de Asunción movilizó a la Policía",
    "url": "https://www.abc.com.py/policiales/2026/10/08/video-amenaza-de-bomba-en-fiscalia-de-asuncion-movilizo-a-la-policia/",
    "dominio": "abc.com.py",
@@ -633,12 +623,31 @@
    ]
   },
   {
+   "titulo": "En noviembre se inaugurarán las obras de remodelación del puerto de Colonia del Sacramento",
+   "url": "https://ladiaria.com.uy/colonia/articulo/2026/10/en-noviembre-se-inauguraran-las-obras-de-remodelacion-del-puerto-de-colonia-del-sacramento/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-08",
+   "lugares": [
+    "Colonia"
+   ]
+  },
+  {
    "titulo": "DESMANTELAN CENTRO DE PRODUCCIÓN CON VARIOS SECTORES DE PROCESAMIENTO EN CERRO CORÁ",
    "url": "https://senad.gov.py/desmantelan-centro-de-produccion-con-varios-sectores-de-procesamiento-en-cerro-cora/",
    "dominio": "senad.gov.py",
    "fecha": "2026-10-08",
    "lugares": [
     "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "Yacyretá prevé aguas altas del Paraná en Ayolas",
+   "url": "https://www.abc.com.py/economia/2026/10/08/yacyreta-preve-aguas-altas-del-parana-en-ayolas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-08",
+   "lugares": [
+    "Ayolas",
+    "Yacyretá"
    ]
   },
   {
