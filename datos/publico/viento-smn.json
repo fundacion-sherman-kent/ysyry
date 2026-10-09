@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-09T01:09:25Z",
+ "obtenido": "2026-10-09T10:22:03Z",
  "fuente": {
   "nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente",
   "url": "https://www.smn.gob.ar/",
@@ -8,10 +8,10 @@
  "estaciones": [
   {
    "nombre": "La Plata",
-   "fecha": "08-octubre-2026",
-   "hora": "21:00",
+   "fecha": "09-octubre-2026",
+   "hora": "07:00",
    "direccion": "Sur",
-   "kmh": 1,
+   "kmh": 22,
    "estado": "Cubierto con llovizna"
   },
   {
@@ -24,26 +24,26 @@
   },
   {
    "nombre": "San Fernando",
-   "fecha": "08-octubre-2026",
-   "hora": "21:00",
+   "fecha": "09-octubre-2026",
+   "hora": "07:00",
    "direccion": "Sur",
-   "kmh": 14,
-   "estado": "Cubierto con llovizna"
+   "kmh": 16,
+   "estado": "Cubierto"
   },
   {
    "nombre": "Aeroparque Buenos Aires",
-   "fecha": "08-octubre-2026",
-   "hora": "21:00",
+   "fecha": "09-octubre-2026",
+   "hora": "07:00",
    "direccion": "Sur",
-   "kmh": 14,
+   "kmh": 13,
    "estado": "Cubierto con llovizna en la hora anterior"
   },
   {
    "nombre": "Buenos Aires",
-   "fecha": "08-octubre-2026",
-   "hora": "21:00",
-   "direccion": "Sur",
-   "kmh": 16,
+   "fecha": "09-octubre-2026",
+   "hora": "07:00",
+   "direccion": "Sudeste",
+   "kmh": 25,
    "estado": "Cubierto con llovizna"
   }
  ]
