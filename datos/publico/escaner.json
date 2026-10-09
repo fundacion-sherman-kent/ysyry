@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-09T10:25:17Z",
+ "obtenido": "2026-10-09T18:19:24Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 29,
+   "items": 34,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
+   "items": 83,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 316,
+   "items": 327,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -183,7 +183,7 @@
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -197,6 +197,108 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "SENAD INTERVINO PUNTO DE DISTRIBUCIÓN DE DROGAS Y DESARMADERO DE MOTOCICLETAS EN TRINIDAD",
+   "url": "https://senad.gov.py/senad-intervino-punto-de-distribucion-de-drogas-y-desarmadero-de-motocicletas-en-trinidad/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-10-09",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Asunción"
+   ],
+   "ubicacion": [
+    -25.28,
+    -57.63
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 7,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/senad-intervino-punto-de-distribucion-de-drogas-y-desarmadero-de-motocicletas-en-trinidad/"
+    }
+   ],
+   "id": "4a9c953d7e",
+   "verificado": true
+  },
+  {
+   "titulo": "Senad anula foco de drogas y desarmadero clandestino de motos en Asunción",
+   "url": "http://www.lanacion.com.py/pais/2026/10/09/senad-anula-foco-de-drogas-y-desarmadero-clandestino-de-motos-en-asuncion/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-09",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Asunción"
+   ],
+   "ubicacion": [
+    -25.28,
+    -57.63
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 6,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/09/senad-anula-foco-de-drogas-y-desarmadero-clandestino-de-motos-en-asuncion/"
+    }
+   ],
+   "id": "0a15d509f9",
+   "verificado": true
+  },
+  {
+   "titulo": "Fuerzas Armadas auxilian a afectados por lluvias y la crecida del río Paraná",
+   "url": "http://www.lanacion.com.py/pais/2026/10/09/fuerzas-armadas-auxilian-a-afectados-por-lluvias-y-la-crecida-del-rio-parana/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-09",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/09/fuerzas-armadas-auxilian-a-afectados-por-lluvias-y-la-crecida-del-rio-parana/"
+    }
+   ],
+   "id": "edcecd787f",
+   "verificado": true
+  },
   {
    "titulo": "Crecida del río Paraná ya causa desplazamientos en el barrio esteño de San Rafael",
    "url": "http://www.lanacion.com.py/pais/2026/10/08/crecida-del-rio-parana-ya-causa-desplazamientos-en-el-barrio-esteno-de-san-rafael/",
@@ -580,12 +682,50 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "De 1961: el bodegón donde comían los obreros del puerto y hoy es un ícono de Rosario",
-   "url": "https://www.lanacion.com.ar/sabado/el-bodegon-donde-comian-los-obreros-del-puerto-y-hoy-es-un-icono-de-rosario-nid09102026/",
-   "dominio": "lanacion.com.ar",
+   "titulo": "Detienen a un hombre que habría amenazado matar a su pareja y quemar su vivienda",
+   "url": "http://www.lanacion.com.py/pais/2026/10/09/detienen-a-un-hombre-que-habria-amenazado-matar-a-su-pareja-y-quemar-su-vivienda/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-10-09",
    "lugares": [
-    "Rosario"
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Buscan a conductor paraguayo que arrolló y mató a un hombre en silla de ruedas en Posadas",
+   "url": "http://www.lanacion.com.py/pais/2026/10/09/buscan-a-conductor-paraguayo-que-arrollo-y-mato-a-un-hombre-en-silla-de-ruedas-en-posadas/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-09",
+   "lugares": [
+    "Encarnación",
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Dejó de responder tras pedir ayuda: así encontraron a paraguaya en Bolivia",
+   "url": "http://www.lanacion.com.py/pais/2026/10/09/dejo-de-responder-tras-pedir-ayuda-asi-encontraron-a-paraguaya-en-bolivia/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-09",
+   "lugares": [
+    "Alto Paraná"
+   ]
+  },
+  {
+   "titulo": "Avanza la restauración de la Catedral San Blas de Ciudad del Este",
+   "url": "http://www.lanacion.com.py/pais/2026/10/09/avanza-la-restauracion-de-la-catedral-san-blas-de-ciudad-del-este/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-09",
+   "lugares": [
+    "Ciudad del Este",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Itaipú impulsa la movilidad eléctrica en los World Skate Games ASU26",
+   "url": "http://www.lanacion.com.py/pais/2026/10/09/itaipu-impulsa-la-movilidad-electrica-en-los-world-skate-games-asu26/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-09",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -596,18 +736,18 @@
    "lugares": []
   },
   {
-   "titulo": "Video: amenaza de bomba en Fiscalía de Asunción movilizó a la Policía",
-   "url": "https://www.abc.com.py/policiales/2026/10/08/video-amenaza-de-bomba-en-fiscalia-de-asuncion-movilizo-a-la-policia/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-08",
+   "titulo": "De 1961: el bodegón donde comían los obreros del puerto y hoy es un ícono de Rosario",
+   "url": "https://www.lanacion.com.ar/sabado/el-bodegon-donde-comian-los-obreros-del-puerto-y-hoy-es-un-icono-de-rosario-nid09102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-09",
    "lugares": [
-    "Asunción"
+    "Rosario"
    ]
   },
   {
-   "titulo": "Asunción: evacúan sede de la Fiscalía por amenaza de bomba que resultó ser falsa",
-   "url": "http://www.lanacion.com.py/pais/2026/10/08/asuncion-evacuan-sede-de-la-fiscalia-por-amenaza-de-bomba-que-resulto-ser-falsa/",
-   "dominio": "lanacion.com.py",
+   "titulo": "Video: amenaza de bomba en Fiscalía de Asunción movilizó a la Policía",
+   "url": "https://www.abc.com.py/policiales/2026/10/08/video-amenaza-de-bomba-en-fiscalia-de-asuncion-movilizo-a-la-policia/",
+   "dominio": "abc.com.py",
    "fecha": "2026-10-08",
    "lugares": [
     "Asunción"
@@ -629,6 +769,15 @@
    "fecha": "2026-10-08",
    "lugares": [
     "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "Asunción: evacúan sede de la Fiscalía por amenaza de bomba que resultó ser falsa",
+   "url": "http://www.lanacion.com.py/pais/2026/10/08/asuncion-evacuan-sede-de-la-fiscalia-por-amenaza-de-bomba-que-resulto-ser-falsa/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-08",
+   "lugares": [
+    "Asunción"
    ]
   },
   {
