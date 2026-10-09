@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-10-09T01:16:43Z",
+ "obtenido": "2026-10-09T10:43:58Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 10
+   "avisos_en_el_corredor": 8
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -14,12 +14,12 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 1
   }
  ],
  "avisos": [
@@ -29,31 +29,19 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-10-08 08:56",
-   "fin": "2026-10-08 23:59",
+   "inicio": "2026-10-09 00:00",
+   "fin": "2026-10-10 10:00",
    "lugares": [
+    "Corumbá",
+    "Ladário",
     "Porto Murtinho",
+    "Cáceres",
     "Foz do Iguaçu",
     "Ponta Porã",
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28446"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-10-08 09:07",
-   "fin": "2026-10-08 23:59",
-   "lugares": [
-    "Corumbá",
-    "Cáceres"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28451"
+   "id": "inmet-28453"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -61,13 +49,27 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo",
    "color": "#F96602",
-   "inicio": "2026-10-08 09:00",
-   "fin": "2026-10-08 23:59",
+   "inicio": "2026-10-09 00:00",
+   "fin": "2026-10-09 23:59",
    "lugares": [
     "Foz do Iguaçu"
    ],
    "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
-   "id": "inmet-28447"
+   "id": "inmet-28441"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Grande Perigo",
+   "color": "#F80703",
+   "inicio": "2026-10-09 00:01",
+   "fin": "2026-10-09 23:59",
+   "lugares": [
+    "Foz do Iguaçu"
+   ],
+   "riesgos": "Chuva superior a 60 mm/h ou maior que 100 mm/dia, ventos superiores a 100 km/h, e queda de granizo. Grande risco de danos em edificações, corte de energia elétrica, estragos em plantações, queda de árvores, alagamentos e transtornos no transporte rodoviário.",
+   "id": "inmet-28456"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -88,20 +90,6 @@
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
    "id": "inmet-28448"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo",
-   "color": "#F96602",
-   "inicio": "2026-10-09 00:00",
-   "fin": "2026-10-09 23:59",
-   "lugares": [
-    "Foz do Iguaçu"
-   ],
-   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
-   "id": "inmet-28441"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -182,20 +170,6 @@
    "id": "inmet-28454"
   },
   {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Grande Perigo",
-   "color": "#F80703",
-   "inicio": "2026-10-09 00:01",
-   "fin": "2026-10-09 23:59",
-   "lugares": [
-    "Foz do Iguaçu"
-   ],
-   "riesgos": "Chuva superior a 60 mm/h ou maior que 100 mm/dia, ventos superiores a 100 km/h, e queda de granizo. Grande risco de danos em edificações, corte de energia elétrica, estragos em plantações, queda de árvores, alagamentos e transtornos no transporte rodoviário.",
-   "id": "inmet-28456"
-  },
-  {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
    "fenomeno": "Fenómeno esperado: Lluvias intensas con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la alta probabilidad de caída de granizos.",
@@ -210,18 +184,20 @@
    "id": "dmh-vigente"
   },
   {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fuente": "GDACS (ONU y Comisión Europea)",
+   "pais": "",
+   "fenomeno": "Green flood alert in Chile",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-08 22:12",
+   "inicio": "",
    "fin": "",
    "lugares": [
-    "MISIONES: Candelaria - Obera - San Ignacio."
+    "-33.59, -70.70"
    ],
    "riesgos": "",
-   "id": "smn-3636"
+   "id": "gdacs-&amp;eventid=1104217",
+   "lat": -33.5922859,
+   "lon": -70.7045838
   }
  ],
  "no_consultadas": [
