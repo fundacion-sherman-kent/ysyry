@@ -2,227 +2,227 @@
  "estaciones": [
   {
    "estacion": "Puerto Ladario - Brasil",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "4.24m --> 18-07-2023",
    "minimo_historico": "-0.68m --> 16-10-2024",
-   "nivel": "1.20 m",
-   "variacion_24h": "1 cm"
+   "nivel": "1.17 m",
+   "variacion_24h": "-3 cm"
   },
   {
    "estacion": "Puerto Murtinho - Brasil",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "9.75m --> 26-06-1982",
    "minimo_historico": "0.53m --> 24-10-2024",
+   "nivel": "2.80 m",
+   "variacion_24h": "8 cm"
+  },
+  {
+   "estacion": "Cáceres - Brasil",
+   "fecha_lectura": "09-10-2026",
+   "maximo_historico": "5.47m --> 29-03-2023",
+   "minimo_historico": "0.26m --> 27-09-2021",
+   "nivel": "1.00 m",
+   "variacion_24h": "9 cm"
+  },
+  {
+   "estacion": "Isla Margarita",
+   "fecha_lectura": "09-10-2026",
+   "maximo_historico": "7.70m --> 12-03-2018",
+   "minimo_historico": "0.54m --> 23-10-2024",
    "nivel": "2.72 m",
    "variacion_24h": "12 cm"
   },
   {
-   "estacion": "Cáceres - Brasil",
-   "fecha_lectura": "08-10-2026",
-   "maximo_historico": "5.47m --> 29-03-2023",
-   "minimo_historico": "0.26m --> 27-09-2021",
-   "nivel": "0.91 m",
-   "variacion_24h": "-5 cm"
-  },
-  {
-   "estacion": "Isla Margarita",
-   "fecha_lectura": "08-10-2026",
-   "maximo_historico": "7.70m --> 12-03-2018",
-   "minimo_historico": "0.54m --> 23-10-2024",
-   "nivel": "2.60 m",
-   "variacion_24h": "18 cm"
-  },
-  {
    "estacion": "Fuerte Olimpo",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "9.60m --> 09-06-1988",
    "minimo_historico": "-1.58m --> 26-10-1971",
-   "nivel": "3.07 m",
+   "nivel": "3.11 m",
    "variacion_24h": "4 cm"
   },
   {
    "estacion": "Bahía Negra",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "6.95m --> 13-06-1982",
    "minimo_historico": "-1.32m --> 26-09-1971",
-   "nivel": "2.85 m",
-   "variacion_24h": "4 cm"
+   "nivel": "2.87 m",
+   "variacion_24h": "2 cm"
   },
   {
    "estacion": "Vallemi",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "8.56m --> 24-06-1982",
    "minimo_historico": "0.42m --> 24-09-1971",
-   "nivel": "2.76 m",
-   "variacion_24h": "10 cm"
-  },
-  {
-   "estacion": "Concepción",
-   "fecha_lectura": "08-10-2026",
-   "maximo_historico": "8.66m --> 20-05-1992",
-   "minimo_historico": "0.34m --> 07-01-1968",
-   "nivel": "1.97 m",
-   "variacion_24h": "13 cm"
-  },
-  {
-   "estacion": "Rosario",
-   "fecha_lectura": "08-10-2026",
-   "maximo_historico": "8.03m --> 03-06-1983",
-   "minimo_historico": "-0.62m --> 30-10-2024",
-   "nivel": "1.41 m",
-   "variacion_24h": "10 cm"
-  },
-  {
-   "estacion": "Puerto Antequera",
-   "fecha_lectura": "08-10-2026",
-   "maximo_historico": "6.02m --> 17-03-2023",
-   "minimo_historico": "-0.49m --> 31-10-2024",
-   "nivel": "1.57 m",
-   "variacion_24h": "6 cm"
-  },
-  {
-   "estacion": "Villeta",
-   "fecha_lectura": "08-10-2026",
-   "maximo_historico": "8.94m --> 30-05-1983",
-   "minimo_historico": "-1.21m --> 01-11-2024",
-   "nivel": "1.17 m",
-   "variacion_24h": "8 cm"
-  },
-  {
-   "estacion": "Asunción",
-   "fecha_lectura": "08-10-2026",
-   "maximo_historico": "9.01m --> 29-05-1983",
-   "minimo_historico": "-1.61m --> 02-11-2024",
-   "nivel": "0.81 m",
-   "variacion_24h": "8 cm"
-  },
-  {
-   "estacion": "Ita Enramada",
-   "fecha_lectura": "08-10-2026",
-   "maximo_historico": "5.80m --> 26-03-2023",
-   "minimo_historico": "-1.04m --> 01-11-2024",
-   "nivel": "1.27 m",
-   "variacion_24h": "7 cm"
-  },
-  {
-   "estacion": "Humaitá",
-   "fecha_lectura": "08-10-2026",
-   "maximo_historico": "7.74m --> 07-06-2019",
-   "minimo_historico": "-0.25m --> 02-10-2021",
-   "nivel": "3.60 m",
-   "variacion_24h": "14 cm"
-  },
-  {
-   "estacion": "Alberdi",
-   "fecha_lectura": "08-10-2026",
-   "maximo_historico": "10.14m --> 10-06-1992",
-   "minimo_historico": "-0.77m --> 08-11-2024",
-   "nivel": "2.60 m",
-   "variacion_24h": "6 cm"
-  },
-  {
-   "estacion": "Pilar",
-   "fecha_lectura": "08-10-2026",
-   "maximo_historico": "10.05m --> 29-05-1983",
-   "minimo_historico": "-0.49m --> 06-10-1944",
-   "nivel": "3.44 m",
+   "nivel": "2.87 m",
    "variacion_24h": "11 cm"
   },
   {
+   "estacion": "Concepción",
+   "fecha_lectura": "09-10-2026",
+   "maximo_historico": "8.66m --> 20-05-1992",
+   "minimo_historico": "0.34m --> 07-01-1968",
+   "nivel": "2.14 m",
+   "variacion_24h": "17 cm"
+  },
+  {
+   "estacion": "Rosario",
+   "fecha_lectura": "09-10-2026",
+   "maximo_historico": "8.03m --> 03-06-1983",
+   "minimo_historico": "-0.62m --> 30-10-2024",
+   "nivel": "1.45 m",
+   "variacion_24h": "4 cm"
+  },
+  {
+   "estacion": "Puerto Antequera",
+   "fecha_lectura": "09-10-2026",
+   "maximo_historico": "6.02m --> 17-03-2023",
+   "minimo_historico": "-0.49m --> 31-10-2024",
+   "nivel": "1.62 m",
+   "variacion_24h": "5 cm"
+  },
+  {
+   "estacion": "Villeta",
+   "fecha_lectura": "09-10-2026",
+   "maximo_historico": "8.94m --> 30-05-1983",
+   "minimo_historico": "-1.21m --> 01-11-2024",
+   "nivel": "1.31 m",
+   "variacion_24h": "14 cm"
+  },
+  {
+   "estacion": "Asunción",
+   "fecha_lectura": "09-10-2026",
+   "maximo_historico": "9.01m --> 29-05-1983",
+   "minimo_historico": "-1.61m --> 02-11-2024",
+   "nivel": "0.94 m",
+   "variacion_24h": "13 cm"
+  },
+  {
+   "estacion": "Ita Enramada",
+   "fecha_lectura": "09-10-2026",
+   "maximo_historico": "5.80m --> 26-03-2023",
+   "minimo_historico": "-1.04m --> 01-11-2024",
+   "nivel": "1.42 m",
+   "variacion_24h": "15 cm"
+  },
+  {
+   "estacion": "Humaitá",
+   "fecha_lectura": "09-10-2026",
+   "maximo_historico": "7.74m --> 07-06-2019",
+   "minimo_historico": "-0.25m --> 02-10-2021",
+   "nivel": "3.75 m",
+   "variacion_24h": "15 cm"
+  },
+  {
+   "estacion": "Alberdi",
+   "fecha_lectura": "09-10-2026",
+   "maximo_historico": "10.14m --> 10-06-1992",
+   "minimo_historico": "-0.77m --> 08-11-2024",
+   "nivel": "2.64 m",
+   "variacion_24h": "4 cm"
+  },
+  {
+   "estacion": "Pilar",
+   "fecha_lectura": "09-10-2026",
+   "maximo_historico": "10.05m --> 29-05-1983",
+   "minimo_historico": "-0.49m --> 06-10-1944",
+   "nivel": "3.58 m",
+   "variacion_24h": "14 cm"
+  },
+  {
    "estacion": "Puerto Tigre",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "7.81m --> 29-11-2023",
    "minimo_historico": "2.01m --> 09-04-2026",
-   "nivel": "6.83 m",
-   "variacion_24h": "-5 cm"
+   "nivel": "6.88 m",
+   "variacion_24h": "5 cm"
   },
   {
    "estacion": "Salto del Guairá",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "10.03m --> 09-05-2026",
    "minimo_historico": "3.16m --> 13-12-2020",
-   "nivel": "6.94 m",
-   "variacion_24h": "-1 cm"
+   "nivel": "7.12 m",
+   "variacion_24h": "18 cm"
   },
   {
    "estacion": "Ciudad del Este",
-   "fecha_lectura": "07-10-2026",
+   "fecha_lectura": "08-10-2026",
    "maximo_historico": "30.40m --> 31-10-2023",
    "minimo_historico": "2.71m --> 05-07-2021",
-   "nivel": "20.42 m",
-   "variacion_24h": "34 cm"
+   "nivel": "20.84 m",
+   "variacion_24h": "42 cm"
   },
   {
    "estacion": "Cerrito",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "6.70m --> 08-11-2023",
    "minimo_historico": "-0.40m --> 29-12-2021",
-   "nivel": "3.80 m",
+   "nivel": "4.00 m",
    "variacion_24h": "20 cm"
   },
   {
    "estacion": "Ita Pirú",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "9.94m --> 08-05-2021",
    "minimo_historico": "0.02m --> 04-02-2022",
-   "nivel": "5.95 m",
-   "variacion_24h": "8 cm"
+   "nivel": "6.08 m",
+   "variacion_24h": "13 cm"
   },
   {
    "estacion": "Paso de Patria",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "9.83m --> 20-09-2025",
    "minimo_historico": "0.01m --> 13-01-2022",
-   "nivel": "4.85 m",
+   "nivel": "4.95 m",
    "variacion_24h": "10 cm"
   },
   {
    "estacion": "Ayolas",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "6.65m --> 07-02-1997",
    "minimo_historico": "0.00m --> 13-09-2007",
-   "nivel": "4.18 m",
-   "variacion_24h": "18 cm"
+   "nivel": "4.34 m",
+   "variacion_24h": "16 cm"
   },
   {
    "estacion": "Panchito López",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "7.04m --> 07-11-2023",
    "minimo_historico": "0.10m --> 23-10-2020",
-   "nivel": "4.39 m",
-   "variacion_24h": "19 cm"
+   "nivel": "4.60 m",
+   "variacion_24h": "21 cm"
   },
   {
    "estacion": "Coratei",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "6.35m --> 07-11-2023",
    "minimo_historico": "-0.29m --> 22-02-2022",
-   "nivel": "3.99 m",
-   "variacion_24h": "14 cm"
+   "nivel": "4.01 m",
+   "variacion_24h": "2 cm"
   },
   {
    "estacion": "Ita Corá",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "8.21m --> 09-11-2023",
    "minimo_historico": "0.60m --> 24-05-2021",
-   "nivel": "5.30 m",
-   "variacion_24h": "10 cm"
+   "nivel": "5.60 m",
+   "variacion_24h": "30 cm"
   },
   {
    "estacion": "San Cosme y San Damían",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "10.35m --> 09-11-2023",
    "minimo_historico": "0.75m --> 28-03-2025",
-   "nivel": "9.84 m",
-   "variacion_24h": "-10 cm"
+   "nivel": "9.71 m",
+   "variacion_24h": "-13 cm"
   },
   {
    "estacion": "Encarnación",
-   "fecha_lectura": "07-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "12.00m --> 31-12-2023",
    "minimo_historico": "3.10m --> 11-04-2026",
-   "nivel": "10.11 m",
-   "variacion_24h": "-1 cm"
+   "nivel": "9.95 m",
+   "variacion_24h": "-6 cm"
   },
   {
    "estacion": "Pozo Hondo",
@@ -242,7 +242,7 @@
   },
   {
    "estacion": "Estación Arirai",
-   "fecha_lectura": "08-10-2026",
+   "fecha_lectura": "09-10-2026",
    "maximo_historico": "6.78m --> 29-07-2023",
    "minimo_historico": "2.06m --> 09-10-2024",
    "nivel": "3.54 m",
@@ -254,5 +254,5 @@
   "nota": "Actualizado a diario por el organismo, no en vivo",
   "url": "https://www.meteorologia.gov.py/nivel-rio/indexconvencional.php"
  },
- "obtenido": "2026-10-09T10:14:34Z"
+ "obtenido": "2026-10-09T20:02:07Z"
 }
