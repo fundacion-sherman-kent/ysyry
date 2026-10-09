@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-08T18:55:34Z",
+ "obtenido": "2026-10-09T01:16:43Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,12 +14,12 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   }
  ],
  "avisos": [
@@ -198,7 +198,7 @@
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias intensas con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la probabilidad de caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Lluvias intensas con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la alta probabilidad de caída de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -210,20 +210,18 @@
    "id": "dmh-vigente"
   },
   {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
-   "fenomeno": "Green forest fire notification in Paraguay",
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "",
+   "inicio": "2026-10-08 22:12",
    "fin": "",
    "lugares": [
-    "-20.28, -58.38"
+    "MISIONES: Candelaria - Obera - San Ignacio."
    ],
    "riesgos": "",
-   "id": "gdacs-&amp;eventid=1032446",
-   "lat": -20.281865960577115,
-   "lon": -58.37921050357727
+   "id": "smn-3636"
   }
  ],
  "no_consultadas": [
