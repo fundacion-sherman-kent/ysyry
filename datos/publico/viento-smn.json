@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-10T09:41:46Z",
+ "obtenido": "2026-10-10T17:16:39Z",
  "fuente": {
   "nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente",
   "url": "https://www.smn.gob.ar/",
@@ -9,42 +9,42 @@
   {
    "nombre": "La Plata",
    "fecha": "10-octubre-2026",
-   "hora": "05:00",
+   "hora": "14:00",
    "direccion": "Sur",
-   "kmh": 9,
-   "estado": "Cubierto con lluvia"
+   "kmh": 20,
+   "estado": "Cubierto con llovizna"
   },
   {
    "nombre": "Punta Indio B.A.",
-   "fecha": "09-octubre-2026",
-   "hora": "21:00",
-   "direccion": "Sudeste",
-   "kmh": 24,
-   "estado": "Cubierto con llovizna"
+   "fecha": "10-octubre-2026",
+   "hora": "13:00",
+   "direccion": "Sur",
+   "kmh": 20,
+   "estado": "Cubierto"
   },
   {
    "nombre": "San Fernando",
    "fecha": "10-octubre-2026",
-   "hora": "05:00",
+   "hora": "14:00",
    "direccion": "Sudoeste",
-   "kmh": 14,
-   "estado": "Cubierto con lluvia"
+   "kmh": 11,
+   "estado": "Cubierto"
   },
   {
    "nombre": "Aeroparque Buenos Aires",
    "fecha": "10-octubre-2026",
-   "hora": "06:00",
+   "hora": "14:00",
    "direccion": "Sur",
-   "kmh": 11,
-   "estado": "Cubierto con llovizna"
+   "kmh": 5,
+   "estado": "Cubierto"
   },
   {
    "nombre": "Buenos Aires",
    "fecha": "10-octubre-2026",
-   "hora": "06:00",
+   "hora": "14:00",
    "direccion": "Sur",
    "kmh": 9,
-   "estado": "Cubierto con llovizna en la hora anterior"
+   "estado": "Cubierto"
   }
  ]
 }
