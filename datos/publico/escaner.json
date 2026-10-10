@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-09T18:19:24Z",
+ "obtenido": "2026-10-10T00:44:28Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 34,
+   "items": 39,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 83,
+   "items": 93,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 327,
+   "items": 343,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -269,6 +269,40 @@
     }
    ],
    "id": "0a15d509f9",
+   "verificado": true
+  },
+  {
+   "titulo": "Itaipú reubicó a 23 familias en CDE ante crecida del río Paraná y cota se estabilizó",
+   "url": "http://www.lanacion.com.py/pais/2026/10/09/itaipu-reubico-a-23-familias-en-cde-ante-crecida-del-rio-parana-y-cota-se-estabilizo/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-09",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este",
+    "Itaipú"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/09/itaipu-reubico-a-23-familias-en-cde-ante-crecida-del-rio-parana-y-cota-se-estabilizo/"
+    }
+   ],
+   "id": "bd0324c575",
    "verificado": true
   },
   {
@@ -681,6 +715,15 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Itaipú libera más agua: compuertas del vertedero seguirán abiertas hasta la próxima semana",
+   "url": "https://www.abc.com.py/economia/2026/10/09/itaipu-libera-mas-agua-compuertas-del-vertedero-seguiran-abiertas-hasta-la-proxima-semana/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-09",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
   {
    "titulo": "Detienen a un hombre que habría amenazado matar a su pareja y quemar su vivienda",
    "url": "http://www.lanacion.com.py/pais/2026/10/09/detienen-a-un-hombre-que-habria-amenazado-matar-a-su-pareja-y-quemar-su-vivienda/",
