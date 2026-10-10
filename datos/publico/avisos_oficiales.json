@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-10T17:23:18Z",
+ "obtenido": "2026-10-10T21:52:16Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -172,7 +172,7 @@
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y ocasional caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
