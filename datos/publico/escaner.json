@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-10T00:44:28Z",
+ "obtenido": "2026-10-10T09:44:18Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 39,
+   "items": 42,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 3,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -47,7 +47,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 343,
+   "items": 331,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +197,34 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Evacuaron a seis familias en Concordia y alertaron por una nueva crecida crítica del río Uruguay",
+   "url": "https://www.infobae.com/sociedad/2026/10/10/evacuaron-a-seis-familias-en-concordia-y-alertaron-por-una-nueva-crecida-critica-del-rio-uruguay/",
+   "dominio": "infobae.com",
+   "clase": "prensa",
+   "fecha": "2026-10-10",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "infobae.com",
+     "clase": "prensa",
+     "url": "https://www.infobae.com/sociedad/2026/10/10/evacuaron-a-seis-familias-en-concordia-y-alertaron-por-una-nueva-crecida-critica-del-rio-uruguay/"
+    }
+   ],
+   "id": "e071edb515",
+   "verificado": true
+  },
   {
    "titulo": "SENAD INTERVINO PUNTO DE DISTRIBUCIÓN DE DROGAS Y DESARMADERO DE MOTOCICLETAS EN TRINIDAD",
    "url": "https://senad.gov.py/senad-intervino-punto-de-distribucion-de-drogas-y-desarmadero-de-motocicletas-en-trinidad/",
@@ -716,13 +744,11 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Itaipú libera más agua: compuertas del vertedero seguirán abiertas hasta la próxima semana",
-   "url": "https://www.abc.com.py/economia/2026/10/09/itaipu-libera-mas-agua-compuertas-del-vertedero-seguiran-abiertas-hasta-la-proxima-semana/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-09",
-   "lugares": [
-    "Itaipú"
-   ]
+   "titulo": "Puerto Casado: su historia y las nuevas oportunidades a orillas del río Paraguay",
+   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/10/10/puerto-casado-su-historia-y-las-nuevas-oportunidades-a-orillas-del-rio-paraguay/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-10",
+   "lugares": []
   },
   {
    "titulo": "Detienen a un hombre que habría amenazado matar a su pareja y quemar su vivienda",
@@ -753,6 +779,22 @@
    ]
   },
   {
+   "titulo": "Conozcan a Characidium mariposita, una nueva especie de pez descubierta en el río Uruguay",
+   "url": "https://ladiaria.com.uy/ciencia/articulo/2026/10/conozcan-a-characidium-mariposita-una-nueva-especie-de-pez-descubierta-en-el-rio-uruguay/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-09",
+   "lugares": []
+  },
+  {
+   "titulo": "Itaipú libera más agua: compuertas del vertedero seguirán abiertas hasta la próxima semana",
+   "url": "https://www.abc.com.py/economia/2026/10/09/itaipu-libera-mas-agua-compuertas-del-vertedero-seguiran-abiertas-hasta-la-proxima-semana/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-09",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Avanza la restauración de la Catedral San Blas de Ciudad del Este",
    "url": "http://www.lanacion.com.py/pais/2026/10/09/avanza-la-restauracion-de-la-catedral-san-blas-de-ciudad-del-este/",
    "dominio": "lanacion.com.py",
@@ -770,13 +812,6 @@
    "lugares": [
     "Itaipú"
    ]
-  },
-  {
-   "titulo": "Conozcan a Characidium mariposita, una nueva especie de pez descubierta en el río Uruguay",
-   "url": "https://ladiaria.com.uy/ciencia/articulo/2026/10/conozcan-a-characidium-mariposita-una-nueva-especie-de-pez-descubierta-en-el-rio-uruguay/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-09",
-   "lugares": []
   },
   {
    "titulo": "De 1961: el bodegón donde comían los obreros del puerto y hoy es un ícono de Rosario",
