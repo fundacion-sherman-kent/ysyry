@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-10T17:19:05Z",
+ "obtenido": "2026-10-10T21:35:47Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 44,
+   "items": 42,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -47,7 +47,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,8 +62,8 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
-   "candidatos": 0,
+   "items": 92,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 331,
+   "items": 336,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -198,6 +198,50 @@
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
   {
+   "titulo": "Una organización criminal ya perdió 13 toneladas de droga por operativos en lo que va del año",
+   "url": "https://www.lanacion.com.ar/seguridad/una-organizacion-criminal-ya-perdio-13-toneladas-de-droga-por-operativos-en-lo-que-va-del-ano-nid08102026/",
+   "dominio": "lanacion.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-10-10",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Santa Fe"
+   ],
+   "ubicacion": [
+    -31.63,
+    -60.7
+   ],
+   "zona": "z3",
+   "cantidad": {
+    "valor": 13.0,
+    "unidad": "toneladas"
+   },
+   "puntaje": 9,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.ar",
+     "clase": "prensa",
+     "url": "https://www.lanacion.com.ar/seguridad/una-organizacion-criminal-ya-perdio-13-toneladas-de-droga-por-operativos-en-lo-que-va-del-ano-nid08102026/"
+    }
+   ],
+   "id": "9bc29db810",
+   "verificado": true
+  },
+  {
    "titulo": "Creciente del río Paraná obliga a evacuar a familias en Ayolas",
    "url": "https://www.abc.com.py/economia/2026/10/10/creciente-del-rio-parana-obliga-a-evacuar-a-familias-en-ayolas/",
    "dominio": "abc.com.py",
@@ -228,6 +272,39 @@
     }
    ],
    "id": "aafbc82339",
+   "verificado": true
+  },
+  {
+   "titulo": "¿Quién es el ‘Loco Joe’, el sanguinario criminal que usaba el DNI de un peruano asesinado? Cayó en Argentina y operaba desde Brasil",
+   "url": "https://www.infobae.com/peru/2026/10/10/quien-es-el-loco-joe-el-sanguinario-criminal-que-usaba-el-dni-de-un-peruano-asesinado-cayo-en-argentina-y-operaba-desde-brasil/",
+   "dominio": "infobae.com",
+   "clase": "prensa",
+   "fecha": "2026-10-10",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Puerto Iguazú"
+   ],
+   "ubicacion": [
+    -25.6,
+    -54.57
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 4,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "infobae.com",
+     "clase": "prensa",
+     "url": "https://www.infobae.com/peru/2026/10/10/quien-es-el-loco-joe-el-sanguinario-criminal-que-usaba-el-dni-de-un-peruano-asesinado-cayo-en-argentina-y-operaba-desde-brasil/"
+    }
+   ],
+   "id": "a6f03ce123",
    "verificado": true
   },
   {
@@ -865,21 +942,21 @@
    ]
   },
   {
-   "titulo": "Video: amenaza de bomba en Fiscalía de Asunción movilizó a la Policía",
-   "url": "https://www.abc.com.py/policiales/2026/10/08/video-amenaza-de-bomba-en-fiscalia-de-asuncion-movilizo-a-la-policia/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-08",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
    "titulo": "DESMANTELAN CENTRO DE PRODUCCIÓN CON VARIOS SECTORES DE PROCESAMIENTO EN CERRO CORÁ",
    "url": "https://senad.gov.py/desmantelan-centro-de-produccion-con-varios-sectores-de-procesamiento-en-cerro-cora/",
    "dominio": "senad.gov.py",
    "fecha": "2026-10-08",
    "lugares": [
     "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "Video: amenaza de bomba en Fiscalía de Asunción movilizó a la Policía",
+   "url": "https://www.abc.com.py/policiales/2026/10/08/video-amenaza-de-bomba-en-fiscalia-de-asuncion-movilizo-a-la-policia/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-08",
+   "lugares": [
+    "Asunción"
    ]
   },
   {
