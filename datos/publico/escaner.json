@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-10T09:44:18Z",
+ "obtenido": "2026-10-10T17:19:05Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 42,
+   "items": 44,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -47,7 +47,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
+   "items": 90,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +197,39 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Creciente del río Paraná obliga a evacuar a familias en Ayolas",
+   "url": "https://www.abc.com.py/economia/2026/10/10/creciente-del-rio-parana-obliga-a-evacuar-a-familias-en-ayolas/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-10",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ayolas"
+   ],
+   "ubicacion": [
+    -27.39,
+    -56.84
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/economia/2026/10/10/creciente-del-rio-parana-obliga-a-evacuar-a-familias-en-ayolas/"
+    }
+   ],
+   "id": "aafbc82339",
+   "verificado": true
+  },
   {
    "titulo": "Evacuaron a seis familias en Concordia y alertaron por una nueva crecida crítica del río Uruguay",
    "url": "https://www.infobae.com/sociedad/2026/10/10/evacuaron-a-seis-familias-en-concordia-y-alertaron-por-una-nueva-crecida-critica-del-rio-uruguay/",
@@ -744,10 +777,26 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Corte ordena auditoría de gestión judicial tras feminicidio de Deisy Paola Giménez",
+   "url": "http://www.lanacion.com.py/pais/2026/10/10/corte-ordena-auditoria-de-gestion-judicial-tras-feminicidio-de-deisy-paola-gimenez/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-10",
+   "lugares": [
+    "Villeta"
+   ]
+  },
+  {
    "titulo": "Puerto Casado: su historia y las nuevas oportunidades a orillas del río Paraguay",
    "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/10/10/puerto-casado-su-historia-y-las-nuevas-oportunidades-a-orillas-del-rio-paraguay/",
    "dominio": "lanacion.com.py",
    "fecha": "2026-10-10",
+   "lugares": []
+  },
+  {
+   "titulo": "Conozcan a Characidium mariposita, una nueva especie de pez descubierta en el río Uruguay",
+   "url": "https://ladiaria.com.uy/ciencia/articulo/2026/10/conozcan-a-characidium-mariposita-una-nueva-especie-de-pez-descubierta-en-el-rio-uruguay/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-09",
    "lugares": []
   },
   {
@@ -777,13 +826,6 @@
    "lugares": [
     "Alto Paraná"
    ]
-  },
-  {
-   "titulo": "Conozcan a Characidium mariposita, una nueva especie de pez descubierta en el río Uruguay",
-   "url": "https://ladiaria.com.uy/ciencia/articulo/2026/10/conozcan-a-characidium-mariposita-una-nueva-especie-de-pez-descubierta-en-el-rio-uruguay/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-09",
-   "lugares": []
   },
   {
    "titulo": "Itaipú libera más agua: compuertas del vertedero seguirán abiertas hasta la próxima semana",
@@ -832,21 +874,21 @@
    ]
   },
   {
-   "titulo": "Policía realiza incursión en barrios de Asunción para localizar a personas requeridas por la Justicia",
-   "url": "https://www.npy.com.py/noticias/nacionales/policia-realiza-incursion-en-barrios-de-asuncion-para-localizar-a-personas-requeridas-por-la-justicia",
-   "dominio": "npy.com.py",
-   "fecha": "2026-10-08",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
    "titulo": "DESMANTELAN CENTRO DE PRODUCCIÓN CON VARIOS SECTORES DE PROCESAMIENTO EN CERRO CORÁ",
    "url": "https://senad.gov.py/desmantelan-centro-de-produccion-con-varios-sectores-de-procesamiento-en-cerro-cora/",
    "dominio": "senad.gov.py",
    "fecha": "2026-10-08",
    "lugares": [
     "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "Policía realiza incursión en barrios de Asunción para localizar a personas requeridas por la Justicia",
+   "url": "https://www.npy.com.py/noticias/nacionales/policia-realiza-incursion-en-barrios-de-asuncion-para-localizar-a-personas-requeridas-por-la-justicia",
+   "dominio": "npy.com.py",
+   "fecha": "2026-10-08",
+   "lugares": [
+    "Asunción"
    ]
   },
   {
