@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-11T12:41:23Z",
+ "obtenido": "2026-10-11T19:29:59Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 40,
+   "items": 34,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,8 +62,8 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 94,
-   "candidatos": 0,
+   "items": 97,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 343,
+   "items": 348,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -228,6 +228,39 @@
     }
    ],
    "id": "ed101d3828",
+   "verificado": true
+  },
+  {
+   "titulo": "Crecida del río Uruguay: evacuaron familias en Concordia y hay alerta en Corrientes y Entre Ríos por El Niño",
+   "url": "https://www.lanacion.com.ar/sociedad/crecida-del-rio-uruguay-evacuaron-familias-en-concordia-y-hay-alerta-en-corrientes-y-entre-rios-por-nid11102026/",
+   "dominio": "lanacion.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-10-11",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.ar",
+     "clase": "prensa",
+     "url": "https://www.lanacion.com.ar/sociedad/crecida-del-rio-uruguay-evacuaron-familias-en-concordia-y-hay-alerta-en-corrientes-y-entre-rios-por-nid11102026/"
+    }
+   ],
+   "id": "42d628b608",
    "verificado": true
   },
   {
@@ -886,6 +919,22 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Desborde del río Uruguay por fenómeno de El Niño obliga a evacuaciones en Argentina",
+   "url": "https://www.abc.com.py/internacionales/2026/10/11/desborde-del-rio-uruguay-por-fenomeno-de-el-nino-obliga-a-evacuaciones-en-argentina/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-11",
+   "lugares": []
+  },
+  {
+   "titulo": "Río Paraná superaría la cota de inundabilidad en Ayolas",
+   "url": "https://www.abc.com.py/economia/2026/10/11/rio-parana-superaria-la-cota-de-inundabilidad-en-ayolas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-11",
+   "lugares": [
+    "Ayolas"
+   ]
+  },
   {
    "titulo": "El Puerto de Asunción recupera protagonismo",
    "url": "http://www.lanacion.com.py/foco/2026/10/11/el-puerto-de-asuncion-recupera-protagonismo/",
