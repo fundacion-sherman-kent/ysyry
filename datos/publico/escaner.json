@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-10T21:35:47Z",
+ "obtenido": "2026-10-11T05:38:35Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 42,
+   "items": 45,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -47,7 +47,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 94,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 336,
+   "items": 343,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -853,6 +853,15 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Paraguay usó 37% de Itaipú",
+   "url": "https://www.abc.com.py/edicion-impresa/suplementos/economico/2026/10/11/paraguay-uso-37-de-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-11",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
   {
    "titulo": "Corte ordena auditoría de gestión judicial tras feminicidio de Deisy Paola Giménez",
    "url": "http://www.lanacion.com.py/pais/2026/10/10/corte-ordena-auditoria-de-gestion-judicial-tras-feminicidio-de-deisy-paola-gimenez/",
