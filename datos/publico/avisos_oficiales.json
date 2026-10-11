@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-11T06:00:40Z",
+ "obtenido": "2026-10-11T13:06:10Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -19,7 +19,7 @@
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 3
   }
  ],
  "avisos": [
@@ -162,6 +162,22 @@
    ],
    "riesgos": "",
    "id": "dmh-vigente"
+  },
+  {
+   "fuente": "GDACS (ONU y Comisión Europea)",
+   "pais": "",
+   "fenomeno": "Green flood alert in Paraguay",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "-25.50, -54.83"
+   ],
+   "riesgos": "",
+   "id": "gdacs-&amp;eventid=1104222",
+   "lat": -25.5,
+   "lon": -54.833333
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
