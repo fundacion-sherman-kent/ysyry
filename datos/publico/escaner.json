@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-11T05:38:35Z",
+ "obtenido": "2026-10-11T12:41:23Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 45,
+   "items": 40,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -55,7 +55,7 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -63,7 +63,7 @@
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
    "items": 94,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -197,6 +197,39 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Avanza la crecida del río Uruguay en Entre Ríos y Corrientes y provoca evacuaciones preventivas",
+   "url": "https://www.perfil.com/noticias/sociedad/avanza-la-crecida-del-rio-uruguay-en-entre-rios-y-corrientes-y-provoca-evacuaciones-preventivas.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-11",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/sociedad/avanza-la-crecida-del-rio-uruguay-en-entre-rios-y-corrientes-y-provoca-evacuaciones-preventivas.phtml"
+    }
+   ],
+   "id": "ed101d3828",
+   "verificado": true
+  },
   {
    "titulo": "Una organización criminal ya perdió 13 toneladas de droga por operativos en lo que va del año",
    "url": "https://www.lanacion.com.ar/seguridad/una-organizacion-criminal-ya-perdio-13-toneladas-de-droga-por-operativos-en-lo-que-va-del-ano-nid08102026/",
@@ -853,6 +886,15 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "El Puerto de Asunción recupera protagonismo",
+   "url": "http://www.lanacion.com.py/foco/2026/10/11/el-puerto-de-asuncion-recupera-protagonismo/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-11",
+   "lugares": [
+    "Asunción"
+   ]
+  },
   {
    "titulo": "Paraguay usó 37% de Itaipú",
    "url": "https://www.abc.com.py/edicion-impresa/suplementos/economico/2026/10/11/paraguay-uso-37-de-itaipu/",
