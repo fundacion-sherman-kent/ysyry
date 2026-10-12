@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-12T00:29:10Z",
+ "obtenido": "2026-10-12T10:39:32Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 28,
+   "items": 26,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -47,7 +47,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -63,7 +63,7 @@
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
    "items": 97,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 365,
+   "items": 286,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -952,6 +952,20 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Puerto Casado: historia taninera y el reto de conectar con la Bioceánica",
+   "url": "http://www.lanacion.com.py/negocios/2026/10/12/puerto-casado-historia-taninera-y-el-reto-de-conectar-con-la-bioceanica/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-12",
+   "lugares": []
+  },
+  {
+   "titulo": "El río Uruguay crece, deja decenas de evacuados en el Litoral y El Niño enciende las alarmas por nuevas lluvias",
+   "url": "https://www.perfil.com/noticias/ciencia/el-rio-uruguay-crece-deja-decenas-de-evacuados-en-el-litoral-y-el-nino-enciende-las-alarmas-por-nuevas-lluvias-a50.phtml",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-11",
+   "lugares": []
+  },
   {
    "titulo": "Desborde del río Uruguay por fenómeno de El Niño obliga a evacuaciones en Argentina",
    "url": "https://www.abc.com.py/internacionales/2026/10/11/desborde-del-rio-uruguay-por-fenomeno-de-el-nino-obliga-a-evacuaciones-en-argentina/",
