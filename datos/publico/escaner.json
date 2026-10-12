@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-11T19:29:59Z",
+ "obtenido": "2026-10-12T00:29:10Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 34,
+   "items": 28,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -47,7 +47,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 348,
+   "items": 365,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -261,6 +261,39 @@
     }
    ],
    "id": "42d628b608",
+   "verificado": true
+  },
+  {
+   "titulo": "Alerta por El Niño: cómo impacta el fenómeno en la crecida del río Uruguay y qué proyectan en el Paraná",
+   "url": "https://www.infobae.com/america/medio-ambiente/2026/10/11/alerta-por-el-nino-como-impacta-el-fenomeno-en-la-crecida-del-rio-uruguay-y-que-proyectan-en-el-parana/",
+   "dominio": "infobae.com",
+   "clase": "prensa",
+   "fecha": "2026-10-11",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "infobae.com",
+     "clase": "prensa",
+     "url": "https://www.infobae.com/america/medio-ambiente/2026/10/11/alerta-por-el-nino-como-impacta-el-fenomeno-en-la-crecida-del-rio-uruguay-y-que-proyectan-en-el-parana/"
+    }
+   ],
+   "id": "fccde42146",
    "verificado": true
   },
   {
@@ -927,21 +960,28 @@
    "lugares": []
   },
   {
-   "titulo": "Río Paraná superaría la cota de inundabilidad en Ayolas",
-   "url": "https://www.abc.com.py/economia/2026/10/11/rio-parana-superaria-la-cota-de-inundabilidad-en-ayolas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-11",
-   "lugares": [
-    "Ayolas"
-   ]
-  },
-  {
    "titulo": "El Puerto de Asunción recupera protagonismo",
    "url": "http://www.lanacion.com.py/foco/2026/10/11/el-puerto-de-asuncion-recupera-protagonismo/",
    "dominio": "lanacion.com.py",
    "fecha": "2026-10-11",
    "lugares": [
     "Asunción"
+   ]
+  },
+  {
+   "titulo": "Acertijo visual: ¿sos capaz de encontrar los tres mates sin bombilla?",
+   "url": "https://www.lanacion.com.ar/lifestyle/acertijo-visual-sos-capaz-de-encontrar-los-tres-mates-sin-bombilla-nid11102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-11",
+   "lugares": []
+  },
+  {
+   "titulo": "Río Paraná superaría la cota de inundabilidad en Ayolas",
+   "url": "https://www.abc.com.py/economia/2026/10/11/rio-parana-superaria-la-cota-de-inundabilidad-en-ayolas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-11",
+   "lugares": [
+    "Ayolas"
    ]
   },
   {
