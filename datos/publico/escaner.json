@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-12T10:39:32Z",
+ "obtenido": "2026-10-12T21:14:34Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 5,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 26,
+   "items": 23,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
@@ -47,7 +47,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,8 +62,8 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 97,
-   "candidatos": 0,
+   "items": 88,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 286,
+   "items": 302,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +197,324 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Represa hidroeléctrica Yacyretá abre compuerta principal ante crecida del río Paraná",
+   "url": "https://www.abc.com.py/internacionales/2026/10/12/represa-hidroelectrica-yacyreta-abre-compuerta-principal-ante-crecida-del-rio-parana/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-12",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Yacyretá"
+   ],
+   "ubicacion": [
+    -27.4,
+    -56.72
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/internacionales/2026/10/12/represa-hidroelectrica-yacyreta-abre-compuerta-principal-ante-crecida-del-rio-parana/"
+    },
+    {
+     "dominio": "infobae.com",
+     "clase": "prensa",
+     "url": "https://www.infobae.com/america/agencias/2026/10/12/represa-hidroelectrica-yacyreta-abre-compuerta-principal-ante-crecida-del-rio-parana/"
+    }
+   ],
+   "id": "a24da62d00",
+   "verificado": true
+  },
+  {
+   "titulo": "Crecida del río Paraná expulsa a familias de sus casas en Alto Paraná y Misiones",
+   "url": "https://www.abc.com.py/nacionales/2026/10/12/crecida-del-rio-parana-expulsa-a-familias-de-sus-casas-en-alto-parana-y-misiones/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-12",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Alto Paraná"
+   ],
+   "ubicacion": [
+    -25.3,
+    -54.8
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/nacionales/2026/10/12/crecida-del-rio-parana-expulsa-a-familias-de-sus-casas-en-alto-parana-y-misiones/"
+    }
+   ],
+   "id": "3f375e313c",
+   "verificado": true
+  },
+  {
+   "titulo": "Peña ordenó despliegue de fuerza operativa para asistir a familias por crecida en el Este",
+   "url": "http://www.lanacion.com.py/politica/2026/10/12/pena-ordeno-despliegue-de-fuerza-operativa-para-asistir-a-familias-por-crecida-en-el-este/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-12",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este",
+    "Itaipú"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/politica/2026/10/12/pena-ordeno-despliegue-de-fuerza-operativa-para-asistir-a-familias-por-crecida-en-el-este/"
+    }
+   ],
+   "id": "2bb9974b92",
+   "verificado": true
+  },
+  {
+   "titulo": "Itaipú alerta sobre una crecida rápida del río Paraná",
+   "url": "http://www.lanacion.com.py/pais/2026/10/12/itaipu-alerta-sobre-una-crecida-rapida-del-rio-parana/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-12",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este",
+    "Alto Paraná",
+    "Itaipú"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/12/itaipu-alerta-sobre-una-crecida-rapida-del-rio-parana/"
+    }
+   ],
+   "id": "549c55524a",
+   "verificado": true
+  },
+  {
+   "titulo": "Crecida del río Paraná: abrieron las compuertas de Yacyretá y hay evacuados en Apipé",
+   "url": "https://www.perfil.com/noticias/nea/crecida-del-rio-parana-abrieron-las-compuertas-de-yacyreta-y-hay-evacuados-en-apipe.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-12",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Yacyretá"
+   ],
+   "ubicacion": [
+    -27.4,
+    -56.72
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/nea/crecida-del-rio-parana-abrieron-las-compuertas-de-yacyreta-y-hay-evacuados-en-apipe.phtml"
+    }
+   ],
+   "id": "13210e7065",
+   "verificado": true
+  },
+  {
+   "titulo": "“Se nos viene la noche”: la crecida del río Uruguay por El Niño enciende las alarmas en los campos de Corrientes y Entre Ríos",
+   "url": "https://www.lanacion.com.ar/economia/campo/se-nos-viene-la-noche-la-crecida-del-rio-uruguay-por-el-nino-enciende-las-alarmas-en-los-campos-de-nid12102026/",
+   "dominio": "lanacion.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-10-12",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.ar",
+     "clase": "prensa",
+     "url": "https://www.lanacion.com.ar/economia/campo/se-nos-viene-la-noche-la-crecida-del-rio-uruguay-por-el-nino-enciende-las-alarmas-en-los-campos-de-nid12102026/"
+    }
+   ],
+   "id": "111c42849b",
+   "verificado": true
+  },
+  {
+   "titulo": "Crecida del río Paraná obliga a evacuar el puesto de control migratorio en Tres Fronteras",
+   "url": "https://www.abc.com.py/este/2026/10/12/crecida-del-rio-parana-obliga-a-evacuar-el-puesto-de-control-migratorio-en-tres-fronteras/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-12",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/este/2026/10/12/crecida-del-rio-parana-obliga-a-evacuar-el-puesto-de-control-migratorio-en-tres-fronteras/"
+    }
+   ],
+   "id": "bfe13969d0",
+   "verificado": true
+  },
+  {
+   "titulo": "Crecida del río Paraná: casas inundadas llegarían a 150 en el barrio San Rafael",
+   "url": "https://www.abc.com.py/este/2026/10/12/crecida-del-rio-parana-casas-inundadas-llegarian-a-150-en-el-barrio-san-rafael/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-12",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/este/2026/10/12/crecida-del-rio-parana-casas-inundadas-llegarian-a-150-en-el-barrio-san-rafael/"
+    }
+   ],
+   "id": "fdbb582302",
+   "verificado": true
+  },
+  {
+   "titulo": "Crecida dispar: Río Paraná está en alerta de inundación y el Paraguay no recupera su nivel normal",
+   "url": "https://www.abc.com.py/nacionales/2026/10/12/crecida-dispar-rio-parana-esta-en-alerta-de-inundacion-y-el-paraguay-no-recupera-su-nivel-normal/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-12",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/nacionales/2026/10/12/crecida-dispar-rio-parana-esta-en-alerta-de-inundacion-y-el-paraguay-no-recupera-su-nivel-normal/"
+    }
+   ],
+   "id": "85fdfbb9fb",
+   "verificado": true
+  },
+  {
+   "titulo": "Suspenden cruces de embarcaciones entre Paraguay y Argentina por crecida del río Paraná",
+   "url": "http://www.lanacion.com.py/pais/2026/10/12/suspenden-cruces-de-embarcaciones-entre-paraguay-y-argentina-por-crecida-del-rio-parana/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-12",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/12/suspenden-cruces-de-embarcaciones-entre-paraguay-y-argentina-por-crecida-del-rio-parana/"
+    }
+   ],
+   "id": "a0c7cabfc1",
+   "verificado": true
+  },
   {
    "titulo": "Avanza la crecida del río Uruguay en Entre Ríos y Corrientes y provoca evacuaciones preventivas",
    "url": "https://www.perfil.com/noticias/sociedad/avanza-la-crecida-del-rio-uruguay-en-entre-rios-y-corrientes-y-provoca-evacuaciones-preventivas.phtml",
@@ -952,6 +1270,75 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Lluvias cinco veces mayores a lo previsto: Yacyretá abre su vertedero y espera más caudal del Paraná",
+   "url": "https://www.abc.com.py/economia/2026/10/12/lluvias-cinco-veces-mayores-a-lo-previsto-yacyreta-abre-su-vertedero-y-espera-mas-caudal-del-parana/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-12",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Sicariato en Pedro Juan Caballero: no descartan que guarde relación con el narcotráfico",
+   "url": "https://www.abc.com.py/policiales/2026/10/12/sicariato-en-pedro-juan-caballero-no-descartan-que-guarde-relacion-con-el-narcotrafico/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-12",
+   "lugares": [
+    "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "Buscan identificar a hombre hallado con cinco impactos de bala en el río Paraná",
+   "url": "https://www.abc.com.py/este/2026/10/12/buscan-identificar-a-hombre-hallado-con-cinco-impactos-de-bala-en-el-rio-parana/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-12",
+   "lugares": []
+  },
+  {
+   "titulo": "Pdte. Franco: hallan cuerpo en el río Paraná con cinco impactos de bala en el cuerpo",
+   "url": "http://www.lanacion.com.py/pais/2026/10/12/pdte-franco-hallan-cuerpo-en-el-rio-parana-con-cinco-impactos-de-bala-en-el-cuerpo/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-12",
+   "lugares": []
+  },
+  {
+   "titulo": "Oxígeno Feria de Arte alista su 9.ª edición con 74 artistas en el Puerto",
+   "url": "http://www.lanacion.com.py/espectaculo/2026/10/12/oxigeno-feria-de-arte-alista-su-9-edicion-con-74-artistas-en-el-puerto/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-12",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Gran Rosario: viaje al principal nodo agroexportador del mundo, donde en 1813 se libró la Batalla de San Lorenzo",
+   "url": "https://www.lanacion.com.ar/economia/gran-rosario-viaje-al-principal-nodo-agroexportador-del-mundo-donde-en-1813-se-libro-la-batalla-de-nid12102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-12",
+   "lugares": [
+    "Rosario",
+    "San Lorenzo"
+   ]
+  },
+  {
+   "titulo": "Asalto a una estación de servicios deriva en persecución y balacera en Asunción",
+   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/asalto-a-una-estacion-de-servicios-deriva-en-persecucion-y-balacera-en-asuncion",
+   "dominio": "npy.com.py",
+   "fecha": "2026-10-12",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Roban 60 kilos de cabello humano valuados en Gs. 500 millones en Pedro Juan Caballero",
+   "url": "https://www.npy.com.py/noticias/nacionales/roban-60-kilos-de-cabello-humano-valuados-en-gs-500-millones-en-pedro-juan-caballero",
+   "dominio": "npy.com.py",
+   "fecha": "2026-10-12",
+   "lugares": [
+    "Pedro Juan Caballero"
+   ]
+  },
   {
    "titulo": "Puerto Casado: historia taninera y el reto de conectar con la Bioceánica",
    "url": "http://www.lanacion.com.py/negocios/2026/10/12/puerto-casado-historia-taninera-y-el-reto-de-conectar-con-la-bioceanica/",
