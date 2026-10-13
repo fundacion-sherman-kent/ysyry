@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-12T21:14:34Z",
+ "obtenido": "2026-10-13T06:42:22Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 5,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 23,
+   "items": 26,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 3,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -47,7 +47,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 1,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 88,
+   "items": 93,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 302,
+   "items": 334,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -401,6 +401,41 @@
     }
    ],
    "id": "111c42849b",
+   "verificado": true
+  },
+  {
+   "titulo": "Crecida en el NEA: el Paraná alcanzó los 5,14 metros y hay evacuados en Corrientes",
+   "url": "https://www.perfil.com/noticias/nea/crecida-en-el-nea-el-parana-alcanzo-los-514-metros-y-hay-evacuados-en-corrientes.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-12",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes",
+    "Barranqueras",
+    "Yacyretá"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/nea/crecida-en-el-nea-el-parana-alcanzo-los-514-metros-y-hay-evacuados-en-corrientes.phtml"
+    }
+   ],
+   "id": "12ff5ec0f1",
    "verificado": true
   },
   {
@@ -1271,12 +1306,21 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Lluvias cinco veces mayores a lo previsto: Yacyretá abre su vertedero y espera más caudal del Paraná",
-   "url": "https://www.abc.com.py/economia/2026/10/12/lluvias-cinco-veces-mayores-a-lo-previsto-yacyreta-abre-su-vertedero-y-espera-mas-caudal-del-parana/",
+   "titulo": "Asunción: Senad interviene en “espacio creativo” que funcionaba como foco de distribución de drogas",
+   "url": "https://www.abc.com.py/policiales/2026/10/12/asuncion-senad-interviene-en-espacio-creativo-que-funcionaba-como-foco-de-distribucion-de-drogas/",
    "dominio": "abc.com.py",
    "fecha": "2026-10-12",
    "lugares": [
-    "Yacyretá"
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Policía investiga presunto feminicidio en Katueté, Canindeyú",
+   "url": "https://www.abc.com.py/policiales/2026/10/12/policia-investiga-presunto-feminicidio-en-katuete-canindeyu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-12",
+   "lugares": [
+    "Canindeyú"
    ]
   },
   {
@@ -1294,6 +1338,33 @@
    "dominio": "abc.com.py",
    "fecha": "2026-10-12",
    "lugares": []
+  },
+  {
+   "titulo": "Asalto a una estación de servicios deriva en persecución y balacera en Asunción",
+   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/asalto-a-una-estacion-de-servicios-deriva-en-persecucion-y-balacera-en-asuncion",
+   "dominio": "npy.com.py",
+   "fecha": "2026-10-12",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Roban 60 kilos de cabello humano valuados en Gs. 500 millones en Pedro Juan Caballero",
+   "url": "https://www.npy.com.py/noticias/nacionales/roban-60-kilos-de-cabello-humano-valuados-en-gs-500-millones-en-pedro-juan-caballero",
+   "dominio": "npy.com.py",
+   "fecha": "2026-10-12",
+   "lugares": [
+    "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "Lluvias cinco veces mayores a lo previsto: Yacyretá abre su vertedero y espera más caudal del Paraná",
+   "url": "https://www.abc.com.py/economia/2026/10/12/lluvias-cinco-veces-mayores-a-lo-previsto-yacyreta-abre-su-vertedero-y-espera-mas-caudal-del-parana/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-12",
+   "lugares": [
+    "Yacyretá"
+   ]
   },
   {
    "titulo": "Pdte. Franco: hallan cuerpo en el río Paraná con cinco impactos de bala en el cuerpo",
@@ -1319,24 +1390,6 @@
    "lugares": [
     "Rosario",
     "San Lorenzo"
-   ]
-  },
-  {
-   "titulo": "Asalto a una estación de servicios deriva en persecución y balacera en Asunción",
-   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/asalto-a-una-estacion-de-servicios-deriva-en-persecucion-y-balacera-en-asuncion",
-   "dominio": "npy.com.py",
-   "fecha": "2026-10-12",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Roban 60 kilos de cabello humano valuados en Gs. 500 millones en Pedro Juan Caballero",
-   "url": "https://www.npy.com.py/noticias/nacionales/roban-60-kilos-de-cabello-humano-valuados-en-gs-500-millones-en-pedro-juan-caballero",
-   "dominio": "npy.com.py",
-   "fecha": "2026-10-12",
-   "lugares": [
-    "Pedro Juan Caballero"
    ]
   },
   {
