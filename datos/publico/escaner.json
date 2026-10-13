@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-13T06:42:22Z",
+ "obtenido": "2026-10-13T16:55:00Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 26,
+   "items": 25,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 2,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
+   "items": 89,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 334,
+   "items": 310,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -183,7 +183,7 @@
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 1,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
@@ -197,6 +197,184 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "FILTROS DE ACEITE PARA CAMIONES OCULTABAN MÁS DE 10 KILOS DE MARIHUANA «PREMIUM»",
+   "url": "https://senad.gov.py/filtros-de-aceite-para-camiones-ocultaban-mas-de-10-kilos-de-marihuana-premium/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-10-13",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Asunción"
+   ],
+   "ubicacion": [
+    -25.28,
+    -57.63
+   ],
+   "zona": "z5",
+   "cantidad": {
+    "valor": 10.0,
+    "unidad": "kilos"
+   },
+   "puntaje": 8,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/filtros-de-aceite-para-camiones-ocultaban-mas-de-10-kilos-de-marihuana-premium/"
+    }
+   ],
+   "id": "2a3c9c8616",
+   "verificado": true
+  },
+  {
+   "titulo": "“ESPACIO CREATIVO” OCULTABA UN FOCO DE DISTRIBUCIÓN Y CONSUMO DE DROGAS EN ASUNCIÓN",
+   "url": "https://senad.gov.py/espacio-creativo-ocultaba-un-foco-de-distribucion-y-consumo-de-drogas-en-asuncion/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-10-13",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Asunción"
+   ],
+   "ubicacion": [
+    -25.28,
+    -57.63
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 7,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/espacio-creativo-ocultaba-un-foco-de-distribucion-y-consumo-de-drogas-en-asuncion/"
+    }
+   ],
+   "id": "081b8a51ad",
+   "verificado": true
+  },
+  {
+   "titulo": "Inundaciones: Hernandarias declara emergencia por crecida del río Paraná",
+   "url": "http://www.lanacion.com.py/pais/2026/10/13/inundaciones-hernandarias-declara-emergencia-por-crecida-del-rio-parana/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-13",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/13/inundaciones-hernandarias-declara-emergencia-por-crecida-del-rio-parana/"
+    }
+   ],
+   "id": "95ebe53bc0",
+   "verificado": true
+  },
+  {
+   "titulo": "El Niño en Corrientes: prevén que el 45 % de la Isla Apipé quedará bajo agua",
+   "url": "https://www.perfil.com/noticias/nea/el-nino-en-corrientes-preven-que-el-45-de-la-isla-apipe-quedara-bajo-agua.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-13",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/nea/el-nino-en-corrientes-preven-que-el-45-de-la-isla-apipe-quedara-bajo-agua.phtml"
+    }
+   ],
+   "id": "dc5272a87a",
+   "verificado": true
+  },
+  {
+   "titulo": "Abrieron las compuertas de la represa de Itaipú y Yacyretá y aumenta la preocupación por el río Paraná",
+   "url": "https://www.lanacion.com.ar/sociedad/abrieron-las-compuertas-de-la-represa-de-itaipu-y-yacyreta-y-aumenta-la-preocupacion-por-el-rio-nid13102026/",
+   "dominio": "lanacion.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-10-13",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este",
+    "Itaipú",
+    "Yacyretá"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.ar",
+     "clase": "prensa",
+     "url": "https://www.lanacion.com.ar/sociedad/abrieron-las-compuertas-de-la-represa-de-itaipu-y-yacyreta-y-aumenta-la-preocupacion-por-el-rio-nid13102026/"
+    }
+   ],
+   "id": "2fcd3a9f08",
+   "verificado": true
+  },
   {
    "titulo": "Represa hidroeléctrica Yacyretá abre compuerta principal ante crecida del río Paraná",
    "url": "https://www.abc.com.py/internacionales/2026/10/12/represa-hidroelectrica-yacyreta-abre-compuerta-principal-ante-crecida-del-rio-parana/",
@@ -1305,6 +1483,42 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Caudal de Yacyreta está al 33% de su capacidad, según jefe del departamento técnico",
+   "url": "https://www.abc.com.py/economia/2026/10/13/caudal-de-yacyreta-esta-al-33-de-su-capacidad-segun-jefe-del-departamento-tecnico/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-13",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Agricultura Familiar impulsa ferias semanales en cinco ciudades",
+   "url": "http://www.lanacion.com.py/negocios/2026/10/13/agricultura-familiar-impulsa-ferias-semanales-en-cinco-ciudades/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-13",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Alto Paraná: se entrega joven acusada de matar a su expareja y alega legítima defensa",
+   "url": "http://www.lanacion.com.py/pais/2026/10/13/alto-parana-se-entrega-joven-acusada-de-matar-a-su-expareja-y-alega-legitima-defensa/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-13",
+   "lugares": [
+    "Alto Paraná"
+   ]
+  },
+  {
+   "titulo": "Hallan muerta a una mujer en Katueté y su pareja es el principal sospechoso",
+   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/hallan-muerta-a-una-mujer-en-katuete-y-su-pareja-es-el-principal-sospechoso",
+   "dominio": "npy.com.py",
+   "fecha": "2026-10-13",
+   "lugares": [
+    "Canindeyú"
+   ]
+  },
   {
    "titulo": "Asunción: Senad interviene en “espacio creativo” que funcionaba como foco de distribución de drogas",
    "url": "https://www.abc.com.py/policiales/2026/10/12/asuncion-senad-interviene-en-espacio-creativo-que-funcionaba-como-foco-de-distribucion-de-drogas/",
