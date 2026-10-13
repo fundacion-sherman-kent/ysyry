@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-13T16:55:00Z",
+ "obtenido": "2026-10-13T22:39:21Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 25,
+   "items": 24,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 4,
    "fallos_seguidos": 0
   },
   {
@@ -55,15 +55,15 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 89,
-   "candidatos": 1,
+   "items": 86,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 310,
+   "items": 327,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -373,6 +373,90 @@
     }
    ],
    "id": "2fcd3a9f08",
+   "verificado": true
+  },
+  {
+   "titulo": "La crecida del río Paraná ya afecta a más de 120 familias en San Cosme y Damián",
+   "url": "http://www.lanacion.com.py/pais/2026/10/13/la-crecida-del-rio-parana-ya-afecta-a-mas-de-120-familias-en-san-cosme-y-damian/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-13",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/13/la-crecida-del-rio-parana-ya-afecta-a-mas-de-120-familias-en-san-cosme-y-damian/"
+    }
+   ],
+   "id": "89e1f70aed",
+   "verificado": true
+  },
+  {
+   "titulo": "Suman 14 los puestos fluviales inhabilitados como medida de contingencia por crecida del Paraná",
+   "url": "http://www.lanacion.com.py/pais/2026/10/13/suman-14-los-puestos-fluviales-inhabilitados-como-medida-de-contingencia-por-crecida-del-parana/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-13",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/13/suman-14-los-puestos-fluviales-inhabilitados-como-medida-de-contingencia-por-crecida-del-parana/"
+    }
+   ],
+   "id": "e4155ea8a3",
+   "verificado": true
+  },
+  {
+   "titulo": "Colonia Ápe Aime quedó totalmente bajo agua tras el temporal en San Rafael del Paraná",
+   "url": "http://www.lanacion.com.py/pais/2026/10/13/colonia-ape-aime-quedo-totalmente-bajo-agua-tras-el-temporal-en-san-rafael-del-parana/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-13",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/13/colonia-ape-aime-quedo-totalmente-bajo-agua-tras-el-temporal-en-san-rafael-del-parana/"
+    }
+   ],
+   "id": "c0fbb45798",
    "verificado": true
   },
   {
@@ -1484,12 +1568,19 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Caudal de Yacyreta está al 33% de su capacidad, según jefe del departamento técnico",
-   "url": "https://www.abc.com.py/economia/2026/10/13/caudal-de-yacyreta-esta-al-33-de-su-capacidad-segun-jefe-del-departamento-tecnico/",
+   "titulo": "CDE: El río Paraná podría alcanzar los 120 metros en las próximas horas",
+   "url": "https://www.abc.com.py/este/2026/10/13/cde-el-rio-parana-podria-alcanzar-los-120-metros-en-las-proximas-horas/",
    "dominio": "abc.com.py",
    "fecha": "2026-10-13",
+   "lugares": []
+  },
+  {
+   "titulo": "Itaipú elevó depósitos en bancos locales de USD 57 millones a USD 537 millones",
+   "url": "http://www.lanacion.com.py/negocios/2026/10/13/itaipu-elevo-depositos-en-bancos-locales-de-usd-57-millones-a-usd-537-millones/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-13",
    "lugares": [
-    "Yacyretá"
+    "Itaipú"
    ]
   },
   {
@@ -1511,12 +1602,39 @@
    ]
   },
   {
+   "titulo": "Lágrimas, abrazos y orgullo: la selección peruana Sub 19 de vóley regresó a Lima con la plata del Sudamericano y el boleto al Mundial 2027",
+   "url": "https://www.infobae.com/peru/deportes/2026/10/13/lagrimas-abrazos-y-orgullo-la-seleccion-peruana-sub-19-de-voley-regreso-a-lima-con-la-plata-del-sudamericano-y-el-boleto-al-mundial-2027/",
+   "dominio": "infobae.com",
+   "fecha": "2026-10-13",
+   "lugares": [
+    "Campana"
+   ]
+  },
+  {
+   "titulo": "Megacausa Bomberos: Folli Pedetta acordó juicio abreviado y una pena de 6 años y 2 meses de prisión",
+   "url": "https://www.perfil.com/noticias/cordoba/megacausa-bomberos-folli-pedetta-acordo-juicio-abreviado-y-una-pena-de-6-anos-y-2-meses-de-prision.phtml",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-13",
+   "lugares": [
+    "Zárate"
+   ]
+  },
+  {
    "titulo": "Hallan muerta a una mujer en Katueté y su pareja es el principal sospechoso",
    "url": "https://www.npy.com.py/noticias/nacionales/sucesos/hallan-muerta-a-una-mujer-en-katuete-y-su-pareja-es-el-principal-sospechoso",
    "dominio": "npy.com.py",
    "fecha": "2026-10-13",
    "lugares": [
     "Canindeyú"
+   ]
+  },
+  {
+   "titulo": "Caudal de Yacyreta está al 33% de su capacidad, según jefe del departamento técnico",
+   "url": "https://www.abc.com.py/economia/2026/10/13/caudal-de-yacyreta-esta-al-33-de-su-capacidad-segun-jefe-del-departamento-tecnico/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-13",
+   "lugares": [
+    "Yacyretá"
    ]
   },
   {
