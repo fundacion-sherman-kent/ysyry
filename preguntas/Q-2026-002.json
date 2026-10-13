@@ -1,0 +1,32 @@
+{
+ "id": "Q-2026-002",
+ "estado": "publicada",
+ "origen": "Alerta candidata NAV-1 · Delta y Río de la Plata (Issue #4 de este repositorio). El 13/10/2026 la bajante dejó de ser el escenario más probable: una onda de crecida del Paraguay avanza hacia el Delta.",
+ "enunciado": "¿El nivel del río en la estación Zárate marcará 1,60 m o más al menos un día entre el 14 y el 31 de octubre de 2026?",
+ "creada": "2026-10-13",
+ "vence": "2026-10-31",
+ "banda": "probable",
+ "confianza": "media",
+ "criterio": {
+  "tipo": "nivel_estacion",
+  "red": "ar",
+  "estacion": "Zárate",
+  "operador": ">=",
+  "umbral_m": 1.6,
+  "desde": "2026-10-14",
+  "hasta": "2026-10-31"
+ },
+ "datos_de_partida": "Prefectura Naval Argentina vía INA, Zárate: 1,42 m (2/10), 0,41 m (4/10), 1,32 m (10/10), 1,20 m (12/10). Su umbral oficial de aguas bajas es 0,25 m y su cota de alerta 2,00 m. Aguas arriba, 12/10: Asunción 1,81 m (+62 cm en un día), Pilar 4,13 m, Barranqueras 5,14 m (+1,03 m desde el 4/10), pero Rosario 3,29 m (+20 cm en ocho días): la onda del Paraguay todavía no llegó al Paraná medio. Zárate oscila hasta 0,5 m en un día por la marea y el viento del Plata.",
+ "estimaciones": {
+  "metodo": "Estimación de la dirección asistida por un modelo (no es un panel de analistas independientes). La dirección fijó la banda sin ver la del modelo, que había quedado sellada con un hash SHA-256 en el registro privado antes de conocer la de la dirección.",
+  "direccion": "probable (porque la onda del Paraguay todavía no llegó al Delta)",
+  "modelo_claude": "probable (70 %)",
+  "sello_sha256": "3bc77499ae07a49130000ac12cc09e1c486bcac4ad563b4aef973ccd0db59a3d"
+ },
+ "disenso": {
+  "decimo_hombre": "Sostiene que NO ocurrirá (el consenso dice que sí).",
+  "dictamen": "La onda del Paraguay se atenúa en los más de 1.000 km hasta el Delta y puede llegar después del 31/10: si Asunción subió el 12/10, el pulso tarda alrededor de tres semanas en llegar a Zárate. El Paraná medio casi no se movió (Rosario +20 cm en ocho días) y Zárate necesita sostener 40 cm más que hoy, un nivel que alcanzó sólo con picos de marea y viento y que bajó enseguida (1,42 m el 2/10 y 0,41 m el 4/10). Además, la ventana termina el 31/10 y basta una sola lectura diaria por debajo para que la crecida no cuente. Evidencia en contra de este dictamen: Barranqueras ya subió 1,03 m, es decir que la onda ya pasó la confluencia de los dos ríos."
+ },
+ "publicada_el": "2026-10-13",
+ "resolucion": "Automática el 31/10/2026 contra las lecturas diarias de Zárate de la Prefectura Naval Argentina, publicadas por el INA (historial público del repositorio). Si hay menos lecturas que la mitad de los días del período, queda «sin datos suficientes» y no cuenta."
+}
