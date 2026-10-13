@@ -3,7 +3,8 @@
 
 Criterio admitido (único, por ahora):
   {"tipo": "nivel_estacion", "estacion": "Asunción", "operador": "<=" | ">=", "umbral_m": 0.30,
-   "desde": "AAAA-MM-DD", "hasta": "AAAA-MM-DD"}
+   "desde": "AAAA-MM-DD", "hasta": "AAAA-MM-DD", "red": "py" (por defecto) | "ar"}
+  «py»: Meteorología de Paraguay (nivel-rio-py-historial.jsonl). «ar»: escalas de la Prefectura vía INA (nivel-rio-ar-historial.jsonl).
 Resultado: «ocurrió» si alguna lectura de esa estación entre `desde` y `hasta` cumple el operador contra el umbral. Se lee
 `datos/publico/nivel-rio-py-historial.jsonl`. Si en el período hay menos lecturas que la mitad de los días, la pregunta NO se
 resuelve: queda marcada «sin datos suficientes» y la dirección decide, porque contar un «no» por falta de lecturas sería falsear.
@@ -35,6 +36,20 @@ def _lecturas(historial, estacion, desde, hasta):
     return out
 
 
+def _lecturas_ar(historial, estacion, desde, hasta):
+    out = []
+    for linea in open(historial, encoding="utf-8"):
+        if not linea.strip():
+            continue
+        j = json.loads(linea)
+        if j["estacion"] != estacion:
+            continue
+        f = datetime.strptime(j["fecha"], "%Y-%m-%d").date()
+        if desde <= f <= hasta:
+            out.append((f, j["nivel_m"]))
+    return out
+
+
 def resolver(q, historial, hoy):
     c = q["criterio"]
     if c.get("tipo") != "nivel_estacion":
@@ -42,7 +57,7 @@ def resolver(q, historial, hoy):
     hasta, desde = _d(c["hasta"]), _d(c["desde"])
     if hoy <= hasta:
         return None, "todavía no venció"
-    lect = _lecturas(historial, c["estacion"], desde, hasta)
+    lect = (_lecturas_ar if c.get("red") == "ar" else _lecturas)(historial, c["estacion"], desde, hasta)
     dias = (hasta - desde).days + 1
     if len({f for f, _ in lect}) * 2 < dias:
         return None, "sin datos suficientes (%d lecturas en %d días)" % (len({f for f, _ in lect}), dias)
@@ -55,13 +70,14 @@ def resolver(q, historial, hoy):
 
 def main():
     hoy = datetime.utcnow().date()
-    historial = RAIZ / "datos" / "publico" / "nivel-rio-py-historial.jsonl"
+    historiales = {"py": RAIZ / "datos" / "publico" / "nivel-rio-py-historial.jsonl", "ar": RAIZ / "datos" / "publico" / "nivel-rio-ar-historial.jsonl"}
     cambios = 0
     for f in sorted((RAIZ / "preguntas").glob("*.json")):
         q = json.load(open(f, encoding="utf-8"))
         if q.get("estado") != "publicada" or q.get("resultado") in (True, False):
             continue
-        if not historial.exists():
+        historial = historiales.get(q["criterio"].get("red", "py"))
+        if historial is None or not historial.exists():
             print("%s: no hay historial de niveles" % q.get("id"))
             continue
         res, motivo = resolver(q, historial, hoy)

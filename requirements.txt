@@ -1,2 +1,0 @@
-websocket-client>=1.7
-pillow>=10
