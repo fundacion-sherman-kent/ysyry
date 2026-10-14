@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-14T11:44:11Z",
+ "obtenido": "2026-10-14T17:04:22Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 26,
+   "items": 24,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 5,
+   "candidatos": 4,
    "fallos_seguidos": 0
   },
   {
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 91,
+   "items": 85,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 312,
+   "items": 319,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -183,7 +183,7 @@
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 4,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
@@ -268,6 +268,72 @@
    "verificado": true
   },
   {
+   "titulo": "Itapúa activa plan de contingencia ante posibles crecidas del río Paraná por El Niño",
+   "url": "http://www.lanacion.com.py/pais/2026/10/14/itapua-activa-plan-de-contingencia-ante-posibles-crecidas-del-rio-parana-por-el-nino/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-14",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Encarnación"
+   ],
+   "ubicacion": [
+    -27.33,
+    -55.87
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/14/itapua-activa-plan-de-contingencia-ante-posibles-crecidas-del-rio-parana-por-el-nino/"
+    }
+   ],
+   "id": "3e953b1907",
+   "verificado": true
+  },
+  {
+   "titulo": "Inundaciones por El Niño en el Litoral: crecen los ríos y cada vez hay más familias evacuadas",
+   "url": "https://www.perfil.com/noticias/actualidad/inundaciones-en-el-litoral-argentino.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-14",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/actualidad/inundaciones-en-el-litoral-argentino.phtml"
+    }
+   ],
+   "id": "b33ba9e000",
+   "verificado": true
+  },
+  {
    "titulo": "Aumenta número de familias damnificadas por las crecidas",
    "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/14/aumenta-numero-de-familias-damnificadas-por-las-crecidas/",
    "dominio": "lanacion.com.py",
@@ -321,6 +387,62 @@
     }
    ],
    "id": "9e9be8bba1",
+   "verificado": true
+  },
+  {
+   "titulo": "Ñeembucú: crecida del río Paraná obliga a realizar clases a virtuales en siete escuelas",
+   "url": "https://www.abc.com.py/clima/2026/10/14/neembucu-crecida-del-rio-parana-obliga-a-realizar-clases-a-virtuales-en-siete-escuelas/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-14",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/clima/2026/10/14/neembucu-crecida-del-rio-parana-obliga-a-realizar-clases-a-virtuales-en-siete-escuelas/"
+    }
+   ],
+   "id": "b3b717b0a3",
+   "verificado": true
+  },
+  {
+   "titulo": "Emblemático puente colgante de Capitán Meza quedó anegado por la crecida del río Paraná",
+   "url": "http://www.lanacion.com.py/pais/2026/10/14/emblematico-puente-colgante-de-capitan-meza-quedo-anegado-por-la-crecida-del-rio-parana/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-14",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/14/emblematico-puente-colgante-de-capitan-meza-quedo-anegado-por-la-crecida-del-rio-parana/"
+    }
+   ],
+   "id": "a13dc9587b",
    "verificado": true
   },
   {
@@ -1694,12 +1816,49 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Red Búho supera 340.000 viajes y concentra su demanda entre las 23:00 y las 2:00",
+   "url": "http://www.lanacion.com.py/negocios/2026/10/14/red-buho-supera-340000-viajes-y-concentra-su-demanda-entre-las-2300-y-las-200/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-14",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Estudiantes rescatan la memoria de edificios históricos de Encarnación en una exposición",
+   "url": "http://www.lanacion.com.py/pais/2026/10/14/estudiantes-rescatan-la-memoria-de-edificios-historicos-de-encarnacion-en-una-exposicion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-14",
+   "lugares": [
+    "Encarnación",
+    "Yacyretá"
+   ]
+  },
+  {
    "titulo": "Itaipú elevó depósitos de USD 57 millones a USD 537 millones",
    "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/10/14/itaipu-elevo-depositos-de-usd-57-millones-a-usd-537-millones/",
    "dominio": "lanacion.com.py",
    "fecha": "2026-10-14",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Fenómeno de El Niño: advierten que el río Paraná superará el nivel de evacuación en Corrientes",
+   "url": "https://www.perfil.com/noticias/nea/fenomeno-de-el-nino-advierten-que-el-rio-parana-superara-el-nivel-de-evacuacion-en-corrientes.phtml",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-14",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
+   "titulo": "Altura de los ríos en la Argentina, según Prefectura: esta es la situación en el Paraná hoy, miércoles 14 de octubre",
+   "url": "https://www.lanacion.com.ar/sociedad/altura-de-los-rios-en-la-argentina-segun-prefectura-esta-es-la-situacion-en-el-parana-hoy-miercoles-nid14102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-14",
+   "lugares": [
+    "Rosario"
    ]
   },
   {
