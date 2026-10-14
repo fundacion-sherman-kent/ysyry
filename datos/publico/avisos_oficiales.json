@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-14T17:21:39Z",
+ "obtenido": "2026-10-14T21:48:46Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -9,7 +9,7 @@
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "SMN (Argentina)",
@@ -111,20 +111,6 @@
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
    "id": "inmet-28493"
-  },
-  {
-   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
-   "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias intensas con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "Paraguay"
-   ],
-   "riesgos": "",
-   "id": "dmh-vigente"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
