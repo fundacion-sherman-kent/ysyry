@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-13T22:34:51Z",
+ "obtenido": "2026-10-14T04:40:23Z",
  "fuente": {
   "nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente",
   "url": "https://www.smn.gob.ar/",
@@ -8,43 +8,43 @@
  "estaciones": [
   {
    "nombre": "La Plata",
-   "fecha": "13-octubre-2026",
-   "hora": "19:00",
-   "direccion": "Sudeste",
+   "fecha": "14-octubre-2026",
+   "hora": "00:00",
+   "direccion": "Sur",
    "kmh": 16,
-   "estado": "Parcialmente nublado"
+   "estado": "Cubierto"
   },
   {
    "nombre": "Punta Indio B.A.",
    "fecha": "13-octubre-2026",
-   "hora": "18:00",
-   "direccion": "Sudeste",
-   "kmh": 24,
-   "estado": "Cubierto"
+   "hora": "21:00",
+   "direccion": "Sur",
+   "kmh": 20,
+   "estado": "Parcialmente nublado"
   },
   {
    "nombre": "San Fernando",
-   "fecha": "13-octubre-2026",
-   "hora": "19:00",
+   "fecha": "14-octubre-2026",
+   "hora": "01:00",
    "direccion": "Sudeste",
-   "kmh": 29,
-   "estado": "Parcialmente nublado"
+   "kmh": 13,
+   "estado": "Cubierto"
   },
   {
    "nombre": "Aeroparque Buenos Aires",
-   "fecha": "13-octubre-2026",
-   "hora": "19:00",
+   "fecha": "14-octubre-2026",
+   "hora": "01:00",
    "direccion": "Sudeste",
-   "kmh": 33,
-   "estado": "Parcialmente nublado"
+   "kmh": 14,
+   "estado": "Cubierto"
   },
   {
    "nombre": "Buenos Aires",
-   "fecha": "13-octubre-2026",
-   "hora": "19:00",
-   "direccion": "Este",
-   "kmh": 9,
-   "estado": "Parcialmente nublado"
+   "fecha": "14-octubre-2026",
+   "hora": "01:00",
+   "direccion": "Sudeste",
+   "kmh": 7,
+   "estado": "Cubierto"
   }
  ]
 }
