@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-14T04:45:22Z",
+ "obtenido": "2026-10-14T11:44:11Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,15 +7,15 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 25,
-   "candidatos": 0,
+   "items": 26,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
+   "items": 91,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 359,
+   "items": 312,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -183,7 +183,7 @@
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 3,
+   "candidatos": 4,
    "fallos_seguidos": 0
   },
   {
@@ -197,6 +197,76 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "A UN PASO DE BRASIL: SENAD INCAUTA CASI 4 MILLONES DE DÓLARES EN COCAÍNA OCULTOS EN UN CAMIÓN",
+   "url": "https://senad.gov.py/a-un-paso-de-brasil-senad-incauta-casi-4-millones-de-dolares-en-cocaina-ocultos-en-un-camion/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-10-14",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 7,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/a-un-paso-de-brasil-senad-incauta-casi-4-millones-de-dolares-en-cocaina-ocultos-en-un-camion/"
+    }
+   ],
+   "id": "9eaf45eea0",
+   "verificado": true
+  },
+  {
+   "titulo": "Video: cae megacargamento de cocaína en Ciudad del Este",
+   "url": "https://www.abc.com.py/policiales/2026/10/14/video-cae-megacargamento-de-cocaina-en-ciudad-del-este/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-14",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/policiales/2026/10/14/video-cae-megacargamento-de-cocaina-en-ciudad-del-este/"
+    }
+   ],
+   "id": "346ac1b7bf",
+   "verificado": true
+  },
   {
    "titulo": "Aumenta número de familias damnificadas por las crecidas",
    "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/14/aumenta-numero-de-familias-damnificadas-por-las-crecidas/",
@@ -223,6 +293,34 @@
     }
    ],
    "id": "93b8058533",
+   "verificado": true
+  },
+  {
+   "titulo": "Itapúa: suspenden por 10 días el cruce fluvial en siete puertos por la crecida del río Paraná",
+   "url": "http://www.lanacion.com.py/pais/2026/10/14/itapua-suspenden-por-10-dias-el-cruce-fluvial-en-siete-puertos-por-la-crecida-del-rio-parana/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-14",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/14/itapua-suspenden-por-10-dias-el-cruce-fluvial-en-siete-puertos-por-la-crecida-del-rio-parana/"
+    }
+   ],
+   "id": "9e9be8bba1",
    "verificado": true
   },
   {
