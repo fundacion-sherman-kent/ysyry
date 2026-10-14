@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-14T17:04:22Z",
+ "obtenido": "2026-10-14T21:36:46Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 24,
+   "items": 23,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 85,
+   "items": 88,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,8 +166,8 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 319,
-   "candidatos": 0,
+   "items": 338,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -443,6 +443,62 @@
     }
    ],
    "id": "a13dc9587b",
+   "verificado": true
+  },
+  {
+   "titulo": "Colonias Unidas están bajo agua: crecida del río Paraná no da tregua",
+   "url": "http://www.lanacion.com.py/pais/2026/10/14/colonias-unidas-estan-bajo-agua-crecida-del-rio-parana-no-da-tregua/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-14",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/14/colonias-unidas-estan-bajo-agua-crecida-del-rio-parana-no-da-tregua/"
+    }
+   ],
+   "id": "cd35de1348",
+   "verificado": true
+  },
+  {
+   "titulo": "Los Fatales cerrarán el Mes de la Juventud en Salto con un show en la plaza Artigas",
+   "url": "https://ladiaria.com.uy/salto/articulo/2026/10/los-fatales-cerraran-el-mes-de-la-juventud-en-salto-con-un-show-en-la-plaza-artigas/",
+   "dominio": "ladiaria.com.uy",
+   "clase": "prensa",
+   "fecha": "2026-10-14",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "ladiaria.com.uy",
+     "clase": "prensa",
+     "url": "https://ladiaria.com.uy/salto/articulo/2026/10/los-fatales-cerraran-el-mes-de-la-juventud-en-salto-con-un-show-en-la-plaza-artigas/"
+    }
+   ],
+   "id": "2853f1558e",
    "verificado": true
   },
   {
@@ -1816,6 +1872,15 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Itaipú sigue sin informar sobre sus saldos actuales, tasas, y fondos al PTI",
+   "url": "https://www.abc.com.py/economia/2026/10/14/itaipu-sigue-sin-informar-sobre-sus-saldos-actuales-tasas-y-fondos-al-pti/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-14",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Red Búho supera 340.000 viajes y concentra su demanda entre las 23:00 y las 2:00",
    "url": "http://www.lanacion.com.py/negocios/2026/10/14/red-buho-supera-340000-viajes-y-concentra-su-demanda-entre-las-2300-y-las-200/",
    "dominio": "lanacion.com.py",
@@ -1835,6 +1900,15 @@
    ]
   },
   {
+   "titulo": "Altura de los ríos en la Argentina, según Prefectura: esta es la situación en el Paraná hoy, miércoles 14 de octubre",
+   "url": "https://www.lanacion.com.ar/sociedad/altura-de-los-rios-en-la-argentina-segun-prefectura-esta-es-la-situacion-en-el-parana-hoy-miercoles-nid14102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-14",
+   "lugares": [
+    "Rosario"
+   ]
+  },
+  {
    "titulo": "Itaipú elevó depósitos de USD 57 millones a USD 537 millones",
    "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/10/14/itaipu-elevo-depositos-de-usd-57-millones-a-usd-537-millones/",
    "dominio": "lanacion.com.py",
@@ -1850,15 +1924,6 @@
    "fecha": "2026-10-14",
    "lugares": [
     "Corrientes"
-   ]
-  },
-  {
-   "titulo": "Altura de los ríos en la Argentina, según Prefectura: esta es la situación en el Paraná hoy, miércoles 14 de octubre",
-   "url": "https://www.lanacion.com.ar/sociedad/altura-de-los-rios-en-la-argentina-segun-prefectura-esta-es-la-situacion-en-el-parana-hoy-miercoles-nid14102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-14",
-   "lugares": [
-    "Rosario"
    ]
   },
   {
