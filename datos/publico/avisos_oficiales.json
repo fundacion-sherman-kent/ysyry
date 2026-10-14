@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-10-14T05:06:52Z",
+ "obtenido": "2026-10-14T12:06:59Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 3
+   "avisos_en_el_corredor": 2
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -19,7 +19,7 @@
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 2
   }
  ],
  "avisos": [
@@ -29,7 +29,7 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-10-14 00:01",
+   "inicio": "2026-10-14 08:50",
    "fin": "2026-10-14 23:59",
    "lugares": [
     "Corumbá",
@@ -41,7 +41,7 @@
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28487"
+   "id": "inmet-28489"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -49,39 +49,24 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo",
    "color": "#F96602",
-   "inicio": "2026-10-14 00:01",
+   "inicio": "2026-10-14 09:00",
    "fin": "2026-10-14 23:59",
-   "lugares": [
-    "Porto Murtinho",
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
-   "id": "inmet-28488"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-10-15 00:00",
-   "fin": "2026-10-15 23:59",
    "lugares": [
     "Corumbá",
     "Ladário",
     "Porto Murtinho",
     "Cáceres",
-    "Ponta Porã"
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
    ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28486"
+   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
+   "id": "inmet-28490"
   },
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Lluvias intensas con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -107,6 +92,22 @@
    "id": "gdacs-&amp;eventid=1104222",
    "lat": -25.5,
    "lon": -54.833333
+  },
+  {
+   "fuente": "GDACS (ONU y Comisión Europea)",
+   "pais": "",
+   "fenomeno": "Green flood alert in Argentina",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "-26.74, -54.43"
+   ],
+   "riesgos": "",
+   "id": "gdacs-&amp;eventid=1104218",
+   "lat": -26.737224,
+   "lon": -54.4315257
   }
  ],
  "no_consultadas": [
