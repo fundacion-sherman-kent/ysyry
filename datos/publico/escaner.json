@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-13T22:39:21Z",
+ "obtenido": "2026-10-14T04:45:22Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 24,
+   "items": 25,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 4,
+   "candidatos": 5,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 86,
+   "items": 90,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 327,
+   "items": 359,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +197,34 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Aumenta número de familias damnificadas por las crecidas",
+   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/14/aumenta-numero-de-familias-damnificadas-por-las-crecidas/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-14",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/14/aumenta-numero-de-familias-damnificadas-por-las-crecidas/"
+    }
+   ],
+   "id": "93b8058533",
+   "verificado": true
+  },
   {
    "titulo": "FILTROS DE ACEITE PARA CAMIONES OCULTABAN MÁS DE 10 KILOS DE MARIHUANA «PREMIUM»",
    "url": "https://senad.gov.py/filtros-de-aceite-para-camiones-ocultaban-mas-de-10-kilos-de-marihuana-premium/",
@@ -1568,11 +1596,23 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "CDE: El río Paraná podría alcanzar los 120 metros en las próximas horas",
-   "url": "https://www.abc.com.py/este/2026/10/13/cde-el-rio-parana-podria-alcanzar-los-120-metros-en-las-proximas-horas/",
-   "dominio": "abc.com.py",
+   "titulo": "Itaipú elevó depósitos de USD 57 millones a USD 537 millones",
+   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/10/14/itaipu-elevo-depositos-de-usd-57-millones-a-usd-537-millones/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-14",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Alto Paraná: entre Itaipú, Acaray y la represa Yguazú se abrieron 19 compuertas",
+   "url": "http://www.lanacion.com.py/pais/2026/10/13/alto-parana-entre-itaipu-acaray-y-la-represa-yguazu-se-abrieron-19-compuertas/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-10-13",
-   "lugares": []
+   "lugares": [
+    "Alto Paraná",
+    "Itaipú"
+   ]
   },
   {
    "titulo": "Itaipú elevó depósitos en bancos locales de USD 57 millones a USD 537 millones",
@@ -1602,6 +1642,22 @@
    ]
   },
   {
+   "titulo": "Hallan muerta a una mujer en Katueté y su pareja es el principal sospechoso",
+   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/hallan-muerta-a-una-mujer-en-katuete-y-su-pareja-es-el-principal-sospechoso",
+   "dominio": "npy.com.py",
+   "fecha": "2026-10-13",
+   "lugares": [
+    "Canindeyú"
+   ]
+  },
+  {
+   "titulo": "CDE: El río Paraná podría alcanzar los 120 metros en las próximas horas",
+   "url": "https://www.abc.com.py/este/2026/10/13/cde-el-rio-parana-podria-alcanzar-los-120-metros-en-las-proximas-horas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-13",
+   "lugares": []
+  },
+  {
    "titulo": "Lágrimas, abrazos y orgullo: la selección peruana Sub 19 de vóley regresó a Lima con la plata del Sudamericano y el boleto al Mundial 2027",
    "url": "https://www.infobae.com/peru/deportes/2026/10/13/lagrimas-abrazos-y-orgullo-la-seleccion-peruana-sub-19-de-voley-regreso-a-lima-con-la-plata-del-sudamericano-y-el-boleto-al-mundial-2027/",
    "dominio": "infobae.com",
@@ -1617,15 +1673,6 @@
    "fecha": "2026-10-13",
    "lugares": [
     "Zárate"
-   ]
-  },
-  {
-   "titulo": "Hallan muerta a una mujer en Katueté y su pareja es el principal sospechoso",
-   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/hallan-muerta-a-una-mujer-en-katuete-y-su-pareja-es-el-principal-sospechoso",
-   "dominio": "npy.com.py",
-   "fecha": "2026-10-13",
-   "lugares": [
-    "Canindeyú"
    ]
   },
   {
