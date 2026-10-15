@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-14T21:36:46Z",
+ "obtenido": "2026-10-15T04:28:01Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 23,
+   "items": 19,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 4,
+   "candidatos": 6,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 88,
+   "items": 92,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 338,
+   "items": 381,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -197,6 +197,104 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Senad incauta 262 k de cocaína en Ciudad del Este",
+   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/15/senad-incauta-262-k-de-cocaina-en-ciudad-del-este/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-15",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 6,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/15/senad-incauta-262-k-de-cocaina-en-ciudad-del-este/"
+    }
+   ],
+   "id": "ff080cd791",
+   "verificado": true
+  },
+  {
+   "titulo": "Suman desplazados en todo el país y Asunción, bajo alerta",
+   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/15/suman-desplazados-en-todo-el-pais-y-asuncion-bajo-alerta/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-15",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Asunción"
+   ],
+   "ubicacion": [
+    -25.28,
+    -57.63
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/15/suman-desplazados-en-todo-el-pais-y-asuncion-bajo-alerta/"
+    }
+   ],
+   "id": "a729356a76",
+   "verificado": true
+  },
+  {
+   "titulo": "Instan al Ejecutivo a reforzar asistencia a damnificados por crecida del río Paraná",
+   "url": "http://www.lanacion.com.py/politica/2026/10/14/instan-al-ejecutivo-a-reforzar-asistencia-a-damnificados-por-crecida-del-rio-parana/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-15",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/politica/2026/10/14/instan-al-ejecutivo-a-reforzar-asistencia-a-damnificados-por-crecida-del-rio-parana/"
+    }
+   ],
+   "id": "0095af9fad",
+   "verificado": true
+  },
   {
    "titulo": "A UN PASO DE BRASIL: SENAD INCAUTA CASI 4 MILLONES DE DÓLARES EN COCAÍNA OCULTOS EN UN CAMIÓN",
    "url": "https://senad.gov.py/a-un-paso-de-brasil-senad-incauta-casi-4-millones-de-dolares-en-cocaina-ocultos-en-un-camion/",
@@ -1872,9 +1970,18 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Itaipú sigue sin informar sobre sus saldos actuales, tasas, y fondos al PTI",
-   "url": "https://www.abc.com.py/economia/2026/10/14/itaipu-sigue-sin-informar-sobre-sus-saldos-actuales-tasas-y-fondos-al-pti/",
-   "dominio": "abc.com.py",
+   "titulo": "Ayolas: rescatan a animales de zonas inundadas por el río Paraná",
+   "url": "http://www.lanacion.com.py/pais/2026/10/14/ayolas-rescatan-a-animales-de-zonas-inundadas-por-el-rio-parana/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-14",
+   "lugares": [
+    "Ayolas"
+   ]
+  },
+  {
+   "titulo": "Fitpar busca impulsar negocios y alianzas en el sector turístico",
+   "url": "http://www.lanacion.com.py/negocios/2026/10/14/fitpar-busca-impulsar-negocios-y-alianzas-en-el-sector-turistico/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-10-14",
    "lugares": [
     "Itaipú"
@@ -1897,6 +2004,15 @@
    "lugares": [
     "Encarnación",
     "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Itaipú sigue sin informar sobre sus saldos actuales, tasas, y fondos al PTI",
+   "url": "https://www.abc.com.py/economia/2026/10/14/itaipu-sigue-sin-informar-sobre-sus-saldos-actuales-tasas-y-fondos-al-pti/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-14",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
