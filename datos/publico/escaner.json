@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-15T04:28:01Z",
+ "obtenido": "2026-10-15T11:20:03Z",
  "dias": 14,
  "fuentes": [
   {
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 6,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 93,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,8 +166,8 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 381,
-   "candidatos": 1,
+   "items": 315,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
