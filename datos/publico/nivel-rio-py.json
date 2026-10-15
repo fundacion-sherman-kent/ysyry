@@ -242,11 +242,11 @@
   },
   {
    "estacion": "Estación Arirai",
-   "fecha_lectura": "11-10-2026",
+   "fecha_lectura": "15-10-2026",
    "maximo_historico": "6.78m --> 29-07-2023",
    "minimo_historico": "2.06m --> 09-10-2024",
-   "nivel": "3.57 m",
-   "variacion_24h": "-1 cm"
+   "nivel": "3.67 m",
+   "variacion_24h": "2 cm"
   }
  ],
  "fuente": {
@@ -254,5 +254,5 @@
   "nota": "Actualizado a diario por el organismo, no en vivo",
   "url": "https://www.meteorologia.gov.py/nivel-rio/indexconvencional.php"
  },
- "obtenido": "2026-10-15T14:02:40Z"
+ "obtenido": "2026-10-15T18:58:26Z"
 }
