@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-15T16:53:13Z",
+ "obtenido": "2026-10-15T21:18:09Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 15,
+   "items": 16,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -55,15 +55,15 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 2,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 86,
-   "candidatos": 0,
+   "items": 88,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -151,7 +151,7 @@
    "url": "https://www.pagina12.com.ar/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 25,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 323,
+   "items": 334,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -464,6 +464,67 @@
     }
    ],
    "id": "93d57220ec",
+   "verificado": true
+  },
+  {
+   "titulo": "Ayolas, la más castigada: familias se ven obligadas a buscar refugio en zonas altas",
+   "url": "http://www.lanacion.com.py/pais/2026/10/15/ayolas-la-mas-castigada-familias-se-ven-obligadas-a-buscar-refugio-en-zonas-altas/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-15",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ayolas"
+   ],
+   "ubicacion": [
+    -27.39,
+    -56.84
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/15/ayolas-la-mas-castigada-familias-se-ven-obligadas-a-buscar-refugio-en-zonas-altas/"
+    }
+   ],
+   "id": "0101c0ad45",
+   "verificado": true
+  },
+  {
+   "titulo": "Andrés “Chapu” Nocioni estuvo involucrado en un choque de lanchas sobre el Río Paraná",
+   "url": "https://www.lanacion.com.ar/deportes/andres-chapu-nocioni-estuvo-involucrado-en-un-choque-de-lanchas-sobre-el-rio-parana-nid15102026/",
+   "dominio": "lanacion.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-10-15",
+   "tipos": [
+    [
+     "siniestro",
+     "Siniestro náutico"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 4,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.ar",
+     "clase": "prensa",
+     "url": "https://www.lanacion.com.ar/deportes/andres-chapu-nocioni-estuvo-involucrado-en-un-choque-de-lanchas-sobre-el-rio-parana-nid15102026/"
+    }
+   ],
+   "id": "0d7760073a",
    "verificado": true
   },
   {
@@ -2169,9 +2230,16 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "¿Itaipú corre riesgo de rotura? Esta es la respuesta oficial de la Binacional",
-   "url": "https://www.abc.com.py/economia/2026/10/15/itaipu-desmiente-que-la-represa-corra-riesgo-de-rotura/",
+   "titulo": "Cerrito: aguas del río Paraná invaden el centro urbano y activan asistencia de la SEN",
+   "url": "https://www.abc.com.py/clima/2026/10/15/cerrito-aguas-del-rio-parana-invaden-el-centro-urbano-y-activan-asistencia-de-la-sen/",
    "dominio": "abc.com.py",
+   "fecha": "2026-10-15",
+   "lugares": []
+  },
+  {
+   "titulo": "Laudau estará en el país este domingo y se reunirá con autoridades",
+   "url": "http://www.lanacion.com.py/politica/2026/10/15/laudau-estara-en-el-pais-este-domingo-y-se-reunira-con-autoridades/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-10-15",
    "lugares": [
     "Itaipú"
@@ -2190,6 +2258,25 @@
    "titulo": "Anuncian las tres fotografías finalistas del concurso “Click Itaipú”",
    "url": "http://www.lanacion.com.py/pais/2026/10/15/anuncian-las-tres-fotografias-finalistas-del-concurso-click-itaipu/",
    "dominio": "lanacion.com.py",
+   "fecha": "2026-10-15",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "La Fiscalía apeló el sobreseimiento de los familiares de Toviggino en una causa por lavado de dinero",
+   "url": "https://www.lanacion.com.ar/politica/la-fiscalia-apelo-el-sobreseimiento-de-los-familiares-de-toviggino-en-una-causa-por-lavado-de-dinero-nid15102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-15",
+   "lugares": [
+    "Zárate",
+    "Campana"
+   ]
+  },
+  {
+   "titulo": "¿Itaipú corre riesgo de rotura? Esta es la respuesta oficial de la Binacional",
+   "url": "https://www.abc.com.py/economia/2026/10/15/itaipu-desmiente-que-la-represa-corra-riesgo-de-rotura/",
+   "dominio": "abc.com.py",
    "fecha": "2026-10-15",
    "lugares": [
     "Itaipú"
