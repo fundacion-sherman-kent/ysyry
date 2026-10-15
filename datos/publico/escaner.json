@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-15T11:20:03Z",
+ "obtenido": "2026-10-15T16:53:13Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 19,
+   "items": 15,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 3,
+   "candidatos": 4,
    "fallos_seguidos": 0
   },
   {
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 0,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
+   "items": 86,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -151,7 +151,7 @@
    "url": "https://www.pagina12.com.ar/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 25,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 315,
+   "items": 323,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +197,39 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "En Brasil incautan de un depósito 150 neumáticos de contrabando desde Paraguay",
+   "url": "http://www.lanacion.com.py/pais/2026/10/15/en-brasil-incautan-de-un-deposito-150-neumaticos-de-contrabando-desde-paraguay/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-15",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 7,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/15/en-brasil-incautan-de-un-deposito-150-neumaticos-de-contrabando-desde-paraguay/"
+    }
+   ],
+   "id": "c66a87407a",
+   "verificado": true
+  },
   {
    "titulo": "Senad incauta 262 k de cocaína en Ciudad del Este",
    "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/15/senad-incauta-262-k-de-cocaina-en-ciudad-del-este/",
@@ -265,6 +298,172 @@
     }
    ],
    "id": "a729356a76",
+   "verificado": true
+  },
+  {
+   "titulo": "Itaipú delimita cotas de riesgo en Ciudad del Este tras aumento del nivel del río Paraná",
+   "url": "http://www.lanacion.com.py/pais/2026/10/15/itaipu-delimita-cotas-de-riesgo-en-ciudad-del-este-tras-aumento-del-nivel-del-rio-parana/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-15",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este",
+    "Itaipú"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/15/itaipu-delimita-cotas-de-riesgo-en-ciudad-del-este-tras-aumento-del-nivel-del-rio-parana/"
+    }
+   ],
+   "id": "e80be206ca",
+   "verificado": true
+  },
+  {
+   "titulo": "Crecida del río Paraná roza los 121 metros en el Puente de la Amistad",
+   "url": "http://www.lanacion.com.py/pais/2026/10/15/crecida-del-rio-parana-roza-los-121-metros-en-el-puente-de-la-amistad/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-15",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Itaipú"
+   ],
+   "ubicacion": [
+    -25.41,
+    -54.59
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/15/crecida-del-rio-parana-roza-los-121-metros-en-el-puente-de-la-amistad/"
+    }
+   ],
+   "id": "9be23ef1f4",
+   "verificado": true
+  },
+  {
+   "titulo": "Crecida del río Paraná: los cuatro municipios de Corrientes que están en alerta por niveles de evacuación",
+   "url": "https://www.perfil.com/noticias/nea/crecida-del-rio-parana-los-cuatro-municipios-de-corrientes-que-estan-en-alerta-por-niveles-de-evacuacion.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-15",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/nea/crecida-del-rio-parana-los-cuatro-municipios-de-corrientes-que-estan-en-alerta-por-niveles-de-evacuacion.phtml"
+    }
+   ],
+   "id": "65e7d7e525",
+   "verificado": true
+  },
+  {
+   "titulo": "Andrés \"Chapu\" Nocioni sufrió un accidente en el río Paraná al chocar con una patrulla de Prefectura en Corrientes",
+   "url": "https://www.perfil.com/noticias/nea/andres-chapu-nocioni-sufrio-un-accidente-en-el-rio-parana-al-chocar-con-una-patrulla-de-prefectura-en-corrientes.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-15",
+   "tipos": [
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/nea/andres-chapu-nocioni-sufrio-un-accidente-en-el-rio-parana-al-chocar-con-una-patrulla-de-prefectura-en-corrientes.phtml"
+    }
+   ],
+   "id": "f13c2b147f",
+   "verificado": true
+  },
+  {
+   "titulo": "Sube la altura del río Paraná frente a Rosario, pero aún no hay proyecciones de alerta",
+   "url": "https://www.pagina12.com.ar/2026/10/15/sube-la-altura-del-rio-parana-frente-a-rosario-pero-aun-no-hay-proyecciones-de-alerta/",
+   "dominio": "pagina12.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-10-15",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Rosario"
+   ],
+   "ubicacion": [
+    -32.95,
+    -60.65
+   ],
+   "zona": "z2",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "pagina12.com.ar",
+     "clase": "prensa",
+     "url": "https://www.pagina12.com.ar/2026/10/15/sube-la-altura-del-rio-parana-frente-a-rosario-pero-aun-no-hay-proyecciones-de-alerta/"
+    }
+   ],
+   "id": "93d57220ec",
    "verificado": true
   },
   {
@@ -1969,6 +2168,42 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "¿Itaipú corre riesgo de rotura? Esta es la respuesta oficial de la Binacional",
+   "url": "https://www.abc.com.py/economia/2026/10/15/itaipu-desmiente-que-la-represa-corra-riesgo-de-rotura/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-15",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Encarnación: Remesowski denuncia trabas y falta de transparencia en la transición",
+   "url": "http://www.lanacion.com.py/politica/2026/10/15/encarnacion-remesowski-denuncia-trabas-y-falta-de-transparencia-en-la-transicion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-15",
+   "lugares": [
+    "Encarnación"
+   ]
+  },
+  {
+   "titulo": "Anuncian las tres fotografías finalistas del concurso “Click Itaipú”",
+   "url": "http://www.lanacion.com.py/pais/2026/10/15/anuncian-las-tres-fotografias-finalistas-del-concurso-click-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-15",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Las grandes inversiones buscan proveedores: 1.800 empresas argentinas participarán de la primera ronda de negocios del RIGI",
+   "url": "https://www.perfil.com/noticias/economia/las-grandes-inversiones-buscan-proveedores-1800-emresas .phtml",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-15",
+   "lugares": [
+    "Rosario"
+   ]
+  },
   {
    "titulo": "Ayolas: rescatan a animales de zonas inundadas por el río Paraná",
    "url": "http://www.lanacion.com.py/pais/2026/10/14/ayolas-rescatan-a-animales-de-zonas-inundadas-por-el-rio-parana/",
