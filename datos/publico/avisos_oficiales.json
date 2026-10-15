@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-15T11:43:53Z",
+ "obtenido": "2026-10-15T17:12:00Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -64,13 +64,13 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-10-16 00:01",
+   "inicio": "2026-10-16 00:00",
    "fin": "2026-10-16 23:59",
    "lugares": [
-    "Cáceres"
+    "Corumbá"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28493"
+   "id": "inmet-28499"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
