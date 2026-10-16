@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-16T11:15:12Z",
+ "obtenido": "2026-10-16T16:33:28Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 18,
+   "items": 16,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 4,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
@@ -47,7 +47,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,8 +62,8 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 95,
-   "candidatos": 1,
+   "items": 87,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 332,
+   "items": 339,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -335,6 +335,133 @@
     }
    ],
    "id": "3b2a2eb8e6",
+   "verificado": true
+  },
+  {
+   "titulo": "Bomberos de Ciudad del Este advierten sobre peligros tras la bajante del río Paraná",
+   "url": "http://www.lanacion.com.py/pais/2026/10/16/bomberos-de-ciudad-del-este-advierten-sobre-peligros-tras-la-bajante-del-rio-parana/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-16",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/16/bomberos-de-ciudad-del-este-advierten-sobre-peligros-tras-la-bajante-del-rio-parana/"
+    }
+   ],
+   "id": "4a0306461c",
+   "verificado": true
+  },
+  {
+   "titulo": "Crecida del río Paraná: superó los 6 metros en la Capital y ya hay 222 evacuados en Corrientes",
+   "url": "https://www.perfil.com/noticias/nea/crecida-del-rio-parana-supero-los-6-metros-en-la-capital-y-ya-hay-222-evacuados-en-corrientes.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-16",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/nea/crecida-del-rio-parana-supero-los-6-metros-en-la-capital-y-ya-hay-222-evacuados-en-corrientes.phtml"
+    }
+   ],
+   "id": "b3fc2030f3",
+   "verificado": true
+  },
+  {
+   "titulo": "Suben a 1.500 las familias evacuadas por crecida del río Paraná en fronteras de Paraguay",
+   "url": "https://www.abc.com.py/internacionales/2026/10/16/suben-a-1500-las-familias-evacuadas-por-crecida-del-rio-parana-en-fronteras-de-paraguay/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-16",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/internacionales/2026/10/16/suben-a-1500-las-familias-evacuadas-por-crecida-del-rio-parana-en-fronteras-de-paraguay/"
+    },
+    {
+     "dominio": "infobae.com",
+     "clase": "prensa",
+     "url": "https://www.infobae.com/america/agencias/2026/10/16/suben-a-1500-las-familias-evacuadas-por-crecida-del-rio-parana-en-fronteras-de-paraguay/"
+    }
+   ],
+   "id": "96d36d931d",
+   "verificado": true
+  },
+  {
+   "titulo": "Sube a 1.000 la cantidad de familias afectadas por la crecida del río Paraná",
+   "url": "https://www.abc.com.py/este/2026/10/16/sube-a-1000-la-cantidad-de-familias-afectadas-por-la-crecida-del-rio-parana/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-16",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/este/2026/10/16/sube-a-1000-la-cantidad-de-familias-afectadas-por-la-crecida-del-rio-parana/"
+    }
+   ],
+   "id": "e35ac9db34",
    "verificado": true
   },
   {
@@ -2403,6 +2530,40 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Aeropuerto: interceptan encomienda con marihuana de alta pureza oculta en un esterilizador",
+   "url": "http://www.lanacion.com.py/pais/2026/10/16/aeropuerto-interceptan-encomienda-con-marihuana-de-alta-pureza-oculta-en-un-esterilizador/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Caacupé: con financiamiento de Itaipú, remozan la basílica para recibir a peregrinos",
+   "url": "http://www.lanacion.com.py/pais/2026/10/16/caacupe-con-financiamiento-de-itaipu-remozan-la-basilica-para-recibir-a-peregrinos/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Remesowski se reunió con autoridades argentinas para trazar agenda de integración",
+   "url": "http://www.lanacion.com.py/politica/2026/10/16/remesowski-se-reunio-con-autoridades-argentinas-para-trazar-agenda-de-integracion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Encarnación"
+   ]
+  },
+  {
+   "titulo": "ANNP RECIBIÓ A UNA DELEGACIÓN DE LOS ESTADOS UNIDOS INTERESADA EN LA NAVEGACIÓN Y EL DESARROLLO DE LA HIDROVÍA PARAGUAY–PARANÁ",
+   "url": "https://annp.gov.py/?p=23882",
+   "dominio": "annp.gov.py",
+   "fecha": "2026-10-16",
+   "lugares": []
+  },
+  {
    "titulo": "Aerolínea Gol suspende la ruta Asunción-Río de Janeiro: esto explica Dinac",
    "url": "https://www.abc.com.py/viajes/2026/10/16/aerolinea-gol-suspende-la-ruta-asuncion-rio-de-janeiro-esto-explico-dinac/",
    "dominio": "abc.com.py",
@@ -2418,15 +2579,6 @@
    "fecha": "2026-10-16",
    "lugares": [
     "Asunción"
-   ]
-  },
-  {
-   "titulo": "Remesowski se reunió con autoridades argentinas para trazar agenda de integración",
-   "url": "http://www.lanacion.com.py/politica/2026/10/16/remesowski-se-reunio-con-autoridades-argentinas-para-trazar-agenda-de-integracion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-16",
-   "lugares": [
-    "Encarnación"
    ]
   },
   {
@@ -2454,6 +2606,15 @@
    "fecha": "2026-10-16",
    "lugares": [
     "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Subsecretario de Estado de EE. UU. Landau estará en el país y se reunirá con autoridades",
+   "url": "http://www.lanacion.com.py/politica/2026/10/16/subsecretario-de-estado-de-ee-uu-landau-estara-en-el-pais-y-se-reunira-con-autoridades/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-15",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
