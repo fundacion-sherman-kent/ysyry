@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-15T21:18:09Z",
+ "obtenido": "2026-10-16T04:22:47Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 16,
+   "items": 20,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 4,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
@@ -55,15 +55,15 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 88,
-   "candidatos": 1,
+   "items": 93,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 334,
+   "items": 367,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -497,6 +497,39 @@
     }
    ],
    "id": "0101c0ad45",
+   "verificado": true
+  },
+  {
+   "titulo": "Histórico debut de Belgrano en la Copa Libertadores",
+   "url": "https://www.perfil.com/noticias/cordoba/historico-debut-de-belgrano-en-la-copa-libertadores.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-15",
+   "tipos": [
+    [
+     "pirateria",
+     "Piratería o robo de carga"
+    ]
+   ],
+   "lugares": [
+    "Alberdi"
+   ],
+   "ubicacion": [
+    -26.2,
+    -58.14
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/cordoba/historico-debut-de-belgrano-en-la-copa-libertadores.phtml"
+    }
+   ],
+   "id": "089a702c04",
    "verificado": true
   },
   {
@@ -2229,6 +2262,52 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Río Paraná podría alcanzar los 7 metros este fin de semana en Ayolas",
+   "url": "https://www.abc.com.py/economia/2026/10/16/rio-parana-podria-alcanzar-los-7-metros-este-fin-de-semana-en-ayolas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Ayolas"
+   ]
+  },
+  {
+   "titulo": "Condenaron a dos policías por falsificar verificaciones vehiculares en Santa Fe",
+   "url": "https://www.infobae.com/sociedad/policiales/2026/10/16/condenaron-a-dos-policias-por-falsificar-verificaciones-vehiculares-en-santa-fe/",
+   "dominio": "infobae.com",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Tragedia: un trabajador rural murió ahogado mientras rescataba vacas de una zona de campos inundados",
+   "url": "https://www.lanacion.com.ar/economia/campo/tragedia-un-trabajador-rural-murio-ahogado-mientras-rescataba-vacas-de-una-zona-de-campos-inundados-nid15102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Subsecretario de Estado de EE. UU. Laudau estará en el país y se reunirá con autoridades",
+   "url": "http://www.lanacion.com.py/politica/2026/10/15/subsecretario-de-estado-de-ee-uu-laudau-estara-en-el-pais-y-se-reunira-con-autoridades/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-15",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Diputados insta al Ejecutivo y a la EBY avanzar con la franja costera de Ayolas",
+   "url": "http://www.lanacion.com.py/politica/2026/10/15/diputados-insta-al-ejecutivo-y-a-la-eby-avanzar-con-la-franja-costera-de-ayolas/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-15",
+   "lugares": [
+    "Ayolas",
+    "Yacyretá"
+   ]
+  },
   {
    "titulo": "Cerrito: aguas del río Paraná invaden el centro urbano y activan asistencia de la SEN",
    "url": "https://www.abc.com.py/clima/2026/10/15/cerrito-aguas-del-rio-parana-invaden-el-centro-urbano-y-activan-asistencia-de-la-sen/",
