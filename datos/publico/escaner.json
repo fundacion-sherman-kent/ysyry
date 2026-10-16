@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-16T21:00:22Z",
+ "obtenido": "2026-10-16T23:31:28Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 18,
+   "items": 16,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -39,7 +39,7 @@
    "url": "https://www.clarin.com/rss/lo-ultimo/",
    "ok": true,
    "items": 10,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 85,
+   "items": 93,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 353,
+   "items": 358,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -470,6 +470,39 @@
    "verificado": true
   },
   {
+   "titulo": "La crecida del río Paraná avanza sobre las casas, afecta a 2.000 personas en Paraguay y deja tres desaparecidos en Santa Fe",
+   "url": "https://www.perfil.com/noticias/clima/la-crecida-del-rio-parana-avanza-sobre-las-casas-afecta-a-2000-personas-en-paraguay-y-deja-tres-desaparecidos-en-santa-fe.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-16",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Santa Fe"
+   ],
+   "ubicacion": [
+    -31.63,
+    -60.7
+   ],
+   "zona": "z3",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/clima/la-crecida-del-rio-parana-avanza-sobre-las-casas-afecta-a-2000-personas-en-paraguay-y-deja-tres-desaparecidos-en-santa-fe.phtml"
+    }
+   ],
+   "id": "25877ac1dd",
+   "verificado": true
+  },
+  {
    "titulo": "Suben a 1.500 las familias evacuadas por crecida del río Paraná en fronteras de Paraguay",
    "url": "https://www.abc.com.py/internacionales/2026/10/16/suben-a-1500-las-familias-evacuadas-por-crecida-del-rio-parana-en-fronteras-de-paraguay/",
    "dominio": "abc.com.py",
@@ -528,6 +561,34 @@
     }
    ],
    "id": "e35ac9db34",
+   "verificado": true
+  },
+  {
+   "titulo": "Nivel del río Paraná subió más de 14 metros en 15 días y registra marcas históricas",
+   "url": "https://www.abc.com.py/este/2026/10/16/nivel-del-rio-parana-subio-mas-de-14-metros-en-15-dias-y-registra-marcas-historicas/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-16",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/este/2026/10/16/nivel-del-rio-parana-subio-mas-de-14-metros-en-15-dias-y-registra-marcas-historicas/"
+    }
+   ],
+   "id": "bfa55df9a8",
    "verificado": true
   },
   {
@@ -2606,6 +2667,15 @@
    ]
   },
   {
+   "titulo": "Corte presentó denuncia en Fiscalía tras amenaza de ataque en Palacio de Justicia",
+   "url": "http://www.lanacion.com.py/judiciales/2026/10/16/corte-presento-denuncia-en-fiscalia-tras-amenaza-de-ataque-en-palacio-de-justicia/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
    "titulo": "Personal libera llamadas y conectividad en zonas afectadas por el desborde del río Paraná",
    "url": "http://www.lanacion.com.py/pais/2026/10/16/personal-libera-llamadas-y-conectividad-en-zonas-afectadas-por-el-desborde-del-rio-parana/",
    "dominio": "lanacion.com.py",
@@ -2643,12 +2713,19 @@
    ]
   },
   {
-   "titulo": "Tres hombres cayeron de una lancha al río Paraná y están desaparecidos",
-   "url": "https://www.lanacion.com.ar/sociedad/tres-hombres-estan-desaparecidos-tras-caer-de-una-lancha-al-rio-parana-nid16102026/",
+   "titulo": "Dramática búsqueda de tres pescadores que fueron arrastrados por la corriente del río Paraná",
+   "url": "https://www.lanacion.com.ar/seguridad/dramatica-busqueda-de-tres-pescadores-que-fueron-arrastrados-por-la-corriente-del-rio-parana-nid16102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-16",
+   "lugares": []
+  },
+  {
+   "titulo": "Amplio repudio empresario al fallo que absolvió a los jefes sindicales que bloquearon San Nicolás",
+   "url": "https://www.lanacion.com.ar/politica/amplio-repudio-empresario-al-fallo-que-absolvio-a-los-jefes-sindicales-que-bloquearon-san-nicolas-nid16102026/",
    "dominio": "lanacion.com.ar",
    "fecha": "2026-10-16",
    "lugares": [
-    "Santa Fe"
+    "San Nicolás"
    ]
   },
   {
@@ -2657,6 +2734,15 @@
    "dominio": "annp.gov.py",
    "fecha": "2026-10-16",
    "lugares": []
+  },
+  {
+   "titulo": "Tres hombres cayeron de una lancha al río Paraná y están desaparecidos",
+   "url": "https://www.lanacion.com.ar/sociedad/tres-hombres-estan-desaparecidos-tras-caer-de-una-lancha-al-rio-parana-nid16102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Santa Fe"
+   ]
   },
   {
    "titulo": "Aerolínea Gol suspende la ruta Asunción-Río de Janeiro: esto explica Dinac",
