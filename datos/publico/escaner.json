@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-16T16:33:28Z",
+ "obtenido": "2026-10-16T21:00:22Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 16,
+   "items": 18,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 3,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -39,7 +39,7 @@
    "url": "https://www.clarin.com/rss/lo-ultimo/",
    "ok": true,
    "items": 10,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -47,7 +47,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 87,
+   "items": 85,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 339,
+   "items": 353,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -183,7 +183,7 @@
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 4,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -401,6 +401,72 @@
     }
    ],
    "id": "b3fc2030f3",
+   "verificado": true
+  },
+  {
+   "titulo": "Crecida del río Paraná: el agua ya tapa las playas de Corrientes y amenaza con avanzar sobre las casas",
+   "url": "https://www.clarin.com/sociedad/crecida-rio-parana-agua-tapa-playas-corrientes-amenaza-avanzar-casas_0_is932MSuZz.html",
+   "dominio": "clarin.com",
+   "clase": "prensa",
+   "fecha": "2026-10-16",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "clarin.com",
+     "clase": "prensa",
+     "url": "https://www.clarin.com/sociedad/crecida-rio-parana-agua-tapa-playas-corrientes-amenaza-avanzar-casas_0_is932MSuZz.html"
+    }
+   ],
+   "id": "6312f4d93e",
+   "verificado": true
+  },
+  {
+   "titulo": "Inundaciones en Corrientes: productores evacúan el ganado ante la crecida del río Paraná",
+   "url": "https://www.perfil.com/noticias/canal-e/inundaciones-en-corrientes-productores-evacuan-el-ganado-ante-la-crecida-del-rio-parana.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-16",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/canal-e/inundaciones-en-corrientes-productores-evacuan-el-ganado-ante-la-crecida-del-rio-parana.phtml"
+    }
+   ],
+   "id": "9d59c462f7",
    "verificado": true
   },
   {
@@ -2530,6 +2596,26 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Yacyretá prevé un leve descenso del río Paraná en Ayolas",
+   "url": "https://www.abc.com.py/economia/2026/10/16/yacyreta-preve-un-leve-descenso-del-rio-parana-en-ayolas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Ayolas",
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Personal libera llamadas y conectividad en zonas afectadas por el desborde del río Paraná",
+   "url": "http://www.lanacion.com.py/pais/2026/10/16/personal-libera-llamadas-y-conectividad-en-zonas-afectadas-por-el-desborde-del-rio-parana/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Ayolas",
+    "Ciudad del Este"
+   ]
+  },
+  {
    "titulo": "Aeropuerto: interceptan encomienda con marihuana de alta pureza oculta en un esterilizador",
    "url": "http://www.lanacion.com.py/pais/2026/10/16/aeropuerto-interceptan-encomienda-con-marihuana-de-alta-pureza-oculta-en-un-esterilizador/",
    "dominio": "lanacion.com.py",
@@ -2554,6 +2640,15 @@
    "fecha": "2026-10-16",
    "lugares": [
     "Encarnación"
+   ]
+  },
+  {
+   "titulo": "Tres hombres cayeron de una lancha al río Paraná y están desaparecidos",
+   "url": "https://www.lanacion.com.ar/sociedad/tres-hombres-estan-desaparecidos-tras-caer-de-una-lancha-al-rio-parana-nid16102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Santa Fe"
    ]
   },
   {
