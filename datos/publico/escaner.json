@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-16T04:22:47Z",
+ "obtenido": "2026-10-16T11:15:12Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,8 +14,8 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 20,
-   "candidatos": 1,
+   "items": 18,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 3,
+   "candidatos": 4,
    "fallos_seguidos": 0
   },
   {
@@ -62,8 +62,8 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
-   "candidatos": 0,
+   "items": 95,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 367,
+   "items": 332,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -183,7 +183,7 @@
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 3,
+   "candidatos": 4,
    "fallos_seguidos": 0
   },
   {
@@ -197,6 +197,146 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "SENAD DESMANTELA CENTRO DE PROCESAMIENTO DE DROGAS E INCAUTA CARGAMENTO DE MEDICAMENTOS PARA ADELGAZAR",
+   "url": "https://senad.gov.py/senad-desmantela-centro-de-procesamiento-de-drogas-e-incauta-cargamento-de-medicamentos-para-adelgazar/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-10-16",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este",
+    "Alto Paraná"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": {
+    "valor": 1.2,
+    "unidad": "kilos"
+   },
+   "puntaje": 8,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/senad-desmantela-centro-de-procesamiento-de-drogas-e-incauta-cargamento-de-medicamentos-para-adelgazar/"
+    }
+   ],
+   "id": "f1b81df5e8",
+   "verificado": true
+  },
+  {
+   "titulo": "El nivel del río Paraná se mantiene estable y el sábado se espera un leve descenso",
+   "url": "http://www.lanacion.com.py/pais/2026/10/16/el-nivel-del-rio-parana-se-mantiene-estable-y-el-sabado-se-espera-un-leve-descenso/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-16",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Itaipú"
+   ],
+   "ubicacion": [
+    -25.41,
+    -54.59
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/16/el-nivel-del-rio-parana-se-mantiene-estable-y-el-sabado-se-espera-un-leve-descenso/"
+    }
+   ],
+   "id": "f893c09621",
+   "verificado": true
+  },
+  {
+   "titulo": "CDE: inundación por crecida del río Paraná",
+   "url": "http://www.lanacion.com.py/ojo/2026/10/16/cde-inundacion-por-crecida-del-rio-parana/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-16",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/ojo/2026/10/16/cde-inundacion-por-crecida-del-rio-parana/"
+    }
+   ],
+   "id": "26965ef37b",
+   "verificado": true
+  },
+  {
+   "titulo": "Crecida histórica: el agua avanza y con lanchas y barcazas la misión es salvar a miles de animales",
+   "url": "https://www.lanacion.com.ar/economia/campo/hay-que-salir-con-todo-barcazas-lanchas-y-una-carrera-contra-reloj-para-salvar-a-los-animales-de-la-nid15102026/",
+   "dominio": "lanacion.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-10-16",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.ar",
+     "clase": "prensa",
+     "url": "https://www.lanacion.com.ar/economia/campo/hay-que-salir-con-todo-barcazas-lanchas-y-una-carrera-contra-reloj-para-salvar-a-los-animales-de-la-nid15102026/"
+    }
+   ],
+   "id": "3b2a2eb8e6",
+   "verificado": true
+  },
   {
    "titulo": "En Brasil incautan de un depósito 150 neumáticos de contrabando desde Paraguay",
    "url": "http://www.lanacion.com.py/pais/2026/10/15/en-brasil-incautan-de-un-deposito-150-neumaticos-de-contrabando-desde-paraguay/",
@@ -2263,6 +2403,42 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Aerolínea Gol suspende la ruta Asunción-Río de Janeiro: esto explica Dinac",
+   "url": "https://www.abc.com.py/viajes/2026/10/16/aerolinea-gol-suspende-la-ruta-asuncion-rio-de-janeiro-esto-explico-dinac/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "AUDIO: Gol cancela 40 rutas, incluyendo ruta Asunción - Río de Janeiro, por crisis de combustibles, según DINAC",
+   "url": "https://www.abc.com.py/730am/la-primera-manana/2026/10/16/audio-gol-cancela-40-rutas-incluyendo-ruta-asuncion-rio-de-janeiro-por-crisis-de-combustibles-segun-dinac/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Remesowski se reunió con autoridades argentinas para trazar agenda de integración",
+   "url": "http://www.lanacion.com.py/politica/2026/10/16/remesowski-se-reunio-con-autoridades-argentinas-para-trazar-agenda-de-integracion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Encarnación"
+   ]
+  },
+  {
+   "titulo": "Tragedia: un trabajador rural murió ahogado mientras rescataba vacas de una zona de campos inundados",
+   "url": "https://www.lanacion.com.ar/economia/campo/tragedia-un-trabajador-rural-murio-ahogado-mientras-rescataba-vacas-de-una-zona-de-campos-inundados-nid15102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
    "titulo": "Río Paraná podría alcanzar los 7 metros este fin de semana en Ayolas",
    "url": "https://www.abc.com.py/economia/2026/10/16/rio-parana-podria-alcanzar-los-7-metros-este-fin-de-semana-en-ayolas/",
    "dominio": "abc.com.py",
@@ -2275,15 +2451,6 @@
    "titulo": "Condenaron a dos policías por falsificar verificaciones vehiculares en Santa Fe",
    "url": "https://www.infobae.com/sociedad/policiales/2026/10/16/condenaron-a-dos-policias-por-falsificar-verificaciones-vehiculares-en-santa-fe/",
    "dominio": "infobae.com",
-   "fecha": "2026-10-16",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Tragedia: un trabajador rural murió ahogado mientras rescataba vacas de una zona de campos inundados",
-   "url": "https://www.lanacion.com.ar/economia/campo/tragedia-un-trabajador-rural-murio-ahogado-mientras-rescataba-vacas-de-una-zona-de-campos-inundados-nid15102026/",
-   "dominio": "lanacion.com.ar",
    "fecha": "2026-10-16",
    "lugares": [
     "Santa Fe"
