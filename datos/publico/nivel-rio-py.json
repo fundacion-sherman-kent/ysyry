@@ -146,11 +146,11 @@
   },
   {
    "estacion": "Ciudad del Este",
-   "fecha_lectura": "14-10-2026",
-   "maximo_historico": "32.57m --> 14-10-2026",
+   "fecha_lectura": "15-10-2026",
+   "maximo_historico": "32.96m --> 15-10-2026",
    "minimo_historico": "2.71m --> 05-07-2021",
-   "nivel": "32.57 m",
-   "variacion_24h": "330 cm"
+   "nivel": "32.96 m",
+   "variacion_24h": "39 cm"
   },
   {
    "estacion": "Cerrito",
@@ -254,5 +254,5 @@
   "nota": "Actualizado a diario por el organismo, no en vivo",
   "url": "https://www.meteorologia.gov.py/nivel-rio/indexconvencional.php"
  },
- "obtenido": "2026-10-16T13:49:33Z"
+ "obtenido": "2026-10-16T18:41:40Z"
 }
