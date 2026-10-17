@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-17T20:45:27Z",
+ "obtenido": "2026-10-17T23:13:59Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -19,7 +19,7 @@
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 4
+   "avisos_en_el_corredor": 3
   }
  ],
  "avisos": [
@@ -84,22 +84,6 @@
    "id": "gdacs-&amp;eventid=1104218",
    "lat": -26.737224,
    "lon": -54.4315257
-  },
-  {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
-   "fenomeno": "Green flood alert in Brazil",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "-22.11, -56.53"
-   ],
-   "riesgos": "",
-   "id": "gdacs-&amp;eventid=1104216",
-   "lat": -22.107327,
-   "lon": -56.5317344
   }
  ],
  "no_consultadas": [
