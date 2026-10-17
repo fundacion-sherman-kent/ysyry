@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-17T15:27:51Z",
+ "obtenido": "2026-10-17T20:30:35Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,15 +7,15 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 18,
-   "candidatos": 0,
+   "items": 20,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -55,15 +55,15 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 96,
-   "candidatos": 0,
+   "items": 93,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 345,
+   "items": 348,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -198,6 +198,43 @@
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
   {
+   "titulo": "Corrientes: en medio del desastre de las inundaciones, buscan a dos peones desaparecidos en el Paraná",
+   "url": "https://www.perfil.com/noticias/policia/buscan-a-dos-peones-rurales-desaparecidos-en-el-rio-parana-en-medio-de-la-historica-crecida-que-ya-dejo-mas-de-400-evacuados-en-corrientes.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-17",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 6,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/policia/buscan-a-dos-peones-rurales-desaparecidos-en-el-rio-parana-en-medio-de-la-historica-crecida-que-ya-dejo-mas-de-400-evacuados-en-corrientes.phtml"
+    }
+   ],
+   "id": "dc426fb433",
+   "verificado": true
+  },
+  {
    "titulo": "Nivel del río Paraná bajará levemente, pero piden prudencia ante próximas precipitaciones",
    "url": "http://www.lanacion.com.py/pais/2026/10/17/nivel-del-rio-parana-bajara-levemente-pero-piden-prudencia-ante-proximas-precipitaciones/",
    "dominio": "lanacion.com.py",
@@ -228,6 +265,161 @@
     }
    ],
    "id": "4da187cdcf",
+   "verificado": true
+  },
+  {
+   "titulo": "Río Paraná se mantiene estable, pero con alto nivel de inundación en Ciudad del Este",
+   "url": "https://www.abc.com.py/este/2026/10/17/rio-parana-se-mantiene-estable-pero-con-alto-nivel-de-inundacion-en-ciudad-del-este/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-17",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/este/2026/10/17/rio-parana-se-mantiene-estable-pero-con-alto-nivel-de-inundacion-en-ciudad-del-este/"
+    }
+   ],
+   "id": "782ddd5782",
+   "verificado": true
+  },
+  {
+   "titulo": "Ministros visitaron zona de Ayolas afectada por crecida del río Paraná",
+   "url": "https://www.abc.com.py/economia/2026/10/17/ministros-visitaron-zona-de-ayolas-afectada-por-crecida-del-rio-parana/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-17",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ayolas"
+   ],
+   "ubicacion": [
+    -27.39,
+    -56.84
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/economia/2026/10/17/ministros-visitaron-zona-de-ayolas-afectada-por-crecida-del-rio-parana/"
+    }
+   ],
+   "id": "b1684687bf",
+   "verificado": true
+  },
+  {
+   "titulo": "Detienen a presunto narcotraficante en allanamientos simultáneos en Alto Paraná",
+   "url": "https://www.abc.com.py/este/2026/10/17/detienen-a-presunto-narcotraficante-en-allanamientos-simultaneos-en-alto-parana/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-17",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Alto Paraná"
+   ],
+   "ubicacion": [
+    -25.3,
+    -54.8
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 4,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/este/2026/10/17/detienen-a-presunto-narcotraficante-en-allanamientos-simultaneos-en-alto-parana/"
+    }
+   ],
+   "id": "651e0ee9c6",
+   "verificado": true
+  },
+  {
+   "titulo": "El río Paraná llega a 6,40 metros en Misiones y las FFAA despliegan rescates",
+   "url": "http://www.lanacion.com.py/pais/2026/10/17/el-rio-parana-llega-a-640-metros-en-misiones-y-las-ffaa-despliegan-rescates/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-17",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/17/el-rio-parana-llega-a-640-metros-en-misiones-y-las-ffaa-despliegan-rescates/"
+    }
+   ],
+   "id": "3156ba44cd",
+   "verificado": true
+  },
+  {
+   "titulo": "Ganarle al agua: así es el dramático operativo de los ganaderos de las islas entrerrianas donde nada puede fallar para salvar a las vacas",
+   "url": "https://www.lanacion.com.ar/economia/campo/ganarle-al-agua-asi-es-el-dramatico-operativo-de-los-ganaderos-de-las-islas-entrerrianas-donde-nada-nid17102026/",
+   "dominio": "lanacion.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-10-17",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.ar",
+     "clase": "prensa",
+     "url": "https://www.lanacion.com.ar/economia/campo/ganarle-al-agua-asi-es-el-dramatico-operativo-de-los-ganaderos-de-las-islas-entrerrianas-donde-nada-nid17102026/"
+    }
+   ],
+   "id": "cb1fe12b49",
    "verificado": true
   },
   {
@@ -2690,12 +2882,28 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "El río Paraguay registra repunte generalizado mientras el Paraná muestra comportamiento mixto",
+   "url": "https://www.abc.com.py/nacionales/2026/10/17/el-rio-paraguay-registra-repunte-generalizado-mientras-el-parana-muestra-comportamiento-mixto/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-17",
+   "lugares": []
+  },
+  {
    "titulo": "Fitpar 2026: Binacional propone realidad virtual y fotografías personalizadas",
    "url": "http://www.lanacion.com.py/negocios/2026/10/17/fitpar-2026-binacional-propone-realidad-virtual-y-fotografias-personalizadas/",
    "dominio": "lanacion.com.py",
    "fecha": "2026-10-17",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Lemoine 'reprimió' a Amnistía Internacional: \"¿Personas afectadas? Se mojaron, déjense de joder...\"",
+   "url": "https://www.perfil.com/noticias/politica/lemoine-reprimio-a-aministia-internacional-afectadas-se-mojaron-dejense-de-joder.phtml",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-17",
+   "lugares": [
+    "Formosa"
    ]
   },
   {
@@ -2735,13 +2943,11 @@
    ]
   },
   {
-   "titulo": "Corte presentó denuncia en Fiscalía tras amenaza de ataque en Palacio de Justicia",
-   "url": "http://www.lanacion.com.py/judiciales/2026/10/16/corte-presento-denuncia-en-fiscalia-tras-amenaza-de-ataque-en-palacio-de-justicia/",
-   "dominio": "lanacion.com.py",
+   "titulo": "Argentina y Uruguay disputarán el Clásico del Río de la Plata en Buenos Aires",
+   "url": "https://www.abc.com.py/deportes/futbol/internacional/2026/10/16/uruguay-y-argentina-disputaran-el-13-de-noviembre-su-tercer-amistoso-del-siglo/",
+   "dominio": "abc.com.py",
    "fecha": "2026-10-16",
-   "lugares": [
-    "Asunción"
-   ]
+   "lugares": []
   },
   {
    "titulo": "ANNP RECIBIÓ A UNA DELEGACIÓN DE LOS ESTADOS UNIDOS INTERESADA EN LA NAVEGACIÓN Y EL DESARROLLO DE LA HIDROVÍA PARAGUAY–PARANÁ",
@@ -2749,6 +2955,15 @@
    "dominio": "annp.gov.py",
    "fecha": "2026-10-16",
    "lugares": []
+  },
+  {
+   "titulo": "Corte presentó denuncia en Fiscalía tras amenaza de ataque en Palacio de Justicia",
+   "url": "http://www.lanacion.com.py/judiciales/2026/10/16/corte-presento-denuncia-en-fiscalia-tras-amenaza-de-ataque-en-palacio-de-justicia/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Asunción"
+   ]
   },
   {
    "titulo": "Personal libera llamadas y conectividad en zonas afectadas por el desborde del río Paraná",
