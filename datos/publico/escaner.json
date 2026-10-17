@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-16T23:31:28Z",
+ "obtenido": "2026-10-17T04:16:12Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,7 +7,7 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
+   "items": 88,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 358,
+   "items": 384,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -500,6 +500,39 @@
     }
    ],
    "id": "25877ac1dd",
+   "verificado": true
+  },
+  {
+   "titulo": "Asunción se prepara para una crecida del río que podría afectar a 3.300 familias",
+   "url": "http://www.lanacion.com.py/pais/2026/10/16/asuncion-se-prepara-para-una-crecida-del-rio-que-podria-afectar-a-3300-familias/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-16",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Asunción"
+   ],
+   "ubicacion": [
+    -25.28,
+    -57.63
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/16/asuncion-se-prepara-para-una-crecida-del-rio-que-podria-afectar-a-3300-familias/"
+    }
+   ],
+   "id": "033bce17b0",
    "verificado": true
   },
   {
@@ -2620,50 +2653,34 @@
    ],
    "id": "44e9190158",
    "verificado": true
-  },
-  {
-   "titulo": "SENAD CONCRETA EXPULSIÓN DE INTEGRANTE DEL COMANDO VERMELHOI",
-   "url": "https://senad.gov.py/senad-concreta-expulsion-de-integrante-del-comando-vermelhoi/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-10-02",
-   "tipos": [
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ]
-   ],
-   "lugares": [
-    "Pedro Juan Caballero"
-   ],
-   "ubicacion": [
-    -22.55,
-    -55.73
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/senad-concreta-expulsion-de-integrante-del-comando-vermelhoi/"
-    }
-   ],
-   "id": "bc1cc27ffe",
-   "verificado": true
   }
  ],
  "sin_tipo": [
   {
-   "titulo": "Yacyretá prevé un leve descenso del río Paraná en Ayolas",
-   "url": "https://www.abc.com.py/economia/2026/10/16/yacyreta-preve-un-leve-descenso-del-rio-parana-en-ayolas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-16",
+   "titulo": "CDE: compras, gastronomía y cultura en una frontera que atrae a turistas",
+   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/10/17/cde-compras-gastronomia-y-cultura-en-una-frontera-que-atrae-a-turistas/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-17",
    "lugares": [
-    "Ayolas",
-    "Yacyretá"
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Ande y la Fiscalía se incautan de 18 máquinas de minería de una casa con medidor manipulado",
+   "url": "http://www.lanacion.com.py/pais/2026/10/16/ande-y-la-fiscalia-se-incautan-de-18-maquinas-de-mineria-de-una-casa-con-medidor-manipulado/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-17",
+   "lugares": [
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Procesan por intento de homicidio a joven que habría baleado a un menor en confuso episodio",
+   "url": "http://www.lanacion.com.py/pais/2026/10/16/procesan-por-intento-de-homicidio-a-joven-que-habria-baleado-a-un-menor-en-confuso-episodio/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-17",
+   "lugares": [
+    "Alto Paraná"
    ]
   },
   {
@@ -2704,6 +2721,30 @@
    ]
   },
   {
+   "titulo": "Dramática búsqueda de tres pescadores que fueron arrastrados por la corriente del río Paraná",
+   "url": "https://www.lanacion.com.ar/seguridad/dramatica-busqueda-de-tres-pescadores-que-fueron-arrastrados-por-la-corriente-del-rio-parana-nid16102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-16",
+   "lugares": []
+  },
+  {
+   "titulo": "ANNP RECIBIÓ A UNA DELEGACIÓN DE LOS ESTADOS UNIDOS INTERESADA EN LA NAVEGACIÓN Y EL DESARROLLO DE LA HIDROVÍA PARAGUAY–PARANÁ",
+   "url": "https://annp.gov.py/?p=23882",
+   "dominio": "annp.gov.py",
+   "fecha": "2026-10-16",
+   "lugares": []
+  },
+  {
+   "titulo": "Yacyretá prevé un leve descenso del río Paraná en Ayolas",
+   "url": "https://www.abc.com.py/economia/2026/10/16/yacyreta-preve-un-leve-descenso-del-rio-parana-en-ayolas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Ayolas",
+    "Yacyretá"
+   ]
+  },
+  {
    "titulo": "Remesowski se reunió con autoridades argentinas para trazar agenda de integración",
    "url": "http://www.lanacion.com.py/politica/2026/10/16/remesowski-se-reunio-con-autoridades-argentinas-para-trazar-agenda-de-integracion/",
    "dominio": "lanacion.com.py",
@@ -2713,13 +2754,6 @@
    ]
   },
   {
-   "titulo": "Dramática búsqueda de tres pescadores que fueron arrastrados por la corriente del río Paraná",
-   "url": "https://www.lanacion.com.ar/seguridad/dramatica-busqueda-de-tres-pescadores-que-fueron-arrastrados-por-la-corriente-del-rio-parana-nid16102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-16",
-   "lugares": []
-  },
-  {
    "titulo": "Amplio repudio empresario al fallo que absolvió a los jefes sindicales que bloquearon San Nicolás",
    "url": "https://www.lanacion.com.ar/politica/amplio-repudio-empresario-al-fallo-que-absolvio-a-los-jefes-sindicales-que-bloquearon-san-nicolas-nid16102026/",
    "dominio": "lanacion.com.ar",
@@ -2727,13 +2761,6 @@
    "lugares": [
     "San Nicolás"
    ]
-  },
-  {
-   "titulo": "ANNP RECIBIÓ A UNA DELEGACIÓN DE LOS ESTADOS UNIDOS INTERESADA EN LA NAVEGACIÓN Y EL DESARROLLO DE LA HIDROVÍA PARAGUAY–PARANÁ",
-   "url": "https://annp.gov.py/?p=23882",
-   "dominio": "annp.gov.py",
-   "fecha": "2026-10-16",
-   "lugares": []
   },
   {
    "titulo": "Tres hombres cayeron de una lancha al río Paraná y están desaparecidos",
