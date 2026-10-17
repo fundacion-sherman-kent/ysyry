@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-17T04:16:12Z",
+ "obtenido": "2026-10-17T10:33:50Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 16,
+   "items": 17,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 88,
+   "items": 95,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 384,
+   "items": 345,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -2703,6 +2703,13 @@
    ]
   },
   {
+   "titulo": "ANNP RECIBIÓ A UNA DELEGACIÓN DE LOS ESTADOS UNIDOS INTERESADA EN LA NAVEGACIÓN Y EL DESARROLLO DE LA HIDROVÍA PARAGUAY–PARANÁ",
+   "url": "https://annp.gov.py/?p=23882",
+   "dominio": "annp.gov.py",
+   "fecha": "2026-10-16",
+   "lugares": []
+  },
+  {
    "titulo": "Aeropuerto: interceptan encomienda con marihuana de alta pureza oculta en un esterilizador",
    "url": "http://www.lanacion.com.py/pais/2026/10/16/aeropuerto-interceptan-encomienda-con-marihuana-de-alta-pureza-oculta-en-un-esterilizador/",
    "dominio": "lanacion.com.py",
@@ -2724,13 +2731,6 @@
    "titulo": "Dramática búsqueda de tres pescadores que fueron arrastrados por la corriente del río Paraná",
    "url": "https://www.lanacion.com.ar/seguridad/dramatica-busqueda-de-tres-pescadores-que-fueron-arrastrados-por-la-corriente-del-rio-parana-nid16102026/",
    "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-16",
-   "lugares": []
-  },
-  {
-   "titulo": "ANNP RECIBIÓ A UNA DELEGACIÓN DE LOS ESTADOS UNIDOS INTERESADA EN LA NAVEGACIÓN Y EL DESARROLLO DE LA HIDROVÍA PARAGUAY–PARANÁ",
-   "url": "https://annp.gov.py/?p=23882",
-   "dominio": "annp.gov.py",
    "fecha": "2026-10-16",
    "lugares": []
   },
