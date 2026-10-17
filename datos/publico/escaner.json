@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-17T20:30:35Z",
+ "obtenido": "2026-10-17T23:04:03Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,7 +7,7 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 3,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
+   "items": 92,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 348,
+   "items": 352,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -2882,19 +2882,21 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "El río Paraguay registra repunte generalizado mientras el Paraná muestra comportamiento mixto",
-   "url": "https://www.abc.com.py/nacionales/2026/10/17/el-rio-paraguay-registra-repunte-generalizado-mientras-el-parana-muestra-comportamiento-mixto/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-17",
-   "lugares": []
-  },
-  {
    "titulo": "Fitpar 2026: Binacional propone realidad virtual y fotografías personalizadas",
    "url": "http://www.lanacion.com.py/negocios/2026/10/17/fitpar-2026-binacional-propone-realidad-virtual-y-fotografias-personalizadas/",
    "dominio": "lanacion.com.py",
    "fecha": "2026-10-17",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Buscan a una docente de una escuela rural desaparecida hace 10 días en Corrientes",
+   "url": "https://www.infobae.com/sociedad/policiales/2026/10/17/buscan-a-una-docente-de-una-escuela-rural-desaparecida-hace-10-dias-en-corrientes/",
+   "dominio": "infobae.com",
+   "fecha": "2026-10-17",
+   "lugares": [
+    "Corrientes"
    ]
   },
   {
@@ -2905,6 +2907,13 @@
    "lugares": [
     "Formosa"
    ]
+  },
+  {
+   "titulo": "El río Paraguay registra repunte generalizado mientras el Paraná muestra comportamiento mixto",
+   "url": "https://www.abc.com.py/nacionales/2026/10/17/el-rio-paraguay-registra-repunte-generalizado-mientras-el-parana-muestra-comportamiento-mixto/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-17",
+   "lugares": []
   },
   {
    "titulo": "CDE: compras, gastronomía y cultura en una frontera que atrae a turistas",
