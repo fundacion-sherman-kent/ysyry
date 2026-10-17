@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-17T10:33:50Z",
+ "obtenido": "2026-10-17T15:27:51Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 17,
+   "items": 18,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 95,
+   "items": 96,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +197,39 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Nivel del río Paraná bajará levemente, pero piden prudencia ante próximas precipitaciones",
+   "url": "http://www.lanacion.com.py/pais/2026/10/17/nivel-del-rio-parana-bajara-levemente-pero-piden-prudencia-ante-proximas-precipitaciones/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-17",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Itaipú"
+   ],
+   "ubicacion": [
+    -25.41,
+    -54.59
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/17/nivel-del-rio-parana-bajara-levemente-pero-piden-prudencia-ante-proximas-precipitaciones/"
+    }
+   ],
+   "id": "4da187cdcf",
+   "verificado": true
+  },
   {
    "titulo": "SENAD DESMANTELA CENTRO DE PROCESAMIENTO DE DROGAS E INCAUTA CARGAMENTO DE MEDICAMENTOS PARA ADELGAZAR",
    "url": "https://senad.gov.py/senad-desmantela-centro-de-procesamiento-de-drogas-e-incauta-cargamento-de-medicamentos-para-adelgazar/",
@@ -2657,6 +2690,15 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Fitpar 2026: Binacional propone realidad virtual y fotografías personalizadas",
+   "url": "http://www.lanacion.com.py/negocios/2026/10/17/fitpar-2026-binacional-propone-realidad-virtual-y-fotografias-personalizadas/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-17",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "CDE: compras, gastronomía y cultura en una frontera que atrae a turistas",
    "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/10/17/cde-compras-gastronomia-y-cultura-en-una-frontera-que-atrae-a-turistas/",
    "dominio": "lanacion.com.py",
@@ -2684,6 +2726,15 @@
    ]
   },
   {
+   "titulo": "La Sociedad Rural se sumó al masivo repudio contra el fallo que absolvió a los sindicalistas que bloquearon San Nicolás",
+   "url": "https://www.lanacion.com.ar/politica/la-sociedad-rural-se-sumo-al-masivo-repudio-contra-el-fallo-que-absolvio-a-los-sindicalistas-que-nid17102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-17",
+   "lugares": [
+    "San Nicolás"
+   ]
+  },
+  {
    "titulo": "Corte presentó denuncia en Fiscalía tras amenaza de ataque en Palacio de Justicia",
    "url": "http://www.lanacion.com.py/judiciales/2026/10/16/corte-presento-denuncia-en-fiscalia-tras-amenaza-de-ataque-en-palacio-de-justicia/",
    "dominio": "lanacion.com.py",
@@ -2691,6 +2742,13 @@
    "lugares": [
     "Asunción"
    ]
+  },
+  {
+   "titulo": "ANNP RECIBIÓ A UNA DELEGACIÓN DE LOS ESTADOS UNIDOS INTERESADA EN LA NAVEGACIÓN Y EL DESARROLLO DE LA HIDROVÍA PARAGUAY–PARANÁ",
+   "url": "https://annp.gov.py/?p=23882",
+   "dominio": "annp.gov.py",
+   "fecha": "2026-10-16",
+   "lugares": []
   },
   {
    "titulo": "Personal libera llamadas y conectividad en zonas afectadas por el desborde del río Paraná",
@@ -2701,13 +2759,6 @@
     "Ayolas",
     "Ciudad del Este"
    ]
-  },
-  {
-   "titulo": "ANNP RECIBIÓ A UNA DELEGACIÓN DE LOS ESTADOS UNIDOS INTERESADA EN LA NAVEGACIÓN Y EL DESARROLLO DE LA HIDROVÍA PARAGUAY–PARANÁ",
-   "url": "https://annp.gov.py/?p=23882",
-   "dominio": "annp.gov.py",
-   "fecha": "2026-10-16",
-   "lugares": []
   },
   {
    "titulo": "Aeropuerto: interceptan encomienda con marihuana de alta pureza oculta en un esterilizador",
