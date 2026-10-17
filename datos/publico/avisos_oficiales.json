@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-17T04:41:08Z",
+ "obtenido": "2026-10-17T10:57:17Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -56,22 +56,6 @@
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
    "pais": "",
-   "fenomeno": "Green flood alert in Argentina",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "-26.74, -54.43"
-   ],
-   "riesgos": "",
-   "id": "gdacs-&amp;eventid=1104218",
-   "lat": -26.737224,
-   "lon": -54.4315257
-  },
-  {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
    "fenomeno": "Green flood alert in Chile",
    "severidad": "",
    "color": "",
@@ -84,6 +68,22 @@
    "id": "gdacs-&amp;eventid=1104217",
    "lat": -33.4765918,
    "lon": -70.5418308
+  },
+  {
+   "fuente": "GDACS (ONU y Comisión Europea)",
+   "pais": "",
+   "fenomeno": "Green flood alert in Argentina",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "-26.74, -54.43"
+   ],
+   "riesgos": "",
+   "id": "gdacs-&amp;eventid=1104218",
+   "lat": -26.737224,
+   "lon": -54.4315257
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
