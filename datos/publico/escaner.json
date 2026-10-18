@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-18T10:56:27Z",
+ "obtenido": "2026-10-18T15:48:02Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 15,
+   "items": 14,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
+   "items": 91,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -2909,6 +2909,23 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Dos inmigrantes muertos y siete heridos en una barcaza auxiliada por España",
+   "url": "https://www.abc.com.py/internacionales/2026/10/18/dos-inmigrantes-muertos-y-siete-heridos-en-una-barcaza-auxiliada-por-espana/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-18",
+   "lugares": []
+  },
+  {
+   "titulo": "Emergencia en Ayolas: piden ayuda para alimentar a más de 300 animales rescatados",
+   "url": "http://www.lanacion.com.py/pais/2026/10/18/emergencia-en-ayolas-piden-ayuda-para-alimentar-a-mas-de-300-animales-rescatados/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-18",
+   "lugares": [
+    "Ayolas",
+    "Yacyretá"
+   ]
+  },
   {
    "titulo": "El río Paraná continúa en ascenso y el agua cubre gran parte de Cerrito",
    "url": "https://www.abc.com.py/nacionales/2026/10/17/el-rio-parana-continua-en-ascenso-y-el-agua-cubre-gran-parte-de-cerrito/",
