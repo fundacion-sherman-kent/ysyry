@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-18T04:21:47Z",
+ "obtenido": "2026-10-18T10:56:27Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 17,
+   "items": 15,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 91,
+   "items": 90,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
