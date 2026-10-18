@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-17T23:04:03Z",
+ "obtenido": "2026-10-18T04:21:47Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 20,
+   "items": 17,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -62,8 +62,8 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
-   "candidatos": 1,
+   "items": 91,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 352,
+   "items": 353,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +197,34 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Piden prudencia ante próximas precipitaciones pronosticadas",
+   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/18/piden-prudencia-ante-proximas-precipitaciones-pronosticadas/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-18",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/18/piden-prudencia-ante-proximas-precipitaciones-pronosticadas/"
+    }
+   ],
+   "id": "b43de4d2b9",
+   "verificado": true
+  },
   {
    "titulo": "Corrientes: en medio del desastre de las inundaciones, buscan a dos peones desaparecidos en el Paraná",
    "url": "https://www.perfil.com/noticias/policia/buscan-a-dos-peones-rurales-desaparecidos-en-el-rio-parana-en-medio-de-la-historica-crecida-que-ya-dejo-mas-de-400-evacuados-en-corrientes.phtml",
@@ -2882,6 +2910,13 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "El río Paraná continúa en ascenso y el agua cubre gran parte de Cerrito",
+   "url": "https://www.abc.com.py/nacionales/2026/10/17/el-rio-parana-continua-en-ascenso-y-el-agua-cubre-gran-parte-de-cerrito/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-17",
+   "lugares": []
+  },
+  {
    "titulo": "Fitpar 2026: Binacional propone realidad virtual y fotografías personalizadas",
    "url": "http://www.lanacion.com.py/negocios/2026/10/17/fitpar-2026-binacional-propone-realidad-virtual-y-fotografias-personalizadas/",
    "dominio": "lanacion.com.py",
@@ -2952,16 +2987,16 @@
    ]
   },
   {
-   "titulo": "Argentina y Uruguay disputarán el Clásico del Río de la Plata en Buenos Aires",
-   "url": "https://www.abc.com.py/deportes/futbol/internacional/2026/10/16/uruguay-y-argentina-disputaran-el-13-de-noviembre-su-tercer-amistoso-del-siglo/",
-   "dominio": "abc.com.py",
+   "titulo": "ANNP RECIBIÓ A UNA DELEGACIÓN DE LOS ESTADOS UNIDOS INTERESADA EN LA NAVEGACIÓN Y EL DESARROLLO DE LA HIDROVÍA PARAGUAY–PARANÁ",
+   "url": "https://annp.gov.py/?p=23882",
+   "dominio": "annp.gov.py",
    "fecha": "2026-10-16",
    "lugares": []
   },
   {
-   "titulo": "ANNP RECIBIÓ A UNA DELEGACIÓN DE LOS ESTADOS UNIDOS INTERESADA EN LA NAVEGACIÓN Y EL DESARROLLO DE LA HIDROVÍA PARAGUAY–PARANÁ",
-   "url": "https://annp.gov.py/?p=23882",
-   "dominio": "annp.gov.py",
+   "titulo": "Argentina y Uruguay disputarán el Clásico del Río de la Plata en Buenos Aires",
+   "url": "https://www.abc.com.py/deportes/futbol/internacional/2026/10/16/uruguay-y-argentina-disputaran-el-13-de-noviembre-su-tercer-amistoso-del-siglo/",
+   "dominio": "abc.com.py",
    "fecha": "2026-10-16",
    "lugares": []
   },
