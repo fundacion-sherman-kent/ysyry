@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-18T20:55:29Z",
+ "obtenido": "2026-10-18T23:22:36Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -19,26 +19,10 @@
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 3
+   "avisos_en_el_corredor": 1
   }
  ],
  "avisos": [
-  {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
-   "fenomeno": "Green forest fire notification in Bolivia",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "-21.69, -64.94"
-   ],
-   "riesgos": "",
-   "id": "gdacs-&amp;eventid=1032807",
-   "lat": -21.687254723941663,
-   "lon": -64.94168894061485
-  },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
    "pais": "",
@@ -54,22 +38,6 @@
    "id": "gdacs-&amp;eventid=1104217",
    "lat": -33.4765918,
    "lon": -70.5418308
-  },
-  {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
-   "fenomeno": "Green flood alert in Argentina",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "-26.74, -54.43"
-   ],
-   "riesgos": "",
-   "id": "gdacs-&amp;eventid=1104218",
-   "lat": -26.737224,
-   "lon": -54.4315257
   }
  ],
  "no_consultadas": [
