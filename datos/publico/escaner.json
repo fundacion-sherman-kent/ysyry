@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-18T20:34:44Z",
+ "obtenido": "2026-10-18T23:03:35Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 12,
+   "items": 11,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 95,
+   "items": 91,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 357,
+   "items": 361,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -2926,6 +2926,43 @@
    "lugares": [
     "Ayolas",
     "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Once días sin noticias y un amplio operativo de búsqueda: qué se sabe de la docente desaparecida en Corrientes",
+   "url": "https://www.infobae.com/sociedad/policiales/2026/10/18/once-dias-sin-noticias-y-un-amplio-operativo-de-busqueda-que-se-sabe-de-la-docente-desaparecida-en-corrientes/",
+   "dominio": "infobae.com",
+   "fecha": "2026-10-18",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
+   "titulo": "Un jugador murió tras descompensarse en un partido de veteranos y detuvieron a su hijo por causar destrozos en el hospital",
+   "url": "https://www.infobae.com/sociedad/2026/10/18/un-jugador-murio-tras-descompensarse-en-un-partido-de-veteranos-y-detuvieron-a-su-hijo-por-causar-destrozos-en-el-hospital/",
+   "dominio": "infobae.com",
+   "fecha": "2026-10-18",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Santa Fe subastó bienes del delito por más de $1.645 millones: desde una casa hasta lanchas y arcades",
+   "url": "https://www.perfil.com/noticias/sociedad/santa-fe-subasto-bienes-del-delito-por-mas-de-1645-millones-desde-una-casa-hasta-lanchas-y-arcades-a50-bgd.phtml",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-18",
+   "lugares": [
+    "Rosario",
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Cuando el agua no es cuento",
+   "url": "https://www.pagina12.com.ar/2026/10/18/cuando-el-agua-no-es-cuento/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-10-18",
+   "lugares": [
+    "Corrientes"
    ]
   },
   {
