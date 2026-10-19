@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-19T04:31:34Z",
+ "obtenido": "2026-10-19T12:59:44Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 13,
+   "items": 15,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 88,
+   "items": 95,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 345,
+   "items": 305,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +197,72 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Ayolas bajo agua",
+   "url": "http://www.lanacion.com.py/ojo/2026/10/19/ayolas-bajo-agua/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-19",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ayolas"
+   ],
+   "ubicacion": [
+    -27.39,
+    -56.84
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/ojo/2026/10/19/ayolas-bajo-agua/"
+    }
+   ],
+   "id": "e4edee8f3f",
+   "verificado": true
+  },
+  {
+   "titulo": "Evacuación por inundación en San Rafael",
+   "url": "http://www.lanacion.com.py/ojo/2026/10/19/evacuacion-por-inundacion-en-san-rafael/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-19",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/ojo/2026/10/19/evacuacion-por-inundacion-en-san-rafael/"
+    }
+   ],
+   "id": "ced295fc88",
+   "verificado": true
+  },
   {
    "titulo": "Concepción: Río Paraguay sube 9 centímetros, pero no se reportan inundaciones",
    "url": "https://www.abc.com.py/nacionales/2026/10/18/concepcion-rio-paraguay-sube-9-centimetros-pero-no-se-reportan-inundaciones/",
@@ -2943,6 +3009,33 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Cumbre de Mujeres Indígenas de Abya Yala se celebra en Asunción",
+   "url": "http://www.lanacion.com.py/pais/2026/10/19/cumbre-de-mujeres-indigenas-de-abya-yala-se-celebra-en-asuncion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-19",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Puente de la Bioceánica avanza hacia su culminación con recursos de Itaipú",
+   "url": "http://www.lanacion.com.py/foco/2026/10/19/puente-de-la-bioceanica-avanza-hacia-su-culminacion-con-recursos-de-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-19",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "El Niño en Corrientes: el Paraná superó el nivel de evacuación en la Capital y ya hay 754 desplazados",
+   "url": "https://www.perfil.com/noticias/nea/el-nino-en-corrientes-el-parana-supero-el-nivel-de-evacuacion-en-la-capital-y-ya-hay-754-desplazados.phtml",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-19",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
    "titulo": "Detienen a una mujer quien estaría involucrada en crimen de un hombre en Pdte. Franco",
    "url": "http://www.lanacion.com.py/pais/2026/10/18/detienen-a-una-mujer-quien-estaria-involucrada-en-crimen-de-un-hombre-en-pdte-franco/",
    "dominio": "lanacion.com.py",
@@ -2972,6 +3065,13 @@
    ]
   },
   {
+   "titulo": "El fútbol uruguayo como destino para jóvenes argentinos",
+   "url": "https://ladiaria.com.uy/deporte/articulo/2026/10/el-futbol-uruguayo-como-destino-para-jovenes-argentinos/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-18",
+   "lugares": []
+  },
+  {
    "titulo": "Cuando el agua no es cuento",
    "url": "https://www.pagina12.com.ar/2026/10/18/cuando-el-agua-no-es-cuento/",
    "dominio": "pagina12.com.ar",
@@ -2979,13 +3079,6 @@
    "lugares": [
     "Corrientes"
    ]
-  },
-  {
-   "titulo": "El fútbol uruguayo como destino para jóvenes argentinos",
-   "url": "https://ladiaria.com.uy/deporte/articulo/2026/10/el-futbol-uruguayo-como-destino-para-jovenes-argentinos/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-18",
-   "lugares": []
   },
   {
    "titulo": "Once días sin noticias y un amplio operativo de búsqueda: qué se sabe de la docente desaparecida en Corrientes",
@@ -3403,6 +3496,15 @@
    ]
   },
   {
+   "titulo": "Hallan muerta a una mujer en Katueté y su pareja es el principal sospechoso",
+   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/hallan-muerta-a-una-mujer-en-katuete-y-su-pareja-es-el-principal-sospechoso",
+   "dominio": "npy.com.py",
+   "fecha": "2026-10-13",
+   "lugares": [
+    "Canindeyú"
+   ]
+  },
+  {
    "titulo": "Alto Paraná: entre Itaipú, Acaray y la represa Yguazú se abrieron 19 compuertas",
    "url": "http://www.lanacion.com.py/pais/2026/10/13/alto-parana-entre-itaipu-acaray-y-la-represa-yguazu-se-abrieron-19-compuertas/",
    "dominio": "lanacion.com.py",
@@ -3437,15 +3539,6 @@
    "fecha": "2026-10-13",
    "lugares": [
     "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "Hallan muerta a una mujer en Katueté y su pareja es el principal sospechoso",
-   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/hallan-muerta-a-una-mujer-en-katuete-y-su-pareja-es-el-principal-sospechoso",
-   "dominio": "npy.com.py",
-   "fecha": "2026-10-13",
-   "lugares": [
-    "Canindeyú"
    ]
   },
   {
