@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-18T22:58:26Z",
+ "obtenido": "2026-10-19T04:24:59Z",
  "fuente": {
   "nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente",
   "url": "https://www.smn.gob.ar/",
@@ -8,42 +8,42 @@
  "estaciones": [
   {
    "nombre": "La Plata",
-   "fecha": "18-octubre-2026",
-   "hora": "19:00",
-   "direccion": "Este",
-   "kmh": 9,
-   "estado": "Cubierto"
-  },
-  {
-   "nombre": "Punta Indio B.A.",
-   "fecha": "18-octubre-2026",
-   "hora": "19:00",
+   "fecha": "19-octubre-2026",
+   "hora": "01:00",
    "direccion": "Sur",
-   "kmh": 9,
-   "estado": "Parcialmente nublado"
-  },
-  {
-   "nombre": "San Fernando",
-   "fecha": "18-octubre-2026",
-   "hora": "19:00",
-   "direccion": "Noreste",
    "kmh": 7,
    "estado": "Parcialmente nublado"
   },
   {
-   "nombre": "Aeroparque Buenos Aires",
+   "nombre": "Punta Indio B.A.",
    "fecha": "18-octubre-2026",
-   "hora": "19:00",
-   "direccion": "Este",
-   "kmh": 9,
+   "hora": "20:00",
+   "direccion": "Sudeste",
+   "kmh": 7,
    "estado": "Parcialmente nublado"
   },
   {
+   "nombre": "San Fernando",
+   "fecha": "19-octubre-2026",
+   "hora": "01:00",
+   "direccion": "Sudoeste",
+   "kmh": 7,
+   "estado": "Nublado"
+  },
+  {
+   "nombre": "Aeroparque Buenos Aires",
+   "fecha": "19-octubre-2026",
+   "hora": "01:00",
+   "direccion": "Sudeste",
+   "kmh": 7,
+   "estado": "Cubierto"
+  },
+  {
    "nombre": "Buenos Aires",
-   "fecha": "18-octubre-2026",
-   "hora": "19:00",
-   "direccion": "Este",
-   "kmh": 3,
+   "fecha": "19-octubre-2026",
+   "hora": "01:00",
+   "direccion": "Sur",
+   "kmh": 1,
    "estado": "Cubierto"
   }
  ]
