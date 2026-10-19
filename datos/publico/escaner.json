@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-19T12:59:44Z",
+ "obtenido": "2026-10-19T20:33:41Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,8 +14,8 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 15,
-   "candidatos": 1,
+   "items": 20,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
@@ -62,8 +62,8 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 95,
-   "candidatos": 0,
+   "items": 93,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 305,
+   "items": 323,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -261,6 +261,73 @@
     }
    ],
    "id": "ced295fc88",
+   "verificado": true
+  },
+  {
+   "titulo": "Inundaciones: cierran compuertas en Ñeembucú por crecida del río Paraguay",
+   "url": "http://www.lanacion.com.py/pais/2026/10/19/inundaciones-cierran-compuertas-en-neembucu-por-crecida-del-rio-paraguay/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-19",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Pilar"
+   ],
+   "ubicacion": [
+    -26.86,
+    -58.3
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/19/inundaciones-cierran-compuertas-en-neembucu-por-crecida-del-rio-paraguay/"
+    }
+   ],
+   "id": "f8c77c6219",
+   "verificado": true
+  },
+  {
+   "titulo": "Horas decisivas: la fecha límite que obliga a una región a sacar 11.000 vacas en medio de la urgencia por la crecida del Paraná",
+   "url": "https://www.lanacion.com.ar/economia/campo/antes-del-viernes-la-fecha-limite-que-obliga-a-una-region-a-sacar-11000-vacas-en-medio-de-la-nid19102026/",
+   "dominio": "lanacion.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-10-19",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes",
+    "Goya"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.ar",
+     "clase": "prensa",
+     "url": "https://www.lanacion.com.ar/economia/campo/antes-del-viernes-la-fecha-limite-que-obliga-a-una-region-a-sacar-11000-vacas-en-medio-de-la-nid19102026/"
+    }
+   ],
+   "id": "6108bb7d08",
    "verificado": true
   },
   {
@@ -3009,6 +3076,39 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Carlos Antonio López: buscan a pescador desaparecido en el río Paraná tras vuelco de su canoa",
+   "url": "https://www.abc.com.py/policiales/2026/10/19/carlos-antonio-lopez-buscan-a-pescador-desaparecido-en-el-rio-parana-tras-vuelco-de-su-canoa/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-19",
+   "lugares": []
+  },
+  {
+   "titulo": "Brasileño raptado en Pedro Juan Caballero es un prófugo por narcotráfico en Brasil",
+   "url": "https://www.abc.com.py/policiales/2026/10/19/brasileno-raptado-en-pedro-juan-caballero-es-un-profugo-por-narcotrafico-en-brasil/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-19",
+   "lugares": [
+    "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "Buscan a pescador tras naufragio de una canoa en el río Paraná",
+   "url": "http://www.lanacion.com.py/pais/2026/10/19/buscan-a-pescador-tras-naufragio-de-una-canoa-en-el-rio-parana/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-19",
+   "lugares": []
+  },
+  {
+   "titulo": "Estudiantes rescatan en maquetas la memoria de edificios históricos de Encarnación",
+   "url": "http://www.lanacion.com.py/pais/2026/10/19/estudiantes-rescatan-en-maquetas-la-memoria-de-edificios-historicos-de-encarnacion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-19",
+   "lugares": [
+    "Encarnación",
+    "Yacyretá"
+   ]
+  },
+  {
    "titulo": "Cumbre de Mujeres Indígenas de Abya Yala se celebra en Asunción",
    "url": "http://www.lanacion.com.py/pais/2026/10/19/cumbre-de-mujeres-indigenas-de-abya-yala-se-celebra-en-asuncion/",
    "dominio": "lanacion.com.py",
@@ -3034,6 +3134,13 @@
    "lugares": [
     "Corrientes"
    ]
+  },
+  {
+   "titulo": "El fútbol uruguayo como destino para jóvenes argentinos",
+   "url": "https://ladiaria.com.uy/deporte/articulo/2026/10/el-futbol-uruguayo-como-destino-para-jovenes-argentinos/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-18",
+   "lugares": []
   },
   {
    "titulo": "Detienen a una mujer quien estaría involucrada en crimen de un hombre en Pdte. Franco",
@@ -3063,13 +3170,6 @@
     "Rosario",
     "Santa Fe"
    ]
-  },
-  {
-   "titulo": "El fútbol uruguayo como destino para jóvenes argentinos",
-   "url": "https://ladiaria.com.uy/deporte/articulo/2026/10/el-futbol-uruguayo-como-destino-para-jovenes-argentinos/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-18",
-   "lugares": []
   },
   {
    "titulo": "Cuando el agua no es cuento",
