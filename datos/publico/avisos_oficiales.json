@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-19T13:41:44Z",
+ "obtenido": "2026-10-19T20:39:14Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -18,8 +18,8 @@
   },
   {
    "nombre": "GDACS",
-   "ok": false,
-   "error": "<urlopen error timed out>"
+   "ok": true,
+   "avisos_en_el_corredor": 2
   }
  ],
  "avisos": [
@@ -72,6 +72,38 @@
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
    "id": "inmet-28525"
+  },
+  {
+   "fuente": "GDACS (ONU y Comisión Europea)",
+   "pais": "",
+   "fenomeno": "Green flood alert in Uruguay",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "-32.27, -58.08"
+   ],
+   "riesgos": "",
+   "id": "gdacs-&amp;eventid=1104238",
+   "lat": -32.2702086,
+   "lon": -58.0837759
+  },
+  {
+   "fuente": "GDACS (ONU y Comisión Europea)",
+   "pais": "",
+   "fenomeno": "Green flood alert in Chile",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "-33.48, -70.54"
+   ],
+   "riesgos": "",
+   "id": "gdacs-&amp;eventid=1104217",
+   "lat": -33.4765918,
+   "lon": -70.5418308
   }
  ],
  "no_consultadas": [
