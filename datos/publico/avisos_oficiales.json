@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-10-19T04:55:02Z",
+ "obtenido": "2026-10-19T13:41:44Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 3
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -18,26 +18,60 @@
   },
   {
    "nombre": "GDACS",
-   "ok": true,
-   "avisos_en_el_corredor": 1
+   "ok": false,
+   "error": "<urlopen error timed out>"
   }
  ],
  "avisos": [
   {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
-   "fenomeno": "Green flood alert in Chile",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-10-21 15:00",
+   "fin": "2026-10-21 23:59",
    "lugares": [
-    "-33.48, -70.54"
+    "Foz do Iguaçu",
+    "Guaíra"
    ],
-   "riesgos": "",
-   "id": "gdacs-&amp;eventid=1104217",
-   "lat": -33.4765918,
-   "lon": -70.5418308
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28523"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-10-22 00:01",
+   "fin": "2026-10-22 23:59",
+   "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres",
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28524"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-10-23 00:01",
+   "fin": "2026-10-23 23:59",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28525"
   }
  ],
  "no_consultadas": [
