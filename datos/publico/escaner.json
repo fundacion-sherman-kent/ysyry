@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-18T23:03:35Z",
+ "obtenido": "2026-10-19T04:31:34Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 11,
+   "items": 13,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 91,
+   "items": 88,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 361,
+   "items": 345,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +197,39 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Concepción: Río Paraguay sube 9 centímetros, pero no se reportan inundaciones",
+   "url": "https://www.abc.com.py/nacionales/2026/10/18/concepcion-rio-paraguay-sube-9-centimetros-pero-no-se-reportan-inundaciones/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-18",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Concepción"
+   ],
+   "ubicacion": [
+    -23.4,
+    -57.43
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/nacionales/2026/10/18/concepcion-rio-paraguay-sube-9-centimetros-pero-no-se-reportan-inundaciones/"
+    }
+   ],
+   "id": "ac4eca99aa",
+   "verificado": true
+  },
   {
    "titulo": "Piden prudencia ante próximas precipitaciones pronosticadas",
    "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/18/piden-prudencia-ante-proximas-precipitaciones-pronosticadas/",
@@ -2929,6 +2962,32 @@
    ]
   },
   {
+   "titulo": "Santa Fe subastó bienes del delito por más de $1.645 millones: desde una casa hasta lanchas y arcades",
+   "url": "https://www.perfil.com/noticias/judiciales/santa-fe-subasto-bienes-del-delito-por-mas-de-1645-millones-desde-una-casa-hasta-lanchas-y-arcades-a50-bgd.phtml",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-18",
+   "lugares": [
+    "Rosario",
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Cuando el agua no es cuento",
+   "url": "https://www.pagina12.com.ar/2026/10/18/cuando-el-agua-no-es-cuento/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-10-18",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
+   "titulo": "El fútbol uruguayo como destino para jóvenes argentinos",
+   "url": "https://ladiaria.com.uy/deporte/articulo/2026/10/el-futbol-uruguayo-como-destino-para-jovenes-argentinos/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-18",
+   "lugares": []
+  },
+  {
    "titulo": "Once días sin noticias y un amplio operativo de búsqueda: qué se sabe de la docente desaparecida en Corrientes",
    "url": "https://www.infobae.com/sociedad/policiales/2026/10/18/once-dias-sin-noticias-y-un-amplio-operativo-de-busqueda-que-se-sabe-de-la-docente-desaparecida-en-corrientes/",
    "dominio": "infobae.com",
@@ -2954,15 +3013,6 @@
    "lugares": [
     "Rosario",
     "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Cuando el agua no es cuento",
-   "url": "https://www.pagina12.com.ar/2026/10/18/cuando-el-agua-no-es-cuento/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-10-18",
-   "lugares": [
-    "Corrientes"
    ]
   },
   {
