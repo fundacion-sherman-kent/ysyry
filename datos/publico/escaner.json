@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-20T08:26:03Z",
+ "obtenido": "2026-10-20T14:16:20Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 26,
+   "items": 29,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
@@ -55,7 +55,7 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 316,
+   "items": 318,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +197,72 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Más de 4.200 familias sufren la crecida del río Paraná en cuatro departamentos",
+   "url": "http://www.lanacion.com.py/pais/2026/10/20/mas-de-4200-familias-sufren-la-crecida-del-rio-parana-en-cuatro-departamentos/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-20",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ayolas"
+   ],
+   "ubicacion": [
+    -27.39,
+    -56.84
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/20/mas-de-4200-familias-sufren-la-crecida-del-rio-parana-en-cuatro-departamentos/"
+    }
+   ],
+   "id": "0f1e3f8acb",
+   "verificado": true
+  },
+  {
+   "titulo": "Itaipú monitorea el río Paraná ante el anuncio de nuevas lluvias",
+   "url": "http://www.lanacion.com.py/pais/2026/10/20/itaipu-monitorea-el-rio-parana-ante-el-anuncio-de-nuevas-lluvias/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-20",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Itaipú"
+   ],
+   "ubicacion": [
+    -25.41,
+    -54.59
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/20/itaipu-monitorea-el-rio-parana-ante-el-anuncio-de-nuevas-lluvias/"
+    }
+   ],
+   "id": "7be790db48",
+   "verificado": true
+  },
   {
    "titulo": "Ayolas bajo agua",
    "url": "http://www.lanacion.com.py/ojo/2026/10/19/ayolas-bajo-agua/",
@@ -3203,6 +3269,15 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "El brasileño raptado y asesinado en Pedro Juan Caballero era buscado por narcotráfico e investigado por homicidios",
+   "url": "https://www.abc.com.py/policiales/2026/10/20/el-brasileno-raptado-y-asesinado-en-pedro-juan-caballero-era-buscado-por-narcotrafico-e-investigado-por-homicidios/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-20",
+   "lugares": [
+    "Pedro Juan Caballero"
+   ]
+  },
+  {
    "titulo": "Fiscalía realiza entrega vigilada tras extorsión y amenazas por deuda en local comercial de Asunción",
    "url": "https://www.abc.com.py/policiales/2026/10/19/fiscalia-realiza-entrega-vigilada-tras-extorsion-y-amenazas-por-deuda-en-local-comercial-de-asuncion/",
    "dominio": "abc.com.py",
@@ -3210,6 +3285,32 @@
    "lugares": [
     "Asunción"
    ]
+  },
+  {
+   "titulo": "Botón Lince gestionó más de 5.200 pedidos de auxilio en sus primeros diez meses",
+   "url": "http://www.lanacion.com.py/pais/2026/10/20/boton-lince-gestiono-mas-de-5200-pedidos-de-auxilio-en-sus-primeros-diez-meses/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-20",
+   "lugares": [
+    "Asunción",
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "PJC: hallan un cuerpo sin vida y sospechan que se trata del hombre raptado",
+   "url": "http://www.lanacion.com.py/pais/2026/10/20/pjc-hallan-un-cuerpo-sin-vida-y-sospechan-que-se-trata-del-hombre-raptado/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-20",
+   "lugares": [
+    "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "Buscan identificar a un hombre que fue encontrado sin vida en el río Paraná",
+   "url": "https://www.pagina12.com.ar/2026/10/20/buscan-identificar-a-un-hombre-que-fue-encontrado-sin-vida-en-el-rio-parana/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-10-20",
+   "lugares": []
   },
   {
    "titulo": "Carlos Antonio López: buscan a pescador desaparecido en el río Paraná tras vuelco de su canoa",
@@ -4218,42 +4319,6 @@
    "fecha": "2026-10-07",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Itaipú promueve la cultura y movilidad sustentable en los World Skate Games ASU26",
-   "url": "http://www.lanacion.com.py/pais/2026/10/07/itaipu-promueve-la-cultura-y-movilidad-sustentable-en-los-world-skate-games-asu26/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-07",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Itaipú: ¿qué gobierno de Brasil le conviene más a Paraguay, Lula o Flávio Bolsonaro?",
-   "url": "https://www.abc.com.py/economia/2026/10/07/itaipu-que-gobierno-de-brasil-le-conviene-mas-a-paraguay-lula-o-flavio-bolsonaro/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-07",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Itaipú reporta transferencia de USD 345 millones",
-   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/10/07/itaipu-reporta-transferencia-de-usd-345-millones/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-07",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Caso Tía Chela: Corbeta cuestiona compras de CDE y habla de una “licitación fraguada”",
-   "url": "http://www.lanacion.com.py/politica/2026/10/06/caso-tia-chela-corbeta-cuestiona-compras-de-cde-y-habla-de-una-licitacion-fraguada/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-06",
-   "lugares": [
-    "Ciudad del Este"
    ]
   }
  ]
