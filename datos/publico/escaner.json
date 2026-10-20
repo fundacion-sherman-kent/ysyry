@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-19T20:33:41Z",
+ "obtenido": "2026-10-20T00:16:57Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 20,
+   "items": 23,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -47,7 +47,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
+   "items": 91,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 323,
+   "items": 337,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -328,6 +328,133 @@
     }
    ],
    "id": "6108bb7d08",
+   "verificado": true
+  },
+  {
+   "titulo": "Pilar: cierran compuertas de estación de bombeos ante crecida del río Paraguay",
+   "url": "https://www.abc.com.py/economia/2026/10/19/pilar-cierran-compuertas-de-estacion-de-bombeos-ante-crecida-del-rio-paraguay/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-19",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Pilar"
+   ],
+   "ubicacion": [
+    -26.86,
+    -58.3
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/economia/2026/10/19/pilar-cierran-compuertas-de-estacion-de-bombeos-ante-crecida-del-rio-paraguay/"
+    }
+   ],
+   "id": "3a1dad3b69",
+   "verificado": true
+  },
+  {
+   "titulo": "Dos muertos por inundaciones en el noreste de Argentina vinculadas a El Niño",
+   "url": "http://www.lanacion.com.py/mundo/2026/10/19/dos-muertos-por-inundaciones-en-el-noreste-de-argentina-vinculadas-a-el-nino/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-19",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/mundo/2026/10/19/dos-muertos-por-inundaciones-en-el-noreste-de-argentina-vinculadas-a-el-nino/"
+    }
+   ],
+   "id": "c3d79cb3c8",
+   "verificado": true
+  },
+  {
+   "titulo": "La insólita historia del “barco fantasma” de 107 metros que quedó a la deriva en el río Paraná por las crecidas",
+   "url": "https://www.infobae.com/sociedad/2026/10/19/la-insolita-historia-del-barco-fantasma-de-107-metros-quedo-a-la-deriva-en-el-rio-parana-por-las-crecidas/",
+   "dominio": "infobae.com",
+   "clase": "prensa",
+   "fecha": "2026-10-19",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "infobae.com",
+     "clase": "prensa",
+     "url": "https://www.infobae.com/sociedad/2026/10/19/la-insolita-historia-del-barco-fantasma-de-107-metros-quedo-a-la-deriva-en-el-rio-parana-por-las-crecidas/"
+    }
+   ],
+   "id": "4ee308c74a",
+   "verificado": true
+  },
+  {
+   "titulo": "El Niño en Argentina: cuáles serán las regiones más afectadas por lluvias y crecidas en los próximos días",
+   "url": "https://www.perfil.com/noticias/clima/el-nino-en-argentina-cuales-seran-las-regiones-mas-afectadas-por-lluvias-y-crecidas-en-los-proximos-dias-a50-bgd.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-19",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/clima/el-nino-en-argentina-cuales-seran-las-regiones-mas-afectadas-por-lluvias-y-crecidas-en-los-proximos-dias-a50-bgd.phtml"
+    }
+   ],
+   "id": "97799c514e",
    "verificado": true
   },
   {
@@ -3076,6 +3203,15 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Río Paraná inicia un lento retroceso en la zona de Ayolas",
+   "url": "https://www.abc.com.py/clima/2026/10/19/rio-parana-inicia-un-lento-retroceso-en-la-zona-de-ayolas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-19",
+   "lugares": [
+    "Ayolas"
+   ]
+  },
+  {
    "titulo": "Carlos Antonio López: buscan a pescador desaparecido en el río Paraná tras vuelco de su canoa",
    "url": "https://www.abc.com.py/policiales/2026/10/19/carlos-antonio-lopez-buscan-a-pescador-desaparecido-en-el-rio-parana-tras-vuelco-de-su-canoa/",
    "dominio": "abc.com.py",
@@ -3089,6 +3225,33 @@
    "fecha": "2026-10-19",
    "lugares": [
     "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "Preso de la culpa: delincuente se entregó a la policía tras asalto en Salto del Guairá",
+   "url": "http://www.lanacion.com.py/pais/2026/10/19/preso-de-la-culpa-delincuente-se-entrego-a-la-policia-tras-asalto-en-salto-del-guaira/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-19",
+   "lugares": [
+    "Salto del Guairá"
+   ]
+  },
+  {
+   "titulo": "Periodista comparecerá ante la Fiscalía tras grave accidente en Asunción",
+   "url": "http://www.lanacion.com.py/judiciales/2026/10/19/periodista-comparecera-ante-la-fiscalia-tras-grave-accidente-en-asuncion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-19",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Fiscalía inicia proceso contra camionero por homicidio culposo tras atropellar a adolescente",
+   "url": "http://www.lanacion.com.py/pais/2026/10/19/fiscalia-inicia-proceso-contra-camionero-por-homicidio-culposo-tras-atropellar-a-adolescente/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-19",
+   "lugares": [
+    "Ciudad del Este"
    ]
   },
   {
@@ -3124,6 +3287,15 @@
    "fecha": "2026-10-19",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Docente desaparecida en Corrientes: el fiscal ordenó la detención formal de un peón rural en medio del reclamo familiar",
+   "url": "https://www.perfil.com/noticias/nea/docente-desaparecida-en-corrientes-el-fiscal-ordeno-la-detencion-formal-de-un-peon-rural-en-medio-del-reclamo-familiar.phtml",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-19",
+   "lugares": [
+    "Corrientes"
    ]
   },
   {
