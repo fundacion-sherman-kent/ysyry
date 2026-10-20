@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-20T14:16:20Z",
+ "obtenido": "2026-10-20T19:10:48Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 29,
+   "items": 32,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 3,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
+   "items": 95,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 318,
+   "items": 332,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -261,6 +261,34 @@
     }
    ],
    "id": "7be790db48",
+   "verificado": true
+  },
+  {
+   "titulo": "Crecida del río Paraná: la emergencia hídrica \"va de menos a más\" y vigilan el pronóstico de lluvias en las altas cuencas",
+   "url": "https://www.perfil.com/noticias/nea/crecida-del-rio-parana-la-emergencia-hidrica-va-de-menos-a-mas-y-vigilan-el-pronostico-de-lluvias-en-las-altas-cuencas.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-20",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/nea/crecida-del-rio-parana-la-emergencia-hidrica-va-de-menos-a-mas-y-vigilan-el-pronostico-de-lluvias-en-las-altas-cuencas.phtml"
+    }
+   ],
+   "id": "6e632bbd12",
    "verificado": true
   },
   {
@@ -3306,6 +3334,13 @@
    ]
   },
   {
+   "titulo": "El cuerpo hallado en el río Paraná pertenece a uno de los hombres que era buscado tras caer de una lancha",
+   "url": "https://www.pagina12.com.ar/2026/10/20/el-cuerpo-hallado-en-el-rio-parana-pertenece-a-uno-de-los-hombres-que-era-buscado-tras-caer-de-una-lancha/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-10-20",
+   "lugares": []
+  },
+  {
    "titulo": "Buscan identificar a un hombre que fue encontrado sin vida en el río Paraná",
    "url": "https://www.pagina12.com.ar/2026/10/20/buscan-identificar-a-un-hombre-que-fue-encontrado-sin-vida-en-el-rio-parana/",
    "dominio": "pagina12.com.ar",
@@ -4310,15 +4345,6 @@
    "fecha": "2026-10-07",
    "lugares": [
     "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "Itaipú suministró 21.619 GWh de energía a la Ande entre enero y septiembre de 2026",
-   "url": "http://www.lanacion.com.py/negocios/2026/10/07/itaipu-suministro-21619-gwh-de-energia-a-la-ande-entre-enero-y-septiembre-de-2026/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-07",
-   "lugares": [
-    "Itaipú"
    ]
   }
  ]
