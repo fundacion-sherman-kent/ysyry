@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-10-20T08:42:14Z",
+ "obtenido": "2026-10-20T14:22:47Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 3
+   "avisos_en_el_corredor": 4
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -29,14 +29,32 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
+   "inicio": "2026-10-24 00:00",
+   "fin": "2026-10-24 23:59",
+   "lugares": [
+    "Porto Murtinho",
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28533"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
    "inicio": "2026-10-21 15:00",
    "fin": "2026-10-21 23:59",
    "lugares": [
     "Foz do Iguaçu",
+    "Ponta Porã",
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28523"
+   "id": "inmet-28529"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -56,7 +74,7 @@
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28524"
+   "id": "inmet-28530"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -64,14 +82,18 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-10-23 00:01",
+   "inicio": "2026-10-23 00:00",
    "fin": "2026-10-23 23:59",
    "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
     "Foz do Iguaçu",
+    "Ponta Porã",
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28525"
+   "id": "inmet-28532"
   }
  ],
  "no_consultadas": [
