@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-20T19:10:48Z",
+ "obtenido": "2026-10-20T23:49:16Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 32,
+   "items": 34,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 95,
+   "items": 92,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 332,
+   "items": 346,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -261,6 +261,39 @@
     }
    ],
    "id": "7be790db48",
+   "verificado": true
+  },
+  {
+   "titulo": "Allanan tres casas y detienen a dos supuestos miembros de la banda que ejecutó dos asaltos",
+   "url": "http://www.lanacion.com.py/pais/2026/10/20/allanan-tres-casas-y-detienen-a-dos-supuestos-miembros-de-la-banda-que-ejecuto-dos-asaltos/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-20",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 4,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/20/allanan-tres-casas-y-detienen-a-dos-supuestos-miembros-de-la-banda-que-ejecuto-dos-asaltos/"
+    }
+   ],
+   "id": "61d373f7fb",
    "verificado": true
   },
   {
@@ -3297,21 +3330,21 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "El brasileño raptado y asesinado en Pedro Juan Caballero era buscado por narcotráfico e investigado por homicidios",
-   "url": "https://www.abc.com.py/policiales/2026/10/20/el-brasileno-raptado-y-asesinado-en-pedro-juan-caballero-era-buscado-por-narcotrafico-e-investigado-por-homicidios/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-20",
-   "lugares": [
-    "Pedro Juan Caballero"
-   ]
-  },
-  {
    "titulo": "Fiscalía realiza entrega vigilada tras extorsión y amenazas por deuda en local comercial de Asunción",
    "url": "https://www.abc.com.py/policiales/2026/10/19/fiscalia-realiza-entrega-vigilada-tras-extorsion-y-amenazas-por-deuda-en-local-comercial-de-asuncion/",
    "dominio": "abc.com.py",
    "fecha": "2026-10-20",
    "lugares": [
     "Asunción"
+   ]
+  },
+  {
+   "titulo": "El brasileño raptado y asesinado en Pedro Juan Caballero era buscado por narcotráfico e investigado por homicidios",
+   "url": "https://www.abc.com.py/policiales/2026/10/20/el-brasileno-raptado-y-asesinado-en-pedro-juan-caballero-era-buscado-por-narcotrafico-e-investigado-por-homicidios/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-20",
+   "lugares": [
+    "Pedro Juan Caballero"
    ]
   },
   {
@@ -3332,6 +3365,13 @@
    "lugares": [
     "Pedro Juan Caballero"
    ]
+  },
+  {
+   "titulo": "Encontraron el cuerpo de uno de los pescadores que había desaparecido en el río Paraná",
+   "url": "https://www.lanacion.com.ar/seguridad/encontraron-el-cuerpo-de-uno-de-los-pescadores-que-habia-desaparecido-en-el-rio-parana-nid20102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-20",
+   "lugares": []
   },
   {
    "titulo": "El cuerpo hallado en el río Paraná pertenece a uno de los hombres que era buscado tras caer de una lancha",
@@ -3610,6 +3650,15 @@
    ]
   },
   {
+   "titulo": "Tres hombres cayeron de una lancha al río Paraná y están desaparecidos",
+   "url": "https://www.lanacion.com.ar/sociedad/tres-hombres-estan-desaparecidos-tras-caer-de-una-lancha-al-rio-parana-nid16102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-16",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
    "titulo": "ANNP RECIBIÓ A UNA DELEGACIÓN DE LOS ESTADOS UNIDOS INTERESADA EN LA NAVEGACIÓN Y EL DESARROLLO DE LA HIDROVÍA PARAGUAY–PARANÁ",
    "url": "https://annp.gov.py/?p=23882",
    "dominio": "annp.gov.py",
@@ -3693,15 +3742,6 @@
    "fecha": "2026-10-16",
    "lugares": [
     "San Nicolás"
-   ]
-  },
-  {
-   "titulo": "Tres hombres cayeron de una lancha al río Paraná y están desaparecidos",
-   "url": "https://www.lanacion.com.ar/sociedad/tres-hombres-estan-desaparecidos-tras-caer-de-una-lancha-al-rio-parana-nid16102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-16",
-   "lugares": [
-    "Santa Fe"
    ]
   },
   {
@@ -4333,15 +4373,6 @@
    "titulo": "Hallan muerto a un hombre en su vivienda de San Alberto",
    "url": "https://www.npy.com.py/noticias/nacionales/sucesos/hallan-muerto-a-un-hombre-en-su-vivienda-de-san-alberto",
    "dominio": "npy.com.py",
-   "fecha": "2026-10-07",
-   "lugares": [
-    "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "Hallan en un sojal la camioneta del empresario asesinado y buscan a su expareja",
-   "url": "http://www.lanacion.com.py/pais/2026/10/07/hallan-en-un-sojal-la-camioneta-del-empresario-asesinado-y-buscan-a-su-expareja/",
-   "dominio": "lanacion.com.py",
    "fecha": "2026-10-07",
    "lugares": [
     "Alto Paraná"
