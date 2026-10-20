@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-20T00:16:57Z",
+ "obtenido": "2026-10-20T08:26:03Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 23,
+   "items": 26,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 3,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -47,7 +47,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,8 +62,8 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 91,
-   "candidatos": 1,
+   "items": 93,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 337,
+   "items": 316,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -3203,12 +3203,12 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Río Paraná inicia un lento retroceso en la zona de Ayolas",
-   "url": "https://www.abc.com.py/clima/2026/10/19/rio-parana-inicia-un-lento-retroceso-en-la-zona-de-ayolas/",
+   "titulo": "Fiscalía realiza entrega vigilada tras extorsión y amenazas por deuda en local comercial de Asunción",
+   "url": "https://www.abc.com.py/policiales/2026/10/19/fiscalia-realiza-entrega-vigilada-tras-extorsion-y-amenazas-por-deuda-en-local-comercial-de-asuncion/",
    "dominio": "abc.com.py",
-   "fecha": "2026-10-19",
+   "fecha": "2026-10-20",
    "lugares": [
-    "Ayolas"
+    "Asunción"
    ]
   },
   {
@@ -3272,6 +3272,24 @@
    ]
   },
   {
+   "titulo": "Docente desaparecida en Corrientes: el fiscal ordenó la detención formal de un peón rural en medio del reclamo familiar",
+   "url": "https://www.perfil.com/noticias/nea/docente-desaparecida-en-corrientes-el-fiscal-ordeno-la-detencion-formal-de-un-peon-rural-en-medio-del-reclamo-familiar.phtml",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-19",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
+   "titulo": "Río Paraná inicia un lento retroceso en la zona de Ayolas",
+   "url": "https://www.abc.com.py/clima/2026/10/19/rio-parana-inicia-un-lento-retroceso-en-la-zona-de-ayolas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-19",
+   "lugares": [
+    "Ayolas"
+   ]
+  },
+  {
    "titulo": "Cumbre de Mujeres Indígenas de Abya Yala se celebra en Asunción",
    "url": "http://www.lanacion.com.py/pais/2026/10/19/cumbre-de-mujeres-indigenas-de-abya-yala-se-celebra-en-asuncion/",
    "dominio": "lanacion.com.py",
@@ -3287,15 +3305,6 @@
    "fecha": "2026-10-19",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Docente desaparecida en Corrientes: el fiscal ordenó la detención formal de un peón rural en medio del reclamo familiar",
-   "url": "https://www.perfil.com/noticias/nea/docente-desaparecida-en-corrientes-el-fiscal-ordeno-la-detencion-formal-de-un-peon-rural-en-medio-del-reclamo-familiar.phtml",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-19",
-   "lugares": [
-    "Corrientes"
    ]
   },
   {
