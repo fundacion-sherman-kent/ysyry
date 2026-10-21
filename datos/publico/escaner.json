@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-21T11:40:43Z",
+ "obtenido": "2026-10-21T17:06:26Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 34,
+   "items": 28,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 96,
+   "items": 90,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,25 +166,24 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 323,
+   "items": 330,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "mpf.mp.br",
    "url": "https://www.mpf.mp.br/rss.xml",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 15,
    "candidatos": 0,
-   "error": "HTTP Error 502: Bad Gateway",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 2,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -3304,6 +3303,95 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Subsecretario de EEUU visita centro militar contraterrorista en Paraguay y represa Itaipú",
+   "url": "https://www.abc.com.py/internacionales/2026/10/21/subsecretario-de-eeuu-visita-centro-militar-contraterrorista-en-paraguay-y-represa-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-21",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Identifican a presunto organizador del crimen de un narco y su pareja en Pedro Juan Caballero",
+   "url": "https://www.abc.com.py/policiales/2026/10/21/identifican-a-presunto-organizador-del-crimen-de-un-narco-y-su-pareja-en-pedro-juan-caballero/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-21",
+   "lugares": [
+    "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "Itaipú: una obra que transformó la energía y la economía paraguaya",
+   "url": "http://www.lanacion.com.py/foco/2026/10/21/itaipu-una-obra-que-transformo-la-energia-y-la-economia-paraguaya/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-21",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "LN PM: edición del 21 de octubre",
+   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/10/21/ln-pm-edicion-del-21-de-octubre/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-21",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Peña y el subsecretario de EE. UU., Christopher Landau, visitan la hidroeléctrica Itaipú",
+   "url": "http://www.lanacion.com.py/politica/2026/10/21/pena-y-el-subsecretario-de-ee-uu-christopher-landau-visitan-la-hidroelectrica-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-21",
+   "lugares": [
+    "Alto Paraná",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Río Paraná alcanza niveles récords en Cerrito, Panchito López e Itá Corá",
+   "url": "http://www.lanacion.com.py/pais/2026/10/21/rio-parana-alcanza-niveles-records-en-cerrito-panchito-lopez-e-ita-cora/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-21",
+   "lugares": []
+  },
+  {
+   "titulo": "Itaipú e INE inician coordinación técnica para la próxima convocatoria de becas",
+   "url": "http://www.lanacion.com.py/pais/2026/10/21/itaipu-e-ine-inician-coordinacion-tecnica-para-la-proxima-convocatoria-de-becas/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-21",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Itaipú impulsa modelos de biomasa forestal sostenible para la matriz energética",
+   "url": "http://www.lanacion.com.py/negocios/2026/10/21/itaipu-impulsa-modelos-de-biomasa-forestal-sostenible-para-la-matriz-energetica/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-21",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Se cumplen 48 años del monumental desvío del río Paraná por Itaipú",
+   "url": "http://www.lanacion.com.py/pais/2026/10/21/se-cumplen-48-anos-del-monumental-desvio-del-rio-parana-por-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-21",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Docente desaparecida en Corrientes: la Fiscalía no descarta imputar por femicidio a los nuevos detenidos",
+   "url": "https://www.perfil.com/noticias/nea/docente-desaparecida-en-corrientes-ordenaron-dos-nuevas-detenciones-y-se-suma-gendarmeria-a-la-busqueda.phtml",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-21",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
    "titulo": "Anuncian que el Palacio de Justicia quedará sin energía eléctrica este sábado durante tres horas",
    "url": "http://www.lanacion.com.py/judiciales/2026/10/20/anuncian-que-el-palacio-de-justicia-quedara-sin-energia-electrica-este-sabado-durante-tres-horas/",
    "dominio": "lanacion.com.py",
@@ -4261,95 +4349,6 @@
    "fecha": "2026-10-08",
    "lugares": [
     "Asunción"
-   ]
-  },
-  {
-   "titulo": "Policía realiza incursión en barrios de Asunción para localizar a personas requeridas por la Justicia",
-   "url": "https://www.npy.com.py/noticias/nacionales/policia-realiza-incursion-en-barrios-de-asuncion-para-localizar-a-personas-requeridas-por-la-justicia",
-   "dominio": "npy.com.py",
-   "fecha": "2026-10-08",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Asunción: evacúan sede de la Fiscalía por amenaza de bomba que resultó ser falsa",
-   "url": "http://www.lanacion.com.py/pais/2026/10/08/asuncion-evacuan-sede-de-la-fiscalia-por-amenaza-de-bomba-que-resulto-ser-falsa/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-08",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Fuerza Aérea Paraguaya incorpora el Cessna SkyCourier como primer operador en Sudamérica",
-   "url": "http://www.lanacion.com.py/politica/2026/10/08/fuerza-aerea-paraguaya-incorpora-el-cessna-skycourier-como-primer-operador-en-sudamerica/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-08",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Empresas neerlandesas miran oportunidades en infraestructura fluvial de Paraguay",
-   "url": "http://www.lanacion.com.py/foco/2026/10/08/empresas-neerlandesas-miran-oportunidades-en-infraestructura-fluvial-de-paraguay/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-08",
-   "lugares": []
-  },
-  {
-   "titulo": "En noviembre se inaugurarán las obras de remodelación del puerto de Colonia del Sacramento",
-   "url": "https://ladiaria.com.uy/colonia/articulo/2026/10/en-noviembre-se-inauguraran-las-obras-de-remodelacion-del-puerto-de-colonia-del-sacramento/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-08",
-   "lugares": [
-    "Colonia"
-   ]
-  },
-  {
-   "titulo": "Yacyretá prevé aguas altas del Paraná en Ayolas",
-   "url": "https://www.abc.com.py/economia/2026/10/08/yacyreta-preve-aguas-altas-del-parana-en-ayolas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-08",
-   "lugares": [
-    "Ayolas",
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "ANNP RECIBE A DELEGACIÓN EMPRESARIAL DE LOS PAÍSES BAJOS PARA FORTALECER VÍNCULOS COMERCIALES A TRAVÉS DE LA HIDROVÍA",
-   "url": "https://annp.gov.py/?p=23791",
-   "dominio": "annp.gov.py",
-   "fecha": "2026-10-07",
-   "lugares": [
-    "Cáceres"
-   ]
-  },
-  {
-   "titulo": "EL PRESIDENTE ING. JULIO CÉSAR VERA CÁCERES INTEGRÓ PANEL SOBRE EL MANTENIMIENTO DE LAS VÍAS NAVEGABLES",
-   "url": "https://annp.gov.py/?p=23779",
-   "dominio": "annp.gov.py",
-   "fecha": "2026-10-07",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "MASIVA CONCURRENCIA EN EL INICIO DE LA ACCIÓN COMUNITARIA EN PILAR",
-   "url": "https://armadaparaguaya.mil.py/masiva-concurrencia-en-el-inicio-de-la-accion-comunitaria-en-pilar/",
-   "dominio": "armadaparaguaya.mil.py",
-   "fecha": "2026-10-07",
-   "lugares": [
-    "Pilar"
-   ]
-  },
-  {
-   "titulo": "¡EL BUQUE HOSPITAL DE LA ARMADA PARAGUAYA EN LA CIUDAD DE PILAR!",
-   "url": "https://armadaparaguaya.mil.py/el-buque-hospital-de-la-armada-paraguaya-en-la-ciudad-de-pilar/",
-   "dominio": "armadaparaguaya.mil.py",
-   "fecha": "2026-10-07",
-   "lugares": [
-    "Pilar"
    ]
   }
  ]
