@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-21T17:06:26Z",
+ "obtenido": "2026-10-21T21:35:47Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 28,
+   "items": 30,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,8 +62,8 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
-   "candidatos": 0,
+   "items": 87,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 330,
+   "items": 338,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -229,6 +229,62 @@
     }
    ],
    "id": "c7301c4477",
+   "verificado": true
+  },
+  {
+   "titulo": "Más de 4.200 familias afectadas en Paraguay por inundaciones tras crecida del río Paraná",
+   "url": "https://www.abc.com.py/internacionales/2026/10/21/mas-de-4200-familias-afectadas-en-paraguay-por-inundaciones-tras-crecida-del-rio-parana/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-21",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/internacionales/2026/10/21/mas-de-4200-familias-afectadas-en-paraguay-por-inundaciones-tras-crecida-del-rio-parana/"
+    }
+   ],
+   "id": "e9164e6b2b",
+   "verificado": true
+  },
+  {
+   "titulo": "El Gobierno debió corregir la conformación del Consejo de Control de la Hidrovía",
+   "url": "https://www.lanacion.com.ar/economia/el-gobierno-debio-corregir-la-conformacion-del-consejo-de-control-de-la-hidrovia-nid21102026/",
+   "dominio": "lanacion.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-10-21",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.ar",
+     "clase": "prensa",
+     "url": "https://www.lanacion.com.ar/economia/el-gobierno-debio-corregir-la-conformacion-del-consejo-de-control-de-la-hidrovia-nid21102026/"
+    }
+   ],
+   "id": "34e4113681",
    "verificado": true
   },
   {
@@ -3303,21 +3359,30 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Subsecretario de EEUU visita centro militar contraterrorista en Paraguay y represa Itaipú",
-   "url": "https://www.abc.com.py/internacionales/2026/10/21/subsecretario-de-eeuu-visita-centro-militar-contraterrorista-en-paraguay-y-represa-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-21",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
    "titulo": "Identifican a presunto organizador del crimen de un narco y su pareja en Pedro Juan Caballero",
    "url": "https://www.abc.com.py/policiales/2026/10/21/identifican-a-presunto-organizador-del-crimen-de-un-narco-y-su-pareja-en-pedro-juan-caballero/",
    "dominio": "abc.com.py",
    "fecha": "2026-10-21",
    "lugares": [
     "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "EE. UU. anuncia oficina antinarcóticos en Asunción para coordinar operaciones en Cono Sur",
+   "url": "http://www.lanacion.com.py/politica/2026/10/21/ee-uu-anuncia-oficina-antinarcoticos-en-asuncion-para-coordinar-operaciones-en-cono-sur/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-21",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Paraguay Business Week: Viceministerio de Mipymes refuerza convocatoria para el Centro TASK",
+   "url": "http://www.lanacion.com.py/negocios/2026/10/21/paraguay-business-week-viceministerio-de-mipymes-refuerza-convocatoria-para-el-centro-task/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-21",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -3377,6 +3442,15 @@
    "titulo": "Se cumplen 48 años del monumental desvío del río Paraná por Itaipú",
    "url": "http://www.lanacion.com.py/pais/2026/10/21/se-cumplen-48-anos-del-monumental-desvio-del-rio-parana-por-itaipu/",
    "dominio": "lanacion.com.py",
+   "fecha": "2026-10-21",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Subsecretario de EEUU visita centro militar contraterrorista en Paraguay y represa Itaipú",
+   "url": "https://www.abc.com.py/internacionales/2026/10/21/subsecretario-de-eeuu-visita-centro-militar-contraterrorista-en-paraguay-y-represa-itaipu/",
+   "dominio": "abc.com.py",
    "fecha": "2026-10-21",
    "lugares": [
     "Itaipú"
@@ -4331,24 +4405,6 @@
    "fecha": "2026-10-09",
    "lugares": [
     "Rosario"
-   ]
-  },
-  {
-   "titulo": "DESMANTELAN CENTRO DE PRODUCCIÓN CON VARIOS SECTORES DE PROCESAMIENTO EN CERRO CORÁ",
-   "url": "https://senad.gov.py/desmantelan-centro-de-produccion-con-varios-sectores-de-procesamiento-en-cerro-cora/",
-   "dominio": "senad.gov.py",
-   "fecha": "2026-10-08",
-   "lugares": [
-    "Pedro Juan Caballero"
-   ]
-  },
-  {
-   "titulo": "Video: amenaza de bomba en Fiscalía de Asunción movilizó a la Policía",
-   "url": "https://www.abc.com.py/policiales/2026/10/08/video-amenaza-de-bomba-en-fiscalia-de-asuncion-movilizo-a-la-policia/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-08",
-   "lugares": [
-    "Asunción"
    ]
   }
  ]
