@@ -1,0 +1,32 @@
+{
+ "id": "Q-2026-003",
+ "estado": "publicada",
+ "origen": "Indicador de crecida (21/10/2026): Corrientes, Paso de la Patria y Barranqueras sobre su cota de evacuación; Cerrito, Itá Corá y Panchito López en máximos históricos de Paraguay. Regla candidata NAV-2.",
+ "enunciado": "¿El nivel del río en la estación Corrientes marcará 8,00 m o más al menos un día entre el 22 y el 31 de octubre de 2026?",
+ "creada": "2026-10-21",
+ "vence": "2026-10-31",
+ "banda": "improbable",
+ "confianza": "media",
+ "criterio": {
+  "tipo": "nivel_estacion",
+  "red": "ar",
+  "estacion": "Corrientes",
+  "operador": ">=",
+  "umbral_m": 8.0,
+  "desde": "2026-10-22",
+  "hasta": "2026-10-31"
+ },
+ "datos_de_partida": "Prefectura Naval Argentina vía INA, Corrientes: 5,32 m (13/10), 6,13 (16/10), 6,89 (18/10), 7,27 m (20/10). Cota de alerta 6,50 m, cota de evacuación 7,00 m; máximo de su serie (desde 1901): 9,02 m el 18/7/1983. Aguas arriba (20/10): Cerrito (Paraguay, antes de la confluencia) 6,90 m, casi plano (+2 cm/día; venía a +30 a +60); Pilar +18 cm/día; Asunción +4 cm/día; Posadas 10,20 m y Ituzaingó 4,69 m bajando; Ciudad del Este (aguas abajo de Itaipú) en 29,7 m tras un pico de 32,96 m el 15/10. Itaipú anunció nuevas lluvias.",
+ "estimaciones": {
+  "metodo": "Estimación de la dirección asistida por un modelo (no es un panel de analistas independientes). La dirección fijó la banda sin ver la del modelo, que había quedado sellada con un hash SHA-256 en el registro privado antes de conocer la de la dirección.",
+  "direccion": "improbable",
+  "modelo_claude": "improbable (30 %)",
+  "sello_sha256": "9d93840661915776f9cace214132aae7d9702236b1c77a582ff69a6b31aade01"
+ },
+ "disenso": {
+  "decimo_hombre": "Sostiene que SÍ ocurrirá (el consenso dice que no).",
+  "dictamen": "Corrientes todavía subía unos 20 cm por día el 20/10 y sólo necesita 73 cm más en diez días. Pilar seguía subiendo a 18 cm por día y Asunción todavía no marcó su cresta, de modo que parte de la onda del Paraguay no llegó a la confluencia. Itaipú anunció nuevas lluvias: una sola tormenta fuerte en la cuenca alta rehace la subida que Cerrito y el Alto Paraná parecen haber frenado. En 1983 el río llegó a 9,02 m en Corrientes tras semanas de ascenso lento. Evidencia en contra de este dictamen: Cerrito casi se estabilizó (+2 cm por día) y Posadas, Ituzaingó y Ciudad del Este ya están bajando, o sea que las dos fuentes principales dejaron de aportar más agua."
+ },
+ "publicada_el": "2026-10-21",
+ "resolucion": "Automática el 31/10/2026 contra las lecturas diarias de Corrientes de la Prefectura Naval Argentina, publicadas por el INA (historial público del repositorio). Si hay menos lecturas que la mitad de los días del período, queda «sin datos suficientes» y no cuenta."
+}
