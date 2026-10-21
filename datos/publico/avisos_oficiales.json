@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-20T23:58:33Z",
+ "obtenido": "2026-10-21T05:01:09Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -29,6 +29,22 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
+   "inicio": "2026-10-21 15:00",
+   "fin": "2026-10-21 23:59",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28529"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
    "inicio": "2026-10-24 00:00",
    "fin": "2026-10-24 23:59",
    "lugares": [
@@ -39,22 +55,6 @@
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
    "id": "inmet-28533"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-10-21 15:00",
-   "fin": "2026-10-21 23:59",
-   "lugares": [
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28529"
   },
   {
    "fuente": "INMET (Brasil)",
