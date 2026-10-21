@@ -8,7 +8,7 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
 
 **Sitio:** <https://ysyry.fundacionkent.org/sitio/> (la raíz `https://ysyry.fundacionkent.org/` es la página que se comparte y redirige ahí, como en SIWA)
 
-**Estado: versión inicial, en construcción.**
+**Estado: versión beta, en desarrollo.**
 
 ## Regla de verificación
 

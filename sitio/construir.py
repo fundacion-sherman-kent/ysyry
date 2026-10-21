@@ -1066,7 +1066,7 @@ footer{flex-direction:column}
   </div>
 </div></div>
 <div class="envoltorio">
-<div class="aviso">Versión inicial — en construcción · datos abiertos, cada uno con su fuente y su fecha</div>
+<div class="aviso">Versión Beta - en desarrollo</div>
 
 <div class="hero entra">
   <p class="et">Corredor Hidrovía Paraguay-Paraná</p>
