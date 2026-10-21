@@ -89,10 +89,17 @@ jobs:
           git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git push -q --force origin datos-pulso
 
+      - name: Armar la publicación (raíz que se comparte + aplicación en /sitio/, como SIWA)
+        run: |
+          mkdir -p pagina/sitio
+          cp -r salida/. pagina/sitio/
+          python3 sitio/raiz.py pagina/index.html
+          touch pagina/.nojekyll
+
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: salida
+          path: pagina
 
   desplegar:
     needs: construir

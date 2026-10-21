@@ -601,7 +601,8 @@ if marcos:
     _indicios_html = _ind.tabla_html(_indicios, _fecha)
     # --- datos abiertos: el libro de indicios en JSON y un canal Atom con los hechos detectados y los indicios ---
     import xml.sax.saxutils as _sx
-    _base = "https://fundacion-sherman-kent.github.io/ysyry/"
+    import direccion as _dir
+    _base = _dir.APP
     _dir_salida = Path(SALIDA).parent
     (_dir_salida / "datos").mkdir(parents=True, exist_ok=True)
     _nombre_z = {z[0]: z[1] for z in _pulso.ZONAS}

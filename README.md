@@ -6,7 +6,7 @@ Plataforma pública y gratuita de la [Fundación Sherman Kent](https://fundacion
 corredor de la Hidrovía Paraguay-Paraná: embarcaciones, puertos, comercio y hechos de riesgo,
 cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, dicho así.
 
-**Sitio:** <https://fundacion-sherman-kent.github.io/ysyry/>
+**Sitio:** <https://fundacion-sherman-kent.github.io/ysyry/sitio/> (la raíz `https://fundacion-sherman-kent.github.io/ysyry/` es la página que se comparte y redirige ahí, como en SIWA)
 
 **Estado: versión inicial, en construcción.**
 
@@ -32,7 +32,7 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
 - **Segunda red de escalas de nivel del río, con umbrales oficiales:** 29 escalas de la Prefectura Naval Argentina publicadas por el INA (API pública), de Posadas al Río de la Plata, con sus umbrales de aguas bajas, alerta y evacuación. Cubren los tramos del Delta, el Gran Rosario y el Paraná medio, donde la red de Paraguay no llega, y corroboran a la de Paraguay donde se solapan.
 - **Sanciones:** cruce por número IMO de los buques que transmiten AIS con la lista SDN de OFAC (dominio público, 1.524 buques con IMO). Hoy no hay coincidencias; una coincidencia sería una pista para mirar, no una acusación.
 - **Actores del corredor:** registro de 16 actores (crimen organizado, delitos en el río, Estado y organismos, sector privado, grupos de presión) con qué se sabe y con qué fuentes y nivel de evidencia, qué NO se sabe, y los rastros propios que mide Ysyry; más los operadores de puertos y muelles que figuran en OpenStreetMap. Un actor no es un acusado.
-- **Datos abiertos y canal Atom:** `datos/indicios.json` (libro de indicios y hechos detectados, CC BY 4.0 citando a Ysyry) y `feed.xml` para suscribirse desde un lector de noticias.
+- **Datos abiertos y canal Atom:** `sitio/datos/indicios.json` (libro de indicios y hechos detectados, CC BY 4.0 citando a Ysyry) y `sitio/feed.xml` para suscribirse desde un lector de noticias.
 - **Nivel del río, otras fuentes:** ANA de Brasil (telemetría), CARU (Nueva Palmira) y mareógrafos del Servicio de Hidrografía Naval (dato abierto) corroboran sólo la tendencia, no el umbral; el viento del SMN (CC BY 4.0) se muestra como contexto del nivel del Plata (una sudestada sube el Plata aunque el río baje). Las estaciones privadas 1746 y 1747 del INA no tienen datos.
 - **Disparo del sitio:** además del cron de GitHub Actions, un servicio externo (cron-job.org) lanza la actualización cada hora por la API de GitHub, para que no dependa de que el cron propio de GitHub llegue a horario.
 - **Crecida:** un indicador propio cuenta las escalas sobre su cota de alerta o de evacuación y las estaciones de Paraguay en su máximo histórico, y queda «corroborado» cuando coinciden dos organismos; mide la altura de la escala, no el daño.
