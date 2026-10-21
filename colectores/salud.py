@@ -10,7 +10,7 @@ import urllib.request
 from datetime import datetime, timezone
 
 UA = {"User-Agent": "Ysyry-FUSK/1.0 (+https://github.com/fundacion-sherman-kent/ysyry)"}
-SITIO = "https://fundacion-sherman-kent.github.io/ysyry/sitio/"
+SITIO = "https://ysyry.fundacionkent.org/sitio/"
 RAW = "https://raw.githubusercontent.com/fundacion-sherman-kent/ysyry/"
 SIWA = "https://siwa.fundacionkent.org/datos/publico/"
 FEM = "https://fundacion-sherman-kent.github.io/femonoe-sitio/index.html"

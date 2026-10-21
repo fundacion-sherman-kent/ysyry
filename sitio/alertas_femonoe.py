@@ -14,7 +14,7 @@ EJES = {"G": "gobernabilidad", "S": "seguridad", "I": "entorno informativo"}
 
 
 def _bajar(ruta):
-    req = urllib.request.Request(BASE + ruta, headers={"User-Agent": "Ysyry-FUSK/1.0 (+https://fundacion-sherman-kent.github.io/ysyry/)"})
+    req = urllib.request.Request(BASE + ruta, headers={"User-Agent": "Ysyry-FUSK/1.0 (+https://ysyry.fundacionkent.org/)"})
     with urllib.request.urlopen(req, timeout=40) as r:
         return r.read().decode("utf-8", "replace")
 

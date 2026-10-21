@@ -24,7 +24,7 @@ def cargar(carpeta_copia):
     for clave, archivo in ARCHIVOS.items():
         d, vivo = None, False
         try:
-            req = urllib.request.Request(BASE + archivo, headers={"User-Agent": "Ysyry-FUSK/1.0 (+https://fundacion-sherman-kent.github.io/ysyry/)"})
+            req = urllib.request.Request(BASE + archivo, headers={"User-Agent": "Ysyry-FUSK/1.0 (+https://ysyry.fundacionkent.org/)"})
             with urllib.request.urlopen(req, timeout=40) as r:
                 d = json.loads(r.read().decode("utf-8"))
             assert isinstance(d.get("registros"), list)

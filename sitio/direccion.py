@@ -1,4 +1,4 @@
 """Dónde vive Ysyry. Un solo lugar para la dirección pública, como en SIWA: la raíz del dominio es una página que se comparte y la
-aplicación está en /sitio/. Hoy el dominio es el de GitHub Pages; al activar ysyry.fundacionkent.org se cambia SOLO esta constante."""
-BASE = "https://fundacion-sherman-kent.github.io/ysyry/"
+aplicación está en /sitio/. Dominio propio activo desde el 21/10/2026 (CNAME en SiteGround hacia GitHub Pages, HTTPS forzado); si cambia, se cambia SOLO esta constante."""
+BASE = "https://ysyry.fundacionkent.org/"
 APP = BASE + "sitio/"

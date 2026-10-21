@@ -6,7 +6,7 @@ Plataforma pública y gratuita de la [Fundación Sherman Kent](https://fundacion
 corredor de la Hidrovía Paraguay-Paraná: embarcaciones, puertos, comercio y hechos de riesgo,
 cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, dicho así.
 
-**Sitio:** <https://fundacion-sherman-kent.github.io/ysyry/sitio/> (la raíz `https://fundacion-sherman-kent.github.io/ysyry/` es la página que se comparte y redirige ahí, como en SIWA)
+**Sitio:** <https://ysyry.fundacionkent.org/sitio/> (la raíz `https://ysyry.fundacionkent.org/` es la página que se comparte y redirige ahí, como en SIWA)
 
 **Estado: versión inicial, en construcción.**
 
