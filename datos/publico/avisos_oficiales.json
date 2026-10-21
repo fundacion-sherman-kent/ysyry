@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-21T17:22:45Z",
+ "obtenido": "2026-10-21T21:50:21Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "GDACS",
@@ -149,7 +149,7 @@
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con ocasionales tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Lluvias con ocasionales tormentas eléctricas moderadas, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -159,6 +159,20 @@
    ],
    "riesgos": "",
    "id": "dmh-vigente"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-10-21 17:18",
+   "fin": "",
+   "lugares": [
+    "CORRIENTES: Ituzaingo - Santo Tome."
+   ],
+   "riesgos": "",
+   "id": "smn-3657"
   }
  ],
  "no_consultadas": [
