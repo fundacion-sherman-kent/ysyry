@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-20T23:49:16Z",
+ "obtenido": "2026-10-21T04:34:51Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 34,
+   "items": 35,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 3,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 93,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 346,
+   "items": 377,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -3265,70 +3265,18 @@
    ],
    "id": "195642a27c",
    "verificado": true
-  },
-  {
-   "titulo": "Una revelación del “narco de la hidrovía” precipitó la caída del fiscal general de Bolivia, acusado por los Estados Unidos de proteger al narcotráfico",
-   "url": "https://www.lanacion.com.ar/seguridad/escandalo-narco-cayo-la-cupula-de-la-fiscalia-de-bolivia-tras-la-difusion-de-videos-en-los-que-nid02102026/",
-   "dominio": "lanacion.com.ar",
-   "clase": "prensa",
-   "fecha": "2026-10-06",
-   "tipos": [
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 4,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.ar",
-     "clase": "prensa",
-     "url": "https://www.lanacion.com.ar/seguridad/escandalo-narco-cayo-la-cupula-de-la-fiscalia-de-bolivia-tras-la-difusion-de-videos-en-los-que-nid02102026/"
-    }
-   ],
-   "id": "1c8bed3301",
-   "verificado": true
-  },
-  {
-   "titulo": "En el Este extraditaron a un brasileño con causa pendiente por narcotráfico en su país",
-   "url": "http://www.lanacion.com.py/pais/2026/10/06/en-el-este-extraditaron-a-un-brasileno-con-causa-pendiente-por-narcotrafico-en-su-pais/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-06",
-   "tipos": [
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 4,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/06/en-el-este-extraditaron-a-un-brasileno-con-causa-pendiente-por-narcotrafico-en-su-pais/"
-    }
-   ],
-   "id": "44e9190158",
-   "verificado": true
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Anuncian que el Palacio de Justicia quedará sin energía eléctrica este sábado durante tres horas",
+   "url": "http://www.lanacion.com.py/judiciales/2026/10/20/anuncian-que-el-palacio-de-justicia-quedara-sin-energia-electrica-este-sabado-durante-tres-horas/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-21",
+   "lugares": [
+    "Asunción"
+   ]
+  },
   {
    "titulo": "Fiscalía realiza entrega vigilada tras extorsión y amenazas por deuda en local comercial de Asunción",
    "url": "https://www.abc.com.py/policiales/2026/10/19/fiscalia-realiza-entrega-vigilada-tras-extorsion-y-amenazas-por-deuda-en-local-comercial-de-asuncion/",
@@ -3650,6 +3598,13 @@
    ]
   },
   {
+   "titulo": "ANNP RECIBIÓ A UNA DELEGACIÓN DE LOS ESTADOS UNIDOS INTERESADA EN LA NAVEGACIÓN Y EL DESARROLLO DE LA HIDROVÍA PARAGUAY–PARANÁ",
+   "url": "https://annp.gov.py/?p=23882",
+   "dominio": "annp.gov.py",
+   "fecha": "2026-10-16",
+   "lugares": []
+  },
+  {
    "titulo": "Tres hombres cayeron de una lancha al río Paraná y están desaparecidos",
    "url": "https://www.lanacion.com.ar/sociedad/tres-hombres-estan-desaparecidos-tras-caer-de-una-lancha-al-rio-parana-nid16102026/",
    "dominio": "lanacion.com.ar",
@@ -3657,13 +3612,6 @@
    "lugares": [
     "Santa Fe"
    ]
-  },
-  {
-   "titulo": "ANNP RECIBIÓ A UNA DELEGACIÓN DE LOS ESTADOS UNIDOS INTERESADA EN LA NAVEGACIÓN Y EL DESARROLLO DE LA HIDROVÍA PARAGUAY–PARANÁ",
-   "url": "https://annp.gov.py/?p=23882",
-   "dominio": "annp.gov.py",
-   "fecha": "2026-10-16",
-   "lugares": []
   },
   {
    "titulo": "Argentina y Uruguay disputarán el Clásico del Río de la Plata en Buenos Aires",
@@ -4367,15 +4315,6 @@
    "fecha": "2026-10-07",
    "lugares": [
     "Pilar"
-   ]
-  },
-  {
-   "titulo": "Hallan muerto a un hombre en su vivienda de San Alberto",
-   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/hallan-muerto-a-un-hombre-en-su-vivienda-de-san-alberto",
-   "dominio": "npy.com.py",
-   "fecha": "2026-10-07",
-   "lugares": [
-    "Alto Paraná"
    ]
   }
  ]
