@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-21T04:34:51Z",
+ "obtenido": "2026-10-21T11:40:43Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 35,
+   "items": 34,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
+   "items": 96,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,17 +166,18 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 377,
+   "items": 323,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "mpf.mp.br",
    "url": "https://www.mpf.mp.br/rss.xml",
-   "ok": true,
-   "items": 15,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "HTTP Error 502: Bad Gateway",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "senad.gov.py",
@@ -197,6 +198,40 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Crece la preocupación por la suba del río Paraná: cuándo se espera el pico y qué medidas activaron en Corrientes",
+   "url": "https://www.perfil.com/noticias/sociedad/crece-la-preocupacion-por-la-suba-del-rio-parana-cuando-se-espera-el-pico-y-que-medidas-activaron-en-corrientes.phtml",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-21",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes",
+    "Goya"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://www.perfil.com/noticias/sociedad/crece-la-preocupacion-por-la-suba-del-rio-parana-cuando-se-espera-el-pico-y-que-medidas-activaron-en-corrientes.phtml"
+    }
+   ],
+   "id": "c7301c4477",
+   "verificado": true
+  },
   {
    "titulo": "Más de 4.200 familias sufren la crecida del río Paraná en cuatro departamentos",
    "url": "http://www.lanacion.com.py/pais/2026/10/20/mas-de-4200-familias-sufren-la-crecida-del-rio-parana-en-cuatro-departamentos/",
