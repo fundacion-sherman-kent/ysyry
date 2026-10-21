@@ -37,6 +37,7 @@ INTERRUPCION_CAPS = _par("interrupcion_caps")
 COBERTURA_CONTINUA = float(_par("cobertura_continua"))
 MIN_MEDIOS = _par("min_medios_prensa")
 MARGEN_CERCA_CM = _par("margen_cerca_cm")
+PCT_MAXIMO = 97      # una estación de Paraguay cuenta como «en su máximo histórico» desde este punto de su rango
 REGULADAS_AR = {14, 15, 79}      # escalas dentro de embalses (Yacyretá, Salto Grande): su nivel lo fija la operación de la represa
 
 FUENTE_NIVEL_AR = {"nombre": "Prefectura Naval Argentina (escalas), vía INA", "familia": "oficial", "calificacion": "A2",
@@ -388,6 +389,25 @@ def indicios(calc, marcos_ventana, es_estado, ests, fuentes_siwa, unidades_por_z
                        "nivel": nivel_evidencia(fuentes),
                        "no_dice": "No es el calado ni una restricción de navegación; mide el nivel de cada escala contra su propia historia (Paraguay) o contra sus umbrales oficiales (Argentina). La CARU y los mareógrafos de la SHN sólo corroboran la baja de nivel, no el umbral (no publican umbrales); la marea y el viento mueven el nivel del Plata, y la escala de la CARU está sobre el río Uruguay, cerca de su boca en el Río de la Plata. Varias estaciones de un mismo organismo son una sola fuente: sólo corrobora un organismo distinto sobre el mismo tramo.",
                        "dato": {"vivas": len(vivas), "bajas": len(bajas), "cerca": len(cerca), "bajando": len(bajando), "ambas": len(ambas)}})
+    # crecida: escalas sobre su cota de alerta o de evacuación (Prefectura vía INA) y estaciones de Paraguay en su máximo histórico (Meteorología)
+    for z, lista in por_nivel.items():
+        vivas = [e for e in lista if e["estado"] not in ("vencida", "regulada")]
+        altas = [e for e in vivas if e.get("red") == "ar" and e.get("org") != "caru" and e["estado"] == "alto"]
+        evac = [e for e in altas if e.get("evacuacion") is not None and e["nivel"] >= e["evacuacion"]]
+        rec = [e for e in vivas if e.get("red") not in ("ar", "br", "shn") and e.get("pct") is not None and e["pct"] >= PCT_MAXIMO]
+        if not (altas or rec):
+            continue
+        fuentes = ([FUENTE_NIVEL_AR] if altas else []) + ([FUENTE_NIVEL] if rec else [])
+        nom = lambda lst: ", ".join(e["nombre"] for e in lst[:4]) + (" y %d más" % (len(lst) - 4) if len(lst) > 4 else "")
+        partes = []
+        if altas:
+            partes.append("%d escalas de la Prefectura sobre su cota de alerta (%s)%s" % (len(altas), nom(altas), ", %d de ellas sobre la cota de evacuación (%s)" % (len(evac), nom(evac)) if evac else ""))
+        if rec:
+            partes.append("%d estaciones de Meteorología de Paraguay en su máximo histórico o muy cerca (%s)" % (len(rec), nom(rec)))
+        res[z].append({"id": "CRE", "tipo": "Navegabilidad", "titulo": "Nivel del río sobre sus cotas de alerta o en máximos históricos",
+                       "texto": "; ".join(partes) + ".", "fuentes": fuentes, "nivel": nivel_evidencia(fuentes),
+                       "no_dice": "Es la altura de la escala, no el daño ni el área inundada; las cotas de alerta y de evacuación son las oficiales de cada escala y el máximo histórico es el de la serie de esa estación. Varias estaciones de un mismo organismo son una sola fuente.",
+                       "dato": {"alerta": len(altas), "evacuacion": len(evac), "record": len(rec)}})
     # presencia del Estado en el AIS
     for z, *_ in _pulso.ZONAS:
         m = calc.get(z)
@@ -740,6 +760,12 @@ def candidatas(ind, ests, fecha, hist_reglas=None):
                             "titulo": "Nivel bajo y a la baja en %s" % nombre,
                             "indicio": i["texto"], "evidencia": i["nivel"], "estaciones": bajos,
                             "pregunta_posible": "¿Alguna de esas estaciones registrará un nuevo mínimo del año o una baja de 20 cm en los próximos 14 días?"})
+            if i["id"] == "CRE" and (d.get("evacuacion", 0) >= 1 or d.get("alerta", 0) >= 2 or d.get("record", 0) >= 2):
+                altos = [e["nombre"] for e in ests if e["pos"] and e["pos"]["zona"] == z and (e["estado"] == "alto" or (e.get("pct") is not None and e["pct"] >= PCT_MAXIMO))]
+                out.append({"clave": "NAV-2|%s|%s" % (z, fecha), "regla": "NAV-2", "zona": nombre,
+                            "titulo": "Crecida: nivel sobre cotas de alerta o en máximos históricos en %s" % nombre,
+                            "indicio": i["texto"], "evidencia": i["nivel"], "estaciones": altos,
+                            "pregunta_posible": "¿Alguna de esas estaciones superará su cota de evacuación o su máximo histórico en los próximos 14 días?"})
             if i["id"] == "PRES" and d.get("sin_estado_seguidas", 0) >= CAPS_BRECHA and d.get("mediana", 0) >= MIN_BUQUES_BRECHA:
                 out.append({"clave": "PRES-1|%s|%s" % (z, fecha), "regla": "PRES-1", "zona": nombre,
                             "titulo": "Brecha de presencia del Estado visible en %s" % nombre,
