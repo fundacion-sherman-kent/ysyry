@@ -41,7 +41,7 @@ def pagina():
 <meta name="twitter:image" content="%(img)s">
 <meta name="twitter:title" content="%(t)s">
 <meta name="twitter:description" content="%(d)s">
-<meta http-equiv="refresh" content="0; url=sitio/index.html">
+<meta http-equiv="refresh" content="0; url=sitio/">
 <style>body{font-family:system-ui,sans-serif;background:#00121E;color:#e8eef2;margin:0;display:grid;place-items:center;min-height:100vh;text-align:center;padding:16px}a{color:#8fd9c4}</style>
 </head>
 <body>
@@ -52,7 +52,7 @@ def pagina():
 </main>
 </body>
 </html>
-""" % {"t": e(TITULO), "d": e(DESCRIPCION), "app": e(direccion.APP + "index.html"), "base": e(direccion.BASE), "img": e(direccion.IMAGEN)}
+""" % {"t": e(TITULO), "d": e(DESCRIPCION), "app": e(direccion.APP), "base": e(direccion.BASE), "img": e(direccion.IMAGEN)}
 
 
 if __name__ == "__main__":
