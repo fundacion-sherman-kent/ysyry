@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-22T04:33:35Z",
+ "obtenido": "2026-10-22T11:42:16Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 32,
+   "items": 31,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 89,
+   "items": 96,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 379,
+   "items": 318,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -3136,6 +3136,43 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Puente de la Bioceánica entra en la recta final con US$ 103 millones de Itaipú",
+   "url": "https://www.abc.com.py/economia/2026/10/22/puente-de-la-bioceanica-entra-en-la-recta-final-con-us-103-millones-de-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Peña “fusiló” a la ANDE y perdió respaldo para reformar el sector eléctrico, afirma exjefe técnico de Yacyretá",
+   "url": "https://www.abc.com.py/economia/2026/10/22/pena-fusilo-a-la-ande-y-perdio-respaldo-para-reformar-el-sector-electrico-afirma-exjefe-tecnico-de-yacyreta/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Peña proyecta energía solar y nuclear para asegurar el futuro energético de Paraguay",
+   "url": "http://www.lanacion.com.py/politica/2026/10/22/pena-proyecta-energia-solar-y-nuclear-para-asegurar-el-futuro-energetico-de-paraguay/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Histórico acuerdo de Yacyretá permitirá titular 1.134 viviendas en Ayolas",
+   "url": "http://www.lanacion.com.py/politica/2026/10/22/historico-acuerdo-de-yacyreta-permitira-titular-1134-viviendas-en-ayolas/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Ayolas",
+    "Yacyretá"
+   ]
+  },
+  {
    "titulo": "Un hombre en estado de adicción intentó estrangular a su madre y fue aprehendido",
    "url": "http://www.lanacion.com.py/pais/2026/10/21/un-hombre-en-estado-de-adiccion-intento-estrangular-a-su-madre-y-fue-aprehendido/",
    "dominio": "lanacion.com.py",
@@ -4143,43 +4180,6 @@
    "dominio": "ladiaria.com.uy",
    "fecha": "2026-10-09",
    "lugares": []
-  },
-  {
-   "titulo": "Detienen a un hombre que habría amenazado matar a su pareja y quemar su vivienda",
-   "url": "http://www.lanacion.com.py/pais/2026/10/09/detienen-a-un-hombre-que-habria-amenazado-matar-a-su-pareja-y-quemar-su-vivienda/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-09",
-   "lugares": [
-    "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "Buscan a conductor paraguayo que arrolló y mató a un hombre en silla de ruedas en Posadas",
-   "url": "http://www.lanacion.com.py/pais/2026/10/09/buscan-a-conductor-paraguayo-que-arrollo-y-mato-a-un-hombre-en-silla-de-ruedas-en-posadas/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-09",
-   "lugares": [
-    "Encarnación",
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Dejó de responder tras pedir ayuda: así encontraron a paraguaya en Bolivia",
-   "url": "http://www.lanacion.com.py/pais/2026/10/09/dejo-de-responder-tras-pedir-ayuda-asi-encontraron-a-paraguaya-en-bolivia/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-09",
-   "lugares": [
-    "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "Itaipú libera más agua: compuertas del vertedero seguirán abiertas hasta la próxima semana",
-   "url": "https://www.abc.com.py/economia/2026/10/09/itaipu-libera-mas-agua-compuertas-del-vertedero-seguiran-abiertas-hasta-la-proxima-semana/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-09",
-   "lugares": [
-    "Itaipú"
-   ]
   }
  ]
 }
