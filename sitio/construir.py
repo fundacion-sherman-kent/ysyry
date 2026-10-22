@@ -740,6 +740,31 @@ _info_lista, _info_ref = _comprimir(poi_info + riesgo_info + zona_info + zona_pu
 info_json = json.dumps(_info_lista, ensure_ascii=False, separators=(",", ":"))
 
 TPL = r"""<!doctype html>
+<!-- Medicion. Es la MISMA etiqueta de la Fundacion que ya usa SIWA: una sola
+     propiedad y un solo flujo para las tres plataformas, que se separan despues
+     por nombre de host. Si la propiedad cambia, se cambia SOLO esta linea.
+     * anonymize_ip: la IP del visitante se recorta antes de guardarse.
+     * linker.domains nombra los CUATRO dominios de la casa. Sin eso, un salto
+       entre plataformas crea un usuario nuevo y una sesion nueva, y el dato de
+       que las plataformas se alimentan entre si no se podria demostrar.
+     * El evento de entrada NO se dispara aca. La casa lo crea del lado de
+       Analytics, como `siwa_entrada`, a partir de page_view y la direccion.
+     * PENDIENTE DE LA DIRECCION: esto instala cookies de medicion; corresponde
+       el aviso de privacidad y el consentimiento (Ley 25.326). -->
+<script>
+  window.YSYRY_GA = "G-L9ZDDH81GB";
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L9ZDDH81GB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', window.YSYRY_GA, {
+    anonymize_ip: true,
+    linker: { domains: ['fundacionkent.org', 'siwa.fundacionkent.org',
+                        'femonoe.fundacionkent.org', 'ysyry.fundacionkent.org'] }
+  });
+</script>
 <title>Ysyry — corredor Hidrovía</title>
 <link rel="alternate" type="application/atom+xml" title="Ysyry: hechos detectados e indicios" href="feed.xml">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
