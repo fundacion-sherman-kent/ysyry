@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-22T11:42:16Z",
+ "obtenido": "2026-10-22T17:05:19Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 31,
+   "items": 32,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 96,
+   "items": 91,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -143,7 +143,7 @@
    "url": "https://armadaparaguaya.mil.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 318,
+   "items": 327,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +197,39 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "CONTINÚA LA ASISTENCIA FLUVIAL A FAMILIAS AISLADAS EN ZONA DE AYOLAS",
+   "url": "https://armadaparaguaya.mil.py/continua-la-asistencia-fluvial-a-familias-aisladas-en-zona-de-ayolas/",
+   "dominio": "armadaparaguaya.mil.py",
+   "clase": "oficial",
+   "fecha": "2026-10-22",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ayolas"
+   ],
+   "ubicacion": [
+    -27.39,
+    -56.84
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 6,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "armadaparaguaya.mil.py",
+     "clase": "oficial",
+     "url": "https://armadaparaguaya.mil.py/continua-la-asistencia-fluvial-a-familias-aisladas-en-zona-de-ayolas/"
+    }
+   ],
+   "id": "2d9458cfba",
+   "verificado": true
+  },
   {
    "titulo": "Crece la preocupación por la suba del río Paraná: cuándo se espera el pico y qué medidas activaron en Corrientes",
    "url": "https://www.perfil.com/noticias/sociedad/crece-la-preocupacion-por-la-suba-del-rio-parana-cuando-se-espera-el-pico-y-que-medidas-activaron-en-corrientes.phtml",
@@ -3136,8 +3169,8 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Puente de la Bioceánica entra en la recta final con US$ 103 millones de Itaipú",
-   "url": "https://www.abc.com.py/economia/2026/10/22/puente-de-la-bioceanica-entra-en-la-recta-final-con-us-103-millones-de-itaipu/",
+   "titulo": "Funcionario de Itaipú resulta herido en violento accidente que involucró a un vehículo de la entidad",
+   "url": "https://www.abc.com.py/este/2026/10/22/funcionario-de-itaipu-resulta-herido-en-violento-accidente-que-involucro-a-un-vehiculo-de-la-entidad/",
    "dominio": "abc.com.py",
    "fecha": "2026-10-22",
    "lugares": [
@@ -3145,12 +3178,21 @@
    ]
   },
   {
-   "titulo": "Peña “fusiló” a la ANDE y perdió respaldo para reformar el sector eléctrico, afirma exjefe técnico de Yacyretá",
-   "url": "https://www.abc.com.py/economia/2026/10/22/pena-fusilo-a-la-ande-y-perdio-respaldo-para-reformar-el-sector-electrico-afirma-exjefe-tecnico-de-yacyreta/",
-   "dominio": "abc.com.py",
+   "titulo": "Alerta policial ante amenaza de tiroteo en universidad privada de Asunción",
+   "url": "http://www.lanacion.com.py/pais/2026/10/22/alerta-policial-ante-amenaza-de-tiroteo-en-universidad-privada-de-asuncion/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-10-22",
    "lugares": [
-    "Yacyretá"
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "“Más paraguayo que la mandioca”: el emotivo regreso de Landau a sus raíces",
+   "url": "http://www.lanacion.com.py/politica/2026/10/22/mas-paraguayo-que-la-mandioca-el-emotivo-regreso-de-landau-a-sus-raices/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -3182,12 +3224,13 @@
    ]
   },
   {
-   "titulo": "Santa Fe, la segunda provincia del país con mayor déficit fiscal",
-   "url": "https://www.pagina12.com.ar/2026/10/22/santa-fe-la-segunda-provincia-del-pais-con-mayor-deficit-fiscal/",
-   "dominio": "pagina12.com.ar",
+   "titulo": "EVACUACIÓN MÉDICA FLUVIAL DE URGENCIA EN ALBERDI",
+   "url": "https://armadaparaguaya.mil.py/evacuacion-medica-fluvial-de-urgencia-en-alberdi/",
+   "dominio": "armadaparaguaya.mil.py",
    "fecha": "2026-10-22",
    "lugares": [
-    "Santa Fe"
+    "Alberdi",
+    "Formosa"
    ]
   },
   {
@@ -3196,6 +3239,33 @@
    "dominio": "ladiaria.com.uy",
    "fecha": "2026-10-22",
    "lugares": []
+  },
+  {
+   "titulo": "Puente de la Bioceánica entra en la recta final con US$ 103 millones de Itaipú",
+   "url": "https://www.abc.com.py/economia/2026/10/22/puente-de-la-bioceanica-entra-en-la-recta-final-con-us-103-millones-de-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Peña “fusiló” a la ANDE y perdió respaldo para reformar el sector eléctrico, afirma exjefe técnico de Yacyretá",
+   "url": "https://www.abc.com.py/economia/2026/10/22/pena-fusilo-a-la-ande-y-perdio-respaldo-para-reformar-el-sector-electrico-afirma-exjefe-tecnico-de-yacyreta/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Santa Fe, la segunda provincia del país con mayor déficit fiscal",
+   "url": "https://www.pagina12.com.ar/2026/10/22/santa-fe-la-segunda-provincia-del-pais-con-mayor-deficit-fiscal/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Santa Fe"
+   ]
   },
   {
    "titulo": "Identifican a presunto organizador del crimen de un narco y su pareja en Pedro Juan Caballero",
@@ -4148,38 +4218,6 @@
    "lugares": [
     "Ayolas"
    ]
-  },
-  {
-   "titulo": "Paraguay usó 37% de Itaipú",
-   "url": "https://www.abc.com.py/edicion-impresa/suplementos/economico/2026/10/11/paraguay-uso-37-de-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-11",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Corte ordena auditoría de gestión judicial tras feminicidio de Deisy Paola Giménez",
-   "url": "http://www.lanacion.com.py/pais/2026/10/10/corte-ordena-auditoria-de-gestion-judicial-tras-feminicidio-de-deisy-paola-gimenez/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-10",
-   "lugares": [
-    "Villeta"
-   ]
-  },
-  {
-   "titulo": "Puerto Casado: su historia y las nuevas oportunidades a orillas del río Paraguay",
-   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/10/10/puerto-casado-su-historia-y-las-nuevas-oportunidades-a-orillas-del-rio-paraguay/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-10",
-   "lugares": []
-  },
-  {
-   "titulo": "Conozcan a Characidium mariposita, una nueva especie de pez descubierta en el río Uruguay",
-   "url": "https://ladiaria.com.uy/ciencia/articulo/2026/10/conozcan-a-characidium-mariposita-una-nueva-especie-de-pez-descubierta-en-el-rio-uruguay/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-09",
-   "lugares": []
   }
  ]
 }
