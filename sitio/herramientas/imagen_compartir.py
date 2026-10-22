@@ -106,7 +106,9 @@ def main():
     d.text((1100 * S, 51 * S), "BETA", font=f, fill=NARANJA, anchor="mm")
 
     destino.parent.mkdir(parents=True, exist_ok=True)
-    fondo.resize((W, H), Image.LANCZOS).save(destino, optimize=True)
+    final = fondo.resize((W, H), Image.LANCZOS)
+    # paleta reducida y sin tramado: un fondo plano con trazos pesa unos 50 KB y WhatsApp sólo muestra la tarjeta grande con imágenes livianas
+    final.quantize(colors=96, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE).save(destino, optimize=True)
     print("imagen:", destino, destino.stat().st_size // 1024, "KB")
 
 
