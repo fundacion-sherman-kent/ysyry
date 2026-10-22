@@ -41,6 +41,9 @@ def pagina():
 <meta name="twitter:image" content="%(img)s">
 <meta name="twitter:title" content="%(t)s">
 <meta name="twitter:description" content="%(d)s">
+<link rel="icon" type="image/svg+xml" href="sitio/marca/ysyry-marca.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="sitio/marca/favicon-32.png">
+<link rel="apple-touch-icon" href="sitio/marca/apple-touch-icon.png">
 <meta http-equiv="refresh" content="0; url=sitio/">
 <style>body{font-family:system-ui,sans-serif;background:#00121E;color:#e8eef2;margin:0;display:grid;place-items:center;min-height:100vh;text-align:center;padding:16px}a{color:#8fd9c4}</style>
 </head>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48"
+     role="img" aria-label="Ysyry">
+  <title>Ysyry</title>
+  <!-- Versión para fondo oscuro: mismo dibujo, los dos valores subidos de luz
+       para que se lean. El azul es el de la casa (#00121E, tono 204°) con la
+       luz subida a #518FB8 (tono 203,9°), igual que FEMÓNOE hace con su
+       violeta. -->
+  <path d="M6 8 L23 23"  fill="none" stroke="#8A94A0" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M6 33 L23 23" fill="none" stroke="#8A94A0" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M23 23 C31 27, 34 33, 43 38" fill="none" stroke="#518FB8" stroke-width="3.4" stroke-linecap="round"/>
+  <circle cx="23" cy="23" r="4.6" fill="#518FB8"/>
+  <circle cx="23" cy="23" r="8.2" fill="none" stroke="#518FB8" stroke-width="1.3" opacity=".55"/>
+</svg>

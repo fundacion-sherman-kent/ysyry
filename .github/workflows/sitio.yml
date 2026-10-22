@@ -95,6 +95,7 @@ jobs:
           cp -r salida/. pagina/sitio/
           python3 sitio/raiz.py pagina/index.html
           python3 sitio/seo.py pagina
+          cp salida/cifras.json pagina/cifras.json
           cp sitio/compartir/ysyry-compartir.png pagina/ysyry-compartir.png
           touch pagina/.nojekyll
 

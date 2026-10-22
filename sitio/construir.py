@@ -9,6 +9,7 @@ Variables de entorno (todas opcionales):
 """
 import json
 import os
+import shutil
 from pathlib import Path
 
 D = Path(os.environ.get("SITIO_DATOS") or (Path(__file__).resolve().parent / "datos"))
@@ -614,6 +615,16 @@ if marcos:
                              for z, lst in _indicios.items() if lst},
                 "hechos_detectados": [{"fecha": h["fecha"], "tipo": [r for _, r in h["tipos"]], "lugares": h.get("lugares"), "titulo": h["titulo"], "medios": [{"dominio": m["dominio"], "url": m["url"]} for m in h["medios"]]} for h in _esc_evs[:100]]}
     json.dump(_abierto, open(_dir_salida / "datos" / "indicios.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    shutil.copytree(Path(__file__).resolve().parent / "marca", _dir_salida / "marca", dirs_exist_ok=True)
+    # archivo liviano y estable para la franja del ecosistema de la web institucional (la portada pesa más de 8 MB y no se le puede preguntar en cada visita)
+    _cifras = {"plataforma": "Ysyry", "version": "beta", "url": _dir.APP,
+               "actualizado_utc": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+               "corredor": {"estados": 5, "nombres": ["Argentina", "Bolivia", "Brasil", "Paraguay", "Uruguay"]},
+               "ultima_captura": {"hora_utc": marcos[-1]["hora"], "embarcaciones": len(marcos[-1]["puntos"])},
+               "estaciones_de_nivel": len([e for e in _ests if e["estado"] != "vencida"]),
+               "preguntas_abiertas": len([q for q in _PREGUNTAS if q.get("resultado") not in (True, False)]),
+               "licencia": "CC BY 4.0, citando «Ysyry, Fundación Sherman Kent»"}
+    json.dump(_cifras, open(_dir_salida / "cifras.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     _ahora = marcos[-1]["hora"]
     _ent = []
     for _h in sorted(_esc_evs, key=lambda x: x["fecha"], reverse=True)[:25]:
@@ -739,10 +750,10 @@ TPL = r"""<!doctype html>
   /* Ysyry usa el AZUL de la casa (navy y gris azul), como SIWA usa el naranja y FEMÓNOE el violeta.
      Paleta cerrada: no se agrega ningún azul nuevo. El naranja queda sólo como señal. */
   --azul-profundo:#00121E; --azul-noche:#07131E; --naranja:#FB6500; --gris-acero:#667B89;
-  --acento:#00121E; --acento-sobre:#F9F9F7; --acento-texto:#00121E;
+  --acento:#2C6E93; --acento-sobre:#F9F9F7; --acento-texto:#00121E;
   --papel:#FFFFFF; --linea:#DDE2E5; --fondo:#F9F9F7; --bg:#F9F9F7; --fg:#00121E;
 }
-:root[data-theme="dark"]{--acento:#667B89;--acento-texto:#C6C6C5;--bg:#07131E;--fg:#F9F9F7;--papel:#0d1b28;--linea:#223241;color-scheme:dark}
+:root[data-theme="dark"]{--acento:#518FB8;--acento-sobre:#00121E;--acento-texto:#C6C6C5;--bg:#07131E;--fg:#F9F9F7;--papel:#0d1b28;--linea:#223241;color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,sans-serif;font-weight:500;line-height:1.6;padding-inline:16px}
 .envoltorio{max-width:1480px;margin:0 auto}
@@ -778,7 +789,7 @@ html{scroll-padding-top:var(--alto-cab,72px)}
 /* cabecera fija y compacta en el teléfono: la web de la Fundación queda en el logo, y el enlace de texto se oculta para ganar alto */
 @media (max-width:560px){.topbar-in{padding:6px 14px;gap:4px}.franja-derecha{width:100%;justify-content:space-between;gap:10px;flex-wrap:nowrap}
 .topbar nav a:nth-child(3){display:none}.tema{padding:4px 10px;font-size:12px}.logo{height:30px}.inicio .nombre{font-size:19px;margin-bottom:0}}
-.isotipo{flex:0 0 auto;animation:latido2 2.4s ease-out infinite}
+.isotipo{flex:0 0 auto}
 .isotipo .punta{animation:latido 2.4s ease-out infinite}
 @keyframes latido{0%{filter:drop-shadow(0 0 0 rgba(251,101,0,.5))}70%{filter:drop-shadow(0 0 5px rgba(251,101,0,0))}100%{filter:drop-shadow(0 0 0 rgba(251,101,0,0))}}
 @keyframes latido2{0%,100%{opacity:1}50%{opacity:.88}}
@@ -1052,9 +1063,12 @@ footer{flex-direction:column}
     <a class="marca-enlace" href="https://fundacionkent.org/?utm_source=ysyry&amp;utm_medium=referral&amp;utm_campaign=marca&amp;utm_content=portada" target="_blank" rel="noopener" title="Ir a la web de la Fundación Sherman Kent"><img class="logo claro" src="__logo_color__" alt="Fundación Sherman Kent"><img class="logo oscuro" src="__logo_blanco__" alt="Fundación Sherman Kent"></a>
     <div class="sep"></div>
     <a class="inicio" id="ir-portada" href="./" title="Volver a la portada de Ysyry">
-      <svg class="isotipo" width="30" height="30" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M16 5 L16 16 M16 16 L7 27 M16 16 L25 27" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle class="punta" cx="16" cy="5" r="2.8" fill="#FB6500"/>
+      <svg class="isotipo" width="34" height="34" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M6 8 L23 23" fill="none" stroke="#667B89" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M6 33 L23 23" fill="none" stroke="#667B89" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M23 23 C31 27, 34 33, 43 38" fill="none" stroke="#2C6E93" stroke-width="3.4" stroke-linecap="round"/>
+        <circle cx="23" cy="23" r="4.6" fill="#2C6E93"/>
+        <circle cx="23" cy="23" r="8.2" fill="none" stroke="#2C6E93" stroke-width="1.3" opacity=".55"/>
       </svg>
       <span><span class="nombre">Ysyry</span><small>Corredor Hidrovía Paraguay-Paraná</small></span>
     </a>
@@ -1774,6 +1788,8 @@ _ETIQUETAS_TPL = ("<title>Ysyry — Hidrovía Paraguay-Paraná: evidencia, alert
                   '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="%(img)s"><meta name="twitter:title" content="Ysyry — Evidencia, alertas y prospectiva sobre la Hidrovía Paraguay-Paraná">'
                   '<meta name="twitter:description" content="%(d)s">') % {"d": _DESC_TPL, "app": _dir.APP, "img": _dir.IMAGEN}
 import seo as _seo
+_ETIQUETAS_TPL += ('<link rel="icon" type="image/svg+xml" href="marca/ysyry-marca.svg"><link rel="icon" type="image/png" sizes="32x32" href="marca/favicon-32.png">'
+                   '<link rel="apple-touch-icon" href="marca/apple-touch-icon.png"><meta name="theme-color" content="#00121E">')
 _ETIQUETAS_TPL += '<script type="application/ld+json">' + _seo.jsonld() + '</script>'
 assert _TITULO_TPL in TPL
 TPL = TPL.replace(_TITULO_TPL, _ETIQUETAS_TPL, 1)

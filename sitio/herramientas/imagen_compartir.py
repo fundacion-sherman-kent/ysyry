@@ -10,10 +10,13 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import iconos_marca
+
 RAIZ = Path(__file__).resolve().parents[2]
 W, H, S = 1200, 630, 2          # tamaño final y sobremuestreo para suavizar los bordes
 AZUL, AZUL2 = (0, 18, 30), (7, 19, 30)
-MENTA, NARANJA, ACERO, PAPEL = (143, 217, 196), (251, 101, 0), (102, 123, 137), (249, 249, 247)
+MENTA, NARANJA, ACERO, PAPEL = (81, 143, 184), (251, 101, 0), (102, 123, 137), (249, 249, 247)   # MENTA es ahora el azul de señal #518FB8 (orden de la dirección del 22/10/2026)
 FUENTES = Path("C:/Windows/Fonts")
 
 
@@ -93,12 +96,12 @@ def main():
     # texto, centrado: si una red recorta la imagen en cuadrado (WhatsApp, a veces), el recorte central de 630 px conserva el nombre y la bajada
     cx = 600 * S
     d.text((cx, 52 * S), "YSYRY", font=fuente("arialbd.ttf", 150), fill=PAPEL, anchor="ma")
-    d.rectangle([540 * S, 232 * S, 660 * S, 238 * S], fill=NARANJA)
+    iconos_marca.isotipo(d, 558 * S, 192 * S, 84 * S / 48)      # «La confluencia», la marca propia de Ysyry
     bajada = ["Evidencia, alertas y", "prospectiva sobre la Hidrovía", "Paraguay-Paraná"]
     for i, linea in enumerate(bajada):
-        d.text((cx, (262 + i * 48) * S), linea, font=fuente("arial.ttf", 38), fill=PAPEL, anchor="ma")
-    d.text((cx, 438 * S), "Nivel del río · AIS · Avisos oficiales", font=fuente("arial.ttf", 25), fill=MENTA, anchor="ma")
-    d.text((cx, 474 * S), "Dos fuentes independientes como mínimo", font=fuente("arial.ttf", 25), fill=MENTA, anchor="ma")
+        d.text((cx, (292 + i * 46) * S), linea, font=fuente("arial.ttf", 38), fill=PAPEL, anchor="ma")
+    d.text((cx, 452 * S), "Nivel del río · AIS · Avisos oficiales", font=fuente("arial.ttf", 25), fill=MENTA, anchor="ma")
+    d.text((cx, 488 * S), "Dos fuentes independientes como mínimo", font=fuente("arial.ttf", 25), fill=MENTA, anchor="ma")
     d.text((cx, 544 * S), "ysyry.fundacionkent.org", font=fuente("arialbd.ttf", 30), fill=PAPEL, anchor="ma")
     d.text((cx, 586 * S), "Fundación Sherman Kent", font=fuente("arial.ttf", 22), fill=ACERO, anchor="ma")
     # sello beta, a la izquierda arriba (queda fuera del recorte cuadrado)

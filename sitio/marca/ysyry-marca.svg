@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48"
+     role="img" aria-label="Ysyry">
+  <title>Ysyry</title>
+  <!-- Los dos brazos: los Estados que llegan al mismo cauce. -->
+  <path d="M6 8 L23 23"  fill="none" stroke="#667B89" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M6 33 L23 23" fill="none" stroke="#667B89" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- El cauce, que sigue. -->
+  <path d="M23 23 C31 27, 34 33, 43 38" fill="none" stroke="#2C6E93" stroke-width="3.4" stroke-linecap="round"/>
+  <!-- La confluencia: el punto donde se encuentran. -->
+  <circle cx="23" cy="23" r="4.6" fill="#2C6E93"/>
+  <circle cx="23" cy="23" r="8.2" fill="none" stroke="#2C6E93" stroke-width="1.3" opacity=".55"/>
+</svg>
