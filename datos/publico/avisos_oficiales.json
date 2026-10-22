@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-10-21T21:50:21Z",
+ "obtenido": "2026-10-22T05:04:14Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 7
+   "avisos_en_el_corredor": 5
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 2
   },
   {
    "nombre": "GDACS",
@@ -29,32 +29,19 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-10-21 15:00",
-   "fin": "2026-10-21 23:59",
+   "inicio": "2026-10-22 00:00",
+   "fin": "2026-10-22 23:59",
    "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres",
     "Foz do Iguaçu",
     "Ponta Porã",
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28529"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Baixa Umidade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-10-21 09:00",
-   "fin": "2026-10-21 22:00",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres"
-   ],
-   "riesgos": "Umidade relativa do ar variando entre 30% e 20%. Baixo risco de incêndios florestais e à saúde.",
-   "id": "inmet-28534"
+   "id": "inmet-28535"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -115,26 +102,6 @@
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
    "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-10-22 00:00",
-   "fin": "2026-10-22 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres",
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28535"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
    "severidad": "Perigo",
    "color": "#F96602",
    "inicio": "2026-10-23 00:00",
@@ -149,7 +116,7 @@
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con ocasionales tormentas eléctricas moderadas, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Lluvias con ocasionales tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y alta probabilidad de caída de granizos",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -166,13 +133,27 @@
    "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-21 17:18",
+   "inicio": "2026-10-22 01:16",
    "fin": "",
    "lugares": [
-    "CORRIENTES: Ituzaingo - Santo Tome."
+    "CORRIENTES: Beron de Astrada - Concepcion - Empedrado - Gral Paz - Itati - Ituzaingo - Mburucuya - San Cosme - San Luis del Palmar - San Miguel."
    ],
    "riesgos": "",
-   "id": "smn-3657"
+   "id": "smn-3667"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-10-22 00:22",
+   "fin": "",
+   "lugares": [
+    "CHACO: Gral Donovan - 1 de Mayo - 25 de Mayo - Bermejo - Libertad - Pres de la Plaza - Quitilipi - San Fernando - San Lorenzo - Tapenaga.; ; CORRIENTES: Corrientes - Empedrado - San Cosme - San Luis del Palmar."
+   ],
+   "riesgos": "",
+   "id": "smn-3665"
   }
  ],
  "no_consultadas": [
