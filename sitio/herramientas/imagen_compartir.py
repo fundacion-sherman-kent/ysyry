@@ -47,7 +47,7 @@ def main():
     x0, x1 = min(p[0] for p in pts), max(p[0] for p in pts)
     y0, y1 = min(p[1] for p in pts), max(p[1] for p in pts)
     # el corredor cabe en la franja derecha de la imagen
-    caja = (700, 36, 1160, 594)
+    caja = (930, 30, 1170, 600)
     esc = min((caja[2] - caja[0]) / (x1 - x0), (caja[3] - caja[1]) / (y1 - y0))
     ox = caja[0] + ((caja[2] - caja[0]) - (x1 - x0) * esc) / 2
     oy = caja[1] + ((caja[3] - caja[1]) - (y1 - y0) * esc) / 2
@@ -90,20 +90,20 @@ def main():
             if cerca:
                 d.ellipse([x - 4 * S, y - 4 * S, x + 4 * S, y + 4 * S], fill=PAPEL)
 
-    # texto
-    d.text((64 * S, 62 * S), "YSYRY", font=fuente("arialbd.ttf", 150), fill=PAPEL)
-    d.rectangle([66 * S, 232 * S, 186 * S, 238 * S], fill=NARANJA)
+    # texto, centrado: si una red recorta la imagen en cuadrado (WhatsApp, a veces), el recorte central de 630 px conserva el nombre y la bajada
+    cx = 600 * S
+    d.text((cx, 52 * S), "YSYRY", font=fuente("arialbd.ttf", 150), fill=PAPEL, anchor="ma")
+    d.rectangle([540 * S, 232 * S, 660 * S, 238 * S], fill=NARANJA)
     bajada = ["Evidencia, alertas y", "prospectiva sobre la Hidrovía", "Paraguay-Paraná"]
     for i, linea in enumerate(bajada):
-        d.text((64 * S, (268 + i * 50) * S), linea, font=fuente("arial.ttf", 40), fill=PAPEL)
-    d.text((64 * S, 440 * S), "Nivel del río · AIS · Avisos oficiales", font=fuente("arial.ttf", 25), fill=MENTA)
-    d.text((64 * S, 476 * S), "Dos fuentes independientes como mínimo", font=fuente("arial.ttf", 25), fill=MENTA)
-    d.text((64 * S, 548 * S), "ysyry.fundacionkent.org", font=fuente("arialbd.ttf", 30), fill=PAPEL)
-    d.text((64 * S, 588 * S), "Fundación Sherman Kent", font=fuente("arial.ttf", 22), fill=ACERO)
-    # sello beta
-    d.rounded_rectangle([1040 * S, 30 * S, 1160 * S, 72 * S], radius=21 * S, outline=NARANJA, width=3 * S)
-    f = fuente("arialbd.ttf", 22)
-    d.text((1100 * S, 51 * S), "BETA", font=f, fill=NARANJA, anchor="mm")
+        d.text((cx, (262 + i * 48) * S), linea, font=fuente("arial.ttf", 38), fill=PAPEL, anchor="ma")
+    d.text((cx, 438 * S), "Nivel del río · AIS · Avisos oficiales", font=fuente("arial.ttf", 25), fill=MENTA, anchor="ma")
+    d.text((cx, 474 * S), "Dos fuentes independientes como mínimo", font=fuente("arial.ttf", 25), fill=MENTA, anchor="ma")
+    d.text((cx, 544 * S), "ysyry.fundacionkent.org", font=fuente("arialbd.ttf", 30), fill=PAPEL, anchor="ma")
+    d.text((cx, 586 * S), "Fundación Sherman Kent", font=fuente("arial.ttf", 22), fill=ACERO, anchor="ma")
+    # sello beta, a la izquierda arriba (queda fuera del recorte cuadrado)
+    d.rounded_rectangle([64 * S, 30 * S, 184 * S, 72 * S], radius=21 * S, outline=NARANJA, width=3 * S)
+    d.text((124 * S, 51 * S), "BETA", font=fuente("arialbd.ttf", 22), fill=NARANJA, anchor="mm")
 
     destino.parent.mkdir(parents=True, exist_ok=True)
     final = fondo.resize((W, H), Image.LANCZOS)
