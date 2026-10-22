@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-10-22T12:07:04Z",
+ "obtenido": "2026-10-22T17:21:07Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 5
+   "avisos_en_el_corredor": 7
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 4
+   "avisos_en_el_corredor": 2
   },
   {
    "nombre": "GDACS",
@@ -29,8 +29,40 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-10-22 00:00",
+   "inicio": "2026-10-22 09:15",
    "fin": "2026-10-22 23:59",
+   "lugares": [
+    "Cáceres"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28538"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-10-22 09:25",
+   "fin": "2026-10-22 23:59",
+   "lugares": [
+    "Corumbá",
+    "Porto Murtinho",
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28539"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-10-23 00:01",
+   "fin": "2026-10-23 23:59",
    "lugares": [
     "Corumbá",
     "Ladário",
@@ -41,7 +73,22 @@
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28535"
+   "id": "inmet-28540"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo",
+   "color": "#F96602",
+   "inicio": "2026-10-23 00:01",
+   "fin": "2026-10-23 23:59",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
+   "id": "inmet-28541"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -49,7 +96,7 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-10-24 00:00",
+   "inicio": "2026-10-24 00:01",
    "fin": "2026-10-24 23:59",
    "lugares": [
     "Porto Murtinho",
@@ -58,7 +105,22 @@
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28533"
+   "id": "inmet-28544"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo",
+   "color": "#F96602",
+   "inicio": "2026-10-24 00:01",
+   "fin": "2026-10-24 23:59",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
+   "id": "inmet-28545"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -66,7 +128,7 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-10-25 00:00",
+   "inicio": "2026-10-25 00:01",
    "fin": "2026-10-25 23:59",
    "lugares": [
     "Corumbá",
@@ -77,41 +139,7 @@
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28536"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-10-23 00:00",
-   "fin": "2026-10-23 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28532"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo",
-   "color": "#F96602",
-   "inicio": "2026-10-23 00:00",
-   "fin": "2026-10-23 23:59",
-   "lugares": [
-    "Foz do Iguaçu",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
-   "id": "inmet-28537"
+   "id": "inmet-28546"
   },
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
@@ -130,58 +158,30 @@
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO N° 3681 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS SEVERAS CON LLUVIAS INTENSAS Y CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-22 08:40",
+   "inicio": "2026-10-22 12:46",
    "fin": "",
    "lugares": [
-    "SANTA FE: Gral Obligado - San Javier.; ; CORRIENTES: Esquina - Goya."
+    "SANTA FE: Belgrano - Iriondo - San Jeronimo - San Lorenzo - San Martin.; ; CORDOBA: Marcos Juarez - Union."
    ],
    "riesgos": "",
-   "id": "smn-3681"
+   "id": "smn-3699"
   },
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO N° 3683 por ocurrencia de TORMENTAS FUERTES CON RAFAGAS Y CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-22 09:04",
+   "inicio": "2026-10-22 13:38",
    "fin": "",
    "lugares": [
-    "SANTA FE: La Capital - Las Colonias - San Cristobal - San Justo."
+    "CORRIENTES: Curuzu Cuatia - Monte Caseros - Paso de los Libres.; ; ENTRE RIOS: Federacion - S. J. de Feliciano."
    ],
    "riesgos": "",
-   "id": "smn-3683"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO N° 3679 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-10-22 07:51",
-   "fin": "",
-   "lugares": [
-    "CHACO: San Fernando.; ; CORRIENTES: Beron de Astrada - Concepcion - Corrientes - Empedrado - Gral Paz - Mburucuya - San Luis del Palmar - San Miguel."
-   ],
-   "riesgos": "",
-   "id": "smn-3679"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO N° 3677 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-10-22 07:14",
-   "fin": "",
-   "lugares": [
-    "SANTA FE: Gral Obligado.; ; CORRIENTES: Bella Vista - Concepcion - Curuzu Cuatia - Goya - Lavalle - Mercedes - Saladas - San Roque."
-   ],
-   "riesgos": "",
-   "id": "smn-3677"
+   "id": "smn-3702"
   }
  ],
  "no_consultadas": [
