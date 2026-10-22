@@ -1763,6 +1763,18 @@ document.getElementById("ir-portada").addEventListener("click", function(ev){
 });
 </script>
 """
+_TITULO_TPL = "<title>Ysyry — corredor Hidrovía</title>"
+_DESC_TPL = "Plataforma pública y gratuita sobre el corredor de la Hidrovía Paraguay-Paraná: nivel del río, buques por AIS, avisos oficiales, indicios con su fuente y su nivel de evidencia, y preguntas con probabilidad. Dos fuentes independientes como mínimo."
+_ETIQUETAS_TPL = (_TITULO_TPL + '<meta name="description" content="%(d)s"><link rel="canonical" href="%(app)s">'
+                  '<meta property="og:type" content="website"><meta property="og:site_name" content="Fundación Sherman Kent"><meta property="og:locale" content="es_AR">'
+                  '<meta property="og:url" content="%(app)s"><meta property="og:title" content="Ysyry — Evidencia, alertas y prospectiva sobre la Hidrovía Paraguay-Paraná">'
+                  '<meta property="og:description" content="%(d)s"><meta property="og:image" content="%(img)s"><meta property="og:image:type" content="image/png">'
+                  '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
+                  '<meta property="og:image:alt" content="Ysyry: el río Paraguay-Paraná dibujado sobre fondo azul, con el nombre de la plataforma">'
+                  '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="%(img)s"><meta name="twitter:title" content="Ysyry — Evidencia, alertas y prospectiva sobre la Hidrovía Paraguay-Paraná">'
+                  '<meta name="twitter:description" content="%(d)s">') % {"d": _DESC_TPL, "app": _dir.APP + "index.html", "img": _dir.IMAGEN}
+assert _TITULO_TPL in TPL
+TPL = TPL.replace(_TITULO_TPL, _ETIQUETAS_TPL, 1)
 html = TPL
 SUST = {
     "provincias": "\n    ".join(prov_svg),

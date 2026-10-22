@@ -32,7 +32,13 @@ def pagina():
 <meta property="og:url" content="%(base)s">
 <meta property="og:title" content="%(t)s">
 <meta property="og:description" content="%(d)s">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="%(img)s">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ysyry: el río Paraguay-Paraná dibujado sobre fondo azul, con el nombre de la plataforma">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="%(img)s">
 <meta name="twitter:title" content="%(t)s">
 <meta name="twitter:description" content="%(d)s">
 <meta http-equiv="refresh" content="0; url=sitio/index.html">
@@ -46,7 +52,7 @@ def pagina():
 </main>
 </body>
 </html>
-""" % {"t": e(TITULO), "d": e(DESCRIPCION), "app": e(direccion.APP + "index.html"), "base": e(direccion.BASE)}
+""" % {"t": e(TITULO), "d": e(DESCRIPCION), "app": e(direccion.APP + "index.html"), "base": e(direccion.BASE), "img": e(direccion.IMAGEN)}
 
 
 if __name__ == "__main__":
