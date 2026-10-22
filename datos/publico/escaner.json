@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-21T21:35:47Z",
+ "obtenido": "2026-10-22T04:33:35Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 30,
+   "items": 32,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,8 +62,8 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 87,
-   "candidatos": 1,
+   "items": 89,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 338,
+   "items": 379,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -3132,232 +3132,34 @@
    ],
    "id": "7dc8b9eca6",
    "verificado": true
-  },
-  {
-   "titulo": "SENAD intercepta camión con más de 50 kilos de droga en Remansito",
-   "url": "https://www.npy.com.py/noticias/nacionales/senad-intercepta-camion-con-mas-de-50-kilos-de-droga-en-remansito",
-   "dominio": "npy.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-07",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Asunción"
-   ],
-   "ubicacion": [
-    -25.28,
-    -57.63
-   ],
-   "zona": "z5",
-   "cantidad": {
-    "valor": 50.0,
-    "unidad": "kilos"
-   },
-   "puntaje": 9,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "npy.com.py",
-     "clase": "prensa",
-     "url": "https://www.npy.com.py/noticias/nacionales/senad-intercepta-camion-con-mas-de-50-kilos-de-droga-en-remansito"
-    }
-   ],
-   "id": "9de23c49eb",
-   "verificado": true
-  },
-  {
-   "titulo": "Itaipú refuerza el monitoreo del río Paraná y prevé asistencia por crecida en Ciudad del Este",
-   "url": "http://www.lanacion.com.py/pais/2026/10/07/itaipu-refuerza-el-monitoreo-del-rio-parana-y-preve-asistencia-por-crecida-en-ciudad-del-este/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-07",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este",
-    "Itaipú"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/07/itaipu-refuerza-el-monitoreo-del-rio-parana-y-preve-asistencia-por-crecida-en-ciudad-del-este/"
-    }
-   ],
-   "id": "3815cee93c",
-   "verificado": true
-  },
-  {
-   "titulo": "Ayolas: evacúan a las primeras familias por crecida del río Paraná",
-   "url": "https://www.abc.com.py/economia/2026/10/07/ayolas-evacuan-a-las-primeras-familias-por-crecida-del-rio-parana/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-07",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Ayolas"
-   ],
-   "ubicacion": [
-    -27.39,
-    -56.84
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/economia/2026/10/07/ayolas-evacuan-a-las-primeras-familias-por-crecida-del-rio-parana/"
-    }
-   ],
-   "id": "c5391c5003",
-   "verificado": true
-  },
-  {
-   "titulo": "El río Uruguay continuará en ascenso y la próxima semana podría superar los 7 metros",
-   "url": "https://ladiaria.com.uy/paysandu/articulo/2026/10/el-rio-uruguay-continuara-en-ascenso-y-la-proxima-semana-podria-superar-los-7-metros/",
-   "dominio": "ladiaria.com.uy",
-   "clase": "prensa",
-   "fecha": "2026-10-07",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "ladiaria.com.uy",
-     "clase": "prensa",
-     "url": "https://ladiaria.com.uy/paysandu/articulo/2026/10/el-rio-uruguay-continuara-en-ascenso-y-la-proxima-semana-podria-superar-los-7-metros/"
-    }
-   ],
-   "id": "c470cc19b3",
-   "verificado": true
-  },
-  {
-   "titulo": "Video: pobladores de San Cosme y Damián piden asistencia ante crecida del río Paraná",
-   "url": "https://www.abc.com.py/economia/2026/10/07/video-pobladores-de-san-cosme-y-damian-piden-asistencia-ante-crecida-del-rio-parana-aguas-abajo-del-brazo-ana-cua/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-07",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/economia/2026/10/07/video-pobladores-de-san-cosme-y-damian-piden-asistencia-ante-crecida-del-rio-parana-aguas-abajo-del-brazo-ana-cua/"
-    }
-   ],
-   "id": "187a619e03",
-   "verificado": true
-  },
-  {
-   "titulo": "Salto y Concordia refuerzan su integración regional ante posibles crecientes del río Uruguay",
-   "url": "https://ladiaria.com.uy/salto/articulo/2026/10/salto-y-concordia-refuerzan-su-integracion-regional-ante-posibles-crecientes-del-rio-uruguay/",
-   "dominio": "ladiaria.com.uy",
-   "clase": "prensa",
-   "fecha": "2026-10-07",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "ladiaria.com.uy",
-     "clase": "prensa",
-     "url": "https://ladiaria.com.uy/salto/articulo/2026/10/salto-y-concordia-refuerzan-su-integracion-regional-ante-posibles-crecientes-del-rio-uruguay/"
-    }
-   ],
-   "id": "1977f71dd0",
-   "verificado": true
-  },
-  {
-   "titulo": "Evacúan a algunas familias del barrio San Rafael ante inminente crecida del río Paraná",
-   "url": "https://www.abc.com.py/este/2026/10/07/evacuan-a-algunas-familias-del-barrio-san-rafael-ante-inminente-crecida-del-rio-parana/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-07",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/este/2026/10/07/evacuan-a-algunas-familias-del-barrio-san-rafael-ante-inminente-crecida-del-rio-parana/"
-    }
-   ],
-   "id": "195642a27c",
-   "verificado": true
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Un hombre en estado de adicción intentó estrangular a su madre y fue aprehendido",
+   "url": "http://www.lanacion.com.py/pais/2026/10/21/un-hombre-en-estado-de-adiccion-intento-estrangular-a-su-madre-y-fue-aprehendido/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Santa Fe, la segunda provincia del país con mayor déficit fiscal",
+   "url": "https://www.pagina12.com.ar/2026/10/22/santa-fe-la-segunda-provincia-del-pais-con-mayor-deficit-fiscal/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "El regreso de la teología política",
+   "url": "https://ladiaria.com.uy/opinion/articulo/2026/10/el-regreso-de-la-teologia-politica/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-22",
+   "lugares": []
+  },
   {
    "titulo": "Identifican a presunto organizador del crimen de un narco y su pareja en Pedro Juan Caballero",
    "url": "https://www.abc.com.py/policiales/2026/10/21/identifican-a-presunto-organizador-del-crimen-de-un-narco-y-su-pareja-en-pedro-juan-caballero/",
@@ -4377,34 +4179,6 @@
    "fecha": "2026-10-09",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Avanza la restauración de la Catedral San Blas de Ciudad del Este",
-   "url": "http://www.lanacion.com.py/pais/2026/10/09/avanza-la-restauracion-de-la-catedral-san-blas-de-ciudad-del-este/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-09",
-   "lugares": [
-    "Ciudad del Este",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Itaipú impulsa la movilidad eléctrica en los World Skate Games ASU26",
-   "url": "http://www.lanacion.com.py/pais/2026/10/09/itaipu-impulsa-la-movilidad-electrica-en-los-world-skate-games-asu26/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-09",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "De 1961: el bodegón donde comían los obreros del puerto y hoy es un ícono de Rosario",
-   "url": "https://www.lanacion.com.ar/sabado/el-bodegon-donde-comian-los-obreros-del-puerto-y-hoy-es-un-icono-de-rosario-nid09102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-09",
-   "lugares": [
-    "Rosario"
    ]
   }
  ]
