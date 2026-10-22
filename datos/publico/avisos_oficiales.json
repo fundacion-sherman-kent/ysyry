@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-22T05:04:14Z",
+ "obtenido": "2026-10-22T12:07:04Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 4
   },
   {
    "nombre": "GDACS",
@@ -116,7 +116,7 @@
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con ocasionales tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y alta probabilidad de caída de granizos",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional de caída de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -130,30 +130,58 @@
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO N° 3681 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-22 01:16",
+   "inicio": "2026-10-22 08:40",
    "fin": "",
    "lugares": [
-    "CORRIENTES: Beron de Astrada - Concepcion - Empedrado - Gral Paz - Itati - Ituzaingo - Mburucuya - San Cosme - San Luis del Palmar - San Miguel."
+    "SANTA FE: Gral Obligado - San Javier.; ; CORRIENTES: Esquina - Goya."
    ],
    "riesgos": "",
-   "id": "smn-3667"
+   "id": "smn-3681"
   },
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO N° 3683 por ocurrencia de TORMENTAS FUERTES CON RAFAGAS Y CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-22 00:22",
+   "inicio": "2026-10-22 09:04",
    "fin": "",
    "lugares": [
-    "CHACO: Gral Donovan - 1 de Mayo - 25 de Mayo - Bermejo - Libertad - Pres de la Plaza - Quitilipi - San Fernando - San Lorenzo - Tapenaga.; ; CORRIENTES: Corrientes - Empedrado - San Cosme - San Luis del Palmar."
+    "SANTA FE: La Capital - Las Colonias - San Cristobal - San Justo."
    ],
    "riesgos": "",
-   "id": "smn-3665"
+   "id": "smn-3683"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO N° 3679 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-10-22 07:51",
+   "fin": "",
+   "lugares": [
+    "CHACO: San Fernando.; ; CORRIENTES: Beron de Astrada - Concepcion - Corrientes - Empedrado - Gral Paz - Mburucuya - San Luis del Palmar - San Miguel."
+   ],
+   "riesgos": "",
+   "id": "smn-3679"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO N° 3677 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-10-22 07:14",
+   "fin": "",
+   "lugares": [
+    "SANTA FE: Gral Obligado.; ; CORRIENTES: Bella Vista - Concepcion - Curuzu Cuatia - Goya - Lavalle - Mercedes - Saladas - San Roque."
+   ],
+   "riesgos": "",
+   "id": "smn-3677"
   }
  ],
  "no_consultadas": [
