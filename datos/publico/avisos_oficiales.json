@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-22T17:21:07Z",
+ "obtenido": "2026-10-22T21:45:07Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -9,12 +9,12 @@
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "GDACS",
@@ -142,46 +142,18 @@
    "id": "inmet-28546"
   },
   {
-   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
-   "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional de caída de granizos.",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "Paraguay"
-   ],
-   "riesgos": "",
-   "id": "dmh-vigente"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS SEVERAS CON LLUVIAS INTENSAS Y CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-10-22 12:46",
-   "fin": "",
-   "lugares": [
-    "SANTA FE: Belgrano - Iriondo - San Jeronimo - San Lorenzo - San Martin.; ; CORDOBA: Marcos Juarez - Union."
-   ],
-   "riesgos": "",
-   "id": "smn-3699"
-  },
-  {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
    "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-22 13:38",
+   "inicio": "2026-10-22 18:40",
    "fin": "",
    "lugares": [
-    "CORRIENTES: Curuzu Cuatia - Monte Caseros - Paso de los Libres.; ; ENTRE RIOS: Federacion - S. J. de Feliciano."
+    "MISIONES: 25 de Mayo - Cainguas - Ldor Gral San Martin - Obera - San Ignacio."
    ],
    "riesgos": "",
-   "id": "smn-3702"
+   "id": "smn-3706"
   }
  ],
  "no_consultadas": [
