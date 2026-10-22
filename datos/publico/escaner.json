@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-22T17:05:19Z",
+ "obtenido": "2026-10-22T21:29:52Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 32,
+   "items": 31,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 91,
+   "items": 94,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 327,
+   "items": 344,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -183,7 +183,7 @@
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 1,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -228,6 +228,72 @@
     }
    ],
    "id": "2d9458cfba",
+   "verificado": true
+  },
+  {
+   "titulo": "Piden informes al MOPC y SEN sobre acciones ante inundaciones en Alto Paraná",
+   "url": "http://www.lanacion.com.py/politica/2026/10/22/piden-informes-al-mopc-y-sen-sobre-acciones-ante-inundaciones-en-alto-parana/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-22",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Alto Paraná"
+   ],
+   "ubicacion": [
+    -25.3,
+    -54.8
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/politica/2026/10/22/piden-informes-al-mopc-y-sen-sobre-acciones-ante-inundaciones-en-alto-parana/"
+    }
+   ],
+   "id": "5afc384f3b",
+   "verificado": true
+  },
+  {
+   "titulo": "SENAD Y CODI CAPTURAN A HOMBRE DE CONFIANZA Y MANO DERECHA DE FELIPE SANTIAGO ACOSTA ALIAS “MACHO”",
+   "url": "https://senad.gov.py/senad-y-codi-capturan-a-hombre-de-confianza-y-mano-derecha-de-felipe-santiago-acosta-alias-macho/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-10-22",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Canindeyú"
+   ],
+   "ubicacion": [
+    -24.2,
+    -55.3
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/senad-y-codi-capturan-a-hombre-de-confianza-y-mano-derecha-de-felipe-santiago-acosta-alias-macho/"
+    }
+   ],
+   "id": "8f05a2490f",
    "verificado": true
   },
   {
@@ -3169,12 +3235,46 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Landau destaca “la fuerza del poderoso río Paraná” ante anuncio de inversión de data centers",
+   "url": "https://www.abc.com.py/internacionales/2026/10/22/landau-destaca-la-fuerza-del-poderoso-rio-parana-ante-anuncio-de-inversion-de-data-centers/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-22",
+   "lugares": []
+  },
+  {
+   "titulo": "La 'fábrica de IA' Crusoe construirá en Paraguay un centro de datos alimentado con Itaipú",
+   "url": "https://www.abc.com.py/ciencia/2026/10/22/la-fabrica-de-ia-crusoe-construira-en-paraguay-un-centro-de-datos-alimentado-con-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Funcionario de Itaipú resulta herido en violento accidente que involucró a un vehículo de la entidad",
    "url": "https://www.abc.com.py/este/2026/10/22/funcionario-de-itaipu-resulta-herido-en-violento-accidente-que-involucro-a-un-vehiculo-de-la-entidad/",
    "dominio": "abc.com.py",
    "fecha": "2026-10-22",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Rachid afirma que la estructura de alias “Macho” utiliza a nativos como escudo",
+   "url": "http://www.lanacion.com.py/politica/2026/10/22/rachid-afirma-que-la-estructura-de-alias-macho-utiliza-a-nativos-como-escudo/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Canindeyú"
+   ]
+  },
+  {
+   "titulo": "Adolescente desaparecida fue encontrada en Brasil junto a un camionero paraguayo",
+   "url": "http://www.lanacion.com.py/pais/2026/10/22/adolescente-desaparecida-fue-encontrada-en-brasil-junto-a-un-camionero-paraguayo/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Alto Paraná"
    ]
   },
   {
@@ -3215,15 +3315,6 @@
    ]
   },
   {
-   "titulo": "Un hombre en estado de adicción intentó estrangular a su madre y fue aprehendido",
-   "url": "http://www.lanacion.com.py/pais/2026/10/21/un-hombre-en-estado-de-adiccion-intento-estrangular-a-su-madre-y-fue-aprehendido/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Ciudad del Este"
-   ]
-  },
-  {
    "titulo": "EVACUACIÓN MÉDICA FLUVIAL DE URGENCIA EN ALBERDI",
    "url": "https://armadaparaguaya.mil.py/evacuacion-medica-fluvial-de-urgencia-en-alberdi/",
    "dominio": "armadaparaguaya.mil.py",
@@ -3239,6 +3330,15 @@
    "dominio": "ladiaria.com.uy",
    "fecha": "2026-10-22",
    "lugares": []
+  },
+  {
+   "titulo": "Un hombre en estado de adicción intentó estrangular a su madre y fue aprehendido",
+   "url": "http://www.lanacion.com.py/pais/2026/10/21/un-hombre-en-estado-de-adiccion-intento-estrangular-a-su-madre-y-fue-aprehendido/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Ciudad del Este"
+   ]
   },
   {
    "titulo": "Puente de la Bioceánica entra en la recta final con US$ 103 millones de Itaipú",
@@ -4186,38 +4286,6 @@
    "dominio": "perfil.com",
    "fecha": "2026-10-11",
    "lugares": []
-  },
-  {
-   "titulo": "Desborde del río Uruguay por fenómeno de El Niño obliga a evacuaciones en Argentina",
-   "url": "https://www.abc.com.py/internacionales/2026/10/11/desborde-del-rio-uruguay-por-fenomeno-de-el-nino-obliga-a-evacuaciones-en-argentina/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-11",
-   "lugares": []
-  },
-  {
-   "titulo": "El Puerto de Asunción recupera protagonismo",
-   "url": "http://www.lanacion.com.py/foco/2026/10/11/el-puerto-de-asuncion-recupera-protagonismo/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-11",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Acertijo visual: ¿sos capaz de encontrar los tres mates sin bombilla?",
-   "url": "https://www.lanacion.com.ar/lifestyle/acertijo-visual-sos-capaz-de-encontrar-los-tres-mates-sin-bombilla-nid11102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-11",
-   "lugares": []
-  },
-  {
-   "titulo": "Río Paraná superaría la cota de inundabilidad en Ayolas",
-   "url": "https://www.abc.com.py/economia/2026/10/11/rio-parana-superaria-la-cota-de-inundabilidad-en-ayolas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-11",
-   "lugares": [
-    "Ayolas"
-   ]
   }
  ]
 }
