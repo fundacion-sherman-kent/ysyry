@@ -1070,7 +1070,7 @@ footer{flex-direction:column}
 
 <div class="hero entra">
   <p class="et">Corredor Hidrovía Paraguay-Paraná</p>
-  <h1>Cinco Estados, un río, cada dato con su fuente.</h1>
+  <h1>Cinco Estados, un río.</h1>
   <p class="estados">Argentina, Bolivia, Brasil, Paraguay y Uruguay.</p>
   <p>Embarcaciones, puertos, comercio y hechos de riesgo del corredor, con su origen y su fecha. Lo que todavía no sabemos o no cubrimos, lo decimos.</p>
 </div>
