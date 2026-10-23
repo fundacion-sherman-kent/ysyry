@@ -1,20 +1,20 @@
 {
- "obtenido": "2026-10-22T21:45:07Z",
+ "obtenido": "2026-10-23T05:03:25Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 7
+   "avisos_en_el_corredor": 5
   },
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "GDACS",
@@ -23,38 +23,6 @@
   }
  ],
  "avisos": [
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-10-22 09:15",
-   "fin": "2026-10-22 23:59",
-   "lugares": [
-    "Cáceres"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28538"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-10-22 09:25",
-   "fin": "2026-10-22 23:59",
-   "lugares": [
-    "Corumbá",
-    "Porto Murtinho",
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28539"
-  },
   {
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
@@ -142,18 +110,18 @@
    "id": "inmet-28546"
   },
   {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
+   "pais": "PRY",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y alta probabilidad de caída de granizos.",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-22 18:40",
+   "inicio": "",
    "fin": "",
    "lugares": [
-    "MISIONES: 25 de Mayo - Cainguas - Ldor Gral San Martin - Obera - San Ignacio."
+    "Paraguay"
    ],
    "riesgos": "",
-   "id": "smn-3706"
+   "id": "dmh-vigente"
   }
  ],
  "no_consultadas": [
