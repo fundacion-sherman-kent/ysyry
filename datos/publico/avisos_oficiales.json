@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-23T05:03:25Z",
+ "obtenido": "2026-10-23T11:51:34Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 3
   },
   {
    "nombre": "GDACS",
@@ -29,7 +29,7 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-10-23 00:01",
+   "inicio": "2026-10-23 08:45",
    "fin": "2026-10-23 23:59",
    "lugares": [
     "Corumbá",
@@ -41,7 +41,7 @@
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28540"
+   "id": "inmet-28547"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -112,7 +112,7 @@
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y alta probabilidad de caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -122,6 +122,48 @@
    ],
    "riesgos": "",
    "id": "dmh-vigente"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-10-23 07:21",
+   "fin": "",
+   "lugares": [
+    "CORRIENTES: Concepcion - Gral Paz - Ituzaingo - Mburucuya - Saladas - San Miguel."
+   ],
+   "riesgos": "",
+   "id": "smn-3730"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-10-23 07:11",
+   "fin": "",
+   "lugares": [
+    "MISIONES: 25 de Mayo - Cainguas - Candelaria - Guarani - Obera - San Javier - San Pedro."
+   ],
+   "riesgos": "",
+   "id": "smn-3729"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-10-23 06:58",
+   "fin": "",
+   "lugares": [
+    "CORRIENTES: Gral Alvear - Ituzaingo - San Martin - Santo Tome.; ; MISIONES: Apostoles - Candelaria - Concepcion - Leandro N. Alem - Obera - Posadas - San Javier."
+   ],
+   "riesgos": "",
+   "id": "smn-3728"
   }
  ],
  "no_consultadas": [
