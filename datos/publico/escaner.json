@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-22T21:29:52Z",
+ "obtenido": "2026-10-23T04:38:55Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 31,
+   "items": 35,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 94,
+   "items": 90,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 344,
+   "items": 376,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -3168,86 +3168,34 @@
    ],
    "id": "edcecd787f",
    "verificado": true
-  },
-  {
-   "titulo": "Crecida del río Paraná ya causa desplazamientos en el barrio esteño de San Rafael",
-   "url": "http://www.lanacion.com.py/pais/2026/10/08/crecida-del-rio-parana-ya-causa-desplazamientos-en-el-barrio-esteno-de-san-rafael/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-08",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Ayolas",
-    "Ciudad del Este",
-    "Itaipú"
-   ],
-   "ubicacion": [
-    -27.39,
-    -56.84
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/08/crecida-del-rio-parana-ya-causa-desplazamientos-en-el-barrio-esteno-de-san-rafael/"
-    }
-   ],
-   "id": "614a938579",
-   "verificado": true
-  },
-  {
-   "titulo": "Walter Román, el empresario que se asoció con El Rey del Cloro para quedarse con AySA",
-   "url": "https://www.perfil.com/noticias/politica/walter-roman-el-empresario-que-se-asocio-con-el-rey-del-cloro-para-quedarse-con-aysa.phtml",
-   "dominio": "perfil.com",
-   "clase": "prensa",
-   "fecha": "2026-10-08",
-   "tipos": [
-    [
-     "regulatorio",
-     "Licitación, peaje o conflicto gremial"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "perfil.com",
-     "clase": "prensa",
-     "url": "https://www.perfil.com/noticias/politica/walter-roman-el-empresario-que-se-asocio-con-el-rey-del-cloro-para-quedarse-con-aysa.phtml"
-    }
-   ],
-   "id": "7dc8b9eca6",
-   "verificado": true
   }
  ],
  "sin_tipo": [
   {
-   "titulo": "Landau destaca “la fuerza del poderoso río Paraná” ante anuncio de inversión de data centers",
-   "url": "https://www.abc.com.py/internacionales/2026/10/22/landau-destaca-la-fuerza-del-poderoso-rio-parana-ante-anuncio-de-inversion-de-data-centers/",
+   "titulo": "En plena crisis en ANR, Yacyretá despide a funcionarios cercanos a Nicanor",
+   "url": "https://www.abc.com.py/politica/2026/10/22/en-plena-crisis-en-anr-yacyreta-despide-a-funcionarios-cercanos-a-nicanor/",
    "dominio": "abc.com.py",
-   "fecha": "2026-10-22",
-   "lugares": []
+   "fecha": "2026-10-23",
+   "lugares": [
+    "Yacyretá"
+   ]
   },
   {
-   "titulo": "La 'fábrica de IA' Crusoe construirá en Paraguay un centro de datos alimentado con Itaipú",
-   "url": "https://www.abc.com.py/ciencia/2026/10/22/la-fabrica-de-ia-crusoe-construira-en-paraguay-un-centro-de-datos-alimentado-con-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-22",
+   "titulo": "Muestra de cine trinacional Arder se abre en CDE con  “Narciso”",
+   "url": "http://www.lanacion.com.py/espectaculo/2026/10/22/muestra-de-cine-trinacional-arder-se-abre-en-cde-con-narciso/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-23",
    "lugares": [
-    "Itaipú"
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Avanza el juicio por unos pagarés que su ex la obligó a firmar, pero desestiman su denuncia por violencia sexual",
+   "url": "https://www.pagina12.com.ar/2026/10/23/avanza-el-juicio-por-unos-pagares-pero-no-investigan-la-violencia-sexual-que-sufrio/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-10-23",
+   "lugares": [
+    "Santa Fe"
    ]
   },
   {
@@ -3257,6 +3205,24 @@
    "fecha": "2026-10-22",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Indignación en Encarnación: joven investigado por coacción sexual vive a metros de la víctima",
+   "url": "http://www.lanacion.com.py/pais/2026/10/22/indignacion-en-encarnacion-joven-investigado-por-coaccion-sexual-vive-a-metros-de-la-victima/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Encarnación"
+   ]
+  },
+  {
+   "titulo": "Entre tijeras y cocaína, cae un barbero sospechoso de vender drogas",
+   "url": "http://www.lanacion.com.py/pais/2026/10/22/entre-tijeras-y-cocaina-cae-un-barbero-sospechoso-de-vender-drogas/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Asunción"
    ]
   },
   {
@@ -3287,6 +3253,39 @@
    ]
   },
   {
+   "titulo": "EVACUACIÓN MÉDICA FLUVIAL DE URGENCIA EN ALBERDI",
+   "url": "https://armadaparaguaya.mil.py/evacuacion-medica-fluvial-de-urgencia-en-alberdi/",
+   "dominio": "armadaparaguaya.mil.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Alberdi",
+    "Formosa"
+   ]
+  },
+  {
+   "titulo": "El regreso de la teología política",
+   "url": "https://ladiaria.com.uy/opinion/articulo/2026/10/el-regreso-de-la-teologia-politica/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-22",
+   "lugares": []
+  },
+  {
+   "titulo": "Landau destaca “la fuerza del poderoso río Paraná” ante anuncio de inversión de data centers",
+   "url": "https://www.abc.com.py/internacionales/2026/10/22/landau-destaca-la-fuerza-del-poderoso-rio-parana-ante-anuncio-de-inversion-de-data-centers/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-22",
+   "lugares": []
+  },
+  {
+   "titulo": "La 'fábrica de IA' Crusoe construirá en Paraguay un centro de datos alimentado con Itaipú",
+   "url": "https://www.abc.com.py/ciencia/2026/10/22/la-fabrica-de-ia-crusoe-construira-en-paraguay-un-centro-de-datos-alimentado-con-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "“Más paraguayo que la mandioca”: el emotivo regreso de Landau a sus raíces",
    "url": "http://www.lanacion.com.py/politica/2026/10/22/mas-paraguayo-que-la-mandioca-el-emotivo-regreso-de-landau-a-sus-raices/",
    "dominio": "lanacion.com.py",
@@ -3313,23 +3312,6 @@
     "Ayolas",
     "Yacyretá"
    ]
-  },
-  {
-   "titulo": "EVACUACIÓN MÉDICA FLUVIAL DE URGENCIA EN ALBERDI",
-   "url": "https://armadaparaguaya.mil.py/evacuacion-medica-fluvial-de-urgencia-en-alberdi/",
-   "dominio": "armadaparaguaya.mil.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Alberdi",
-    "Formosa"
-   ]
-  },
-  {
-   "titulo": "El regreso de la teología política",
-   "url": "https://ladiaria.com.uy/opinion/articulo/2026/10/el-regreso-de-la-teologia-politica/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-22",
-   "lugares": []
   },
   {
    "titulo": "Un hombre en estado de adicción intentó estrangular a su madre y fue aprehendido",
@@ -4246,46 +4228,6 @@
    "lugares": [
     "Yacyretá"
    ]
-  },
-  {
-   "titulo": "Pdte. Franco: hallan cuerpo en el río Paraná con cinco impactos de bala en el cuerpo",
-   "url": "http://www.lanacion.com.py/pais/2026/10/12/pdte-franco-hallan-cuerpo-en-el-rio-parana-con-cinco-impactos-de-bala-en-el-cuerpo/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-12",
-   "lugares": []
-  },
-  {
-   "titulo": "Oxígeno Feria de Arte alista su 9.ª edición con 74 artistas en el Puerto",
-   "url": "http://www.lanacion.com.py/espectaculo/2026/10/12/oxigeno-feria-de-arte-alista-su-9-edicion-con-74-artistas-en-el-puerto/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-12",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Gran Rosario: viaje al principal nodo agroexportador del mundo, donde en 1813 se libró la Batalla de San Lorenzo",
-   "url": "https://www.lanacion.com.ar/economia/gran-rosario-viaje-al-principal-nodo-agroexportador-del-mundo-donde-en-1813-se-libro-la-batalla-de-nid12102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-12",
-   "lugares": [
-    "Rosario",
-    "San Lorenzo"
-   ]
-  },
-  {
-   "titulo": "Puerto Casado: historia taninera y el reto de conectar con la Bioceánica",
-   "url": "http://www.lanacion.com.py/negocios/2026/10/12/puerto-casado-historia-taninera-y-el-reto-de-conectar-con-la-bioceanica/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-12",
-   "lugares": []
-  },
-  {
-   "titulo": "El río Uruguay crece, deja decenas de evacuados en el Litoral y El Niño enciende las alarmas por nuevas lluvias",
-   "url": "https://www.perfil.com/noticias/ciencia/el-rio-uruguay-crece-deja-decenas-de-evacuados-en-el-litoral-y-el-nino-enciende-las-alarmas-por-nuevas-lluvias-a50.phtml",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-11",
-   "lugares": []
   }
  ]
 }
