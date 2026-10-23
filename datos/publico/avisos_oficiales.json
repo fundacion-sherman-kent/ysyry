@@ -1,20 +1,20 @@
 {
- "obtenido": "2026-10-23T11:51:34Z",
+ "obtenido": "2026-10-23T17:17:20Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 5
+   "avisos_en_el_corredor": 6
   },
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 3
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "GDACS",
@@ -81,14 +81,14 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo",
    "color": "#F96602",
-   "inicio": "2026-10-24 00:01",
+   "inicio": "2026-10-24 00:00",
    "fin": "2026-10-24 23:59",
    "lugares": [
     "Foz do Iguaçu",
     "Guaíra"
    ],
    "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
-   "id": "inmet-28545"
+   "id": "inmet-28550"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -96,74 +96,31 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-10-25 00:01",
+   "inicio": "2026-10-25 00:00",
    "fin": "2026-10-25 23:59",
    "lugares": [
     "Corumbá",
     "Ladário",
     "Porto Murtinho",
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
+    "Cáceres",
+    "Ponta Porã"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28546"
+   "id": "inmet-28551"
   },
   {
-   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
-   "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Grande Perigo",
+   "color": "#F80703",
+   "inicio": "2026-10-24 06:00",
+   "fin": "2026-10-24 21:00",
    "lugares": [
-    "Paraguay"
+    "Foz do Iguaçu"
    ],
-   "riesgos": "",
-   "id": "dmh-vigente"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-10-23 07:21",
-   "fin": "",
-   "lugares": [
-    "CORRIENTES: Concepcion - Gral Paz - Ituzaingo - Mburucuya - Saladas - San Miguel."
-   ],
-   "riesgos": "",
-   "id": "smn-3730"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-10-23 07:11",
-   "fin": "",
-   "lugares": [
-    "MISIONES: 25 de Mayo - Cainguas - Candelaria - Guarani - Obera - San Javier - San Pedro."
-   ],
-   "riesgos": "",
-   "id": "smn-3729"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-10-23 06:58",
-   "fin": "",
-   "lugares": [
-    "CORRIENTES: Gral Alvear - Ituzaingo - San Martin - Santo Tome.; ; MISIONES: Apostoles - Candelaria - Concepcion - Leandro N. Alem - Obera - Posadas - San Javier."
-   ],
-   "riesgos": "",
-   "id": "smn-3728"
+   "riesgos": "Chuva superior a 60 mm/h ou maior que 100 mm/dia, ventos superiores a 100 km/h, e queda de granizo. Grande risco de danos em edificações, corte de energia elétrica, estragos em plantações, queda de árvores, alagamentos e transtornos no transporte rodoviário.",
+   "id": "inmet-28553"
   }
  ],
  "no_consultadas": [
