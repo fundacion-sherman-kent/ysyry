@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-23T04:38:55Z",
+ "obtenido": "2026-10-23T11:30:57Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 35,
+   "items": 33,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
+   "items": 96,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 376,
+   "items": 336,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -3172,12 +3172,12 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "En plena crisis en ANR, Yacyretá despide a funcionarios cercanos a Nicanor",
-   "url": "https://www.abc.com.py/politica/2026/10/22/en-plena-crisis-en-anr-yacyreta-despide-a-funcionarios-cercanos-a-nicanor/",
+   "titulo": "Araico y Crusoe usarán energía de Itaipú para un centro de IA, la ANDE no informa sobre el contrato",
+   "url": "https://www.abc.com.py/economia/2026/10/23/araico-y-crusoe-usaran-energia-de-itaipu-para-un-centro-de-ia-la-ande-no-informa-sobre-el-contrato/",
    "dominio": "abc.com.py",
    "fecha": "2026-10-23",
    "lugares": [
-    "Yacyretá"
+    "Itaipú"
    ]
   },
   {
@@ -3187,6 +3187,15 @@
    "fecha": "2026-10-23",
    "lugares": [
     "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "En plena crisis en ANR, Yacyretá despide a funcionarios cercanos a Nicanor",
+   "url": "https://www.abc.com.py/politica/2026/10/22/en-plena-crisis-en-anr-yacyreta-despide-a-funcionarios-cercanos-a-nicanor/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-23",
+   "lugares": [
+    "Yacyretá"
    ]
   },
   {
@@ -3244,15 +3253,6 @@
    ]
   },
   {
-   "titulo": "Alerta policial ante amenaza de tiroteo en universidad privada de Asunción",
-   "url": "http://www.lanacion.com.py/pais/2026/10/22/alerta-policial-ante-amenaza-de-tiroteo-en-universidad-privada-de-asuncion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
    "titulo": "EVACUACIÓN MÉDICA FLUVIAL DE URGENCIA EN ALBERDI",
    "url": "https://armadaparaguaya.mil.py/evacuacion-medica-fluvial-de-urgencia-en-alberdi/",
    "dominio": "armadaparaguaya.mil.py",
@@ -3260,6 +3260,15 @@
    "lugares": [
     "Alberdi",
     "Formosa"
+   ]
+  },
+  {
+   "titulo": "Alerta policial ante amenaza de tiroteo en universidad privada de Asunción",
+   "url": "http://www.lanacion.com.py/pais/2026/10/22/alerta-policial-ante-amenaza-de-tiroteo-en-universidad-privada-de-asuncion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Asunción"
    ]
   },
   {
@@ -4218,15 +4227,6 @@
    "fecha": "2026-10-12",
    "lugares": [
     "Pedro Juan Caballero"
-   ]
-  },
-  {
-   "titulo": "Lluvias cinco veces mayores a lo previsto: Yacyretá abre su vertedero y espera más caudal del Paraná",
-   "url": "https://www.abc.com.py/economia/2026/10/12/lluvias-cinco-veces-mayores-a-lo-previsto-yacyreta-abre-su-vertedero-y-espera-mas-caudal-del-parana/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-12",
-   "lugares": [
-    "Yacyretá"
    ]
   }
  ]
