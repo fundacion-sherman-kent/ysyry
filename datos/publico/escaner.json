@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-23T11:30:57Z",
+ "obtenido": "2026-10-23T16:59:12Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 33,
+   "items": 35,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 96,
+   "items": 90,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -117,10 +117,11 @@
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso/",
-   "ok": true,
-   "items": 100,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "not well-formed (invalid token): line 1, column 0",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "elobservador.com.uy",
@@ -159,14 +160,14 @@
    "url": "https://www.npy.com.py/index.rss",
    "ok": true,
    "items": 18,
-   "candidatos": 0,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 336,
+   "items": 344,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +198,105 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "LN PM: edición del 23 de octubre",
+   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/10/23/ln-pm-edicion-del-23-de-octubre/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-23",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Concepción"
+   ],
+   "ubicacion": [
+    -23.4,
+    -57.43
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/tapa-lnpm/2026/10/23/ln-pm-edicion-del-23-de-octubre/"
+    }
+   ],
+   "id": "730cfbc2cc",
+   "verificado": true
+  },
+  {
+   "titulo": "La crecida del río Paraguay pone en alerta a Concepción",
+   "url": "http://www.lanacion.com.py/pais/2026/10/23/la-crecida-del-rio-paraguay-pone-en-alerta-a-concepcion/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-23",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Concepción"
+   ],
+   "ubicacion": [
+    -23.4,
+    -57.43
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/23/la-crecida-del-rio-paraguay-pone-en-alerta-a-concepcion/"
+    }
+   ],
+   "id": "a241ff4b3c",
+   "verificado": true
+  },
+  {
+   "titulo": "Allanamiento en Curuguaty: detienen a dos mujeres e incautan drogas",
+   "url": "https://www.npy.com.py/noticias/nacionales/allanamiento-en-curuguaty-detienen-a-dos-mujeres-e-incautan-drogas",
+   "dominio": "npy.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-23",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Canindeyú"
+   ],
+   "ubicacion": [
+    -24.2,
+    -55.3
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "npy.com.py",
+     "clase": "prensa",
+     "url": "https://www.npy.com.py/noticias/nacionales/allanamiento-en-curuguaty-detienen-a-dos-mujeres-e-incautan-drogas"
+    }
+   ],
+   "id": "d37ada0327",
+   "verificado": true
+  },
   {
    "titulo": "CONTINÚA LA ASISTENCIA FLUVIAL A FAMILIAS AISLADAS EN ZONA DE AYOLAS",
    "url": "https://armadaparaguaya.mil.py/continua-la-asistencia-fluvial-a-familias-aisladas-en-zona-de-ayolas/",
@@ -3172,6 +3272,33 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Araico y Crusoe usarán energía de Itaipú para un centro de IA, confirma el MIC",
+   "url": "https://www.abc.com.py/economia/2026/10/23/araico-y-crusoe-usaran-energia-de-itaipu-para-un-centro-de-ia-confirma-el-mic/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-23",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Aclaran que la unidad antiterrorista de la frontera está integrada solo por tropas nacionales",
+   "url": "http://www.lanacion.com.py/politica/2026/10/23/aclaran-que-la-unidad-antiterrorista-de-la-frontera-esta-integrada-solo-por-tropas-nacionales/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-23",
+   "lugares": [
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Crimen en Corrientes: son cuatro los sospechosos acusados por el homicidio de la docente Nanci Godoy",
+   "url": "https://www.lanacion.com.ar/seguridad/crimen-en-corrientes-son-cuatro-los-sospechosos-acusados-por-el-homicidio-de-la-docente-nanci-godoy-nid23102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-23",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
    "titulo": "Araico y Crusoe usarán energía de Itaipú para un centro de IA, la ANDE no informa sobre el contrato",
    "url": "https://www.abc.com.py/economia/2026/10/23/araico-y-crusoe-usaran-energia-de-itaipu-para-un-centro-de-ia-la-ande-no-informa-sobre-el-contrato/",
    "dominio": "abc.com.py",
@@ -3217,6 +3344,16 @@
    ]
   },
   {
+   "titulo": "EVACUACIÓN MÉDICA FLUVIAL DE URGENCIA EN ALBERDI",
+   "url": "https://armadaparaguaya.mil.py/evacuacion-medica-fluvial-de-urgencia-en-alberdi/",
+   "dominio": "armadaparaguaya.mil.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Alberdi",
+    "Formosa"
+   ]
+  },
+  {
    "titulo": "Indignación en Encarnación: joven investigado por coacción sexual vive a metros de la víctima",
    "url": "http://www.lanacion.com.py/pais/2026/10/22/indignacion-en-encarnacion-joven-investigado-por-coaccion-sexual-vive-a-metros-de-la-victima/",
    "dominio": "lanacion.com.py",
@@ -3250,16 +3387,6 @@
    "fecha": "2026-10-22",
    "lugares": [
     "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "EVACUACIÓN MÉDICA FLUVIAL DE URGENCIA EN ALBERDI",
-   "url": "https://armadaparaguaya.mil.py/evacuacion-medica-fluvial-de-urgencia-en-alberdi/",
-   "dominio": "armadaparaguaya.mil.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Alberdi",
-    "Formosa"
    ]
   },
   {
@@ -4199,31 +4326,6 @@
    "titulo": "Sicariato en Pedro Juan Caballero: no descartan que guarde relación con el narcotráfico",
    "url": "https://www.abc.com.py/policiales/2026/10/12/sicariato-en-pedro-juan-caballero-no-descartan-que-guarde-relacion-con-el-narcotrafico/",
    "dominio": "abc.com.py",
-   "fecha": "2026-10-12",
-   "lugares": [
-    "Pedro Juan Caballero"
-   ]
-  },
-  {
-   "titulo": "Buscan identificar a hombre hallado con cinco impactos de bala en el río Paraná",
-   "url": "https://www.abc.com.py/este/2026/10/12/buscan-identificar-a-hombre-hallado-con-cinco-impactos-de-bala-en-el-rio-parana/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-12",
-   "lugares": []
-  },
-  {
-   "titulo": "Asalto a una estación de servicios deriva en persecución y balacera en Asunción",
-   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/asalto-a-una-estacion-de-servicios-deriva-en-persecucion-y-balacera-en-asuncion",
-   "dominio": "npy.com.py",
-   "fecha": "2026-10-12",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Roban 60 kilos de cabello humano valuados en Gs. 500 millones en Pedro Juan Caballero",
-   "url": "https://www.npy.com.py/noticias/nacionales/roban-60-kilos-de-cabello-humano-valuados-en-gs-500-millones-en-pedro-juan-caballero",
-   "dominio": "npy.com.py",
    "fecha": "2026-10-12",
    "lugares": [
     "Pedro Juan Caballero"
