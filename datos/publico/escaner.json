@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-23T16:59:12Z",
+ "obtenido": "2026-10-23T21:20:40Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 35,
+   "items": 34,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
+   "items": 87,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -117,11 +117,10 @@
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 100,
    "candidatos": 0,
-   "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "elobservador.com.uy",
@@ -167,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 344,
+   "items": 353,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -295,6 +294,39 @@
     }
    ],
    "id": "d37ada0327",
+   "verificado": true
+  },
+  {
+   "titulo": "Juez ordena secuestro de vehículos y embargo de cuentas de Eddie Jara y su exesposa",
+   "url": "http://www.lanacion.com.py/judiciales/2026/10/23/juez-ordena-secuestro-de-vehiculos-y-embargo-de-cuentas-de-eddie-jara-y-su-exesposa/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-23",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 4,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/judiciales/2026/10/23/juez-ordena-secuestro-de-vehiculos-y-embargo-de-cuentas-de-eddie-jara-y-su-exesposa/"
+    }
+   ],
+   "id": "8ea3b6b857",
    "verificado": true
   },
   {
@@ -3272,12 +3304,30 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Araico y Crusoe usarán energía de Itaipú para un centro de IA, confirma el MIC",
-   "url": "https://www.abc.com.py/economia/2026/10/23/araico-y-crusoe-usaran-energia-de-itaipu-para-un-centro-de-ia-confirma-el-mic/",
+   "titulo": "Oxígeno Feria de Arte abre su novena edición en el Puerto de Asunción",
+   "url": "https://www.abc.com.py/espectaculos/artes-plasticas/2026/10/23/oxigeno-feria-de-arte-abre-su-novena-edicion-en-el-puerto-de-asuncion/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-23",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "“¿Paraguay tiene que comunicarle a Brasil?”: Báez responde a las críticas brasileñas por decisiones sobre Itaipú",
+   "url": "https://www.abc.com.py/economia/2026/10/23/paraguay-tiene-que-comunicarle-a-brasil-baez-responde-a-las-criticas-brasilenas-por-decisiones-sobre-itaipu/",
    "dominio": "abc.com.py",
    "fecha": "2026-10-23",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Juez cuestiona requerimiento fiscal que otorgó domiciliaria a presunto abusador en Encarnación",
+   "url": "http://www.lanacion.com.py/judiciales/2026/10/23/juez-cuestiona-requerimiento-fiscal-que-otorgo-domiciliaria-a-presunto-abusador-en-encarnacion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-23",
+   "lugares": [
+    "Encarnación"
    ]
   },
   {
@@ -3287,6 +3337,15 @@
    "fecha": "2026-10-23",
    "lugares": [
     "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Araico y Crusoe usarán energía de Itaipú para un centro de IA, confirma el MIC",
+   "url": "https://www.abc.com.py/economia/2026/10/23/araico-y-crusoe-usaran-energia-de-itaipu-para-un-centro-de-ia-confirma-el-mic/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-23",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -3332,6 +3391,15 @@
    "fecha": "2026-10-23",
    "lugares": [
     "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Acuerdo entre empresa estadounidense y la Itaipú: ¿qué tan beneficioso sería?",
+   "url": "https://www.abc.com.py/economia/2026/10/22/acuerdo-entre-empresa-estadounidense-y-la-itaipu-que-tan-beneficioso-seria/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -4293,42 +4361,6 @@
    "fecha": "2026-10-13",
    "lugares": [
     "Zárate"
-   ]
-  },
-  {
-   "titulo": "Caudal de Yacyreta está al 33% de su capacidad, según jefe del departamento técnico",
-   "url": "https://www.abc.com.py/economia/2026/10/13/caudal-de-yacyreta-esta-al-33-de-su-capacidad-segun-jefe-del-departamento-tecnico/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-13",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Asunción: Senad interviene en “espacio creativo” que funcionaba como foco de distribución de drogas",
-   "url": "https://www.abc.com.py/policiales/2026/10/12/asuncion-senad-interviene-en-espacio-creativo-que-funcionaba-como-foco-de-distribucion-de-drogas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-12",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Policía investiga presunto feminicidio en Katueté, Canindeyú",
-   "url": "https://www.abc.com.py/policiales/2026/10/12/policia-investiga-presunto-feminicidio-en-katuete-canindeyu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-12",
-   "lugares": [
-    "Canindeyú"
-   ]
-  },
-  {
-   "titulo": "Sicariato en Pedro Juan Caballero: no descartan que guarde relación con el narcotráfico",
-   "url": "https://www.abc.com.py/policiales/2026/10/12/sicariato-en-pedro-juan-caballero-no-descartan-que-guarde-relacion-con-el-narcotrafico/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-12",
-   "lugares": [
-    "Pedro Juan Caballero"
    ]
   }
  ]
