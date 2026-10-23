@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-23T04:31:37Z",
+ "obtenido": "2026-10-23T11:27:16Z",
  "fuente": {
   "nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente",
   "url": "https://www.smn.gob.ar/",
@@ -9,10 +9,10 @@
   {
    "nombre": "La Plata",
    "fecha": "23-octubre-2026",
-   "hora": "01:00",
-   "direccion": "Este",
-   "kmh": 5,
-   "estado": "Cubierto"
+   "hora": "08:00",
+   "direccion": "Norte",
+   "kmh": 3,
+   "estado": "Nublado con neblina"
   },
   {
    "nombre": "Punta Indio B.A.",
@@ -25,26 +25,26 @@
   {
    "nombre": "San Fernando",
    "fecha": "23-octubre-2026",
-   "hora": "01:00",
-   "direccion": "Este",
-   "kmh": 5,
-   "estado": "Cubierto"
+   "hora": "08:00",
+   "direccion": "Direcciones Variables",
+   "kmh": 3,
+   "estado": "Cubierto con llovizna"
   },
   {
    "nombre": "Aeroparque Buenos Aires",
    "fecha": "23-octubre-2026",
-   "hora": "01:00",
-   "direccion": "Noreste",
-   "kmh": 18,
-   "estado": "Nublado"
+   "hora": "07:00",
+   "direccion": "Noroeste",
+   "kmh": 5,
+   "estado": "Cubierto con llovizna en la hora anterior"
   },
   {
    "nombre": "Buenos Aires",
    "fecha": "23-octubre-2026",
-   "hora": "01:00",
-   "direccion": "Noreste",
-   "kmh": 9,
-   "estado": "Nublado"
+   "hora": "08:00",
+   "direccion": "Noroeste",
+   "kmh": 1,
+   "estado": "Cubierto"
   }
  ]
 }
