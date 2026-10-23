@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-23T11:27:16Z",
+ "obtenido": "2026-10-23T16:55:26Z",
  "fuente": {
   "nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente",
   "url": "https://www.smn.gob.ar/",
@@ -9,42 +9,42 @@
   {
    "nombre": "La Plata",
    "fecha": "23-octubre-2026",
-   "hora": "08:00",
-   "direccion": "Norte",
-   "kmh": 3,
-   "estado": "Nublado con neblina"
+   "hora": "13:00",
+   "direccion": "Oeste",
+   "kmh": 13,
+   "estado": "Parcialmente nublado"
   },
   {
    "nombre": "Punta Indio B.A.",
-   "fecha": "22-octubre-2026",
-   "hora": "21:00",
-   "direccion": "Este",
-   "kmh": 14,
-   "estado": "Nublado con llovizna"
+   "fecha": "23-octubre-2026",
+   "hora": "13:00",
+   "direccion": "Oeste",
+   "kmh": 24,
+   "estado": "Parcialmente nublado"
   },
   {
    "nombre": "San Fernando",
    "fecha": "23-octubre-2026",
-   "hora": "08:00",
-   "direccion": "Direcciones Variables",
-   "kmh": 3,
-   "estado": "Cubierto con llovizna"
+   "hora": "13:00",
+   "direccion": "Sudoeste",
+   "kmh": 16,
+   "estado": "Parcialmente nublado"
   },
   {
    "nombre": "Aeroparque Buenos Aires",
    "fecha": "23-octubre-2026",
-   "hora": "07:00",
-   "direccion": "Noroeste",
-   "kmh": 5,
-   "estado": "Cubierto con llovizna en la hora anterior"
+   "hora": "13:00",
+   "direccion": "Sudoeste",
+   "kmh": 11,
+   "estado": "Parcialmente nublado"
   },
   {
    "nombre": "Buenos Aires",
    "fecha": "23-octubre-2026",
-   "hora": "08:00",
-   "direccion": "Noroeste",
-   "kmh": 1,
-   "estado": "Cubierto"
+   "hora": "13:00",
+   "direccion": "Oeste",
+   "kmh": 9,
+   "estado": "Parcialmente nublado"
   }
  ]
 }
