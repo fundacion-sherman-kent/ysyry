@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-24T04:49:05Z",
+ "obtenido": "2026-10-24T11:16:45Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 3
+   "avisos_en_el_corredor": 2
   },
   {
    "nombre": "GDACS",
@@ -90,7 +90,7 @@
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Sistema de tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la alta probabilidad de caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -104,44 +104,30 @@
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO N° 3741 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-24 01:44",
+   "inicio": "2026-10-24 07:55",
    "fin": "",
    "lugares": [
-    "CORRIENTES: Gral Alvear - Mercedes - Paso de los Libres - San Martin - Santo Tome."
+    "CORRIENTES: Bella Vista - Concepcion - Curuzu Cuatia - Esquina - Goya - Ituzaingo - Lavalle - Mercedes - Monte Caseros - Paso de los Libres - Saladas - San Martin - San Roque - Sauce."
    ],
    "riesgos": "",
-   "id": "smn-3741"
+   "id": "smn-3751"
   },
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO N° 3740 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-24 00:51",
+   "inicio": "2026-10-24 07:23",
    "fin": "",
    "lugares": [
-    "SANTA FE: Gral Obligado - Vera.; ; CORRIENTES: Bella Vista - Concepcion - Curuzu Cuatia - Empedrado - Goya - Ituzaingo - Lavalle - Mercedes - Saladas - San Miguel - San Roque."
+    "CHACO: Gral Donovan - 1 de Mayo - Bermejo - Libertad - San Fernando.; ; CORRIENTES: Beron de Astrada - Corrientes - Empedrado - Gral Paz - Itati - Mburucuya - Saladas - San Cosme - San Luis del Palmar."
    ],
    "riesgos": "",
-   "id": "smn-3740"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO N° 3739 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-10-24 00:43",
-   "fin": "",
-   "lugares": [
-    "FORMOSA: Bermejo - Patino."
-   ],
-   "riesgos": "",
-   "id": "smn-3739"
+   "id": "smn-3750"
   }
  ],
  "no_consultadas": [
