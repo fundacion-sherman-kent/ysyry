@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-24T16:05:59Z",
+ "obtenido": "2026-10-24T20:58:26Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "GDACS",
@@ -141,7 +141,7 @@
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
+   "fenomeno": "Fenómeno esperado:  Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la alta probabilidad de caída de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -151,20 +151,6 @@
    ],
    "riesgos": "",
    "id": "dmh-vigente"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-10-24 12:12",
-   "fin": "",
-   "lugares": [
-    "MISIONES: El Dorado - Gral Manuel Belgrano - Guarani - Montecarlo - San Pedro."
-   ],
-   "riesgos": "",
-   "id": "smn-3758"
   }
  ],
  "no_consultadas": [
