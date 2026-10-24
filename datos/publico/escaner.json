@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-23T21:20:40Z",
+ "obtenido": "2026-10-24T04:27:57Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 34,
+   "items": 33,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 3,
+   "candidatos": 4,
    "fallos_seguidos": 0
   },
   {
@@ -62,17 +62,18 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 87,
+   "items": 98,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso-do-sul/",
-   "ok": true,
-   "items": 100,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "not well-formed (invalid token): line 1, column 0",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "insightcrime.org",
@@ -117,10 +118,11 @@
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso/",
-   "ok": true,
-   "items": 100,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "not well-formed (invalid token): line 1, column 0",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "elobservador.com.uy",
@@ -166,7 +168,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 353,
+   "items": 386,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +199,39 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Ahora el Norte, en alerta por la subida de las aguas del Paraguay",
+   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/24/ahora-el-norte-en-alerta-por-la-subida-de-las-aguas-del-paraguay/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-24",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Concepción"
+   ],
+   "ubicacion": [
+    -23.4,
+    -57.43
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/24/ahora-el-norte-en-alerta-por-la-subida-de-las-aguas-del-paraguay/"
+    }
+   ],
+   "id": "3eaee855ee",
+   "verificado": true
+  },
   {
    "titulo": "LN PM: edición del 23 de octubre",
    "url": "http://www.lanacion.com.py/tapa-lnpm/2026/10/23/ln-pm-edicion-del-23-de-octubre/",
@@ -327,6 +362,34 @@
     }
    ],
    "id": "8ea3b6b857",
+   "verificado": true
+  },
+  {
+   "titulo": "Essap confirma plan de contingencia ante crecida del río Paraguay",
+   "url": "https://www.abc.com.py/nacionales/2026/10/23/essap-confirma-plan-de-contingencia-ante-crecida-del-rio-paraguay/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-23",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/nacionales/2026/10/23/essap-confirma-plan-de-contingencia-ante-crecida-del-rio-paraguay/"
+    }
+   ],
+   "id": "5d1bb79e3b",
    "verificado": true
   },
   {
@@ -3164,145 +3227,18 @@
    ],
    "id": "e071edb515",
    "verificado": true
-  },
-  {
-   "titulo": "SENAD INTERVINO PUNTO DE DISTRIBUCIÓN DE DROGAS Y DESARMADERO DE MOTOCICLETAS EN TRINIDAD",
-   "url": "https://senad.gov.py/senad-intervino-punto-de-distribucion-de-drogas-y-desarmadero-de-motocicletas-en-trinidad/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-10-09",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Asunción"
-   ],
-   "ubicacion": [
-    -25.28,
-    -57.63
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 7,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/senad-intervino-punto-de-distribucion-de-drogas-y-desarmadero-de-motocicletas-en-trinidad/"
-    }
-   ],
-   "id": "4a9c953d7e",
-   "verificado": true
-  },
-  {
-   "titulo": "Senad anula foco de drogas y desarmadero clandestino de motos en Asunción",
-   "url": "http://www.lanacion.com.py/pais/2026/10/09/senad-anula-foco-de-drogas-y-desarmadero-clandestino-de-motos-en-asuncion/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-09",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Asunción"
-   ],
-   "ubicacion": [
-    -25.28,
-    -57.63
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 6,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/09/senad-anula-foco-de-drogas-y-desarmadero-clandestino-de-motos-en-asuncion/"
-    }
-   ],
-   "id": "0a15d509f9",
-   "verificado": true
-  },
-  {
-   "titulo": "Itaipú reubicó a 23 familias en CDE ante crecida del río Paraná y cota se estabilizó",
-   "url": "http://www.lanacion.com.py/pais/2026/10/09/itaipu-reubico-a-23-familias-en-cde-ante-crecida-del-rio-parana-y-cota-se-estabilizo/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-09",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este",
-    "Itaipú"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/09/itaipu-reubico-a-23-familias-en-cde-ante-crecida-del-rio-parana-y-cota-se-estabilizo/"
-    }
-   ],
-   "id": "bd0324c575",
-   "verificado": true
-  },
-  {
-   "titulo": "Fuerzas Armadas auxilian a afectados por lluvias y la crecida del río Paraná",
-   "url": "http://www.lanacion.com.py/pais/2026/10/09/fuerzas-armadas-auxilian-a-afectados-por-lluvias-y-la-crecida-del-rio-parana/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-09",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/09/fuerzas-armadas-auxilian-a-afectados-por-lluvias-y-la-crecida-del-rio-parana/"
-    }
-   ],
-   "id": "edcecd787f",
-   "verificado": true
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Juez cuestiona requerimiento fiscal que otorgó domiciliaria a presunto abusador en Encarnación",
+   "url": "http://www.lanacion.com.py/judiciales/2026/10/23/juez-cuestiona-requerimiento-fiscal-que-otorgo-domiciliaria-a-presunto-abusador-en-encarnacion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-23",
+   "lugares": [
+    "Encarnación"
+   ]
+  },
   {
    "titulo": "Oxígeno Feria de Arte abre su novena edición en el Puerto de Asunción",
    "url": "https://www.abc.com.py/espectaculos/artes-plasticas/2026/10/23/oxigeno-feria-de-arte-abre-su-novena-edicion-en-el-puerto-de-asuncion/",
@@ -3319,15 +3255,6 @@
    "fecha": "2026-10-23",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Juez cuestiona requerimiento fiscal que otorgó domiciliaria a presunto abusador en Encarnación",
-   "url": "http://www.lanacion.com.py/judiciales/2026/10/23/juez-cuestiona-requerimiento-fiscal-que-otorgo-domiciliaria-a-presunto-abusador-en-encarnacion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-23",
-   "lugares": [
-    "Encarnación"
    ]
   },
   {
@@ -3394,15 +3321,6 @@
    ]
   },
   {
-   "titulo": "Acuerdo entre empresa estadounidense y la Itaipú: ¿qué tan beneficioso sería?",
-   "url": "https://www.abc.com.py/economia/2026/10/22/acuerdo-entre-empresa-estadounidense-y-la-itaipu-que-tan-beneficioso-seria/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
    "titulo": "Funcionario de Itaipú resulta herido en violento accidente que involucró a un vehículo de la entidad",
    "url": "https://www.abc.com.py/este/2026/10/22/funcionario-de-itaipu-resulta-herido-en-violento-accidente-que-involucro-a-un-vehiculo-de-la-entidad/",
    "dominio": "abc.com.py",
@@ -3419,6 +3337,15 @@
    "lugares": [
     "Alberdi",
     "Formosa"
+   ]
+  },
+  {
+   "titulo": "Acuerdo entre empresa estadounidense y la Itaipú: ¿qué tan beneficioso sería?",
+   "url": "https://www.abc.com.py/economia/2026/10/22/acuerdo-entre-empresa-estadounidense-y-la-itaipu-que-tan-beneficioso-seria/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
