@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-24T15:51:30Z",
+ "obtenido": "2026-10-24T20:41:36Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 32,
+   "items": 25,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,18 +62,17 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 96,
+   "items": 95,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso-do-sul/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 100,
    "candidatos": 0,
-   "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 3
+   "fallos_seguidos": 0
   },
   {
    "dominio": "insightcrime.org",
@@ -167,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 348,
+   "items": 350,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -262,6 +261,62 @@
     }
    ],
    "id": "979f4f8b9f",
+   "verificado": true
+  },
+  {
+   "titulo": "Asisten a pequeños ganaderos afectados por la crecida del río Paraná",
+   "url": "https://www.abc.com.py/clima/2026/10/24/asisten-a-pequenos-ganaderos-afectados-por-la-crecida-del-rio-parana/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-24",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/clima/2026/10/24/asisten-a-pequenos-ganaderos-afectados-por-la-crecida-del-rio-parana/"
+    }
+   ],
+   "id": "15b5f1e1a8",
+   "verificado": true
+  },
+  {
+   "titulo": "Crecida del río Paraná: ¿Cuál es la zona que más preocupa al ministro de Defensa?",
+   "url": "https://www.abc.com.py/nacionales/2026/10/24/crecida-del-rio-parana-cual-es-la-zona-que-mas-preocupa-al-ministro-de-defensa/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-24",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/nacionales/2026/10/24/crecida-del-rio-parana-cual-es-la-zona-que-mas-preocupa-al-ministro-de-defensa/"
+    }
+   ],
+   "id": "d2fe3c5e26",
    "verificado": true
   },
   {
@@ -3263,12 +3318,20 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Conviene a Paraguay que gane Lula y será el mejor momento para renegociar Itaipú, afirma experto",
-   "url": "https://www.abc.com.py/politica/2026/10/24/conviene-a-paraguay-que-gane-lula-y-sera-el-mejor-momento-para-renegociar-itaipu-afirma-experto/",
+   "titulo": "El río Jejuí desborda y el repunte del río Paraguay se torna cada vez más preocupante en San Pedro",
+   "url": "https://www.abc.com.py/nacionales/2026/10/24/el-rio-jejui-desborda-y-el-repunte-del-rio-paraguay-se-torna-cada-vez-mas-preocupante-en-san-pedro/",
    "dominio": "abc.com.py",
    "fecha": "2026-10-24",
+   "lugares": []
+  },
+  {
+   "titulo": "Siguen las charlas de prevención del ciberacoso a estudiantes",
+   "url": "http://www.lanacion.com.py/pais/2026/10/24/siguen-las-charlas-de-prevencion-del-ciberacoso-a-estudiantes/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-24",
    "lugares": [
-    "Itaipú"
+    "Ciudad del Este",
+    "Alto Paraná"
    ]
   },
   {
@@ -3295,6 +3358,24 @@
    "titulo": "Itaipú y Smithsonian optimizan la gestión de áreas verdes en el centro Tekotopa",
    "url": "http://www.lanacion.com.py/pais/2026/10/24/itaipu-y-smithsonian-optimizan-la-gestion-de-areas-verdes-en-el-centro-tekotopa/",
    "dominio": "lanacion.com.py",
+   "fecha": "2026-10-24",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Calle Recreativa celebra su 16° aniversario",
+   "url": "https://www.pagina12.com.ar/2026/10/24/calle-recreativa-celebra-su-16-aniversario/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-10-24",
+   "lugares": [
+    "Rosario"
+   ]
+  },
+  {
+   "titulo": "Conviene a Paraguay que gane Lula y será el mejor momento para renegociar Itaipú, afirma experto",
+   "url": "https://www.abc.com.py/politica/2026/10/24/conviene-a-paraguay-que-gane-lula-y-sera-el-mejor-momento-para-renegociar-itaipu-afirma-experto/",
+   "dominio": "abc.com.py",
    "fecha": "2026-10-24",
    "lugares": [
     "Itaipú"
@@ -3391,15 +3472,6 @@
    ]
   },
   {
-   "titulo": "Funcionario de Itaipú resulta herido en violento accidente que involucró a un vehículo de la entidad",
-   "url": "https://www.abc.com.py/este/2026/10/22/funcionario-de-itaipu-resulta-herido-en-violento-accidente-que-involucro-a-un-vehiculo-de-la-entidad/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
    "titulo": "EVACUACIÓN MÉDICA FLUVIAL DE URGENCIA EN ALBERDI",
    "url": "https://armadaparaguaya.mil.py/evacuacion-medica-fluvial-de-urgencia-en-alberdi/",
    "dominio": "armadaparaguaya.mil.py",
@@ -3407,6 +3479,15 @@
    "lugares": [
     "Alberdi",
     "Formosa"
+   ]
+  },
+  {
+   "titulo": "Funcionario de Itaipú resulta herido en violento accidente que involucró a un vehículo de la entidad",
+   "url": "https://www.abc.com.py/este/2026/10/22/funcionario-de-itaipu-resulta-herido-en-violento-accidente-que-involucro-a-un-vehiculo-de-la-entidad/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-22",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -4296,34 +4377,6 @@
    "fecha": "2026-10-13",
    "lugares": [
     "Canindeyú"
-   ]
-  },
-  {
-   "titulo": "Alto Paraná: entre Itaipú, Acaray y la represa Yguazú se abrieron 19 compuertas",
-   "url": "http://www.lanacion.com.py/pais/2026/10/13/alto-parana-entre-itaipu-acaray-y-la-represa-yguazu-se-abrieron-19-compuertas/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-13",
-   "lugares": [
-    "Alto Paraná",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Itaipú elevó depósitos en bancos locales de USD 57 millones a USD 537 millones",
-   "url": "http://www.lanacion.com.py/negocios/2026/10/13/itaipu-elevo-depositos-en-bancos-locales-de-usd-57-millones-a-usd-537-millones/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-13",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Agricultura Familiar impulsa ferias semanales en cinco ciudades",
-   "url": "http://www.lanacion.com.py/negocios/2026/10/13/agricultura-familiar-impulsa-ferias-semanales-en-cinco-ciudades/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-13",
-   "lugares": [
-    "Asunción"
    ]
   }
  ]
