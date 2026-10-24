@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-24T20:41:36Z",
+ "obtenido": "2026-10-24T23:07:57Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 25,
+   "items": 24,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,17 +62,18 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 95,
+   "items": 92,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso-do-sul/",
-   "ok": true,
-   "items": 100,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "not well-formed (invalid token): line 1, column 0",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "insightcrime.org",
@@ -117,10 +118,11 @@
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso/",
-   "ok": true,
-   "items": 100,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "not well-formed (invalid token): line 1, column 0",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "elobservador.com.uy",
@@ -166,7 +168,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 350,
+   "items": 352,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -3325,6 +3327,15 @@
    "lugares": []
   },
   {
+   "titulo": "Itaipú cumple 42 años de su inauguración oficial como líder mundial en producción de energía",
+   "url": "http://www.lanacion.com.py/politica/2026/10/24/itaipu-cumple-42-anos-de-su-inauguracion-oficial-como-lider-mundial-en-produccion-de-energia/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-24",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Siguen las charlas de prevención del ciberacoso a estudiantes",
    "url": "http://www.lanacion.com.py/pais/2026/10/24/siguen-las-charlas-de-prevencion-del-ciberacoso-a-estudiantes/",
    "dominio": "lanacion.com.py",
@@ -4368,15 +4379,6 @@
    "fecha": "2026-10-14",
    "lugares": [
     "Corrientes"
-   ]
-  },
-  {
-   "titulo": "Hallan muerta a una mujer en Katueté y su pareja es el principal sospechoso",
-   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/hallan-muerta-a-una-mujer-en-katuete-y-su-pareja-es-el-principal-sospechoso",
-   "dominio": "npy.com.py",
-   "fecha": "2026-10-13",
-   "lugares": [
-    "Canindeyú"
    ]
   }
  ]
