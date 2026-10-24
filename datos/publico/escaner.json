@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-24T10:50:49Z",
+ "obtenido": "2026-10-24T15:51:30Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 33,
+   "items": 32,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 95,
+   "items": 96,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -73,7 +73,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 2
+   "fallos_seguidos": 3
   },
   {
    "dominio": "insightcrime.org",
@@ -229,6 +229,39 @@
     }
    ],
    "id": "3eaee855ee",
+   "verificado": true
+  },
+  {
+   "titulo": "Itaipú cierra una canaleta de su vertedero para contener el nivel del río Paraná",
+   "url": "https://www.abc.com.py/este/2026/10/24/itaipu-cierra-una-canaleta-de-su-vertedero-para-contener-el-nivel-del-rio-parana/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-24",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Itaipú"
+   ],
+   "ubicacion": [
+    -25.41,
+    -54.59
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/este/2026/10/24/itaipu-cierra-una-canaleta-de-su-vertedero-para-contener-el-nivel-del-rio-parana/"
+    }
+   ],
+   "id": "979f4f8b9f",
    "verificado": true
   },
   {
@@ -3230,6 +3263,44 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Conviene a Paraguay que gane Lula y será el mejor momento para renegociar Itaipú, afirma experto",
+   "url": "https://www.abc.com.py/politica/2026/10/24/conviene-a-paraguay-que-gane-lula-y-sera-el-mejor-momento-para-renegociar-itaipu-afirma-experto/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-24",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Renuevan talleres y laboratorios del Colegio Técnico Nacional en Asunción",
+   "url": "http://www.lanacion.com.py/pais/2026/10/24/renuevan-talleres-y-laboratorios-del-colegio-tecnico-nacional-en-asuncion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-24",
+   "lugares": [
+    "Asunción",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "El primer “Kaninde Camp” busca proteger al guacamayo azul y amarillo",
+   "url": "http://www.lanacion.com.py/pais/2026/10/24/el-primer-kaninde-camp-busca-proteger-al-guacamayo-azul-y-amarillo/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-24",
+   "lugares": [
+    "Canindeyú",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Itaipú y Smithsonian optimizan la gestión de áreas verdes en el centro Tekotopa",
+   "url": "http://www.lanacion.com.py/pais/2026/10/24/itaipu-y-smithsonian-optimizan-la-gestion-de-areas-verdes-en-el-centro-tekotopa/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-24",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Juez cuestiona requerimiento fiscal que otorgó domiciliaria a presunto abusador en Encarnación",
    "url": "http://www.lanacion.com.py/judiciales/2026/10/23/juez-cuestiona-requerimiento-fiscal-que-otorgo-domiciliaria-a-presunto-abusador-en-encarnacion/",
    "dominio": "lanacion.com.py",
@@ -4253,40 +4324,6 @@
    "fecha": "2026-10-13",
    "lugares": [
     "Asunción"
-   ]
-  },
-  {
-   "titulo": "Alto Paraná: se entrega joven acusada de matar a su expareja y alega legítima defensa",
-   "url": "http://www.lanacion.com.py/pais/2026/10/13/alto-parana-se-entrega-joven-acusada-de-matar-a-su-expareja-y-alega-legitima-defensa/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-13",
-   "lugares": [
-    "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "CDE: El río Paraná podría alcanzar los 120 metros en las próximas horas",
-   "url": "https://www.abc.com.py/este/2026/10/13/cde-el-rio-parana-podria-alcanzar-los-120-metros-en-las-proximas-horas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-13",
-   "lugares": []
-  },
-  {
-   "titulo": "Lágrimas, abrazos y orgullo: la selección peruana Sub 19 de vóley regresó a Lima con la plata del Sudamericano y el boleto al Mundial 2027",
-   "url": "https://www.infobae.com/peru/deportes/2026/10/13/lagrimas-abrazos-y-orgullo-la-seleccion-peruana-sub-19-de-voley-regreso-a-lima-con-la-plata-del-sudamericano-y-el-boleto-al-mundial-2027/",
-   "dominio": "infobae.com",
-   "fecha": "2026-10-13",
-   "lugares": [
-    "Campana"
-   ]
-  },
-  {
-   "titulo": "Megacausa Bomberos: Folli Pedetta acordó juicio abreviado y una pena de 6 años y 2 meses de prisión",
-   "url": "https://www.perfil.com/noticias/cordoba/megacausa-bomberos-folli-pedetta-acordo-juicio-abreviado-y-una-pena-de-6-anos-y-2-meses-de-prision.phtml",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-13",
-   "lugares": [
-    "Zárate"
    ]
   }
  ]
