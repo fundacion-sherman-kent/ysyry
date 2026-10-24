@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-24T04:27:57Z",
+ "obtenido": "2026-10-24T10:50:49Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,7 +7,7 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 4,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 98,
+   "items": 95,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -73,7 +73,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 2
   },
   {
    "dominio": "insightcrime.org",
@@ -118,11 +118,10 @@
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 100,
    "candidatos": 0,
-   "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "elobservador.com.uy",
@@ -168,7 +167,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 386,
+   "items": 348,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
