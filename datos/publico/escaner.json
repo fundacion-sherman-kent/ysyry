@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-25T20:45:37Z",
+ "obtenido": "2026-10-25T23:11:16Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 15,
+   "items": 14,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
+   "items": 94,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -73,7 +73,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 5
+   "fallos_seguidos": 6
   },
   {
    "dominio": "insightcrime.org",
@@ -122,7 +122,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 5
+   "fallos_seguidos": 6
   },
   {
    "dominio": "elobservador.com.uy",
@@ -168,7 +168,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 362,
+   "items": 369,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -230,6 +230,39 @@
     }
    ],
    "id": "1834ed4848",
+   "verificado": true
+  },
+  {
+   "titulo": "Alistan albergues temporales para reubicación de familias damnificadas del Bañado Sur",
+   "url": "http://www.lanacion.com.py/pais/2026/10/25/alistan-albergues-temporales-para-reubicacion-de-familias-damnificadas-del-banado-sur/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-25",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Asunción"
+   ],
+   "ubicacion": [
+    -25.28,
+    -57.63
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/25/alistan-albergues-temporales-para-reubicacion-de-familias-damnificadas-del-banado-sur/"
+    }
+   ],
+   "id": "9f3a209b3c",
    "verificado": true
   },
   {
@@ -3271,6 +3304,15 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Siguen charlas de prevención del ciberacoso a estudiantes",
+   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/25/siguen-charlas-de-prevencion-del-ciberacoso-a-estudiantes/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-25",
+   "lugares": [
+    "Alto Paraná"
+   ]
+  },
+  {
    "titulo": "Itaipú cumple 42 años de su inauguración oficial",
    "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/10/25/itaipu-cumple-42-anos-de-su-inauguracion-oficial/",
    "dominio": "lanacion.com.py",
@@ -3280,13 +3322,11 @@
    ]
   },
   {
-   "titulo": "Siguen charlas de prevención del ciberacoso a estudiantes",
-   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/25/siguen-charlas-de-prevencion-del-ciberacoso-a-estudiantes/",
-   "dominio": "lanacion.com.py",
+   "titulo": "Brasil: Las multitudes que promovieron una elección histórica",
+   "url": "https://www.pagina12.com.ar/2026/10/25/brasil-las-multitudes-que-promovieron-una-eleccion-historica/",
+   "dominio": "pagina12.com.ar",
    "fecha": "2026-10-25",
-   "lugares": [
-    "Alto Paraná"
-   ]
+   "lugares": []
   },
   {
    "titulo": "Costa Rica y Panamá buscan una embarcación con tres tripulantes desaparecidos desde el lunes",
@@ -4321,15 +4361,6 @@
    "lugares": [
     "Encarnación",
     "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Itaipú sigue sin informar sobre sus saldos actuales, tasas, y fondos al PTI",
-   "url": "https://www.abc.com.py/economia/2026/10/14/itaipu-sigue-sin-informar-sobre-sus-saldos-actuales-tasas-y-fondos-al-pti/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-14",
-   "lugares": [
-    "Itaipú"
    ]
   }
  ]
