@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-25T04:31:57Z",
+ "obtenido": "2026-10-25T11:16:24Z",
  "dias": 14,
  "fuentes": [
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 96,
+   "items": 94,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -73,7 +73,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 2
+   "fallos_seguidos": 3
   },
   {
    "dominio": "insightcrime.org",
@@ -122,7 +122,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 2
+   "fallos_seguidos": 3
   },
   {
    "dominio": "elobservador.com.uy",
