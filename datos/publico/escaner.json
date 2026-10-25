@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-24T23:07:57Z",
+ "obtenido": "2026-10-25T04:31:57Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 24,
+   "items": 19,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 96,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -73,7 +73,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 2
   },
   {
    "dominio": "insightcrime.org",
@@ -122,7 +122,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 2
   },
   {
    "dominio": "elobservador.com.uy",
@@ -168,7 +168,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 352,
+   "items": 356,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -199,6 +199,34 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Crecida del Paraná obliga trabajos de emergencia",
+   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/25/crecida-del-parana-obliga-trabajos-de-emergencia/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-25",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/25/crecida-del-parana-obliga-trabajos-de-emergencia/"
+    }
+   ],
+   "id": "e8b5236dee",
+   "verificado": true
+  },
   {
    "titulo": "Ahora el Norte, en alerta por la subida de las aguas del Paraguay",
    "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/24/ahora-el-norte-en-alerta-por-la-subida-de-las-aguas-del-paraguay/",
@@ -3178,153 +3206,35 @@
    ],
    "id": "fccde42146",
    "verificado": true
-  },
-  {
-   "titulo": "Una organización criminal ya perdió 13 toneladas de droga por operativos en lo que va del año",
-   "url": "https://www.lanacion.com.ar/seguridad/una-organizacion-criminal-ya-perdio-13-toneladas-de-droga-por-operativos-en-lo-que-va-del-ano-nid08102026/",
-   "dominio": "lanacion.com.ar",
-   "clase": "prensa",
-   "fecha": "2026-10-10",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Santa Fe"
-   ],
-   "ubicacion": [
-    -31.63,
-    -60.7
-   ],
-   "zona": "z3",
-   "cantidad": {
-    "valor": 13.0,
-    "unidad": "toneladas"
-   },
-   "puntaje": 9,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "lanacion.com.ar",
-     "clase": "prensa",
-     "url": "https://www.lanacion.com.ar/seguridad/una-organizacion-criminal-ya-perdio-13-toneladas-de-droga-por-operativos-en-lo-que-va-del-ano-nid08102026/"
-    }
-   ],
-   "id": "9bc29db810",
-   "verificado": true
-  },
-  {
-   "titulo": "Creciente del río Paraná obliga a evacuar a familias en Ayolas",
-   "url": "https://www.abc.com.py/economia/2026/10/10/creciente-del-rio-parana-obliga-a-evacuar-a-familias-en-ayolas/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-10",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Ayolas"
-   ],
-   "ubicacion": [
-    -27.39,
-    -56.84
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/economia/2026/10/10/creciente-del-rio-parana-obliga-a-evacuar-a-familias-en-ayolas/"
-    }
-   ],
-   "id": "aafbc82339",
-   "verificado": true
-  },
-  {
-   "titulo": "¿Quién es el ‘Loco Joe’, el sanguinario criminal que usaba el DNI de un peruano asesinado? Cayó en Argentina y operaba desde Brasil",
-   "url": "https://www.infobae.com/peru/2026/10/10/quien-es-el-loco-joe-el-sanguinario-criminal-que-usaba-el-dni-de-un-peruano-asesinado-cayo-en-argentina-y-operaba-desde-brasil/",
-   "dominio": "infobae.com",
-   "clase": "prensa",
-   "fecha": "2026-10-10",
-   "tipos": [
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ]
-   ],
-   "lugares": [
-    "Puerto Iguazú"
-   ],
-   "ubicacion": [
-    -25.6,
-    -54.57
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 4,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "infobae.com",
-     "clase": "prensa",
-     "url": "https://www.infobae.com/peru/2026/10/10/quien-es-el-loco-joe-el-sanguinario-criminal-que-usaba-el-dni-de-un-peruano-asesinado-cayo-en-argentina-y-operaba-desde-brasil/"
-    }
-   ],
-   "id": "a6f03ce123",
-   "verificado": true
-  },
-  {
-   "titulo": "Evacuaron a seis familias en Concordia y alertaron por una nueva crecida crítica del río Uruguay",
-   "url": "https://www.infobae.com/sociedad/2026/10/10/evacuaron-a-seis-familias-en-concordia-y-alertaron-por-una-nueva-crecida-critica-del-rio-uruguay/",
-   "dominio": "infobae.com",
-   "clase": "prensa",
-   "fecha": "2026-10-10",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "infobae.com",
-     "clase": "prensa",
-     "url": "https://www.infobae.com/sociedad/2026/10/10/evacuaron-a-seis-familias-en-concordia-y-alertaron-por-una-nueva-crecida-critica-del-rio-uruguay/"
-    }
-   ],
-   "id": "e071edb515",
-   "verificado": true
   }
  ],
  "sin_tipo": [
   {
-   "titulo": "El río Jejuí desborda y el repunte del río Paraguay se torna cada vez más preocupante en San Pedro",
-   "url": "https://www.abc.com.py/nacionales/2026/10/24/el-rio-jejui-desborda-y-el-repunte-del-rio-paraguay-se-torna-cada-vez-mas-preocupante-en-san-pedro/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-24",
-   "lugares": []
+   "titulo": "Siguen charlas de prevención del ciberacoso a estudiantes",
+   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/25/siguen-charlas-de-prevencion-del-ciberacoso-a-estudiantes/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-25",
+   "lugares": [
+    "Alto Paraná"
+   ]
+  },
+  {
+   "titulo": "Itaipú cumple 42 años de su inauguración oficial",
+   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/10/25/itaipu-cumple-42-anos-de-su-inauguracion-oficial/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-25",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Costa Rica y Panamá buscan una embarcación con tres tripulantes desaparecidos desde el lunes",
+   "url": "https://www.infobae.com/costa-rica/2026/10/25/costa-rica-y-panama-buscan-una-embarcacion-con-tres-tripulantes-desaparecidos-desde-el-lunes/",
+   "dominio": "infobae.com",
+   "fecha": "2026-10-25",
+   "lugares": [
+    "Corrientes"
+   ]
   },
   {
    "titulo": "Itaipú cumple 42 años de su inauguración oficial como líder mundial en producción de energía",
@@ -3373,6 +3283,13 @@
    "lugares": [
     "Itaipú"
    ]
+  },
+  {
+   "titulo": "El río Jejuí desborda y el repunte del río Paraguay se torna cada vez más preocupante en San Pedro",
+   "url": "https://www.abc.com.py/nacionales/2026/10/24/el-rio-jejui-desborda-y-el-repunte-del-rio-paraguay-se-torna-cada-vez-mas-preocupante-en-san-pedro/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-24",
+   "lugares": []
   },
   {
    "titulo": "Calle Recreativa celebra su 16° aniversario",
@@ -4352,33 +4269,6 @@
    "fecha": "2026-10-14",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Altura de los ríos en la Argentina, según Prefectura: esta es la situación en el Paraná hoy, miércoles 14 de octubre",
-   "url": "https://www.lanacion.com.ar/sociedad/altura-de-los-rios-en-la-argentina-segun-prefectura-esta-es-la-situacion-en-el-parana-hoy-miercoles-nid14102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-14",
-   "lugares": [
-    "Rosario"
-   ]
-  },
-  {
-   "titulo": "Itaipú elevó depósitos de USD 57 millones a USD 537 millones",
-   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/10/14/itaipu-elevo-depositos-de-usd-57-millones-a-usd-537-millones/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-14",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Fenómeno de El Niño: advierten que el río Paraná superará el nivel de evacuación en Corrientes",
-   "url": "https://www.perfil.com/noticias/nea/fenomeno-de-el-nino-advierten-que-el-rio-parana-superara-el-nivel-de-evacuacion-en-corrientes.phtml",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-14",
-   "lugares": [
-    "Corrientes"
    ]
   }
  ]
