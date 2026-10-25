@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-25T16:05:10Z",
+ "obtenido": "2026-10-25T20:45:37Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 17,
+   "items": 15,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
+   "items": 93,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -73,7 +73,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 4
+   "fallos_seguidos": 5
   },
   {
    "dominio": "insightcrime.org",
@@ -122,7 +122,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 4
+   "fallos_seguidos": 5
   },
   {
    "dominio": "elobservador.com.uy",
@@ -168,7 +168,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 356,
+   "items": 362,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -199,6 +199,39 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Excandidato a intendente asiste a familias afectadas por la crecida en Ciudad del Este",
+   "url": "http://www.lanacion.com.py/politica/2026/10/25/excandidato-a-intendente-asiste-a-familias-afectadas-por-la-crecida-en-ciudad-del-este/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-25",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/politica/2026/10/25/excandidato-a-intendente-asiste-a-familias-afectadas-por-la-crecida-en-ciudad-del-este/"
+    }
+   ],
+   "id": "1834ed4848",
+   "verificado": true
+  },
   {
    "titulo": "Crecida del Paraná obliga trabajos de emergencia",
    "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/25/crecida-del-parana-obliga-trabajos-de-emergencia/",
