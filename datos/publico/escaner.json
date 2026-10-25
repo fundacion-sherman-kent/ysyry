@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-25T11:16:24Z",
+ "obtenido": "2026-10-25T16:05:10Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 19,
+   "items": 17,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 94,
+   "items": 90,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -73,7 +73,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 3
+   "fallos_seguidos": 4
   },
   {
    "dominio": "insightcrime.org",
@@ -122,7 +122,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 3
+   "fallos_seguidos": 4
   },
   {
    "dominio": "elobservador.com.uy",
@@ -225,6 +225,34 @@
     }
    ],
    "id": "e8b5236dee",
+   "verificado": true
+  },
+  {
+   "titulo": "La vida se detiene en el epicentro de la emergencia paraguaya por crecida del río Paraná",
+   "url": "https://www.abc.com.py/internacionales/2026/10/25/la-vida-se-detiene-en-el-epicentro-de-la-emergencia-paraguaya-por-crecida-del-rio-parana/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-25",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/internacionales/2026/10/25/la-vida-se-detiene-en-el-epicentro-de-la-emergencia-paraguaya-por-crecida-del-rio-parana/"
+    }
+   ],
+   "id": "0e67736b15",
    "verificado": true
   },
   {
@@ -3210,21 +3238,21 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Siguen charlas de prevención del ciberacoso a estudiantes",
-   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/25/siguen-charlas-de-prevencion-del-ciberacoso-a-estudiantes/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-25",
-   "lugares": [
-    "Alto Paraná"
-   ]
-  },
-  {
    "titulo": "Itaipú cumple 42 años de su inauguración oficial",
    "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/10/25/itaipu-cumple-42-anos-de-su-inauguracion-oficial/",
    "dominio": "lanacion.com.py",
    "fecha": "2026-10-25",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Siguen charlas de prevención del ciberacoso a estudiantes",
+   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/25/siguen-charlas-de-prevencion-del-ciberacoso-a-estudiantes/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-25",
+   "lugares": [
+    "Alto Paraná"
    ]
   },
   {
