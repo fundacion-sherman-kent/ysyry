@@ -1,0 +1,33 @@
+{
+ "estado": "publicada",
+ "creada": "2026-10-26",
+ "vence": "2026-11-10",
+ "banda": "posibilidades parejas",
+ "confianza": "baja",
+ "estimaciones": {
+  "metodo": "Banda propuesta por el modelo y aceptada por la dirección, sin estimación independiente de la dirección: NO es un acuerdo entre dos estimaciones separadas. La estimación del modelo quedó sellada con un hash SHA-256 en el registro privado el 26/10/2026, antes de que la dirección la conociera. Las estimaciones se rotulan como asistidas por un modelo.",
+  "direccion": "posibilidades parejas (adopta la del modelo)",
+  "modelo_claude": "posibilidades parejas (50 %)",
+  "sello_sha256": "60e1cc5dbf40abc9dcb0657f4128c6812f6aeb707a9117b8b025b0db43e778a8"
+ },
+ "disenso": {
+  "decimo_hombre": "Sostiene que NO ocurrirá (la banda es de posibilidades parejas; toma el lado menos favorecido por las rachas recientes).",
+  "dictamen": "Los días sin presencia vienen en rachas (4 al 6, 13, 23 y 24 de octubre) y la ventana pide tres días en catorce, no tres seguidos: una racha corta basta, pero la presencia volvió a ser total el 21 y el 22/10 (24 y 18 capturas con unidad del Estado) y una semana con operativos de control por la crecida puede mantenerla. Además un día con unidad del Estado visible en una sola captura ya no cuenta como día sin presencia. Evidencia en contra de este dictamen: entre el 13 y el 26/10 hubo exactamente tres días sin presencia, justo el umbral, y los días 25 y 26 volvieron a tener sólo 1 captura."
+ },
+ "id": "Q-2026-004",
+ "origen": "Alerta candidata PRES-1 · Rosario – San Lorenzo (Issue 7 de este repositorio): la regla se disparó los días 8, 23 y 24 de octubre.",
+ "enunciado": "¿Habrá al menos 3 días sin ninguna unidad del Estado visible por AIS en la zona Rosario – San Lorenzo entre el 28 de octubre y el 10 de noviembre de 2026?",
+ "criterio": {
+  "tipo": "pulso_zona",
+  "zona": "z2",
+  "campo": "estado_capturas",
+  "operador": "==",
+  "umbral": 0,
+  "minimo_dias": 3,
+  "desde": "2026-10-28",
+  "hasta": "2026-11-10"
+ },
+ "datos_de_partida": "Pulso de Ysyry por zona (24 capturas de AIS por día). En Rosario – San Lorenzo hubo 6 de 25 días, desde el 2/10, sin ninguna captura con una unidad del Estado visible: 4, 5, 6, 13, 23 y 24 de octubre (los del 4 al 6 tuvieron menos de 12 capturas de AIS ese día y para la resolución no contarían). Entre el 13 y el 26/10 hubo exactamente 3 días así (13, 23 y 24). Los días van agrupados en rachas: a veces 24 de 24 capturas con presencia, a veces ninguna. Mide lo que se ve por AIS, no la presencia real: las unidades que apagan el AIS o están fuera de cobertura no figuran.",
+ "publicada_el": "2026-10-26",
+ "resolucion": "Automática el 11/11/2026 contra el pulso por zona de Ysyry (rama datos-pulso): sólo cuentan los días con 12 capturas de AIS o más; si los días con datos son menos de la mitad del período, queda «sin datos suficientes» y no cuenta."
+}

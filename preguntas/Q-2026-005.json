@@ -1,0 +1,33 @@
+{
+ "estado": "publicada",
+ "creada": "2026-10-26",
+ "vence": "2026-11-10",
+ "banda": "improbable",
+ "confianza": "baja",
+ "estimaciones": {
+  "metodo": "Banda propuesta por el modelo y aceptada por la dirección, sin estimación independiente de la dirección: NO es un acuerdo entre dos estimaciones separadas. La estimación del modelo quedó sellada con un hash SHA-256 en el registro privado el 26/10/2026, antes de que la dirección la conociera. Las estimaciones se rotulan como asistidas por un modelo.",
+  "direccion": "improbable (adopta la del modelo)",
+  "modelo_claude": "improbable (30 %)",
+  "sello_sha256": "60e1cc5dbf40abc9dcb0657f4128c6812f6aeb707a9117b8b025b0db43e778a8"
+ },
+ "disenso": {
+  "decimo_hombre": "Sostiene que SÍ ocurrirá (el consenso es improbable).",
+  "dictamen": "Sólo hacen falta 6,5 buques más que el máximo de las últimas dos semanas (123,5) en catorce días, y el máximo de la serie ya llegó a 132. Octubre y noviembre son meses de embarque de granos en el Gran Rosario y la crecida deja más calado a los buques grandes; basta un día de la mediana por encima de 130 para que ocurra. La cobertura de receptores también puede crecer y sumar buques visibles. Evidencia en contra de este dictamen: en 25 días de datos sólo un día pasó de 130, y el tercer cuartil es 121."
+ },
+ "id": "Q-2026-005",
+ "origen": "Pulso por zona de Ysyry: indicador de tráfico de Rosario – San Lorenzo.",
+ "enunciado": "¿La mediana diaria de buques por captura en la zona Rosario – San Lorenzo llegará a 130 o más al menos un día entre el 28 de octubre y el 10 de noviembre de 2026?",
+ "criterio": {
+  "tipo": "pulso_zona",
+  "zona": "z2",
+  "campo": "mediana",
+  "operador": ">=",
+  "umbral": 130,
+  "minimo_dias": 1,
+  "desde": "2026-10-28",
+  "hasta": "2026-11-10"
+ },
+ "datos_de_partida": "Pulso de Ysyry por zona, buques visibles por AIS por captura (mediana del día). En Rosario – San Lorenzo, 25 días de datos (desde el 2/10): mínimo 103, mediana 116, tercer cuartil 121, máximo 132 (un solo día en 25). Entre el 13 y el 26/10 el máximo fue 123,5. Mide buques visibles por AIS, no el tráfico real: depende de la cobertura de los receptores.",
+ "publicada_el": "2026-10-26",
+ "resolucion": "Automática el 11/11/2026 contra el pulso por zona de Ysyry (rama datos-pulso): sólo cuentan los días con 12 capturas de AIS o más; si los días con datos son menos de la mitad del período, queda «sin datos suficientes» y no cuenta."
+}
