@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-26T04:36:43Z",
+ "obtenido": "2026-10-26T12:49:46Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 13,
+   "items": 14,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 3,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -62,17 +62,18 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 88,
+   "items": 92,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso-do-sul/",
-   "ok": true,
-   "items": 100,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "not well-formed (invalid token): line 1, column 0",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "insightcrime.org",
@@ -117,11 +118,10 @@
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 100,
    "candidatos": 0,
-   "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 7
+   "fallos_seguidos": 0
   },
   {
    "dominio": "elobservador.com.uy",
@@ -160,14 +160,14 @@
    "url": "https://www.npy.com.py/index.rss",
    "ok": true,
    "items": 18,
-   "candidatos": 2,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 354,
+   "items": 302,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -3204,6 +3204,22 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Plan 1000 km avanza con nuevo asfalto y empedrados en Caaguazú y Alto Paraguay",
+   "url": "http://www.lanacion.com.py/negocios/2026/10/26/plan-1000-km-avanza-con-nuevo-asfalto-y-empedrados-en-caaguazu-y-alto-paraguay/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-26",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Brasil: Las multitudes que promovieron una elección histórica",
+   "url": "https://www.pagina12.com.ar/2026/10/25/brasil-las-multitudes-que-promovieron-una-eleccion-historica/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-10-25",
+   "lugares": []
+  },
+  {
    "titulo": "Siguen charlas de prevención del ciberacoso a estudiantes",
    "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/25/siguen-charlas-de-prevencion-del-ciberacoso-a-estudiantes/",
    "dominio": "lanacion.com.py",
@@ -3220,13 +3236,6 @@
    "lugares": [
     "Itaipú"
    ]
-  },
-  {
-   "titulo": "Brasil: Las multitudes que promovieron una elección histórica",
-   "url": "https://www.pagina12.com.ar/2026/10/25/brasil-las-multitudes-que-promovieron-una-eleccion-historica/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-10-25",
-   "lugares": []
   },
   {
    "titulo": "Costa Rica y Panamá buscan una embarcación con tres tripulantes desaparecidos desde el lunes",
@@ -4251,16 +4260,6 @@
    "fecha": "2026-10-14",
    "lugares": [
     "Asunción"
-   ]
-  },
-  {
-   "titulo": "Estudiantes rescatan la memoria de edificios históricos de Encarnación en una exposición",
-   "url": "http://www.lanacion.com.py/pais/2026/10/14/estudiantes-rescatan-la-memoria-de-edificios-historicos-de-encarnacion-en-una-exposicion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-14",
-   "lugares": [
-    "Encarnación",
-    "Yacyretá"
    ]
   }
  ]
