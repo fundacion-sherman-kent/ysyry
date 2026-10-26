@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-26T12:49:46Z",
+ "obtenido": "2026-10-26T20:26:44Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 14,
+   "items": 22,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 87,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -73,7 +73,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 2
   },
   {
    "dominio": "insightcrime.org",
@@ -118,10 +118,11 @@
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso/",
-   "ok": true,
-   "items": 100,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "not well-formed (invalid token): line 1, column 0",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "elobservador.com.uy",
@@ -160,14 +161,14 @@
    "url": "https://www.npy.com.py/index.rss",
    "ok": true,
    "items": 18,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 302,
+   "items": 315,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -3204,6 +3205,51 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Río Paraná sigue por encima del nivel de alerta en Ayolas",
+   "url": "https://www.abc.com.py/clima/2026/10/26/rio-parana-sigue-por-encima-del-nivel-de-alerta-en-ayolas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-26",
+   "lugares": [
+    "Ayolas"
+   ]
+  },
+  {
+   "titulo": "Itaipú reabre vertedero y el Yguazú alcanza su pico anual: ¿qué pasará con las zonas inundadas?",
+   "url": "https://www.abc.com.py/este/2026/10/26/itaipu-reabre-vertedero-y-el-yguazu-alcanza-su-pico-anual-que-pasara-con-las-zonas-inundadas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-26",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Policía demora a ocho estudiantes, tras violento enfrentamiento frente a colegio capitalino",
+   "url": "http://www.lanacion.com.py/pais/2026/10/26/policia-demora-a-ocho-estudiantes-tras-violento-enfrentamiento-frente-a-colegio-capitalino/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-26",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Nuevo modus operandi: roban relojes de alta gama y sospechan de delincuentes extranjeros",
+   "url": "http://www.lanacion.com.py/pais/2026/10/26/nuevo-modus-operandi-roban-relojes-de-alta-gama-y-sospechan-de-delincuentes-extranjeros/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-26",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Paraguay y Brasil ante la continuidad de Lula",
+   "url": "http://www.lanacion.com.py/foco/2026/10/26/paraguay-y-brasil-ante-la-continuidad-de-lula/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-26",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Plan 1000 km avanza con nuevo asfalto y empedrados en Caaguazú y Alto Paraguay",
    "url": "http://www.lanacion.com.py/negocios/2026/10/26/plan-1000-km-avanza-con-nuevo-asfalto-y-empedrados-en-caaguazu-y-alto-paraguay/",
    "dominio": "lanacion.com.py",
@@ -3211,6 +3257,13 @@
    "lugares": [
     "Itaipú"
    ]
+  },
+  {
+   "titulo": "Del atorrante al bacán, los términos del lunfardo para describir a los que eligen no trabajar: “Este viaja por Crotto”",
+   "url": "https://www.lanacion.com.ar/lifestyle/del-atorrante-al-bacan-los-terminos-del-lunfardo-para-describir-a-los-que-eligen-no-trabajar-este-nid26102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-26",
+   "lugares": []
   },
   {
    "titulo": "Brasil: Las multitudes que promovieron una elección histórica",
@@ -4205,61 +4258,6 @@
    "fecha": "2026-10-15",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "La Fiscalía apeló el sobreseimiento de los familiares de Toviggino en una causa por lavado de dinero",
-   "url": "https://www.lanacion.com.ar/politica/la-fiscalia-apelo-el-sobreseimiento-de-los-familiares-de-toviggino-en-una-causa-por-lavado-de-dinero-nid15102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-15",
-   "lugares": [
-    "Zárate",
-    "Campana"
-   ]
-  },
-  {
-   "titulo": "¿Itaipú corre riesgo de rotura? Esta es la respuesta oficial de la Binacional",
-   "url": "https://www.abc.com.py/economia/2026/10/15/itaipu-desmiente-que-la-represa-corra-riesgo-de-rotura/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-15",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Las grandes inversiones buscan proveedores: 1.800 empresas argentinas participarán de la primera ronda de negocios del RIGI",
-   "url": "https://www.perfil.com/noticias/economia/las-grandes-inversiones-buscan-proveedores-1800-emresas .phtml",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-15",
-   "lugares": [
-    "Rosario"
-   ]
-  },
-  {
-   "titulo": "Ayolas: rescatan a animales de zonas inundadas por el río Paraná",
-   "url": "http://www.lanacion.com.py/pais/2026/10/14/ayolas-rescatan-a-animales-de-zonas-inundadas-por-el-rio-parana/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-14",
-   "lugares": [
-    "Ayolas"
-   ]
-  },
-  {
-   "titulo": "Fitpar busca impulsar negocios y alianzas en el sector turístico",
-   "url": "http://www.lanacion.com.py/negocios/2026/10/14/fitpar-busca-impulsar-negocios-y-alianzas-en-el-sector-turistico/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-14",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Red Búho supera 340.000 viajes y concentra su demanda entre las 23:00 y las 2:00",
-   "url": "http://www.lanacion.com.py/negocios/2026/10/14/red-buho-supera-340000-viajes-y-concentra-su-demanda-entre-las-2300-y-las-200/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-14",
-   "lugares": [
-    "Asunción"
    ]
   }
  ]
