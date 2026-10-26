@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-25T23:11:16Z",
+ "obtenido": "2026-10-26T04:36:43Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 14,
+   "items": 13,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,18 +62,17 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 94,
+   "items": 88,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso-do-sul/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 100,
    "candidatos": 0,
-   "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 6
+   "fallos_seguidos": 0
   },
   {
    "dominio": "insightcrime.org",
@@ -122,7 +121,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 6
+   "fallos_seguidos": 7
   },
   {
    "dominio": "elobservador.com.uy",
@@ -168,7 +167,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 369,
+   "items": 354,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -3200,105 +3199,6 @@
     }
    ],
    "id": "a0c7cabfc1",
-   "verificado": true
-  },
-  {
-   "titulo": "Avanza la crecida del río Uruguay en Entre Ríos y Corrientes y provoca evacuaciones preventivas",
-   "url": "https://www.perfil.com/noticias/sociedad/avanza-la-crecida-del-rio-uruguay-en-entre-rios-y-corrientes-y-provoca-evacuaciones-preventivas.phtml",
-   "dominio": "perfil.com",
-   "clase": "prensa",
-   "fecha": "2026-10-11",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Corrientes"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "perfil.com",
-     "clase": "prensa",
-     "url": "https://www.perfil.com/noticias/sociedad/avanza-la-crecida-del-rio-uruguay-en-entre-rios-y-corrientes-y-provoca-evacuaciones-preventivas.phtml"
-    }
-   ],
-   "id": "ed101d3828",
-   "verificado": true
-  },
-  {
-   "titulo": "Crecida del río Uruguay: evacuaron familias en Concordia y hay alerta en Corrientes y Entre Ríos por El Niño",
-   "url": "https://www.lanacion.com.ar/sociedad/crecida-del-rio-uruguay-evacuaron-familias-en-concordia-y-hay-alerta-en-corrientes-y-entre-rios-por-nid11102026/",
-   "dominio": "lanacion.com.ar",
-   "clase": "prensa",
-   "fecha": "2026-10-11",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Corrientes"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.ar",
-     "clase": "prensa",
-     "url": "https://www.lanacion.com.ar/sociedad/crecida-del-rio-uruguay-evacuaron-familias-en-concordia-y-hay-alerta-en-corrientes-y-entre-rios-por-nid11102026/"
-    }
-   ],
-   "id": "42d628b608",
-   "verificado": true
-  },
-  {
-   "titulo": "Alerta por El Niño: cómo impacta el fenómeno en la crecida del río Uruguay y qué proyectan en el Paraná",
-   "url": "https://www.infobae.com/america/medio-ambiente/2026/10/11/alerta-por-el-nino-como-impacta-el-fenomeno-en-la-crecida-del-rio-uruguay-y-que-proyectan-en-el-parana/",
-   "dominio": "infobae.com",
-   "clase": "prensa",
-   "fecha": "2026-10-11",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Corrientes"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "infobae.com",
-     "clase": "prensa",
-     "url": "https://www.infobae.com/america/medio-ambiente/2026/10/11/alerta-por-el-nino-como-impacta-el-fenomeno-en-la-crecida-del-rio-uruguay-y-que-proyectan-en-el-parana/"
-    }
-   ],
-   "id": "fccde42146",
    "verificado": true
   }
  ],
