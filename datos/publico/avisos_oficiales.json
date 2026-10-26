@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-10-25T23:22:14Z",
+ "obtenido": "2026-10-26T05:00:37Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 4
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -29,43 +29,6 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-10-25 00:00",
-   "fin": "2026-10-25 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres",
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28554"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo",
-   "color": "#F96602",
-   "inicio": "2026-10-25 00:00",
-   "fin": "2026-10-25 23:59",
-   "lugares": [
-    "Corumbá",
-    "Porto Murtinho",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
-   "id": "inmet-28555"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
    "inicio": "2026-10-26 00:00",
    "fin": "2026-10-26 23:59",
    "lugares": [
@@ -77,20 +40,6 @@
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
    "id": "inmet-28557"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo",
-   "color": "#F96602",
-   "inicio": "2026-10-26 00:00",
-   "fin": "2026-10-26 12:00",
-   "lugares": [
-    "Ponta Porã"
-   ],
-   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
-   "id": "inmet-28558"
   }
  ],
  "no_consultadas": [
