@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-27T15:18:33Z",
+ "obtenido": "2026-10-27T22:07:42Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 29,
+   "items": 33,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -55,25 +55,24 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 88,
+   "items": 90,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso-do-sul/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 100,
    "candidatos": 0,
-   "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "insightcrime.org",
@@ -122,7 +121,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 4
+   "fallos_seguidos": 5
   },
   {
    "dominio": "elobservador.com.uy",
@@ -153,7 +152,7 @@
    "url": "https://www.pagina12.com.ar/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 25,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -168,7 +167,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 319,
+   "items": 334,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -390,6 +389,72 @@
     }
    ],
    "id": "c94fc78b18",
+   "verificado": true
+  },
+  {
+   "titulo": "Inundaciones en Corrientes: confirman una nueva onda de crecida del río Paraná para el 3 de noviembre",
+   "url": "https://perfil.com/nea/inundaciones-en-corrientes-confirman-una-nueva-onda-de-crecida-del-rio-parana-para-el-3-de-noviembre-aNdJK9S4Q8y5",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-27",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://perfil.com/nea/inundaciones-en-corrientes-confirman-una-nueva-onda-de-crecida-del-rio-parana-para-el-3-de-noviembre-aNdJK9S4Q8y5"
+    }
+   ],
+   "id": "807f11322d",
+   "verificado": true
+  },
+  {
+   "titulo": "Fernanda Gigliani quiere que la licitación en la zona del Mangrullo pase por el Concejo",
+   "url": "https://www.pagina12.com.ar/2026/10/27/fernanda-gigliani-quiere-que-la-licitacion-en-la-zona-del-mangrullo-pase-por-el-concejo/",
+   "dominio": "pagina12.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-10-27",
+   "tipos": [
+    [
+     "regulatorio",
+     "Licitación, peaje o conflicto gremial"
+    ]
+   ],
+   "lugares": [
+    "Rosario"
+   ],
+   "ubicacion": [
+    -32.95,
+    -60.65
+   ],
+   "zona": "z2",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "pagina12.com.ar",
+     "clase": "prensa",
+     "url": "https://www.pagina12.com.ar/2026/10/27/fernanda-gigliani-quiere-que-la-licitacion-en-la-zona-del-mangrullo-pase-por-el-concejo/"
+    }
+   ],
+   "id": "c785bc6d41",
    "verificado": true
   },
   {
@@ -3104,12 +3169,46 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "La fiesta mexicana del “Día de muertos” llega al Centro Cultural del Puerto de Asunción",
+   "url": "https://www.abc.com.py/espectaculos/cultura/2026/10/27/la-fiesta-mexicana-del-dia-de-muertos-llega-al-centro-cultural-del-puerto/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-27",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Anuncian nuevos requisitos para el paso por el Puente de la Integración",
+   "url": "http://www.lanacion.com.py/negocios/2026/10/27/anuncian-nuevos-requisitos-para-el-paso-por-el-puente-de-la-integracion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-27",
+   "lugares": [
+    "Alto Paraná"
+   ]
+  },
+  {
    "titulo": "Peña confía en cerrar acuerdo sobre el Anexo C con Brasil antes de fin de año",
    "url": "http://www.lanacion.com.py/negocios/2026/10/27/pena-confia-en-cerrar-acuerdo-sobre-el-anexo-c-con-brasil-antes-de-fin-de-ano/",
    "dominio": "lanacion.com.py",
    "fecha": "2026-10-27",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Edil Roberto Ciré apuesta a la reactivación de la cuenca del río Uruguay",
+   "url": "https://ladiaria.com.uy/paysandu/articulo/2026/10/edil-roberto-cire-apuesta-a-la-reactivacion-de-la-cuenca-del-rio-uruguay/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-27",
+   "lugares": []
+  },
+  {
+   "titulo": "SENAD AVANZA CON LA ENCUESTA NACIONAL SOBRE CONSUMO DE DROGAS: MÁS DE 100.000 PERSONAS ENCUESTADAS EN 16 DEPARTAMENTOS",
+   "url": "https://senad.gov.py/senad-avanza-con-la-encuesta-nacional-sobre-consumo-de-drogas-mas-de-100-000-personas-encuestadas-en-16-departamentos/",
+   "dominio": "senad.gov.py",
+   "fecha": "2026-10-27",
+   "lugares": [
+    "Asunción"
    ]
   },
   {
@@ -3137,22 +3236,6 @@
    "fecha": "2026-10-27",
    "lugares": [
     "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Edil Roberto Ciré apuesta a la reactivación de la cuenca del río Uruguay",
-   "url": "https://ladiaria.com.uy/paysandu/articulo/2026/10/edil-roberto-cire-apuesta-a-la-reactivacion-de-la-cuenca-del-rio-uruguay/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-27",
-   "lugares": []
-  },
-  {
-   "titulo": "SENAD AVANZA CON LA ENCUESTA NACIONAL SOBRE CONSUMO DE DROGAS: MÁS DE 100.000 PERSONAS ENCUESTADAS EN 16 DEPARTAMENTOS",
-   "url": "https://senad.gov.py/senad-avanza-con-la-encuesta-nacional-sobre-consumo-de-drogas-mas-de-100-000-personas-encuestadas-en-16-departamentos/",
-   "dominio": "senad.gov.py",
-   "fecha": "2026-10-27",
-   "lugares": [
-    "Asunción"
    ]
   },
   {
@@ -4135,24 +4218,6 @@
    "titulo": "Tragedia: un trabajador rural murió ahogado mientras rescataba vacas de una zona de campos inundados",
    "url": "https://www.lanacion.com.ar/economia/campo/tragedia-un-trabajador-rural-murio-ahogado-mientras-rescataba-vacas-de-una-zona-de-campos-inundados-nid15102026/",
    "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-16",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Río Paraná podría alcanzar los 7 metros este fin de semana en Ayolas",
-   "url": "https://www.abc.com.py/economia/2026/10/16/rio-parana-podria-alcanzar-los-7-metros-este-fin-de-semana-en-ayolas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-16",
-   "lugares": [
-    "Ayolas"
-   ]
-  },
-  {
-   "titulo": "Condenaron a dos policías por falsificar verificaciones vehiculares en Santa Fe",
-   "url": "https://www.infobae.com/sociedad/policiales/2026/10/16/condenaron-a-dos-policias-por-falsificar-verificaciones-vehiculares-en-santa-fe/",
-   "dominio": "infobae.com",
    "fecha": "2026-10-16",
    "lugares": [
     "Santa Fe"
