@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-27T08:53:37Z",
+ "obtenido": "2026-10-27T15:18:33Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 25,
+   "items": 29,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
@@ -62,17 +62,18 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
+   "items": 88,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso-do-sul/",
-   "ok": true,
-   "items": 100,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "not well-formed (invalid token): line 1, column 0",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "insightcrime.org",
@@ -121,7 +122,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 3
+   "fallos_seguidos": 4
   },
   {
    "dominio": "elobservador.com.uy",
@@ -167,7 +168,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 313,
+   "items": 319,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -184,7 +185,7 @@
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 2,
+   "candidatos": 4,
    "fallos_seguidos": 0
   },
   {
@@ -198,6 +199,230 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "SENAD INTERVIENE FOCO DE DROGAS EN AYOLAS",
+   "url": "https://senad.gov.py/senad-interviene-foco-de-drogas-en-ayolas/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-10-27",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ],
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Ayolas"
+   ],
+   "ubicacion": [
+    -27.39,
+    -56.84
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 10,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/senad-interviene-foco-de-drogas-en-ayolas/"
+    }
+   ],
+   "id": "19a1fc2562",
+   "verificado": true
+  },
+  {
+   "titulo": "SENAD SACÓ DE CIRCULACIÓN CASI 1,3 MILLONES DE DOSIS DE DROGAS EN CENTRAL Y ASUNCIÓN",
+   "url": "https://senad.gov.py/senad-saco-de-circulacion-casi-13-millones-de-dosis-de-drogas-en-central-y-asuncion/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-10-27",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Asunción"
+   ],
+   "ubicacion": [
+    -25.28,
+    -57.63
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 9,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/senad-saco-de-circulacion-casi-13-millones-de-dosis-de-drogas-en-central-y-asuncion/"
+    }
+   ],
+   "id": "7aecc9af4c",
+   "verificado": true
+  },
+  {
+   "titulo": "CORTES Y RAYAS: UNA BARBERÍA QUE ESCONDÍA COCAÍNA PARA LA VENTA",
+   "url": "https://senad.gov.py/cortes-y-rayas-una-barberia-que-escondia-cocaina-para-la-venta/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-10-27",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Asunción"
+   ],
+   "ubicacion": [
+    -25.28,
+    -57.63
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 7,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/cortes-y-rayas-una-barberia-que-escondia-cocaina-para-la-venta/"
+    }
+   ],
+   "id": "38c7d9e2ff",
+   "verificado": true
+  },
+  {
+   "titulo": "Golpe al microtráfico: Senad saca de circulación más de 1,2 millones de dosis de drogas",
+   "url": "http://www.lanacion.com.py/pais/2026/10/27/golpe-al-microtrafico-senad-saca-de-circulacion-mas-de-12-millones-de-dosis-de-drogas/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-27",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Asunción"
+   ],
+   "ubicacion": [
+    -25.28,
+    -57.63
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 6,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/27/golpe-al-microtrafico-senad-saca-de-circulacion-mas-de-12-millones-de-dosis-de-drogas/"
+    }
+   ],
+   "id": "d19ca3ae7b",
+   "verificado": true
+  },
+  {
+   "titulo": "El Niño golpea América Latina con inundaciones en Argentina e incendios en Perú",
+   "url": "http://www.lanacion.com.py/mundo/2026/10/27/el-nino-golpea-america-latina-con-inundaciones-en-argentina-e-incendios-en-peru/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-27",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/mundo/2026/10/27/el-nino-golpea-america-latina-con-inundaciones-en-argentina-e-incendios-en-peru/"
+    }
+   ],
+   "id": "c94fc78b18",
+   "verificado": true
+  },
+  {
+   "titulo": "Minga ambiental retiró 21 toneladas de basura tras severa crecida del río Paraná en CDE",
+   "url": "http://www.lanacion.com.py/pais/2026/10/27/minga-ambiental-retiro-21-toneladas-de-basura-tras-severa-crecida-del-rio-parana-en-cde/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-27",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": {
+    "valor": 21.0,
+    "unidad": "toneladas"
+   },
+   "puntaje": 4,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/27/minga-ambiental-retiro-21-toneladas-de-basura-tras-severa-crecida-del-rio-parana-en-cde/"
+    }
+   ],
+   "id": "741f724282",
+   "verificado": true
+  },
   {
    "titulo": "La crecida del río Paraguay destruye caminos y golpea a productores en Humaitá",
    "url": "https://www.abc.com.py/nacionales/2026/10/26/la-crecida-del-rio-paraguay-destruye-caminos-y-golpea-a-productores-en-humaita/",
@@ -2879,6 +3104,58 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Peña confía en cerrar acuerdo sobre el Anexo C con Brasil antes de fin de año",
+   "url": "http://www.lanacion.com.py/negocios/2026/10/27/pena-confia-en-cerrar-acuerdo-sobre-el-anexo-c-con-brasil-antes-de-fin-de-ano/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-27",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "La Policía de Brasil investiga si Flávio Bolsonaro planeaba huir en un avión argentino, pero Migraciones lo desmiente",
+   "url": "https://perfil.com/internacional/la-policia-de-brasil-investiga-si-flavio-bolsonaro-planeaba-huir-en-un-avion-argentino-pero-migraciones-lo-desmiente-aWtCy4Y8duyK",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-27",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "Este es el avión retenido en Puerto Iguazú: investigan si Bolsonaro iba a abordarlo para viajar a EE.UU.",
+   "url": "https://www.lanacion.com.ar/el-mundo/este-es-el-avion-retenido-en-puerto-iguazu-investigan-si-bolsonaro-iba-a-abordarlo-para-viajar-a-nid27102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-27",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "¿Dónde está Flávio Bolsonaro?: investigan si intentó fugarse a la Argentina para volar a EE.UU.",
+   "url": "https://www.pagina12.com.ar/2026/10/27/donde-esta-flavio-bolsonaro-investigan-si-intento-fugarse-a-la-argentina-para-volar-a-eeuu/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-10-27",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "Edil Roberto Ciré apuesta a la reactivación de la cuenca del río Uruguay",
+   "url": "https://ladiaria.com.uy/paysandu/articulo/2026/10/edil-roberto-cire-apuesta-a-la-reactivacion-de-la-cuenca-del-rio-uruguay/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-27",
+   "lugares": []
+  },
+  {
+   "titulo": "SENAD AVANZA CON LA ENCUESTA NACIONAL SOBRE CONSUMO DE DROGAS: MÁS DE 100.000 PERSONAS ENCUESTADAS EN 16 DEPARTAMENTOS",
+   "url": "https://senad.gov.py/senad-avanza-con-la-encuesta-nacional-sobre-consumo-de-drogas-mas-de-100-000-personas-encuestadas-en-16-departamentos/",
+   "dominio": "senad.gov.py",
+   "fecha": "2026-10-27",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
    "titulo": "Policía demora a ocho estudiantes, tras violento enfrentamiento frente a colegio capitalino",
    "url": "http://www.lanacion.com.py/pais/2026/10/26/policia-demora-a-ocho-estudiantes-tras-violento-enfrentamiento-frente-a-colegio-capitalino/",
    "dominio": "lanacion.com.py",
@@ -3879,59 +4156,6 @@
    "fecha": "2026-10-16",
    "lugares": [
     "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Subsecretario de Estado de EE. UU. Landau estará en el país y se reunirá con autoridades",
-   "url": "http://www.lanacion.com.py/politica/2026/10/16/subsecretario-de-estado-de-ee-uu-landau-estara-en-el-pais-y-se-reunira-con-autoridades/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-15",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Subsecretario de Estado de EE. UU. Laudau estará en el país y se reunirá con autoridades",
-   "url": "http://www.lanacion.com.py/politica/2026/10/15/subsecretario-de-estado-de-ee-uu-laudau-estara-en-el-pais-y-se-reunira-con-autoridades/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-15",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Diputados insta al Ejecutivo y a la EBY avanzar con la franja costera de Ayolas",
-   "url": "http://www.lanacion.com.py/politica/2026/10/15/diputados-insta-al-ejecutivo-y-a-la-eby-avanzar-con-la-franja-costera-de-ayolas/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-15",
-   "lugares": [
-    "Ayolas",
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Cerrito: aguas del río Paraná invaden el centro urbano y activan asistencia de la SEN",
-   "url": "https://www.abc.com.py/clima/2026/10/15/cerrito-aguas-del-rio-parana-invaden-el-centro-urbano-y-activan-asistencia-de-la-sen/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-15",
-   "lugares": []
-  },
-  {
-   "titulo": "Laudau estará en el país este domingo y se reunirá con autoridades",
-   "url": "http://www.lanacion.com.py/politica/2026/10/15/laudau-estara-en-el-pais-este-domingo-y-se-reunira-con-autoridades/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-15",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Encarnación: Remesowski denuncia trabas y falta de transparencia en la transición",
-   "url": "http://www.lanacion.com.py/politica/2026/10/15/encarnacion-remesowski-denuncia-trabas-y-falta-de-transparencia-en-la-transicion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-15",
-   "lugares": [
-    "Encarnación"
    ]
   }
  ]
