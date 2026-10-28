@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-28T05:29:57Z",
+ "obtenido": "2026-10-28T12:42:29Z",
  "dias": 14,
  "fuentes": [
   {
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,18 +62,17 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
+   "items": 94,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso-do-sul/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 100,
    "candidatos": 0,
-   "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "insightcrime.org",
@@ -118,11 +117,10 @@
   {
    "dominio": "g1.globo.com",
    "url": "https://g1.globo.com/rss/g1/mato-grosso/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 100,
    "candidatos": 0,
-   "error": "not well-formed (invalid token): line 1, column 0",
-   "fallos_seguidos": 6
+   "fallos_seguidos": 0
   },
   {
    "dominio": "elobservador.com.uy",
@@ -168,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 369,
+   "items": 327,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -2917,9 +2915,81 @@
    ]
   },
   {
+   "titulo": "Buscan a joven con síndrome de Down que abordó un bus equivocado en Asunción",
+   "url": "http://www.lanacion.com.py/pais/2026/10/28/buscan-a-joven-con-sindrome-de-down-que-abordo-un-bus-equivocado-en-asuncion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-28",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Triplicación de ruta en zona del aeropuerto avanza con montaje de infraestructura",
+   "url": "http://www.lanacion.com.py/negocios/2026/10/28/triplicacion-de-ruta-en-zona-del-aeropuerto-avanza-con-montaje-de-infraestructura/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-28",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Rock en Py Fest 2026 confirma cartelera estelar con Flou y Bohemia Urbana",
+   "url": "http://www.lanacion.com.py/espectaculo/2026/10/28/rock-en-py-fest-2026-confirma-cartelera-estelar-con-flou-y-bohemia-urbana/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-28",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Docente desaparecida en Corrientes: analizan llamadas e investigan un posible femicidio",
+   "url": "https://perfil.com/nea/docente-desaparecida-en-corrientes-analizan-llamadas-e-investigan-un-posible-femicidio-a7gVR7F9I3xd",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-28",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
+   "titulo": "\"La frontera argentina no es un pasillo VIP\": Marcela Pagano presentó una denuncia penal por el paso de Flávio Bolsonaro por Puerto Iguazú",
+   "url": "https://perfil.com/politica/la-frontera-argentina-no-es-un-pasillo-vip-marcela-pagano-presento-una-denuncia-penal-por-el-paso-de-flavio-bolsonaro-por-puerto-iguazu-avgDC4D1iVua",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-28",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "De Brasil a Estados Unidos, pasando por Argentina: el gobierno de Milei participó de la fuga de película de Flávio Bolsonaro",
+   "url": "https://perfil.com/politica/de-brasil-a-estados-unidos-pasando-por-argentina-el-gobierno-de-milei-participo-de-la-fuga-de-pelicula-de-flavio-bolsonaro-aRYkK1y1aj5Y",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-28",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
    "titulo": "Piden la prisión preventiva de Flávio Bolsonaro y una alerta roja de Interpol tras no entregar su pasaporte",
    "url": "https://perfil.com/internacional/piden-la-prision-preventiva-de-flavio-bolsonaro-aACcx0c3jGK3",
    "dominio": "perfil.com",
+   "fecha": "2026-10-28",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "El Gobierno confirmó que Flávio Bolsonaro despegó desde Puerto Iguazú; el FMI aprobó la tercera revisión del acuerdo",
+   "url": "https://www.lanacion.com.ar/sociedad/el-gobierno-confirmo-que-flavio-bolsonaro-despego-desde-puerto-iguazu-el-fmi-aprobo-la-tercera-nid28102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-28",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "El mensaje de Migraciones sobre Flavio Bolsonaro: “Ingresó a la Argentina con documentación hábil sin ningún impedimento legal”",
+   "url": "https://www.lanacion.com.ar/el-mundo/el-mensaje-de-migraciones-sobre-flavio-bolsonaro-ingreso-a-la-argentina-con-documentacion-habil-sin-nid28102026/",
+   "dominio": "lanacion.com.ar",
    "fecha": "2026-10-28",
    "lugares": [
     "Puerto Iguazú"
@@ -2935,11 +3005,38 @@
    ]
   },
   {
+   "titulo": "El Gobierno de Milei, clave en la huida de Bolsonaro: partió en la madrugada de Puerto Iguazú escoltado por la policía",
+   "url": "https://www.pagina12.com.ar/2026/10/28/el-gobierno-de-milei-clave-en-la-huida-de-bolsonaro-partio-en-la-madrugada-de-puerto-iguazu-escoltado-por-la-policia/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-10-28",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
    "titulo": "Colonienses rechazan la instalación de “naciones digitales autónomas” y recuerdan que todo el departamento es parte de Argentina",
    "url": "https://ladiaria.com.uy/humor/articulo/2026/10/colonienses-rechazan-la-instalacion-de-naciones-digitales-autonomas-y-recuerdan-que-todo-el-departamento-es-parte-de-argentina/",
    "dominio": "ladiaria.com.uy",
    "fecha": "2026-10-28",
    "lugares": []
+  },
+  {
+   "titulo": "Este es el avión retenido en Puerto Iguazú: investigan si Bolsonaro iba a abordarlo para viajar a EE.UU.",
+   "url": "https://www.lanacion.com.ar/el-mundo/este-es-el-avion-retenido-en-puerto-iguazu-investigan-si-bolsonaro-iba-a-abordarlo-para-viajar-a-nid27102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-27",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "SENAD AVANZA CON LA ENCUESTA NACIONAL SOBRE CONSUMO DE DROGAS: MÁS DE 100.000 PERSONAS ENCUESTADAS EN 16 DEPARTAMENTOS",
+   "url": "https://senad.gov.py/senad-avanza-con-la-encuesta-nacional-sobre-consumo-de-drogas-mas-de-100-000-personas-encuestadas-en-16-departamentos/",
+   "dominio": "senad.gov.py",
+   "fecha": "2026-10-27",
+   "lugares": [
+    "Asunción"
+   ]
   },
   {
    "titulo": "Anuncian nuevos requisitos para el paso por el Puente de la Integración",
@@ -2956,15 +3053,6 @@
    "dominio": "ladiaria.com.uy",
    "fecha": "2026-10-27",
    "lugares": []
-  },
-  {
-   "titulo": "SENAD AVANZA CON LA ENCUESTA NACIONAL SOBRE CONSUMO DE DROGAS: MÁS DE 100.000 PERSONAS ENCUESTADAS EN 16 DEPARTAMENTOS",
-   "url": "https://senad.gov.py/senad-avanza-con-la-encuesta-nacional-sobre-consumo-de-drogas-mas-de-100-000-personas-encuestadas-en-16-departamentos/",
-   "dominio": "senad.gov.py",
-   "fecha": "2026-10-27",
-   "lugares": [
-    "Asunción"
-   ]
   },
   {
    "titulo": "La fiesta mexicana del “Día de muertos” llega al Centro Cultural del Puerto de Asunción",
@@ -2988,15 +3076,6 @@
    "titulo": "La Policía de Brasil investiga si Flávio Bolsonaro planeaba huir en un avión argentino, pero Migraciones lo desmiente",
    "url": "https://perfil.com/internacional/la-policia-de-brasil-investiga-si-flavio-bolsonaro-planeaba-huir-en-un-avion-argentino-pero-migraciones-lo-desmiente-aWtCy4Y8duyK",
    "dominio": "perfil.com",
-   "fecha": "2026-10-27",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Este es el avión retenido en Puerto Iguazú: investigan si Bolsonaro iba a abordarlo para viajar a EE.UU.",
-   "url": "https://www.lanacion.com.ar/el-mundo/este-es-el-avion-retenido-en-puerto-iguazu-investigan-si-bolsonaro-iba-a-abordarlo-para-viajar-a-nid27102026/",
-   "dominio": "lanacion.com.ar",
    "fecha": "2026-10-27",
    "lugares": [
     "Puerto Iguazú"
@@ -3880,85 +3959,6 @@
    "dominio": "annp.gov.py",
    "fecha": "2026-10-16",
    "lugares": []
-  },
-  {
-   "titulo": "Tres hombres cayeron de una lancha al río Paraná y están desaparecidos",
-   "url": "https://www.lanacion.com.ar/sociedad/tres-hombres-estan-desaparecidos-tras-caer-de-una-lancha-al-rio-parana-nid16102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-16",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Argentina y Uruguay disputarán el Clásico del Río de la Plata en Buenos Aires",
-   "url": "https://www.abc.com.py/deportes/futbol/internacional/2026/10/16/uruguay-y-argentina-disputaran-el-13-de-noviembre-su-tercer-amistoso-del-siglo/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-16",
-   "lugares": []
-  },
-  {
-   "titulo": "Corte presentó denuncia en Fiscalía tras amenaza de ataque en Palacio de Justicia",
-   "url": "http://www.lanacion.com.py/judiciales/2026/10/16/corte-presento-denuncia-en-fiscalia-tras-amenaza-de-ataque-en-palacio-de-justicia/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-16",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Personal libera llamadas y conectividad en zonas afectadas por el desborde del río Paraná",
-   "url": "http://www.lanacion.com.py/pais/2026/10/16/personal-libera-llamadas-y-conectividad-en-zonas-afectadas-por-el-desborde-del-rio-parana/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-16",
-   "lugares": [
-    "Ayolas",
-    "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "Aeropuerto: interceptan encomienda con marihuana de alta pureza oculta en un esterilizador",
-   "url": "http://www.lanacion.com.py/pais/2026/10/16/aeropuerto-interceptan-encomienda-con-marihuana-de-alta-pureza-oculta-en-un-esterilizador/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-16",
-   "lugares": [
-    "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "Caacupé: con financiamiento de Itaipú, remozan la basílica para recibir a peregrinos",
-   "url": "http://www.lanacion.com.py/pais/2026/10/16/caacupe-con-financiamiento-de-itaipu-remozan-la-basilica-para-recibir-a-peregrinos/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-16",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Dramática búsqueda de tres pescadores que fueron arrastrados por la corriente del río Paraná",
-   "url": "https://www.lanacion.com.ar/seguridad/dramatica-busqueda-de-tres-pescadores-que-fueron-arrastrados-por-la-corriente-del-rio-parana-nid16102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-16",
-   "lugares": []
-  },
-  {
-   "titulo": "Yacyretá prevé un leve descenso del río Paraná en Ayolas",
-   "url": "https://www.abc.com.py/economia/2026/10/16/yacyreta-preve-un-leve-descenso-del-rio-parana-en-ayolas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-16",
-   "lugares": [
-    "Ayolas",
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Remesowski se reunió con autoridades argentinas para trazar agenda de integración",
-   "url": "http://www.lanacion.com.py/politica/2026/10/16/remesowski-se-reunio-con-autoridades-argentinas-para-trazar-agenda-de-integracion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-16",
-   "lugares": [
-    "Encarnación"
-   ]
   }
  ]
 }
