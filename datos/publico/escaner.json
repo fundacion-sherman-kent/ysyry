@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-28T12:42:29Z",
+ "obtenido": "2026-10-28T20:13:51Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,7 +7,7 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 94,
+   "items": 91,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 327,
+   "items": 351,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -2942,6 +2942,38 @@
    ]
   },
   {
+   "titulo": "El Gobierno de Milei, clave en la huida de Bolsonaro: partió en la madrugada de Puerto Iguazú escoltado por la policía",
+   "url": "https://www.pagina12.com.ar/2026/10/28/el-gobierno-de-milei-clave-en-la-huida-de-bolsonaro-partio-en-la-madrugada-de-puerto-iguazu-escoltado-por-la-policia/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-10-28",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "El Gobierno de Milei, clave en la huida de Bolsonaro desde  Puerto Iguazú escoltado por la policía",
+   "url": "https://www.pagina12.com.ar/2026/10/28/el-gobierno-de-milei-clave-en-la-huida-de-bolsonaro-desde-puerto-iguazu-escoltado-por-la-policia/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-10-28",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "Salto avanza con obras de saneamiento por 1,9 millones de dólares en la zona costera del río Uruguay",
+   "url": "https://ladiaria.com.uy/salto/articulo/2026/10/salto-avanza-con-obras-de-saneamiento-por-19-millones-de-dolares-en-la-zona-costera-del-rio-uruguay/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-28",
+   "lugares": []
+  },
+  {
+   "titulo": "Colonienses rechazan la instalación de “naciones digitales autónomas” y recuerdan que todo el departamento es parte de Argentina",
+   "url": "https://ladiaria.com.uy/humor/articulo/2026/10/colonienses-rechazan-la-instalacion-de-naciones-digitales-autonomas-y-recuerdan-que-todo-el-departamento-es-parte-de-argentina/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-28",
+   "lugares": []
+  },
+  {
    "titulo": "Docente desaparecida en Corrientes: analizan llamadas e investigan un posible femicidio",
    "url": "https://perfil.com/nea/docente-desaparecida-en-corrientes-analizan-llamadas-e-investigan-un-posible-femicidio-a7gVR7F9I3xd",
    "dominio": "perfil.com",
@@ -3005,20 +3037,13 @@
    ]
   },
   {
-   "titulo": "El Gobierno de Milei, clave en la huida de Bolsonaro: partió en la madrugada de Puerto Iguazú escoltado por la policía",
-   "url": "https://www.pagina12.com.ar/2026/10/28/el-gobierno-de-milei-clave-en-la-huida-de-bolsonaro-partio-en-la-madrugada-de-puerto-iguazu-escoltado-por-la-policia/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-10-28",
+   "titulo": "SENAD AVANZA CON LA ENCUESTA NACIONAL SOBRE CONSUMO DE DROGAS: MÁS DE 100.000 PERSONAS ENCUESTADAS EN 16 DEPARTAMENTOS",
+   "url": "https://senad.gov.py/senad-avanza-con-la-encuesta-nacional-sobre-consumo-de-drogas-mas-de-100-000-personas-encuestadas-en-16-departamentos/",
+   "dominio": "senad.gov.py",
+   "fecha": "2026-10-27",
    "lugares": [
-    "Puerto Iguazú"
+    "Asunción"
    ]
-  },
-  {
-   "titulo": "Colonienses rechazan la instalación de “naciones digitales autónomas” y recuerdan que todo el departamento es parte de Argentina",
-   "url": "https://ladiaria.com.uy/humor/articulo/2026/10/colonienses-rechazan-la-instalacion-de-naciones-digitales-autonomas-y-recuerdan-que-todo-el-departamento-es-parte-de-argentina/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-28",
-   "lugares": []
   },
   {
    "titulo": "Este es el avión retenido en Puerto Iguazú: investigan si Bolsonaro iba a abordarlo para viajar a EE.UU.",
@@ -3027,15 +3052,6 @@
    "fecha": "2026-10-27",
    "lugares": [
     "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "SENAD AVANZA CON LA ENCUESTA NACIONAL SOBRE CONSUMO DE DROGAS: MÁS DE 100.000 PERSONAS ENCUESTADAS EN 16 DEPARTAMENTOS",
-   "url": "https://senad.gov.py/senad-avanza-con-la-encuesta-nacional-sobre-consumo-de-drogas-mas-de-100-000-personas-encuestadas-en-16-departamentos/",
-   "dominio": "senad.gov.py",
-   "fecha": "2026-10-27",
-   "lugares": [
-    "Asunción"
    ]
   },
   {
@@ -3943,22 +3959,6 @@
    "lugares": [
     "Alto Paraná"
    ]
-  },
-  {
-   "titulo": "La Sociedad Rural se sumó al masivo repudio contra el fallo que absolvió a los sindicalistas que bloquearon San Nicolás",
-   "url": "https://www.lanacion.com.ar/politica/la-sociedad-rural-se-sumo-al-masivo-repudio-contra-el-fallo-que-absolvio-a-los-sindicalistas-que-nid17102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-17",
-   "lugares": [
-    "San Nicolás"
-   ]
-  },
-  {
-   "titulo": "ANNP RECIBIÓ A UNA DELEGACIÓN DE LOS ESTADOS UNIDOS INTERESADA EN LA NAVEGACIÓN Y EL DESARROLLO DE LA HIDROVÍA PARAGUAY–PARANÁ",
-   "url": "https://annp.gov.py/?p=23882",
-   "dominio": "annp.gov.py",
-   "fecha": "2026-10-16",
-   "lugares": []
   }
  ]
 }
