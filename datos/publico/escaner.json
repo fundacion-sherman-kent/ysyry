@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-29T00:50:09Z",
+ "obtenido": "2026-10-29T09:50:12Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 29,
+   "items": 30,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
+   "items": 95,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 373,
+   "items": 311,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -2663,6 +2663,40 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "El río Paraná daría una tregua tras superar marcas históricas, pero la alerta continúa",
+   "url": "https://perfil.com/ciencia-y-tecnologia/crecida-del-rio-parana-yacyreta-preve-alivio-pero-hay-alerta-aYrPv0r29aOF",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-29",
+   "lugares": []
+  },
+  {
+   "titulo": "Cómo fue la salida de Flávio Bolsonaro: los horarios, el pasaporte italiano y el rol del Gobierno argentino",
+   "url": "https://perfil.com/internacional/como-fue-la-salida-de-flavio-bolsonaro-los-horarios-el-pasaporte-italiano-y-el-rol-del-gobierno-argentino-aRehZ4r6r3Yj",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-29",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "De Puerto Iguazú a Miami: cómo intervino la Casa Rosada en la fuga de Flavio Bolsonaro",
+   "url": "https://www.pagina12.com.ar/2026/10/29/de-puerto-iguazu-a-miami-como-intervino-la-casa-rosada-en-la-fuga-de-flavio-bolsonaro/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-10-29",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "Avión que dejó a Flávio Bolsonaro en Estados Unidos ya llegó a Tel Aviv y está pronto para despegar de urgencia",
+   "url": "https://ladiaria.com.uy/humor/articulo/2026/10/avion-que-dejo-a-flavio-bolsonaro-en-estados-unidos-ya-llego-a-tel-aviv-y-esta-pronto-para-despegar-de-urgencia/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-29",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
    "titulo": "Policía aprehende a un hombre por presunto hurto de cables en Asunción",
    "url": "https://www.abc.com.py/policiales/2026/10/28/policia-aprehende-a-un-hombre-por-presunto-hurto-de-cables-en-asuncion/",
    "dominio": "abc.com.py",
@@ -3679,40 +3713,6 @@
    "fecha": "2026-10-17",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Buscan a una docente de una escuela rural desaparecida hace 10 días en Corrientes",
-   "url": "https://www.infobae.com/sociedad/policiales/2026/10/17/buscan-a-una-docente-de-una-escuela-rural-desaparecida-hace-10-dias-en-corrientes/",
-   "dominio": "infobae.com",
-   "fecha": "2026-10-17",
-   "lugares": [
-    "Corrientes"
-   ]
-  },
-  {
-   "titulo": "Lemoine 'reprimió' a Amnistía Internacional: \"¿Personas afectadas? Se mojaron, déjense de joder...\"",
-   "url": "https://www.perfil.com/noticias/politica/lemoine-reprimio-a-aministia-internacional-afectadas-se-mojaron-dejense-de-joder.phtml",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-17",
-   "lugares": [
-    "Formosa"
-   ]
-  },
-  {
-   "titulo": "El río Paraguay registra repunte generalizado mientras el Paraná muestra comportamiento mixto",
-   "url": "https://www.abc.com.py/nacionales/2026/10/17/el-rio-paraguay-registra-repunte-generalizado-mientras-el-parana-muestra-comportamiento-mixto/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-17",
-   "lugares": []
-  },
-  {
-   "titulo": "CDE: compras, gastronomía y cultura en una frontera que atrae a turistas",
-   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/10/17/cde-compras-gastronomia-y-cultura-en-una-frontera-que-atrae-a-turistas/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-17",
-   "lugares": [
-    "Ciudad del Este"
    ]
   }
  ]
