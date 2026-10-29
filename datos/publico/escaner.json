@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-28T20:13:51Z",
+ "obtenido": "2026-10-29T00:50:09Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 31,
+   "items": 29,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 91,
+   "items": 90,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 351,
+   "items": 373,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +197,67 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Policía detuvo a supuesto líder de red de narcotráfico que estaba prófugo desde el 2022",
+   "url": "http://www.lanacion.com.py/pais/2026/10/28/policia-detuvo-a-supuesto-lider-de-red-de-narcotrafico-que-estaba-profugo-desde-el-2022/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-28",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Alto Paraná"
+   ],
+   "ubicacion": [
+    -25.3,
+    -54.8
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 4,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/28/policia-detuvo-a-supuesto-lider-de-red-de-narcotrafico-que-estaba-profugo-desde-el-2022/"
+    }
+   ],
+   "id": "68ea58ac5d",
+   "verificado": true
+  },
+  {
+   "titulo": "Peña recorre zonas inundadas por la crecida del río Paraná y promete mantener la asistencia",
+   "url": "https://www.abc.com.py/este/2026/10/28/pena-recorre-zonas-inundadas-por-la-crecida-del-rio-parana-y-promete-mantener-la-asistencia/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-28",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/este/2026/10/28/pena-recorre-zonas-inundadas-por-la-crecida-del-rio-parana-y-promete-mantener-la-asistencia/"
+    }
+   ],
+   "id": "f4e44e516b",
+   "verificado": true
+  },
   {
    "titulo": "SENAD INTERVIENE FOCO DE DROGAS EN AYOLAS",
    "url": "https://senad.gov.py/senad-interviene-foco-de-drogas-en-ayolas/",
@@ -2598,310 +2659,6 @@
    ],
    "id": "0095af9fad",
    "verificado": true
-  },
-  {
-   "titulo": "A UN PASO DE BRASIL: SENAD INCAUTA CASI 4 MILLONES DE DÓLARES EN COCAÍNA OCULTOS EN UN CAMIÓN",
-   "url": "https://senad.gov.py/a-un-paso-de-brasil-senad-incauta-casi-4-millones-de-dolares-en-cocaina-ocultos-en-un-camion/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-10-14",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 7,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/a-un-paso-de-brasil-senad-incauta-casi-4-millones-de-dolares-en-cocaina-ocultos-en-un-camion/"
-    }
-   ],
-   "id": "9eaf45eea0",
-   "verificado": true
-  },
-  {
-   "titulo": "Video: cae megacargamento de cocaína en Ciudad del Este",
-   "url": "https://www.abc.com.py/policiales/2026/10/14/video-cae-megacargamento-de-cocaina-en-ciudad-del-este/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-14",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/policiales/2026/10/14/video-cae-megacargamento-de-cocaina-en-ciudad-del-este/"
-    }
-   ],
-   "id": "346ac1b7bf",
-   "verificado": true
-  },
-  {
-   "titulo": "Itapúa activa plan de contingencia ante posibles crecidas del río Paraná por El Niño",
-   "url": "http://www.lanacion.com.py/pais/2026/10/14/itapua-activa-plan-de-contingencia-ante-posibles-crecidas-del-rio-parana-por-el-nino/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-14",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Encarnación"
-   ],
-   "ubicacion": [
-    -27.33,
-    -55.87
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/14/itapua-activa-plan-de-contingencia-ante-posibles-crecidas-del-rio-parana-por-el-nino/"
-    }
-   ],
-   "id": "3e953b1907",
-   "verificado": true
-  },
-  {
-   "titulo": "Inundaciones por El Niño en el Litoral: crecen los ríos y cada vez hay más familias evacuadas",
-   "url": "https://www.perfil.com/noticias/actualidad/inundaciones-en-el-litoral-argentino.phtml",
-   "dominio": "perfil.com",
-   "clase": "prensa",
-   "fecha": "2026-10-14",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Corrientes"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "perfil.com",
-     "clase": "prensa",
-     "url": "https://www.perfil.com/noticias/actualidad/inundaciones-en-el-litoral-argentino.phtml"
-    }
-   ],
-   "id": "b33ba9e000",
-   "verificado": true
-  },
-  {
-   "titulo": "Aumenta número de familias damnificadas por las crecidas",
-   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/14/aumenta-numero-de-familias-damnificadas-por-las-crecidas/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-14",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/14/aumenta-numero-de-familias-damnificadas-por-las-crecidas/"
-    }
-   ],
-   "id": "93b8058533",
-   "verificado": true
-  },
-  {
-   "titulo": "Itapúa: suspenden por 10 días el cruce fluvial en siete puertos por la crecida del río Paraná",
-   "url": "http://www.lanacion.com.py/pais/2026/10/14/itapua-suspenden-por-10-dias-el-cruce-fluvial-en-siete-puertos-por-la-crecida-del-rio-parana/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-14",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/14/itapua-suspenden-por-10-dias-el-cruce-fluvial-en-siete-puertos-por-la-crecida-del-rio-parana/"
-    }
-   ],
-   "id": "9e9be8bba1",
-   "verificado": true
-  },
-  {
-   "titulo": "Ñeembucú: crecida del río Paraná obliga a realizar clases a virtuales en siete escuelas",
-   "url": "https://www.abc.com.py/clima/2026/10/14/neembucu-crecida-del-rio-parana-obliga-a-realizar-clases-a-virtuales-en-siete-escuelas/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-14",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/clima/2026/10/14/neembucu-crecida-del-rio-parana-obliga-a-realizar-clases-a-virtuales-en-siete-escuelas/"
-    }
-   ],
-   "id": "b3b717b0a3",
-   "verificado": true
-  },
-  {
-   "titulo": "Emblemático puente colgante de Capitán Meza quedó anegado por la crecida del río Paraná",
-   "url": "http://www.lanacion.com.py/pais/2026/10/14/emblematico-puente-colgante-de-capitan-meza-quedo-anegado-por-la-crecida-del-rio-parana/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-14",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/14/emblematico-puente-colgante-de-capitan-meza-quedo-anegado-por-la-crecida-del-rio-parana/"
-    }
-   ],
-   "id": "a13dc9587b",
-   "verificado": true
-  },
-  {
-   "titulo": "Colonias Unidas están bajo agua: crecida del río Paraná no da tregua",
-   "url": "http://www.lanacion.com.py/pais/2026/10/14/colonias-unidas-estan-bajo-agua-crecida-del-rio-parana-no-da-tregua/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-14",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/14/colonias-unidas-estan-bajo-agua-crecida-del-rio-parana-no-da-tregua/"
-    }
-   ],
-   "id": "cd35de1348",
-   "verificado": true
-  },
-  {
-   "titulo": "Los Fatales cerrarán el Mes de la Juventud en Salto con un show en la plaza Artigas",
-   "url": "https://ladiaria.com.uy/salto/articulo/2026/10/los-fatales-cerraran-el-mes-de-la-juventud-en-salto-con-un-show-en-la-plaza-artigas/",
-   "dominio": "ladiaria.com.uy",
-   "clase": "prensa",
-   "fecha": "2026-10-14",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "ladiaria.com.uy",
-     "clase": "prensa",
-     "url": "https://ladiaria.com.uy/salto/articulo/2026/10/los-fatales-cerraran-el-mes-de-la-juventud-en-salto-con-un-show-en-la-plaza-artigas/"
-    }
-   ],
-   "id": "2853f1558e",
-   "verificado": true
   }
  ],
  "sin_tipo": [
@@ -2909,6 +2666,22 @@
    "titulo": "Policía aprehende a un hombre por presunto hurto de cables en Asunción",
    "url": "https://www.abc.com.py/policiales/2026/10/28/policia-aprehende-a-un-hombre-por-presunto-hurto-de-cables-en-asuncion/",
    "dominio": "abc.com.py",
+   "fecha": "2026-10-28",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Banco Mundial aprueba USD 280 millones para impulsar la competitividad agrícola en Itapúa",
+   "url": "http://www.lanacion.com.py/negocios/2026/10/28/banco-mundial-aprueba-usd-280-millones-para-impulsar-la-competitividad-agricola-en-itapua/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-28",
+   "lugares": []
+  },
+  {
+   "titulo": "Rock en Py Fest 2026 confirma cartelera estelar con Flou y Bohemia Urbana",
+   "url": "http://www.lanacion.com.py/espectaculo/2026/10/28/rock-en-py-fest-2026-confirma-cartelera-estelar-con-flou-y-bohemia-urbana/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-10-28",
    "lugares": [
     "Asunción"
@@ -2933,13 +2706,27 @@
    ]
   },
   {
-   "titulo": "Rock en Py Fest 2026 confirma cartelera estelar con Flou y Bohemia Urbana",
-   "url": "http://www.lanacion.com.py/espectaculo/2026/10/28/rock-en-py-fest-2026-confirma-cartelera-estelar-con-flou-y-bohemia-urbana/",
-   "dominio": "lanacion.com.py",
+   "titulo": "Santiago Caputo fue identificado por un control policial tras el operativo de huida de Bolsonaro",
+   "url": "https://www.lanacion.com.ar/politica/santiago-caputo-fue-identificado-por-un-control-policial-tras-el-operativo-de-huida-de-bolsonaro-nid28102026/",
+   "dominio": "lanacion.com.ar",
    "fecha": "2026-10-28",
    "lugares": [
-    "Asunción"
+    "Yacyretá"
    ]
+  },
+  {
+   "titulo": "Salto avanza con obras de saneamiento por 1,9 millones de dólares en la zona costera del río Uruguay",
+   "url": "https://ladiaria.com.uy/salto/articulo/2026/10/salto-avanza-con-obras-de-saneamiento-por-19-millones-de-dolares-en-la-zona-costera-del-rio-uruguay/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-28",
+   "lugares": []
+  },
+  {
+   "titulo": "Colonienses rechazan la instalación de “naciones digitales autónomas” y recuerdan que todo el departamento es parte de Argentina",
+   "url": "https://ladiaria.com.uy/humor/articulo/2026/10/colonienses-rechazan-la-instalacion-de-naciones-digitales-autonomas-y-recuerdan-que-todo-el-departamento-es-parte-de-argentina/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-28",
+   "lugares": []
   },
   {
    "titulo": "El Gobierno de Milei, clave en la huida de Bolsonaro: partió en la madrugada de Puerto Iguazú escoltado por la policía",
@@ -2958,20 +2745,6 @@
    "lugares": [
     "Puerto Iguazú"
    ]
-  },
-  {
-   "titulo": "Salto avanza con obras de saneamiento por 1,9 millones de dólares en la zona costera del río Uruguay",
-   "url": "https://ladiaria.com.uy/salto/articulo/2026/10/salto-avanza-con-obras-de-saneamiento-por-19-millones-de-dolares-en-la-zona-costera-del-rio-uruguay/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-28",
-   "lugares": []
-  },
-  {
-   "titulo": "Colonienses rechazan la instalación de “naciones digitales autónomas” y recuerdan que todo el departamento es parte de Argentina",
-   "url": "https://ladiaria.com.uy/humor/articulo/2026/10/colonienses-rechazan-la-instalacion-de-naciones-digitales-autonomas-y-recuerdan-que-todo-el-departamento-es-parte-de-argentina/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-28",
-   "lugares": []
   },
   {
    "titulo": "Docente desaparecida en Corrientes: analizan llamadas e investigan un posible femicidio",
@@ -3940,24 +3713,6 @@
    "fecha": "2026-10-17",
    "lugares": [
     "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "Ande y la Fiscalía se incautan de 18 máquinas de minería de una casa con medidor manipulado",
-   "url": "http://www.lanacion.com.py/pais/2026/10/16/ande-y-la-fiscalia-se-incautan-de-18-maquinas-de-mineria-de-una-casa-con-medidor-manipulado/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-17",
-   "lugares": [
-    "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "Procesan por intento de homicidio a joven que habría baleado a un menor en confuso episodio",
-   "url": "http://www.lanacion.com.py/pais/2026/10/16/procesan-por-intento-de-homicidio-a-joven-que-habria-baleado-a-un-menor-en-confuso-episodio/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-17",
-   "lugares": [
-    "Alto Paraná"
    ]
   }
  ]
