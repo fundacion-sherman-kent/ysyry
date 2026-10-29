@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-29T09:50:12Z",
+ "obtenido": "2026-10-29T18:25:41Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 30,
+   "items": 36,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 95,
+   "items": 91,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 311,
+   "items": 328,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -183,7 +183,7 @@
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 4,
+   "candidatos": 6,
    "fallos_seguidos": 0
   },
   {
@@ -197,6 +197,189 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "SENAD ANULA PRODUCCIÓN DE MÁS DE 13 TONELADAS DE MARIHUANA EN YBY PYTÃ",
+   "url": "https://senad.gov.py/senad-anula-produccion-de-mas-de-13-toneladas-de-marihuana-en-yby-pyta/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-10-29",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Salto del Guairá"
+   ],
+   "ubicacion": [
+    -24.06,
+    -54.34
+   ],
+   "zona": "z4",
+   "cantidad": {
+    "valor": 13.0,
+    "unidad": "toneladas"
+   },
+   "puntaje": 10,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/senad-anula-produccion-de-mas-de-13-toneladas-de-marihuana-en-yby-pyta/"
+    }
+   ],
+   "id": "c580b9ad58",
+   "verificado": true
+  },
+  {
+   "titulo": "Operativos en Canindeyú y Amambay anulan 21,6 toneladas de marihuana por USD 2,3 millones",
+   "url": "http://www.lanacion.com.py/pais/2026/10/29/operativos-en-canindeyu-y-amambay-anulan-216-toneladas-de-marihuana-por-usd-23-millones/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-29",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Salto del Guairá",
+    "Canindeyú"
+   ],
+   "ubicacion": [
+    -24.06,
+    -54.34
+   ],
+   "zona": "z4",
+   "cantidad": {
+    "valor": 21.6,
+    "unidad": "toneladas"
+   },
+   "puntaje": 7,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/29/operativos-en-canindeyu-y-amambay-anulan-216-toneladas-de-marihuana-por-usd-23-millones/"
+    }
+   ],
+   "id": "95ff2501af",
+   "verificado": true
+  },
+  {
+   "titulo": "SENAD DETIENE A HOMBRE POR VENTA DE DROGAS A MENORES Y TRABAJADORES DE CONCEPCION",
+   "url": "https://senad.gov.py/senad-detiene-a-hombre-por-venta-de-drogas-a-menores-y-trabajadores-de-concepcion/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-10-29",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Concepción"
+   ],
+   "ubicacion": [
+    -23.4,
+    -57.43
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 7,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/senad-detiene-a-hombre-por-venta-de-drogas-a-menores-y-trabajadores-de-concepcion/"
+    }
+   ],
+   "id": "f2846a6fcb",
+   "verificado": true
+  },
+  {
+   "titulo": "DROGAS FRENTE A UNA PLAZA Y A METROS DE UNA ESCUELA",
+   "url": "https://senad.gov.py/drogas-frente-a-una-plaza-y-a-metros-de-una-escuela/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-10-29",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Pedro Juan Caballero"
+   ],
+   "ubicacion": [
+    -22.55,
+    -55.73
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 7,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/drogas-frente-a-una-plaza-y-a-metros-de-una-escuela/"
+    }
+   ],
+   "id": "22abad252b",
+   "verificado": true
+  },
+  {
+   "titulo": "Defensa reforzará asistencia a damnificados en Cerrito con camión militar y lanchas",
+   "url": "http://www.lanacion.com.py/pais/2026/10/29/defensa-reforzara-asistencia-a-damnificados-en-cerrito-con-camion-militar-y-lanchas/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-29",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/29/defensa-reforzara-asistencia-a-damnificados-en-cerrito-con-camion-militar-y-lanchas/"
+    }
+   ],
+   "id": "17145b5c89",
+   "verificado": true
+  },
   {
    "titulo": "Policía detuvo a supuesto líder de red de narcotráfico que estaba prófugo desde el 2022",
    "url": "http://www.lanacion.com.py/pais/2026/10/28/policia-detuvo-a-supuesto-lider-de-red-de-narcotrafico-que-estaba-profugo-desde-el-2022/",
@@ -2663,6 +2846,62 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "El nuevo CAIPI de Ciudad del Este registra un 60 % de avance y se habilitará en diciembre",
+   "url": "http://www.lanacion.com.py/pais/2026/10/29/el-nuevo-caipi-de-ciudad-del-este-registra-un-60-de-avance-y-se-habilitara-en-diciembre/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-29",
+   "lugares": [
+    "Ciudad del Este",
+    "Alto Paraná",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "“Ñemyatyrõ Paraguay 2026” realizará 150 cirugías reconstructivas gratuitas en CDE",
+   "url": "http://www.lanacion.com.py/pais/2026/10/29/nemyatyro-paraguay-2026-realizara-150-cirugias-reconstructivas-gratuitas-en-cde/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-29",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "La justicia federal le ordenó al gobierno que preserve las imágenes de la salida del país de Flávio Bolsonaro",
+   "url": "https://www.clarin.com/politica/justicia-federal-ordeno-gobierno-preserve-imagenes-salida-pais-flavio-bolsonaro_0_5vvdW2qDKr.html",
+   "dominio": "clarin.com",
+   "fecha": "2026-10-29",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "“Agentes de la PSA lo vieron a Santiago Caputo”",
+   "url": "https://perfil.com/modo-fontevecchia/agentes-de-la-psa-lo-vieron-a-santiago-caputo-aZo7I2i1g1kh",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-29",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "La Justicia pidió al Gobierno datos sobre la salida de Bolsonaro de la Argentina",
+   "url": "https://www.lanacion.com.ar/politica/la-justicia-pidio-al-gobierno-datos-sobre-la-salida-de-bolsonaro-de-la-argentina-nid29102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-29",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "Avión que dejó a Flávio Bolsonaro en Estados Unidos ya llegó a Tel Aviv y está pronto para despegar de urgencia",
+   "url": "https://ladiaria.com.uy/humor/articulo/2026/10/avion-que-dejo-a-flavio-bolsonaro-en-estados-unidos-ya-llego-a-tel-aviv-y-esta-pronto-para-despegar-de-urgencia/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-29",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
    "titulo": "El río Paraná daría una tregua tras superar marcas históricas, pero la alerta continúa",
    "url": "https://perfil.com/ciencia-y-tecnologia/crecida-del-rio-parana-yacyreta-preve-alivio-pero-hay-alerta-aYrPv0r29aOF",
    "dominio": "perfil.com",
@@ -2682,15 +2921,6 @@
    "titulo": "De Puerto Iguazú a Miami: cómo intervino la Casa Rosada en la fuga de Flavio Bolsonaro",
    "url": "https://www.pagina12.com.ar/2026/10/29/de-puerto-iguazu-a-miami-como-intervino-la-casa-rosada-en-la-fuga-de-flavio-bolsonaro/",
    "dominio": "pagina12.com.ar",
-   "fecha": "2026-10-29",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Avión que dejó a Flávio Bolsonaro en Estados Unidos ya llegó a Tel Aviv y está pronto para despegar de urgencia",
-   "url": "https://ladiaria.com.uy/humor/articulo/2026/10/avion-que-dejo-a-flavio-bolsonaro-en-estados-unidos-ya-llego-a-tel-aviv-y-esta-pronto-para-despegar-de-urgencia/",
-   "dominio": "ladiaria.com.uy",
    "fecha": "2026-10-29",
    "lugares": [
     "Puerto Iguazú"
@@ -3671,48 +3901,6 @@
    "fecha": "2026-10-18",
    "lugares": [
     "Corrientes"
-   ]
-  },
-  {
-   "titulo": "Un jugador murió tras descompensarse en un partido de veteranos y detuvieron a su hijo por causar destrozos en el hospital",
-   "url": "https://www.infobae.com/sociedad/2026/10/18/un-jugador-murio-tras-descompensarse-en-un-partido-de-veteranos-y-detuvieron-a-su-hijo-por-causar-destrozos-en-el-hospital/",
-   "dominio": "infobae.com",
-   "fecha": "2026-10-18",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Santa Fe subastó bienes del delito por más de $1.645 millones: desde una casa hasta lanchas y arcades",
-   "url": "https://www.perfil.com/noticias/sociedad/santa-fe-subasto-bienes-del-delito-por-mas-de-1645-millones-desde-una-casa-hasta-lanchas-y-arcades-a50-bgd.phtml",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-18",
-   "lugares": [
-    "Rosario",
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Dos inmigrantes muertos y siete heridos en una barcaza auxiliada por España",
-   "url": "https://www.abc.com.py/internacionales/2026/10/18/dos-inmigrantes-muertos-y-siete-heridos-en-una-barcaza-auxiliada-por-espana/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-18",
-   "lugares": []
-  },
-  {
-   "titulo": "El río Paraná continúa en ascenso y el agua cubre gran parte de Cerrito",
-   "url": "https://www.abc.com.py/nacionales/2026/10/17/el-rio-parana-continua-en-ascenso-y-el-agua-cubre-gran-parte-de-cerrito/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-17",
-   "lugares": []
-  },
-  {
-   "titulo": "Fitpar 2026: Binacional propone realidad virtual y fotografías personalizadas",
-   "url": "http://www.lanacion.com.py/negocios/2026/10/17/fitpar-2026-binacional-propone-realidad-virtual-y-fotografias-personalizadas/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-17",
-   "lugares": [
-    "Itaipú"
    ]
   }
  ]
