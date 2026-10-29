@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-10-29T10:13:02Z",
+ "obtenido": "2026-10-29T18:34:08Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 4
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -29,7 +29,7 @@
    "fenomeno": "Chuvas Intensas",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-10-29 00:00",
+   "inicio": "2026-10-29 09:00",
    "fin": "2026-10-29 23:59",
    "lugares": [
     "Corumbá",
@@ -41,7 +41,26 @@
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
-   "id": "inmet-28575"
+   "id": "inmet-28579"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-01 00:00",
+   "fin": "2026-11-01 23:59",
+   "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28583"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -52,11 +71,32 @@
    "inicio": "2026-10-30 00:00",
    "fin": "2026-10-30 23:59",
    "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres",
     "Foz do Iguaçu",
+    "Ponta Porã",
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
-   "id": "inmet-28578"
+   "id": "inmet-28581"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Chuvas Intensas",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-10-31 00:00",
+   "fin": "2026-10-31 23:59",
+   "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Cáceres"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
+   "id": "inmet-28582"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
