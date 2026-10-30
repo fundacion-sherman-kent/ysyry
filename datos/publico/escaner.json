@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-30T17:58:20Z",
+ "obtenido": "2026-10-30T22:13:37Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,8 +14,8 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 32,
-   "candidatos": 0,
+   "items": 31,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 90,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 337,
+   "items": 350,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -230,6 +230,34 @@
     }
    ],
    "id": "4833ae5b89",
+   "verificado": true
+  },
+  {
+   "titulo": "Once paraguayos detenidos con productos de contrabando en el lado brasileño del río Paraná",
+   "url": "https://www.abc.com.py/este/2026/10/30/once-paraguayos-detenidos-con-productos-de-contrabando-en-el-lado-brasileno-del-rio-parana/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-30",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 4,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/este/2026/10/30/once-paraguayos-detenidos-con-productos-de-contrabando-en-el-lado-brasileno-del-rio-parana/"
+    }
+   ],
+   "id": "00a1826564",
    "verificado": true
   },
   {
@@ -2526,6 +2554,26 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Viaducto del km 10 de Ciudad del Este alcanza el 70 % de avance",
+   "url": "http://www.lanacion.com.py/negocios/2026/10/30/viaducto-del-km-10-de-ciudad-del-este-alcanza-el-70-de-avance/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-30",
+   "lugares": [
+    "Ciudad del Este",
+    "Alto Paraná",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "México presenta su tradicional Día de Muertos en el Centro Cultural del Puerto",
+   "url": "http://www.lanacion.com.py/espectaculo/2026/10/30/mexico-presenta-su-tradicional-dia-de-muertos-en-el-centro-cultural-del-puerto/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-30",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
    "titulo": "LN PM: edición del 30 de octubre",
    "url": "http://www.lanacion.com.py/tapa-lnpm/2026/10/30/ln-pm-edicion-del-30-de-octubre/",
    "dominio": "lanacion.com.py",
@@ -2535,12 +2583,39 @@
    ]
   },
   {
-   "titulo": "Archivaron en Misiones la denuncia por el tránsito de Flávio Bolsonaro por Puerto Iguazú",
-   "url": "https://www.infobae.com/judiciales/2026/10/30/archivaron-en-misiones-la-denuncia-por-el-transito-de-flavio-bolsonaro-por-puerto-iguazu/",
-   "dominio": "infobae.com",
+   "titulo": "Caputo se movió en Misiones con empleados de Yacyretá que entran a Casa Rosada y dependen de un primo del jefe de Economía",
+   "url": "https://perfil.com/politica/caputo-se-movio-en-misiones-con-empleados-de-yacyreta-que-entran-a-casa-rosada-y-dependen-de-un-primo-del-jefe-de-economia-a8ZTZ5U5OX1R",
+   "dominio": "perfil.com",
    "fecha": "2026-10-30",
    "lugares": [
-    "Puerto Iguazú"
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "El Paraná comienza a estabilizarse: Yacyretá anticipa un descenso gradual de los niveles hacia el fin de semana",
+   "url": "https://perfil.com/comercial/el-parana-comienza-a-estabilizarse-yacyreta-anticipa-un-descenso-gradual-de-los-niveles-hacia-el-fin-de-semana-aVYFV2Q5VlYF",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-30",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "El río Paraná comienza a estabilizarse: Yacyretá anticipa un descenso gradual de los niveles hacia el fin de semana",
+   "url": "https://perfil.com/economia/el-rio-parana-comienza-a-estabilizarse-yacyreta-anticipa-un-descenso-gradual-de-los-niveles-hacia-el-fin-de-semana-aqGWL7J6LDmT",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-30",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "El pueblo poco conocido a 100 kilómetros de Buenos Aires que es ideal para una escapada de fin de semana",
+   "url": "https://www.lanacion.com.ar/lifestyle/el-pueblo-poco-conocido-a-100-kilometros-de-buenos-aires-que-es-ideal-para-una-escapada-de-fin-de-nid30102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-30",
+   "lugares": [
+    "Zárate"
    ]
   },
   {
@@ -2570,6 +2645,15 @@
    "dominio": "ladiaria.com.uy",
    "fecha": "2026-10-30",
    "lugares": []
+  },
+  {
+   "titulo": "Archivaron en Misiones la denuncia por el tránsito de Flávio Bolsonaro por Puerto Iguazú",
+   "url": "https://www.infobae.com/judiciales/2026/10/30/archivaron-en-misiones-la-denuncia-por-el-transito-de-flavio-bolsonaro-por-puerto-iguazu/",
+   "dominio": "infobae.com",
+   "fecha": "2026-10-30",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
   },
   {
    "titulo": "Cuatro muertos en la travesía de una barcaza de inmigrantes auxiliada por España",
@@ -3515,59 +3599,6 @@
    "dominio": "abc.com.py",
    "fecha": "2026-10-19",
    "lugares": []
-  },
-  {
-   "titulo": "Brasileño raptado en Pedro Juan Caballero es un prófugo por narcotráfico en Brasil",
-   "url": "https://www.abc.com.py/policiales/2026/10/19/brasileno-raptado-en-pedro-juan-caballero-es-un-profugo-por-narcotrafico-en-brasil/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-19",
-   "lugares": [
-    "Pedro Juan Caballero"
-   ]
-  },
-  {
-   "titulo": "Preso de la culpa: delincuente se entregó a la policía tras asalto en Salto del Guairá",
-   "url": "http://www.lanacion.com.py/pais/2026/10/19/preso-de-la-culpa-delincuente-se-entrego-a-la-policia-tras-asalto-en-salto-del-guaira/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-19",
-   "lugares": [
-    "Salto del Guairá"
-   ]
-  },
-  {
-   "titulo": "Periodista comparecerá ante la Fiscalía tras grave accidente en Asunción",
-   "url": "http://www.lanacion.com.py/judiciales/2026/10/19/periodista-comparecera-ante-la-fiscalia-tras-grave-accidente-en-asuncion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-19",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Fiscalía inicia proceso contra camionero por homicidio culposo tras atropellar a adolescente",
-   "url": "http://www.lanacion.com.py/pais/2026/10/19/fiscalia-inicia-proceso-contra-camionero-por-homicidio-culposo-tras-atropellar-a-adolescente/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-19",
-   "lugares": [
-    "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "Buscan a pescador tras naufragio de una canoa en el río Paraná",
-   "url": "http://www.lanacion.com.py/pais/2026/10/19/buscan-a-pescador-tras-naufragio-de-una-canoa-en-el-rio-parana/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-19",
-   "lugares": []
-  },
-  {
-   "titulo": "Estudiantes rescatan en maquetas la memoria de edificios históricos de Encarnación",
-   "url": "http://www.lanacion.com.py/pais/2026/10/19/estudiantes-rescatan-en-maquetas-la-memoria-de-edificios-historicos-de-encarnacion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-19",
-   "lugares": [
-    "Encarnación",
-    "Yacyretá"
-   ]
   }
  ]
 }
