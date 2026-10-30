@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-30T00:46:43Z",
+ "obtenido": "2026-10-30T09:51:31Z",
  "fuente": {
   "nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente",
   "url": "https://www.smn.gob.ar/",
@@ -8,11 +8,11 @@
  "estaciones": [
   {
    "nombre": "La Plata",
-   "fecha": "29-octubre-2026",
-   "hora": "21:00",
+   "fecha": "30-octubre-2026",
+   "hora": "06:00",
    "direccion": "Este",
-   "kmh": 9,
-   "estado": "Despejado"
+   "kmh": 13,
+   "estado": "Nublado con tormenta"
   },
   {
    "nombre": "Punta Indio B.A.",
@@ -24,27 +24,27 @@
   },
   {
    "nombre": "San Fernando",
-   "fecha": "29-octubre-2026",
-   "hora": "21:00",
-   "direccion": "Este",
-   "kmh": 16,
-   "estado": "Despejado"
+   "fecha": "30-octubre-2026",
+   "hora": "06:00",
+   "direccion": "Noreste",
+   "kmh": 9,
+   "estado": "Parcialmente nublado"
   },
   {
    "nombre": "Aeroparque Buenos Aires",
-   "fecha": "29-octubre-2026",
-   "hora": "21:00",
-   "direccion": "Este",
-   "kmh": 22,
-   "estado": "Algo nublado"
+   "fecha": "30-octubre-2026",
+   "hora": "06:00",
+   "direccion": "Norte",
+   "kmh": 24,
+   "estado": "Parcialmente nublado con tormenta sin precipitación"
   },
   {
    "nombre": "Buenos Aires",
-   "fecha": "29-octubre-2026",
-   "hora": "21:00",
-   "direccion": "Este",
-   "kmh": 9,
-   "estado": "Despejado"
+   "fecha": "30-octubre-2026",
+   "hora": "06:00",
+   "direccion": "Norte",
+   "kmh": 5,
+   "estado": "Parcialmente nublado con tormenta en la hora anterior"
   }
  ]
 }
