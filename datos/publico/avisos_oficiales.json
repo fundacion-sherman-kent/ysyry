@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-30T18:05:37Z",
+ "obtenido": "2026-10-30T22:29:20Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "GDACS",
@@ -127,27 +127,13 @@
    "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-10-30 14:49",
+   "inicio": "2026-10-30 18:32",
    "fin": "",
    "lugares": [
-    "BUENOS AIRES: Brandsen - Canuelas - Gral Belgrano - Gral Paz - La Plata - San Vicente."
+    "BUENOS AIRES: Baradero - Campana - Cap Sarmiento - Carmen de Areco - Exaltacion de la Cruz - S. A. de Giles - Salto - San A. Areco - Zarate."
    ],
    "riesgos": "",
-   "id": "smn-3780"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-10-30 14:23",
-   "fin": "",
-   "lugares": [
-    "ENTRE RIOS: Colon - Concepcion del Ururguay - Concordia - San Salvador - Villaguay."
-   ],
-   "riesgos": "",
-   "id": "smn-3778"
+   "id": "smn-3793"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
