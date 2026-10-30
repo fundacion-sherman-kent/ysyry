@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-29T18:25:41Z",
+ "obtenido": "2026-10-30T00:51:52Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 36,
+   "items": 34,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 91,
+   "items": 92,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 328,
+   "items": 347,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -350,6 +350,42 @@
     }
    ],
    "id": "22abad252b",
+   "verificado": true
+  },
+  {
+   "titulo": "Paraguayo denunció hurto de 80 kilos de mercaderías desde una transportadora de Foz",
+   "url": "http://www.lanacion.com.py/pais/2026/10/29/paraguayo-denuncio-hurto-de-80-kilos-de-mercaderias-desde-una-transportadora-de-foz/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-29",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": {
+    "valor": 80.0,
+    "unidad": "kilos"
+   },
+   "puntaje": 6,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/29/paraguayo-denuncio-hurto-de-80-kilos-de-mercaderias-desde-una-transportadora-de-foz/"
+    }
+   ],
+   "id": "5a4835ddc7",
    "verificado": true
   },
   {
@@ -2451,400 +2487,16 @@
    ],
    "id": "bfa55df9a8",
    "verificado": true
-  },
-  {
-   "titulo": "En Brasil incautan de un depósito 150 neumáticos de contrabando desde Paraguay",
-   "url": "http://www.lanacion.com.py/pais/2026/10/15/en-brasil-incautan-de-un-deposito-150-neumaticos-de-contrabando-desde-paraguay/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-15",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 7,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/15/en-brasil-incautan-de-un-deposito-150-neumaticos-de-contrabando-desde-paraguay/"
-    }
-   ],
-   "id": "c66a87407a",
-   "verificado": true
-  },
-  {
-   "titulo": "Senad incauta 262 k de cocaína en Ciudad del Este",
-   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/15/senad-incauta-262-k-de-cocaina-en-ciudad-del-este/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-15",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 6,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/15/senad-incauta-262-k-de-cocaina-en-ciudad-del-este/"
-    }
-   ],
-   "id": "ff080cd791",
-   "verificado": true
-  },
-  {
-   "titulo": "Suman desplazados en todo el país y Asunción, bajo alerta",
-   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/15/suman-desplazados-en-todo-el-pais-y-asuncion-bajo-alerta/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-15",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Asunción"
-   ],
-   "ubicacion": [
-    -25.28,
-    -57.63
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/15/suman-desplazados-en-todo-el-pais-y-asuncion-bajo-alerta/"
-    }
-   ],
-   "id": "a729356a76",
-   "verificado": true
-  },
-  {
-   "titulo": "Itaipú delimita cotas de riesgo en Ciudad del Este tras aumento del nivel del río Paraná",
-   "url": "http://www.lanacion.com.py/pais/2026/10/15/itaipu-delimita-cotas-de-riesgo-en-ciudad-del-este-tras-aumento-del-nivel-del-rio-parana/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-15",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este",
-    "Itaipú"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/15/itaipu-delimita-cotas-de-riesgo-en-ciudad-del-este-tras-aumento-del-nivel-del-rio-parana/"
-    }
-   ],
-   "id": "e80be206ca",
-   "verificado": true
-  },
-  {
-   "titulo": "Crecida del río Paraná roza los 121 metros en el Puente de la Amistad",
-   "url": "http://www.lanacion.com.py/pais/2026/10/15/crecida-del-rio-parana-roza-los-121-metros-en-el-puente-de-la-amistad/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-15",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Itaipú"
-   ],
-   "ubicacion": [
-    -25.41,
-    -54.59
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/15/crecida-del-rio-parana-roza-los-121-metros-en-el-puente-de-la-amistad/"
-    }
-   ],
-   "id": "9be23ef1f4",
-   "verificado": true
-  },
-  {
-   "titulo": "Crecida del río Paraná: los cuatro municipios de Corrientes que están en alerta por niveles de evacuación",
-   "url": "https://www.perfil.com/noticias/nea/crecida-del-rio-parana-los-cuatro-municipios-de-corrientes-que-estan-en-alerta-por-niveles-de-evacuacion.phtml",
-   "dominio": "perfil.com",
-   "clase": "prensa",
-   "fecha": "2026-10-15",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Corrientes"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "perfil.com",
-     "clase": "prensa",
-     "url": "https://www.perfil.com/noticias/nea/crecida-del-rio-parana-los-cuatro-municipios-de-corrientes-que-estan-en-alerta-por-niveles-de-evacuacion.phtml"
-    }
-   ],
-   "id": "65e7d7e525",
-   "verificado": true
-  },
-  {
-   "titulo": "Andrés \"Chapu\" Nocioni sufrió un accidente en el río Paraná al chocar con una patrulla de Prefectura en Corrientes",
-   "url": "https://www.perfil.com/noticias/nea/andres-chapu-nocioni-sufrio-un-accidente-en-el-rio-parana-al-chocar-con-una-patrulla-de-prefectura-en-corrientes.phtml",
-   "dominio": "perfil.com",
-   "clase": "prensa",
-   "fecha": "2026-10-15",
-   "tipos": [
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Corrientes"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "perfil.com",
-     "clase": "prensa",
-     "url": "https://www.perfil.com/noticias/nea/andres-chapu-nocioni-sufrio-un-accidente-en-el-rio-parana-al-chocar-con-una-patrulla-de-prefectura-en-corrientes.phtml"
-    }
-   ],
-   "id": "f13c2b147f",
-   "verificado": true
-  },
-  {
-   "titulo": "Sube la altura del río Paraná frente a Rosario, pero aún no hay proyecciones de alerta",
-   "url": "https://www.pagina12.com.ar/2026/10/15/sube-la-altura-del-rio-parana-frente-a-rosario-pero-aun-no-hay-proyecciones-de-alerta/",
-   "dominio": "pagina12.com.ar",
-   "clase": "prensa",
-   "fecha": "2026-10-15",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Rosario"
-   ],
-   "ubicacion": [
-    -32.95,
-    -60.65
-   ],
-   "zona": "z2",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "pagina12.com.ar",
-     "clase": "prensa",
-     "url": "https://www.pagina12.com.ar/2026/10/15/sube-la-altura-del-rio-parana-frente-a-rosario-pero-aun-no-hay-proyecciones-de-alerta/"
-    }
-   ],
-   "id": "93d57220ec",
-   "verificado": true
-  },
-  {
-   "titulo": "Ayolas, la más castigada: familias se ven obligadas a buscar refugio en zonas altas",
-   "url": "http://www.lanacion.com.py/pais/2026/10/15/ayolas-la-mas-castigada-familias-se-ven-obligadas-a-buscar-refugio-en-zonas-altas/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-15",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Ayolas"
-   ],
-   "ubicacion": [
-    -27.39,
-    -56.84
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/15/ayolas-la-mas-castigada-familias-se-ven-obligadas-a-buscar-refugio-en-zonas-altas/"
-    }
-   ],
-   "id": "0101c0ad45",
-   "verificado": true
-  },
-  {
-   "titulo": "Histórico debut de Belgrano en la Copa Libertadores",
-   "url": "https://www.perfil.com/noticias/cordoba/historico-debut-de-belgrano-en-la-copa-libertadores.phtml",
-   "dominio": "perfil.com",
-   "clase": "prensa",
-   "fecha": "2026-10-15",
-   "tipos": [
-    [
-     "pirateria",
-     "Piratería o robo de carga"
-    ]
-   ],
-   "lugares": [
-    "Alberdi"
-   ],
-   "ubicacion": [
-    -26.2,
-    -58.14
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "perfil.com",
-     "clase": "prensa",
-     "url": "https://www.perfil.com/noticias/cordoba/historico-debut-de-belgrano-en-la-copa-libertadores.phtml"
-    }
-   ],
-   "id": "089a702c04",
-   "verificado": true
-  },
-  {
-   "titulo": "Andrés “Chapu” Nocioni estuvo involucrado en un choque de lanchas sobre el Río Paraná",
-   "url": "https://www.lanacion.com.ar/deportes/andres-chapu-nocioni-estuvo-involucrado-en-un-choque-de-lanchas-sobre-el-rio-parana-nid15102026/",
-   "dominio": "lanacion.com.ar",
-   "clase": "prensa",
-   "fecha": "2026-10-15",
-   "tipos": [
-    [
-     "siniestro",
-     "Siniestro náutico"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 4,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.ar",
-     "clase": "prensa",
-     "url": "https://www.lanacion.com.ar/deportes/andres-chapu-nocioni-estuvo-involucrado-en-un-choque-de-lanchas-sobre-el-rio-parana-nid15102026/"
-    }
-   ],
-   "id": "0d7760073a",
-   "verificado": true
-  },
-  {
-   "titulo": "Instan al Ejecutivo a reforzar asistencia a damnificados por crecida del río Paraná",
-   "url": "http://www.lanacion.com.py/politica/2026/10/14/instan-al-ejecutivo-a-reforzar-asistencia-a-damnificados-por-crecida-del-rio-parana/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-15",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/politica/2026/10/14/instan-al-ejecutivo-a-reforzar-asistencia-a-damnificados-por-crecida-del-rio-parana/"
-    }
-   ],
-   "id": "0095af9fad",
-   "verificado": true
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Ministro confirma envío de vehículos tácticos y embarcaciones a zonas inundadas",
+   "url": "http://www.lanacion.com.py/politica/2026/10/29/ministro-confirma-envio-de-vehiculos-tacticos-y-embarcaciones-a-zonas-inundadas/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-29",
+   "lugares": []
+  },
   {
    "titulo": "El nuevo CAIPI de Ciudad del Este registra un 60 % de avance y se habilitará en diciembre",
    "url": "http://www.lanacion.com.py/pais/2026/10/29/el-nuevo-caipi-de-ciudad-del-este-registra-un-60-de-avance-y-se-habilitara-en-diciembre/",
@@ -2863,6 +2515,33 @@
    "fecha": "2026-10-29",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Café en el ACA, chapa diplomática y un McDonald’s: las misteriosas horas de Santiago Caputo en Misiones durante el operativo Bolsonaro",
+   "url": "https://www.lanacion.com.ar/economia/cafe-en-el-aca-chapa-diplomatica-y-un-mcdonalds-las-misteriosas-horas-de-santiago-caputo-en-misiones-nid29102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-29",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "ALUMNOS DE COMERCIO INTERNACIONAL REALIZARON VISITA TÉCNICA A LA TERMINAL PORTUARIA DE VILLETA",
+   "url": "https://annp.gov.py/?p=24074",
+   "dominio": "annp.gov.py",
+   "fecha": "2026-10-29",
+   "lugares": [
+    "Villeta"
+   ]
+  },
+  {
+   "titulo": "Avión que dejó a Flávio Bolsonaro en Estados Unidos ya llegó a Tel Aviv y está pronto para despegar de urgencia",
+   "url": "https://ladiaria.com.uy/humor/articulo/2026/10/avion-que-dejo-a-flavio-bolsonaro-en-estados-unidos-ya-llego-a-tel-aviv-y-esta-pronto-para-despegar-de-urgencia/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-29",
+   "lugares": [
+    "Puerto Iguazú"
    ]
   },
   {
@@ -2887,15 +2566,6 @@
    "titulo": "La Justicia pidió al Gobierno datos sobre la salida de Bolsonaro de la Argentina",
    "url": "https://www.lanacion.com.ar/politica/la-justicia-pidio-al-gobierno-datos-sobre-la-salida-de-bolsonaro-de-la-argentina-nid29102026/",
    "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-29",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Avión que dejó a Flávio Bolsonaro en Estados Unidos ya llegó a Tel Aviv y está pronto para despegar de urgencia",
-   "url": "https://ladiaria.com.uy/humor/articulo/2026/10/avion-que-dejo-a-flavio-bolsonaro-en-estados-unidos-ya-llego-a-tel-aviv-y-esta-pronto-para-despegar-de-urgencia/",
-   "dominio": "ladiaria.com.uy",
    "fecha": "2026-10-29",
    "lugares": [
     "Puerto Iguazú"
@@ -3873,34 +3543,6 @@
    "lugares": [
     "Ayolas",
     "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Santa Fe subastó bienes del delito por más de $1.645 millones: desde una casa hasta lanchas y arcades",
-   "url": "https://www.perfil.com/noticias/judiciales/santa-fe-subasto-bienes-del-delito-por-mas-de-1645-millones-desde-una-casa-hasta-lanchas-y-arcades-a50-bgd.phtml",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-18",
-   "lugares": [
-    "Rosario",
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Cuando el agua no es cuento",
-   "url": "https://www.pagina12.com.ar/2026/10/18/cuando-el-agua-no-es-cuento/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-10-18",
-   "lugares": [
-    "Corrientes"
-   ]
-  },
-  {
-   "titulo": "Once días sin noticias y un amplio operativo de búsqueda: qué se sabe de la docente desaparecida en Corrientes",
-   "url": "https://www.infobae.com/sociedad/policiales/2026/10/18/once-dias-sin-noticias-y-un-amplio-operativo-de-busqueda-que-se-sabe-de-la-docente-desaparecida-en-corrientes/",
-   "dominio": "infobae.com",
-   "fecha": "2026-10-18",
-   "lugares": [
-    "Corrientes"
    ]
   }
  ]
