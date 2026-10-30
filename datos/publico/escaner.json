@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-30T09:54:43Z",
+ "obtenido": "2026-10-30T17:58:20Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 34,
+   "items": 32,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 96,
+   "items": 92,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 328,
+   "items": 337,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -2526,6 +2526,52 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "LN PM: edición del 30 de octubre",
+   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/10/30/ln-pm-edicion-del-30-de-octubre/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-30",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Archivaron en Misiones la denuncia por el tránsito de Flávio Bolsonaro por Puerto Iguazú",
+   "url": "https://www.infobae.com/judiciales/2026/10/30/archivaron-en-misiones-la-denuncia-por-el-transito-de-flavio-bolsonaro-por-puerto-iguazu/",
+   "dominio": "infobae.com",
+   "fecha": "2026-10-30",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "\"Todo un país lamenta la pérdida de estos jóvenes\", dijo Orsi sobre militares fallecidos durante entramiento de buceo",
+   "url": "https://www.elobservador.com.uy/nacional/todo-un-pais-lamenta-la-perdida-estos-jovenes-dijo-orsi-militares-fallecidos-entramiento-buceo-n6062204",
+   "dominio": "elobservador.com.uy",
+   "fecha": "2026-10-30",
+   "lugares": []
+  },
+  {
+   "titulo": "Tragedia en el río Uruguay: quiénes eran los militares fallecidos en el curso de buzos tácticos en Río Negro",
+   "url": "https://www.elobservador.com.uy/nacional/tragedia-el-rio-uruguay-quienes-eran-los-militares-fallecidos-el-curso-buzos-tacticos-rio-negro-n6062191",
+   "dominio": "elobservador.com.uy",
+   "fecha": "2026-10-30",
+   "lugares": []
+  },
+  {
+   "titulo": "Ministerio de Defensa ante la muerte de tres buzos en Fray Bentos: “Es necesario esclarecer las circunstancias del hecho”",
+   "url": "https://ladiaria.com.uy/politica/articulo/2026/10/ministerio-de-defensa-ante-la-muerte-de-tres-buzos-en-fray-bentos-es-necesario-esclarecer-las-circunstancias-del-hecho/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-30",
+   "lugares": []
+  },
+  {
+   "titulo": "Tres buzos del Ejército murieron durante un entrenamiento en el río Uruguay",
+   "url": "https://ladiaria.com.uy/politica/articulo/2026/10/tres-buzos-del-ejercito-murieron-durante-un-entrenamiento-en-el-rio-uruguay/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-30",
+   "lugares": []
+  },
+  {
    "titulo": "Cuatro muertos en la travesía de una barcaza de inmigrantes auxiliada por España",
    "url": "https://www.abc.com.py/internacionales/2026/10/30/cuatro-muertos-en-la-travesia-de-una-barcaza-de-inmigrantes-auxiliada-por-espana/",
    "dominio": "abc.com.py",
@@ -2540,13 +2586,6 @@
    "lugares": []
   },
   {
-   "titulo": "Ministro confirma envío de vehículos tácticos y embarcaciones a zonas inundadas",
-   "url": "http://www.lanacion.com.py/politica/2026/10/29/ministro-confirma-envio-de-vehiculos-tacticos-y-embarcaciones-a-zonas-inundadas/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-29",
-   "lugares": []
-  },
-  {
    "titulo": "ALUMNOS DE COMERCIO INTERNACIONAL REALIZARON VISITA TÉCNICA A LA TERMINAL PORTUARIA DE VILLETA",
    "url": "https://annp.gov.py/?p=24074",
    "dominio": "annp.gov.py",
@@ -2554,6 +2593,13 @@
    "lugares": [
     "Villeta"
    ]
+  },
+  {
+   "titulo": "Ministro confirma envío de vehículos tácticos y embarcaciones a zonas inundadas",
+   "url": "http://www.lanacion.com.py/politica/2026/10/29/ministro-confirma-envio-de-vehiculos-tacticos-y-embarcaciones-a-zonas-inundadas/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-29",
+   "lugares": []
   },
   {
    "titulo": "El nuevo CAIPI de Ciudad del Este registra un 60 % de avance y se habilitará en diciembre",
@@ -3522,58 +3568,6 @@
     "Encarnación",
     "Yacyretá"
    ]
-  },
-  {
-   "titulo": "Docente desaparecida en Corrientes: el fiscal ordenó la detención formal de un peón rural en medio del reclamo familiar",
-   "url": "https://www.perfil.com/noticias/nea/docente-desaparecida-en-corrientes-el-fiscal-ordeno-la-detencion-formal-de-un-peon-rural-en-medio-del-reclamo-familiar.phtml",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-19",
-   "lugares": [
-    "Corrientes"
-   ]
-  },
-  {
-   "titulo": "Río Paraná inicia un lento retroceso en la zona de Ayolas",
-   "url": "https://www.abc.com.py/clima/2026/10/19/rio-parana-inicia-un-lento-retroceso-en-la-zona-de-ayolas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-19",
-   "lugares": [
-    "Ayolas"
-   ]
-  },
-  {
-   "titulo": "Cumbre de Mujeres Indígenas de Abya Yala se celebra en Asunción",
-   "url": "http://www.lanacion.com.py/pais/2026/10/19/cumbre-de-mujeres-indigenas-de-abya-yala-se-celebra-en-asuncion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-19",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Puente de la Bioceánica avanza hacia su culminación con recursos de Itaipú",
-   "url": "http://www.lanacion.com.py/foco/2026/10/19/puente-de-la-bioceanica-avanza-hacia-su-culminacion-con-recursos-de-itaipu/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-19",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "El Niño en Corrientes: el Paraná superó el nivel de evacuación en la Capital y ya hay 754 desplazados",
-   "url": "https://www.perfil.com/noticias/nea/el-nino-en-corrientes-el-parana-supero-el-nivel-de-evacuacion-en-la-capital-y-ya-hay-754-desplazados.phtml",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-19",
-   "lugares": [
-    "Corrientes"
-   ]
-  },
-  {
-   "titulo": "El fútbol uruguayo como destino para jóvenes argentinos",
-   "url": "https://ladiaria.com.uy/deporte/articulo/2026/10/el-futbol-uruguayo-como-destino-para-jovenes-argentinos/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-18",
-   "lugares": []
   }
  ]
 }
