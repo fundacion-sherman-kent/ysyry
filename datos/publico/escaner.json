@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-30T00:51:52Z",
+ "obtenido": "2026-10-30T09:54:43Z",
  "dias": 14,
  "fuentes": [
   {
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 96,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 347,
+   "items": 328,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +197,41 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Con la ayuda del can detector Andy, Prefectura secuestró más de 332 kilos de marihuana en Misiones",
+   "url": "https://perfil.com/sociedad/se-secuestro-mas-de-332-kilos-de-marihuana-en-misiones-aYQ7X4i013Nn",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-10-30",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": {
+    "valor": 332.0,
+    "unidad": "kilos"
+   },
+   "puntaje": 7,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://perfil.com/sociedad/se-secuestro-mas-de-332-kilos-de-marihuana-en-misiones-aYQ7X4i013Nn"
+    }
+   ],
+   "id": "4833ae5b89",
+   "verificado": true
+  },
   {
    "titulo": "SENAD ANULA PRODUCCIÓN DE MÁS DE 13 TONELADAS DE MARIHUANA EN YBY PYTÃ",
    "url": "https://senad.gov.py/senad-anula-produccion-de-mas-de-13-toneladas-de-marihuana-en-yby-pyta/",
@@ -2491,11 +2526,34 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Cuatro muertos en la travesía de una barcaza de inmigrantes auxiliada por España",
+   "url": "https://www.abc.com.py/internacionales/2026/10/30/cuatro-muertos-en-la-travesia-de-una-barcaza-de-inmigrantes-auxiliada-por-espana/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-30",
+   "lugares": []
+  },
+  {
+   "titulo": "Cuatro muertos en la travesía de una barcaza de inmigrantes auxiliada por España",
+   "url": "https://www.infobae.com/america/agencias/2026/10/30/cuatro-muertos-en-la-travesia-de-una-barcaza-de-inmigrantes-auxiliada-por-espana/",
+   "dominio": "infobae.com",
+   "fecha": "2026-10-30",
+   "lugares": []
+  },
+  {
    "titulo": "Ministro confirma envío de vehículos tácticos y embarcaciones a zonas inundadas",
    "url": "http://www.lanacion.com.py/politica/2026/10/29/ministro-confirma-envio-de-vehiculos-tacticos-y-embarcaciones-a-zonas-inundadas/",
    "dominio": "lanacion.com.py",
    "fecha": "2026-10-29",
    "lugares": []
+  },
+  {
+   "titulo": "ALUMNOS DE COMERCIO INTERNACIONAL REALIZARON VISITA TÉCNICA A LA TERMINAL PORTUARIA DE VILLETA",
+   "url": "https://annp.gov.py/?p=24074",
+   "dominio": "annp.gov.py",
+   "fecha": "2026-10-29",
+   "lugares": [
+    "Villeta"
+   ]
   },
   {
    "titulo": "El nuevo CAIPI de Ciudad del Este registra un 60 % de avance y se habilitará en diciembre",
@@ -2524,15 +2582,6 @@
    "fecha": "2026-10-29",
    "lugares": [
     "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "ALUMNOS DE COMERCIO INTERNACIONAL REALIZARON VISITA TÉCNICA A LA TERMINAL PORTUARIA DE VILLETA",
-   "url": "https://annp.gov.py/?p=24074",
-   "dominio": "annp.gov.py",
-   "fecha": "2026-10-29",
-   "lugares": [
-    "Villeta"
    ]
   },
   {
@@ -3525,25 +3574,6 @@
    "dominio": "ladiaria.com.uy",
    "fecha": "2026-10-18",
    "lugares": []
-  },
-  {
-   "titulo": "Detienen a una mujer quien estaría involucrada en crimen de un hombre en Pdte. Franco",
-   "url": "http://www.lanacion.com.py/pais/2026/10/18/detienen-a-una-mujer-quien-estaria-involucrada-en-crimen-de-un-hombre-en-pdte-franco/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-18",
-   "lugares": [
-    "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "Emergencia en Ayolas: piden ayuda para alimentar a más de 300 animales rescatados",
-   "url": "http://www.lanacion.com.py/pais/2026/10/18/emergencia-en-ayolas-piden-ayuda-para-alimentar-a-mas-de-300-animales-rescatados/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-18",
-   "lugares": [
-    "Ayolas",
-    "Yacyretá"
-   ]
   }
  ]
 }
