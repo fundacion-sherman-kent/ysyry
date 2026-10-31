@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-31T05:27:32Z",
+ "obtenido": "2026-10-31T12:15:10Z",
  "dias": 14,
  "fuentes": [
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 96,
+   "items": 93,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,17 +166,18 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 379,
+   "items": 347,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "mpf.mp.br",
    "url": "https://www.mpf.mp.br/rss.xml",
-   "ok": true,
-   "items": 15,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "HTTP Error 500: Internal Server Error",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "senad.gov.py",
@@ -2160,15 +2161,6 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Yacyretá instaló la primera pieza electromecánica de la Unidad N ° 1 de Aña Cuá",
-   "url": "https://www.abc.com.py/economia/2026/10/30/yacyreta-instalo-la-primera-pieza-electromecanica-de-la-unidad-n-1-de-ana-cua/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-31",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
    "titulo": "En Pilar inician plan para nuevos centros educativos",
    "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/10/31/en-pilar-inician-plan-para-nuevos-centros-educativos/",
    "dominio": "lanacion.com.py",
@@ -2178,11 +2170,29 @@
    ]
   },
   {
+   "titulo": "Violento intento de usurpación de la Villa Olímpica de Santa Fe: hay 8 detenidos",
+   "url": "https://www.infobae.com/sociedad/policiales/2026/10/31/violento-intento-de-usurpacion-de-la-villa-olimpica-de-santa-fe-hay-8-detenidos/",
+   "dominio": "infobae.com",
+   "fecha": "2026-10-31",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
    "titulo": "Tras muertes de efectivos durante un curso de buzo, Ejército ordena “investigación de urgencia” y niega “negligencia”",
    "url": "https://ladiaria.com.uy/politica/articulo/2026/10/tras-muertes-de-efectivos-durante-un-curso-de-buzo-ejercito-ordena-investigacion-de-urgencia-y-niega-negligencia/",
    "dominio": "ladiaria.com.uy",
    "fecha": "2026-10-31",
    "lugares": []
+  },
+  {
+   "titulo": "Yacyretá instaló la primera pieza electromecánica de la Unidad N ° 1 de Aña Cuá",
+   "url": "https://www.abc.com.py/economia/2026/10/30/yacyreta-instalo-la-primera-pieza-electromecanica-de-la-unidad-n-1-de-ana-cua/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-31",
+   "lugares": [
+    "Yacyretá"
+   ]
   },
   {
    "titulo": "Yacyretá marca un hito en Aña Cuá con la instalación de una pieza de 32 toneladas",
@@ -2214,6 +2224,13 @@
    ]
   },
   {
+   "titulo": "\"Todo un país lamenta la pérdida de estos jóvenes\", dijo Orsi sobre militares fallecidos durante entramiento de buceo",
+   "url": "https://www.elobservador.com.uy/nacional/todo-un-pais-lamenta-la-perdida-estos-jovenes-dijo-orsi-militares-fallecidos-entramiento-buceo-n6062204",
+   "dominio": "elobservador.com.uy",
+   "fecha": "2026-10-30",
+   "lugares": []
+  },
+  {
    "titulo": "LN PM: edición del 30 de octubre",
    "url": "http://www.lanacion.com.py/tapa-lnpm/2026/10/30/ln-pm-edicion-del-30-de-octubre/",
    "dominio": "lanacion.com.py",
@@ -2221,13 +2238,6 @@
    "lugares": [
     "Asunción"
    ]
-  },
-  {
-   "titulo": "\"Todo un país lamenta la pérdida de estos jóvenes\", dijo Orsi sobre militares fallecidos durante entramiento de buceo",
-   "url": "https://www.elobservador.com.uy/nacional/todo-un-pais-lamenta-la-perdida-estos-jovenes-dijo-orsi-militares-fallecidos-entramiento-buceo-n6062204",
-   "dominio": "elobservador.com.uy",
-   "fecha": "2026-10-30",
-   "lugares": []
   },
   {
    "titulo": "Tragedia en el río Uruguay: quiénes eran los militares fallecidos en el curso de buzos tácticos en Río Negro",
@@ -3201,15 +3211,6 @@
    "lugares": [
     "Asunción",
     "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "PJC: hallan un cuerpo sin vida y sospechan que se trata del hombre raptado",
-   "url": "http://www.lanacion.com.py/pais/2026/10/20/pjc-hallan-un-cuerpo-sin-vida-y-sospechan-que-se-trata-del-hombre-raptado/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-20",
-   "lugares": [
-    "Pedro Juan Caballero"
    ]
   }
  ]
