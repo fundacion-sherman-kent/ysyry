@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-31T05:18:38Z",
+ "obtenido": "2026-10-31T12:08:58Z",
  "fuente": {
   "nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente",
   "url": "https://www.smn.gob.ar/",
@@ -9,10 +9,10 @@
   {
    "nombre": "La Plata",
    "fecha": "31-octubre-2026",
-   "hora": "02:00",
+   "hora": "08:00",
    "direccion": "Norte",
-   "kmh": 7,
-   "estado": "Parcialmente nublado"
+   "kmh": 3,
+   "estado": "Algo nublado"
   },
   {
    "nombre": "Punta Indio B.A.",
@@ -25,25 +25,25 @@
   {
    "nombre": "San Fernando",
    "fecha": "31-octubre-2026",
-   "hora": "02:00",
-   "direccion": "Noreste",
-   "kmh": 7,
+   "hora": "08:00",
+   "direccion": "Norte",
+   "kmh": 5,
    "estado": "Algo nublado"
   },
   {
    "nombre": "Aeroparque Buenos Aires",
    "fecha": "31-octubre-2026",
-   "hora": "02:00",
+   "hora": "08:00",
    "direccion": "Norte",
-   "kmh": 13,
-   "estado": "Algo nublado"
+   "kmh": 7,
+   "estado": "Parcialmente nublado"
   },
   {
    "nombre": "Buenos Aires",
    "fecha": "31-octubre-2026",
-   "hora": "01:00",
-   "direccion": "Norte",
-   "kmh": 9,
+   "hora": "08:00",
+   "direccion": "Noroeste",
+   "kmh": 5,
    "estado": "Algo nublado"
   }
  ]
