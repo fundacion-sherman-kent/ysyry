@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-31T12:15:10Z",
+ "obtenido": "2026-10-31T19:15:21Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 33,
+   "items": 26,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
+   "items": 92,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 347,
+   "items": 350,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 2
   },
   {
    "dominio": "senad.gov.py",
@@ -2161,6 +2161,25 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Murió la joven baleada por su pareja en un nuevo caso de feminicidio en PJC",
+   "url": "http://www.lanacion.com.py/pais/2026/10/31/murio-la-joven-baleada-por-su-pareja-en-un-nuevo-caso-de-feminicidio-en-pjc/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-31",
+   "lugares": [
+    "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "Ciudad del Este: hallan sin vida a mujer que estaba desaparecida",
+   "url": "http://www.lanacion.com.py/pais/2026/10/31/ciudad-del-este-hallan-sin-vida-a-mujer-que-estaba-desaparecida/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-31",
+   "lugares": [
+    "Ciudad del Este",
+    "Alto Paraná"
+   ]
+  },
+  {
    "titulo": "En Pilar inician plan para nuevos centros educativos",
    "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/10/31/en-pilar-inician-plan-para-nuevos-centros-educativos/",
    "dominio": "lanacion.com.py",
@@ -2170,9 +2189,9 @@
    ]
   },
   {
-   "titulo": "Violento intento de usurpación de la Villa Olímpica de Santa Fe: hay 8 detenidos",
-   "url": "https://www.infobae.com/sociedad/policiales/2026/10/31/violento-intento-de-usurpacion-de-la-villa-olimpica-de-santa-fe-hay-8-detenidos/",
-   "dominio": "infobae.com",
+   "titulo": "Intentaron usurpar las viviendas de la Villa Suramericana en Santa Fe: hubo gases y algunos detenidos",
+   "url": "https://perfil.com/sociedad/intentaron-usurpar-las-viviendas-de-la-villa-suramericana-en-santa-fe-hubo-gases-y-algunos-detenidos-a7woH3V5FCtV",
+   "dominio": "perfil.com",
    "fecha": "2026-10-31",
    "lugares": [
     "Santa Fe"
@@ -2184,6 +2203,15 @@
    "dominio": "ladiaria.com.uy",
    "fecha": "2026-10-31",
    "lugares": []
+  },
+  {
+   "titulo": "Violento intento de usurpación de la Villa Olímpica de Santa Fe: hay 8 detenidos",
+   "url": "https://www.infobae.com/sociedad/policiales/2026/10/31/violento-intento-de-usurpacion-de-la-villa-olimpica-de-santa-fe-hay-8-detenidos/",
+   "dominio": "infobae.com",
+   "fecha": "2026-10-31",
+   "lugares": [
+    "Santa Fe"
+   ]
   },
   {
    "titulo": "Yacyretá instaló la primera pieza electromecánica de la Unidad N ° 1 de Aña Cuá",
@@ -2221,6 +2249,15 @@
    "fecha": "2026-10-30",
    "lugares": [
     "Asunción"
+   ]
+  },
+  {
+   "titulo": "El pueblo poco conocido a 100 kilómetros de Buenos Aires que es ideal para una escapada de fin de semana",
+   "url": "https://www.lanacion.com.ar/lifestyle/el-pueblo-poco-conocido-a-100-kilometros-de-buenos-aires-que-es-ideal-para-una-escapada-de-fin-de-nid30102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-30",
+   "lugares": [
+    "Zárate"
    ]
   },
   {
@@ -2285,15 +2322,6 @@
    "fecha": "2026-10-30",
    "lugares": [
     "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "El pueblo poco conocido a 100 kilómetros de Buenos Aires que es ideal para una escapada de fin de semana",
-   "url": "https://www.lanacion.com.ar/lifestyle/el-pueblo-poco-conocido-a-100-kilometros-de-buenos-aires-que-es-ideal-para-una-escapada-de-fin-de-nid30102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-30",
-   "lugares": [
-    "Zárate"
    ]
   },
   {
@@ -3183,34 +3211,6 @@
    "fecha": "2026-10-21",
    "lugares": [
     "Asunción"
-   ]
-  },
-  {
-   "titulo": "Fiscalía realiza entrega vigilada tras extorsión y amenazas por deuda en local comercial de Asunción",
-   "url": "https://www.abc.com.py/policiales/2026/10/19/fiscalia-realiza-entrega-vigilada-tras-extorsion-y-amenazas-por-deuda-en-local-comercial-de-asuncion/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-20",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "El brasileño raptado y asesinado en Pedro Juan Caballero era buscado por narcotráfico e investigado por homicidios",
-   "url": "https://www.abc.com.py/policiales/2026/10/20/el-brasileno-raptado-y-asesinado-en-pedro-juan-caballero-era-buscado-por-narcotrafico-e-investigado-por-homicidios/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-20",
-   "lugares": [
-    "Pedro Juan Caballero"
-   ]
-  },
-  {
-   "titulo": "Botón Lince gestionó más de 5.200 pedidos de auxilio en sus primeros diez meses",
-   "url": "http://www.lanacion.com.py/pais/2026/10/20/boton-lince-gestiono-mas-de-5200-pedidos-de-auxilio-en-sus-primeros-diez-meses/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-20",
-   "lugares": [
-    "Asunción",
-    "Ciudad del Este"
    ]
   }
  ]
