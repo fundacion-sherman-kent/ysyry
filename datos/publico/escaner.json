@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-30T22:13:37Z",
+ "obtenido": "2026-10-31T05:27:32Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 31,
+   "items": 33,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
+   "items": 96,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 350,
+   "items": 379,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -197,6 +197,39 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Imputan a joven por tenencia de drogas y posesión ilegal de arma de fuego",
+   "url": "http://www.lanacion.com.py/pais/2026/10/30/imputan-a-joven-por-tenencia-de-drogas-y-posesion-ilegal-de-arma-de-fuego/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-10-31",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Alto Paraná"
+   ],
+   "ubicacion": [
+    -25.3,
+    -54.8
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 4,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/10/30/imputan-a-joven-por-tenencia-de-drogas-y-posesion-ilegal-de-arma-de-fuego/"
+    }
+   ],
+   "id": "f59c910078",
+   "verificado": true
+  },
   {
    "titulo": "Con la ayuda del can detector Andy, Prefectura secuestró más de 332 kilos de marihuana en Misiones",
    "url": "https://perfil.com/sociedad/se-secuestro-mas-de-332-kilos-de-marihuana-en-misiones-aYQ7X4i013Nn",
@@ -2123,436 +2156,43 @@
    ],
    "id": "cb1fe12b49",
    "verificado": true
-  },
-  {
-   "titulo": "SENAD DESMANTELA CENTRO DE PROCESAMIENTO DE DROGAS E INCAUTA CARGAMENTO DE MEDICAMENTOS PARA ADELGAZAR",
-   "url": "https://senad.gov.py/senad-desmantela-centro-de-procesamiento-de-drogas-e-incauta-cargamento-de-medicamentos-para-adelgazar/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-10-16",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este",
-    "Alto Paraná"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": {
-    "valor": 1.2,
-    "unidad": "kilos"
-   },
-   "puntaje": 8,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/senad-desmantela-centro-de-procesamiento-de-drogas-e-incauta-cargamento-de-medicamentos-para-adelgazar/"
-    }
-   ],
-   "id": "f1b81df5e8",
-   "verificado": true
-  },
-  {
-   "titulo": "El nivel del río Paraná se mantiene estable y el sábado se espera un leve descenso",
-   "url": "http://www.lanacion.com.py/pais/2026/10/16/el-nivel-del-rio-parana-se-mantiene-estable-y-el-sabado-se-espera-un-leve-descenso/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-16",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Itaipú"
-   ],
-   "ubicacion": [
-    -25.41,
-    -54.59
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/16/el-nivel-del-rio-parana-se-mantiene-estable-y-el-sabado-se-espera-un-leve-descenso/"
-    }
-   ],
-   "id": "f893c09621",
-   "verificado": true
-  },
-  {
-   "titulo": "CDE: inundación por crecida del río Paraná",
-   "url": "http://www.lanacion.com.py/ojo/2026/10/16/cde-inundacion-por-crecida-del-rio-parana/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-16",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/ojo/2026/10/16/cde-inundacion-por-crecida-del-rio-parana/"
-    }
-   ],
-   "id": "26965ef37b",
-   "verificado": true
-  },
-  {
-   "titulo": "Crecida histórica: el agua avanza y con lanchas y barcazas la misión es salvar a miles de animales",
-   "url": "https://www.lanacion.com.ar/economia/campo/hay-que-salir-con-todo-barcazas-lanchas-y-una-carrera-contra-reloj-para-salvar-a-los-animales-de-la-nid15102026/",
-   "dominio": "lanacion.com.ar",
-   "clase": "prensa",
-   "fecha": "2026-10-16",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Corrientes"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.ar",
-     "clase": "prensa",
-     "url": "https://www.lanacion.com.ar/economia/campo/hay-que-salir-con-todo-barcazas-lanchas-y-una-carrera-contra-reloj-para-salvar-a-los-animales-de-la-nid15102026/"
-    }
-   ],
-   "id": "3b2a2eb8e6",
-   "verificado": true
-  },
-  {
-   "titulo": "Bomberos de Ciudad del Este advierten sobre peligros tras la bajante del río Paraná",
-   "url": "http://www.lanacion.com.py/pais/2026/10/16/bomberos-de-ciudad-del-este-advierten-sobre-peligros-tras-la-bajante-del-rio-parana/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-16",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/16/bomberos-de-ciudad-del-este-advierten-sobre-peligros-tras-la-bajante-del-rio-parana/"
-    }
-   ],
-   "id": "4a0306461c",
-   "verificado": true
-  },
-  {
-   "titulo": "Crecida del río Paraná: superó los 6 metros en la Capital y ya hay 222 evacuados en Corrientes",
-   "url": "https://www.perfil.com/noticias/nea/crecida-del-rio-parana-supero-los-6-metros-en-la-capital-y-ya-hay-222-evacuados-en-corrientes.phtml",
-   "dominio": "perfil.com",
-   "clase": "prensa",
-   "fecha": "2026-10-16",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Corrientes"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "perfil.com",
-     "clase": "prensa",
-     "url": "https://www.perfil.com/noticias/nea/crecida-del-rio-parana-supero-los-6-metros-en-la-capital-y-ya-hay-222-evacuados-en-corrientes.phtml"
-    }
-   ],
-   "id": "b3fc2030f3",
-   "verificado": true
-  },
-  {
-   "titulo": "Crecida del río Paraná: el agua ya tapa las playas de Corrientes y amenaza con avanzar sobre las casas",
-   "url": "https://www.clarin.com/sociedad/crecida-rio-parana-agua-tapa-playas-corrientes-amenaza-avanzar-casas_0_is932MSuZz.html",
-   "dominio": "clarin.com",
-   "clase": "prensa",
-   "fecha": "2026-10-16",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Corrientes"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "clarin.com",
-     "clase": "prensa",
-     "url": "https://www.clarin.com/sociedad/crecida-rio-parana-agua-tapa-playas-corrientes-amenaza-avanzar-casas_0_is932MSuZz.html"
-    }
-   ],
-   "id": "6312f4d93e",
-   "verificado": true
-  },
-  {
-   "titulo": "Inundaciones en Corrientes: productores evacúan el ganado ante la crecida del río Paraná",
-   "url": "https://www.perfil.com/noticias/canal-e/inundaciones-en-corrientes-productores-evacuan-el-ganado-ante-la-crecida-del-rio-parana.phtml",
-   "dominio": "perfil.com",
-   "clase": "prensa",
-   "fecha": "2026-10-16",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Corrientes"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "perfil.com",
-     "clase": "prensa",
-     "url": "https://www.perfil.com/noticias/canal-e/inundaciones-en-corrientes-productores-evacuan-el-ganado-ante-la-crecida-del-rio-parana.phtml"
-    }
-   ],
-   "id": "9d59c462f7",
-   "verificado": true
-  },
-  {
-   "titulo": "La crecida del río Paraná avanza sobre las casas, afecta a 2.000 personas en Paraguay y deja tres desaparecidos en Santa Fe",
-   "url": "https://www.perfil.com/noticias/clima/la-crecida-del-rio-parana-avanza-sobre-las-casas-afecta-a-2000-personas-en-paraguay-y-deja-tres-desaparecidos-en-santa-fe.phtml",
-   "dominio": "perfil.com",
-   "clase": "prensa",
-   "fecha": "2026-10-16",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Santa Fe"
-   ],
-   "ubicacion": [
-    -31.63,
-    -60.7
-   ],
-   "zona": "z3",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "perfil.com",
-     "clase": "prensa",
-     "url": "https://www.perfil.com/noticias/clima/la-crecida-del-rio-parana-avanza-sobre-las-casas-afecta-a-2000-personas-en-paraguay-y-deja-tres-desaparecidos-en-santa-fe.phtml"
-    }
-   ],
-   "id": "25877ac1dd",
-   "verificado": true
-  },
-  {
-   "titulo": "Asunción se prepara para una crecida del río que podría afectar a 3.300 familias",
-   "url": "http://www.lanacion.com.py/pais/2026/10/16/asuncion-se-prepara-para-una-crecida-del-rio-que-podria-afectar-a-3300-familias/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-16",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Asunción"
-   ],
-   "ubicacion": [
-    -25.28,
-    -57.63
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/16/asuncion-se-prepara-para-una-crecida-del-rio-que-podria-afectar-a-3300-familias/"
-    }
-   ],
-   "id": "033bce17b0",
-   "verificado": true
-  },
-  {
-   "titulo": "Suben a 1.500 las familias evacuadas por crecida del río Paraná en fronteras de Paraguay",
-   "url": "https://www.abc.com.py/internacionales/2026/10/16/suben-a-1500-las-familias-evacuadas-por-crecida-del-rio-parana-en-fronteras-de-paraguay/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-16",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/internacionales/2026/10/16/suben-a-1500-las-familias-evacuadas-por-crecida-del-rio-parana-en-fronteras-de-paraguay/"
-    },
-    {
-     "dominio": "infobae.com",
-     "clase": "prensa",
-     "url": "https://www.infobae.com/america/agencias/2026/10/16/suben-a-1500-las-familias-evacuadas-por-crecida-del-rio-parana-en-fronteras-de-paraguay/"
-    }
-   ],
-   "id": "96d36d931d",
-   "verificado": true
-  },
-  {
-   "titulo": "Sube a 1.000 la cantidad de familias afectadas por la crecida del río Paraná",
-   "url": "https://www.abc.com.py/este/2026/10/16/sube-a-1000-la-cantidad-de-familias-afectadas-por-la-crecida-del-rio-parana/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-16",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/este/2026/10/16/sube-a-1000-la-cantidad-de-familias-afectadas-por-la-crecida-del-rio-parana/"
-    }
-   ],
-   "id": "e35ac9db34",
-   "verificado": true
-  },
-  {
-   "titulo": "Nivel del río Paraná subió más de 14 metros en 15 días y registra marcas históricas",
-   "url": "https://www.abc.com.py/este/2026/10/16/nivel-del-rio-parana-subio-mas-de-14-metros-en-15-dias-y-registra-marcas-historicas/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-16",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/este/2026/10/16/nivel-del-rio-parana-subio-mas-de-14-metros-en-15-dias-y-registra-marcas-historicas/"
-    }
-   ],
-   "id": "bfa55df9a8",
-   "verificado": true
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Yacyretá instaló la primera pieza electromecánica de la Unidad N ° 1 de Aña Cuá",
+   "url": "https://www.abc.com.py/economia/2026/10/30/yacyreta-instalo-la-primera-pieza-electromecanica-de-la-unidad-n-1-de-ana-cua/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-10-31",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "En Pilar inician plan para nuevos centros educativos",
+   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/10/31/en-pilar-inician-plan-para-nuevos-centros-educativos/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-31",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Tras muertes de efectivos durante un curso de buzo, Ejército ordena “investigación de urgencia” y niega “negligencia”",
+   "url": "https://ladiaria.com.uy/politica/articulo/2026/10/tras-muertes-de-efectivos-durante-un-curso-de-buzo-ejercito-ordena-investigacion-de-urgencia-y-niega-negligencia/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-31",
+   "lugares": []
+  },
+  {
+   "titulo": "Yacyretá marca un hito en Aña Cuá con la instalación de una pieza de 32 toneladas",
+   "url": "http://www.lanacion.com.py/politica/2026/10/30/yacyreta-marca-un-hito-en-ana-cua-con-la-instalacion-de-una-pieza-de-32-toneladas/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-30",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
   {
    "titulo": "Viaducto del km 10 de Ciudad del Este alcanza el 70 % de avance",
    "url": "http://www.lanacion.com.py/negocios/2026/10/30/viaducto-del-km-10-de-ciudad-del-este-alcanza-el-70-de-avance/",
@@ -2581,6 +2221,34 @@
    "lugares": [
     "Asunción"
    ]
+  },
+  {
+   "titulo": "\"Todo un país lamenta la pérdida de estos jóvenes\", dijo Orsi sobre militares fallecidos durante entramiento de buceo",
+   "url": "https://www.elobservador.com.uy/nacional/todo-un-pais-lamenta-la-perdida-estos-jovenes-dijo-orsi-militares-fallecidos-entramiento-buceo-n6062204",
+   "dominio": "elobservador.com.uy",
+   "fecha": "2026-10-30",
+   "lugares": []
+  },
+  {
+   "titulo": "Tragedia en el río Uruguay: quiénes eran los militares fallecidos en el curso de buzos tácticos en Río Negro",
+   "url": "https://www.elobservador.com.uy/nacional/tragedia-el-rio-uruguay-quienes-eran-los-militares-fallecidos-el-curso-buzos-tacticos-rio-negro-n6062191",
+   "dominio": "elobservador.com.uy",
+   "fecha": "2026-10-30",
+   "lugares": []
+  },
+  {
+   "titulo": "Ministerio de Defensa ante la muerte de tres buzos en Fray Bentos: “Es necesario esclarecer las circunstancias del hecho”",
+   "url": "https://ladiaria.com.uy/politica/articulo/2026/10/ministerio-de-defensa-ante-la-muerte-de-tres-buzos-en-fray-bentos-es-necesario-esclarecer-las-circunstancias-del-hecho/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-30",
+   "lugares": []
+  },
+  {
+   "titulo": "Tres buzos del Ejército murieron durante un entrenamiento en el río Uruguay",
+   "url": "https://ladiaria.com.uy/politica/articulo/2026/10/tres-buzos-del-ejercito-murieron-durante-un-entrenamiento-en-el-rio-uruguay/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-30",
+   "lugares": []
   },
   {
    "titulo": "Caputo se movió en Misiones con empleados de Yacyretá que entran a Casa Rosada y dependen de un primo del jefe de Economía",
@@ -2617,34 +2285,6 @@
    "lugares": [
     "Zárate"
    ]
-  },
-  {
-   "titulo": "\"Todo un país lamenta la pérdida de estos jóvenes\", dijo Orsi sobre militares fallecidos durante entramiento de buceo",
-   "url": "https://www.elobservador.com.uy/nacional/todo-un-pais-lamenta-la-perdida-estos-jovenes-dijo-orsi-militares-fallecidos-entramiento-buceo-n6062204",
-   "dominio": "elobservador.com.uy",
-   "fecha": "2026-10-30",
-   "lugares": []
-  },
-  {
-   "titulo": "Tragedia en el río Uruguay: quiénes eran los militares fallecidos en el curso de buzos tácticos en Río Negro",
-   "url": "https://www.elobservador.com.uy/nacional/tragedia-el-rio-uruguay-quienes-eran-los-militares-fallecidos-el-curso-buzos-tacticos-rio-negro-n6062191",
-   "dominio": "elobservador.com.uy",
-   "fecha": "2026-10-30",
-   "lugares": []
-  },
-  {
-   "titulo": "Ministerio de Defensa ante la muerte de tres buzos en Fray Bentos: “Es necesario esclarecer las circunstancias del hecho”",
-   "url": "https://ladiaria.com.uy/politica/articulo/2026/10/ministerio-de-defensa-ante-la-muerte-de-tres-buzos-en-fray-bentos-es-necesario-esclarecer-las-circunstancias-del-hecho/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-30",
-   "lugares": []
-  },
-  {
-   "titulo": "Tres buzos del Ejército murieron durante un entrenamiento en el río Uruguay",
-   "url": "https://ladiaria.com.uy/politica/articulo/2026/10/tres-buzos-del-ejercito-murieron-durante-un-entrenamiento-en-el-rio-uruguay/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-30",
-   "lugares": []
   },
   {
    "titulo": "Archivaron en Misiones la denuncia por el tránsito de Flávio Bolsonaro por Puerto Iguazú",
@@ -3571,34 +3211,6 @@
    "lugares": [
     "Pedro Juan Caballero"
    ]
-  },
-  {
-   "titulo": "Encontraron el cuerpo de uno de los pescadores que había desaparecido en el río Paraná",
-   "url": "https://www.lanacion.com.ar/seguridad/encontraron-el-cuerpo-de-uno-de-los-pescadores-que-habia-desaparecido-en-el-rio-parana-nid20102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-20",
-   "lugares": []
-  },
-  {
-   "titulo": "El cuerpo hallado en el río Paraná pertenece a uno de los hombres que era buscado tras caer de una lancha",
-   "url": "https://www.pagina12.com.ar/2026/10/20/el-cuerpo-hallado-en-el-rio-parana-pertenece-a-uno-de-los-hombres-que-era-buscado-tras-caer-de-una-lancha/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-10-20",
-   "lugares": []
-  },
-  {
-   "titulo": "Buscan identificar a un hombre que fue encontrado sin vida en el río Paraná",
-   "url": "https://www.pagina12.com.ar/2026/10/20/buscan-identificar-a-un-hombre-que-fue-encontrado-sin-vida-en-el-rio-parana/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-10-20",
-   "lugares": []
-  },
-  {
-   "titulo": "Carlos Antonio López: buscan a pescador desaparecido en el río Paraná tras vuelco de su canoa",
-   "url": "https://www.abc.com.py/policiales/2026/10/19/carlos-antonio-lopez-buscan-a-pescador-desaparecido-en-el-rio-parana-tras-vuelco-de-su-canoa/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-19",
-   "lugares": []
   }
  ]
 }
