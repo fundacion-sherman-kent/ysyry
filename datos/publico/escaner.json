@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-01T00:03:04Z",
+ "obtenido": "2026-11-01T05:53:02Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 28,
+   "items": 26,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 93,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -176,8 +176,8 @@
    "ok": false,
    "items": 0,
    "candidatos": 0,
-   "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 3
+   "error": "HTTP Error 504: Gateway Time-out",
+   "fallos_seguidos": 4
   },
   {
    "dominio": "senad.gov.py",
@@ -1936,6 +1936,15 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Yacyretá marca hito en Aña Cua al instalar pieza de 32 toneladas",
+   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/01/yacyreta-marca-hito-en-ana-cua-al-instalar-pieza-de-32-toneladas/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-01",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
    "titulo": "Murió la joven baleada por su pareja en un nuevo caso de feminicidio en PJC",
    "url": "http://www.lanacion.com.py/pais/2026/10/31/murio-la-joven-baleada-por-su-pareja-en-un-nuevo-caso-de-feminicidio-en-pjc/",
    "dominio": "lanacion.com.py",
@@ -1952,24 +1961,6 @@
    "lugares": [
     "Ciudad del Este",
     "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "En Pilar inician plan para nuevos centros educativos",
-   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/10/31/en-pilar-inician-plan-para-nuevos-centros-educativos/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-31",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Intentaron usurpar las viviendas de la Villa Suramericana en Santa Fe: hubo gases y algunos detenidos",
-   "url": "https://perfil.com/sociedad/intentaron-usurpar-las-viviendas-de-la-villa-suramericana-en-santa-fe-hubo-gases-y-algunos-detenidos-a7woH3V5FCtV",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-31",
-   "lugares": [
-    "Santa Fe"
    ]
   },
   {
@@ -2003,6 +1994,24 @@
    "lugares": []
   },
   {
+   "titulo": "En Pilar inician plan para nuevos centros educativos",
+   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/10/31/en-pilar-inician-plan-para-nuevos-centros-educativos/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-10-31",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Intentaron usurpar las viviendas de la Villa Suramericana en Santa Fe: hubo gases y algunos detenidos",
+   "url": "https://perfil.com/sociedad/intentaron-usurpar-las-viviendas-de-la-villa-suramericana-en-santa-fe-hubo-gases-y-algunos-detenidos-a7woH3V5FCtV",
+   "dominio": "perfil.com",
+   "fecha": "2026-10-31",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
    "titulo": "Violento intento de usurpación de la Villa Olímpica de Santa Fe: hay 8 detenidos",
    "url": "https://www.infobae.com/sociedad/policiales/2026/10/31/violento-intento-de-usurpacion-de-la-villa-olimpica-de-santa-fe-hay-8-detenidos/",
    "dominio": "infobae.com",
@@ -2018,6 +2027,15 @@
    "fecha": "2026-10-31",
    "lugares": [
     "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "El pueblo poco conocido a 100 kilómetros de Buenos Aires que es ideal para una escapada de fin de semana",
+   "url": "https://www.lanacion.com.ar/lifestyle/el-pueblo-poco-conocido-a-100-kilometros-de-buenos-aires-que-es-ideal-para-una-escapada-de-fin-de-nid30102026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-10-30",
+   "lugares": [
+    "Zárate"
    ]
   },
   {
@@ -2047,15 +2065,6 @@
    "fecha": "2026-10-30",
    "lugares": [
     "Asunción"
-   ]
-  },
-  {
-   "titulo": "El pueblo poco conocido a 100 kilómetros de Buenos Aires que es ideal para una escapada de fin de semana",
-   "url": "https://www.lanacion.com.ar/lifestyle/el-pueblo-poco-conocido-a-100-kilometros-de-buenos-aires-que-es-ideal-para-una-escapada-de-fin-de-nid30102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-30",
-   "lugares": [
-    "Zárate"
    ]
   },
   {
@@ -2969,15 +2978,6 @@
   {
    "titulo": "Itaipú impulsa modelos de biomasa forestal sostenible para la matriz energética",
    "url": "http://www.lanacion.com.py/negocios/2026/10/21/itaipu-impulsa-modelos-de-biomasa-forestal-sostenible-para-la-matriz-energetica/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-21",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Se cumplen 48 años del monumental desvío del río Paraná por Itaipú",
-   "url": "http://www.lanacion.com.py/pais/2026/10/21/se-cumplen-48-anos-del-monumental-desvio-del-rio-parana-por-itaipu/",
    "dominio": "lanacion.com.py",
    "fecha": "2026-10-21",
    "lugares": [
