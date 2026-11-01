@@ -1,6 +1,6 @@
 {
  "id": "Q-2026-003",
- "estado": "publicada",
+ "estado": "resuelta",
  "origen": "Indicador de crecida (21/10/2026): Corrientes, Paso de la Patria y Barranqueras sobre su cota de evacuación; Cerrito, Itá Corá y Panchito López en máximos históricos de Paraguay. Regla candidata NAV-2.",
  "enunciado": "¿El nivel del río en la estación Corrientes marcará 8,00 m o más al menos un día entre el 22 y el 31 de octubre de 2026?",
  "creada": "2026-10-21",
@@ -28,5 +28,8 @@
   "dictamen": "Corrientes todavía subía unos 20 cm por día el 20/10 y sólo necesita 73 cm más en diez días. Pilar seguía subiendo a 18 cm por día y Asunción todavía no marcó su cresta, de modo que parte de la onda del Paraguay no llegó a la confluencia. Itaipú anunció nuevas lluvias: una sola tormenta fuerte en la cuenca alta rehace la subida que Cerrito y el Alto Paraná parecen haber frenado. En 1983 el río llegó a 9,02 m en Corrientes tras semanas de ascenso lento. Evidencia en contra de este dictamen: Cerrito casi se estabilizó (+2 cm por día) y Posadas, Ituzaingó y Ciudad del Este ya están bajando, o sea que las dos fuentes principales dejaron de aportar más agua."
  },
  "publicada_el": "2026-10-21",
- "resolucion": "Automática el 31/10/2026 contra las lecturas diarias de Corrientes de la Prefectura Naval Argentina, publicadas por el INA (historial público del repositorio). Si hay menos lecturas que la mitad de los días del período, queda «sin datos suficientes» y no cuenta."
+ "resolucion": "Automática el 31/10/2026 contra las lecturas diarias de Corrientes de la Prefectura Naval Argentina, publicadas por el INA (historial público del repositorio). Si hay menos lecturas que la mitad de los días del período, queda «sin datos suficientes» y no cuenta.",
+ "resultado": false,
+ "valor_observado": "7.42 m",
+ "resuelta_el": "2026-11-01"
 }

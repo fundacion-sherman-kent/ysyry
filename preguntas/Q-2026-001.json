@@ -1,6 +1,6 @@
 {
  "id": "Q-2026-001",
- "estado": "publicada",
+ "estado": "resuelta",
  "origen": "Alerta candidata NAV-1 · Río Paraguay (Issue #1 de ysyry-registro), 2/10/2026. Reformulada el 7/10/2026 porque el río empezó a subir el 3/10 y el umbral original quedó fuera de alcance.",
  "enunciado": "¿El nivel del río en la estación Asunción marcará 0,50 m o menos al menos un día entre el 8 y el 31 de octubre de 2026?",
  "creada": "2026-10-07",
@@ -27,5 +27,8 @@
   "dictamen": "La onda de crecida que viene de aguas arriba puede ser corta: si el pulso es de unas decenas de centímetros, el río vuelve a bajar a un ritmo de 2 a 4 cm por día en plena estación seca y pasaría de nuevo por 0,50 m antes del 31/10. El salto de Puerto Murtinho puede ser lluvia local o un error de lectura que no se traduzca en una onda. Además el río estuvo en 0,46 m hace cuatro días, es decir a menos de 5 cm del umbral. Evidencia en contra de este dictamen: la subida es generalizada en toda la cuenca del Paraguay y del Alto Paraná, no en una sola estación."
  },
  "publicada_el": "2026-10-07",
- "resolucion": "Automática el 31/10/2026 contra las lecturas de Asunción de Meteorología de Paraguay (historial público del repositorio). Si hay menos lecturas que la mitad de los días del período, queda «sin datos suficientes» y no cuenta."
+ "resolucion": "Automática el 31/10/2026 contra las lecturas de Asunción de Meteorología de Paraguay (historial público del repositorio). Si hay menos lecturas que la mitad de los días del período, queda «sin datos suficientes» y no cuenta.",
+ "resultado": false,
+ "valor_observado": "0.81 m",
+ "resuelta_el": "2026-11-01"
 }

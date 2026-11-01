@@ -1,6 +1,6 @@
 {
  "id": "Q-2026-002",
- "estado": "publicada",
+ "estado": "resuelta",
  "origen": "Alerta candidata NAV-1 · Delta y Río de la Plata (Issue #4 de este repositorio). El 13/10/2026 la bajante dejó de ser el escenario más probable: una onda de crecida del Paraguay avanza hacia el Delta.",
  "enunciado": "¿El nivel del río en la estación Zárate marcará 1,60 m o más al menos un día entre el 14 y el 31 de octubre de 2026?",
  "creada": "2026-10-13",
@@ -28,5 +28,8 @@
   "dictamen": "La onda del Paraguay se atenúa en los más de 1.000 km hasta el Delta y puede llegar después del 31/10: si Asunción subió el 12/10, el pulso tarda alrededor de tres semanas en llegar a Zárate. El Paraná medio casi no se movió (Rosario +20 cm en ocho días) y Zárate necesita sostener 40 cm más que hoy, un nivel que alcanzó sólo con picos de marea y viento y que bajó enseguida (1,42 m el 2/10 y 0,41 m el 4/10). Además, la ventana termina el 31/10 y basta una sola lectura diaria por debajo para que la crecida no cuente. Evidencia en contra de este dictamen: Barranqueras ya subió 1,03 m, es decir que la onda ya pasó la confluencia de los dos ríos."
  },
  "publicada_el": "2026-10-13",
- "resolucion": "Automática el 31/10/2026 contra las lecturas diarias de Zárate de la Prefectura Naval Argentina, publicadas por el INA (historial público del repositorio). Si hay menos lecturas que la mitad de los días del período, queda «sin datos suficientes» y no cuenta."
+ "resolucion": "Automática el 31/10/2026 contra las lecturas diarias de Zárate de la Prefectura Naval Argentina, publicadas por el INA (historial público del repositorio). Si hay menos lecturas que la mitad de los días del período, queda «sin datos suficientes» y no cuenta.",
+ "resultado": false,
+ "valor_observado": "1.55 m",
+ "resuelta_el": "2026-11-01"
 }
