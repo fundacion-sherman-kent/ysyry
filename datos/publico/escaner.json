@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-01T13:12:33Z",
+ "obtenido": "2026-11-01T19:35:08Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,8 +14,8 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 25,
-   "candidatos": 1,
+   "items": 20,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 96,
+   "items": 98,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 353,
+   "items": 356,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 5
+   "fallos_seguidos": 6
   },
   {
    "dominio": "senad.gov.py",
@@ -1936,12 +1936,12 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "El río Paraguay bajó 10 centímetros en un día en la bahía de Asunción",
-   "url": "https://www.abc.com.py/clima/2026/11/01/el-rio-paraguay-bajo-10-centimetros-en-un-dia-en-la-bahia-de-asuncion/",
-   "dominio": "abc.com.py",
+   "titulo": "Capturan un mangurujú de 80 kilos en la Costanera de Encarnación",
+   "url": "http://www.lanacion.com.py/pais/2026/11/01/capturan-un-manguruju-de-80-kilos-en-la-costanera-de-encarnacion/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-11-01",
    "lugares": [
-    "Asunción"
+    "Encarnación"
    ]
   },
   {
@@ -1952,6 +1952,38 @@
    "lugares": [
     "Yacyretá"
    ]
+  },
+  {
+   "titulo": "El militar internado tras el accidente en el río Uruguay evoluciona favorablemente y se prevé que salga del CTI, informó el Ejército",
+   "url": "https://www.elobservador.com.uy/nacional/ejercito-informo-que-el-militar-internado-el-accidente-el-rio-uruguay-evoluciona-favorablemente-y-se-preve-que-deje-el-cti-n6062375",
+   "dominio": "elobservador.com.uy",
+   "fecha": "2026-11-01",
+   "lugares": []
+  },
+  {
+   "titulo": "El río Paraguay bajó 10 centímetros en un día en la bahía de Asunción",
+   "url": "https://www.abc.com.py/clima/2026/11/01/el-rio-paraguay-bajo-10-centimetros-en-un-dia-en-la-bahia-de-asuncion/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-01",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "MTOP informó que se avanzará en estudios de factibilidad sobre un puerto oceánico para facilitar la salida de Paraguay y Bolivia",
+   "url": "https://ladiaria.com.uy/politica/articulo/2026/10/mtop-informo-que-se-avanzara-en-estudios-de-factibilidad-sobre-un-puerto-oceanico-para-facilitar-la-salida-de-paraguay-y-bolivia/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-31",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Tras muertes de efectivos durante un curso de buzo, Ejército ordena “investigación de urgencia” y niega “negligencia”",
+   "url": "https://ladiaria.com.uy/politica/articulo/2026/10/tras-muertes-de-efectivos-durante-un-curso-de-buzo-ejercito-ordena-investigacion-de-urgencia-y-niega-negligencia/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-10-31",
+   "lugares": []
   },
   {
    "titulo": "Murió la joven baleada por su pareja en un nuevo caso de feminicidio en PJC",
@@ -1983,22 +2015,6 @@
    "titulo": "Comandate en jefe del Ejército descartó negligencia en muerte de militares pese a que se desconocen resultados de investigación de urgencia",
    "url": "https://www.elobservador.com.uy/referi/comandate-jefe-del-ejercito-descarto-negligencia-muerte-militares-el-rio-uruguay-pese-que-se-desconocen-resultados-investigacion-urgencia-n6062321",
    "dominio": "elobservador.com.uy",
-   "fecha": "2026-10-31",
-   "lugares": []
-  },
-  {
-   "titulo": "MTOP informó que se avanzará en estudios de factibilidad sobre un puerto oceánico para facilitar la salida de Paraguay y Bolivia",
-   "url": "https://ladiaria.com.uy/politica/articulo/2026/10/mtop-informo-que-se-avanzara-en-estudios-de-factibilidad-sobre-un-puerto-oceanico-para-facilitar-la-salida-de-paraguay-y-bolivia/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-31",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Tras muertes de efectivos durante un curso de buzo, Ejército ordena “investigación de urgencia” y niega “negligencia”",
-   "url": "https://ladiaria.com.uy/politica/articulo/2026/10/tras-muertes-de-efectivos-durante-un-curso-de-buzo-ejercito-ordena-investigacion-de-urgencia-y-niega-negligencia/",
-   "dominio": "ladiaria.com.uy",
    "fecha": "2026-10-31",
    "lugares": []
   },
@@ -2965,22 +2981,6 @@
    "fecha": "2026-10-21",
    "lugares": [
     "Alto Paraná",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Río Paraná alcanza niveles récords en Cerrito, Panchito López e Itá Corá",
-   "url": "http://www.lanacion.com.py/pais/2026/10/21/rio-parana-alcanza-niveles-records-en-cerrito-panchito-lopez-e-ita-cora/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-21",
-   "lugares": []
-  },
-  {
-   "titulo": "Itaipú e INE inician coordinación técnica para la próxima convocatoria de becas",
-   "url": "http://www.lanacion.com.py/pais/2026/10/21/itaipu-e-ine-inician-coordinacion-tecnica-para-la-proxima-convocatoria-de-becas/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-21",
-   "lugares": [
     "Itaipú"
    ]
   }
