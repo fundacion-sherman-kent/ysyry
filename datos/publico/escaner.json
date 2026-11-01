@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-01T05:53:02Z",
+ "obtenido": "2026-11-01T13:12:33Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 26,
+   "items": 25,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
+   "items": 96,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 352,
+   "items": 353,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -176,8 +176,8 @@
    "ok": false,
    "items": 0,
    "candidatos": 0,
-   "error": "HTTP Error 504: Gateway Time-out",
-   "fallos_seguidos": 4
+   "error": "HTTP Error 500: Internal Server Error",
+   "fallos_seguidos": 5
   },
   {
    "dominio": "senad.gov.py",
@@ -1936,6 +1936,15 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "El río Paraguay bajó 10 centímetros en un día en la bahía de Asunción",
+   "url": "https://www.abc.com.py/clima/2026/11/01/el-rio-paraguay-bajo-10-centimetros-en-un-dia-en-la-bahia-de-asuncion/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-01",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
    "titulo": "Yacyretá marca hito en Aña Cua al instalar pieza de 32 toneladas",
    "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/01/yacyreta-marca-hito-en-ana-cua-al-instalar-pieza-de-32-toneladas/",
    "dominio": "lanacion.com.py",
@@ -2969,15 +2978,6 @@
   {
    "titulo": "Itaipú e INE inician coordinación técnica para la próxima convocatoria de becas",
    "url": "http://www.lanacion.com.py/pais/2026/10/21/itaipu-e-ine-inician-coordinacion-tecnica-para-la-proxima-convocatoria-de-becas/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-21",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Itaipú impulsa modelos de biomasa forestal sostenible para la matriz energética",
-   "url": "http://www.lanacion.com.py/negocios/2026/10/21/itaipu-impulsa-modelos-de-biomasa-forestal-sostenible-para-la-matriz-energetica/",
    "dominio": "lanacion.com.py",
    "fecha": "2026-10-21",
    "lugares": [
