@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-10-31T19:23:24Z",
+ "obtenido": "2026-11-01T00:13:06Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "GDACS",
@@ -106,6 +106,20 @@
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
    "id": "inmet-28594"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-10-31 20:33",
+   "fin": "",
+   "lugares": [
+    "SANTA FE: Caseros - Constitucion - Gral Lopez.; ; CORDOBA: Marcos Juarez - Pres Roque S. Pena.; ; BUENOS AIRES: Florentino Ameghino - Gral Pinto - Gral Villegas - L. N. Alem."
+   ],
+   "riesgos": "",
+   "id": "smn-3816"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
