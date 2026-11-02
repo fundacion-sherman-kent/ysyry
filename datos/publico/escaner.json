@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-02T00:37:28Z",
+ "obtenido": "2026-11-02T10:54:35Z",
  "dias": 14,
  "fuentes": [
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 93,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 372,
+   "items": 300,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 7
+   "fallos_seguidos": 8
   },
   {
    "dominio": "senad.gov.py",
@@ -1875,6 +1875,22 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "La Policía Nacional reportó un herido y un fallecido por apuñalamiento",
+   "url": "http://www.lanacion.com.py/pais/2026/11/02/la-policia-nacional-reporto-un-herido-y-un-fallecido-por-apunalamiento/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-02",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Tres militares murieron durante un curso de buzo táctico en Uruguay: el entrenamiento nocturno que terminó en tragedia",
+   "url": "https://www.infobae.com/america/america-latina/2026/11/02/tres-militares-murieron-durante-un-curso-de-buzo-tactico-en-uruguay-el-entrenamiento-nocturno-que-termino-en-tragedia/",
+   "dominio": "infobae.com",
+   "fecha": "2026-11-02",
+   "lugares": []
+  },
+  {
    "titulo": "Capturan un mangurujú de 80 kilos en la Costanera de Encarnación",
    "url": "http://www.lanacion.com.py/pais/2026/11/01/capturan-un-manguruju-de-80-kilos-en-la-costanera-de-encarnacion/",
    "dominio": "lanacion.com.py",
@@ -1882,6 +1898,13 @@
    "lugares": [
     "Encarnación"
    ]
+  },
+  {
+   "titulo": "El militar internado tras el accidente en el río Uruguay evoluciona favorablemente y se prevé que salga del CTI, informó el Ejército",
+   "url": "https://www.elobservador.com.uy/nacional/ejercito-informo-que-el-militar-internado-el-accidente-el-rio-uruguay-evoluciona-favorablemente-y-se-preve-que-deje-el-cti-n6062375",
+   "dominio": "elobservador.com.uy",
+   "fecha": "2026-11-01",
+   "lugares": []
   },
   {
    "titulo": "Conmoción en Santa Fe: encontraron asesinados a tiros a un empresario y su esposa",
@@ -1900,13 +1923,6 @@
    "lugares": [
     "Santa Fe"
    ]
-  },
-  {
-   "titulo": "El militar internado tras el accidente en el río Uruguay evoluciona favorablemente y se prevé que salga del CTI, informó el Ejército",
-   "url": "https://www.elobservador.com.uy/nacional/ejercito-informo-que-el-militar-internado-el-accidente-el-rio-uruguay-evoluciona-favorablemente-y-se-preve-que-deje-el-cti-n6062375",
-   "dominio": "elobservador.com.uy",
-   "fecha": "2026-11-01",
-   "lugares": []
   },
   {
    "titulo": "Yacyretá marca hito en Aña Cua al instalar pieza de 32 toneladas",
@@ -2902,24 +2918,6 @@
    "fecha": "2026-10-21",
    "lugares": [
     "Asunción"
-   ]
-  },
-  {
-   "titulo": "Paraguay Business Week: Viceministerio de Mipymes refuerza convocatoria para el Centro TASK",
-   "url": "http://www.lanacion.com.py/negocios/2026/10/21/paraguay-business-week-viceministerio-de-mipymes-refuerza-convocatoria-para-el-centro-task/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-21",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Itaipú: una obra que transformó la energía y la economía paraguaya",
-   "url": "http://www.lanacion.com.py/foco/2026/10/21/itaipu-una-obra-que-transformo-la-energia-y-la-economia-paraguaya/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-21",
-   "lugares": [
-    "Itaipú"
    ]
   }
  ]
