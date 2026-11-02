@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-01T22:12:36Z",
+ "obtenido": "2026-11-02T06:26:37Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,15 +14,34 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 2
   },
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   }
  ],
  "avisos": [
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Chuvas Intensas",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-02 09:34",
+   "fin": "2026-11-02 23:59",
+   "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
+   "id": "inmet-28598"
+  },
   {
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
@@ -70,25 +89,6 @@
    "id": "inmet-28590"
   },
   {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Chuvas Intensas",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-02 09:34",
-   "fin": "2026-11-02 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
-   "id": "inmet-28598"
-  },
-  {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
    "fenomeno": "Fenómeno esperado: Lluvias intensas con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y alta probabilidad de caída de granizos.",
@@ -105,32 +105,30 @@
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-11-01 17:40",
+   "inicio": "2026-11-02 02:50",
    "fin": "",
    "lugares": [
-    "FORMOSA: Patino.; ; CHACO: Ldor Gral S. Martin."
+    "CHACO: 12 de Octubre - 2 de Abril - 9 de Julio - Almirante Brown - Chacabuco - Cmte Fernandez - Fray J. Maria de Oro - Gral Belgrano - Independencia - Maipu - Mayor L. J. Fontana - O Higgins - Quitilipi - San Lorenzo.; ; SANTIAGO DEL ESTERO: Alberdi."
    ],
    "riesgos": "",
-   "id": "smn-3843"
+   "id": "smn-3869"
   },
   {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
-   "fenomeno": "Green flood alert in Argentina",
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "",
+   "inicio": "2026-11-02 02:09",
    "fin": "",
    "lugares": [
-    "-28.36, -59.26"
+    "FORMOSA: Bermejo.; ; CHACO: Gral Guemes."
    ],
    "riesgos": "",
-   "id": "gdacs-&amp;eventid=1104250",
-   "lat": -28.3550102,
-   "lon": -59.2593412
+   "id": "smn-3867"
   }
  ],
  "no_consultadas": [
