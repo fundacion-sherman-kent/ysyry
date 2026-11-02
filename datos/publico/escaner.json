@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-01T19:35:08Z",
+ "obtenido": "2026-11-02T00:37:28Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 20,
+   "items": 19,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 98,
+   "items": 92,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 356,
+   "items": 372,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 6
+   "fallos_seguidos": 7
   },
   {
    "dominio": "senad.gov.py",
@@ -1871,67 +1871,6 @@
    ],
    "id": "97799c514e",
    "verificado": true
-  },
-  {
-   "titulo": "Concepción: Río Paraguay sube 9 centímetros, pero no se reportan inundaciones",
-   "url": "https://www.abc.com.py/nacionales/2026/10/18/concepcion-rio-paraguay-sube-9-centimetros-pero-no-se-reportan-inundaciones/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-18",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Concepción"
-   ],
-   "ubicacion": [
-    -23.4,
-    -57.43
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/nacionales/2026/10/18/concepcion-rio-paraguay-sube-9-centimetros-pero-no-se-reportan-inundaciones/"
-    }
-   ],
-   "id": "ac4eca99aa",
-   "verificado": true
-  },
-  {
-   "titulo": "Piden prudencia ante próximas precipitaciones pronosticadas",
-   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/18/piden-prudencia-ante-proximas-precipitaciones-pronosticadas/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-18",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/18/piden-prudencia-ante-proximas-precipitaciones-pronosticadas/"
-    }
-   ],
-   "id": "b43de4d2b9",
-   "verificado": true
   }
  ],
  "sin_tipo": [
@@ -1945,12 +1884,21 @@
    ]
   },
   {
-   "titulo": "Yacyretá marca hito en Aña Cua al instalar pieza de 32 toneladas",
-   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/01/yacyreta-marca-hito-en-ana-cua-al-instalar-pieza-de-32-toneladas/",
-   "dominio": "lanacion.com.py",
+   "titulo": "Conmoción en Santa Fe: encontraron asesinados a tiros a un empresario y su esposa",
+   "url": "https://perfil.com/sociedad/conmocion-en-santa-fe-encontraron-asesinados-a-tiros-a-un-empresario-y-su-esposa-aBIgh3T1HwtT",
+   "dominio": "perfil.com",
    "fecha": "2026-11-01",
    "lugares": [
-    "Yacyretá"
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Conmoción en Santa Fe: hallaron muertos a un reconocido empresario de una compañía de montaje y a su mujer",
+   "url": "https://www.lanacion.com.ar/seguridad/conmocion-en-santa-fe-hallaron-muertos-a-un-reconocido-empresario-de-una-compania-de-montaje-y-a-su-nid01112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-01",
+   "lugares": [
+    "Santa Fe"
    ]
   },
   {
@@ -1959,6 +1907,15 @@
    "dominio": "elobservador.com.uy",
    "fecha": "2026-11-01",
    "lugares": []
+  },
+  {
+   "titulo": "Yacyretá marca hito en Aña Cua al instalar pieza de 32 toneladas",
+   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/01/yacyreta-marca-hito-en-ana-cua-al-instalar-pieza-de-32-toneladas/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-01",
+   "lugares": [
+    "Yacyretá"
+   ]
   },
   {
    "titulo": "El río Paraguay bajó 10 centímetros en un día en la bahía de Asunción",
@@ -2962,25 +2919,6 @@
    "dominio": "lanacion.com.py",
    "fecha": "2026-10-21",
    "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "LN PM: edición del 21 de octubre",
-   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/10/21/ln-pm-edicion-del-21-de-octubre/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-21",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Peña y el subsecretario de EE. UU., Christopher Landau, visitan la hidroeléctrica Itaipú",
-   "url": "http://www.lanacion.com.py/politica/2026/10/21/pena-y-el-subsecretario-de-ee-uu-christopher-landau-visitan-la-hidroelectrica-itaipu/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-21",
-   "lugares": [
-    "Alto Paraná",
     "Itaipú"
    ]
   }
