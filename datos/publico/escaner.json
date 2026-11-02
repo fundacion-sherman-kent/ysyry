@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-02T10:54:35Z",
+ "obtenido": "2026-11-02T21:40:43Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 19,
+   "items": 25,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
+   "items": 84,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 300,
+   "items": 320,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,14 +177,14 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 8
+   "fallos_seguidos": 9
   },
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 6,
+   "candidatos": 5,
    "fallos_seguidos": 0
   },
   {
@@ -198,6 +198,39 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "DETIENEN EN CDE A «LAURA, LA PISTOLERA», VINCULADA AHORA AL TRÁFICO DE COCAÍNA",
+   "url": "https://senad.gov.py/detienen-en-cde-a-laura-la-pistolera-vinculada-ahora-al-trafico-de-cocaina/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-11-02",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/detienen-en-cde-a-laura-la-pistolera-vinculada-ahora-al-trafico-de-cocaina/"
+    }
+   ],
+   "id": "fd3bbce08a",
+   "verificado": true
+  },
   {
    "titulo": "Imputan a joven por tenencia de drogas y posesión ilegal de arma de fuego",
    "url": "http://www.lanacion.com.py/pais/2026/10/30/imputan-a-joven-por-tenencia-de-drogas-y-posesion-ilegal-de-arma-de-fuego/",
@@ -1884,6 +1917,45 @@
    ]
   },
   {
+   "titulo": "Está en Rosario: Molinos Río de la Plata concretó la venta de parte de un histórico complejo industrial",
+   "url": "https://www.lanacion.com.ar/economia/campo/esta-en-rosario-molinos-rio-de-la-plata-concreto-la-venta-de-parte-de-un-historico-complejo-nid02112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-02",
+   "lugares": [
+    "Rosario"
+   ]
+  },
+  {
+   "titulo": "Salió de CTI el único sobreviviente de la tragedia en el río Uruguay y el Ejército analiza los resultados de la investigación interna",
+   "url": "https://www.elobservador.com.uy/nacional/salio-cti-el-unico-sobreviviente-la-tragedia-el-rio-uruguay-y-el-ejercito-analiza-los-resultados-la-investigacion-interna-n6062464",
+   "dominio": "elobservador.com.uy",
+   "fecha": "2026-11-02",
+   "lugares": []
+  },
+  {
+   "titulo": "Hallaron muertas a una madre y a su hija en Santa Fe",
+   "url": "https://www.pagina12.com.ar/2026/11/02/hallaron-muertas-a-una-madre-y-a-su-hija-en-santa-fe/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-11-02",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Gobierno decretó dos días de duelo nacional por la muerte de los tres militares",
+   "url": "https://ladiaria.com.uy/politica/articulo/2026/11/gobierno-decreto-dos-dias-de-duelo-nacional-por-la-muerte-de-los-tres-militares/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-11-02",
+   "lugares": []
+  },
+  {
+   "titulo": "El post-punkdemia de Mujer Cebra y su resistencia a lo efímero",
+   "url": "https://ladiaria.com.uy/cultura/articulo/2026/11/el-post-punkdemia-de-mujer-cebra-y-su-resistencia-a-lo-efimero/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-11-02",
+   "lugares": []
+  },
+  {
    "titulo": "Tres militares murieron durante un curso de buzo táctico en Uruguay: el entrenamiento nocturno que terminó en tragedia",
    "url": "https://www.infobae.com/america/america-latina/2026/11/02/tres-militares-murieron-durante-un-curso-de-buzo-tactico-en-uruguay-el-entrenamiento-nocturno-que-termino-en-tragedia/",
    "dominio": "infobae.com",
@@ -2873,51 +2945,6 @@
    "fecha": "2026-10-22",
    "lugares": [
     "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "Puente de la Bioceánica entra en la recta final con US$ 103 millones de Itaipú",
-   "url": "https://www.abc.com.py/economia/2026/10/22/puente-de-la-bioceanica-entra-en-la-recta-final-con-us-103-millones-de-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Peña “fusiló” a la ANDE y perdió respaldo para reformar el sector eléctrico, afirma exjefe técnico de Yacyretá",
-   "url": "https://www.abc.com.py/economia/2026/10/22/pena-fusilo-a-la-ande-y-perdio-respaldo-para-reformar-el-sector-electrico-afirma-exjefe-tecnico-de-yacyreta/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Santa Fe, la segunda provincia del país con mayor déficit fiscal",
-   "url": "https://www.pagina12.com.ar/2026/10/22/santa-fe-la-segunda-provincia-del-pais-con-mayor-deficit-fiscal/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Identifican a presunto organizador del crimen de un narco y su pareja en Pedro Juan Caballero",
-   "url": "https://www.abc.com.py/policiales/2026/10/21/identifican-a-presunto-organizador-del-crimen-de-un-narco-y-su-pareja-en-pedro-juan-caballero/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-21",
-   "lugares": [
-    "Pedro Juan Caballero"
-   ]
-  },
-  {
-   "titulo": "EE. UU. anuncia oficina antinarcóticos en Asunción para coordinar operaciones en Cono Sur",
-   "url": "http://www.lanacion.com.py/politica/2026/10/21/ee-uu-anuncia-oficina-antinarcoticos-en-asuncion-para-coordinar-operaciones-en-cono-sur/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-21",
-   "lugares": [
-    "Asunción"
    ]
   }
  ]
