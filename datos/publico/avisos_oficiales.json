@@ -1,20 +1,20 @@
 {
- "obtenido": "2026-11-03T02:58:32Z",
+ "obtenido": "2026-11-03T11:04:32Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 5
+   "avisos_en_el_corredor": 3
   },
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "GDACS",
@@ -23,39 +23,6 @@
   }
  ],
  "avisos": [
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-02 08:55",
-   "fin": "2026-11-02 23:59",
-   "lugares": [
-    "Corumbá",
-    "Porto Murtinho",
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28602"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo",
-   "color": "#F96602",
-   "inicio": "2026-11-02 08:40",
-   "fin": "2026-11-02 23:59",
-   "lugares": [
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
-   "id": "inmet-28600"
-  },
   {
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
@@ -103,18 +70,18 @@
    "id": "inmet-28607"
   },
   {
-   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
-   "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO N° 3897 por ocurrencia de TORMENTAS FUERTES CON RAFAGAS Y CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "",
+   "inicio": "2026-11-03 07:29",
    "fin": "",
    "lugares": [
-    "Paraguay"
+    "FORMOSA: Patino."
    ],
    "riesgos": "",
-   "id": "dmh-vigente"
+   "id": "smn-3897"
   }
  ],
  "no_consultadas": [
