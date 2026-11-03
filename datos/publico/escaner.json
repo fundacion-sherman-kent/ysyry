@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-03T06:38:07Z",
+ "obtenido": "2026-11-03T16:59:23Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 28,
+   "items": 33,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 86,
+   "items": 89,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 355,
+   "items": 322,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 10
+   "fallos_seguidos": 11
   },
   {
    "dominio": "senad.gov.py",
@@ -1648,6 +1648,24 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "LN PM: edición del 3 de noviembre",
+   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/11/03/ln-pm-edicion-del-3-de-noviembre/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-03",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Remezowski asume la Intendencia con eje en barrios, Yacyretá e integración",
+   "url": "http://www.lanacion.com.py/politica/2026/11/03/remezowski-asume-la-intendencia-con-eje-en-barrios-yacyreta-e-integracion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-03",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
    "titulo": "Femicidio en CDE: víctima recibió cuatro impactos y se espera otra inspección en la morgue de Asunción",
    "url": "http://www.lanacion.com.py/pais/2026/11/02/femicidio-en-cde-victima-recibio-cuatro-impactos-y-se-espera-otra-inspeccion-en-la-morgue-de-asuncion/",
    "dominio": "lanacion.com.py",
@@ -1659,16 +1677,25 @@
    ]
   },
   {
-   "titulo": "Salió de CTI el único sobreviviente de la tragedia en el río Uruguay y el Ejército analiza los resultados de la investigación interna",
-   "url": "https://www.elobservador.com.uy/nacional/salio-cti-el-unico-sobreviviente-la-tragedia-el-rio-uruguay-y-el-ejercito-analiza-los-resultados-la-investigacion-interna-n6062464",
-   "dominio": "elobservador.com.uy",
+   "titulo": "Está en Rosario: Molinos Río de la Plata concretó la venta de parte de un histórico complejo industrial",
+   "url": "https://www.lanacion.com.ar/economia/campo/esta-en-rosario-molinos-rio-de-la-plata-concreto-la-venta-de-parte-de-un-historico-complejo-nid02112026/",
+   "dominio": "lanacion.com.ar",
    "fecha": "2026-11-02",
-   "lugares": []
+   "lugares": [
+    "Rosario"
+   ]
   },
   {
    "titulo": "Gobierno decretó dos días de duelo nacional por la muerte de los tres militares",
    "url": "https://ladiaria.com.uy/politica/articulo/2026/11/gobierno-decreto-dos-dias-de-duelo-nacional-por-la-muerte-de-los-tres-militares/",
    "dominio": "ladiaria.com.uy",
+   "fecha": "2026-11-02",
+   "lugares": []
+  },
+  {
+   "titulo": "Salió de CTI el único sobreviviente de la tragedia en el río Uruguay y el Ejército analiza los resultados de la investigación interna",
+   "url": "https://www.elobservador.com.uy/nacional/salio-cti-el-unico-sobreviviente-la-tragedia-el-rio-uruguay-y-el-ejercito-analiza-los-resultados-la-investigacion-interna-n6062464",
+   "dominio": "elobservador.com.uy",
    "fecha": "2026-11-02",
    "lugares": []
   },
@@ -1686,15 +1713,6 @@
    "fecha": "2026-11-02",
    "lugares": [
     "Asunción"
-   ]
-  },
-  {
-   "titulo": "Está en Rosario: Molinos Río de la Plata concretó la venta de parte de un histórico complejo industrial",
-   "url": "https://www.lanacion.com.ar/economia/campo/esta-en-rosario-molinos-rio-de-la-plata-concreto-la-venta-de-parte-de-un-historico-complejo-nid02112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-02",
-   "lugares": [
-    "Rosario"
    ]
   },
   {
@@ -2663,24 +2681,6 @@
    "titulo": "La 'fábrica de IA' Crusoe construirá en Paraguay un centro de datos alimentado con Itaipú",
    "url": "https://www.abc.com.py/ciencia/2026/10/22/la-fabrica-de-ia-crusoe-construira-en-paraguay-un-centro-de-datos-alimentado-con-itaipu/",
    "dominio": "abc.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "“Más paraguayo que la mandioca”: el emotivo regreso de Landau a sus raíces",
-   "url": "http://www.lanacion.com.py/politica/2026/10/22/mas-paraguayo-que-la-mandioca-el-emotivo-regreso-de-landau-a-sus-raices/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Peña proyecta energía solar y nuclear para asegurar el futuro energético de Paraguay",
-   "url": "http://www.lanacion.com.py/politica/2026/10/22/pena-proyecta-energia-solar-y-nuclear-para-asegurar-el-futuro-energetico-de-paraguay/",
-   "dominio": "lanacion.com.py",
    "fecha": "2026-10-22",
    "lugares": [
     "Itaipú"
