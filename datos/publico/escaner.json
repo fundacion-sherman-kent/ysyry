@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-02T21:40:43Z",
+ "obtenido": "2026-11-03T06:38:07Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 25,
+   "items": 28,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 84,
+   "items": 86,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 320,
+   "items": 355,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 9
+   "fallos_seguidos": 10
   },
   {
    "dominio": "senad.gov.py",
@@ -1644,269 +1644,41 @@
    ],
    "id": "6e632bbd12",
    "verificado": true
-  },
-  {
-   "titulo": "Ayolas bajo agua",
-   "url": "http://www.lanacion.com.py/ojo/2026/10/19/ayolas-bajo-agua/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-19",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Ayolas"
-   ],
-   "ubicacion": [
-    -27.39,
-    -56.84
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/ojo/2026/10/19/ayolas-bajo-agua/"
-    }
-   ],
-   "id": "e4edee8f3f",
-   "verificado": true
-  },
-  {
-   "titulo": "Evacuación por inundación en San Rafael",
-   "url": "http://www.lanacion.com.py/ojo/2026/10/19/evacuacion-por-inundacion-en-san-rafael/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-19",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/ojo/2026/10/19/evacuacion-por-inundacion-en-san-rafael/"
-    }
-   ],
-   "id": "ced295fc88",
-   "verificado": true
-  },
-  {
-   "titulo": "Inundaciones: cierran compuertas en Ñeembucú por crecida del río Paraguay",
-   "url": "http://www.lanacion.com.py/pais/2026/10/19/inundaciones-cierran-compuertas-en-neembucu-por-crecida-del-rio-paraguay/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-19",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Pilar"
-   ],
-   "ubicacion": [
-    -26.86,
-    -58.3
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/19/inundaciones-cierran-compuertas-en-neembucu-por-crecida-del-rio-paraguay/"
-    }
-   ],
-   "id": "f8c77c6219",
-   "verificado": true
-  },
-  {
-   "titulo": "Horas decisivas: la fecha límite que obliga a una región a sacar 11.000 vacas en medio de la urgencia por la crecida del Paraná",
-   "url": "https://www.lanacion.com.ar/economia/campo/antes-del-viernes-la-fecha-limite-que-obliga-a-una-region-a-sacar-11000-vacas-en-medio-de-la-nid19102026/",
-   "dominio": "lanacion.com.ar",
-   "clase": "prensa",
-   "fecha": "2026-10-19",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Corrientes",
-    "Goya"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.ar",
-     "clase": "prensa",
-     "url": "https://www.lanacion.com.ar/economia/campo/antes-del-viernes-la-fecha-limite-que-obliga-a-una-region-a-sacar-11000-vacas-en-medio-de-la-nid19102026/"
-    }
-   ],
-   "id": "6108bb7d08",
-   "verificado": true
-  },
-  {
-   "titulo": "Pilar: cierran compuertas de estación de bombeos ante crecida del río Paraguay",
-   "url": "https://www.abc.com.py/economia/2026/10/19/pilar-cierran-compuertas-de-estacion-de-bombeos-ante-crecida-del-rio-paraguay/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-19",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Pilar"
-   ],
-   "ubicacion": [
-    -26.86,
-    -58.3
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/economia/2026/10/19/pilar-cierran-compuertas-de-estacion-de-bombeos-ante-crecida-del-rio-paraguay/"
-    }
-   ],
-   "id": "3a1dad3b69",
-   "verificado": true
-  },
-  {
-   "titulo": "Dos muertos por inundaciones en el noreste de Argentina vinculadas a El Niño",
-   "url": "http://www.lanacion.com.py/mundo/2026/10/19/dos-muertos-por-inundaciones-en-el-noreste-de-argentina-vinculadas-a-el-nino/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-19",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Corrientes"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/mundo/2026/10/19/dos-muertos-por-inundaciones-en-el-noreste-de-argentina-vinculadas-a-el-nino/"
-    }
-   ],
-   "id": "c3d79cb3c8",
-   "verificado": true
-  },
-  {
-   "titulo": "La insólita historia del “barco fantasma” de 107 metros que quedó a la deriva en el río Paraná por las crecidas",
-   "url": "https://www.infobae.com/sociedad/2026/10/19/la-insolita-historia-del-barco-fantasma-de-107-metros-quedo-a-la-deriva-en-el-rio-parana-por-las-crecidas/",
-   "dominio": "infobae.com",
-   "clase": "prensa",
-   "fecha": "2026-10-19",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Corrientes"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "infobae.com",
-     "clase": "prensa",
-     "url": "https://www.infobae.com/sociedad/2026/10/19/la-insolita-historia-del-barco-fantasma-de-107-metros-quedo-a-la-deriva-en-el-rio-parana-por-las-crecidas/"
-    }
-   ],
-   "id": "4ee308c74a",
-   "verificado": true
-  },
-  {
-   "titulo": "El Niño en Argentina: cuáles serán las regiones más afectadas por lluvias y crecidas en los próximos días",
-   "url": "https://www.perfil.com/noticias/clima/el-nino-en-argentina-cuales-seran-las-regiones-mas-afectadas-por-lluvias-y-crecidas-en-los-proximos-dias-a50-bgd.phtml",
-   "dominio": "perfil.com",
-   "clase": "prensa",
-   "fecha": "2026-10-19",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "perfil.com",
-     "clase": "prensa",
-     "url": "https://www.perfil.com/noticias/clima/el-nino-en-argentina-cuales-seran-las-regiones-mas-afectadas-por-lluvias-y-crecidas-en-los-proximos-dias-a50-bgd.phtml"
-    }
-   ],
-   "id": "97799c514e",
-   "verificado": true
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Femicidio en CDE: víctima recibió cuatro impactos y se espera otra inspección en la morgue de Asunción",
+   "url": "http://www.lanacion.com.py/pais/2026/11/02/femicidio-en-cde-victima-recibio-cuatro-impactos-y-se-espera-otra-inspeccion-en-la-morgue-de-asuncion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-03",
+   "lugares": [
+    "Asunción",
+    "Ciudad del Este",
+    "Alto Paraná"
+   ]
+  },
+  {
+   "titulo": "Salió de CTI el único sobreviviente de la tragedia en el río Uruguay y el Ejército analiza los resultados de la investigación interna",
+   "url": "https://www.elobservador.com.uy/nacional/salio-cti-el-unico-sobreviviente-la-tragedia-el-rio-uruguay-y-el-ejercito-analiza-los-resultados-la-investigacion-interna-n6062464",
+   "dominio": "elobservador.com.uy",
+   "fecha": "2026-11-02",
+   "lugares": []
+  },
+  {
+   "titulo": "Gobierno decretó dos días de duelo nacional por la muerte de los tres militares",
+   "url": "https://ladiaria.com.uy/politica/articulo/2026/11/gobierno-decreto-dos-dias-de-duelo-nacional-por-la-muerte-de-los-tres-militares/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-11-02",
+   "lugares": []
+  },
+  {
+   "titulo": "El pospunkdemia de Mujer Cebra y su resistencia a lo efímero",
+   "url": "https://ladiaria.com.uy/cultura/articulo/2026/11/el-pospunkdemia-de-mujer-cebra-y-su-resistencia-a-lo-efimero/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-11-02",
+   "lugares": []
+  },
   {
    "titulo": "La Policía Nacional reportó un herido y un fallecido por apuñalamiento",
    "url": "http://www.lanacion.com.py/pais/2026/11/02/la-policia-nacional-reporto-un-herido-y-un-fallecido-por-apunalamiento/",
@@ -1926,13 +1698,6 @@
    ]
   },
   {
-   "titulo": "Salió de CTI el único sobreviviente de la tragedia en el río Uruguay y el Ejército analiza los resultados de la investigación interna",
-   "url": "https://www.elobservador.com.uy/nacional/salio-cti-el-unico-sobreviviente-la-tragedia-el-rio-uruguay-y-el-ejercito-analiza-los-resultados-la-investigacion-interna-n6062464",
-   "dominio": "elobservador.com.uy",
-   "fecha": "2026-11-02",
-   "lugares": []
-  },
-  {
    "titulo": "Hallaron muertas a una madre y a su hija en Santa Fe",
    "url": "https://www.pagina12.com.ar/2026/11/02/hallaron-muertas-a-una-madre-y-a-su-hija-en-santa-fe/",
    "dominio": "pagina12.com.ar",
@@ -1940,13 +1705,6 @@
    "lugares": [
     "Santa Fe"
    ]
-  },
-  {
-   "titulo": "Gobierno decretó dos días de duelo nacional por la muerte de los tres militares",
-   "url": "https://ladiaria.com.uy/politica/articulo/2026/11/gobierno-decreto-dos-dias-de-duelo-nacional-por-la-muerte-de-los-tres-militares/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-11-02",
-   "lugares": []
   },
   {
    "titulo": "El post-punkdemia de Mujer Cebra y su resistencia a lo efímero",
@@ -2926,25 +2684,6 @@
    "fecha": "2026-10-22",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Histórico acuerdo de Yacyretá permitirá titular 1.134 viviendas en Ayolas",
-   "url": "http://www.lanacion.com.py/politica/2026/10/22/historico-acuerdo-de-yacyreta-permitira-titular-1134-viviendas-en-ayolas/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Ayolas",
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Un hombre en estado de adicción intentó estrangular a su madre y fue aprehendido",
-   "url": "http://www.lanacion.com.py/pais/2026/10/21/un-hombre-en-estado-de-adiccion-intento-estrangular-a-su-madre-y-fue-aprehendido/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Ciudad del Este"
    ]
   }
  ]
