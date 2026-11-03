@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-03T06:27:36Z",
+ "obtenido": "2026-11-03T16:57:37Z",
  "fuente": {
   "nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente",
   "url": "https://www.smn.gob.ar/",
@@ -9,42 +9,42 @@
   {
    "nombre": "La Plata",
    "fecha": "03-noviembre-2026",
-   "hora": "01:00",
-   "direccion": "Calma",
-   "kmh": 0,
-   "estado": "Despejado"
+   "hora": "13:00",
+   "direccion": "Este",
+   "kmh": 14,
+   "estado": "Nublado"
   },
   {
    "nombre": "Punta Indio B.A.",
-   "fecha": "02-noviembre-2026",
-   "hora": "21:00",
+   "fecha": "03-noviembre-2026",
+   "hora": "13:00",
    "direccion": "Este",
-   "kmh": 5,
-   "estado": "Despejado"
+   "kmh": 20,
+   "estado": "Cubierto"
   },
   {
    "nombre": "San Fernando",
    "fecha": "03-noviembre-2026",
-   "hora": "03:00",
+   "hora": "13:00",
    "direccion": "Este",
-   "kmh": 5,
-   "estado": "Algo nublado"
+   "kmh": 18,
+   "estado": "Nublado"
   },
   {
    "nombre": "Aeroparque Buenos Aires",
    "fecha": "03-noviembre-2026",
-   "hora": "03:00",
+   "hora": "13:00",
    "direccion": "Este",
-   "kmh": 9,
-   "estado": "Algo nublado"
+   "kmh": 22,
+   "estado": "Nublado"
   },
   {
    "nombre": "Buenos Aires",
    "fecha": "03-noviembre-2026",
-   "hora": "03:00",
+   "hora": "13:00",
    "direccion": "Este",
-   "kmh": 3,
-   "estado": "Despejado"
+   "kmh": 11,
+   "estado": "Cubierto"
   }
  ]
 }
