@@ -9,6 +9,7 @@ Variables de entorno (todas opcionales):
 """
 import json
 import os
+import sys
 import shutil
 from pathlib import Path
 
@@ -33,17 +34,8 @@ def _imo_valido(valor):
 d = json.load(open(D / "mapa_v10.json", encoding="utf-8"))
 marcos = json.load(open(MARCOS, encoding="utf-8"))
 
-# Categoría de buque por el código numérico de tipo AIS (ITU-R M.1371 §3.3.2):
-# 3x pesca/remolque/buceo, 5x servicios de puerto, 6x pasajeros, 7x carga, 8x tanque.
-def categoria_ais(tipo):
-    if tipo is None: return ("desconocido", "#ffd400")
-    t = int(tipo)
-    if 30 <= t < 40: return ("pesca/remolque", "#8fd9c4")
-    if 50 <= t < 60: return ("servicio portuario", "#dfe6e9")
-    if 60 <= t < 70: return ("pasajeros", "#b8f06a")
-    if 70 <= t < 80: return ("carga", "#ffd400")
-    if 80 <= t < 90: return ("tanque", "#ff8a5c")
-    return ("otro/sin clasificar", "#9aa7ad")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from buques import categoria_ais, RE_ESTADO, RE_ESTADO_PY, RE_LP_PY, es_estado_py, es_estado   # compartido con la capa viva
 colores = d["colores_pais"]
 # Ysyry es azul: los países se distinguen por tonos del gris azul de la casa (el violeta es de FEMÓNOE)
 colores = {"ARG": "#667B89", "PRY": "#C6C6C5", "BRA": "#3d5566", "URY": "#8aa0ae", "BOL": "#2b3a44", "CHL": "#1f3b4d"}
@@ -328,23 +320,6 @@ ESPECIFICAS = {  # nombre AIS exacto -> página de Wikipedia de ese mismo buque
     "GC-24 MANTILLA": "Clase Halcón", "GC-25 AZOPARDO": "PNA Azopardo (GC-25)",
     "ARA CDAD ZARATE": "ARA Ciudad de Zárate (Q-61)", "ALMIRANTE IRIZAR": "ARA Almirante Irízar (Q-5)",
 }
-RE_ESTADO = _re.compile(r"^(ARA|GC)[\s\-]")
-# Paraguay: la Armada Paraguaya designa sus unidades con prefijo ARP (p. ej. ARP P-05
-# «Itaipú») y la Prefectura General Naval con PGN; las lanchas patrulleras rápidas
-# se llaman LP-101, LP-102... (armadaparaguaya.mil.py y es.wikipedia.org/wiki/Armada_Paraguaya,
-# 2/10/2026). El nombre solo NO alcanza —«Itaipú» o «Humaitá» también son remolcadores
-# civiles—, por eso se exige el prefijo, y LP sólo con bandera paraguaya.
-RE_ESTADO_PY = _re.compile(r"^(ARP|PGN)[\s\-]")
-RE_LP_PY = _re.compile(r"^LP[\s\-]?\d{2,3}$")
-
-def es_estado_py(p):
-    n = (p.get("nombre") or "").strip().upper()
-    return bool(RE_ESTADO_PY.match(n)) or (p.get("bandera") == "PY" and bool(RE_LP_PY.match(n)))
-
-def es_estado(p):
-    n = (p.get("nombre") or "").strip().upper()
-    return p.get("tipo_ais") in (35, 55) or bool(RE_ESTADO.match(n)) or es_estado_py(p)
-
 def fuerza_inferida(p):
     n = (p.get("nombre") or "").strip().upper()
     if n.startswith("ARP"): return "Armada Paraguaya (inferido por el prefijo ARP)"
@@ -739,6 +714,84 @@ def _comprimir(lista):
 _info_lista, _info_ref = _comprimir(poi_info + riesgo_info + zona_info + zona_pulso_info + buque_info)
 info_json = json.dumps(_info_lista, ensure_ascii=False, separators=(",", ":"))
 
+CAPA_VIVA_JS = r"""
+/* --- Capa viva: posiciones de AIS cada pocos minutos, sin reconstruir la página (colectores/vivo.py) --- */
+const VIVO_URL = "__vivo_url__";
+let vivoDatos = null;
+(function(){
+  const NS = "http://www.w3.org/2000/svg";
+  const capa = document.getElementById("capa-viva");
+  const ULT = grupos.length - 1;
+  const latido = document.getElementById("latido");
+  const cabUlt = document.querySelector(".topbar .ultima b");
+  function fechaHora(iso){ return iso.slice(0, 10) + " " + iso.slice(11, 16) + " UTC"; }
+  function haceMin(iso){ return Math.max(0, Math.round((Date.now() - Date.parse(iso)) / 60000)); }
+  function textoHace(m){ return m < 90 ? m + " min" : Math.floor(m / 60) + " h " + (m % 60) + " min"; }
+  function infoVivo(b, d){
+    const l = [];
+    l.push("Bandera " + (b.b || "sin dato"));
+    l.push(b.t + " (tipo autodeclarado)");
+    if (b.v === null || b.v === undefined) l.push("velocidad sin dato");
+    else if (b.v < 0.5) l.push("sin movimiento");
+    else l.push("rumbo " + (b.c === null || b.c === undefined ? "sin dato" : Math.round(b.c) + "°") + ", " + b.v + " nudos");
+    l.push(b.d && b.d !== "0" && b.d !== "00" ? "destino declarado por el buque, sin validar: " + b.d : "destino no declarado");
+    if (b.q) l.push("calado declarado " + String(b.q).replace(".", ",") + " m");
+    if (b.e) l.push("llegada estimada declarada (mes-día hora UTC), sin validar: " + b.e);
+    if (b.l) l.push("eslora " + b.l + " m");
+    l.push("posición vista hace " + textoHace(haceMin(b.s)));
+    return {id: "vv" + b.i, categoria: (b.u ? "Embarcación del Estado" : "Embarcación") + " · AIS en vivo", titulo: b.n || "(sin nombre transmitido)", tipo: l.join(" · "),
+      fuente: "AIS vía Open Waters (AISHub y aisstream.io), captura de " + fechaHora(d.hora_utc) + " · fuente única. La ficha completa (foto, verificación por IMO) está en la captura horaria",
+      clase: "buque", coord: b.la.toFixed(4) + ", " + b.lo.toFixed(4), foto: null};
+  }
+  function el(nombre, atributos){ const e = document.createElementNS(NS, nombre); for (const k in atributos) e.setAttribute(k, atributos[k]); return e; }
+  function dibujar(d){
+    while (capa.firstChild) capa.removeChild(capa.firstChild);
+    d.buques.slice().sort(function(a, b){ return (a.u | 0) - (b.u | 0); }).forEach(function(b){
+      const g = el("g", {"class": "buque-g clicable buque-vivo" + (b.u ? " buque-estado" : ""), "data-familia": b.u ? "estado" : "comercio", "data-i": "vv" + b.i,
+        "transform": "translate(" + b.x + "," + b.y + ")" + (b.c === null || b.c === undefined ? "" : " rotate(" + b.c + ")")});
+      g.appendChild(el("circle", {"class": "hit", "r": "13"}));
+      if (b.u) g.appendChild(el("path", {"d": "M0,-8 L6,6 L-6,6 Z", "style": "fill:#2f7bff;stroke:#fff;stroke-width:1.2;stroke-linejoin:round"}));
+      else if (b.c !== null && b.c !== undefined) g.appendChild(el("path", {"class": "buque-flecha", "d": "M0,-5 L3.4,3.6 L0,1.4 L-3.4,3.6 Z", "style": "fill:" + b.k}));
+      else g.appendChild(el("circle", {"class": "buque", "r": "4", "style": "fill:" + b.k}));
+      g.addEventListener("click", function(){ abrirFicha(infoVivo(b, d)); });
+      capa.appendChild(g);
+    });
+    if (window.__registrarVivo) window.__registrarVivo(capa);
+    const act = document.querySelector(".familia-tab.activa");
+    if (act && act.dataset.familia) act.click();
+  }
+  function aplicar(){
+    const activa = !!vivoDatos && parseInt(slider.value, 10) === ULT;
+    capa.style.display = activa ? "" : "none";
+    if (activa){
+      grupos[ULT].style.display = "none";
+      etqHora.textContent = "EN VIVO · " + vivoDatos.hora_utc.slice(11, 16) + " UTC";
+      etqConteo.textContent = vivoDatos.buques.length + " posiciones";
+    }
+  }
+  const mostrar0 = mostrar;
+  mostrar = function(i){ mostrar0(i); aplicar(); };
+  function desactivar(){
+    vivoDatos = null; capa.style.display = "none";
+    grupos[ULT].style.display = (parseInt(slider.value, 10) === ULT) ? "" : "none";
+  }
+  function pedir(){
+    // una clave por ventana de 5 minutos: todos los visitantes comparten la misma copia y el origen no recibe una consulta por persona
+    fetch(VIVO_URL + "?m=" + Math.floor(Date.now() / 300000)).then(function(r){ if (!r.ok) throw new Error("sin capa viva"); return r.json(); }).then(function(d){
+      if (!d || !d.buques || !d.buques.length) return;
+      if (haceMin(d.hora_utc) > 45){ desactivar(); return; }      // más vieja que 45 minutos: no se presenta como viva
+      const nuevo = !vivoDatos || vivoDatos.hora_utc !== d.hora_utc;
+      vivoDatos = d;
+      if (nuevo) dibujar(d);
+      if (latido) latido.dataset.ultima = d.hora_utc;
+      if (window.__pintaLatido) window.__pintaLatido();
+      if (cabUlt) cabUlt.textContent = fechaHora(d.hora_utc);
+      aplicar();
+    }).catch(function(){ if (vivoDatos && haceMin(vivoDatos.hora_utc) > 45) desactivar(); });
+  }
+  pedir(); setInterval(pedir, 60000);
+})();
+"""
 TPL = r"""<!doctype html>
 <!-- Medicion. Es la MISMA etiqueta de la Fundacion que ya usa SIWA: una sola
      propiedad y un solo flujo para las tres plataformas, que se separan despues
@@ -1165,6 +1218,7 @@ footer{flex-direction:column}
     __amarres__
     __poi__
     __grupos_hora__
+    <g id="capa-viva" style="display:none"></g>
     __riesgos__
     __zonas_etq__
     __poi_etq__
@@ -1413,6 +1467,15 @@ const SAT = __sat_meta_json__;
     items.push({tipo:"e", el:g, x:+l.getAttribute("x1"), y:+l.getAttribute("y1")});
   });
   let escalaPrev = -1;
+  // los buques de la capa viva se redibujan en cada actualización: se vuelven a anotar acá para que el zoom los escale como a los demás
+  window.__registrarVivo = function(capa){
+    for (let k = items.length - 1; k >= 0; k--) if (items[k].vivo) items.splice(k, 1);
+    capa.querySelectorAll("g[transform]").forEach(function(g){
+      const m = RE_T.exec(g.getAttribute("transform"));
+      if (m){ const h = g.querySelector(".hit"); items.push({tipo:"g", el:g, x:+m[1], y:+m[2], r:(m[3]===undefined ? null : +m[3]), buque:true, amar:false, hit:h, rh:(h ? +h.getAttribute("r") : 0), vivo:true}); }
+    });
+    escalaPrev = -1; escalar();
+  };
   function escalar(){
     const s = vb.w / W0;
     if (Math.abs(s - escalaPrev) < 1e-5) return;
@@ -1589,10 +1652,7 @@ document.querySelectorAll(".pregunta .barra i").forEach(function(b){
   requestAnimationFrame(function(){ setTimeout(function(){ b.style.width = w; }, 150); });
 });
 
-document.querySelectorAll(".clicable").forEach(function(el){
-  el.addEventListener("click", function(){
-    const info = porId[el.dataset.i] || infoAmarre(el.dataset.i);
-    if (!info) return;
+function abrirFicha(info){
     const clase = info.clase || "ciudad";
     pCov.className = "panel-cover cover-" + clase + (info.foto ? " con-foto" : "");
     pIco.innerHTML = ICONOS[clase] || ICONOS.ciudad;
@@ -1659,8 +1719,15 @@ document.querySelectorAll(".clicable").forEach(function(el){
     pF.textContent = info.fuente;
     panel.classList.add("abierto");
     panel.scrollTop = 0;
+}
+document.querySelectorAll(".clicable").forEach(function(el){
+  el.addEventListener("click", function(){
+    const info = porId[el.dataset.i] || infoAmarre(el.dataset.i);
+    if (!info) return;
+    abrirFicha(info);
   });
 });
+__capa_viva_js__
 (function(){
   const el = document.getElementById("latido"), tx = document.getElementById("latido-txt");
   if (!el || !tx) return;
@@ -1674,6 +1741,7 @@ document.querySelectorAll(".clicable").forEach(function(el){
     else if (min < 240) { el.className = "latido retrasada"; tx.textContent = "Captura retrasada · última " + hh + " · hace " + hace; }
     else { el.className = "latido sinsenal"; tx.textContent = "Sin captura reciente · última " + hh + " · hace " + hace; }
   }
+  window.__pintaLatido = pinta;      // la capa viva lo llama apenas llega una captura nueva
   pinta(); setInterval(pinta, 60000);
 })();
 (function(){
@@ -1820,6 +1888,8 @@ assert _TITULO_TPL in TPL
 TPL = TPL.replace(_TITULO_TPL, _ETIQUETAS_TPL, 1)
 html = TPL
 SUST = {
+    "capa_viva_js": CAPA_VIVA_JS,      # primero: su texto lleva el marcador de la dirección
+    "vivo_url": _dir.VIVO,
     "provincias": "\n    ".join(prov_svg),
     "paises": "\n    ".join(paises_svg),
     "rutas": rutas_html,

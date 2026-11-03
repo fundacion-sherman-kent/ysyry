@@ -1,0 +1,38 @@
+name: Capa viva (AIS cada 5 minutos)
+
+# Público. Cada 5 minutos pide las posiciones de AIS del corredor y las deja en un JSON compacto en la rama datos-vivo (un solo commit,
+# siempre reemplazado); el mapa de la página lo lee sin reconstruirse. No consume tokens de Claude.
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: capa-viva
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  capturar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Capturar posiciones
+        run: python3 -u colectores/vivo.py /tmp/vivo/vivo.json
+      - name: Publicar en la rama datos-vivo
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd /tmp/vivo
+          git init -q -b datos-vivo
+          git config user.name "ysyry-robot"
+          git config user.email "ysyry-robot@users.noreply.github.com"
+          git add vivo.json
+          git commit -q -m "Capa viva ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push -q --force origin datos-vivo
