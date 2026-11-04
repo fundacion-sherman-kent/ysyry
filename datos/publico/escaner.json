@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-04T14:22:49Z",
+ "obtenido": "2026-11-04T21:15:40Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 39,
+   "items": 31,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
+   "items": 91,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 318,
+   "items": 346,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 14
+   "fallos_seguidos": 15
   },
   {
    "dominio": "senad.gov.py",
@@ -1593,6 +1593,24 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Itaipú transfirió US$ 18 millones menos al Estado que en 2025: caen pagos por cesión de energía",
+   "url": "https://www.abc.com.py/economia/2026/11/04/itaipu-transfirio-us-18-millones-menos-al-estado-que-en-2025-caen-pagos-por-cesion-de-energia/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-04",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "LN PM: edición del 4 de noviembre",
+   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/11/04/ln-pm-edicion-del-4-de-noviembre/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-04",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
    "titulo": "Remezowski asume en Encarnación con eje en barrios, Yacyretá e integración",
    "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/04/remezowski-asume-en-encarnacion-con-eje-en-barrios-yacyreta-e-integracion/",
    "dominio": "lanacion.com.py",
@@ -2613,24 +2631,6 @@
    "fecha": "2026-10-22",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Acuerdo entre empresa estadounidense y la Itaipú: ¿qué tan beneficioso sería?",
-   "url": "https://www.abc.com.py/economia/2026/10/22/acuerdo-entre-empresa-estadounidense-y-la-itaipu-que-tan-beneficioso-seria/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Indignación en Encarnación: joven investigado por coacción sexual vive a metros de la víctima",
-   "url": "http://www.lanacion.com.py/pais/2026/10/22/indignacion-en-encarnacion-joven-investigado-por-coaccion-sexual-vive-a-metros-de-la-victima/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Encarnación"
    ]
   }
  ]
