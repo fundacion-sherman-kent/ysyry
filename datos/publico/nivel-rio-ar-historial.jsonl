@@ -1499,3 +1499,30 @@
 {"id": 45, "estacion": "Ibicuy", "fecha": "2026-11-03", "nivel_m": 0.8}
 {"id": 57, "estacion": "Puerto Formosa", "fecha": "2026-11-03", "nivel_m": 5.58}
 {"id": 79, "estacion": "Concordia", "fecha": "2026-11-03", "nivel_m": 9.04}
+{"id": 14, "estacion": "Posadas", "fecha": "2026-11-04", "nivel_m": 10.0}
+{"id": 15, "estacion": "Ituzaingó", "fecha": "2026-11-04", "nivel_m": 3.74}
+{"id": 18, "estacion": "Paso de la Patria", "fecha": "2026-11-04", "nivel_m": 7.22}
+{"id": 19, "estacion": "Corrientes", "fecha": "2026-11-04", "nivel_m": 7.02}
+{"id": 20, "estacion": "Barranqueras", "fecha": "2026-11-04", "nivel_m": 6.9}
+{"id": 21, "estacion": "Empedrado", "fecha": "2026-11-04", "nivel_m": 6.07}
+{"id": 22, "estacion": "Bella Vista", "fecha": "2026-11-04", "nivel_m": 6.44}
+{"id": 23, "estacion": "Goya", "fecha": "2026-11-04", "nivel_m": 6.1}
+{"id": 24, "estacion": "Reconquista", "fecha": "2026-11-04", "nivel_m": 5.92}
+{"id": 25, "estacion": "Esquina", "fecha": "2026-11-04", "nivel_m": 5.56}
+{"id": 26, "estacion": "La Paz", "fecha": "2026-11-04", "nivel_m": 5.94}
+{"id": 29, "estacion": "Paraná", "fecha": "2026-11-04", "nivel_m": 4.49}
+{"id": 30, "estacion": "Santa Fe", "fecha": "2026-11-04", "nivel_m": 4.5}
+{"id": 31, "estacion": "Diamante", "fecha": "2026-11-04", "nivel_m": 4.84}
+{"id": 32, "estacion": "Victoria", "fecha": "2026-11-04", "nivel_m": 4.12}
+{"id": 33, "estacion": "San Lorenzo (San Martín)", "fecha": "2026-11-04", "nivel_m": 4.38}
+{"id": 34, "estacion": "Rosario", "fecha": "2026-11-04", "nivel_m": 3.99}
+{"id": 35, "estacion": "Villa Constitución", "fecha": "2026-11-04", "nivel_m": 3.17}
+{"id": 36, "estacion": "San Nicolás", "fecha": "2026-11-04", "nivel_m": 2.9}
+{"id": 38, "estacion": "San Pedro", "fecha": "2026-11-04", "nivel_m": 2.04}
+{"id": 39, "estacion": "Baradero", "fecha": "2026-11-04", "nivel_m": 1.8}
+{"id": 40, "estacion": "Zárate", "fecha": "2026-11-04", "nivel_m": 0.96}
+{"id": 41, "estacion": "Campana", "fecha": "2026-11-04", "nivel_m": 0.6}
+{"id": 43, "estacion": "Villa Paranacito", "fecha": "2026-11-04", "nivel_m": 1.7}
+{"id": 45, "estacion": "Ibicuy", "fecha": "2026-11-04", "nivel_m": 1.0}
+{"id": 57, "estacion": "Puerto Formosa", "fecha": "2026-11-04", "nivel_m": 5.54}
+{"id": 79, "estacion": "Concordia", "fecha": "2026-11-04", "nivel_m": 8.39}
