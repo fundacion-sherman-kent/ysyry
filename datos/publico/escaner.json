@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-03T23:15:22Z",
+ "obtenido": "2026-11-04T06:05:03Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 39,
+   "items": 42,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 96,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -93,10 +93,11 @@
   {
    "dominio": "hoy.com.py",
    "url": "https://www.hoy.com.py/feed",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "HTTP Error 415: Unsupported Media Type",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "ip.gov.py",
@@ -166,7 +167,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 342,
+   "items": 372,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +178,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 12
+   "fallos_seguidos": 13
   },
   {
    "dominio": "senad.gov.py",
@@ -1517,148 +1518,57 @@
    ],
    "id": "34e4113681",
    "verificado": true
-  },
-  {
-   "titulo": "Más de 4.200 familias sufren la crecida del río Paraná en cuatro departamentos",
-   "url": "http://www.lanacion.com.py/pais/2026/10/20/mas-de-4200-familias-sufren-la-crecida-del-rio-parana-en-cuatro-departamentos/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-20",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Ayolas"
-   ],
-   "ubicacion": [
-    -27.39,
-    -56.84
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/20/mas-de-4200-familias-sufren-la-crecida-del-rio-parana-en-cuatro-departamentos/"
-    }
-   ],
-   "id": "0f1e3f8acb",
-   "verificado": true
-  },
-  {
-   "titulo": "Itaipú monitorea el río Paraná ante el anuncio de nuevas lluvias",
-   "url": "http://www.lanacion.com.py/pais/2026/10/20/itaipu-monitorea-el-rio-parana-ante-el-anuncio-de-nuevas-lluvias/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-20",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Itaipú"
-   ],
-   "ubicacion": [
-    -25.41,
-    -54.59
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/20/itaipu-monitorea-el-rio-parana-ante-el-anuncio-de-nuevas-lluvias/"
-    }
-   ],
-   "id": "7be790db48",
-   "verificado": true
-  },
-  {
-   "titulo": "Allanan tres casas y detienen a dos supuestos miembros de la banda que ejecutó dos asaltos",
-   "url": "http://www.lanacion.com.py/pais/2026/10/20/allanan-tres-casas-y-detienen-a-dos-supuestos-miembros-de-la-banda-que-ejecuto-dos-asaltos/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-20",
-   "tipos": [
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 4,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/20/allanan-tres-casas-y-detienen-a-dos-supuestos-miembros-de-la-banda-que-ejecuto-dos-asaltos/"
-    }
-   ],
-   "id": "61d373f7fb",
-   "verificado": true
-  },
-  {
-   "titulo": "Crecida del río Paraná: la emergencia hídrica \"va de menos a más\" y vigilan el pronóstico de lluvias en las altas cuencas",
-   "url": "https://www.perfil.com/noticias/nea/crecida-del-rio-parana-la-emergencia-hidrica-va-de-menos-a-mas-y-vigilan-el-pronostico-de-lluvias-en-las-altas-cuencas.phtml",
-   "dominio": "perfil.com",
-   "clase": "prensa",
-   "fecha": "2026-10-20",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "perfil.com",
-     "clase": "prensa",
-     "url": "https://www.perfil.com/noticias/nea/crecida-del-rio-parana-la-emergencia-hidrica-va-de-menos-a-mas-y-vigilan-el-pronostico-de-lluvias-en-las-altas-cuencas.phtml"
-    }
-   ],
-   "id": "6e632bbd12",
-   "verificado": true
   }
  ],
  "sin_tipo": [
   {
-   "titulo": "LN PM: edición del 3 de noviembre",
-   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/11/03/ln-pm-edicion-del-3-de-noviembre/",
+   "titulo": "Remezowski asume en Encarnación con eje en barrios, Yacyretá e integración",
+   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/04/remezowski-asume-en-encarnacion-con-eje-en-barrios-yacyreta-e-integracion/",
    "dominio": "lanacion.com.py",
-   "fecha": "2026-11-03",
+   "fecha": "2026-11-04",
    "lugares": [
+    "Asunción",
+    "Encarnación",
     "Yacyretá"
    ]
   },
   {
-   "titulo": "Remezowski asume la Intendencia con eje en barrios, Yacyretá e integración",
-   "url": "http://www.lanacion.com.py/politica/2026/11/03/remezowski-asume-la-intendencia-con-eje-en-barrios-yacyreta-e-integracion/",
+   "titulo": "Procesan por violencia familiar a un hombre tras presunta agresión y amenazas a su pareja",
+   "url": "http://www.lanacion.com.py/pais/2026/11/03/procesan-por-violencia-familiar-a-un-hombre-tras-presunta-agresion-y-amenazas-a-su-pareja/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-04",
+   "lugares": [
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Fiscales allanan la residencia del CEO de ueno bank en Asunción",
+   "url": "http://www.lanacion.com.py/pais/2026/11/03/fiscales-allanan-la-residencia-del-ceo-de-ueno-bank-en-asuncion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-04",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Entradas para Argentina vs Uruguay: cuándo salen a la venta, precios y por dónde comprar",
+   "url": "https://perfil.com/deportes/entradas-argentina-vs-uruguay-en-la-bombonera-precios-y-como-comprar-ajjyM4z2geeQ",
+   "dominio": "perfil.com",
+   "fecha": "2026-11-04",
+   "lugares": []
+  },
+  {
+   "titulo": "Santa Fe: investigan un posible femicidio seguido de suicidio tras la muerte de una docente",
+   "url": "https://www.lanacion.com.ar/sociedad/santa-fe-investigan-un-posible-femicidio-seguido-de-suicidio-tras-la-muerte-de-una-docente-nid04112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-04",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "LN PM: edición del 3 de noviembre",
+   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/11/03/ln-pm-edicion-del-3-de-noviembre/",
    "dominio": "lanacion.com.py",
    "fecha": "2026-11-03",
    "lugares": [
@@ -1671,6 +1581,15 @@
    "dominio": "elobservador.com.uy",
    "fecha": "2026-11-03",
    "lugares": []
+  },
+  {
+   "titulo": "Remezowski asume la Intendencia con eje en barrios, Yacyretá e integración",
+   "url": "http://www.lanacion.com.py/politica/2026/11/03/remezowski-asume-la-intendencia-con-eje-en-barrios-yacyreta-e-integracion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-03",
+   "lugares": [
+    "Yacyretá"
+   ]
   },
   {
    "titulo": "Femicidio en CDE: víctima recibió cuatro impactos y se espera otra inspección en la morgue de Asunción",
@@ -2642,47 +2561,6 @@
    "lugares": [
     "Asunción"
    ]
-  },
-  {
-   "titulo": "Rachid afirma que la estructura de alias “Macho” utiliza a nativos como escudo",
-   "url": "http://www.lanacion.com.py/politica/2026/10/22/rachid-afirma-que-la-estructura-de-alias-macho-utiliza-a-nativos-como-escudo/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Canindeyú"
-   ]
-  },
-  {
-   "titulo": "Adolescente desaparecida fue encontrada en Brasil junto a un camionero paraguayo",
-   "url": "http://www.lanacion.com.py/pais/2026/10/22/adolescente-desaparecida-fue-encontrada-en-brasil-junto-a-un-camionero-paraguayo/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "Alerta policial ante amenaza de tiroteo en universidad privada de Asunción",
-   "url": "http://www.lanacion.com.py/pais/2026/10/22/alerta-policial-ante-amenaza-de-tiroteo-en-universidad-privada-de-asuncion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "El regreso de la teología política",
-   "url": "https://ladiaria.com.uy/opinion/articulo/2026/10/el-regreso-de-la-teologia-politica/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-22",
-   "lugares": []
-  },
-  {
-   "titulo": "Landau destaca “la fuerza del poderoso río Paraná” ante anuncio de inversión de data centers",
-   "url": "https://www.abc.com.py/internacionales/2026/10/22/landau-destaca-la-fuerza-del-poderoso-rio-parana-ante-anuncio-de-inversion-de-data-centers/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-22",
-   "lugares": []
   }
  ]
 }
