@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-03T19:38:34Z",
+ "obtenido": "2026-11-04T01:29:59Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 3
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "GDACS",
@@ -105,48 +105,6 @@
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
    "id": "inmet-28613"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-03 15:59",
-   "fin": "",
-   "lugares": [
-    "BUENOS AIRES: Colon - Pergamino - Rojas."
-   ],
-   "riesgos": "",
-   "id": "smn-3921"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-03 15:34",
-   "fin": "",
-   "lugares": [
-    "MISIONES: El Dorado - Gral Manuel Belgrano - Montecarlo - San Pedro."
-   ],
-   "riesgos": "",
-   "id": "smn-3919"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-03 16:24",
-   "fin": "",
-   "lugares": [
-    "SANTA FE: Belgrano - Caseros - Constitucion - Gral Lopez - Iriondo - San Lorenzo.; ; CORDOBA: Marcos Juarez."
-   ],
-   "riesgos": "",
-   "id": "smn-3923"
   }
  ],
  "no_consultadas": [
