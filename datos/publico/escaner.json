@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-04T06:05:03Z",
+ "obtenido": "2026-11-04T14:22:49Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 42,
+   "items": 39,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 96,
+   "items": 90,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -93,11 +93,10 @@
   {
    "dominio": "hoy.com.py",
    "url": "https://www.hoy.com.py/feed",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 10,
    "candidatos": 0,
-   "error": "HTTP Error 415: Unsupported Media Type",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "ip.gov.py",
@@ -167,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 372,
+   "items": 318,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -178,14 +177,14 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 13
+   "fallos_seguidos": 14
   },
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 5,
+   "candidatos": 6,
    "fallos_seguidos": 0
   },
   {
@@ -199,6 +198,78 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "PARAGUAY Y BRASIL INICIAN NUEVA OFENSIVA CONTRA LA PRODUCCIÓN DE MARIHUANA EN CANINDEYÚ",
+   "url": "https://senad.gov.py/paraguay-y-brasil-inician-nueva-ofensiva-contra-la-produccion-de-marihuana-en-canindeyu/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-11-04",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Canindeyú"
+   ],
+   "ubicacion": [
+    -24.2,
+    -55.3
+   ],
+   "zona": "z4",
+   "cantidad": {
+    "valor": 48.0,
+    "unidad": "toneladas"
+   },
+   "puntaje": 7,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/paraguay-y-brasil-inician-nueva-ofensiva-contra-la-produccion-de-marihuana-en-canindeyu/"
+    }
+   ],
+   "id": "e8b6a42439",
+   "verificado": true
+  },
+  {
+   "titulo": "SENAD DETECTA CENTRO DE ACOPIO DE MARIHUANA EN MARACANÁ",
+   "url": "https://senad.gov.py/senad-detecta-centro-de-acopio-de-marihuana-en-maracana/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-11-04",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Salto del Guairá"
+   ],
+   "ubicacion": [
+    -24.06,
+    -54.34
+   ],
+   "zona": "z4",
+   "cantidad": {
+    "valor": 1668.0,
+    "unidad": "kilos"
+   },
+   "puntaje": 7,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/senad-detecta-centro-de-acopio-de-marihuana-en-maracana/"
+    }
+   ],
+   "id": "9cf2479803",
+   "verificado": true
+  },
   {
    "titulo": "DETIENEN EN CDE A «LAURA, LA PISTOLERA», VINCULADA AHORA AL TRÁFICO DE COCAÍNA",
    "url": "https://senad.gov.py/detienen-en-cde-a-laura-la-pistolera-vinculada-ahora-al-trafico-de-cocaina/",
@@ -1551,6 +1622,15 @@
    ]
   },
   {
+   "titulo": "\"Robó mi futuro y mi presente\": ahorristas de Ueno Bank reclaman la devolución de su dinero",
+   "url": "https://www.npy.com.py/noticias/nacionales/robo-mi-futuro-y-mi-presente-ahorristas-de-ueno-bank-reclaman-la-devolucion-de-su-dinero",
+   "dominio": "npy.com.py",
+   "fecha": "2026-11-04",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
    "titulo": "Entradas para Argentina vs Uruguay: cuándo salen a la venta, precios y por dónde comprar",
    "url": "https://perfil.com/deportes/entradas-argentina-vs-uruguay-en-la-bombonera-precios-y-como-comprar-ajjyM4z2geeQ",
    "dominio": "perfil.com",
@@ -2551,15 +2631,6 @@
    "fecha": "2026-10-22",
    "lugares": [
     "Encarnación"
-   ]
-  },
-  {
-   "titulo": "Entre tijeras y cocaína, cae un barbero sospechoso de vender drogas",
-   "url": "http://www.lanacion.com.py/pais/2026/10/22/entre-tijeras-y-cocaina-cae-un-barbero-sospechoso-de-vender-drogas/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Asunción"
    ]
   }
  ]
