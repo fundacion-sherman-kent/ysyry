@@ -1526,3 +1526,5 @@
 {"id": 45, "estacion": "Ibicuy", "fecha": "2026-11-04", "nivel_m": 1.0}
 {"id": 57, "estacion": "Puerto Formosa", "fecha": "2026-11-04", "nivel_m": 5.54}
 {"id": 79, "estacion": "Concordia", "fecha": "2026-11-04", "nivel_m": 8.39}
+{"id": 85, "estacion": "Buenos Aires", "fecha": "2026-11-04", "nivel_m": 1.045}
+{"id": 1699, "estacion": "Nueva Palmira", "fecha": "2026-11-04", "nivel_m": 1.396}
