@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-05T11:12:04Z",
+ "obtenido": "2026-11-05T20:07:43Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -19,7 +19,7 @@
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 2
   }
  ],
  "avisos": [
@@ -29,18 +29,19 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-11-05 00:01",
+   "inicio": "2026-11-05 08:58",
    "fin": "2026-11-05 23:59",
    "lugares": [
     "Corumbá",
     "Ladário",
     "Porto Murtinho",
+    "Cáceres",
     "Foz do Iguaçu",
     "Ponta Porã",
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28616"
+   "id": "inmet-28631"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -60,53 +61,17 @@
   {
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-06 00:01",
-   "fin": "2026-11-06 23:59",
+   "fenomeno": "Acumulado de Chuva",
+   "severidad": "Perigo",
+   "color": "#F96602",
+   "inicio": "2026-11-05 11:30",
+   "fin": "2026-11-05 23:59",
    "lugares": [
     "Ponta Porã",
     "Guaíra"
    ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28620"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-07 00:01",
-   "fin": "2026-11-07 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres",
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28621"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-08 00:01",
-   "fin": "2026-11-08 23:59",
-   "lugares": [
-    "Corumbá",
-    "Porto Murtinho",
-    "Ponta Porã"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28625"
+   "riesgos": "Chuva entre 30 a 60 mm/h ou 50 a 100 mm/dia. Risco de alagamentos, deslizamentos de encostas, transbordamentos de rios, em cidades com tais áreas de risco.",
+   "id": "inmet-28637"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -125,6 +90,57 @@
    "id": "inmet-28624"
   },
   {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-06 09:22",
+   "fin": "2026-11-06 23:59",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28633"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-07 00:00",
+   "fin": "2026-11-07 23:59",
+   "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres",
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28634"
+  },
+  {
+   "fuente": "GDACS (ONU y Comisión Europea)",
+   "pais": "",
+   "fenomeno": "Green forest fire notification in Bolivia",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "-16.65, -60.75"
+   ],
+   "riesgos": "",
+   "id": "gdacs-&amp;eventid=1033508",
+   "lat": -16.648294120223078,
+   "lon": -60.749750323770314
+  },
+  {
    "fuente": "GDACS (ONU y Comisión Europea)",
    "pais": "",
    "fenomeno": "Green forest fire notification in Brazil",
@@ -133,12 +149,12 @@
    "inicio": "",
    "fin": "",
    "lugares": [
-    "-16.99, -56.57"
+    "-16.98, -56.57"
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033499",
-   "lat": -16.985654403750782,
-   "lon": -56.56884000721248
+   "lat": -16.98414928068579,
+   "lon": -56.568568889483856
   }
  ],
  "no_consultadas": [
