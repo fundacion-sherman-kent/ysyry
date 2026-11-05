@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-04T21:15:40Z",
+ "obtenido": "2026-11-05T06:34:23Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 31,
+   "items": 28,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 91,
+   "items": 94,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 346,
+   "items": 385,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 15
+   "fallos_seguidos": 16
   },
   {
    "dominio": "senad.gov.py",
@@ -1499,106 +1499,16 @@
    ],
    "id": "8f05a2490f",
    "verificado": true
-  },
-  {
-   "titulo": "Crece la preocupación por la suba del río Paraná: cuándo se espera el pico y qué medidas activaron en Corrientes",
-   "url": "https://www.perfil.com/noticias/sociedad/crece-la-preocupacion-por-la-suba-del-rio-parana-cuando-se-espera-el-pico-y-que-medidas-activaron-en-corrientes.phtml",
-   "dominio": "perfil.com",
-   "clase": "prensa",
-   "fecha": "2026-10-21",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Corrientes",
-    "Goya"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "perfil.com",
-     "clase": "prensa",
-     "url": "https://www.perfil.com/noticias/sociedad/crece-la-preocupacion-por-la-suba-del-rio-parana-cuando-se-espera-el-pico-y-que-medidas-activaron-en-corrientes.phtml"
-    }
-   ],
-   "id": "c7301c4477",
-   "verificado": true
-  },
-  {
-   "titulo": "Más de 4.200 familias afectadas en Paraguay por inundaciones tras crecida del río Paraná",
-   "url": "https://www.abc.com.py/internacionales/2026/10/21/mas-de-4200-familias-afectadas-en-paraguay-por-inundaciones-tras-crecida-del-rio-parana/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-21",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/internacionales/2026/10/21/mas-de-4200-familias-afectadas-en-paraguay-por-inundaciones-tras-crecida-del-rio-parana/"
-    }
-   ],
-   "id": "e9164e6b2b",
-   "verificado": true
-  },
-  {
-   "titulo": "El Gobierno debió corregir la conformación del Consejo de Control de la Hidrovía",
-   "url": "https://www.lanacion.com.ar/economia/el-gobierno-debio-corregir-la-conformacion-del-consejo-de-control-de-la-hidrovia-nid21102026/",
-   "dominio": "lanacion.com.ar",
-   "clase": "prensa",
-   "fecha": "2026-10-21",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.ar",
-     "clase": "prensa",
-     "url": "https://www.lanacion.com.ar/economia/el-gobierno-debio-corregir-la-conformacion-del-consejo-de-control-de-la-hidrovia-nid21102026/"
-    }
-   ],
-   "id": "34e4113681",
-   "verificado": true
   }
  ],
  "sin_tipo": [
   {
-   "titulo": "Itaipú transfirió US$ 18 millones menos al Estado que en 2025: caen pagos por cesión de energía",
-   "url": "https://www.abc.com.py/economia/2026/11/04/itaipu-transfirio-us-18-millones-menos-al-estado-que-en-2025-caen-pagos-por-cesion-de-energia/",
+   "titulo": "Video: Policía reprime con gas pimienta y balines a manifestantes en Asunción",
+   "url": "https://www.abc.com.py/nacionales/2026/11/04/video-policia-reprime-con-gas-pimienta-y-balines-a-manifestantes-en-asuncion/",
    "dominio": "abc.com.py",
-   "fecha": "2026-11-04",
+   "fecha": "2026-11-05",
    "lugares": [
-    "Itaipú"
+    "Asunción"
    ]
   },
   {
@@ -1608,6 +1518,31 @@
    "fecha": "2026-11-04",
    "lugares": [
     "Asunción"
+   ]
+  },
+  {
+   "titulo": "\"Robó mi futuro y mi presente\": ahorristas de Ueno Bank reclaman la devolución de su dinero",
+   "url": "https://www.npy.com.py/noticias/nacionales/robo-mi-futuro-y-mi-presente-ahorristas-de-ueno-bank-reclaman-la-devolucion-de-su-dinero",
+   "dominio": "npy.com.py",
+   "fecha": "2026-11-04",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Lazo sobre investigación de la muerte de tres buzos en Fray Bentos: “No podemos dar información a la ligera en un caso tan serio”",
+   "url": "https://ladiaria.com.uy/politica/articulo/2026/11/lazo-sobre-investigacion-de-la-muerte-de-tres-buzos-en-fray-bentos-no-podemos-dar-informacion-a-la-ligera-en-un-caso-tan-serio/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-11-04",
+   "lugares": []
+  },
+  {
+   "titulo": "Itaipú transfirió US$ 18 millones menos al Estado que en 2025: caen pagos por cesión de energía",
+   "url": "https://www.abc.com.py/economia/2026/11/04/itaipu-transfirio-us-18-millones-menos-al-estado-que-en-2025-caen-pagos-por-cesion-de-energia/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-04",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -1634,15 +1569,6 @@
    "titulo": "Fiscales allanan la residencia del CEO de ueno bank en Asunción",
    "url": "http://www.lanacion.com.py/pais/2026/11/03/fiscales-allanan-la-residencia-del-ceo-de-ueno-bank-en-asuncion/",
    "dominio": "lanacion.com.py",
-   "fecha": "2026-11-04",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "\"Robó mi futuro y mi presente\": ahorristas de Ueno Bank reclaman la devolución de su dinero",
-   "url": "https://www.npy.com.py/noticias/nacionales/robo-mi-futuro-y-mi-presente-ahorristas-de-ueno-bank-reclaman-la-devolucion-de-su-dinero",
-   "dominio": "npy.com.py",
    "fecha": "2026-11-04",
    "lugares": [
     "Asunción"
@@ -2612,25 +2538,6 @@
    "fecha": "2026-10-23",
    "lugares": [
     "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "EVACUACIÓN MÉDICA FLUVIAL DE URGENCIA EN ALBERDI",
-   "url": "https://armadaparaguaya.mil.py/evacuacion-medica-fluvial-de-urgencia-en-alberdi/",
-   "dominio": "armadaparaguaya.mil.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Alberdi",
-    "Formosa"
-   ]
-  },
-  {
-   "titulo": "Funcionario de Itaipú resulta herido en violento accidente que involucró a un vehículo de la entidad",
-   "url": "https://www.abc.com.py/este/2026/10/22/funcionario-de-itaipu-resulta-herido-en-violento-accidente-que-involucro-a-un-vehiculo-de-la-entidad/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-22",
-   "lugares": [
-    "Itaipú"
    ]
   }
  ]
