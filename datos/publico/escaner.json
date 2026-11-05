@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-05T17:20:00Z",
+ "obtenido": "2026-11-05T23:34:58Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 26,
+   "items": 22,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 88,
+   "items": 93,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 312,
+   "items": 335,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 17
+   "fallos_seguidos": 18
   },
   {
    "dominio": "senad.gov.py",
@@ -233,6 +233,34 @@
     }
    ],
    "id": "10e938c691",
+   "verificado": true
+  },
+  {
+   "titulo": "El peligroso \"barco fantasma\" de 107 metros volvió a quedar a la deriva en el río Paraná",
+   "url": "https://perfil.com/sociedad/barco-fantasma-uros-z-navega-a-la-deriva-en-el-rio-parana-a50-bgd-aZ03b7e1yamp",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-11-05",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://perfil.com/sociedad/barco-fantasma-uros-z-navega-a-la-deriva-en-el-rio-parana-a50-bgd-aZ03b7e1yamp"
+    }
+   ],
+   "id": "f25f7c48d3",
    "verificado": true
   },
   {
@@ -1540,18 +1568,36 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Fondos de Itaipú en Ueno Bank: la binacional no responde cuánto quedó congelado tras la intervención",
-   "url": "https://www.abc.com.py/economia/2026/11/05/fondos-de-itaipu-en-ueno-bank-la-binacional-no-responde-cuanto-quedo-congelado-tras-la-intervencion/",
-   "dominio": "abc.com.py",
+   "titulo": "Ciudad del Este: imputan a adolescente brasileño que ingresó al país con camioneta robada",
+   "url": "http://www.lanacion.com.py/pais/2026/11/05/ciudad-del-este-imputan-a-adolescente-brasileno-que-ingreso-al-pais-con-camioneta-robada/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-11-05",
    "lugares": [
-    "Itaipú"
+    "Ciudad del Este"
    ]
   },
   {
    "titulo": "Itaipú transfirió USD 381 millones al Estado paraguayo hasta octubre por obligaciones del Anexo C",
    "url": "http://www.lanacion.com.py/negocios/2026/11/05/itaipu-transfirio-usd-381-millones-al-estado-paraguayo-hasta-octubre-por-obligaciones-del-anexo-c/",
    "dominio": "lanacion.com.py",
+   "fecha": "2026-11-05",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Condenaron con 25 años de prisión a un hombre por un homicidio ocurrido en Colonia en octubre de 2025",
+   "url": "https://ladiaria.com.uy/colonia/articulo/2026/11/condenaron-con-25-anos-de-prision-a-un-hombre-por-un-homicidio-ocurrido-en-colonia-en-octubre-de-2025/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-11-05",
+   "lugares": [
+    "Colonia"
+   ]
+  },
+  {
+   "titulo": "Fondos de Itaipú en Ueno Bank: la binacional no responde cuánto quedó congelado tras la intervención",
+   "url": "https://www.abc.com.py/economia/2026/11/05/fondos-de-itaipu-en-ueno-bank-la-binacional-no-responde-cuanto-quedo-congelado-tras-la-intervencion/",
+   "dominio": "abc.com.py",
    "fecha": "2026-11-05",
    "lugares": [
     "Itaipú"
@@ -2553,24 +2599,6 @@
   {
    "titulo": "Araico y Crusoe usarán energía de Itaipú para un centro de IA, confirma el MIC",
    "url": "https://www.abc.com.py/economia/2026/10/23/araico-y-crusoe-usaran-energia-de-itaipu-para-un-centro-de-ia-confirma-el-mic/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-23",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Crimen en Corrientes: son cuatro los sospechosos acusados por el homicidio de la docente Nanci Godoy",
-   "url": "https://www.lanacion.com.ar/seguridad/crimen-en-corrientes-son-cuatro-los-sospechosos-acusados-por-el-homicidio-de-la-docente-nanci-godoy-nid23102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-23",
-   "lugares": [
-    "Corrientes"
-   ]
-  },
-  {
-   "titulo": "Araico y Crusoe usarán energía de Itaipú para un centro de IA, la ANDE no informa sobre el contrato",
-   "url": "https://www.abc.com.py/economia/2026/10/23/araico-y-crusoe-usaran-energia-de-itaipu-para-un-centro-de-ia-la-ande-no-informa-sobre-el-contrato/",
    "dominio": "abc.com.py",
    "fecha": "2026-10-23",
    "lugares": [
