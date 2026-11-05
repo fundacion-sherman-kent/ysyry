@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-04T19:55:05Z",
+ "obtenido": "2026-11-05T01:30:39Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "GDACS",
@@ -163,7 +163,7 @@
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias intensas con tormentas eléctricas moderadas a fuertes, ráfagas de vientos fuertes a muy fuertes y alta probabilidad de caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderados a fuertes y alta probabilidad de caída de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -173,34 +173,6 @@
    ],
    "riesgos": "",
    "id": "dmh-vigente"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-04 15:45",
-   "fin": "",
-   "lugares": [
-    "MISIONES: Gral Manuel Belgrano - Iguazu."
-   ],
-   "riesgos": "",
-   "id": "smn-3974"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-04 15:33",
-   "fin": "",
-   "lugares": [
-    "MISIONES: 25 de Mayo - Cainguas - Guarani - Ldor Gral San Martin - Montecarlo - Obera - San Ignacio - San Pedro."
-   ],
-   "riesgos": "",
-   "id": "smn-3973"
   }
  ],
  "no_consultadas": [
