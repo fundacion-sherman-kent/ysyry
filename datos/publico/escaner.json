@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-06T06:29:00Z",
+ "obtenido": "2026-11-06T16:43:20Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 22,
+   "items": 21,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 91,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 361,
+   "items": 338,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 19
+   "fallos_seguidos": 20
   },
   {
    "dominio": "senad.gov.py",
@@ -1487,6 +1487,15 @@
    ]
   },
   {
+   "titulo": "Cuestionan actuar policial tras difundirse videos de un comisario golpeando a manifestantes",
+   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/cuestionan-actuar-policial-tras-difundirse-videos-de-un-comisario-golpeando-a-manifestantes",
+   "dominio": "npy.com.py",
+   "fecha": "2026-11-06",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
    "titulo": "Ciudad del Este: imputan a adolescente brasileño que ingresó al país con camioneta robada",
    "url": "http://www.lanacion.com.py/pais/2026/11/05/ciudad-del-este-imputan-a-adolescente-brasileno-que-ingreso-al-pais-con-camioneta-robada/",
    "dominio": "lanacion.com.py",
@@ -2495,15 +2504,6 @@
    "fecha": "2026-10-23",
    "lugares": [
     "Asunción"
-   ]
-  },
-  {
-   "titulo": "“¿Paraguay tiene que comunicarle a Brasil?”: Báez responde a las críticas brasileñas por decisiones sobre Itaipú",
-   "url": "https://www.abc.com.py/economia/2026/10/23/paraguay-tiene-que-comunicarle-a-brasil-baez-responde-a-las-criticas-brasilenas-por-decisiones-sobre-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-23",
-   "lugares": [
-    "Itaipú"
    ]
   }
  ]
