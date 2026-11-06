@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-05T23:34:58Z",
+ "obtenido": "2026-11-06T06:29:00Z",
  "dias": 14,
  "fuentes": [
   {
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
+   "items": 92,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -143,7 +143,7 @@
    "url": "https://armadaparaguaya.mil.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 335,
+   "items": 361,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 18
+   "fallos_seguidos": 19
   },
   {
    "dominio": "senad.gov.py",
@@ -1465,108 +1465,27 @@
    ],
    "id": "5d1bb79e3b",
    "verificado": true
-  },
-  {
-   "titulo": "CONTINÚA LA ASISTENCIA FLUVIAL A FAMILIAS AISLADAS EN ZONA DE AYOLAS",
-   "url": "https://armadaparaguaya.mil.py/continua-la-asistencia-fluvial-a-familias-aisladas-en-zona-de-ayolas/",
-   "dominio": "armadaparaguaya.mil.py",
-   "clase": "oficial",
-   "fecha": "2026-10-22",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Ayolas"
-   ],
-   "ubicacion": [
-    -27.39,
-    -56.84
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 6,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "armadaparaguaya.mil.py",
-     "clase": "oficial",
-     "url": "https://armadaparaguaya.mil.py/continua-la-asistencia-fluvial-a-familias-aisladas-en-zona-de-ayolas/"
-    }
-   ],
-   "id": "2d9458cfba",
-   "verificado": true
-  },
-  {
-   "titulo": "Piden informes al MOPC y SEN sobre acciones ante inundaciones en Alto Paraná",
-   "url": "http://www.lanacion.com.py/politica/2026/10/22/piden-informes-al-mopc-y-sen-sobre-acciones-ante-inundaciones-en-alto-parana/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-22",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Alto Paraná"
-   ],
-   "ubicacion": [
-    -25.3,
-    -54.8
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/politica/2026/10/22/piden-informes-al-mopc-y-sen-sobre-acciones-ante-inundaciones-en-alto-parana/"
-    }
-   ],
-   "id": "5afc384f3b",
-   "verificado": true
-  },
-  {
-   "titulo": "SENAD Y CODI CAPTURAN A HOMBRE DE CONFIANZA Y MANO DERECHA DE FELIPE SANTIAGO ACOSTA ALIAS “MACHO”",
-   "url": "https://senad.gov.py/senad-y-codi-capturan-a-hombre-de-confianza-y-mano-derecha-de-felipe-santiago-acosta-alias-macho/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-10-22",
-   "tipos": [
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ]
-   ],
-   "lugares": [
-    "Canindeyú"
-   ],
-   "ubicacion": [
-    -24.2,
-    -55.3
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/senad-y-codi-capturan-a-hombre-de-confianza-y-mano-derecha-de-felipe-santiago-acosta-alias-macho/"
-    }
-   ],
-   "id": "8f05a2490f",
-   "verificado": true
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Itaipú transfirió USD 381 millones",
+   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/11/06/itaipu-transfirio-usd-381-millones/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-06",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Caso ueno bank: allanan la empresa itti del Grupo Vázquez",
+   "url": "http://www.lanacion.com.py/judiciales/2026/11/05/caso-ueno-bank-allanan-la-empresa-itti-del-grupo-vazquez/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-06",
+   "lugares": [
+    "Asunción"
+   ]
+  },
   {
    "titulo": "Ciudad del Este: imputan a adolescente brasileño que ingresó al país con camioneta robada",
    "url": "http://www.lanacion.com.py/pais/2026/11/05/ciudad-del-este-imputan-a-adolescente-brasileno-que-ingreso-al-pais-con-camioneta-robada/",
@@ -2581,24 +2500,6 @@
   {
    "titulo": "“¿Paraguay tiene que comunicarle a Brasil?”: Báez responde a las críticas brasileñas por decisiones sobre Itaipú",
    "url": "https://www.abc.com.py/economia/2026/10/23/paraguay-tiene-que-comunicarle-a-brasil-baez-responde-a-las-criticas-brasilenas-por-decisiones-sobre-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-23",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Aclaran que la unidad antiterrorista de la frontera está integrada solo por tropas nacionales",
-   "url": "http://www.lanacion.com.py/politica/2026/10/23/aclaran-que-la-unidad-antiterrorista-de-la-frontera-esta-integrada-solo-por-tropas-nacionales/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-23",
-   "lugares": [
-    "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "Araico y Crusoe usarán energía de Itaipú para un centro de IA, confirma el MIC",
-   "url": "https://www.abc.com.py/economia/2026/10/23/araico-y-crusoe-usaran-energia-de-itaipu-para-un-centro-de-ia-confirma-el-mic/",
    "dominio": "abc.com.py",
    "fecha": "2026-10-23",
    "lugares": [
