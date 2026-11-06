@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-11-06T01:39:56Z",
+ "obtenido": "2026-11-06T11:11:02Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 6
+   "avisos_en_el_corredor": 3
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -29,49 +29,14 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-11-05 08:58",
-   "fin": "2026-11-05 23:59",
+   "inicio": "2026-11-06 09:22",
+   "fin": "2026-11-06 23:59",
    "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres",
     "Foz do Iguaçu",
-    "Ponta Porã",
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28631"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo",
-   "color": "#F96602",
-   "inicio": "2026-11-05 00:01",
-   "fin": "2026-11-05 23:59",
-   "lugares": [
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
-   "id": "inmet-28617"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Acumulado de Chuva",
-   "severidad": "Perigo",
-   "color": "#F96602",
-   "inicio": "2026-11-05 11:30",
-   "fin": "2026-11-05 23:59",
-   "lugares": [
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 30 a 60 mm/h ou 50 a 100 mm/dia. Risco de alagamentos, deslizamentos de encostas, transbordamentos de rios, em cidades com tais áreas de risco.",
-   "id": "inmet-28637"
+   "id": "inmet-28633"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -88,21 +53,6 @@
    ],
    "riesgos": "Leve risco à saúde. Declínio entre 3ºC e 5ºC.",
    "id": "inmet-28624"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-06 09:22",
-   "fin": "2026-11-06 23:59",
-   "lugares": [
-    "Foz do Iguaçu",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28633"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -153,8 +103,8 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033499",
-   "lat": -16.983554593767753,
-   "lon": -56.56868678627383
+   "lat": -16.983488734899016,
+   "lon": -56.56875034416228
   }
  ],
  "no_consultadas": [
