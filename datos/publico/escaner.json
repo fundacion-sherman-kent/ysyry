@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-06T16:43:20Z",
+ "obtenido": "2026-11-06T23:02:09Z",
  "dias": 14,
  "fuentes": [
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 338,
+   "items": 350,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 20
+   "fallos_seguidos": 21
   },
   {
    "dominio": "senad.gov.py",
@@ -1469,6 +1469,24 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Tres niñas heridas tras violento choque en Asunción: denuncian que policías provocaron el accidente",
+   "url": "http://www.lanacion.com.py/pais/2026/11/06/tres-ninas-heridas-tras-violento-choque-en-asuncion-denuncian-que-policias-provocaron-el-accidente/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-06",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Cuestionan actuar policial tras difundirse videos de un comisario golpeando a manifestantes",
+   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/cuestionan-actuar-policial-tras-difundirse-videos-de-un-comisario-golpeando-a-manifestantes",
+   "dominio": "npy.com.py",
+   "fecha": "2026-11-06",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
    "titulo": "Itaipú transfirió USD 381 millones",
    "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/11/06/itaipu-transfirio-usd-381-millones/",
    "dominio": "lanacion.com.py",
@@ -1481,15 +1499,6 @@
    "titulo": "Caso ueno bank: allanan la empresa itti del Grupo Vázquez",
    "url": "http://www.lanacion.com.py/judiciales/2026/11/05/caso-ueno-bank-allanan-la-empresa-itti-del-grupo-vazquez/",
    "dominio": "lanacion.com.py",
-   "fecha": "2026-11-06",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Cuestionan actuar policial tras difundirse videos de un comisario golpeando a manifestantes",
-   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/cuestionan-actuar-policial-tras-difundirse-videos-de-un-comisario-golpeando-a-manifestantes",
-   "dominio": "npy.com.py",
    "fecha": "2026-11-06",
    "lugares": [
     "Asunción"
@@ -2495,15 +2504,6 @@
    "fecha": "2026-10-23",
    "lugares": [
     "Encarnación"
-   ]
-  },
-  {
-   "titulo": "Oxígeno Feria de Arte abre su novena edición en el Puerto de Asunción",
-   "url": "https://www.abc.com.py/espectaculos/artes-plasticas/2026/10/23/oxigeno-feria-de-arte-abre-su-novena-edicion-en-el-puerto-de-asuncion/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-23",
-   "lugares": [
-    "Asunción"
    ]
   }
  ]
