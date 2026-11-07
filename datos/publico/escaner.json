@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-07T12:53:03Z",
+ "obtenido": "2026-11-07T19:22:37Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 23,
+   "items": 24,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 94,
+   "items": 92,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 339,
+   "items": 344,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 23
+   "fallos_seguidos": 24
   },
   {
    "dominio": "senad.gov.py",
@@ -1309,12 +1309,39 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Itaipú presenta denuncia penal contra Ueno Bank y sus directivos para recuperar fondos",
+   "url": "https://www.abc.com.py/economia/2026/11/07/itaipu-presenta-denuncia-penal-contra-ueno-bank-y-sus-directivos-para-recuperar-fondos/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-07",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Policía busca a cinco personas desaparecidas en Asunción, Central y Caaguazú",
    "url": "https://www.abc.com.py/policiales/2026/11/07/policia-busca-a-cinco-personas-desaparecidas-en-asuncion-central-y-caaguazu/",
    "dominio": "abc.com.py",
    "fecha": "2026-11-07",
    "lugares": [
     "Asunción"
+   ]
+  },
+  {
+   "titulo": "Una mujer fue detenida por violencia familiar ante denuncia de su expareja",
+   "url": "http://www.lanacion.com.py/pais/2026/11/07/una-mujer-fue-detenida-por-violencia-familiar-ante-denuncia-de-su-expareja/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-07",
+   "lugares": [
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Itaipú formula denuncia penal por afectación de sus fondos y de FPTI-PY en ueno bank",
+   "url": "http://www.lanacion.com.py/judiciales/2026/11/07/itaipu-formula-denuncia-penal-por-afectacion-de-sus-fondos-y-de-fpti-py-en-ueno-bank/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-07",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -1345,18 +1372,18 @@
    ]
   },
   {
-   "titulo": "Tres niñas heridas tras violento choque en Asunción: denuncian que policías provocaron el accidente",
-   "url": "http://www.lanacion.com.py/pais/2026/11/06/tres-ninas-heridas-tras-violento-choque-en-asuncion-denuncian-que-policias-provocaron-el-accidente/",
-   "dominio": "lanacion.com.py",
+   "titulo": "Cuestionan actuar policial tras difundirse videos de un comisario golpeando a manifestantes",
+   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/cuestionan-actuar-policial-tras-difundirse-videos-de-un-comisario-golpeando-a-manifestantes",
+   "dominio": "npy.com.py",
    "fecha": "2026-11-06",
    "lugares": [
     "Asunción"
    ]
   },
   {
-   "titulo": "Cuestionan actuar policial tras difundirse videos de un comisario golpeando a manifestantes",
-   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/cuestionan-actuar-policial-tras-difundirse-videos-de-un-comisario-golpeando-a-manifestantes",
-   "dominio": "npy.com.py",
+   "titulo": "Tres niñas heridas tras violento choque en Asunción: denuncian que policías provocaron el accidente",
+   "url": "http://www.lanacion.com.py/pais/2026/11/06/tres-ninas-heridas-tras-violento-choque-en-asuncion-denuncian-que-policias-provocaron-el-accidente/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-11-06",
    "lugares": [
     "Asunción"
@@ -2317,35 +2344,6 @@
    "lugares": [
     "Ciudad del Este",
     "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "Renuevan talleres y laboratorios del Colegio Técnico Nacional en Asunción",
-   "url": "http://www.lanacion.com.py/pais/2026/10/24/renuevan-talleres-y-laboratorios-del-colegio-tecnico-nacional-en-asuncion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-24",
-   "lugares": [
-    "Asunción",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "El primer “Kaninde Camp” busca proteger al guacamayo azul y amarillo",
-   "url": "http://www.lanacion.com.py/pais/2026/10/24/el-primer-kaninde-camp-busca-proteger-al-guacamayo-azul-y-amarillo/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-24",
-   "lugares": [
-    "Canindeyú",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Itaipú y Smithsonian optimizan la gestión de áreas verdes en el centro Tekotopa",
-   "url": "http://www.lanacion.com.py/pais/2026/10/24/itaipu-y-smithsonian-optimizan-la-gestion-de-areas-verdes-en-el-centro-tekotopa/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-24",
-   "lugares": [
-    "Itaipú"
    ]
   }
  ]
