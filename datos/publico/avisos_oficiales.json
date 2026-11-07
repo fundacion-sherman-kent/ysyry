@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-11-07T10:27:31Z",
+ "obtenido": "2026-11-07T17:48:16Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 5
+   "avisos_en_el_corredor": 6
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 3
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "GDACS",
@@ -29,7 +29,7 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-11-07 00:00",
+   "inicio": "2026-11-07 08:50",
    "fin": "2026-11-07 23:59",
    "lugares": [
     "Porto Murtinho",
@@ -38,7 +38,7 @@
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28642"
+   "id": "inmet-28651"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -46,14 +46,14 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo",
    "color": "#F96602",
-   "inicio": "2026-11-07 00:00",
+   "inicio": "2026-11-07 09:00",
    "fin": "2026-11-07 23:59",
    "lugares": [
     "Foz do Iguaçu",
     "Guaíra"
    ],
    "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
-   "id": "inmet-28643"
+   "id": "inmet-28652"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -61,13 +61,13 @@
    "fenomeno": "Tempestade",
    "severidad": "Grande Perigo",
    "color": "#F80703",
-   "inicio": "2026-11-07 00:00",
+   "inicio": "2026-11-07 11:45",
    "fin": "2026-11-07 23:59",
    "lugares": [
     "Foz do Iguaçu"
    ],
    "riesgos": "Chuva superior a 60 mm/h ou maior que 100 mm/dia, ventos superiores a 100 km/h, e queda de granizo. Grande risco de danos em edificações, corte de energia elétrica, estragos em plantações, queda de árvores, alagamentos e transtornos no transporte rodoviário.",
-   "id": "inmet-28644"
+   "id": "inmet-28661"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -95,15 +95,32 @@
    "fin": "2026-11-08 23:59",
    "lugares": [
     "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
     "Cáceres"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28646"
+   "id": "inmet-28655"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-09 00:00",
+   "fin": "2026-11-09 23:59",
+   "lugares": [
+    "Corumbá",
+    "Cáceres"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28659"
   },
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Sistema de tormentas eléctricas moderadas a fuertes, ráfagas de vientos fuertes a muy fuertes y la alta probabilidad de caída de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -113,48 +130,6 @@
    ],
    "riesgos": "",
    "id": "dmh-vigente"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-07 06:57",
-   "fin": "",
-   "lugares": [
-    "MISIONES: Gral Manuel Belgrano - Iguazu."
-   ],
-   "riesgos": "",
-   "id": "smn-3987"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-07 05:56",
-   "fin": "",
-   "lugares": [
-    "FORMOSA: Formosa - Patino - Pilagas - Pilcomayo - Pirane."
-   ],
-   "riesgos": "",
-   "id": "smn-3986"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-07 05:42",
-   "fin": "",
-   "lugares": [
-    "MISIONES: El Dorado - Gral Manuel Belgrano - Guarani - Iguazu - Montecarlo - San Pedro."
-   ],
-   "riesgos": "",
-   "id": "smn-3985"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -169,8 +144,8 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033508",
-   "lat": -16.648306207238825,
-   "lon": -60.749728865285014
+   "lat": -16.648330265896913,
+   "lon": -60.74961993530983
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -185,8 +160,8 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033499",
-   "lat": -16.981325782078375,
-   "lon": -56.56961427212467
+   "lat": -16.980065729814672,
+   "lon": -56.56972364711575
   }
  ],
  "no_consultadas": [
