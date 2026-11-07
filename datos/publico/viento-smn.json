@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-07T12:50:27Z",
+ "obtenido": "2026-11-07T19:20:24Z",
  "fuente": {
   "nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente",
   "url": "https://www.smn.gob.ar/",
@@ -9,42 +9,42 @@
   {
    "nombre": "La Plata",
    "fecha": "07-noviembre-2026",
-   "hora": "09:00",
+   "hora": "16:00",
    "direccion": "Sur",
    "kmh": 20,
-   "estado": "Cubierto"
+   "estado": "Parcialmente nublado"
   },
   {
    "nombre": "Punta Indio B.A.",
    "fecha": "07-noviembre-2026",
-   "hora": "09:00",
+   "hora": "15:00",
    "direccion": "Sur",
-   "kmh": 35,
-   "estado": "Cubierto con llovizna en la hora anterior"
+   "kmh": 29,
+   "estado": "Parcialmente nublado"
   },
   {
    "nombre": "San Fernando",
    "fecha": "07-noviembre-2026",
-   "hora": "09:00",
+   "hora": "16:00",
    "direccion": "Sur",
-   "kmh": 22,
-   "estado": "Cubierto"
+   "kmh": 18,
+   "estado": "Parcialmente nublado"
   },
   {
    "nombre": "Aeroparque Buenos Aires",
    "fecha": "07-noviembre-2026",
-   "hora": "09:00",
-   "direccion": "Sur",
-   "kmh": 16,
+   "hora": "16:00",
+   "direccion": "Direcciones Variables",
+   "kmh": 14,
    "estado": "Parcialmente nublado"
   },
   {
    "nombre": "Buenos Aires",
    "fecha": "07-noviembre-2026",
-   "hora": "09:00",
+   "hora": "16:00",
    "direccion": "Sur",
-   "kmh": 14,
-   "estado": "Nublado"
+   "kmh": 16,
+   "estado": "Parcialmente nublado"
   }
  ]
 }
