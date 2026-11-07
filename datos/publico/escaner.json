@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-07T05:50:17Z",
+ "obtenido": "2026-11-07T12:53:03Z",
  "dias": 14,
  "fuentes": [
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 96,
+   "items": 94,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 405,
+   "items": 339,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 22
+   "fallos_seguidos": 23
   },
   {
    "dominio": "senad.gov.py",
@@ -1309,6 +1309,15 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Policía busca a cinco personas desaparecidas en Asunción, Central y Caaguazú",
+   "url": "https://www.abc.com.py/policiales/2026/11/07/policia-busca-a-cinco-personas-desaparecidas-en-asuncion-central-y-caaguazu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-07",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
    "titulo": "Vecinos exigen que Peña sea trasladado a un centro penitenciario",
    "url": "http://www.lanacion.com.py/politica/2026/11/06/vecinos-exigen-que-pena-sea-trasladado-a-un-centro-penitenciario/",
    "dominio": "lanacion.com.py",
@@ -2338,13 +2347,6 @@
    "lugares": [
     "Itaipú"
    ]
-  },
-  {
-   "titulo": "El río Jejuí desborda y el repunte del río Paraguay se torna cada vez más preocupante en San Pedro",
-   "url": "https://www.abc.com.py/nacionales/2026/10/24/el-rio-jejui-desborda-y-el-repunte-del-rio-paraguay-se-torna-cada-vez-mas-preocupante-en-san-pedro/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-24",
-   "lugares": []
   }
  ]
 }
