@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-06T23:02:09Z",
+ "obtenido": "2026-11-07T05:50:17Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 21,
+   "items": 23,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 91,
+   "items": 96,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 350,
+   "items": 405,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 21
+   "fallos_seguidos": 22
   },
   {
    "dominio": "senad.gov.py",
@@ -1305,169 +1305,36 @@
    ],
    "id": "d2fe3c5e26",
    "verificado": true
-  },
-  {
-   "titulo": "LN PM: edición del 23 de octubre",
-   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/10/23/ln-pm-edicion-del-23-de-octubre/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-23",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Concepción"
-   ],
-   "ubicacion": [
-    -23.4,
-    -57.43
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/tapa-lnpm/2026/10/23/ln-pm-edicion-del-23-de-octubre/"
-    }
-   ],
-   "id": "730cfbc2cc",
-   "verificado": true
-  },
-  {
-   "titulo": "La crecida del río Paraguay pone en alerta a Concepción",
-   "url": "http://www.lanacion.com.py/pais/2026/10/23/la-crecida-del-rio-paraguay-pone-en-alerta-a-concepcion/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-23",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Concepción"
-   ],
-   "ubicacion": [
-    -23.4,
-    -57.43
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/23/la-crecida-del-rio-paraguay-pone-en-alerta-a-concepcion/"
-    }
-   ],
-   "id": "a241ff4b3c",
-   "verificado": true
-  },
-  {
-   "titulo": "Allanamiento en Curuguaty: detienen a dos mujeres e incautan drogas",
-   "url": "https://www.npy.com.py/noticias/nacionales/allanamiento-en-curuguaty-detienen-a-dos-mujeres-e-incautan-drogas",
-   "dominio": "npy.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-23",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ]
-   ],
-   "lugares": [
-    "Canindeyú"
-   ],
-   "ubicacion": [
-    -24.2,
-    -55.3
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "npy.com.py",
-     "clase": "prensa",
-     "url": "https://www.npy.com.py/noticias/nacionales/allanamiento-en-curuguaty-detienen-a-dos-mujeres-e-incautan-drogas"
-    }
-   ],
-   "id": "d37ada0327",
-   "verificado": true
-  },
-  {
-   "titulo": "Juez ordena secuestro de vehículos y embargo de cuentas de Eddie Jara y su exesposa",
-   "url": "http://www.lanacion.com.py/judiciales/2026/10/23/juez-ordena-secuestro-de-vehiculos-y-embargo-de-cuentas-de-eddie-jara-y-su-exesposa/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-23",
-   "tipos": [
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ]
-   ],
-   "lugares": [
-    "Corrientes"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 4,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/judiciales/2026/10/23/juez-ordena-secuestro-de-vehiculos-y-embargo-de-cuentas-de-eddie-jara-y-su-exesposa/"
-    }
-   ],
-   "id": "8ea3b6b857",
-   "verificado": true
-  },
-  {
-   "titulo": "Essap confirma plan de contingencia ante crecida del río Paraguay",
-   "url": "https://www.abc.com.py/nacionales/2026/10/23/essap-confirma-plan-de-contingencia-ante-crecida-del-rio-paraguay/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-23",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/nacionales/2026/10/23/essap-confirma-plan-de-contingencia-ante-crecida-del-rio-paraguay/"
-    }
-   ],
-   "id": "5d1bb79e3b",
-   "verificado": true
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Vecinos exigen que Peña sea trasladado a un centro penitenciario",
+   "url": "http://www.lanacion.com.py/politica/2026/11/06/vecinos-exigen-que-pena-sea-trasladado-a-un-centro-penitenciario/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-07",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Silicon Misiones, el hub tecnológico que apuesta a la economía del conocimiento como motor de desarrollo",
+   "url": "https://www.infobae.com/def/2026/11/07/silicon-misiones-el-hub-tecnologico-que-apuesta-a-la-economia-del-conocimiento-como-motor-de-desarrollo/",
+   "dominio": "infobae.com",
+   "fecha": "2026-11-07",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "El ex presidente del Banco Central de Paraguay se entregó ante la Justicia tras el escándalo de Ueno Bank",
+   "url": "https://www.infobae.com/america/america-latina/2026/11/07/el-ex-presidente-del-banco-central-de-paraguay-se-entrego-ante-la-justicia-tras-el-escandalo-de-ueno-bank/",
+   "dominio": "infobae.com",
+   "fecha": "2026-11-07",
+   "lugares": [
+    "Asunción"
+   ]
+  },
   {
    "titulo": "Tres niñas heridas tras violento choque en Asunción: denuncian que policías provocaron el accidente",
    "url": "http://www.lanacion.com.py/pais/2026/11/06/tres-ninas-heridas-tras-violento-choque-en-asuncion-denuncian-que-policias-provocaron-el-accidente/",
@@ -2478,33 +2345,6 @@
    "dominio": "abc.com.py",
    "fecha": "2026-10-24",
    "lugares": []
-  },
-  {
-   "titulo": "Calle Recreativa celebra su 16° aniversario",
-   "url": "https://www.pagina12.com.ar/2026/10/24/calle-recreativa-celebra-su-16-aniversario/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-10-24",
-   "lugares": [
-    "Rosario"
-   ]
-  },
-  {
-   "titulo": "Conviene a Paraguay que gane Lula y será el mejor momento para renegociar Itaipú, afirma experto",
-   "url": "https://www.abc.com.py/politica/2026/10/24/conviene-a-paraguay-que-gane-lula-y-sera-el-mejor-momento-para-renegociar-itaipu-afirma-experto/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-24",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Juez cuestiona requerimiento fiscal que otorgó domiciliaria a presunto abusador en Encarnación",
-   "url": "http://www.lanacion.com.py/judiciales/2026/10/23/juez-cuestiona-requerimiento-fiscal-que-otorgo-domiciliaria-a-presunto-abusador-en-encarnacion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-23",
-   "lugares": [
-    "Encarnación"
-   ]
   }
  ]
 }
