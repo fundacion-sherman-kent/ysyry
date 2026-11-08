@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-07T19:22:37Z",
+ "obtenido": "2026-11-08T00:32:35Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 24,
+   "items": 22,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 88,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -101,10 +101,11 @@
   {
    "dominio": "ip.gov.py",
    "url": "https://www.ip.gov.py/ip/feed/",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "agenciabrasil.ebc.com.br",
@@ -133,18 +134,20 @@
   {
    "dominio": "annp.gov.py",
    "url": "https://annp.gov.py/?feed=rss2",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "armadaparaguaya.mil.py",
    "url": "https://armadaparaguaya.mil.py/feed",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "pagina12.com.ar",
@@ -166,7 +169,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 344,
+   "items": 352,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,23 +180,25 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 24
+   "fallos_seguidos": 25
   },
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
-   "ok": true,
-   "items": 10,
-   "candidatos": 5,
-   "fallos_seguidos": 0
+   "ok": false,
+   "items": 0,
+   "candidatos": 0,
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "policianacional.gov.py",
    "url": "https://www.policianacional.gov.py/feed/",
-   "ok": true,
-   "items": 5,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   }
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
@@ -1183,140 +1188,9 @@
    ],
    "id": "0e67736b15",
    "verificado": true
-  },
-  {
-   "titulo": "Ahora el Norte, en alerta por la subida de las aguas del Paraguay",
-   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/24/ahora-el-norte-en-alerta-por-la-subida-de-las-aguas-del-paraguay/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-24",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Concepción"
-   ],
-   "ubicacion": [
-    -23.4,
-    -57.43
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/24/ahora-el-norte-en-alerta-por-la-subida-de-las-aguas-del-paraguay/"
-    }
-   ],
-   "id": "3eaee855ee",
-   "verificado": true
-  },
-  {
-   "titulo": "Itaipú cierra una canaleta de su vertedero para contener el nivel del río Paraná",
-   "url": "https://www.abc.com.py/este/2026/10/24/itaipu-cierra-una-canaleta-de-su-vertedero-para-contener-el-nivel-del-rio-parana/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-24",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Itaipú"
-   ],
-   "ubicacion": [
-    -25.41,
-    -54.59
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/este/2026/10/24/itaipu-cierra-una-canaleta-de-su-vertedero-para-contener-el-nivel-del-rio-parana/"
-    }
-   ],
-   "id": "979f4f8b9f",
-   "verificado": true
-  },
-  {
-   "titulo": "Asisten a pequeños ganaderos afectados por la crecida del río Paraná",
-   "url": "https://www.abc.com.py/clima/2026/10/24/asisten-a-pequenos-ganaderos-afectados-por-la-crecida-del-rio-parana/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-24",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/clima/2026/10/24/asisten-a-pequenos-ganaderos-afectados-por-la-crecida-del-rio-parana/"
-    }
-   ],
-   "id": "15b5f1e1a8",
-   "verificado": true
-  },
-  {
-   "titulo": "Crecida del río Paraná: ¿Cuál es la zona que más preocupa al ministro de Defensa?",
-   "url": "https://www.abc.com.py/nacionales/2026/10/24/crecida-del-rio-parana-cual-es-la-zona-que-mas-preocupa-al-ministro-de-defensa/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-24",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/nacionales/2026/10/24/crecida-del-rio-parana-cual-es-la-zona-que-mas-preocupa-al-ministro-de-defensa/"
-    }
-   ],
-   "id": "d2fe3c5e26",
-   "verificado": true
   }
  ],
  "sin_tipo": [
-  {
-   "titulo": "Itaipú presenta denuncia penal contra Ueno Bank y sus directivos para recuperar fondos",
-   "url": "https://www.abc.com.py/economia/2026/11/07/itaipu-presenta-denuncia-penal-contra-ueno-bank-y-sus-directivos-para-recuperar-fondos/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-07",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
   {
    "titulo": "Policía busca a cinco personas desaparecidas en Asunción, Central y Caaguazú",
    "url": "https://www.abc.com.py/policiales/2026/11/07/policia-busca-a-cinco-personas-desaparecidas-en-asuncion-central-y-caaguazu/",
@@ -1324,6 +1198,17 @@
    "fecha": "2026-11-07",
    "lugares": [
     "Asunción"
+   ]
+  },
+  {
+   "titulo": "Festival Latinoamericano de Cine 3 Margens: CDE impulsa la creación de su comisión fílmica",
+   "url": "http://www.lanacion.com.py/espectaculo/2026/11/07/festival-latinoamericano-de-cine-3-margens-cde-impulsa-la-creacion-de-su-comision-filmica/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-07",
+   "lugares": [
+    "Ciudad del Este",
+    "Foz do Iguaçu",
+    "Puerto Iguazú"
    ]
   },
   {
@@ -1351,6 +1236,15 @@
    "fecha": "2026-11-07",
    "lugares": [
     "Asunción"
+   ]
+  },
+  {
+   "titulo": "Itaipú presenta denuncia penal contra Ueno Bank y sus directivos para recuperar fondos",
+   "url": "https://www.abc.com.py/economia/2026/11/07/itaipu-presenta-denuncia-penal-contra-ueno-bank-y-sus-directivos-para-recuperar-fondos/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-07",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -2325,25 +2219,6 @@
    "fecha": "2026-10-25",
    "lugares": [
     "Corrientes"
-   ]
-  },
-  {
-   "titulo": "Itaipú cumple 42 años de su inauguración oficial como líder mundial en producción de energía",
-   "url": "http://www.lanacion.com.py/politica/2026/10/24/itaipu-cumple-42-anos-de-su-inauguracion-oficial-como-lider-mundial-en-produccion-de-energia/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-24",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Siguen las charlas de prevención del ciberacoso a estudiantes",
-   "url": "http://www.lanacion.com.py/pais/2026/10/24/siguen-las-charlas-de-prevencion-del-ciberacoso-a-estudiantes/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-24",
-   "lugares": [
-    "Ciudad del Este",
-    "Alto Paraná"
    ]
   }
  ]
