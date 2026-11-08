@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-08T17:53:51Z",
+ "obtenido": "2026-11-08T21:58:14Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 21,
+   "items": 19,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 98,
+   "items": 96,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 353,
+   "items": 361,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 27
+   "fallos_seguidos": 28
   },
   {
    "dominio": "senad.gov.py",
@@ -198,6 +198,37 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Entregan 5.000 kilos de víveres a familias afectadas por crecida del río Paraná en Cerrito",
+   "url": "https://www.abc.com.py/nacionales/2026/11/08/entregan-5000-kilos-de-viveres-a-familias-afectadas-por-crecida-del-rio-parana-en-cerrito/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-08",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": {
+    "valor": 5000.0,
+    "unidad": "kilos"
+   },
+   "puntaje": 4,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/nacionales/2026/11/08/entregan-5000-kilos-de-viveres-a-familias-afectadas-por-crecida-del-rio-parana-en-cerrito/"
+    }
+   ],
+   "id": "27e1c4ed52",
+   "verificado": true
+  },
   {
    "titulo": "COCAÍNA RUMBO A CONCEPCIÓN: SENAD EVITÓ QUE 6.000 DOSIS LLEGUEN AL MICROTRÁFICO",
    "url": "https://senad.gov.py/cocaina-rumbo-a-concepcion-senad-evito-que-6-000-dosis-lleguen-al-microtrafico/",
@@ -1186,6 +1217,15 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Vallemí: un hombre se arrojó al río con su pareja en un auto, ella sobrevivió y él murió ahogado",
+   "url": "http://www.lanacion.com.py/pais/2026/11/08/vallemi-un-hombre-se-arrojo-al-rio-con-su-pareja-en-un-auto-ella-sobrevivio-y-el-murio-ahogado/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-08",
+   "lugares": [
+    "Concepción"
+   ]
+  },
   {
    "titulo": "Mariano Roque Alonso recupera un antiguo acceso al río Paraguay y proyecta un mirador",
    "url": "http://www.lanacion.com.py/pais/2026/11/08/mariano-roque-alonso-recupera-un-antiguo-acceso-al-rio-paraguay-y-proyecta-un-mirador/",
@@ -2214,15 +2254,6 @@
    "fecha": "2026-10-26",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Río Paraná sigue por encima del nivel de alerta en Ayolas",
-   "url": "https://www.abc.com.py/clima/2026/10/26/rio-parana-sigue-por-encima-del-nivel-de-alerta-en-ayolas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-26",
-   "lugares": [
-    "Ayolas"
    ]
   }
  ]
