@@ -1,15 +1,15 @@
 {
- "obtenido": "2026-11-07T22:00:24Z",
+ "obtenido": "2026-11-08T06:20:17Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 6
+   "avisos_en_el_corredor": 3
   },
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "SMN (Argentina)",
@@ -19,57 +19,10 @@
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 3
   }
  ],
  "avisos": [
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-07 15:35",
-   "fin": "2026-11-07 23:59",
-   "lugares": [
-    "Porto Murtinho",
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28662"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo",
-   "color": "#F96602",
-   "inicio": "2026-11-07 15:47",
-   "fin": "2026-11-07 23:59",
-   "lugares": [
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
-   "id": "inmet-28663"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Grande Perigo",
-   "color": "#F80703",
-   "inicio": "2026-11-07 11:45",
-   "fin": "2026-11-07 23:59",
-   "lugares": [
-    "Foz do Iguaçu"
-   ],
-   "riesgos": "Chuva superior a 60 mm/h ou maior que 100 mm/dia, ventos superiores a 100 km/h, e queda de granizo. Grande risco de danos em edificações, corte de energia elétrica, estragos em plantações, queda de árvores, alagamentos e transtornos no transporte rodoviário.",
-   "id": "inmet-28661"
-  },
   {
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
@@ -119,20 +72,6 @@
    "id": "inmet-28659"
   },
   {
-   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
-   "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Sistema de tormentas eléctricas moderadas a fuertes, ráfagas de vientos fuertes a muy fuertes y la alta probabilidad de caída de granizos.",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "Paraguay"
-   ],
-   "riesgos": "",
-   "id": "dmh-vigente"
-  },
-  {
    "fuente": "GDACS (ONU y Comisión Europea)",
    "pais": "",
    "fenomeno": "Green forest fire notification in Bolivia",
@@ -161,8 +100,24 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033499",
-   "lat": -16.98010165323711,
-   "lon": -56.56977980698113
+   "lat": -16.979803999301907,
+   "lon": -56.5699924986342
+  },
+  {
+   "fuente": "GDACS (ONU y Comisión Europea)",
+   "pais": "",
+   "fenomeno": "Green forest fire notification in Bolivia",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "-16.11, -63.73"
+   ],
+   "riesgos": "",
+   "id": "gdacs-&amp;eventid=1033609",
+   "lat": -16.108705445480435,
+   "lon": -63.72821241117923
   }
  ],
  "no_consultadas": [
