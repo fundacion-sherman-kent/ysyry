@@ -1614,3 +1614,5 @@
 {"id": 79, "estacion": "Concordia", "fecha": "2026-11-07", "nivel_m": 6.91}
 {"id": 85, "estacion": "Buenos Aires", "fecha": "2026-11-06", "nivel_m": 1.201}
 {"id": 1699, "estacion": "Nueva Palmira", "fecha": "2026-11-06", "nivel_m": 1.277}
+{"id": 85, "estacion": "Buenos Aires", "fecha": "2026-11-07", "nivel_m": 2.071}
+{"id": 1699, "estacion": "Nueva Palmira", "fecha": "2026-11-07", "nivel_m": 1.967}
