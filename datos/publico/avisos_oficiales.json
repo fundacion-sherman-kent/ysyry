@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-11-08T06:20:17Z",
+ "obtenido": "2026-11-08T13:40:01Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 3
+   "avisos_en_el_corredor": 2
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -45,7 +45,7 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-11-08 00:00",
+   "inicio": "2026-11-08 08:42",
    "fin": "2026-11-08 23:59",
    "lugares": [
     "Corumbá",
@@ -54,22 +54,7 @@
     "Cáceres"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28655"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-09 00:00",
-   "fin": "2026-11-09 23:59",
-   "lugares": [
-    "Corumbá",
-    "Cáceres"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28659"
+   "id": "inmet-28664"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
