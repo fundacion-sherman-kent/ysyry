@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-08T10:11:01Z",
+ "obtenido": "2026-11-08T17:53:51Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 20,
+   "items": 21,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 95,
+   "items": 98,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -141,11 +141,10 @@
   {
    "dominio": "armadaparaguaya.mil.py",
    "url": "https://armadaparaguaya.mil.py/feed",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 10,
    "candidatos": 0,
-   "error": "HTTP Error 502: Bad Gateway",
-   "fallos_seguidos": 2
+   "fallos_seguidos": 0
   },
   {
    "dominio": "pagina12.com.ar",
@@ -167,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 352,
+   "items": 353,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -178,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 26
+   "fallos_seguidos": 27
   },
   {
    "dominio": "senad.gov.py",
@@ -1188,6 +1187,31 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Mariano Roque Alonso recupera un antiguo acceso al río Paraguay y proyecta un mirador",
+   "url": "http://www.lanacion.com.py/pais/2026/11/08/mariano-roque-alonso-recupera-un-antiguo-acceso-al-rio-paraguay-y-proyecta-un-mirador/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-08",
+   "lugares": []
+  },
+  {
+   "titulo": "Itaipú Binacional realiza denuncia penal por afectación de fondos en ueno bank",
+   "url": "http://www.lanacion.com.py/politica/2026/11/08/itaipu-binacional-realiza-denuncia-penal-por-afectacion-de-fondos-en-ueno-bank/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-08",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Itaipú realiza denuncia penal por afectación de fondos en ueno bank",
+   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/08/itaipu-realiza-denuncia-penal-por-afectacion-de-fondos-en-ueno-bank/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-08",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "“Puerto Madero” de Asunción: Ueno Bank tomó el control de contrato de ANNP y ahora las obras están paradas",
    "url": "https://www.abc.com.py/economia/2026/11/08/puerto-madero-de-asuncion-ueno-bank-tomo-el-control-de-contrato-de-annp-y-ahora-las-obras-estan-paradas/",
    "dominio": "abc.com.py",
@@ -1209,15 +1233,6 @@
    "titulo": "Itaipú dice tener unos 183 millones de dólares en Ueno bank",
    "url": "https://www.abc.com.py/internacionales/2026/11/07/itaipu-dice-tener-unos-183-millones-de-dolares-en-ueno-bank/",
    "dominio": "abc.com.py",
-   "fecha": "2026-11-08",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Itaipú realiza denuncia penal por afectación de fondos en ueno bank",
-   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/08/itaipu-realiza-denuncia-penal-por-afectacion-de-fondos-en-ueno-bank/",
-   "dominio": "lanacion.com.py",
    "fecha": "2026-11-08",
    "lugares": [
     "Itaipú"
@@ -2209,22 +2224,6 @@
    "lugares": [
     "Ayolas"
    ]
-  },
-  {
-   "titulo": "Itaipú reabre vertedero y el Yguazú alcanza su pico anual: ¿qué pasará con las zonas inundadas?",
-   "url": "https://www.abc.com.py/este/2026/10/26/itaipu-reabre-vertedero-y-el-yguazu-alcanza-su-pico-anual-que-pasara-con-las-zonas-inundadas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-26",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Del atorrante al bacán, los términos del lunfardo para describir a los que eligen no trabajar: “Este viaja por Crotto”",
-   "url": "https://www.lanacion.com.ar/lifestyle/del-atorrante-al-bacan-los-terminos-del-lunfardo-para-describir-a-los-que-eligen-no-trabajar-este-nid26102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-26",
-   "lugares": []
   }
  ]
 }
