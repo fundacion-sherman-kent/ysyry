@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-11-09T01:00:30Z",
+ "obtenido": "2026-11-09T11:50:44Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -23,39 +23,6 @@
   }
  ],
  "avisos": [
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Declínio de Temperatura",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-08 00:00",
-   "fin": "2026-11-08 23:59",
-   "lugares": [
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Leve risco à saúde. Declínio entre 3ºC e 5ºC.",
-   "id": "inmet-28624"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-08 08:42",
-   "fin": "2026-11-08 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28664"
-  },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
    "pais": "",
