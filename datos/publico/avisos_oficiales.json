@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-11-09T11:50:44Z",
+ "obtenido": "2026-11-09T22:32:24Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -23,6 +23,22 @@
   }
  ],
  "avisos": [
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-11 00:00",
+   "fin": "2026-11-11 23:59",
+   "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Cáceres"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28674"
+  },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
    "pais": "",
