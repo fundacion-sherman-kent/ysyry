@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-08T21:58:14Z",
+ "obtenido": "2026-11-09T06:12:35Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 19,
+   "items": 22,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 96,
+   "items": 94,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -101,10 +101,11 @@
   {
    "dominio": "ip.gov.py",
    "url": "https://www.ip.gov.py/ip/feed/",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "agenciabrasil.ebc.com.br",
@@ -133,18 +134,20 @@
   {
    "dominio": "annp.gov.py",
    "url": "https://annp.gov.py/?feed=rss2",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "armadaparaguaya.mil.py",
    "url": "https://armadaparaguaya.mil.py/feed",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "pagina12.com.ar",
@@ -166,7 +169,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 361,
+   "items": 342,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,23 +180,25 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 28
+   "fallos_seguidos": 29
   },
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
-   "ok": true,
-   "items": 10,
-   "candidatos": 5,
-   "fallos_seguidos": 0
+   "ok": false,
+   "items": 0,
+   "candidatos": 0,
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "policianacional.gov.py",
    "url": "https://www.policianacional.gov.py/feed/",
-   "ok": true,
-   "items": 5,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   }
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
@@ -1092,131 +1097,16 @@
    ],
    "id": "e0dd332b85",
    "verificado": true
-  },
-  {
-   "titulo": "Excandidato a intendente asiste a familias afectadas por la crecida en Ciudad del Este",
-   "url": "http://www.lanacion.com.py/politica/2026/10/25/excandidato-a-intendente-asiste-a-familias-afectadas-por-la-crecida-en-ciudad-del-este/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-25",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/politica/2026/10/25/excandidato-a-intendente-asiste-a-familias-afectadas-por-la-crecida-en-ciudad-del-este/"
-    }
-   ],
-   "id": "1834ed4848",
-   "verificado": true
-  },
-  {
-   "titulo": "Alistan albergues temporales para reubicación de familias damnificadas del Bañado Sur",
-   "url": "http://www.lanacion.com.py/pais/2026/10/25/alistan-albergues-temporales-para-reubicacion-de-familias-damnificadas-del-banado-sur/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-25",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Asunción"
-   ],
-   "ubicacion": [
-    -25.28,
-    -57.63
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/25/alistan-albergues-temporales-para-reubicacion-de-familias-damnificadas-del-banado-sur/"
-    }
-   ],
-   "id": "9f3a209b3c",
-   "verificado": true
-  },
-  {
-   "titulo": "Crecida del Paraná obliga trabajos de emergencia",
-   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/25/crecida-del-parana-obliga-trabajos-de-emergencia/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-25",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/10/25/crecida-del-parana-obliga-trabajos-de-emergencia/"
-    }
-   ],
-   "id": "e8b5236dee",
-   "verificado": true
-  },
-  {
-   "titulo": "La vida se detiene en el epicentro de la emergencia paraguaya por crecida del río Paraná",
-   "url": "https://www.abc.com.py/internacionales/2026/10/25/la-vida-se-detiene-en-el-epicentro-de-la-emergencia-paraguaya-por-crecida-del-rio-parana/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-25",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/internacionales/2026/10/25/la-vida-se-detiene-en-el-epicentro-de-la-emergencia-paraguaya-por-crecida-del-rio-parana/"
-    }
-   ],
-   "id": "0e67736b15",
-   "verificado": true
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Roque Alonso recupera una salida al río Paraguay y proyecta mirador",
+   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/11/09/roque-alonso-recupera-una-salida-al-rio-paraguay-y-proyecta-mirador/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-09",
+   "lugares": []
+  },
   {
    "titulo": "Vallemí: un hombre se arrojó al río con su pareja en un auto, ella sobrevivió y él murió ahogado",
    "url": "http://www.lanacion.com.py/pais/2026/11/08/vallemi-un-hombre-se-arrojo-al-rio-con-su-pareja-en-un-auto-ella-sobrevivio-y-el-murio-ahogado/",
@@ -2241,15 +2131,6 @@
   {
    "titulo": "Paraguay y Brasil ante la continuidad de Lula",
    "url": "http://www.lanacion.com.py/foco/2026/10/26/paraguay-y-brasil-ante-la-continuidad-de-lula/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-26",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Plan 1000 km avanza con nuevo asfalto y empedrados en Caaguazú y Alto Paraguay",
-   "url": "http://www.lanacion.com.py/negocios/2026/10/26/plan-1000-km-avanza-con-nuevo-asfalto-y-empedrados-en-caaguazu-y-alto-paraguay/",
    "dominio": "lanacion.com.py",
    "fecha": "2026-10-26",
    "lugares": [
