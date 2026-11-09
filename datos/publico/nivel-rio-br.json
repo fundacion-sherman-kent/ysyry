@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-08T19:58:24Z",
+ "obtenido": "2026-11-09T01:13:58Z",
  "fuente": {
   "nombre": "ANA (Brasil), telemetría; escalas del Serviço Geológico do Brasil (SGB-CPRM)",
   "url": "https://telemetriaws1.ana.gov.br/",
@@ -11,9 +11,9 @@
    "nombre": "Cáceres (ANA)",
    "lat": -16.0761,
    "lon": -57.7022,
-   "hora_local": "2026-11-08 16:00",
-   "nivel_m": 1.14,
-   "caudal_m3s": 239.43,
+   "hora_local": "2026-11-08 20:00",
+   "nivel_m": 1.13,
+   "caudal_m3s": 238.08,
    "var_cm": -8
   },
   {
@@ -21,20 +21,20 @@
    "nombre": "Ladário (ANA)",
    "lat": -19.0017,
    "lon": -57.5942,
-   "hora_local": "2026-11-08 16:00",
+   "hora_local": "2026-11-08 21:00",
    "nivel_m": 0.82,
    "caudal_m3s": null,
-   "var_cm": -3
+   "var_cm": 4
   },
   {
    "codigo": "66960008",
    "nombre": "Porto Esperança (ANA)",
    "lat": -19.6006,
    "lon": -57.4372,
-   "hora_local": "2026-11-08 16:00",
+   "hora_local": "2026-11-08 21:00",
    "nivel_m": 0.39,
    "caudal_m3s": null,
-   "var_cm": 3
+   "var_cm": 0
   }
  ]
 }
