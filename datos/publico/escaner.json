@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-09T06:12:35Z",
+ "obtenido": "2026-11-09T16:07:54Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 22,
+   "items": 23,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 94,
+   "items": 96,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -101,11 +101,10 @@
   {
    "dominio": "ip.gov.py",
    "url": "https://www.ip.gov.py/ip/feed/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 10,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "agenciabrasil.ebc.com.br",
@@ -134,20 +133,18 @@
   {
    "dominio": "annp.gov.py",
    "url": "https://annp.gov.py/?feed=rss2",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 10,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "armadaparaguaya.mil.py",
    "url": "https://armadaparaguaya.mil.py/feed",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 10,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "pagina12.com.ar",
@@ -169,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 342,
+   "items": 301,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -180,25 +177,23 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 29
+   "fallos_seguidos": 30
   },
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
-   "ok": false,
-   "items": 0,
-   "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "ok": true,
+   "items": 10,
+   "candidatos": 5,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "policianacional.gov.py",
    "url": "https://www.policianacional.gov.py/feed/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 5,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   }
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
@@ -1100,6 +1095,15 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Gustavo Leite pide “barrida” de consejeros de Itaipú",
+   "url": "https://www.abc.com.py/politica/2026/11/09/gustavo-leite-pide-barrida-de-consejeros-de-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-09",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
   {
    "titulo": "Roque Alonso recupera una salida al río Paraguay y proyecta mirador",
    "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/11/09/roque-alonso-recupera-una-salida-al-rio-paraguay-y-proyecta-mirador/",
@@ -2123,15 +2127,6 @@
    "titulo": "¿Cómo impacta el triunfo de Lula en Paraguay? El análisis de Mario Paz Castaing sobre Itaipú e inversiones",
    "url": "https://www.abc.com.py/politica/2026/10/26/como-impacta-el-triunfo-de-lula-en-paraguay-el-analisis-de-mario-paz-castaing-sobre-itaipu-e-inversiones/",
    "dominio": "abc.com.py",
-   "fecha": "2026-10-26",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Paraguay y Brasil ante la continuidad de Lula",
-   "url": "http://www.lanacion.com.py/foco/2026/10/26/paraguay-y-brasil-ante-la-continuidad-de-lula/",
-   "dominio": "lanacion.com.py",
    "fecha": "2026-10-26",
    "lugares": [
     "Itaipú"
