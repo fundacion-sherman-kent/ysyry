@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-11-10T07:31:06Z",
+ "obtenido": "2026-11-10T17:10:03Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 3
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -19,10 +19,28 @@
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 3
+   "avisos_en_el_corredor": 4
   }
  ],
  "avisos": [
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-12 00:00",
+   "fin": "2026-11-12 23:59",
+   "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres",
+    "Ponta Porã"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28680"
+  },
   {
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
@@ -34,10 +52,47 @@
    "lugares": [
     "Corumbá",
     "Ladário",
-    "Cáceres"
+    "Porto Murtinho",
+    "Cáceres",
+    "Ponta Porã",
+    "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28674"
+   "id": "inmet-28678"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo",
+   "color": "#F96602",
+   "inicio": "2026-11-11 00:00",
+   "fin": "2026-11-11 23:59",
+   "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres",
+    "Ponta Porã"
+   ],
+   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
+   "id": "inmet-28679"
+  },
+  {
+   "fuente": "GDACS (ONU y Comisión Europea)",
+   "pais": "",
+   "fenomeno": "Green flood alert in Argentina",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "-31.71, -60.57"
+   ],
+   "riesgos": "",
+   "id": "gdacs-&amp;eventid=1104277",
+   "lat": -31.7114309,
+   "lon": -60.5657773
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -68,8 +123,8 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033499",
-   "lat": -16.979803999301907,
-   "lon": -56.5699924986342
+   "lat": -16.978898210047976,
+   "lon": -56.570198538376964
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
