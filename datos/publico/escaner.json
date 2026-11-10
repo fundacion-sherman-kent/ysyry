@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-09T16:07:54Z",
+ "obtenido": "2026-11-10T01:31:44Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 23,
+   "items": 30,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 96,
+   "items": 89,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -101,10 +101,11 @@
   {
    "dominio": "ip.gov.py",
    "url": "https://www.ip.gov.py/ip/feed/",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "agenciabrasil.ebc.com.br",
@@ -133,18 +134,20 @@
   {
    "dominio": "annp.gov.py",
    "url": "https://annp.gov.py/?feed=rss2",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "armadaparaguaya.mil.py",
    "url": "https://armadaparaguaya.mil.py/feed",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "pagina12.com.ar",
@@ -166,7 +169,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 301,
+   "items": 329,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,23 +180,25 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 30
+   "fallos_seguidos": 31
   },
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
-   "ok": true,
-   "items": 10,
-   "candidatos": 5,
-   "fallos_seguidos": 0
+   "ok": false,
+   "items": 0,
+   "candidatos": 0,
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "policianacional.gov.py",
    "url": "https://www.policianacional.gov.py/feed/",
-   "ok": true,
-   "items": 5,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   }
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
@@ -1064,37 +1069,47 @@
    ],
    "id": "741f724282",
    "verificado": true
-  },
-  {
-   "titulo": "La crecida del río Paraguay destruye caminos y golpea a productores en Humaitá",
-   "url": "https://www.abc.com.py/nacionales/2026/10/26/la-crecida-del-rio-paraguay-destruye-caminos-y-golpea-a-productores-en-humaita/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-26",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/nacionales/2026/10/26/la-crecida-del-rio-paraguay-destruye-caminos-y-golpea-a-productores-en-humaita/"
-    }
-   ],
-   "id": "e0dd332b85",
-   "verificado": true
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Exasesor jurídico de Santiago Peña deja el Consejo de Itaipú Binacional",
+   "url": "https://www.abc.com.py/politica/2026/11/09/exasesor-juridico-de-santiago-pena-deja-el-consejo-de-itaipu-binacional/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Trata de personas: 62 chinos rescatados de un hotel de CDE declararon ante juez",
+   "url": "http://www.lanacion.com.py/pais/2026/11/09/trata-de-personas-62-chinos-rescatados-de-un-hotel-de-cde-declararon-ante-juez/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Ciudad del Este",
+    "Canindeyú",
+    "Alto Paraná"
+   ]
+  },
+  {
+   "titulo": "La Fiscalía de Paraguay allanó las viviendas de Santiago Peña en Asunción por el escándalo de Ueno bank",
+   "url": "https://www.infobae.com/america/america-latina/2026/11/10/la-fiscalia-de-paraguay-allano-las-viviendas-de-santiago-pena-en-asuncion-por-el-escandalo-de-ueno-bank/",
+   "dominio": "infobae.com",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Itaipú proyecta ampliar la generación de energía solar desde su embalse",
+   "url": "http://www.lanacion.com.py/tendencias/2026/11/09/itaipu-proyecta-ampliar-la-generacion-de-energia-solar-desde-su-embalse/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-09",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
   {
    "titulo": "Gustavo Leite pide “barrida” de consejeros de Itaipú",
    "url": "https://www.abc.com.py/politica/2026/11/09/gustavo-leite-pide-barrida-de-consejeros-de-itaipu/",
@@ -2094,42 +2109,6 @@
    "fecha": "2026-10-27",
    "lugares": [
     "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "¿Dónde está Flávio Bolsonaro?: investigan si intentó fugarse a la Argentina para volar a EE.UU.",
-   "url": "https://www.pagina12.com.ar/2026/10/27/donde-esta-flavio-bolsonaro-investigan-si-intento-fugarse-a-la-argentina-para-volar-a-eeuu/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-10-27",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Policía demora a ocho estudiantes, tras violento enfrentamiento frente a colegio capitalino",
-   "url": "http://www.lanacion.com.py/pais/2026/10/26/policia-demora-a-ocho-estudiantes-tras-violento-enfrentamiento-frente-a-colegio-capitalino/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-26",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Nuevo modus operandi: roban relojes de alta gama y sospechan de delincuentes extranjeros",
-   "url": "http://www.lanacion.com.py/pais/2026/10/26/nuevo-modus-operandi-roban-relojes-de-alta-gama-y-sospechan-de-delincuentes-extranjeros/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-26",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "¿Cómo impacta el triunfo de Lula en Paraguay? El análisis de Mario Paz Castaing sobre Itaipú e inversiones",
-   "url": "https://www.abc.com.py/politica/2026/10/26/como-impacta-el-triunfo-de-lula-en-paraguay-el-analisis-de-mario-paz-castaing-sobre-itaipu-e-inversiones/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-26",
-   "lugares": [
-    "Itaipú"
    ]
   }
  ]
