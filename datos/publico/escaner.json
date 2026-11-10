@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-10T01:31:44Z",
+ "obtenido": "2026-11-10T11:01:50Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 30,
+   "items": 34,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 89,
+   "items": 95,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -101,11 +101,10 @@
   {
    "dominio": "ip.gov.py",
    "url": "https://www.ip.gov.py/ip/feed/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 10,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "agenciabrasil.ebc.com.br",
@@ -134,20 +133,18 @@
   {
    "dominio": "annp.gov.py",
    "url": "https://annp.gov.py/?feed=rss2",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 10,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "armadaparaguaya.mil.py",
    "url": "https://armadaparaguaya.mil.py/feed",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 10,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "pagina12.com.ar",
@@ -169,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 329,
+   "items": 310,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -180,25 +177,23 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 31
+   "fallos_seguidos": 32
   },
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
-   "ok": false,
-   "items": 0,
-   "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "ok": true,
+   "items": 10,
+   "candidatos": 5,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "policianacional.gov.py",
    "url": "https://www.policianacional.gov.py/feed/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 5,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   }
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
@@ -1073,15 +1068,6 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Exasesor jurídico de Santiago Peña deja el Consejo de Itaipú Binacional",
-   "url": "https://www.abc.com.py/politica/2026/11/09/exasesor-juridico-de-santiago-pena-deja-el-consejo-de-itaipu-binacional/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
    "titulo": "Trata de personas: 62 chinos rescatados de un hotel de CDE declararon ante juez",
    "url": "http://www.lanacion.com.py/pais/2026/11/09/trata-de-personas-62-chinos-rescatados-de-un-hotel-de-cde-declararon-ante-juez/",
    "dominio": "lanacion.com.py",
@@ -1090,6 +1076,15 @@
     "Ciudad del Este",
     "Canindeyú",
     "Alto Paraná"
+   ]
+  },
+  {
+   "titulo": "Exasesor jurídico de Santiago Peña deja el Consejo de Itaipú Binacional",
+   "url": "https://www.abc.com.py/politica/2026/11/09/exasesor-juridico-de-santiago-pena-deja-el-consejo-de-itaipu-binacional/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
