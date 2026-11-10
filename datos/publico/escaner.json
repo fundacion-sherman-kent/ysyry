@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-10T11:01:50Z",
+ "obtenido": "2026-11-10T19:39:48Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 34,
+   "items": 41,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 95,
+   "items": 85,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 310,
+   "items": 329,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 32
+   "fallos_seguidos": 33
   },
   {
    "dominio": "senad.gov.py",
@@ -198,6 +198,83 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "SENAD CAPTURA A PAREJA DE DISTRIBUIDORES CON MÁS DE 11.000 DOSIS DE DROGAS EN PRESIDENTE FRANCO",
+   "url": "https://senad.gov.py/senad-captura-a-pareja-de-distribuidores-con-mas-de-11-000-dosis-de-drogas-en-presidente-franco/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-11-10",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este",
+    "Alto Paraná"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": {
+    "valor": 1.5,
+    "unidad": "kilos"
+   },
+   "puntaje": 8,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/senad-captura-a-pareja-de-distribuidores-con-mas-de-11-000-dosis-de-drogas-en-presidente-franco/"
+    }
+   ],
+   "id": "73c14186cb",
+   "verificado": true
+  },
+  {
+   "titulo": "OFENSIVA ENTRE PARAGUAY Y BRASIL GENERA USD 17 MILLONES DE PÉRDIDAS AL NARCOTRÁFICO",
+   "url": "https://senad.gov.py/ofensiva-entre-paraguay-y-brasil-genera-usd-17-millones-de-perdidas-al-narcotrafico/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-11-10",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Canindeyú"
+   ],
+   "ubicacion": [
+    -24.2,
+    -55.3
+   ],
+   "zona": "z4",
+   "cantidad": {
+    "valor": 113.0,
+    "unidad": "toneladas"
+   },
+   "puntaje": 7,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/ofensiva-entre-paraguay-y-brasil-genera-usd-17-millones-de-perdidas-al-narcotrafico/"
+    }
+   ],
+   "id": "0558aeebe4",
+   "verificado": true
+  },
   {
    "titulo": "Entregan 5.000 kilos de víveres a familias afectadas por crecida del río Paraná en Cerrito",
    "url": "https://www.abc.com.py/nacionales/2026/11/08/entregan-5000-kilos-de-viveres-a-familias-afectadas-por-crecida-del-rio-parana-en-cerrito/",
@@ -1067,6 +1144,61 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Director de Yacyretá, cercano a Alliana, es accionista de Ueno Bank y autorizó colocar allí US$ 10 millones del fondo jubilatorio",
+   "url": "https://www.abc.com.py/economia/2026/11/10/director-de-yacyreta-cercano-a-alliana-es-accionista-de-ueno-bank-y-autorizo-colocar-alli-us-10-millones-del-fondo-jubilatorio/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Allanan la vivienda de Carlos Fernández Valdovinos",
+   "url": "http://www.lanacion.com.py/politica/2026/11/10/allanan-la-vivienda-de-carlos-fernandez-valdovinos/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Asunción",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Detenido con tres órdenes de captura destrozó calabozo y atacó a policías en Encarnación",
+   "url": "http://www.lanacion.com.py/pais/2026/11/10/detenido-con-tres-ordenes-de-captura-destrozo-calabozo-y-ataco-a-policias-en-encarnacion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Encarnación"
+   ]
+  },
+  {
+   "titulo": "LN PM: edición del 10 de noviembre",
+   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/11/10/ln-pm-edicion-del-10-de-noviembre/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Alto Paraná"
+   ]
+  },
+  {
+   "titulo": "Funcionaria de Ueno Casa de Bolsa guardó silencio y según su abogado rompió solo “proyectos”",
+   "url": "http://www.lanacion.com.py/pais/2026/11/10/funcionaria-de-ueno-casa-de-bolsa-guardo-silencio-y-segun-su-abogado-rompio-solo-proyectos/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Golpe al narcotráfico: primera semana de Nueva Alianza 59 deja pérdidas por USD 17 millones",
+   "url": "http://www.lanacion.com.py/pais/2026/11/10/golpe-al-narcotrafico-primera-semana-de-nueva-alianza-59-deja-perdidas-por-usd-17-millones/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Canindeyú"
+   ]
+  },
   {
    "titulo": "Trata de personas: 62 chinos rescatados de un hotel de CDE declararon ante juez",
    "url": "http://www.lanacion.com.py/pais/2026/11/09/trata-de-personas-62-chinos-rescatados-de-un-hotel-de-cde-declararon-ante-juez/",
@@ -2052,58 +2184,6 @@
    "fecha": "2026-10-27",
    "lugares": [
     "Asunción"
-   ]
-  },
-  {
-   "titulo": "Este es el avión retenido en Puerto Iguazú: investigan si Bolsonaro iba a abordarlo para viajar a EE.UU.",
-   "url": "https://www.lanacion.com.ar/el-mundo/este-es-el-avion-retenido-en-puerto-iguazu-investigan-si-bolsonaro-iba-a-abordarlo-para-viajar-a-nid27102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-27",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Anuncian nuevos requisitos para el paso por el Puente de la Integración",
-   "url": "http://www.lanacion.com.py/negocios/2026/10/27/anuncian-nuevos-requisitos-para-el-paso-por-el-puente-de-la-integracion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-27",
-   "lugares": [
-    "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "Edil Roberto Ciré apuesta a la reactivación de la cuenca del río Uruguay",
-   "url": "https://ladiaria.com.uy/paysandu/articulo/2026/10/edil-roberto-cire-apuesta-a-la-reactivacion-de-la-cuenca-del-rio-uruguay/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-27",
-   "lugares": []
-  },
-  {
-   "titulo": "La fiesta mexicana del “Día de muertos” llega al Centro Cultural del Puerto de Asunción",
-   "url": "https://www.abc.com.py/espectaculos/cultura/2026/10/27/la-fiesta-mexicana-del-dia-de-muertos-llega-al-centro-cultural-del-puerto/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-27",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Peña confía en cerrar acuerdo sobre el Anexo C con Brasil antes de fin de año",
-   "url": "http://www.lanacion.com.py/negocios/2026/10/27/pena-confia-en-cerrar-acuerdo-sobre-el-anexo-c-con-brasil-antes-de-fin-de-ano/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-27",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "La Policía de Brasil investiga si Flávio Bolsonaro planeaba huir en un avión argentino, pero Migraciones lo desmiente",
-   "url": "https://perfil.com/internacional/la-policia-de-brasil-investiga-si-flavio-bolsonaro-planeaba-huir-en-un-avion-argentino-pero-migraciones-lo-desmiente-aWtCy4Y8duyK",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-27",
-   "lugares": [
-    "Puerto Iguazú"
    ]
   }
  ]
