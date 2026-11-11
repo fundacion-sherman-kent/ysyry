@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-10T23:33:52Z",
+ "obtenido": "2026-11-11T06:46:44Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -23,24 +23,6 @@
   }
  ],
  "avisos": [
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-12 00:00",
-   "fin": "2026-11-12 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres",
-    "Ponta Porã"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28680"
-  },
   {
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
@@ -77,6 +59,24 @@
    ],
    "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
    "id": "inmet-28679"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-12 00:00",
+   "fin": "2026-11-12 23:59",
+   "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres",
+    "Ponta Porã"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28680"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -123,8 +123,8 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033499",
-   "lat": -16.978898210047976,
-   "lon": -56.570198538376964
+   "lat": -16.977634664463178,
+   "lon": -56.57046172367724
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -135,12 +135,12 @@
    "inicio": "",
    "fin": "",
    "lugares": [
-    "-16.11, -63.73"
+    "-16.10, -63.73"
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033609",
-   "lat": -16.108705445480435,
-   "lon": -63.72821241117923
+   "lat": -16.102714550780938,
+   "lon": -63.734193538642565
   }
  ],
  "no_consultadas": [
