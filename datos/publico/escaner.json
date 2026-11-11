@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-11T10:46:24Z",
+ "obtenido": "2026-11-11T19:31:50Z",
  "dias": 14,
  "fuentes": [
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 95,
+   "items": 90,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 330,
+   "items": 345,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,14 +177,14 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 35
+   "fallos_seguidos": 36
   },
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 5,
+   "candidatos": 4,
    "fallos_seguidos": 0
   },
   {
@@ -854,6 +854,42 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Itaipú entregó 16% más de energía a la ANDE en los 10 primeros meses",
+   "url": "https://www.abc.com.py/economia/2026/11/11/itaipu-entrego-16-mas-de-energia-a-la-ande-en-los-10-primeros-meses/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-11",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Hugel, el reconocido DJ francés, desembarca con fiesta en el Puerto de Asunción",
+   "url": "https://www.abc.com.py/espectaculos/musica/2026/11/11/hugel-el-reconocido-dj-frances-desembarca-con-fiesta-en-el-puerto-de-asuncion/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-11",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Yacyretá rompe el silencio sobre Ueno, pero no aclara que su director es accionista del banco intervenido",
+   "url": "https://www.abc.com.py/economia/2026/11/11/yacyreta-rompe-el-silencio-sobre-ueno-pero-no-aclara-que-su-director-es-accionista-del-banco-intervenido/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-11",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "EBY recurrirá a la Justicia para recuperar USD 10 millones colocados en Ueno Bank",
+   "url": "http://www.lanacion.com.py/negocios/2026/11/11/eby-recurrira-a-la-justicia-para-recuperar-usd-10-millones-colocados-en-ueno-bank/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-11",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
   {
    "titulo": "Itaipú proyecta generar mayor energía solar desde el embalse",
    "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/11/11/itaipu-proyecta-generar-mayor-energia-solar-desde-el-embalse/",
@@ -1859,42 +1895,6 @@
    "dominio": "ladiaria.com.uy",
    "fecha": "2026-10-28",
    "lugares": []
-  },
-  {
-   "titulo": "El Gobierno de Milei, clave en la huida de Bolsonaro: partió en la madrugada de Puerto Iguazú escoltado por la policía",
-   "url": "https://www.pagina12.com.ar/2026/10/28/el-gobierno-de-milei-clave-en-la-huida-de-bolsonaro-partio-en-la-madrugada-de-puerto-iguazu-escoltado-por-la-policia/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-10-28",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "El Gobierno de Milei, clave en la huida de Bolsonaro desde  Puerto Iguazú escoltado por la policía",
-   "url": "https://www.pagina12.com.ar/2026/10/28/el-gobierno-de-milei-clave-en-la-huida-de-bolsonaro-desde-puerto-iguazu-escoltado-por-la-policia/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-10-28",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Docente desaparecida en Corrientes: analizan llamadas e investigan un posible femicidio",
-   "url": "https://perfil.com/nea/docente-desaparecida-en-corrientes-analizan-llamadas-e-investigan-un-posible-femicidio-a7gVR7F9I3xd",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-28",
-   "lugares": [
-    "Corrientes"
-   ]
-  },
-  {
-   "titulo": "\"La frontera argentina no es un pasillo VIP\": Marcela Pagano presentó una denuncia penal por el paso de Flávio Bolsonaro por Puerto Iguazú",
-   "url": "https://perfil.com/politica/la-frontera-argentina-no-es-un-pasillo-vip-marcela-pagano-presento-una-denuncia-penal-por-el-paso-de-flavio-bolsonaro-por-puerto-iguazu-avgDC4D1iVua",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-28",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
   }
  ]
 }
