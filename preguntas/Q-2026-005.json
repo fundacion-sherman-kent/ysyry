@@ -1,5 +1,5 @@
 {
- "estado": "publicada",
+ "estado": "resuelta",
  "creada": "2026-10-26",
  "vence": "2026-11-10",
  "banda": "improbable",
@@ -29,5 +29,8 @@
  },
  "datos_de_partida": "Pulso de Ysyry por zona, buques visibles por AIS por captura (mediana del día). En Rosario – San Lorenzo, 25 días de datos (desde el 2/10): mínimo 103, mediana 116, tercer cuartil 121, máximo 132 (un solo día en 25). Entre el 13 y el 26/10 el máximo fue 123,5. Mide buques visibles por AIS, no el tráfico real: depende de la cobertura de los receptores.",
  "publicada_el": "2026-10-26",
- "resolucion": "Automática el 11/11/2026 contra el pulso por zona de Ysyry (rama datos-pulso): sólo cuentan los días con 12 capturas de AIS o más; si los días con datos son menos de la mitad del período, queda «sin datos suficientes» y no cuenta."
+ "resolucion": "Automática el 11/11/2026 contra el pulso por zona de Ysyry (rama datos-pulso): sólo cuentan los días con 12 capturas de AIS o más; si los días con datos son menos de la mitad del período, queda «sin datos suficientes» y no cuenta.",
+ "resultado": true,
+ "valor_observado": "3 días que cumplen, de 10 con datos",
+ "resuelta_el": "2026-11-11"
 }
