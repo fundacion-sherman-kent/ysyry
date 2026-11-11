@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-10T19:39:48Z",
+ "obtenido": "2026-11-11T01:16:14Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 41,
+   "items": 47,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 85,
+   "items": 86,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -101,10 +101,11 @@
   {
    "dominio": "ip.gov.py",
    "url": "https://www.ip.gov.py/ip/feed/",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "agenciabrasil.ebc.com.br",
@@ -133,18 +134,20 @@
   {
    "dominio": "annp.gov.py",
    "url": "https://annp.gov.py/?feed=rss2",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "armadaparaguaya.mil.py",
    "url": "https://armadaparaguaya.mil.py/feed",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "pagina12.com.ar",
@@ -166,7 +169,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 329,
+   "items": 348,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,23 +180,25 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 33
+   "fallos_seguidos": 34
   },
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
-   "ok": true,
-   "items": 10,
-   "candidatos": 5,
-   "fallos_seguidos": 0
+   "ok": false,
+   "items": 0,
+   "candidatos": 0,
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "policianacional.gov.py",
    "url": "https://www.policianacional.gov.py/feed/",
-   "ok": true,
-   "items": 5,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   }
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
@@ -851,306 +856,61 @@
    ],
    "id": "f4e44e516b",
    "verificado": true
-  },
-  {
-   "titulo": "SENAD INTERVIENE FOCO DE DROGAS EN AYOLAS",
-   "url": "https://senad.gov.py/senad-interviene-foco-de-drogas-en-ayolas/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-10-27",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ],
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Ayolas"
-   ],
-   "ubicacion": [
-    -27.39,
-    -56.84
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 10,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/senad-interviene-foco-de-drogas-en-ayolas/"
-    }
-   ],
-   "id": "19a1fc2562",
-   "verificado": true
-  },
-  {
-   "titulo": "SENAD SACÓ DE CIRCULACIÓN CASI 1,3 MILLONES DE DOSIS DE DROGAS EN CENTRAL Y ASUNCIÓN",
-   "url": "https://senad.gov.py/senad-saco-de-circulacion-casi-13-millones-de-dosis-de-drogas-en-central-y-asuncion/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-10-27",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Asunción"
-   ],
-   "ubicacion": [
-    -25.28,
-    -57.63
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 9,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/senad-saco-de-circulacion-casi-13-millones-de-dosis-de-drogas-en-central-y-asuncion/"
-    }
-   ],
-   "id": "7aecc9af4c",
-   "verificado": true
-  },
-  {
-   "titulo": "CORTES Y RAYAS: UNA BARBERÍA QUE ESCONDÍA COCAÍNA PARA LA VENTA",
-   "url": "https://senad.gov.py/cortes-y-rayas-una-barberia-que-escondia-cocaina-para-la-venta/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-10-27",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Asunción"
-   ],
-   "ubicacion": [
-    -25.28,
-    -57.63
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 7,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/cortes-y-rayas-una-barberia-que-escondia-cocaina-para-la-venta/"
-    }
-   ],
-   "id": "38c7d9e2ff",
-   "verificado": true
-  },
-  {
-   "titulo": "Golpe al microtráfico: Senad saca de circulación más de 1,2 millones de dosis de drogas",
-   "url": "http://www.lanacion.com.py/pais/2026/10/27/golpe-al-microtrafico-senad-saca-de-circulacion-mas-de-12-millones-de-dosis-de-drogas/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-27",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Asunción"
-   ],
-   "ubicacion": [
-    -25.28,
-    -57.63
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 6,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/27/golpe-al-microtrafico-senad-saca-de-circulacion-mas-de-12-millones-de-dosis-de-drogas/"
-    }
-   ],
-   "id": "d19ca3ae7b",
-   "verificado": true
-  },
-  {
-   "titulo": "El Niño golpea América Latina con inundaciones en Argentina e incendios en Perú",
-   "url": "http://www.lanacion.com.py/mundo/2026/10/27/el-nino-golpea-america-latina-con-inundaciones-en-argentina-e-incendios-en-peru/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-27",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Corrientes"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/mundo/2026/10/27/el-nino-golpea-america-latina-con-inundaciones-en-argentina-e-incendios-en-peru/"
-    }
-   ],
-   "id": "c94fc78b18",
-   "verificado": true
-  },
-  {
-   "titulo": "Inundaciones en Corrientes: confirman una nueva onda de crecida del río Paraná para el 3 de noviembre",
-   "url": "https://perfil.com/nea/inundaciones-en-corrientes-confirman-una-nueva-onda-de-crecida-del-rio-parana-para-el-3-de-noviembre-aNdJK9S4Q8y5",
-   "dominio": "perfil.com",
-   "clase": "prensa",
-   "fecha": "2026-10-27",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [
-    "Corrientes"
-   ],
-   "ubicacion": [
-    -27.47,
-    -58.83
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "perfil.com",
-     "clase": "prensa",
-     "url": "https://perfil.com/nea/inundaciones-en-corrientes-confirman-una-nueva-onda-de-crecida-del-rio-parana-para-el-3-de-noviembre-aNdJK9S4Q8y5"
-    }
-   ],
-   "id": "807f11322d",
-   "verificado": true
-  },
-  {
-   "titulo": "Fernanda Gigliani quiere que la licitación en la zona del Mangrullo pase por el Concejo",
-   "url": "https://www.pagina12.com.ar/2026/10/27/fernanda-gigliani-quiere-que-la-licitacion-en-la-zona-del-mangrullo-pase-por-el-concejo/",
-   "dominio": "pagina12.com.ar",
-   "clase": "prensa",
-   "fecha": "2026-10-27",
-   "tipos": [
-    [
-     "regulatorio",
-     "Licitación, peaje o conflicto gremial"
-    ]
-   ],
-   "lugares": [
-    "Rosario"
-   ],
-   "ubicacion": [
-    -32.95,
-    -60.65
-   ],
-   "zona": "z2",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "pagina12.com.ar",
-     "clase": "prensa",
-     "url": "https://www.pagina12.com.ar/2026/10/27/fernanda-gigliani-quiere-que-la-licitacion-en-la-zona-del-mangrullo-pase-por-el-concejo/"
-    }
-   ],
-   "id": "c785bc6d41",
-   "verificado": true
-  },
-  {
-   "titulo": "Minga ambiental retiró 21 toneladas de basura tras severa crecida del río Paraná en CDE",
-   "url": "http://www.lanacion.com.py/pais/2026/10/27/minga-ambiental-retiro-21-toneladas-de-basura-tras-severa-crecida-del-rio-parana-en-cde/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-27",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": {
-    "valor": 21.0,
-    "unidad": "toneladas"
-   },
-   "puntaje": 4,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/27/minga-ambiental-retiro-21-toneladas-de-basura-tras-severa-crecida-del-rio-parana-en-cde/"
-    }
-   ],
-   "id": "741f724282",
-   "verificado": true
   }
  ],
  "sin_tipo": [
   {
-   "titulo": "Director de Yacyretá, cercano a Alliana, es accionista de Ueno Bank y autorizó colocar allí US$ 10 millones del fondo jubilatorio",
-   "url": "https://www.abc.com.py/economia/2026/11/10/director-de-yacyreta-cercano-a-alliana-es-accionista-de-ueno-bank-y-autorizo-colocar-alli-us-10-millones-del-fondo-jubilatorio/",
+   "titulo": "Exasesor jurídico de Santiago Peña deja el Consejo de Itaipú Binacional",
+   "url": "https://www.abc.com.py/politica/2026/11/09/exasesor-juridico-de-santiago-pena-deja-el-consejo-de-itaipu-binacional/",
    "dominio": "abc.com.py",
    "fecha": "2026-11-10",
    "lugares": [
-    "Yacyretá"
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Exigen la salida de Zacarías de Itaipú y una investigación fiscal por depósitos en ueno",
+   "url": "https://www.abc.com.py/este/2026/11/10/exigen-salida-de-zacarias-de-itaipu-e-investigacion-fiscal-por-depositos-en-ueno/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "El río Paraná baja, pero mantiene niveles de inundabilidad en Ayolas",
+   "url": "https://www.abc.com.py/clima/2026/11/10/el-rio-parana-baja-pero-mantiene-niveles-de-inundabilidad-en-ayolas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Ayolas"
+   ]
+  },
+  {
+   "titulo": "Itaipú: Ejecutivo echa a dos consejeros y acepta la renuncia de otros dos, en plena crisis de Ueno",
+   "url": "https://www.abc.com.py/economia/2026/11/10/itaipu-ejecutivo-echa-a-dos-consejeros-y-acepta-la-renuncia-de-otros-dos-en-plena-crisis-de-ueno/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "La ANNP toma el control y terminará las obras del Puerto de Asunción",
+   "url": "http://www.lanacion.com.py/negocios/2026/11/10/la-annp-toma-el-control-y-terminara-las-obras-del-puerto-de-asuncion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Ejecutivo remueve a dos consejeros y acepta la renuncia de otros dos de Itaipú",
+   "url": "http://www.lanacion.com.py/politica/2026/11/10/ejecutivo-remueve-a-dos-consejeros-y-acepta-la-renuncia-de-otros-dos-de-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -1200,6 +960,15 @@
    ]
   },
   {
+   "titulo": "Director de Yacyretá, cercano a Alliana, es accionista de Ueno Bank y autorizó colocar allí US$ 10 millones del fondo jubilatorio",
+   "url": "https://www.abc.com.py/economia/2026/11/10/director-de-yacyreta-cercano-a-alliana-es-accionista-de-ueno-bank-y-autorizo-colocar-alli-us-10-millones-del-fondo-jubilatorio/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-10",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
    "titulo": "Trata de personas: 62 chinos rescatados de un hotel de CDE declararon ante juez",
    "url": "http://www.lanacion.com.py/pais/2026/11/09/trata-de-personas-62-chinos-rescatados-de-un-hotel-de-cde-declararon-ante-juez/",
    "dominio": "lanacion.com.py",
@@ -1208,15 +977,6 @@
     "Ciudad del Este",
     "Canindeyú",
     "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "Exasesor jurídico de Santiago Peña deja el Consejo de Itaipú Binacional",
-   "url": "https://www.abc.com.py/politica/2026/11/09/exasesor-juridico-de-santiago-pena-deja-el-consejo-de-itaipu-binacional/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Itaipú"
    ]
   },
   {
@@ -2139,51 +1899,6 @@
    "fecha": "2026-10-28",
    "lugares": [
     "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Piden la prisión preventiva de Flávio Bolsonaro y una alerta roja de Interpol tras no entregar su pasaporte",
-   "url": "https://perfil.com/internacional/piden-la-prision-preventiva-de-flavio-bolsonaro-aACcx0c3jGK3",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-28",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "El Gobierno confirmó que Flávio Bolsonaro despegó desde Puerto Iguazú; el FMI aprobó la tercera revisión del acuerdo",
-   "url": "https://www.lanacion.com.ar/sociedad/el-gobierno-confirmo-que-flavio-bolsonaro-despego-desde-puerto-iguazu-el-fmi-aprobo-la-tercera-nid28102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-28",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "El mensaje de Migraciones sobre Flavio Bolsonaro: “Ingresó a la Argentina con documentación hábil sin ningún impedimento legal”",
-   "url": "https://www.lanacion.com.ar/el-mundo/el-mensaje-de-migraciones-sobre-flavio-bolsonaro-ingreso-a-la-argentina-con-documentacion-habil-sin-nid28102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-28",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "El Gobierno confirmó que Flavio Bolsonaro despegó esta madrugada desde Puerto Iguazú",
-   "url": "https://www.lanacion.com.ar/el-mundo/revuelo-en-el-aeropuerto-de-puerto-iguazu-tras-el-despegue-del-avion-que-esperaba-a-bolsonaro-nid28102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-28",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "SENAD AVANZA CON LA ENCUESTA NACIONAL SOBRE CONSUMO DE DROGAS: MÁS DE 100.000 PERSONAS ENCUESTADAS EN 16 DEPARTAMENTOS",
-   "url": "https://senad.gov.py/senad-avanza-con-la-encuesta-nacional-sobre-consumo-de-drogas-mas-de-100-000-personas-encuestadas-en-16-departamentos/",
-   "dominio": "senad.gov.py",
-   "fecha": "2026-10-27",
-   "lugares": [
-    "Asunción"
    ]
   }
  ]
