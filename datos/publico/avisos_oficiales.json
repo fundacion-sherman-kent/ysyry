@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-12T11:29:55Z",
+ "obtenido": "2026-11-12T20:08:56Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 2
   },
   {
    "nombre": "GDACS",
@@ -29,18 +29,16 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-11-12 00:00",
+   "inicio": "2026-11-12 08:50",
    "fin": "2026-11-12 23:59",
    "lugares": [
     "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
     "Cáceres",
-    "Ponta Porã",
+    "Foz do Iguaçu",
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28686"
+   "id": "inmet-28688"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -48,14 +46,17 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-11-11 12:00",
-   "fin": "2026-11-12 12:00",
+   "inicio": "2026-11-14 00:00",
+   "fin": "2026-11-14 23:59",
    "lugares": [
-    "Foz do Iguaçu",
-    "Guaíra"
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres",
+    "Ponta Porã"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28684"
+   "id": "inmet-28691"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -73,7 +74,7 @@
     "Ponta Porã"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28687"
+   "id": "inmet-28690"
   },
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
@@ -92,16 +93,30 @@
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO N° 3995 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
    "severidad": "",
    "color": "",
-   "inicio": "2026-11-12 08:28",
+   "inicio": "2026-11-12 16:17",
    "fin": "",
    "lugares": [
-    "FORMOSA: Formosa - Patino - Pilagas - Pilcomayo - Pirane."
+    "CHACO: Gral Donovan - 1 de Mayo - 25 de Mayo - Libertad - Mayor L. J. Fontana - Pres de la Plaza - Quitilipi - San Lorenzo - Sargento Cabral - Tapenaga."
    ],
    "riesgos": "",
-   "id": "smn-3995"
+   "id": "smn-4000"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-12 16:10",
+   "fin": "",
+   "lugares": [
+    "MISIONES: El Dorado - Gral Manuel Belgrano - Iguazu - San Pedro."
+   ],
+   "riesgos": "",
+   "id": "smn-3999"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
