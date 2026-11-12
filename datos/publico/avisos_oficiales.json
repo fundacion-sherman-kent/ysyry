@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-11-12T00:52:20Z",
+ "obtenido": "2026-11-12T11:29:55Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 5
+   "avisos_en_el_corredor": 3
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "GDACS",
@@ -23,41 +23,6 @@
   }
  ],
  "avisos": [
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-11 09:00",
-   "fin": "2026-11-11 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres",
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28683"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-11 12:00",
-   "fin": "2026-11-12 12:00",
-   "lugares": [
-    "Foz do Iguaçu",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28684"
-  },
   {
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
@@ -113,7 +78,7 @@
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado:  Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -123,6 +88,20 @@
    ],
    "riesgos": "",
    "id": "dmh-vigente"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO N° 3995 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-12 08:28",
+   "fin": "",
+   "lugares": [
+    "FORMOSA: Formosa - Patino - Pilagas - Pilcomayo - Pirane."
+   ],
+   "riesgos": "",
+   "id": "smn-3995"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
