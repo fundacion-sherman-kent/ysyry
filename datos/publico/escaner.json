@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-11T19:31:50Z",
+ "obtenido": "2026-11-12T02:14:22Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 47,
+   "items": 43,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
+   "items": 92,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 345,
+   "items": 371,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 36
+   "fallos_seguidos": 37
   },
   {
    "dominio": "senad.gov.py",
@@ -198,6 +198,42 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Cae brasileño con más de dos kilos de marihuana en la Aduana de Ciudad del Este",
+   "url": "http://www.lanacion.com.py/judiciales/2026/11/11/cae-brasileno-con-mas-de-dos-kilos-de-marihuana-en-la-aduana-de-ciudad-del-este/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-11",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": {
+    "valor": 2.2,
+    "unidad": "kilogramos"
+   },
+   "puntaje": 6,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/judiciales/2026/11/11/cae-brasileno-con-mas-de-dos-kilos-de-marihuana-en-la-aduana-de-ciudad-del-este/"
+    }
+   ],
+   "id": "3fc4b9a9d9",
+   "verificado": true
+  },
   {
    "titulo": "SENAD CAPTURA A PAREJA DE DISTRIBUIDORES CON MÁS DE 11.000 DOSIS DE DROGAS EN PRESIDENTE FRANCO",
    "url": "https://senad.gov.py/senad-captura-a-pareja-de-distribuidores-con-mas-de-11-000-dosis-de-drogas-en-presidente-franco/",
@@ -790,70 +826,53 @@
    ],
    "id": "17145b5c89",
    "verificado": true
-  },
-  {
-   "titulo": "Policía detuvo a supuesto líder de red de narcotráfico que estaba prófugo desde el 2022",
-   "url": "http://www.lanacion.com.py/pais/2026/10/28/policia-detuvo-a-supuesto-lider-de-red-de-narcotrafico-que-estaba-profugo-desde-el-2022/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-28",
-   "tipos": [
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ]
-   ],
-   "lugares": [
-    "Alto Paraná"
-   ],
-   "ubicacion": [
-    -25.3,
-    -54.8
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 4,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/28/policia-detuvo-a-supuesto-lider-de-red-de-narcotrafico-que-estaba-profugo-desde-el-2022/"
-    }
-   ],
-   "id": "68ea58ac5d",
-   "verificado": true
-  },
-  {
-   "titulo": "Peña recorre zonas inundadas por la crecida del río Paraná y promete mantener la asistencia",
-   "url": "https://www.abc.com.py/este/2026/10/28/pena-recorre-zonas-inundadas-por-la-crecida-del-rio-parana-y-promete-mantener-la-asistencia/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-28",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/este/2026/10/28/pena-recorre-zonas-inundadas-por-la-crecida-del-rio-parana-y-promete-mantener-la-asistencia/"
-    }
-   ],
-   "id": "f4e44e516b",
-   "verificado": true
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "La represa Yacyretá descarta haber depositado fondos en el intervenido Ueno bank",
+   "url": "https://www.abc.com.py/internacionales/2026/11/11/la-represa-yacyreta-descarta-haber-depositado-fondos-en-el-intervenido-ueno-bank/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-11",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Río Paraná podría descender casi cinco metros hasta el domingo",
+   "url": "https://www.abc.com.py/este/2026/11/11/rio-parana-podria-descender-casi-cinco-metros-hasta-el-domingo/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-11",
+   "lugares": []
+  },
+  {
+   "titulo": "Alto Paraná: dirigentes colorados respaldan la gestión del director de Itaipú",
+   "url": "http://www.lanacion.com.py/politica/2026/11/11/alto-parana-dirigentes-colorados-respaldan-la-gestion-del-director-de-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-11",
+   "lugares": [
+    "Alto Paraná",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Vicepresidente Barrios se disculpa con empresarios y califica el episodio de “muy amargo”",
+   "url": "http://www.lanacion.com.py/politica/2026/11/11/vicepresidente-barrios-se-disculpa-con-empresarios-y-califica-el-episodio-de-muy-amargo/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-11",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "EBY recurrirá a la Justicia para recuperar USD 10 millones colocados en Ueno Bank",
+   "url": "http://www.lanacion.com.py/negocios/2026/11/11/eby-recurrira-a-la-justicia-para-recuperar-usd-10-millones-colocados-en-ueno-bank/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-11",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
   {
    "titulo": "Itaipú entregó 16% más de energía a la ANDE en los 10 primeros meses",
    "url": "https://www.abc.com.py/economia/2026/11/11/itaipu-entrego-16-mas-de-energia-a-la-ande-en-los-10-primeros-meses/",
@@ -876,15 +895,6 @@
    "titulo": "Yacyretá rompe el silencio sobre Ueno, pero no aclara que su director es accionista del banco intervenido",
    "url": "https://www.abc.com.py/economia/2026/11/11/yacyreta-rompe-el-silencio-sobre-ueno-pero-no-aclara-que-su-director-es-accionista-del-banco-intervenido/",
    "dominio": "abc.com.py",
-   "fecha": "2026-11-11",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "EBY recurrirá a la Justicia para recuperar USD 10 millones colocados en Ueno Bank",
-   "url": "http://www.lanacion.com.py/negocios/2026/11/11/eby-recurrira-a-la-justicia-para-recuperar-usd-10-millones-colocados-en-ueno-bank/",
-   "dominio": "lanacion.com.py",
    "fecha": "2026-11-11",
    "lugares": [
     "Yacyretá"
@@ -1829,72 +1839,6 @@
    "lugares": [
     "Puerto Iguazú"
    ]
-  },
-  {
-   "titulo": "Policía aprehende a un hombre por presunto hurto de cables en Asunción",
-   "url": "https://www.abc.com.py/policiales/2026/10/28/policia-aprehende-a-un-hombre-por-presunto-hurto-de-cables-en-asuncion/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-28",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Banco Mundial aprueba USD 280 millones para impulsar la competitividad agrícola en Itapúa",
-   "url": "http://www.lanacion.com.py/negocios/2026/10/28/banco-mundial-aprueba-usd-280-millones-para-impulsar-la-competitividad-agricola-en-itapua/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-28",
-   "lugares": []
-  },
-  {
-   "titulo": "Rock en Py Fest 2026 confirma cartelera estelar con Flou y Bohemia Urbana",
-   "url": "http://www.lanacion.com.py/espectaculo/2026/10/28/rock-en-py-fest-2026-confirma-cartelera-estelar-con-flou-y-bohemia-urbana/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-28",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Buscan a joven con síndrome de Down que abordó un bus equivocado en Asunción",
-   "url": "http://www.lanacion.com.py/pais/2026/10/28/buscan-a-joven-con-sindrome-de-down-que-abordo-un-bus-equivocado-en-asuncion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-28",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Triplicación de ruta en zona del aeropuerto avanza con montaje de infraestructura",
-   "url": "http://www.lanacion.com.py/negocios/2026/10/28/triplicacion-de-ruta-en-zona-del-aeropuerto-avanza-con-montaje-de-infraestructura/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-28",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Santiago Caputo fue identificado por un control policial tras el operativo de huida de Bolsonaro",
-   "url": "https://www.lanacion.com.ar/politica/santiago-caputo-fue-identificado-por-un-control-policial-tras-el-operativo-de-huida-de-bolsonaro-nid28102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-28",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Salto avanza con obras de saneamiento por 1,9 millones de dólares en la zona costera del río Uruguay",
-   "url": "https://ladiaria.com.uy/salto/articulo/2026/10/salto-avanza-con-obras-de-saneamiento-por-19-millones-de-dolares-en-la-zona-costera-del-rio-uruguay/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-28",
-   "lugares": []
-  },
-  {
-   "titulo": "Colonienses rechazan la instalación de “naciones digitales autónomas” y recuerdan que todo el departamento es parte de Argentina",
-   "url": "https://ladiaria.com.uy/humor/articulo/2026/10/colonienses-rechazan-la-instalacion-de-naciones-digitales-autonomas-y-recuerdan-que-todo-el-departamento-es-parte-de-argentina/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-28",
-   "lugares": []
   }
  ]
 }
