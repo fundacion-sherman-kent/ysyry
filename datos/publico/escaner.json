@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-12T02:14:22Z",
+ "obtenido": "2026-11-12T10:56:15Z",
  "dias": 14,
  "fuentes": [
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 97,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 371,
+   "items": 315,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 37
+   "fallos_seguidos": 38
   },
   {
    "dominio": "senad.gov.py",
@@ -830,20 +830,22 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "La represa Yacyretá descarta haber depositado fondos en el intervenido Ueno bank",
-   "url": "https://www.abc.com.py/internacionales/2026/11/11/la-represa-yacyreta-descarta-haber-depositado-fondos-en-el-intervenido-ueno-bank/",
+   "titulo": "Tras caída de Ueno, fracasó el plan del “Puerto Madero” de Asunción",
+   "url": "https://www.abc.com.py/economia/2026/11/12/tras-caida-de-ueno-fracaso-el-plan-del-puerto-madero-de-asuncion/",
    "dominio": "abc.com.py",
-   "fecha": "2026-11-11",
+   "fecha": "2026-11-12",
    "lugares": [
-    "Yacyretá"
+    "Asunción"
    ]
   },
   {
-   "titulo": "Río Paraná podría descender casi cinco metros hasta el domingo",
-   "url": "https://www.abc.com.py/este/2026/11/11/rio-parana-podria-descender-casi-cinco-metros-hasta-el-domingo/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-11",
-   "lugares": []
+   "titulo": "El río Paraná sigue subiendo y Rosario alcanzaría niveles de alerta en las próximas semanas",
+   "url": "https://www.pagina12.com.ar/2026/11/11/el-rio-parana-sigue-subiendo-y-rosario-alcanzaria-niveles-de-alerta-en-las-proximas-semanas/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-11-12",
+   "lugares": [
+    "Rosario"
+   ]
   },
   {
    "titulo": "Alto Paraná: dirigentes colorados respaldan la gestión del director de Itaipú",
@@ -872,6 +874,22 @@
    "lugares": [
     "Yacyretá"
    ]
+  },
+  {
+   "titulo": "La represa Yacyretá descarta haber depositado fondos en el intervenido Ueno bank",
+   "url": "https://www.abc.com.py/internacionales/2026/11/11/la-represa-yacyreta-descarta-haber-depositado-fondos-en-el-intervenido-ueno-bank/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-11",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Río Paraná podría descender casi cinco metros hasta el domingo",
+   "url": "https://www.abc.com.py/este/2026/11/11/rio-parana-podria-descender-casi-cinco-metros-hasta-el-domingo/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-11",
+   "lugares": []
   },
   {
    "titulo": "Itaipú entregó 16% más de energía a la ANDE en los 10 primeros meses",
