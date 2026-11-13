@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-13T10:51:10Z",
+ "obtenido": "2026-11-13T19:35:45Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 47,
+   "items": 46,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 96,
+   "items": 92,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 328,
+   "items": 347,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,14 +177,14 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 41
+   "fallos_seguidos": 42
   },
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 4,
+   "candidatos": 5,
    "fallos_seguidos": 0
   },
   {
@@ -198,6 +198,200 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "MODISTA TRAÍA DESDE BOLIVIA COCAÍNA IMPREGNADA EN TELAS: SENAD INCAUTÓ 6,25 KILOS",
+   "url": "https://senad.gov.py/modista-traia-desde-bolivia-cocaina-impregnada-en-telas-senad-incauto-625-kilos/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-11-13",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Asunción"
+   ],
+   "ubicacion": [
+    -25.28,
+    -57.63
+   ],
+   "zona": "z5",
+   "cantidad": {
+    "valor": 6.25,
+    "unidad": "kilos"
+   },
+   "puntaje": 10,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/modista-traia-desde-bolivia-cocaina-impregnada-en-telas-senad-incauto-625-kilos/"
+    }
+   ],
+   "id": "dbfd83e036",
+   "verificado": true
+  },
+  {
+   "titulo": "SENAD DESMANTELA LABORATORIO DE COCAÍNA EN PRESIDENTE FRANCO",
+   "url": "https://senad.gov.py/senad-desmantela-laboratorio-de-cocaina-en-presidente-franco/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-11-13",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": {
+    "valor": 2.0,
+    "unidad": "kilos"
+   },
+   "puntaje": 10,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/senad-desmantela-laboratorio-de-cocaina-en-presidente-franco/"
+    }
+   ],
+   "id": "246f251efe",
+   "verificado": true
+  },
+  {
+   "titulo": "OPERACIÓN BINACIONAL GENERA USD 46,2 MILLONES DE PÉRDIDAS AL NARCOTRÁFICO",
+   "url": "https://senad.gov.py/operacion-binacional-genera-usd-462-millones-de-perdidas-al-narcotrafico/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-11-13",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Canindeyú"
+   ],
+   "ubicacion": [
+    -24.2,
+    -55.3
+   ],
+   "zona": "z4",
+   "cantidad": {
+    "valor": 308.0,
+    "unidad": "toneladas"
+   },
+   "puntaje": 9,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/operacion-binacional-genera-usd-462-millones-de-perdidas-al-narcotrafico/"
+    }
+   ],
+   "id": "089da17381",
+   "verificado": true
+  },
+  {
+   "titulo": "SENAD DESACTIVA UNA BOCA DE EXPENDIO DE COCAÍNA EN EL BARRIO SAN PABLO DE ASUNCIÓN.",
+   "url": "https://senad.gov.py/senad-desactiva-una-boca-de-expendio-de-cocaina-en-el-barrio-san-pablo-de-asuncion/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-11-13",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Asunción"
+   ],
+   "ubicacion": [
+    -25.28,
+    -57.63
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/senad-desactiva-una-boca-de-expendio-de-cocaina-en-el-barrio-san-pablo-de-asuncion/"
+    }
+   ],
+   "id": "0a67268848",
+   "verificado": true
+  },
+  {
+   "titulo": "8 DETENIDOS DE 4 NACIONALIDADES EN MEGA LABORATORIO DE DROGAS Y ANIMALES EXÓTICOS EN CAUTIVERIO",
+   "url": "https://senad.gov.py/8-detenidos-de-4-nacionalidades-en-mega-laboratorio-de-drogas-y-animales-exoticos-en-cautiverio/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-11-13",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Pedro Juan Caballero"
+   ],
+   "ubicacion": [
+    -22.55,
+    -55.73
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/8-detenidos-de-4-nacionalidades-en-mega-laboratorio-de-drogas-y-animales-exoticos-en-cautiverio/"
+    }
+   ],
+   "id": "4ab5fab926",
+   "verificado": true
+  },
   {
    "titulo": "Detienen en Canindeyú a dos presuntos sicarios vinculados al grupo criminal de “Macho”",
    "url": "https://www.abc.com.py/policiales/2026/11/12/detienen-en-canindeyu-a-dos-presuntos-sicarios-vinculados-al-grupo-criminal-de-macho/",
