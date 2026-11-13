@@ -1,25 +1,25 @@
 {
- "obtenido": "2026-11-13T11:14:57Z",
+ "obtenido": "2026-11-13T19:52:25Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 3
   },
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 3
   },
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 5
+   "avisos_en_el_corredor": 6
   }
  ],
  "avisos": [
@@ -29,17 +29,13 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-11-13 00:00",
-   "fin": "2026-11-13 23:59",
+   "inicio": "2026-11-14 00:00",
+   "fin": "2026-11-14 23:59",
    "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres",
-    "Ponta Porã"
+    "Corumbá"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28690"
+   "id": "inmet-28694"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -50,28 +46,104 @@
    "inicio": "2026-11-14 00:00",
    "fin": "2026-11-14 23:59",
    "lugares": [
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28697"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-15 00:00",
+   "fin": "2026-11-15 23:59",
+   "lugares": [
     "Corumbá",
     "Ladário",
     "Porto Murtinho",
     "Cáceres",
-    "Ponta Porã"
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28691"
+   "id": "inmet-28698"
+  },
+  {
+   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
+   "pais": "PRY",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "Paraguay"
+   ],
+   "riesgos": "",
+   "id": "dmh-vigente"
   },
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON RAFAGAS Y CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-11-13 07:36",
+   "inicio": "2026-11-13 15:56",
    "fin": "",
    "lugares": [
-    "BUENOS AIRES: Gral Arenales - Junin - Pergamino - Rojas - Salto."
+    "BUENOS AIRES: 9 de Julio - Alberti - Bragado - Carlos Casares - Carlos Tejedor - Chacabuco - Chivilcoy - Gral Viamonte - Junin - Lincoln - Pehuajo."
    ],
    "riesgos": "",
-   "id": "smn-4029"
+   "id": "smn-4055"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-13 15:38",
+   "fin": "",
+   "lugares": [
+    "SANTA FE: Belgrano - Caseros - Castellanos - Iriondo - La Capital - Las Colonias - San Jeronimo - San Lorenzo - San Martin.; ; CORDOBA: Marcos Juarez - Union.; ; ENTRE RIOS: Diamante."
+   ],
+   "riesgos": "",
+   "id": "smn-4053"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-13 15:02",
+   "fin": "",
+   "lugares": [
+    "SANTA FE: Gral Lopez.; ; BUENOS AIRES: Chacabuco - Colon - Gral Arenales - Gral Pinto - Junin - L. N. Alem - Lincoln - Pergamino - Rojas - Salto."
+   ],
+   "riesgos": "",
+   "id": "smn-4050"
+  },
+  {
+   "fuente": "GDACS (ONU y Comisión Europea)",
+   "pais": "",
+   "fenomeno": "Green forest fire notification in Argentina",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "-24.49, -60.58"
+   ],
+   "riesgos": "",
+   "id": "gdacs-&amp;eventid=1033788",
+   "lat": -24.493570428981204,
+   "lon": -60.58304488754615
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -86,8 +158,8 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033775",
-   "lat": -16.042008282964673,
-   "lon": -64.64189681703407
+   "lat": -16.04073949425988,
+   "lon": -64.64212082492303
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
