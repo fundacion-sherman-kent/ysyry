@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-13T01:46:54Z",
+ "obtenido": "2026-11-13T10:51:10Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,8 +14,8 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 43,
-   "candidatos": 0,
+   "items": 47,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 94,
+   "items": 96,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 361,
+   "items": 328,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 40
+   "fallos_seguidos": 41
   },
   {
    "dominio": "senad.gov.py",
@@ -198,6 +198,39 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Detienen en Canindeyú a dos presuntos sicarios vinculados al grupo criminal de “Macho”",
+   "url": "https://www.abc.com.py/policiales/2026/11/12/detienen-en-canindeyu-a-dos-presuntos-sicarios-vinculados-al-grupo-criminal-de-macho/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-13",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Canindeyú"
+   ],
+   "ubicacion": [
+    -24.2,
+    -55.3
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 4,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/policiales/2026/11/12/detienen-en-canindeyu-a-dos-presuntos-sicarios-vinculados-al-grupo-criminal-de-macho/"
+    }
+   ],
+   "id": "5689cd35eb",
+   "verificado": true
+  },
   {
    "titulo": "Cae brasileño con más de dos kilos de marihuana en la Aduana de Ciudad del Este",
    "url": "http://www.lanacion.com.py/judiciales/2026/11/11/cae-brasileno-con-mas-de-dos-kilos-de-marihuana-en-la-aduana-de-ciudad-del-este/",
@@ -610,6 +643,15 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Certifican a trabajadores hoteleros para elevar la calidad del turismo",
+   "url": "http://www.lanacion.com.py/foco/2026/11/13/certifican-a-trabajadores-hoteleros-para-elevar-la-calidad-del-turismo/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-13",
+   "lugares": [
+    "Ciudad del Este"
+   ]
+  },
   {
    "titulo": "Alliana dispone que la Comandancia de la Policía vuelva a su histórica sede",
    "url": "http://www.lanacion.com.py/politica/2026/11/12/alliana-dispone-que-la-comandancia-de-la-policia-vuelva-a-su-historica-sede/",
