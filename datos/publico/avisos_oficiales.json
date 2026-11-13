@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-12T20:08:56Z",
+ "obtenido": "2026-11-13T01:57:05Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -9,12 +9,12 @@
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "GDACS",
@@ -75,48 +75,6 @@
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
    "id": "inmet-28690"
-  },
-  {
-   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
-   "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "Paraguay"
-   ],
-   "riesgos": "",
-   "id": "dmh-vigente"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-12 16:17",
-   "fin": "",
-   "lugares": [
-    "CHACO: Gral Donovan - 1 de Mayo - 25 de Mayo - Libertad - Mayor L. J. Fontana - Pres de la Plaza - Quitilipi - San Lorenzo - Sargento Cabral - Tapenaga."
-   ],
-   "riesgos": "",
-   "id": "smn-4000"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-12 16:10",
-   "fin": "",
-   "lugares": [
-    "MISIONES: El Dorado - Gral Manuel Belgrano - Iguazu - San Pedro."
-   ],
-   "riesgos": "",
-   "id": "smn-3999"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
