@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-11-13T01:57:05Z",
+ "obtenido": "2026-11-13T11:14:57Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 3
+   "avisos_en_el_corredor": 2
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -14,12 +14,12 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 4
+   "avisos_en_el_corredor": 5
   }
  ],
  "avisos": [
@@ -29,16 +29,17 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-11-12 08:50",
-   "fin": "2026-11-12 23:59",
+   "inicio": "2026-11-13 00:00",
+   "fin": "2026-11-13 23:59",
    "lugares": [
     "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
     "Cáceres",
-    "Foz do Iguaçu",
-    "Guaíra"
+    "Ponta Porã"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28688"
+   "id": "inmet-28690"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -59,22 +60,34 @@
    "id": "inmet-28691"
   },
   {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-13 00:00",
-   "fin": "2026-11-13 23:59",
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON RAFAGAS Y CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-13 07:36",
+   "fin": "",
    "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres",
-    "Ponta Porã"
+    "BUENOS AIRES: Gral Arenales - Junin - Pergamino - Rojas - Salto."
    ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28690"
+   "riesgos": "",
+   "id": "smn-4029"
+  },
+  {
+   "fuente": "GDACS (ONU y Comisión Europea)",
+   "pais": "",
+   "fenomeno": "Green forest fire notification in Bolivia",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "-16.04, -64.64"
+   ],
+   "riesgos": "",
+   "id": "gdacs-&amp;eventid=1033775",
+   "lat": -16.042008282964673,
+   "lon": -64.64189681703407
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -117,12 +130,12 @@
    "inicio": "",
    "fin": "",
    "lugares": [
-    "-16.98, -56.57"
+    "-16.97, -56.57"
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033499",
-   "lat": -16.97559647532151,
-   "lon": -56.571191610840394
+   "lat": -16.97312030049081,
+   "lon": -56.571691204700166
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -137,8 +150,8 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033609",
-   "lat": -16.102714550780938,
-   "lon": -63.734193538642565
+   "lat": -16.102708693644416,
+   "lon": -63.734265174396036
   }
  ],
  "no_consultadas": [
