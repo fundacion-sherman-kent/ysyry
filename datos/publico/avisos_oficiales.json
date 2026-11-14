@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-14T10:40:32Z",
+ "obtenido": "2026-11-14T18:18:51Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -9,17 +9,17 @@
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 6
+   "avisos_en_el_corredor": 7
   }
  ],
  "avisos": [
@@ -29,29 +29,14 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-11-14 00:00",
-   "fin": "2026-11-14 23:59",
-   "lugares": [
-    "Corumbá"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28694"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-14 00:00",
+   "inicio": "2026-11-14 20:00",
    "fin": "2026-11-14 23:59",
    "lugares": [
     "Foz do Iguaçu",
-    "Ponta Porã",
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28697"
+   "id": "inmet-28700"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -62,44 +47,74 @@
    "inicio": "2026-11-15 00:00",
    "fin": "2026-11-15 23:59",
    "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres",
     "Foz do Iguaçu",
     "Ponta Porã",
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28698"
+   "id": "inmet-28702"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-16 00:00",
+   "fin": "2026-11-16 23:59",
+   "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres",
+    "Ponta Porã"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28704"
+  },
+  {
+   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
+   "pais": "PRY",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos fuertes a muy fuertes y la alta probabilidad de caída de granizos.",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "Paraguay"
+   ],
+   "riesgos": "",
+   "id": "dmh-vigente"
   },
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
    "severidad": "",
    "color": "",
-   "inicio": "2026-11-14 07:35",
+   "inicio": "2026-11-14 13:03",
    "fin": "",
    "lugares": [
-    "FORMOSA: Formosa - Laishi - Patino - Pirane.; ; CHACO: Gral Guemes - Ldor Gral S. Martin."
+    "FORMOSA: Bermejo - Formosa - Laishi - Patino - Pilagas - Pilcomayo - Pirane.; ; CHACO: 25 de Mayo - Almirante Brown - Cmte Fernandez - Gral Guemes - Independencia - Ldor Gral S. Martin - Maipu - Pres de la Plaza - Quitilipi - Sargento Cabral."
    ],
    "riesgos": "",
-   "id": "smn-4109"
+   "id": "smn-4115"
   },
   {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fuente": "GDACS (ONU y Comisión Europea)",
+   "pais": "",
+   "fenomeno": "Green forest fire notification in Bolivia",
    "severidad": "",
    "color": "",
-   "inicio": "2026-11-14 06:16",
+   "inicio": "",
    "fin": "",
    "lugares": [
-    "CHACO: Gral Donovan - 1 de Mayo - 25 de Mayo - Almirante Brown - Bermejo - Cmte Fernandez - Gral Guemes - Independencia - Ldor Gral S. Martin - Libertad - Maipu - O Higgins - Pres de la Plaza - Quitilipi - San Lorenzo - Sargento Cabral - Tapenaga."
+    "-18.16, -60.18"
    ],
    "riesgos": "",
-   "id": "smn-4107"
+   "id": "gdacs-&amp;eventid=1033835",
+   "lat": -18.156013880581416,
+   "lon": -60.177216403915
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -114,8 +129,8 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033788",
-   "lat": -24.496117187354155,
-   "lon": -60.578374118559616
+   "lat": -24.496200118463634,
+   "lon": -60.57712488164639
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -130,8 +145,8 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033775",
-   "lat": -16.0449387238126,
-   "lon": -64.64104422788331
+   "lat": -16.044646837862256,
+   "lon": -64.64096739951076
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
