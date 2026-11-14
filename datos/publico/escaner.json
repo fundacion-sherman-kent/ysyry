@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-14T01:25:01Z",
+ "obtenido": "2026-11-14T10:12:01Z",
  "dias": 14,
  "fuentes": [
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 95,
+   "items": 88,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 363,
+   "items": 347,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 43
+   "fallos_seguidos": 44
   },
   {
    "dominio": "senad.gov.py",
@@ -775,6 +775,15 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Con manifestación, piden destitución de Justo Zacarías de Itaipú",
+   "url": "https://www.abc.com.py/este/2026/11/13/con-manifestacion-piden-destitucion-de-justo-zacarias-de-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-14",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Alliana nombra a Derlis Gauto como director financiero interino de Itaipú",
    "url": "http://www.lanacion.com.py/politica/2026/11/13/alliana-nombra-a-derlis-gauto-como-director-financiero-interino-de-itaipu/",
    "dominio": "lanacion.com.py",
@@ -800,6 +809,16 @@
    "lugares": []
   },
   {
+   "titulo": "Crece el nivel de río en Rosario y en la ciudad de Santa Fe ya hay vecinos evacuados",
+   "url": "https://www.pagina12.com.ar/2026/11/14/crece-el-nivel-de-rio-en-rosario-y-en-la-ciudad-de-santa-fe-ya-hay-vecinos-evacuados/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-11-14",
+   "lugares": [
+    "Rosario",
+    "Santa Fe"
+   ]
+  },
+  {
    "titulo": "Argentina vs Uruguay EN VIVO: el arquero Rulli le sacó el tercero a Darwin Núñez",
    "url": "https://www.elobservador.com.uy/seleccion/argentina-vs-uruguay-vito-los-dirigidos-diego-forlan-ya-estan-confirmados-el-clasico-un-duro-rival-n6063810",
    "dominio": "elobservador.com.uy",
@@ -814,6 +833,13 @@
    "lugares": [
     "Itaipú"
    ]
+  },
+  {
+   "titulo": "Emilia Milich brilló en el Sudamericano de canotaje",
+   "url": "https://ladiaria.com.uy/deporte/articulo/2026/11/emilia-milich-brillo-en-el-sudamericano-de-canotaje/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-11-13",
+   "lugares": []
   },
   {
    "titulo": "Rescatan a los 129 ocupantes de un crucero tras chocar con una barcaza en Nueva Orleans",
@@ -846,13 +872,6 @@
    "lugares": [
     "Rosario"
    ]
-  },
-  {
-   "titulo": "Emilia Milich brilló en el Sudamericano de canotaje",
-   "url": "https://ladiaria.com.uy/deporte/articulo/2026/11/emilia-milich-brillo-en-el-sudamericano-de-canotaje/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-11-13",
-   "lugares": []
   },
   {
    "titulo": "Alliana dispone que la Comandancia de la Policía vuelva a su histórica sede",
