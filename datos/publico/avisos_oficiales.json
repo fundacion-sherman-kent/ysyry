@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-14T18:18:51Z",
+ "obtenido": "2026-11-14T22:36:20Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "GDACS",
@@ -85,20 +85,6 @@
    ],
    "riesgos": "",
    "id": "dmh-vigente"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-14 13:03",
-   "fin": "",
-   "lugares": [
-    "FORMOSA: Bermejo - Formosa - Laishi - Patino - Pilagas - Pilcomayo - Pirane.; ; CHACO: 25 de Mayo - Almirante Brown - Cmte Fernandez - Gral Guemes - Independencia - Ldor Gral S. Martin - Maipu - Pres de la Plaza - Quitilipi - Sargento Cabral."
-   ],
-   "riesgos": "",
-   "id": "smn-4115"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
