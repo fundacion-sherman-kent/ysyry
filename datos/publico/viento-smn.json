@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-14T01:23:17Z",
+ "obtenido": "2026-11-14T10:03:59Z",
  "fuente": {
   "nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente",
   "url": "https://www.smn.gob.ar/",
@@ -8,10 +8,10 @@
  "estaciones": [
   {
    "nombre": "La Plata",
-   "fecha": "13-noviembre-2026",
-   "hora": "22:00",
+   "fecha": "14-noviembre-2026",
+   "hora": "06:00",
    "direccion": "Noreste",
-   "kmh": 9,
+   "kmh": 5,
    "estado": "Parcialmente nublado"
   },
   {
@@ -24,26 +24,26 @@
   },
   {
    "nombre": "San Fernando",
-   "fecha": "13-noviembre-2026",
-   "hora": "22:00",
-   "direccion": "Noreste",
-   "kmh": 7,
+   "fecha": "14-noviembre-2026",
+   "hora": "06:00",
+   "direccion": "Este",
+   "kmh": 13,
    "estado": "Nublado"
   },
   {
    "nombre": "Aeroparque Buenos Aires",
-   "fecha": "13-noviembre-2026",
-   "hora": "22:00",
-   "direccion": "Noreste",
-   "kmh": 9,
-   "estado": "Nublado"
+   "fecha": "14-noviembre-2026",
+   "hora": "06:00",
+   "direccion": "Norte",
+   "kmh": 13,
+   "estado": "Parcialmente nublado"
   },
   {
    "nombre": "Buenos Aires",
-   "fecha": "13-noviembre-2026",
-   "hora": "22:00",
-   "direccion": "Norte",
-   "kmh": 7,
+   "fecha": "14-noviembre-2026",
+   "hora": "06:00",
+   "direccion": "Este",
+   "kmh": 5,
    "estado": "Parcialmente nublado"
   }
  ]
