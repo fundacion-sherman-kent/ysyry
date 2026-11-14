@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-13T19:52:25Z",
+ "obtenido": "2026-11-14T01:29:34Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -9,7 +9,7 @@
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "SMN (Argentina)",
@@ -74,60 +74,46 @@
    "id": "inmet-28698"
   },
   {
-   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
-   "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO N° 4087 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "",
+   "inicio": "2026-11-13 22:25",
    "fin": "",
    "lugares": [
-    "Paraguay"
+    "SANTIAGO DEL ESTERO: Aguirre - Belgrano - Mitre - Quebrachos - Rivadavia.; ; SANTA FE: 9 de Julio - San Cristobal.; ; CORDOBA: Rio Seco."
    ],
    "riesgos": "",
-   "id": "dmh-vigente"
+   "id": "smn-4087"
   },
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO N° 4083 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-11-13 15:56",
+   "inicio": "2026-11-13 21:54",
    "fin": "",
    "lugares": [
-    "BUENOS AIRES: 9 de Julio - Alberti - Bragado - Carlos Casares - Carlos Tejedor - Chacabuco - Chivilcoy - Gral Viamonte - Junin - Lincoln - Pehuajo."
+    "SANTIAGO DEL ESTERO: Rivadavia.; ; SANTA FE: Castellanos - La Capital - Las Colonias - San Cristobal.; ; CORDOBA: San Justo."
    ],
    "riesgos": "",
-   "id": "smn-4055"
+   "id": "smn-4083"
   },
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO N° 4075 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-11-13 15:38",
+   "inicio": "2026-11-13 20:40",
    "fin": "",
    "lugares": [
-    "SANTA FE: Belgrano - Caseros - Castellanos - Iriondo - La Capital - Las Colonias - San Jeronimo - San Lorenzo - San Martin.; ; CORDOBA: Marcos Juarez - Union.; ; ENTRE RIOS: Diamante."
+    "SANTA FE: Belgrano - Castellanos - Las Colonias - San Jeronimo - San Martin.; ; CORDOBA: Marcos Juarez - San Justo - Union."
    ],
    "riesgos": "",
-   "id": "smn-4053"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-13 15:02",
-   "fin": "",
-   "lugares": [
-    "SANTA FE: Gral Lopez.; ; BUENOS AIRES: Chacabuco - Colon - Gral Arenales - Gral Pinto - Junin - L. N. Alem - Lincoln - Pergamino - Rojas - Salto."
-   ],
-   "riesgos": "",
-   "id": "smn-4050"
+   "id": "smn-4075"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -138,12 +124,12 @@
    "inicio": "",
    "fin": "",
    "lugares": [
-    "-24.49, -60.58"
+    "-24.50, -60.58"
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033788",
-   "lat": -24.493570428981204,
-   "lon": -60.58304488754615
+   "lat": -24.495243696077985,
+   "lon": -60.57809562795216
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -158,8 +144,8 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033775",
-   "lat": -16.04073949425988,
-   "lon": -64.64212082492303
+   "lat": -16.03847438135272,
+   "lon": -64.64190527978793
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
