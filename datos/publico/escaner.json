@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-13T19:35:45Z",
+ "obtenido": "2026-11-14T01:25:01Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 46,
+   "items": 47,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 95,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 347,
+   "items": 363,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 42
+   "fallos_seguidos": 43
   },
   {
    "dominio": "senad.gov.py",
@@ -771,72 +771,64 @@
    ],
    "id": "f59c910078",
    "verificado": true
-  },
-  {
-   "titulo": "Con la ayuda del can detector Andy, Prefectura secuestró más de 332 kilos de marihuana en Misiones",
-   "url": "https://perfil.com/sociedad/se-secuestro-mas-de-332-kilos-de-marihuana-en-misiones-aYQ7X4i013Nn",
-   "dominio": "perfil.com",
-   "clase": "prensa",
-   "fecha": "2026-10-30",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": {
-    "valor": 332.0,
-    "unidad": "kilos"
-   },
-   "puntaje": 7,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "perfil.com",
-     "clase": "prensa",
-     "url": "https://perfil.com/sociedad/se-secuestro-mas-de-332-kilos-de-marihuana-en-misiones-aYQ7X4i013Nn"
-    }
-   ],
-   "id": "4833ae5b89",
-   "verificado": true
-  },
-  {
-   "titulo": "Once paraguayos detenidos con productos de contrabando en el lado brasileño del río Paraná",
-   "url": "https://www.abc.com.py/este/2026/10/30/once-paraguayos-detenidos-con-productos-de-contrabando-en-el-lado-brasileno-del-rio-parana/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-30",
-   "tipos": [
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 4,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/este/2026/10/30/once-paraguayos-detenidos-con-productos-de-contrabando-en-el-lado-brasileno-del-rio-parana/"
-    }
-   ],
-   "id": "00a1826564",
-   "verificado": true
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Alliana nombra a Derlis Gauto como director financiero interino de Itaipú",
+   "url": "http://www.lanacion.com.py/politica/2026/11/13/alliana-nombra-a-derlis-gauto-como-director-financiero-interino-de-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-14",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Policías de Brasil, Argentina y Paraguay realizaron operación conjunta en la triple frontera",
+   "url": "http://www.lanacion.com.py/pais/2026/11/13/policias-de-brasil-argentina-y-paraguay-realizaron-operacion-conjunta-en-la-triple-frontera/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-14",
+   "lugares": [
+    "Triple Frontera"
+   ]
+  },
+  {
+   "titulo": "Molinos Rio de la Plata compró Tía Maruca",
+   "url": "https://www.lanacion.com.ar/economia/negocios/molinos-compro-tia-maruca-nid13112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-14",
+   "lugares": []
+  },
+  {
+   "titulo": "Argentina vs Uruguay EN VIVO: el arquero Rulli le sacó el tercero a Darwin Núñez",
+   "url": "https://www.elobservador.com.uy/seleccion/argentina-vs-uruguay-vito-los-dirigidos-diego-forlan-ya-estan-confirmados-el-clasico-un-duro-rival-n6063810",
+   "dominio": "elobservador.com.uy",
+   "fecha": "2026-11-14",
+   "lugares": []
+  },
+  {
+   "titulo": "Derlis Gauto es nombrado como nuevo director financiero interino de Itaipú",
+   "url": "https://www.abc.com.py/politica/2026/11/13/derlis-gauto-es-nombrado-como-nuevo-director-financiero-interino-de-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-13",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Rescatan a los 129 ocupantes de un crucero tras chocar con una barcaza en Nueva Orleans",
+   "url": "https://www.abc.com.py/internacionales/2026/11/13/rescatan-a-los-129-ocupantes-de-un-crucero-tras-chocar-con-una-barcaza-en-nueva-orleans/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-13",
+   "lugares": []
+  },
+  {
+   "titulo": "Una barcaza choca con un crucero con 129 personas a bordo en Luisiana y lo deja escorado",
+   "url": "https://www.abc.com.py/internacionales/2026/11/13/una-barcaza-choca-con-un-crucero-con-129-personas-a-bordo-en-luisiana-y-lo-deja-escorado/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-13",
+   "lugares": []
+  },
   {
    "titulo": "Certifican a trabajadores hoteleros para elevar la calidad del turismo",
    "url": "http://www.lanacion.com.py/foco/2026/11/13/certifican-a-trabajadores-hoteleros-para-elevar-la-calidad-del-turismo/",
@@ -845,6 +837,22 @@
    "lugares": [
     "Ciudad del Este"
    ]
+  },
+  {
+   "titulo": "En Rosario: el río Paraná subió casi dos metros en nueve semanas y quedó a 53 centímetros del nivel de alerta",
+   "url": "https://www.lanacion.com.ar/economia/campo/en-rosario-el-rio-parana-subio-casi-dos-metros-en-nueve-semanas-y-quedo-a-53-centimetros-del-nivel-nid13112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-13",
+   "lugares": [
+    "Rosario"
+   ]
+  },
+  {
+   "titulo": "Emilia Milich brilló en el Sudamericano de canotaje",
+   "url": "https://ladiaria.com.uy/deporte/articulo/2026/11/emilia-milich-brillo-en-el-sudamericano-de-canotaje/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-11-13",
+   "lugares": []
   },
   {
    "titulo": "Alliana dispone que la Comandancia de la Policía vuelva a su histórica sede",
@@ -1702,131 +1710,6 @@
    "lugares": [
     "Yacyretá"
    ]
-  },
-  {
-   "titulo": "El pueblo poco conocido a 100 kilómetros de Buenos Aires que es ideal para una escapada de fin de semana",
-   "url": "https://www.lanacion.com.ar/lifestyle/el-pueblo-poco-conocido-a-100-kilometros-de-buenos-aires-que-es-ideal-para-una-escapada-de-fin-de-nid30102026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-10-30",
-   "lugares": [
-    "Zárate"
-   ]
-  },
-  {
-   "titulo": "Yacyretá marca un hito en Aña Cuá con la instalación de una pieza de 32 toneladas",
-   "url": "http://www.lanacion.com.py/politica/2026/10/30/yacyreta-marca-un-hito-en-ana-cua-con-la-instalacion-de-una-pieza-de-32-toneladas/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-30",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Viaducto del km 10 de Ciudad del Este alcanza el 70 % de avance",
-   "url": "http://www.lanacion.com.py/negocios/2026/10/30/viaducto-del-km-10-de-ciudad-del-este-alcanza-el-70-de-avance/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-30",
-   "lugares": [
-    "Ciudad del Este",
-    "Alto Paraná",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "México presenta su tradicional Día de Muertos en el Centro Cultural del Puerto",
-   "url": "http://www.lanacion.com.py/espectaculo/2026/10/30/mexico-presenta-su-tradicional-dia-de-muertos-en-el-centro-cultural-del-puerto/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-30",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "\"Todo un país lamenta la pérdida de estos jóvenes\", dijo Orsi sobre militares fallecidos durante entramiento de buceo",
-   "url": "https://www.elobservador.com.uy/nacional/todo-un-pais-lamenta-la-perdida-estos-jovenes-dijo-orsi-militares-fallecidos-entramiento-buceo-n6062204",
-   "dominio": "elobservador.com.uy",
-   "fecha": "2026-10-30",
-   "lugares": []
-  },
-  {
-   "titulo": "LN PM: edición del 30 de octubre",
-   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/10/30/ln-pm-edicion-del-30-de-octubre/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-30",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Tragedia en el río Uruguay: quiénes eran los militares fallecidos en el curso de buzos tácticos en Río Negro",
-   "url": "https://www.elobservador.com.uy/nacional/tragedia-el-rio-uruguay-quienes-eran-los-militares-fallecidos-el-curso-buzos-tacticos-rio-negro-n6062191",
-   "dominio": "elobservador.com.uy",
-   "fecha": "2026-10-30",
-   "lugares": []
-  },
-  {
-   "titulo": "Ministerio de Defensa ante la muerte de tres buzos en Fray Bentos: “Es necesario esclarecer las circunstancias del hecho”",
-   "url": "https://ladiaria.com.uy/politica/articulo/2026/10/ministerio-de-defensa-ante-la-muerte-de-tres-buzos-en-fray-bentos-es-necesario-esclarecer-las-circunstancias-del-hecho/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-30",
-   "lugares": []
-  },
-  {
-   "titulo": "Tres buzos del Ejército murieron durante un entrenamiento en el río Uruguay",
-   "url": "https://ladiaria.com.uy/politica/articulo/2026/10/tres-buzos-del-ejercito-murieron-durante-un-entrenamiento-en-el-rio-uruguay/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-30",
-   "lugares": []
-  },
-  {
-   "titulo": "Caputo se movió en Misiones con empleados de Yacyretá que entran a Casa Rosada y dependen de un primo del jefe de Economía",
-   "url": "https://perfil.com/politica/caputo-se-movio-en-misiones-con-empleados-de-yacyreta-que-entran-a-casa-rosada-y-dependen-de-un-primo-del-jefe-de-economia-a8ZTZ5U5OX1R",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-30",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "El Paraná comienza a estabilizarse: Yacyretá anticipa un descenso gradual de los niveles hacia el fin de semana",
-   "url": "https://perfil.com/comercial/el-parana-comienza-a-estabilizarse-yacyreta-anticipa-un-descenso-gradual-de-los-niveles-hacia-el-fin-de-semana-aVYFV2Q5VlYF",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-30",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "El río Paraná comienza a estabilizarse: Yacyretá anticipa un descenso gradual de los niveles hacia el fin de semana",
-   "url": "https://perfil.com/economia/el-rio-parana-comienza-a-estabilizarse-yacyreta-anticipa-un-descenso-gradual-de-los-niveles-hacia-el-fin-de-semana-aqGWL7J6LDmT",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-30",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Archivaron en Misiones la denuncia por el tránsito de Flávio Bolsonaro por Puerto Iguazú",
-   "url": "https://www.infobae.com/judiciales/2026/10/30/archivaron-en-misiones-la-denuncia-por-el-transito-de-flavio-bolsonaro-por-puerto-iguazu/",
-   "dominio": "infobae.com",
-   "fecha": "2026-10-30",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Cuatro muertos en la travesía de una barcaza de inmigrantes auxiliada por España",
-   "url": "https://www.abc.com.py/internacionales/2026/10/30/cuatro-muertos-en-la-travesia-de-una-barcaza-de-inmigrantes-auxiliada-por-espana/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-30",
-   "lugares": []
-  },
-  {
-   "titulo": "Cuatro muertos en la travesía de una barcaza de inmigrantes auxiliada por España",
-   "url": "https://www.infobae.com/america/agencias/2026/10/30/cuatro-muertos-en-la-travesia-de-una-barcaza-de-inmigrantes-auxiliada-por-espana/",
-   "dominio": "infobae.com",
-   "fecha": "2026-10-30",
-   "lugares": []
   }
  ]
 }
