@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-14T10:12:01Z",
+ "obtenido": "2026-11-14T17:56:34Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 47,
+   "items": 42,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 88,
+   "items": 89,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 44
+   "fallos_seguidos": 45
   },
   {
    "dominio": "senad.gov.py",
@@ -775,12 +775,21 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Con manifestación, piden destitución de Justo Zacarías de Itaipú",
-   "url": "https://www.abc.com.py/este/2026/11/13/con-manifestacion-piden-destitucion-de-justo-zacarias-de-itaipu/",
+   "titulo": "Concejal liberal de Misiones pide destitución de autoridades de Yacyretá por caso Ueno Bank",
+   "url": "https://www.abc.com.py/politica/2026/11/14/concejal-liberal-de-misiones-pide-destitucion-de-autoridades-de-yacyreta-por-caso-ueno-bank/",
    "dominio": "abc.com.py",
    "fecha": "2026-11-14",
    "lugares": [
-    "Itaipú"
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Ciudad del Este: Policía mata a uno y hiere a otro tras pelea en el tránsito",
+   "url": "https://www.abc.com.py/policiales/2026/11/14/ciudad-del-este-policia-mata-a-uno-y-hiere-a-otro-tras-pelea-en-el-transito/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-14",
+   "lugares": [
+    "Ciudad del Este"
    ]
   },
   {
@@ -799,6 +808,15 @@
    "fecha": "2026-11-14",
    "lugares": [
     "Triple Frontera"
+   ]
+  },
+  {
+   "titulo": "Con manifestación, piden destitución de Justo Zacarías de Itaipú",
+   "url": "https://www.abc.com.py/este/2026/11/13/con-manifestacion-piden-destitucion-de-justo-zacarias-de-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-14",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -826,6 +844,13 @@
    "lugares": []
   },
   {
+   "titulo": "Emilia Milich brilló en el Sudamericano de canotaje",
+   "url": "https://ladiaria.com.uy/deporte/articulo/2026/11/emilia-milich-brillo-en-el-sudamericano-de-canotaje/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-11-13",
+   "lugares": []
+  },
+  {
    "titulo": "Derlis Gauto es nombrado como nuevo director financiero interino de Itaipú",
    "url": "https://www.abc.com.py/politica/2026/11/13/derlis-gauto-es-nombrado-como-nuevo-director-financiero-interino-de-itaipu/",
    "dominio": "abc.com.py",
@@ -833,13 +858,6 @@
    "lugares": [
     "Itaipú"
    ]
-  },
-  {
-   "titulo": "Emilia Milich brilló en el Sudamericano de canotaje",
-   "url": "https://ladiaria.com.uy/deporte/articulo/2026/11/emilia-milich-brillo-en-el-sudamericano-de-canotaje/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-11-13",
-   "lugares": []
   },
   {
    "titulo": "Rescatan a los 129 ocupantes de un crucero tras chocar con una barcaza en Nueva Orleans",
