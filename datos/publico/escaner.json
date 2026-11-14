@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-14T17:56:34Z",
+ "obtenido": "2026-11-14T22:16:42Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 42,
+   "items": 37,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 89,
+   "items": 94,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 347,
+   "items": 356,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 45
+   "fallos_seguidos": 46
   },
   {
    "dominio": "senad.gov.py",
@@ -775,12 +775,21 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Concejal liberal de Misiones pide destitución de autoridades de Yacyretá por caso Ueno Bank",
-   "url": "https://www.abc.com.py/politica/2026/11/14/concejal-liberal-de-misiones-pide-destitucion-de-autoridades-de-yacyreta-por-caso-ueno-bank/",
+   "titulo": "Río Paraná desciende y queda por debajo del nivel de inundabilidad en Ayolas",
+   "url": "https://www.abc.com.py/clima/2026/11/14/rio-parana-desciende-y-queda-por-debajo-del-nivel-de-inundabilidad-en-ayolas/",
    "dominio": "abc.com.py",
    "fecha": "2026-11-14",
    "lugares": [
-    "Yacyretá"
+    "Ayolas"
+   ]
+  },
+  {
+   "titulo": "Así son los cinco murales rescatados en el Centro Cultural del Puerto de Asunción",
+   "url": "https://www.abc.com.py/espectaculos/artes-plasticas/2026/11/14/asi-son-los-cinco-murales-rescatados-en-el-centro-cultural-del-puerto-de-asuncion/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-14",
+   "lugares": [
+    "Asunción"
    ]
   },
   {
@@ -790,6 +799,15 @@
    "fecha": "2026-11-14",
    "lugares": [
     "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Caso Ueno: yate de lujo que pertenece al Grupo Vázquez es trasladado a Asunción",
+   "url": "http://www.lanacion.com.py/politica/2026/11/14/caso-ueno-yate-de-lujo-que-pertenece-al-grupo-vazquez-es-trasladado-a-asuncion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-14",
+   "lugares": [
+    "Asunción"
    ]
   },
   {
@@ -808,6 +826,22 @@
    "fecha": "2026-11-14",
    "lugares": [
     "Triple Frontera"
+   ]
+  },
+  {
+   "titulo": "Una emblemática marca de galletitas pasó a manos de un gigante de los alimentos",
+   "url": "https://perfil.com/economia/una-emblematica-marca-de-galletitas-paso-a-manos-de-un-gigante-de-los-alimentos-a3Yfk7s78Dre",
+   "dominio": "perfil.com",
+   "fecha": "2026-11-14",
+   "lugares": []
+  },
+  {
+   "titulo": "Concejal liberal de Misiones pide destitución de autoridades de Yacyretá por caso Ueno Bank",
+   "url": "https://www.abc.com.py/politica/2026/11/14/concejal-liberal-de-misiones-pide-destitucion-de-autoridades-de-yacyreta-por-caso-ueno-bank/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-14",
+   "lugares": [
+    "Yacyretá"
    ]
   },
   {
