@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-14T01:29:34Z",
+ "obtenido": "2026-11-14T10:40:32Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 3
+   "avisos_en_el_corredor": 2
   },
   {
    "nombre": "GDACS",
@@ -76,44 +76,30 @@
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO N° 4087 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-11-13 22:25",
+   "inicio": "2026-11-14 07:35",
    "fin": "",
    "lugares": [
-    "SANTIAGO DEL ESTERO: Aguirre - Belgrano - Mitre - Quebrachos - Rivadavia.; ; SANTA FE: 9 de Julio - San Cristobal.; ; CORDOBA: Rio Seco."
+    "FORMOSA: Formosa - Laishi - Patino - Pirane.; ; CHACO: Gral Guemes - Ldor Gral S. Martin."
    ],
    "riesgos": "",
-   "id": "smn-4087"
+   "id": "smn-4109"
   },
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO N° 4083 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-11-13 21:54",
+   "inicio": "2026-11-14 06:16",
    "fin": "",
    "lugares": [
-    "SANTIAGO DEL ESTERO: Rivadavia.; ; SANTA FE: Castellanos - La Capital - Las Colonias - San Cristobal.; ; CORDOBA: San Justo."
+    "CHACO: Gral Donovan - 1 de Mayo - 25 de Mayo - Almirante Brown - Bermejo - Cmte Fernandez - Gral Guemes - Independencia - Ldor Gral S. Martin - Libertad - Maipu - O Higgins - Pres de la Plaza - Quitilipi - San Lorenzo - Sargento Cabral - Tapenaga."
    ],
    "riesgos": "",
-   "id": "smn-4083"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO N° 4075 por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-13 20:40",
-   "fin": "",
-   "lugares": [
-    "SANTA FE: Belgrano - Castellanos - Las Colonias - San Jeronimo - San Martin.; ; CORDOBA: Marcos Juarez - San Justo - Union."
-   ],
-   "riesgos": "",
-   "id": "smn-4075"
+   "id": "smn-4107"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -128,8 +114,8 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033788",
-   "lat": -24.495243696077985,
-   "lon": -60.57809562795216
+   "lat": -24.496117187354155,
+   "lon": -60.578374118559616
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -144,8 +130,8 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033775",
-   "lat": -16.03847438135272,
-   "lon": -64.64190527978793
+   "lat": -16.0449387238126,
+   "lon": -64.64104422788331
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
