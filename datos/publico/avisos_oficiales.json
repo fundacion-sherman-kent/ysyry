@@ -1,15 +1,15 @@
 {
- "obtenido": "2026-11-15T06:49:36Z",
+ "obtenido": "2026-11-15T16:28:33Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 4
   },
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "SMN (Argentina)",
@@ -29,15 +29,18 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-11-15 00:00",
+   "inicio": "2026-11-15 09:23",
    "fin": "2026-11-15 23:59",
    "lugares": [
-    "Foz do Iguaçu",
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres",
     "Ponta Porã",
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28702"
+   "id": "inmet-28705"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -55,21 +58,41 @@
     "Ponta Porã"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28704"
+   "id": "inmet-28707"
   },
   {
-   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
-   "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos fuertes a muy fuertes y la probabilidad de caída de granizos",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-17 00:00",
+   "fin": "2026-11-17 23:59",
    "lugares": [
-    "Paraguay"
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres",
+    "Ponta Porã"
    ],
-   "riesgos": "",
-   "id": "dmh-vigente"
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28708"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-17 00:00",
+   "fin": "2026-11-17 23:59",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28709"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
