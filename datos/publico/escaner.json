@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-15T16:17:38Z",
+ "obtenido": "2026-11-15T22:44:41Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 25,
+   "items": 21,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 94,
+   "items": 90,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 360,
+   "items": 365,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 48
+   "fallos_seguidos": 49
   },
   {
    "dominio": "senad.gov.py",
@@ -198,6 +198,40 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "El Superniño desborda el río Paraná: ya hay 4.500 evacuados y alertan sobre el avance del agua hacia el sur",
+   "url": "https://perfil.com/clima/crecida-del-rio-parana-10-ciudades-del-litoral-evacuadas-a50-bgd-aVjiQ9J9TLBJ",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-11-15",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes",
+    "Santa Fe"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://perfil.com/clima/crecida-del-rio-parana-10-ciudades-del-litoral-evacuadas-a50-bgd-aVjiQ9J9TLBJ"
+    }
+   ],
+   "id": "ee607b126d",
+   "verificado": true
+  },
   {
    "titulo": "MODISTA TRAÍA DESDE BOLIVIA COCAÍNA IMPREGNADA EN TELAS: SENAD INCAUTÓ 6,25 KILOS",
    "url": "https://senad.gov.py/modista-traia-desde-bolivia-cocaina-impregnada-en-telas-senad-incauto-625-kilos/",
@@ -742,12 +776,30 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Río Paraguay: sigue bajando en Asunción y en casi todo el país",
+   "url": "https://www.abc.com.py/nacionales/2026/11/15/rio-paraguay-sigue-bajando-en-asuncion-y-en-casi-todo-el-pais/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-15",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
    "titulo": "Itaipú tiene nuevo director financiero interino",
    "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/15/itaipu-tiene-nuevo-director-financiero-interino/",
    "dominio": "lanacion.com.py",
    "fecha": "2026-11-15",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "El río Paraná superó el nivel de evacuación en Santa Fe: trasladaron a más de 200 personas a centros de asistencia",
+   "url": "https://www.lanacion.com.ar/sociedad/el-rio-parana-supero-el-nivel-de-evacuacion-en-santa-fe-trasladaron-a-mas-de-200-personas-a-centros-nid15112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-15",
+   "lugares": [
+    "Santa Fe"
    ]
   },
   {
