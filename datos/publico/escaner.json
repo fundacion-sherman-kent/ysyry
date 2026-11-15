@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-14T22:16:42Z",
+ "obtenido": "2026-11-15T06:16:29Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,8 +14,8 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 37,
-   "candidatos": 1,
+   "items": 31,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 94,
+   "items": 92,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 356,
+   "items": 359,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 46
+   "fallos_seguidos": 47
   },
   {
    "dominio": "senad.gov.py",
@@ -738,58 +738,25 @@
    ],
    "id": "fd3bbce08a",
    "verificado": true
-  },
-  {
-   "titulo": "Imputan a joven por tenencia de drogas y posesión ilegal de arma de fuego",
-   "url": "http://www.lanacion.com.py/pais/2026/10/30/imputan-a-joven-por-tenencia-de-drogas-y-posesion-ilegal-de-arma-de-fuego/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-10-31",
-   "tipos": [
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ]
-   ],
-   "lugares": [
-    "Alto Paraná"
-   ],
-   "ubicacion": [
-    -25.3,
-    -54.8
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 4,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/pais/2026/10/30/imputan-a-joven-por-tenencia-de-drogas-y-posesion-ilegal-de-arma-de-fuego/"
-    }
-   ],
-   "id": "f59c910078",
-   "verificado": true
   }
  ],
  "sin_tipo": [
   {
-   "titulo": "Río Paraná desciende y queda por debajo del nivel de inundabilidad en Ayolas",
-   "url": "https://www.abc.com.py/clima/2026/11/14/rio-parana-desciende-y-queda-por-debajo-del-nivel-de-inundabilidad-en-ayolas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-14",
+   "titulo": "Itaipú tiene nuevo director financiero interino",
+   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/15/itaipu-tiene-nuevo-director-financiero-interino/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-15",
    "lugares": [
-    "Ayolas"
+    "Itaipú"
    ]
   },
   {
-   "titulo": "Así son los cinco murales rescatados en el Centro Cultural del Puerto de Asunción",
-   "url": "https://www.abc.com.py/espectaculos/artes-plasticas/2026/11/14/asi-son-los-cinco-murales-rescatados-en-el-centro-cultural-del-puerto-de-asuncion/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-14",
+   "titulo": "A causa de El Niño, advirtieron que el río Paraná volverá a registrar caudales altos en noviembre",
+   "url": "https://www.infobae.com/sociedad/2026/11/15/a-causa-de-el-nino-advirtieron-que-el-rio-parana-volvera-a-registrar-caudales-altos-en-noviembre/",
+   "dominio": "infobae.com",
+   "fecha": "2026-11-15",
    "lugares": [
-    "Asunción"
+    "Yacyretá"
    ]
   },
   {
@@ -805,6 +772,24 @@
    "titulo": "Caso Ueno: yate de lujo que pertenece al Grupo Vázquez es trasladado a Asunción",
    "url": "http://www.lanacion.com.py/politica/2026/11/14/caso-ueno-yate-de-lujo-que-pertenece-al-grupo-vazquez-es-trasladado-a-asuncion/",
    "dominio": "lanacion.com.py",
+   "fecha": "2026-11-14",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Río Paraná desciende y queda por debajo del nivel de inundabilidad en Ayolas",
+   "url": "https://www.abc.com.py/clima/2026/11/14/rio-parana-desciende-y-queda-por-debajo-del-nivel-de-inundabilidad-en-ayolas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-14",
+   "lugares": [
+    "Ayolas"
+   ]
+  },
+  {
+   "titulo": "Así son los cinco murales rescatados en el Centro Cultural del Puerto de Asunción",
+   "url": "https://www.abc.com.py/espectaculos/artes-plasticas/2026/11/14/asi-son-los-cinco-murales-rescatados-en-el-centro-cultural-del-puerto-de-asuncion/",
+   "dominio": "abc.com.py",
    "fecha": "2026-11-14",
    "lugares": [
     "Asunción"
@@ -1695,91 +1680,6 @@
    "fecha": "2026-11-01",
    "lugares": [
     "Asunción"
-   ]
-  },
-  {
-   "titulo": "MTOP informó que se avanzará en estudios de factibilidad sobre un puerto oceánico para facilitar la salida de Paraguay y Bolivia",
-   "url": "https://ladiaria.com.uy/politica/articulo/2026/10/mtop-informo-que-se-avanzara-en-estudios-de-factibilidad-sobre-un-puerto-oceanico-para-facilitar-la-salida-de-paraguay-y-bolivia/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-31",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Tras muertes de efectivos durante un curso de buzo, Ejército ordena “investigación de urgencia” y niega “negligencia”",
-   "url": "https://ladiaria.com.uy/politica/articulo/2026/10/tras-muertes-de-efectivos-durante-un-curso-de-buzo-ejercito-ordena-investigacion-de-urgencia-y-niega-negligencia/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-10-31",
-   "lugares": []
-  },
-  {
-   "titulo": "Murió la joven baleada por su pareja en un nuevo caso de feminicidio en PJC",
-   "url": "http://www.lanacion.com.py/pais/2026/10/31/murio-la-joven-baleada-por-su-pareja-en-un-nuevo-caso-de-feminicidio-en-pjc/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-31",
-   "lugares": [
-    "Pedro Juan Caballero"
-   ]
-  },
-  {
-   "titulo": "Ciudad del Este: hallan sin vida a mujer que estaba desaparecida",
-   "url": "http://www.lanacion.com.py/pais/2026/10/31/ciudad-del-este-hallan-sin-vida-a-mujer-que-estaba-desaparecida/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-31",
-   "lugares": [
-    "Ciudad del Este",
-    "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "Militar internado en CTI tras accidente en el río Uruguay está estable y fue desentubado: reacciona favorablemente",
-   "url": "https://www.elobservador.com.uy/nacional/militar-internado-cti-accidente-el-rio-uruguay-esta-estable-y-fue-desentubado-reacciona-favorablemente-n6062327",
-   "dominio": "elobservador.com.uy",
-   "fecha": "2026-10-31",
-   "lugares": []
-  },
-  {
-   "titulo": "Comandate en jefe del Ejército descartó negligencia en muerte de militares pese a que se desconocen resultados de investigación de urgencia",
-   "url": "https://www.elobservador.com.uy/referi/comandate-jefe-del-ejercito-descarto-negligencia-muerte-militares-el-rio-uruguay-pese-que-se-desconocen-resultados-investigacion-urgencia-n6062321",
-   "dominio": "elobservador.com.uy",
-   "fecha": "2026-10-31",
-   "lugares": []
-  },
-  {
-   "titulo": "En Pilar inician plan para nuevos centros educativos",
-   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/10/31/en-pilar-inician-plan-para-nuevos-centros-educativos/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-10-31",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Intentaron usurpar las viviendas de la Villa Suramericana en Santa Fe: hubo gases y algunos detenidos",
-   "url": "https://perfil.com/sociedad/intentaron-usurpar-las-viviendas-de-la-villa-suramericana-en-santa-fe-hubo-gases-y-algunos-detenidos-a7woH3V5FCtV",
-   "dominio": "perfil.com",
-   "fecha": "2026-10-31",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Violento intento de usurpación de la Villa Olímpica de Santa Fe: hay 8 detenidos",
-   "url": "https://www.infobae.com/sociedad/policiales/2026/10/31/violento-intento-de-usurpacion-de-la-villa-olimpica-de-santa-fe-hay-8-detenidos/",
-   "dominio": "infobae.com",
-   "fecha": "2026-10-31",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Yacyretá instaló la primera pieza electromecánica de la Unidad N ° 1 de Aña Cuá",
-   "url": "https://www.abc.com.py/economia/2026/10/30/yacyreta-instalo-la-primera-pieza-electromecanica-de-la-unidad-n-1-de-ana-cua/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-10-31",
-   "lugares": [
-    "Yacyretá"
    ]
   }
  ]
