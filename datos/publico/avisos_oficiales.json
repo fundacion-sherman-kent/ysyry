@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-11-14T22:36:20Z",
+ "obtenido": "2026-11-15T06:49:36Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 3
+   "avisos_en_el_corredor": 2
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -19,25 +19,10 @@
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 7
+   "avisos_en_el_corredor": 6
   }
  ],
  "avisos": [
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-14 20:00",
-   "fin": "2026-11-14 23:59",
-   "lugares": [
-    "Foz do Iguaçu",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28700"
-  },
   {
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
@@ -75,7 +60,7 @@
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos fuertes a muy fuertes y la alta probabilidad de caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos fuertes a muy fuertes y la probabilidad de caída de granizos",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -99,8 +84,8 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033835",
-   "lat": -18.156013880581416,
-   "lon": -60.177216403915
+   "lat": -18.155277568190417,
+   "lon": -60.17723508251929
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -131,24 +116,8 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1033775",
-   "lat": -16.044646837862256,
-   "lon": -64.64096739951076
-  },
-  {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
-   "fenomeno": "Green flood alert in Argentina",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "-31.71, -60.57"
-   ],
-   "riesgos": "",
-   "id": "gdacs-&amp;eventid=1104277",
-   "lat": -31.7114309,
-   "lon": -60.5657773
+   "lat": -16.04340221135372,
+   "lon": -64.64087960920678
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
