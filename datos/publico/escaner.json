@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-16T06:14:56Z",
+ "obtenido": "2026-11-16T19:30:47Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 23,
+   "items": 28,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -47,7 +47,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 96,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 349,
+   "items": 321,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,14 +177,14 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 50
+   "fallos_seguidos": 51
   },
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 5,
+   "candidatos": 4,
    "fallos_seguidos": 0
   },
   {
@@ -198,6 +198,39 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Alarma por la crecida del río Paraná: hay cientos de evacuados y crece la preocupación por nuevas tormentas",
+   "url": "https://www.infobae.com/sociedad/2026/11/16/alarma-por-la-crecida-del-rio-parana-hay-cientos-de-evacuados-y-crece-la-preocupacion-por-nuevas-tormentas/",
+   "dominio": "infobae.com",
+   "clase": "prensa",
+   "fecha": "2026-11-16",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Santa Fe"
+   ],
+   "ubicacion": [
+    -31.63,
+    -60.7
+   ],
+   "zona": "z3",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "infobae.com",
+     "clase": "prensa",
+     "url": "https://www.infobae.com/sociedad/2026/11/16/alarma-por-la-crecida-del-rio-parana-hay-cientos-de-evacuados-y-crece-la-preocupacion-por-nuevas-tormentas/"
+    }
+   ],
+   "id": "840bde851d",
+   "verificado": true
+  },
   {
    "titulo": "El Superniño desborda el río Paraná: ya hay 4.500 evacuados y alertan sobre el avance del agua hacia el sur",
    "url": "https://perfil.com/clima/crecida-del-rio-parana-10-ciudades-del-litoral-evacuadas-a50-bgd-aVjiQ9J9TLBJ",
@@ -775,6 +808,58 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Detienen a un hombre con orden de captura por amenaza a su expareja vía audio WhatsApp",
+   "url": "http://www.lanacion.com.py/pais/2026/11/16/detienen-a-un-hombre-con-orden-de-captura-por-amenaza-a-su-expareja-via-audio-whatsapp/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-16",
+   "lugares": [
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Caso Ueno: incautan más vehículos en la vivienda de Miguel Vázquez",
+   "url": "http://www.lanacion.com.py/pais/2026/11/16/caso-ueno-incautan-mas-vehiculos-en-la-vivienda-de-miguel-vazquez/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-16",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "El río Paraná superó el nivel de evacuación en Santa Fe y anticipan focos de precipitaciones de 200 milímetros",
+   "url": "https://perfil.com/clima/el-rio-parana-supero-el-nivel-de-evacuacion-en-santa-fe-a50-y-anticipan-focos-de-precipitaciones-de-200-milimetros-a03Af4I6JcNb",
+   "dominio": "perfil.com",
+   "fecha": "2026-11-16",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Súper Niño 2026 en Argentina, EN VIVO: el río Paraná sigue creciendo y superó el nivel de evacuación en Santa Fe",
+   "url": "https://www.lanacion.com.ar/sociedad/super-nino-2026-en-argentina-en-vivo-el-rio-parana-sigue-creciendo-y-supero-el-nivel-de-evacuacion-nid16112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-16",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Instalaron una “llave de paso” para impedir que la basura llegue al Río de la Plata",
+   "url": "https://www.lanacion.com.ar/sociedad/instalaron-una-llave-de-paso-para-impedir-que-la-basura-llegue-al-rio-de-la-plata-nid16112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-16",
+   "lugares": []
+  },
+  {
+   "titulo": "Así es la cárcel “El infierno”, que alojará a los narcos y sicarios más peligrosos del país",
+   "url": "https://www.lanacion.com.ar/seguridad/asi-es-la-carcel-el-infierno-que-alojara-a-los-narcos-y-sicarios-mas-peligrosos-del-pais-nid16112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-16",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
   {
    "titulo": "Diversidad todo el año",
    "url": "https://ladiaria.com.uy/articulo/2026/11/diversidad-todo-el-ano/",
