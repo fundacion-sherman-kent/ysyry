@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-11-15T22:58:46Z",
+ "obtenido": "2026-11-16T06:49:54Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 4
+   "avisos_en_el_corredor": 3
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -19,29 +19,10 @@
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 6
+   "avisos_en_el_corredor": 5
   }
  ],
  "avisos": [
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-15 09:23",
-   "fin": "2026-11-15 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28705"
-  },
   {
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
@@ -145,18 +126,18 @@
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
    "pais": "",
-   "fenomeno": "Green forest fire notification in Bolivia",
+   "fenomeno": "Green flood alert in Argentina",
    "severidad": "",
    "color": "",
    "inicio": "",
    "fin": "",
    "lugares": [
-    "-16.65, -60.75"
+    "-27.78, -67.17"
    ],
    "riesgos": "",
-   "id": "gdacs-&amp;eventid=1033508",
-   "lat": -16.648330298175537,
-   "lon": -60.749619496203664
+   "id": "gdacs-&amp;eventid=1104277",
+   "lat": -27.7758659,
+   "lon": -67.171292
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -173,22 +154,6 @@
    "id": "gdacs-&amp;eventid=1033499",
    "lat": -16.97312030049081,
    "lon": -56.571691204700166
-  },
-  {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
-   "fenomeno": "Green forest fire notification in Bolivia",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "-16.10, -63.73"
-   ],
-   "riesgos": "",
-   "id": "gdacs-&amp;eventid=1033609",
-   "lat": -16.102708693644416,
-   "lon": -63.734265174396036
   }
  ],
  "no_consultadas": [
