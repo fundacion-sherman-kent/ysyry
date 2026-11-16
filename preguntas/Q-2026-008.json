@@ -1,0 +1,33 @@
+{
+ "estado": "publicada",
+ "creada": "2026-11-16",
+ "banda": "improbable",
+ "confianza": "baja",
+ "estimaciones": {
+  "metodo": "Banda propuesta por el modelo y aceptada por la dirección, sin estimación independiente de la dirección: NO es un acuerdo entre dos estimaciones separadas. La estimación del modelo quedó sellada con un hash SHA-256 en el registro privado el 16/11/2026, antes de que la dirección la conociera. Las estimaciones se rotulan como asistidas por un modelo.",
+  "direccion": "improbable (adopta la del modelo)",
+  "modelo_claude": "improbable (30 %)",
+  "sello_sha256": "63a46de13601f5f8a0cae5b9da6e30b392118ad7ede853b34e90947a0e1a3239"
+ },
+ "disenso": {
+  "decimo_hombre": "Sostiene que SÍ ocurrirá (el consenso es improbable).",
+  "dictamen": "La mediana del Delta subió de 254 a 289 entre el 9 y el 12/11: el conteo puede saltar 20 a 30 buques en un día, y el umbral de 300 está sólo 11 por encima del máximo de la serie. Es temporada de embarque de granos, con el calado que dejó la crecida, y la cobertura de receptores puede crecer y sumar buques visibles. La ventana es de catorce días. Evidencia en contra de este dictamen: el pico duró cuatro días y volvió a unos 250 en dos, y en toda la serie sólo un día pasó de 281."
+ },
+ "id": "Q-2026-008",
+ "vence": "2026-12-01",
+ "origen": "Pulso de Ysyry por zona: tráfico del Delta y el Río de la Plata (zona z1).",
+ "enunciado": "¿La mediana diaria de buques por captura en la zona Delta y Río de la Plata llegará a 300 o más al menos un día entre el 18 de noviembre y el 1 de diciembre de 2026?",
+ "criterio": {
+  "tipo": "pulso_zona",
+  "zona": "z1",
+  "campo": "mediana",
+  "operador": ">=",
+  "umbral": 300,
+  "minimo_dias": 1,
+  "desde": "2026-11-18",
+  "hasta": "2026-12-01"
+ },
+ "datos_de_partida": "Pulso de Ysyry, buques visibles por AIS por captura (mediana del día) en el Delta y Río de la Plata: 243 (3/11), 254,5 (9/11), 265 (10/11), 281 (11/11), 289 (12/11, máximo de la serie desde el 2/10), 266 (13/11), 247 (14/11), 255 (15/11), 249 (16/11). Mide buques visibles por AIS, no el tráfico real, e incluye posiciones de hasta unas horas de antigüedad: depende de la cobertura de los receptores.",
+ "publicada_el": "2026-11-16",
+ "resolucion": "Automática el 2/12/2026 contra el pulso por zona de Ysyry (rama datos-pulso): sólo cuentan los días con 12 capturas de AIS o más; si los días con datos son menos de la mitad del período, queda «sin datos suficientes» y no cuenta."
+}

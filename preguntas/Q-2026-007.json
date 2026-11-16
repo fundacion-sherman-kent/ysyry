@@ -1,0 +1,32 @@
+{
+ "estado": "publicada",
+ "creada": "2026-11-16",
+ "banda": "improbable",
+ "confianza": "baja",
+ "estimaciones": {
+  "metodo": "Banda propuesta por el modelo y aceptada por la dirección, sin estimación independiente de la dirección: NO es un acuerdo entre dos estimaciones separadas. La estimación del modelo quedó sellada con un hash SHA-256 en el registro privado el 16/11/2026, antes de que la dirección la conociera. Las estimaciones se rotulan como asistidas por un modelo.",
+  "direccion": "improbable (adopta la del modelo)",
+  "modelo_claude": "improbable (30 %)",
+  "sello_sha256": "63a46de13601f5f8a0cae5b9da6e30b392118ad7ede853b34e90947a0e1a3239"
+ },
+ "disenso": {
+  "decimo_hombre": "Sostiene que SÍ ocurrirá (el consenso es improbable).",
+  "dictamen": "Rosario sube 7 a 10 cm por día y sólo necesita unos 60 cm más en 23 días; Santa Fe ya está en 5,66 m, a 4 cm de su cota de evacuación, y sigue subiendo 12 cm por día. La onda de octubre llegó al Delta una semana más tarde de lo previsto (Zárate marcó 1,64 m el 7/11, después del cierre de la Q-2), así que una onda lenta tiene tiempo de llegar antes del 10/12, y las lluvias de diciembre en la cuenca pueden sumar otra. Evidencia en contra de este dictamen: la onda se atenúa hacia el sur (la diferencia Santa Fe – Rosario pasó de 0,49 m a 1,03 m) y el Paraná medio ya desacelera."
+ },
+ "id": "Q-2026-007",
+ "vence": "2026-12-10",
+ "origen": "Alerta candidata NAV-2 · Rosario – San Lorenzo (Issue 23): segunda onda de crecida en el Paraná medio.",
+ "enunciado": "¿El nivel del río en la estación Rosario marcará 5,25 m o más (su cota de evacuación) al menos un día entre el 18 de noviembre y el 10 de diciembre de 2026?",
+ "criterio": {
+  "tipo": "nivel_estacion",
+  "red": "ar",
+  "estacion": "Rosario",
+  "operador": ">=",
+  "umbral_m": 5.25,
+  "desde": "2026-11-18",
+  "hasta": "2026-12-10"
+ },
+ "datos_de_partida": "Prefectura Naval Argentina vía INA, Rosario: 3,96 m (3/11), 4,30 m (10/11) y 4,63 m (14/11), subiendo 7 a 10 cm por día. Cotas oficiales: alerta 5,00 m, evacuación 5,25 m. Aguas arriba, 14/11: Paraná 5,64 m (+6 cm por día, desacelerando desde +20) y Santa Fe 5,66 m (+12 cm por día; su cota de evacuación es 5,70 m). La diferencia Santa Fe – Rosario creció de 0,49 m (3/11) a 1,03 m (14/11): la onda se atenúa hacia el sur. Corrientes ya baja (6,67 m, −5 cm por día).",
+ "publicada_el": "2026-11-16",
+ "resolucion": "Automática el 11/12/2026 contra las lecturas diarias de Rosario de la Prefectura Naval Argentina, publicadas por el INA (historial público del repositorio). Si hay menos lecturas que la mitad de los días del período, queda «sin datos suficientes» y no cuenta."
+}

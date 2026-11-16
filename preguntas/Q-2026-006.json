@@ -1,0 +1,31 @@
+{
+ "estado": "publicada",
+ "creada": "2026-11-16",
+ "banda": "probable",
+ "confianza": "baja",
+ "estimaciones": {
+  "metodo": "Banda propuesta por el modelo y aceptada por la dirección, sin estimación independiente de la dirección: NO es un acuerdo entre dos estimaciones separadas. La estimación del modelo quedó sellada con un hash SHA-256 en el registro privado el 16/11/2026, antes de que la dirección la conociera. Las estimaciones se rotulan como asistidas por un modelo.",
+  "direccion": "probable (adopta la del modelo)",
+  "modelo_claude": "probable (70 %)",
+  "sello_sha256": "63a46de13601f5f8a0cae5b9da6e30b392118ad7ede853b34e90947a0e1a3239"
+ },
+ "disenso": {
+  "decimo_hombre": "Sostiene que NO ocurrirá (el consenso dice que sí).",
+  "dictamen": "La caída de los últimos días (6 cm por día en Asunción, 8 en Pilar) puede ser la cola de la onda de octubre y no el ritmo de la bajante sostenida: entre el 6 y el 15/11 se aceleró, pero Concepción, aguas arriba, ya baja sólo 2 cm por día y desacelera. A 3 cm por día el umbral de 1,00 m se alcanza hacia el 12/12, a tres días del cierre de la ventana, y diciembre abre la estación de lluvias en la cuenca alta, que puede cortar la bajada con cualquier pulso. Evidencia en contra de este dictamen: la tendencia se aceleró y nada aguas arriba anuncia una subida."
+ },
+ "id": "Q-2026-006",
+ "vence": "2026-12-15",
+ "origen": "Alerta candidata NAV-1 · Río Paraguay (Issue 19): el río vuelve a bajar tras la crecida de octubre.",
+ "enunciado": "¿El nivel del río en la estación Asunción marcará 1,00 m o menos al menos un día entre el 18 de noviembre y el 15 de diciembre de 2026?",
+ "criterio": {
+  "tipo": "nivel_estacion",
+  "estacion": "Asunción",
+  "operador": "<=",
+  "umbral_m": 1.0,
+  "desde": "2026-11-18",
+  "hasta": "2026-12-15"
+ },
+ "datos_de_partida": "Meteorología de Paraguay, Asunción: pico de 2,83 m el 22/10; 2,39 m el 6/11 (−44 cm en 15 días, unos 3 cm por día) y 1,81 m el 15/11 (−58 cm en 9 días, unos 6 cm por día). Pilar 5,91 m (−8 cm por día) y Concepción 1,64 m (−2 cm por día, desacelerando). Mínimo histórico de la estación: −1,61 m (2/11/2024). Hasta el umbral de 1,00 m faltan 81 cm: a 3 cm por día se llega hacia el 12/12, a 6 cm por día hacia el 29/11. Diciembre abre la estación de lluvias en la cuenca alta, que puede cortar la bajada.",
+ "publicada_el": "2026-11-16",
+ "resolucion": "Automática el 16/12/2026 contra las lecturas diarias de Asunción de Meteorología de Paraguay (historial público del repositorio). Si hay menos lecturas que la mitad de los días del período, queda «sin datos suficientes» y no cuenta."
+}
