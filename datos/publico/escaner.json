@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-15T22:44:41Z",
+ "obtenido": "2026-11-16T06:14:56Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 21,
+   "items": 23,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
+   "items": 92,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 365,
+   "items": 349,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 49
+   "fallos_seguidos": 50
   },
   {
    "dominio": "senad.gov.py",
@@ -775,6 +775,15 @@
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Diversidad todo el año",
+   "url": "https://ladiaria.com.uy/articulo/2026/11/diversidad-todo-el-ano/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-11-16",
+   "lugares": [
+    "Colonia"
+   ]
+  },
   {
    "titulo": "Río Paraguay: sigue bajando en Asunción y en casi todo el país",
    "url": "https://www.abc.com.py/nacionales/2026/11/15/rio-paraguay-sigue-bajando-en-asuncion-y-en-casi-todo-el-pais/",
@@ -1681,58 +1690,6 @@
    "dominio": "infobae.com",
    "fecha": "2026-11-02",
    "lugares": []
-  },
-  {
-   "titulo": "Capturan un mangurujú de 80 kilos en la Costanera de Encarnación",
-   "url": "http://www.lanacion.com.py/pais/2026/11/01/capturan-un-manguruju-de-80-kilos-en-la-costanera-de-encarnacion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-01",
-   "lugares": [
-    "Encarnación"
-   ]
-  },
-  {
-   "titulo": "El militar internado tras el accidente en el río Uruguay evoluciona favorablemente y se prevé que salga del CTI, informó el Ejército",
-   "url": "https://www.elobservador.com.uy/nacional/ejercito-informo-que-el-militar-internado-el-accidente-el-rio-uruguay-evoluciona-favorablemente-y-se-preve-que-deje-el-cti-n6062375",
-   "dominio": "elobservador.com.uy",
-   "fecha": "2026-11-01",
-   "lugares": []
-  },
-  {
-   "titulo": "Conmoción en Santa Fe: encontraron asesinados a tiros a un empresario y su esposa",
-   "url": "https://perfil.com/sociedad/conmocion-en-santa-fe-encontraron-asesinados-a-tiros-a-un-empresario-y-su-esposa-aBIgh3T1HwtT",
-   "dominio": "perfil.com",
-   "fecha": "2026-11-01",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Conmoción en Santa Fe: hallaron muertos a un reconocido empresario de una compañía de montaje y a su mujer",
-   "url": "https://www.lanacion.com.ar/seguridad/conmocion-en-santa-fe-hallaron-muertos-a-un-reconocido-empresario-de-una-compania-de-montaje-y-a-su-nid01112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-01",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Yacyretá marca hito en Aña Cua al instalar pieza de 32 toneladas",
-   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/01/yacyreta-marca-hito-en-ana-cua-al-instalar-pieza-de-32-toneladas/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-01",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "El río Paraguay bajó 10 centímetros en un día en la bahía de Asunción",
-   "url": "https://www.abc.com.py/clima/2026/11/01/el-rio-paraguay-bajo-10-centimetros-en-un-dia-en-la-bahia-de-asuncion/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-01",
-   "lugares": [
-    "Asunción"
-   ]
   }
  ]
 }
