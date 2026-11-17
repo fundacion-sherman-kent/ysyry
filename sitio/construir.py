@@ -574,6 +574,9 @@ if marcos:
                           os.environ.get("SITIO_REPORTE_SALA") or (_raiz / "datos" / "publico" / "reporte-sala-ar.json"), _segs, _dtm.strptime(_fecha, "%Y-%m-%d").date())
     for _z, _l in _rep.indicios(_presas).items():
         _flu_extra.setdefault(_z, []).extend(_l)
+    import alimentos as _ali
+    for _z, _l in _ali.indicios(os.environ.get("SITIO_RASFF") or (_raiz / "datos" / "publico" / "rasff-corredor.json"), _dt.datetime.now(_dt.timezone.utc).replace(tzinfo=None)).items():
+        _flu_extra.setdefault(_z, []).extend(_l)
     import anomalias as _ani
     _ruta_ident = Path(os.environ.get("SITIO_IDENT") or (D / "identidades.json"))
     if _ruta_ident.exists():
