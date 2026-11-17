@@ -716,6 +716,53 @@ def indicios_prensa(ruta):
     return out
 
 
+# ---------------------------------------------------------------- libro de indicios: acordeón por zona con tarjetas (la tabla completa queda en un desplegable)
+NIVELES = [("fuerte", "Fuerte"), ("corroborado", "Corroborado"), ("fuente", "Fuente única"), ("calificado", "Calificado por SIWA"), ("contexto", "Contexto"), ("estado", "Estado de cobertura")]
+
+
+def _corto(t, n=240):
+    if len(t) <= n:
+        return t
+    c = t[:n]
+    k = max(c.rfind(". "), c.rfind("; "))
+    return c[:k + 1] if k > n * 0.5 else c.rsplit(" ", 1)[0] + "…"
+
+
+def _libro(ind):
+    import html
+    from collections import Counter
+    e = html.escape
+    rot = dict(NIVELES)
+    bloques, total = [], Counter()
+    for z, nombre, desc in _pulso.ZONAS + [("gen", "Corredor en general", "Indicios que no se pueden ubicar en un tramo del río")]:
+        lst = ind.get(z, [])
+        if not lst and z == "gen":
+            continue
+        cuenta = Counter(i["nivel"].split()[0].lower() for i in lst)
+        total.update(cuenta)
+        chips = "".join('<span class="ev ev-%s">%d %s</span>' % (k, cuenta[k], e(rot[k])) for k, _ in NIVELES if cuenta.get(k))
+        if not lst:
+            cuerpo = '<p class="sd lz-vacio">Sin indicios con datos en esta zona hoy. No significa que no pase nada: significa que no lo vemos.</p>'
+            chips = '<span class="ev">Sin datos</span>'
+        else:
+            tarjetas = []
+            for i in lst:
+                niv = i["nivel"].split()[0].lower()
+                f = "; ".join("%s (%s)" % (x["nombre"], x["familia"]) for x in i["fuentes"][:6]) + (" y %d más" % (len(i["fuentes"]) - 6) if len(i["fuentes"]) > 6 else "")
+                enl = "".join('<a href="%s" target="_blank" rel="noopener nofollow">nota ↗</a> ' % e(u_) for u_ in i.get("enlaces", []) if u_.startswith(("http://", "https://")))
+                nota = '<p class="ic-aviso">No verificado: falta una segunda fuente independiente.</p>' if niv == "fuente" else ""
+                tarjetas.append('<article class="ic" data-nivel="%s"><div class="ic-h"><span class="ic-tipo">%s</span><span class="ev ev-%s">%s</span></div><h4>%s</h4><p class="ic-t">%s</p>%s'
+                                '<details class="ic-d"><summary>Texto completo, fuentes y lo que no dice</summary><p>%s</p><p><b>Fuentes:</b> %s</p>%s<p class="ic-nd"><b>Lo que no dice:</b> %s</p></details></article>'
+                                % (niv, e(i.get("tipo", "")), niv, e(i["nivel"]), e(i["titulo"]), e(_corto(i["texto"])), nota, e(i["texto"]), e(f), ("<p>%s</p>" % enl) if enl else "", e(i["no_dice"])))
+            cuerpo = '<div class="lz-grid">%s</div>' % "".join(tarjetas)
+        bloques.append('<details class="lz"><summary><span class="lz-n">%s</span><span class="lz-d">%s</span><span class="lz-c">%s</span><span class="lz-ch">%s</span></summary>%s</details>'
+                       % (e(nombre), e(desc), "%d %s" % (len(lst), "indicio" if len(lst) == 1 else "indicios"), chips, cuerpo))
+    filtros = ('<div class="lib-barra" role="group" aria-label="Filtrar por nivel de evidencia"><button type="button" class="lib-f activa" data-f="">Todos</button>%s'
+               '<button type="button" class="lib-ab" data-a="1">Abrir todas las zonas</button></div>'
+               % "".join('<button type="button" class="lib-f" data-f="%s">%s <small>%d</small></button>' % (k, e(v), total.get(k, 0)) for k, v in NIVELES))
+    return '<div class="libro">%s%s</div>' % (filtros, "".join(bloques))
+
+
 # ---------------------------------------------------------------- tabla de la página
 def tabla_html(ind, fecha):
     import html
@@ -738,8 +785,8 @@ def tabla_html(ind, fecha):
             '<p class="sub">Cada observación con sus fuentes, su familia de fuente y su nivel de evidencia. <b>Fuente única</b>: una sola. <b>Corroborado</b>: dos o más fuentes independientes de la misma familia. '
             '<b>Fuerte</b>: dos o más independientes de al menos dos familias. Varias estaciones de un mismo organismo, o las dos redes de AIS, cuentan como una fuente. '
             '<b>Regla de verificación de la casa: dos fuentes independientes como mínimo.</b> Con una sola, el indicio se rotula «fuente única, no verificado» y no se presenta como un hecho; con dos o más, «corroborado» o «fuerte». ' + '<b>Un indicio no es una alerta:</b> las alertas las escribe una persona, las impugna el décimo hombre y las publica la dirección. Hoy no hay ninguna publicada.</p>'
-            '<div class="tabla-pulso"><table><thead><tr><th>Zona</th><th>Indicio</th><th>Evidencia</th><th>Fuentes</th><th>Lo que no dice</th></tr></thead><tbody>%s</tbody></table></div>'
-            '<p class="sub">Consultado el %s (UTC).</p></div>' % ("".join(filas), e(fecha)))
+            '%s<details class="tabla-det"><summary>Ver como tabla completa</summary><div class="tabla-pulso"><table><thead><tr><th>Zona</th><th>Indicio</th><th>Evidencia</th><th>Fuentes</th><th>Lo que no dice</th></tr></thead><tbody>%s</tbody></table></div></details>'
+            '<p class="sub">Consultado el %s (UTC).</p></div>' % (_libro(ind), "".join(filas), e(fecha)))
 
 
 # ---------------------------------------------------------------- alertas candidatas (sólo para la curaduría, nunca se publican)

@@ -48,6 +48,42 @@ details.tabla-det>summary{cursor:pointer;font-weight:700;font-size:13px;color:va
 details.tabla-det>summary::before{content:"▸ ";display:inline-block;transition:transform .2s ease}
 details.tabla-det[open]>summary::before{transform:rotate(90deg)}
 
+/* libro de indicios */
+.libro{margin:16px 0 8px}
+.lib-barra{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center}
+.lib-f,.lib-ab{font-family:inherit;font-size:12.5px;font-weight:700;border-radius:999px;padding:6px 14px;cursor:pointer;border:1px solid var(--linea);background:var(--papel);color:var(--fg);transition:background .2s ease,border-color .2s ease,transform .2s ease}
+.lib-f small{opacity:.7;margin-left:4px}
+.lib-f:hover,.lib-ab:hover{border-color:var(--acento);transform:translateY(-1px)}
+.lib-f.activa{background:var(--acento);border-color:var(--acento);color:var(--acento-sobre)}
+.lib-ab{margin-left:auto;background:transparent;border-color:var(--gris-acero)}
+details.lz{border:1px solid var(--linea);border-radius:14px;background:var(--papel);margin-bottom:10px;overflow:hidden;transition:border-color .25s ease,box-shadow .25s ease}
+details.lz[open]{border-color:var(--acento);box-shadow:0 8px 24px color-mix(in srgb,var(--acento) 12%,transparent)}
+details.lz>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:auto 1fr auto;gap:2px 14px;align-items:center;padding:14px 16px}
+details.lz>summary::-webkit-details-marker{display:none}
+details.lz>summary::before{content:"";grid-row:1/3;width:9px;height:9px;border-right:2px solid var(--acento);border-bottom:2px solid var(--acento);transform:rotate(-45deg);transition:transform .25s ease;margin-right:2px}
+details.lz[open]>summary::before{transform:rotate(45deg)}
+.lz-n{font-weight:800;font-size:16px;grid-column:2}
+.lz-c{grid-column:3;grid-row:1;font-size:12px;font-weight:700;color:var(--gris-acero);text-align:right}
+.lz-d{grid-column:2;grid-row:2;font-size:12px;color:var(--gris-acero)}
+.lz-ch{grid-column:3;grid-row:2;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.lz-vacio{padding:0 16px 14px;margin:0}
+.lz-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;padding:4px 16px 16px}
+.ic{border:1px solid var(--linea);border-left:3px solid var(--linea);border-radius:10px;padding:12px 14px;background:var(--bg);display:flex;flex-direction:column;gap:6px;transition:transform .2s ease,box-shadow .2s ease}
+.ic[data-nivel="fuerte"]{border-left-color:var(--azul-profundo)}
+.ic[data-nivel="corroborado"]{border-left-color:var(--acento)}
+.ic:hover{transform:translateY(-2px);box-shadow:0 6px 18px color-mix(in srgb,var(--acento) 14%,transparent)}
+.ic-h{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.ic-tipo{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gris-acero);font-weight:700}
+.ic h4{margin:0;font-size:14.5px;line-height:1.3}
+.ic-t{margin:0;font-size:13px;line-height:1.5}
+.ic-aviso{margin:0;font-size:11.5px;color:var(--gris-acero);font-style:italic}
+.ic-d{font-size:12.5px}
+.ic-d>summary{cursor:pointer;font-weight:700;color:var(--acento-texto);font-size:12px;padding:4px 0}
+.ic-d p{margin:6px 0;line-height:1.5}
+.ic-nd{color:var(--gris-acero)}
+.ic.oculto,details.lz.oculto{display:none}
+@media (max-width:640px){details.lz>summary{grid-template-columns:auto 1fr}.lz-c,.lz-ch{grid-column:2;grid-row:auto;justify-content:flex-start;text-align:left}.lz-grid{grid-template-columns:1fr}.lib-ab{margin-left:0}}
+
 /* recorrido guiado */
 .mapa-cab .tour-btn{width:auto;min-width:0;background:transparent;border:1px solid var(--gris-acero);color:#F9F9F7;border-radius:999px;padding:0 14px;height:32px;font-weight:700;font-size:12px;cursor:pointer;font-family:inherit;margin:0 8px;transition:background .2s ease,border-color .2s ease}
 .mapa-cab .tour-btn:hover{border-color:var(--acento);background:color-mix(in srgb,var(--acento) 25%,transparent)}
@@ -169,6 +205,26 @@ JS = r"""
       det.innerHTML = "<summary>Ver la tabla completa con todas las columnas</summary>";
       const caja = tabla.closest(".tabla-pulso") || tabla.parentNode; caja.parentNode.insertBefore(grid, caja); caja.parentNode.insertBefore(det, caja); det.appendChild(caja);
     }
+  }
+
+  // libro de indicios: filtro por nivel de evidencia y abrir/cerrar todas las zonas
+  const libro = $(".libro");
+  if (libro){
+    const fs = libro.querySelectorAll(".lib-f");
+    fs.forEach(function(b){ b.addEventListener("click", function(){
+      fs.forEach(function(x){ x.classList.remove("activa"); }); b.classList.add("activa");
+      const f = b.dataset.f;
+      libro.querySelectorAll(".ic").forEach(function(c){ c.classList.toggle("oculto", !!f && c.dataset.nivel !== f); });
+      libro.querySelectorAll("details.lz").forEach(function(z){
+        const hay = z.querySelectorAll(".ic:not(.oculto)").length > 0 || z.querySelector(".lz-vacio");
+        z.classList.toggle("oculto", !!f && !hay); if (f && hay && z.querySelector(".ic")) z.open = true;
+      });
+    }); });
+    const ab = $(".lib-ab", libro);
+    ab.addEventListener("click", function(){
+      const ds = libro.querySelectorAll("details.lz"), abrir = ab.dataset.a === "1";
+      ds.forEach(function(d){ d.open = abrir; }); ab.dataset.a = abrir ? "0" : "1"; ab.textContent = abrir ? "Cerrar todas las zonas" : "Abrir todas las zonas";
+    });
   }
 
   // recorrido guiado por las cinco zonas
