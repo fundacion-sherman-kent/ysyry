@@ -19,7 +19,7 @@ VENTANA = 30
 
 
 def _zona(h):
-    return "gen" if h.get("zona") in (None, "general") else h["zona"]
+    return "gen" if h.get("imprecisa") or h.get("zona") in (None, "general") else h["zona"]
 
 
 def _medios(h):
@@ -61,7 +61,7 @@ def indicios(ruta, hoy):
         n, nd, no = len(lst), len(dos), len(of)
         texto = ("En los últimos %d días se %s %d %s %s (por tipo: %s). De ellos, %d %s titulares de al menos dos medios distintos y %d %s de un organismo oficial (por ejemplo la SENAD). "
                  "En los %d días anteriores se registraron %d en toda la base.%s Ejemplos: %s"
-                 % (VENTANA, "informó" if n == 1 else "informaron", n, "decomiso o incautación" if n == 1 else "decomisos o incautaciones", "en esta zona" if z != "gen" else "sin lugar identificable en el titular",
+                 % (VENTANA, "informó" if n == 1 else "informaron", n, "decomiso o incautación" if n == 1 else "decomisos o incautaciones", "en esta zona" if z != "gen" else "sin lugar preciso (incluye hechos de un estado o provincia entera, rotulados «ubicación imprecisa»)",
                     "; ".join("%s %d" % (ROT[k].lower(), v) for k, v in por_merc.most_common(4)),
                     nd, "tiene" if nd == 1 else "tienen", no, "viene" if no == 1 else "vienen", VENTANA, len(ant),
                     (" Lugares más nombrados: %s." % ", ".join("%s (%d)" % kv for kv in lugares.most_common(3))) if lugares else "",

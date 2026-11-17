@@ -71,7 +71,7 @@ def main():
             continue
         base[e["id"]] = {"id": e["id"], "fecha": e["fecha"], "titulo": e["titulo"][:220], "url": e["url"], "dominio": e["dominio"], "clase_fuente": e.get("clase", "prensa"),
                          "mercaderia": clase_de(e["titulo"]), "lugares": e.get("lugares", []), "ubicacion": e.get("ubicacion"), "zona": e.get("zona", "general"),
-                         "cantidad": e.get("cantidad"), "medios": medios or [{"dominio": e["dominio"], "clase": e.get("clase", "prensa"), "url": e["url"]}], "visto": ahora.strftime("%Y-%m-%d")}
+                         "cantidad": e.get("cantidad"), "imprecisa": bool(e.get("imprecisa")), "medios": medios or [{"dominio": e["dominio"], "clase": e.get("clase", "prensa"), "url": e["url"]}], "visto": ahora.strftime("%Y-%m-%d")}
         nuevos += 1
     corte = (ahora - timedelta(days=DIAS_BASE)).strftime("%Y-%m-%d")
     hechos = sorted((h for h in base.values() if h["fecha"] >= corte), key=lambda h: h["fecha"], reverse=True)

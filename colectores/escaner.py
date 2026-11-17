@@ -100,7 +100,7 @@ LUGARES = {
 }
 RIO = re.compile(r"\b(hidrovia|parana river|paraguay river|paraguay parana waterway|waterway|rio parana|rio paraguay|rio uruguay|rio de la plata|rio paraguai|barcazas?|convoyes? fluviales?|empujador|puerto fluvial|via navegable|puerto de rosario)\b")
 TIPOS = [
-    ("decomiso", "Decomiso o incautación", 3, [r"(decomis|incaut|secuestr\w* .{0,25}(kilos|kg|toneladas|cargamento)|cargamento de|kilos de|toneladas de|apreensao|apreendid|seiz|bust\b|haul)",
+    ("decomiso", "Decomiso o incautación", 3, [r"(decomis|incaut|secuestr\w* .{0,25}(kilos|kg|toneladas|cargamento)|cargamento de|kilos? de|quilos? de|toneladas? de|apreen|seiz|bust\b|haul)",
                                                 r"(cocain|marihuan|cannabis|droga|estupefac|cigarrill|armas|municion|combustible|oro\b|madera|contraband|maconha|mercaderia)"]),
     ("detencion", "Detención u operativo contra el crimen organizado", 2, [r"(operativo|allanamiento|detien\w+|deten\w+|detuv\w+|aprehend|capturad|desbarat|desarticul|prision|presos?|expuls\w+|arrest|raid\b|dismantl)",
                                                                            r"(narco|trafico|contraband|banda|organizacion criminal|pcc|comando vermelho|crimen organizado|lavado|traffick|gang|criminal)"]),
@@ -169,9 +169,9 @@ def fecha_iso(s):
 # Nombres de lugar que también son apellidos, santos o ciudades de otro país: sin su contexto no cuentan (la misma trampa que «Ciudad del Este»
 # con el centro comercial de Costa Rica). `excluye` anula el lugar si aparece; `exige` pide una pista del corredor en el mismo titular.
 AMBIGUOS = {
-    "mundo novo": {"exige": r"(mato grosso do sul|ms|fronteira|paraguai|policia|apreen|maconha|cocain)"},
-    "paranhos": {"exige": r"(mato grosso do sul|ms|fronteira|paraguai|policia|apreen|maconha|cocain|ponta pora)"},
-    "dourados": {"exige": r"(mato grosso do sul|ms|fronteira|paraguai|apreen|maconha|cocain|contraband|pf|policia federal)"},
+    "mundo novo": {"exige": r"(mato grosso do sul|\bms\b|fronteira|paraguai|policia|apreen|maconha|cocain)"},
+    "paranhos": {"exige": r"(mato grosso do sul|\bms\b|fronteira|paraguai|policia|apreen|maconha|cocain|ponta pora)"},
+    "dourados": {"exige": r"(mato grosso do sul|\bms\b|fronteira|paraguai|apreen|maconha|cocain|contraband|\bpf\b|policia federal)"},
     "caceres": {"exige": r"(mato grosso|\bmt\b|porto caceres|puerto caceres|pantanal|paraguai|corumba|hidrovia)"},
     "rosario": {"excluye": r"(rosario central|del rosario|virgen del rosario|villa del rosario|rosario del tala|rosario oeste|rezar|parroquia|rosario de santa fe y)",
                 "exige": r"(santa fe|puerto|puertos|\brio\b|parana|hidrovia|terminal|agro|aceit|granos|gran rosario|san lorenzo|barcaza)"},
@@ -209,14 +209,22 @@ def clasificar(texto):
     return tipos
 
 
+# Regiones amplias que sólo valen como lugar de un DECOMISO cuando el texto no nombra ningún municipio ni el río: la ubicación es el centro de la región y se rotula «ubicación imprecisa».
+ESTADOS = {"mato grosso do sul": ("Mato Grosso do Sul (ubicación imprecisa)", -20.8, -54.9), "misiones": ("Misiones (ubicación imprecisa)", -26.9, -54.7)}
+
+
 def analizar(titulo, desc, dominio, clase):
     t = norm(titulo + " " + desc)
     lugs = lugares_en(t, dominio)
     rio = bool(RIO.search(t))
+    imprecisa = False
     if not lugs and not rio:
-        return None
+        est = next(((k, v) for k, v in ESTADOS.items() if re.search(r"\b" + k + r"\b", t)), None)
+        if not est:
+            return None
+        lugs, imprecisa = [est], True
     tipos = clasificar(t)
-    if not tipos:
+    if not tipos or (imprecisa and not any(a == "decomiso" for a, _, _ in tipos)):
         return None
     # los lugares genéricos solos (una provincia, una ciudad grande) no alcanzan para un tipo débil
     tipo_fuerte = any(p >= 2 for _, _, p in tipos)
@@ -226,12 +234,12 @@ def analizar(titulo, desc, dominio, clase):
     q = CANTIDAD.search((titulo + " " + desc).lower())      # sobre el texto original: la normalización borra los puntos de los miles
     cantidad = {"valor": num(q.group(1)), "unidad": q.group(2)} if q else None
     zona = "general"
-    if lugs:
+    if lugs and not imprecisa:      # una región entera no pertenece a una zona del pulso: queda «general»
         _, (_, lat, lon) = lugs[0]
         zona = _pulso.zona_de(_pulso.AX * lon + _pulso.BX, _pulso.AY * lat + _pulso.BY)
     puntaje = sum(p for _, _, p in tipos) + (2 if rio else 0) + (2 if lugs else 0) + (1 if cantidad else 0) + (1 if clase == "oficial" else 0)
     return {"tipos": [(a, b) for a, b, _ in tipos], "lugares": [v[0] for _, v in lugs][:4], "ubicacion": ([lugs[0][1][1], lugs[0][1][2]] if lugs else None),
-            "zona": zona, "cantidad": cantidad, "puntaje": puntaje, "rio": rio}
+            "zona": zona, "cantidad": cantidad, "puntaje": puntaje, "rio": rio, "imprecisa": imprecisa}
 
 
 # palabras de interés para la segunda lectura: sin alguna de ellas, un titular que sólo nombra una ciudad es ruido (elecciones, lotería, escuelas)

@@ -548,7 +548,7 @@ def marcas_escaner(recientes):
             ctx.append("%s · %s%s: «%s» — %s%s %s" % (e["fecha"], "; ".join(r for _, r in e["tipos"]), q, e["titulo"][:150],
                                                    ", ".join(m["dominio"] for m in e["medios"]), " (enlace verificado)" if e.get("verificado") else " (enlace sin verificar)", e["medios"][0]["url"]))
         infos.append({"id": "ev%d" % k, "categoria": "Hechos detectados por el escáner · últimos 7 días", "titulo": "%s: %d %s" % (lugar, len(lst), "hecho" if len(lst) == 1 else "hechos"),
-                      "tipo": "Candidatos detectados por reglas en titulares de prensa y de organismos · la ubicación es la del lugar mencionado, no la del hecho",
+                      "tipo": "Candidatos detectados por reglas en titulares de prensa y de organismos · la ubicación es la del lugar mencionado, no la del hecho" + (" · en este marcador hay hechos de una región entera: se marca el centro de la región («ubicación imprecisa»)" if any(e.get("imprecisa") for e in lst) else ""),
                       "fuente": "Escáner propio de Ysyry sobre canales RSS públicos de medios regionales y de organismos (sin modelo)", "clase": "escaner", "coord": None, "foto": None,
                       "ctx": ctx, "ctx_t": "Titulares detectados (candidatos, no verificados)",
                       "ctx_f": "No los verificó una persona y un titular no es un hecho confirmado. Lee la nota completa en el medio antes de sacar conclusiones."})
