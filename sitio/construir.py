@@ -636,8 +636,8 @@ if marcos:
         poi_svg.append(_sv)
         poi_etq_svg.append(callout(_bx, _by, _bt, "boya", "seguridad comercio estado regulatorio indicios"))
 
-# Las imágenes se incrustan en la página (data URI), una sola vez por imagen:
-# el visor de artefactos no carga imágenes enlazadas desde otro dominio.
+# Las fotos van como archivos del mismo sitio (fotos/<hash>.jpg), no incrustadas en la página: pesaban cerca de 2 MB de base64, que no se comprime,
+# y sólo se necesitan al abrir la ficha que las usa. El navegador las baja en ese momento.
 import base64, hashlib
 _srcs = set()
 for _lista in (poi_info, riesgo_info, zona_info):
@@ -652,8 +652,11 @@ for _s in _srcs:
         print("aviso: falta la imagen", _ruta.name)
         continue
     _bin = open(_ruta, "rb").read()
-    _mime = "image/png" if _bin[1:4] == b"PNG" else "image/jpeg"
-    FOTOS[_s] = "data:%s;base64," % _mime + base64.b64encode(_bin).decode()
+    _ext = "png" if _bin[1:4] == b"PNG" else "jpg"
+    _dest = Path(SALIDA).parent / "fotos"
+    _dest.mkdir(parents=True, exist_ok=True)
+    (_dest / ("%s.%s" % (_ruta.stem, _ext))).write_bytes(_bin)
+    FOTOS[_s] = "fotos/%s.%s" % (_ruta.stem, _ext)
 fotos_json = json.dumps(FOTOS)
 
 # --- capa satelital (NASA GIBS: GOES-East y VIIRS), bajada por colectores/satelite_gibs.py ---
@@ -667,10 +670,13 @@ _sy = _P["ay"] * _lat1 + _P["by"]          # ay < 0: el borde norte queda arriba
 _sw = _P["ax"] * (_lon1 - _lon0)
 _sh = -_P["ay"] * (_lat1 - _lat0)
 sat_imgs = []
+_dest_sat = Path(SALIDA).parent / "satelite"
+_dest_sat.mkdir(parents=True, exist_ok=True)
 for _k in ("viirs", "goes"):               # GOES encima de VIIRS
-    _b64 = base64.b64encode(open(SAT_DIR / ("%s.jpg" % _k), "rb").read()).decode()
+    (_dest_sat / ("%s.jpg" % _k)).write_bytes(open(SAT_DIR / ("%s.jpg" % _k), "rb").read())
+    # sin href: la imagen (cientos de KB) se pide recién cuando alguien elige la capa; ?v= renueva la copia cuando el robot trae una nueva
     sat_imgs.append('<image id="sat-%s" class="sat-img" x="%.2f" y="%.2f" width="%.2f" height="%.2f" '
-                    'preserveAspectRatio="none" href="data:image/jpeg;base64,%s"/>' % (_k, _sx, _sy, _sw, _sh, _b64))
+                    'preserveAspectRatio="none" data-href="satelite/%s.jpg?v=%s"/>' % (_k, _sx, _sy, _sw, _sh, _k, _SAT["obtenido"].replace(":", "").replace("-", "")[:13]))
 sat_meta_json = json.dumps({k: _SAT.get(k) for k in ("goes", "viirs")} | {"obtenido": _SAT["obtenido"], "atribucion": _SAT["atribucion"]},
                            ensure_ascii=False)
 
@@ -1400,11 +1406,12 @@ const SAT = __sat_meta_json__;
       const d = new Date(t + "T12:00:00Z");
       txt = "VIIRS NOAA-20, composición diaria del " + d.toLocaleDateString("es-AR", {day:"numeric", month:"long", timeZone:"UTC"}) + " (día UTC), ~750 m por píxel. Las nubes tapan el suelo.";
     }
-    return txt + " Captura incrustada al generar esta página; el robot la renueva en el repositorio, no acá. " + SAT.atribucion;
+    return txt + " Captura renovada por el robot en el repositorio, no en esta página. " + SAT.atribucion;
   }
   document.querySelectorAll(".sat-btn").forEach(function(btn){
     btn.addEventListener("click", function(){
       const capa = btn.dataset.sat;
+      if (capa){ const im = document.getElementById("sat-" + capa); if (im && !im.getAttribute("href")) im.setAttribute("href", im.dataset.href); }
       document.querySelectorAll(".sat-btn").forEach(function(b){ b.classList.toggle("activa", b === btn); });
       if (capa) svg.setAttribute("data-sat", capa); else svg.removeAttribute("data-sat");
       ctrl.classList.toggle("encendida", !!capa);
