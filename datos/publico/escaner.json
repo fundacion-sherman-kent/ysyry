@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-17T21:21:09Z",
+ "obtenido": "2026-11-17T21:44:12Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 48,
+   "items": 47,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 54
+   "fallos_seguidos": 55
   },
   {
    "dominio": "senad.gov.py",
@@ -870,8 +870,8 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Tras caída de Peña, Diputados vuelve a crear intendencias pro-Itaipú",
-   "url": "https://www.abc.com.py/politica/2026/11/17/tras-caida-de-pena-diputados-vuelve-a-crear-intendencias-pro-itaipu/",
+   "titulo": "Itaipú lado brasileño cuestionó depósitos de fondos en Ueno Bank, según Nicanor",
+   "url": "https://www.abc.com.py/economia/2026/11/17/itaipu-lado-brasileno-cuestiono-depositos-de-fondos-en-ueno-bank-segun-nicanor/",
    "dominio": "abc.com.py",
    "fecha": "2026-11-17",
    "lugares": [
@@ -879,8 +879,8 @@
    ]
   },
   {
-   "titulo": "Itaipú lado brasileño cuestionó depósitos de fondos en Ueno Bank, según Nicanor",
-   "url": "https://www.abc.com.py/economia/2026/11/17/itaipu-lado-brasileno-cuestiono-depositos-de-fondos-en-ueno-bank-segun-nicanor/",
+   "titulo": "Tras caída de Peña, Diputados vuelve a crear intendencias pro-Itaipú",
+   "url": "https://www.abc.com.py/politica/2026/11/17/tras-caida-de-pena-diputados-vuelve-a-crear-intendencias-pro-itaipu/",
    "dominio": "abc.com.py",
    "fecha": "2026-11-17",
    "lugares": [
@@ -905,21 +905,21 @@
    "lugares": []
   },
   {
-   "titulo": "Inauguran la renovada avenida Newbery con música y actividades",
-   "url": "https://www.pagina12.com.ar/2026/11/17/inauguran-la-renovada-avenida-newbery-con-musica-y-actividades/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Rosario"
-   ]
-  },
-  {
    "titulo": "Argentina creará la cárcel “el Infierno” para narcos y el centro penitenciario “el rinconcito del Edén” para quienes lavan dinero",
    "url": "https://ladiaria.com.uy/humor/articulo/2026/11/argentina-creara-la-carcel-el-infierno-para-narcos-y-el-centro-penitenciario-el-rinconcito-del-eden-para-quienes-lavan-dinero/",
    "dominio": "ladiaria.com.uy",
    "fecha": "2026-11-17",
    "lugares": [
     "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Inauguran la renovada avenida Newbery con música y actividades",
+   "url": "https://www.pagina12.com.ar/2026/11/17/inauguran-la-renovada-avenida-newbery-con-musica-y-actividades/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Rosario"
    ]
   },
   {
