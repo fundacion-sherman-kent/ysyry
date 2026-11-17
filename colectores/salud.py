@@ -79,6 +79,7 @@ def chequeos():
 
     uno("Nivel del río en Argentina (Prefectura vía INA)", "leído hace menos de 36 horas", lambda: frescura("nivel-rio-ar.json", "obtenido", 36, "leído"))
     uno("Nivel del río en Brasil (ANA)", "leído hace menos de 12 horas", lambda: frescura("nivel-rio-br.json", "obtenido", 12, "leído"))
+    uno("Reporte diario de la Cuenca del Plata (Yacyretá)", "leído hace menos de 5 días", lambda: frescura("reporte-sala-ar.json", "obtenido", 120, "leído"))
     uno("Represas del Paraná (ONS)", "leídas hace menos de 12 horas", lambda: frescura("represas-ons.json", "obtenido", 12, "leídas"))
     uno("Viento en el Plata (SMN)", "leído hace menos de 12 horas", lambda: frescura("viento-smn.json", "obtenido", 12, "leído"))
     uno("Mareógrafos de la Hidrografía Naval", "leídos hace menos de 12 horas", lambda: frescura("nivel-rio-shn.json", "obtenido", 12, "leídos"))

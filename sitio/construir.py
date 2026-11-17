@@ -561,7 +561,8 @@ if marcos:
     for _z, _l in _ind.viento(os.environ.get("SITIO_VIENTO") or (_raiz / "datos" / "publico" / "viento-smn.json"), _dtm.strptime(_fecha, "%Y-%m-%d").date(), _ests).items():
         _flu_extra.setdefault(_z, []).extend(_l)
     import represas as _rep
-    _presas = _rep.cargar(os.environ.get("SITIO_REPRESAS") or (_raiz / "datos" / "publico" / "represas-ons.json"), _segs, _dtm.strptime(_fecha, "%Y-%m-%d").date())
+    _presas = _rep.cargar(os.environ.get("SITIO_REPRESAS") or (_raiz / "datos" / "publico" / "represas-ons.json"),
+                          os.environ.get("SITIO_REPORTE_SALA") or (_raiz / "datos" / "publico" / "reporte-sala-ar.json"), _segs, _dtm.strptime(_fecha, "%Y-%m-%d").date())
     for _z, _l in _rep.indicios(_presas).items():
         _flu_extra.setdefault(_z, []).extend(_l)
     if _OFAC:
