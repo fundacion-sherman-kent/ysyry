@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-11-16T19:42:25Z",
+ "obtenido": "2026-11-17T04:00:38Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 4
+   "avisos_en_el_corredor": 3
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -14,32 +14,15 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 5
   },
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 5
+   "avisos_en_el_corredor": 4
   }
  ],
  "avisos": [
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-16 08:55",
-   "fin": "2026-11-16 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28711"
-  },
   {
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
@@ -93,6 +76,76 @@
    ],
    "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
    "id": "inmet-28719"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-17 00:55",
+   "fin": "",
+   "lugares": [
+    "CORRIENTES: Curuzu Cuatia - Esquina - Mercedes - Monte Caseros - Sauce.; ; ENTRE RIOS: Concordia - Federacion - Federal - La Paz - S. J. de Feliciano."
+   ],
+   "riesgos": "",
+   "id": "smn-4186"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-16 23:34",
+   "fin": "",
+   "lugares": [
+    "SANTA FE: Castellanos - Garay - La Capital - Las Colonias - San Cristobal - San Javier - San Justo."
+   ],
+   "riesgos": "",
+   "id": "smn-4183"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-16 23:29",
+   "fin": "",
+   "lugares": [
+    "ENTRE RIOS: Colon - Concordia - Federal - San Salvador - Villaguay."
+   ],
+   "riesgos": "",
+   "id": "smn-4182"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-16 23:26",
+   "fin": "",
+   "lugares": [
+    "ENTRE RIOS: Gualeguay - Islas del Ibicuy.; ; BUENOS AIRES: Arrecifes - Baradero - Campana - Cap Sarmiento - Carmen de Areco - Escobar - Exaltacion de la Cruz - Lujan - Pergamino - Pilar - Ramallo - S. A. de Giles - Salto - San A. Areco - San Fernando - San Pedro - Tigre - Zarate."
+   ],
+   "riesgos": "",
+   "id": "smn-4181"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-16 23:22",
+   "fin": "",
+   "lugares": [
+    "BUENOS AIRES: Canuelas - Carmen de Areco - Chacabuco - Chivilcoy - Gral Las Heras - Lobos - Mercedes - Navarro - S. A. de Giles - Salto - Suipacha."
+   ],
+   "riesgos": "",
+   "id": "smn-4180"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -157,22 +210,6 @@
    "id": "gdacs-&amp;eventid=1104277",
    "lat": -27.7758659,
    "lon": -67.171292
-  },
-  {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
-   "fenomeno": "Green forest fire notification in Brazil",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "-16.97, -56.57"
-   ],
-   "riesgos": "",
-   "id": "gdacs-&amp;eventid=1033499",
-   "lat": -16.97312030049081,
-   "lon": -56.571691204700166
   }
  ],
  "no_consultadas": [
