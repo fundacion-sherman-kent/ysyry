@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-17T15:53:45Z",
+ "obtenido": "2026-11-17T21:21:09Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 37,
+   "items": 48,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -47,7 +47,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,8 +62,8 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 94,
-   "candidatos": 0,
+   "items": 92,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -166,8 +166,8 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 321,
-   "candidatos": 0,
+   "items": 340,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 53
+   "fallos_seguidos": 54
   },
   {
    "dominio": "senad.gov.py",
@@ -198,6 +198,72 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Marcelo Rossal: “El discurso de la política” sobre el sinhogarismo es adecuado, pero persisten problemas en su aplicación",
+   "url": "https://ladiaria.com.uy/politica/articulo/2026/11/marcelo-rossal-el-discurso-de-la-politica-sobre-el-sinhogarismo-es-adecuado-pero-persisten-problemas-en-su-aplicacion/",
+   "dominio": "ladiaria.com.uy",
+   "clase": "prensa",
+   "fecha": "2026-11-17",
+   "tipos": [
+    [
+     "pirateria",
+     "Piratería o robo de carga"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "ladiaria.com.uy",
+     "clase": "prensa",
+     "url": "https://ladiaria.com.uy/politica/articulo/2026/11/marcelo-rossal-el-discurso-de-la-politica-sobre-el-sinhogarismo-es-adecuado-pero-persisten-problemas-en-su-aplicacion/"
+    }
+   ],
+   "id": "2ae59d404e",
+   "verificado": true
+  },
+  {
+   "titulo": "Dura condena para un contrabandista de cigarrillos que atropelló y mató a un gendarme para escapar de un control en la ruta",
+   "url": "https://www.lanacion.com.ar/seguridad/dura-condena-para-un-contrabandista-de-cigarrillos-que-atropello-y-mato-a-un-gendarme-para-escapar-nid17112026/",
+   "dominio": "lanacion.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-11-17",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Posadas"
+   ],
+   "ubicacion": [
+    -27.37,
+    -55.9
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 4,
+   "rio": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.ar",
+     "clase": "prensa",
+     "url": "https://www.lanacion.com.ar/seguridad/dura-condena-para-un-contrabandista-de-cigarrillos-que-atropello-y-mato-a-un-gendarme-para-escapar-nid17112026/"
+    }
+   ],
+   "id": "c62e285bb9",
+   "verificado": true
+  },
   {
    "titulo": "El Niño: baja el número de evacuados en las provincias del Litoral",
    "url": "https://www.infobae.com/sociedad/2026/11/17/el-nino-por-el-alivio-circunstancial-baja-el-numero-de-evacuados-en-las-provincias-del-litoral/",
@@ -804,12 +870,21 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Super Niño: el río Paraná superó los 4 metros de altura en Rosario y alcanzó su nivel más alto en 30 años",
-   "url": "https://perfil.com/clima/supernino-el-rio-parana-supero-los-4-metros-de-altura-en-rosario-y-alcanzo-su-nivel-mas-alto-en-30-anos-a50-jsm-ao6q87b3Z1mA",
-   "dominio": "perfil.com",
+   "titulo": "Tras caída de Peña, Diputados vuelve a crear intendencias pro-Itaipú",
+   "url": "https://www.abc.com.py/politica/2026/11/17/tras-caida-de-pena-diputados-vuelve-a-crear-intendencias-pro-itaipu/",
+   "dominio": "abc.com.py",
    "fecha": "2026-11-17",
    "lugares": [
-    "Rosario"
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Itaipú lado brasileño cuestionó depósitos de fondos en Ueno Bank, según Nicanor",
+   "url": "https://www.abc.com.py/economia/2026/11/17/itaipu-lado-brasileno-cuestiono-depositos-de-fondos-en-ueno-bank-segun-nicanor/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -823,12 +898,37 @@
    ]
   },
   {
+   "titulo": "Buscan a un adolescente de 13 años que desapareció en el río Uruguay cuando se bañaba con otros jóvenes",
+   "url": "https://www.elobservador.com.uy/buscan-un-adolescente-13-anos-que-desaparecio-el-rio-uruguay-n6064212",
+   "dominio": "elobservador.com.uy",
+   "fecha": "2026-11-17",
+   "lugares": []
+  },
+  {
+   "titulo": "Inauguran la renovada avenida Newbery con música y actividades",
+   "url": "https://www.pagina12.com.ar/2026/11/17/inauguran-la-renovada-avenida-newbery-con-musica-y-actividades/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Rosario"
+   ]
+  },
+  {
    "titulo": "Argentina creará la cárcel “el Infierno” para narcos y el centro penitenciario “el rinconcito del Edén” para quienes lavan dinero",
    "url": "https://ladiaria.com.uy/humor/articulo/2026/11/argentina-creara-la-carcel-el-infierno-para-narcos-y-el-centro-penitenciario-el-rinconcito-del-eden-para-quienes-lavan-dinero/",
    "dominio": "ladiaria.com.uy",
    "fecha": "2026-11-17",
    "lugares": [
     "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Super Niño: el río Paraná superó los 4 metros de altura en Rosario y alcanzó su nivel más alto en 30 años",
+   "url": "https://perfil.com/clima/supernino-el-rio-parana-supero-los-4-metros-de-altura-en-rosario-y-alcanzo-su-nivel-mas-alto-en-30-anos-a50-jsm-ao6q87b3Z1mA",
+   "dominio": "perfil.com",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Rosario"
    ]
   },
   {
