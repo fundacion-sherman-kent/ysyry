@@ -24,6 +24,9 @@ jobs:
           fetch-depth: 1
       - name: Capturar posiciones
         run: python3 -u colectores/vivo.py /tmp/vivo/vivo.json
+      - name: Capturar tráfico aéreo (ADS-B abierto)
+        continue-on-error: true
+        run: python3 -u colectores/aereo.py /tmp/vivo/aereo.json
       - name: Publicar en la rama datos-vivo
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -33,6 +36,7 @@ jobs:
           git config user.name "ysyry-robot"
           git config user.email "ysyry-robot@users.noreply.github.com"
           git add vivo.json
+          [ -f aereo.json ] && git add aereo.json || true
           git commit -q -m "Capa viva ($(date -u +%Y-%m-%dT%H:%MZ))"
           git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git push -q --force origin datos-vivo

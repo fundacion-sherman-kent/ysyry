@@ -646,6 +646,12 @@ if marcos:
         if _p["pos"]:
             poi_svg.append(_ind.marca_estacion(len(_ests) + _k, _p))
             zona_pulso_info.append(_rep.info_represa(len(_ests) + _k, _p))
+    import fronteras as _fro
+    _fron = _fro.cargar(os.environ.get("SITIO_FRONTERAS") or (D / "fronteras.json"))
+    if _fron:
+        for _k, _p in enumerate(_fron["pasos"]):
+            poi_svg.append(_fro.marca(_k, _p))
+            zona_pulso_info.append(_fro.info(_k, _p, _fron))
     _con_aviso = {c["zona"] for c in _candidatas}
     for _z, _nom, _cob in _pulso.ZONAS:
         _zi = _pulso.info_zona(_z, _calc, _hist, _fecha, _hechos, _ctx_zonas)
@@ -815,6 +821,67 @@ let vivoDatos = null;
     }).catch(function(){ if (vivoDatos && haceMin(vivoDatos.hora_utc) > 45) desactivar(); });
   }
   pedir(); setInterval(pedir, 60000);
+})();
+// --- tráfico aéreo liviano y mediano (ADS-B abierto) y pistas registradas ---
+(function(){
+  const NS = "http://www.w3.org/2000/svg";
+  const capa = document.getElementById("capa-aerea");
+  const estado = document.getElementById("aereo-estado");
+  if (!capa) return;
+  const AEREO_URL = VIVO_URL.replace("vivo.json", "aereo.json");
+  const NOMBRES = {small_airport: "pista pequeña", medium_airport: "aeródromo mediano", large_airport: "aeropuerto grande", closed: "pista marcada como cerrada"};
+  const PAISES = {PY: "Paraguay", AR: "Argentina", BR: "Brasil", BO: "Bolivia", UY: "Uruguay"};
+  function hacen(s){ const m = Math.max(0, Math.round((Date.now() - Date.parse(s)) / 60000)); return m < 90 ? m + " min" : Math.floor(m / 60) + " h"; }
+  function fichaAvion(a, d){
+    const l = [];
+    l.push(a.t ? "Tipo de aeronave " + a.t : "tipo no transmitido");
+    l.push(a.g ? "en tierra" : (a.a === null || a.a === undefined ? "altura sin dato" : "altura " + a.a + " pies (presión)"));
+    if (a.v !== null && a.v !== undefined) l.push(a.v + " nudos");
+    if (a.c !== null && a.c !== undefined) l.push("rumbo " + a.c + "°");
+    if (a.mil) l.push("marcada como militar en la base de ADS-B");
+    l.push("captura de las " + d.hora_utc.slice(11, 16) + " UTC (hace " + hacen(d.hora_utc) + ")");
+    return {id: "av", categoria: "Aeronave pequeña o mediana · ADS-B en vivo", titulo: a.t ? "Aeronave " + a.t : "Aeronave sin tipo", tipo: l.join(" · "),
+      fuente: "ADS-B abierto vía adsb.lol (ODbL), receptores de voluntarios · fuente única. No se publica matrícula ni operador.", clase: "buque", coord: a.la.toFixed(4) + ", " + a.lo.toFixed(4), foto: null,
+      ctx: ["Evidencia: Fuente única (ADS-B). Es una posición emitida por el propio transpondedor de la aeronave: no la verifica nadie más.",
+            "Lo que no dice: no identifica quién vuela ni para qué. Una aeronave a baja altura es lo normal en fumigación, vuelos de entrenamiento y traslados locales.",
+            "El límite central: en gran parte del Paraguay, el Chaco y el Pantanal no hay receptores abiertos, y quien vuela con el transpondedor apagado no aparece. Que no se vean aeronaves en una zona NO significa que no haya vuelos."],
+      ctx_t: "Indicio y su evidencia", ctx_f: "Se publica la posición tal como la emite el transpondedor."};
+  }
+  function dibujar(d){
+    while (capa.firstChild) capa.removeChild(capa.firstChild);
+    d.ac.forEach(function(a){
+      const g = document.createElementNS(NS, "g");
+      g.setAttribute("class", "aeronave clicable"); g.setAttribute("data-familia", "aereo");
+      g.setAttribute("transform", "translate(" + a.x + "," + a.y + ")" + (a.c === null || a.c === undefined || a.g ? "" : " rotate(" + a.c + ")"));
+      const h = document.createElementNS(NS, "circle"); h.setAttribute("class", "hit"); h.setAttribute("r", "12"); g.appendChild(h);
+      const p = document.createElementNS(NS, "path"); p.setAttribute("class", "avion" + (a.mil ? " avion-mil" : ""));
+      p.setAttribute("d", "M0,-6 L1.2,-1.5 L6,1.5 L6,2.8 L1.2,1.2 L0.8,4.6 L2.4,5.8 L2.4,6.8 L0,6.2 L-2.4,6.8 L-2.4,5.8 L-0.8,4.6 L-1.2,1.2 L-6,2.8 L-6,1.5 L-1.2,-1.5 Z");
+      g.appendChild(p);
+      g.addEventListener("click", function(){ abrirFicha(fichaAvion(a, d)); });
+      capa.appendChild(g);
+    });
+    if (estado) estado.textContent = d.n_livianas + " aeronaves pequeñas o medianas visibles ahora en todo el recuadro (de " + d.n_todas + " aeronaves captadas; celdas con respuesta: " + d.celdas_ok + "/" + d.celdas + "). Hay zonas sin cobertura abierta: la ausencia de aeronaves no es ausencia de vuelos.";
+  }
+  function pedir(){
+    fetch(AEREO_URL + "?m=" + Math.floor(Date.now() / 300000)).then(function(r){ if (!r.ok) throw new Error("sin capa aérea"); return r.json(); }).then(function(d){
+      if (!d || !d.ac) return;
+      if (Math.round((Date.now() - Date.parse(d.hora_utc)) / 60000) > 45){ capa.style.display = "none"; if (estado) estado.textContent = "La captura de tráfico aéreo tiene más de 45 minutos: no se muestra como viva."; return; }
+      capa.style.display = ""; dibujar(d);
+    }).catch(function(){ if (estado) estado.textContent = "Todavía no hay captura de tráfico aéreo."; });
+  }
+  pedir(); setInterval(pedir, 60000);
+  document.querySelectorAll(".pista").forEach(function(g){
+    g.addEventListener("click", function(){
+      const q = g.dataset, pais = PAISES[q.p] || q.p;
+      abrirFicha({id: "pi", categoria: "Pista de aterrizaje registrada · " + pais, titulo: q.n || q.id, clase: "estacion", foto: null, coord: q.c,
+        tipo: [NOMBRES[q.t] || q.t, (q.m ? q.m + ", " : "") + pais, q.ft ? "elevación " + q.ft + " pies" : "elevación sin dato", "a unos " + q.r + " km del río y a unos " + q.f + " km del paso de frontera seca más cercano", "código " + q.id].join(" · "),
+        fuente: "OurAirports (ourairports.com), registro público de aeródromos, dominio público · fuente única",
+        ctx: ["Evidencia: Fuente única. Es un registro colaborativo de pistas habilitadas: puede tener errores de posición y no dice si la pista está operativa hoy.",
+              "Lo que no dice: una pista registrada no implica nada ilícito. Las pistas CLANDESTINAS no figuran en ninguna base abierta y no se pueden mapear con datos abiertos: esta capa muestra sólo las habilitadas.",
+              "Para qué sirve: para ver qué pistas hay cerca del río y de los pasos de frontera, y contrastar con eventos de seguridad reportados por las autoridades."],
+        ctx_t: "Indicio y su evidencia", ctx_f: "Se publica el registro tal como figura."});
+    });
+  });
 })();
 """
 TPL = r"""<!doctype html>
@@ -1012,6 +1079,15 @@ body.ficha-abierta .guia{right:calc(340px + 18px)}
 @media print{.guia-btn,.guia{display:none!important}}
 .foco{fill:var(--naranja);fill-opacity:.55;stroke:none}
 .foco-alto{fill-opacity:.9;stroke:#fff;stroke-width:.5}
+.solo-aereo{display:none}
+svg.fam-aereo .solo-aereo{display:inline}
+.pista{cursor:pointer}
+.pista-p{fill:#e9e3d2;stroke:var(--azul-noche);stroke-width:.6}
+.pista-closed .pista-p{fill:transparent;stroke:#667B89;stroke-dasharray:1.5 1}
+.avion{fill:#ffd400;stroke:var(--azul-noche);stroke-width:.8;stroke-linejoin:round}
+.avion-mil{fill:#ff6a6a}
+.frontera{fill:#FB6500;stroke:#fff;stroke-width:1.3;stroke-linejoin:round}
+.frontera-raya{stroke:#fff;stroke-width:1.4}
 .solo-fam{display:none}
 svg.fam-flujos .solo-fam{display:inline}
 .flujo{fill:none;stroke:#e9e3d2;stroke-width:1.8px;stroke-dasharray:6 4;stroke-linecap:round;stroke-linejoin:round;opacity:.75;vector-effect:non-scaling-stroke}
@@ -1208,6 +1284,8 @@ footer{flex-direction:column}
   <button class="familia-tab" data-familia="regulatorio">Regulatorio</button>
   <button class="familia-tab" data-familia="indicios">Indicios y nivel del río</button>
   <button class="familia-tab" data-familia="flujos">Flujos ilícitos (SIWA)</button>
+  <button class="familia-tab" data-familia="fronteras">Fronteras secas</button>
+  <button class="familia-tab" data-familia="aereo">Tráfico aéreo y pistas</button>
 </div>
 
 <div class="col-mapa entra r3">
@@ -1245,6 +1323,8 @@ footer{flex-direction:column}
     __poi__
     __grupos_hora__
     <g id="capa-viva" style="display:none"></g>
+    __pistas__
+    <g id="capa-aerea"></g>
     __riesgos__
     __zonas_etq__
     __poi_etq__
@@ -1281,6 +1361,8 @@ footer{flex-direction:column}
   <span><svg width="11" height="13" viewBox="-6 -7 12 14"><path d="M0,-5.5C3,-1.3 4.6,1 4.6,2.9A4.6,4.6 0 1 1 -4.6,2.9C-4.6,1 -3,-1.3 0,-5.5Z" fill="#8fd9c4" stroke="#00121E" stroke-width="1"/></svg>Estación de nivel del río (Meteorología de Paraguay) · naranja: en el cuarto inferior de su rango (Paraguay) o por debajo del umbral oficial de aguas bajas (Argentina), naranja claro: a menos de 30 cm de ese umbral · azul apagado: tramo regulado por represas, no mide sequía · hueca: lectura vencida</span>
   <span><span class="sw" style="background:var(--naranja)"></span>Ruta de flujo ilícito registrada por SIWA en los últimos 24 meses (pestaña «Flujos ilícitos»); en claro, las más antiguas: registros de terceros, no flujos medidos</span>
   <span><svg width="12" height="12" viewBox="-7 -7 14 14"><path d="M0,-5.5L5.5,0L0,5.5L-5.5,0Z" fill="#e9e3d2" stroke="#FB6500" stroke-width="1.4"/></svg>Hechos detectados por el escáner en los últimos 7 días (candidatos sin verificar; el rombo marca el lugar mencionado, no el del hecho)</span>
+  <span><svg width="12" height="12" viewBox="-7 -7 14 14"><path d="M0,-6.5L6.5,0L0,6.5L-6.5,0Z" fill="#FB6500" stroke="#fff" stroke-width="1.3"/></svg>Paso de frontera seca (capa curada, por verificar): marca dónde están, no mide cuánto tráfico ilícito pasa · click para ver qué se sabe y qué no</span>
+  <span><svg width="12" height="12" viewBox="-7 -7 14 14"><path d="M0,-6 L1.2,-1.5 L6,1.5 L6,2.8 L1.2,1.2 L0.8,4.6 L2.4,5.8 L2.4,6.8 L0,6.2 L-2.4,6.8 L-2.4,5.8 L-0.8,4.6 L-1.2,1.2 L-6,2.8 L-6,1.5 L-1.2,-1.5 Z" fill="#ffd400" stroke="#00121E" stroke-width=".8"/></svg>Aeronave pequeña o mediana (ADS-B abierto, en vivo) · punto claro: pista registrada (pestaña «Tráfico aéreo y pistas»). <span id="aereo-estado">Cargando tráfico aéreo…</span> Las pistas clandestinas no figuran en ninguna base abierta.</span>
   <span><span class="dot" style="background:var(--naranja);opacity:.6"></span>Foco de calor a menos de 25 km del río (NASA FIRMS, últimos 3 días; no es un incendio confirmado)</span>
   <span><span class="dot" style="background:#8fd9c4"></span>Boya de pulso por zona · naranja: hay un indicio a mirar · punteada: sin datos de AIS</span>
 </div>
@@ -1673,6 +1755,7 @@ document.querySelectorAll(".familia-tab").forEach(function(btn){
       el.classList.toggle("dim", !coincide);
     });
     document.getElementById("svg-mapa").classList.toggle("fam-flujos", fam === "flujos");
+    document.getElementById("svg-mapa").classList.toggle("fam-aereo", fam === "aereo");
   });
 });
 
@@ -1910,6 +1993,7 @@ _ETIQUETAS_TPL = ("<title>Ysyry — Hidrovía Paraguay-Paraná: evidencia, alert
                   '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="%(img)s"><meta name="twitter:title" content="Ysyry — Evidencia, alertas y prospectiva sobre la Hidrovía Paraguay-Paraná">'
                   '<meta name="twitter:description" content="%(d)s">') % {"d": _DESC_TPL, "app": _dir.APP, "img": _dir.IMAGEN}
 import seo as _seo
+import aviacion as _avi
 _ETIQUETAS_TPL += ('<link rel="icon" type="image/svg+xml" href="marca/ysyry-marca.svg"><link rel="icon" type="image/png" sizes="32x32" href="marca/favicon-32.png">'
                    '<link rel="apple-touch-icon" href="marca/apple-touch-icon.png"><meta name="theme-color" content="#00121E">')
 _ETIQUETAS_TPL += '<script type="application/ld+json">' + _seo.jsonld() + '</script>'
@@ -1930,6 +2014,7 @@ SUST = {
     "zonas": "\n    ".join(zonas_svg),
     "zonas_etq": "\n    ".join(zonas_etq_svg),
     "poi": "\n    ".join(poi_svg),
+    "pistas": _avi.pistas_svg(D / "pistas.json")[0],
     "amarres": "\n    ".join(amarres_svg),
     "amarres_json": json.dumps(amarres_json, ensure_ascii=False, separators=(",", ":")),
     "fecha_amarres": _AM["fecha"],
