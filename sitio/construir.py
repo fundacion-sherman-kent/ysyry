@@ -560,6 +560,10 @@ if marcos:
         _flu_extra.setdefault(_z, []).extend(_l)
     for _z, _l in _ind.viento(os.environ.get("SITIO_VIENTO") or (_raiz / "datos" / "publico" / "viento-smn.json"), _dtm.strptime(_fecha, "%Y-%m-%d").date(), _ests).items():
         _flu_extra.setdefault(_z, []).extend(_l)
+    import represas as _rep
+    _presas = _rep.cargar(os.environ.get("SITIO_REPRESAS") or (_raiz / "datos" / "publico" / "represas-ons.json"), _segs, _dtm.strptime(_fecha, "%Y-%m-%d").date())
+    for _z, _l in _rep.indicios(_presas).items():
+        _flu_extra.setdefault(_z, []).extend(_l)
     if _OFAC:
         _imos_vistos = {str(_imo_valido(p.get("imo"))) for m in _ventana for p in m["puntos"] if _imo_valido(p.get("imo"))}
         _coinc = {k: v for k, v in _OFAC_VISTOS.items()}
@@ -627,6 +631,10 @@ if marcos:
         if _e["pos"]:
             poi_svg.append(_ind.marca_estacion(_i, _e))
             zona_pulso_info.append(_ind.info_estacion(_i, _e, _nivel_obtenido))
+    for _k, _p in enumerate(_presas):
+        if _p["pos"]:
+            poi_svg.append(_ind.marca_estacion(len(_ests) + _k, _p))
+            zona_pulso_info.append(_rep.info_represa(len(_ests) + _k, _p))
     _con_aviso = {c["zona"] for c in _candidatas}
     for _z, _nom, _cob in _pulso.ZONAS:
         _zi = _pulso.info_zona(_z, _calc, _hist, _fecha, _hechos, _ctx_zonas)
@@ -953,6 +961,7 @@ svg.zoom-a .amar-a,svg.zoom-b .amar-b{display:inline}
 .chip-tf{background:var(--naranja);color:var(--azul-profundo)}
 .chip-riesgo{background:var(--naranja);color:var(--azul-profundo)}
 .est-g .gota{fill:#8fd9c4;stroke:var(--azul-noche);stroke-width:1}
+.est-represa .gota{fill:#518FB8}
 .est-bajo .gota{fill:var(--naranja)}
 .est-alto .gota{fill:#cdeee4}
 .est-cerca .gota{fill:#ffb27a}
