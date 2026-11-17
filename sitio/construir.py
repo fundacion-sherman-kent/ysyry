@@ -596,6 +596,7 @@ if marcos:
                 "hechos_detectados": [{"fecha": h["fecha"], "tipo": [r for _, r in h["tipos"]], "lugares": h.get("lugares"), "titulo": h["titulo"], "medios": [{"dominio": m["dominio"], "url": m["url"]} for m in h["medios"]]} for h in _esc_evs[:100]]}
     json.dump(_abierto, open(_dir_salida / "datos" / "indicios.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     shutil.copytree(Path(__file__).resolve().parent / "marca", _dir_salida / "marca", dirs_exist_ok=True)
+    shutil.copyfile(D / "calados.json", _dir_salida / "datos" / "calados.json")      # tabla curada de calados, también como dato abierto
     # archivo liviano y estable para la franja del ecosistema de la web institucional (la portada pesa más de 8 MB y no se le puede preguntar en cada visita)
     _cifras = {"plataforma": "Ysyry", "version": "beta", "url": _dir.APP,
                "actualizado_utc": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -1279,6 +1280,8 @@ __pulso__
 
 __indicios__
 
+__calados__
+
 __flujos__
 
 __escaner__
@@ -1932,6 +1935,7 @@ SUST = {
     "guia_json": json.dumps(_GUIA, ensure_ascii=False),
     "guia_sug": json.dumps(_guia.PREGUNTAS_SUGERIDAS, ensure_ascii=False),
     "indicios": _indicios_html,
+    "calados": __import__("calados").bloque_html(D / "calados.json"),
     "ultima_iso": marcos[-1]["hora"] if marcos else "",
     "poi_etq": "\n    ".join(poi_etq_svg),
     "grupos_hora": "\n    ".join(grupos_hora),
