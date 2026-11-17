@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-17T03:44:08Z",
+ "obtenido": "2026-11-17T15:53:45Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 34,
+   "items": 37,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -47,7 +47,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
+   "items": 94,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 358,
+   "items": 321,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 52
+   "fallos_seguidos": 53
   },
   {
    "dominio": "senad.gov.py",
@@ -198,6 +198,34 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "El Niño: baja el número de evacuados en las provincias del Litoral",
+   "url": "https://www.infobae.com/sociedad/2026/11/17/el-nino-por-el-alivio-circunstancial-baja-el-numero-de-evacuados-en-las-provincias-del-litoral/",
+   "dominio": "infobae.com",
+   "clase": "prensa",
+   "fecha": "2026-11-17",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "medios": [
+    {
+     "dominio": "infobae.com",
+     "clase": "prensa",
+     "url": "https://www.infobae.com/sociedad/2026/11/17/el-nino-por-el-alivio-circunstancial-baja-el-numero-de-evacuados-en-las-provincias-del-litoral/"
+    }
+   ],
+   "id": "cc9bd37de0",
+   "verificado": true
+  },
   {
    "titulo": "Alarma por la crecida del río Paraná: hay cientos de evacuados y crece la preocupación por nuevas tormentas",
    "url": "https://www.infobae.com/sociedad/2026/11/16/alarma-por-la-crecida-del-rio-parana-hay-cientos-de-evacuados-y-crece-la-preocupacion-por-nuevas-tormentas/",
@@ -776,6 +804,25 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Super Niño: el río Paraná superó los 4 metros de altura en Rosario y alcanzó su nivel más alto en 30 años",
+   "url": "https://perfil.com/clima/supernino-el-rio-parana-supero-los-4-metros-de-altura-en-rosario-y-alcanzo-su-nivel-mas-alto-en-30-anos-a50-jsm-ao6q87b3Z1mA",
+   "dominio": "perfil.com",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Rosario"
+   ]
+  },
+  {
+   "titulo": "Altura de los ríos en la Argentina, según Prefectura: esta es la situación en el Paraná hoy, martes 17 de noviembre",
+   "url": "https://www.lanacion.com.ar/sociedad/altura-de-los-rios-en-la-argentina-segun-prefectura-esta-es-la-situacion-en-el-parana-hoy-martes-17-nid17112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "San Lorenzo",
+    "Santa Fe"
+   ]
+  },
+  {
    "titulo": "Argentina creará la cárcel “el Infierno” para narcos y el centro penitenciario “el rinconcito del Edén” para quienes lavan dinero",
    "url": "https://ladiaria.com.uy/humor/articulo/2026/11/argentina-creara-la-carcel-el-infierno-para-narcos-y-el-centro-penitenciario-el-rinconcito-del-eden-para-quienes-lavan-dinero/",
    "dominio": "ladiaria.com.uy",
@@ -785,21 +832,21 @@
    ]
   },
   {
-   "titulo": "Sindicatos de Yacyretá blindan a Benítez,  director que depositó US$ 10 millones en Ueno Bank, del que es accionista",
-   "url": "https://www.abc.com.py/economia/2026/11/16/sindicatos-de-yacyreta-blindan-a-benitez-director-que-deposito-us-10-millones-en-ueno-bank-del-que-es-accionista/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-16",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
    "titulo": "Ypytá: con custodia policial realizan constitución judicial a la  Universidad San Sebastián y otros",
    "url": "http://www.lanacion.com.py/judiciales/2026/11/16/ypyta-con-custodia-policial-realizan-constitucion-judicial-a-la-universidad-san-sebastian-y-otros/",
    "dominio": "lanacion.com.py",
    "fecha": "2026-11-16",
    "lugares": [
     "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "Sindicatos de Yacyretá blindan a Benítez,  director que depositó US$ 10 millones en Ueno Bank, del que es accionista",
+   "url": "https://www.abc.com.py/economia/2026/11/16/sindicatos-de-yacyreta-blindan-a-benitez-director-que-deposito-us-10-millones-en-ueno-bank-del-que-es-accionista/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-16",
+   "lugares": [
+    "Yacyretá"
    ]
   },
   {
