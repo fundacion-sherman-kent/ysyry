@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-17T21:44:12Z",
+ "obtenido": "2026-11-17T22:01:49Z",
  "dias": 14,
  "fuentes": [
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 92,
+   "items": 93,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 55
+   "fallos_seguidos": 56
   },
   {
    "dominio": "senad.gov.py",
@@ -192,6 +192,94 @@
    "url": "https://www.policianacional.gov.py/feed/",
    "ok": true,
    "items": 5,
+   "candidatos": 0,
+   "fallos_seguidos": 0
+  },
+  {
+   "dominio": "campograndenews.com.br",
+   "url": "https://www.campograndenews.com.br/rss",
+   "ok": true,
+   "items": 20,
+   "candidatos": 0,
+   "fallos_seguidos": 0
+  },
+  {
+   "dominio": "correiodoestado.com.br",
+   "url": "https://www.correiodoestado.com.br/rss",
+   "ok": true,
+   "items": 30,
+   "candidatos": 0,
+   "fallos_seguidos": 0
+  },
+  {
+   "dominio": "pontaporainforma.com.br",
+   "url": "https://www.pontaporainforma.com.br/feed",
+   "ok": true,
+   "items": 10,
+   "candidatos": 0,
+   "fallos_seguidos": 0
+  },
+  {
+   "dominio": "g1.globo.com",
+   "url": "https://g1.globo.com/rss/g1/pr/oeste-sudoeste/",
+   "ok": true,
+   "items": 100,
+   "candidatos": 0,
+   "fallos_seguidos": 0
+  },
+  {
+   "dominio": "misionesonline.net",
+   "url": "https://www.misionesonline.net/feed/",
+   "ok": true,
+   "items": 10,
+   "candidatos": 0,
+   "fallos_seguidos": 0
+  },
+  {
+   "dominio": "primeraedicion.com.ar",
+   "url": "https://www.primeraedicion.com.ar/feed/",
+   "ok": true,
+   "items": 20,
+   "candidatos": 0,
+   "fallos_seguidos": 0
+  },
+  {
+   "dominio": "diarioepoca.com",
+   "url": "https://www.diarioepoca.com/rss",
+   "ok": true,
+   "items": 20,
+   "candidatos": 0,
+   "fallos_seguidos": 0
+  },
+  {
+   "dominio": "lanacion.com.ar",
+   "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
+   "ok": true,
+   "items": 25,
+   "candidatos": 1,
+   "fallos_seguidos": 0
+  },
+  {
+   "dominio": "clarin.com",
+   "url": "https://www.clarin.com/rss/policiales/",
+   "ok": true,
+   "items": 10,
+   "candidatos": 0,
+   "fallos_seguidos": 0
+  },
+  {
+   "dominio": "abc.com.py",
+   "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/nacionales/?outputType=xml",
+   "ok": true,
+   "items": 100,
+   "candidatos": 0,
+   "fallos_seguidos": 0
+  },
+  {
+   "dominio": "opinion.com.bo",
+   "url": "https://www.opinion.com.bo/rss",
+   "ok": true,
+   "items": 20,
    "candidatos": 0,
    "fallos_seguidos": 0
   }
@@ -914,6 +1002,59 @@
    ]
   },
   {
+   "titulo": "Avião com compartimento secreto era usado para transportar emagrecedores e eletrônicos do Paraná a São Paulo",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/17/aviao-com-compartimento-secreto.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "Como cinco operações de alimentação atendem às rotinas no Itaipu Parquetec",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/especial-publicitario/apetit/noticia/2026/11/17/como-cinco-operacoes-de-alimentacao-atendem-as-rotinas-no-itaipu-parquetec.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Orçamento para compra de terras indígenas no Paraná dobra e chega a R$ 480 milhões após acordo de reparação histórica com Itaipu",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/17/orcamento-compra-terras-indigenas.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Choque triple en Quaranta y Las Heras: uno de los conductores escapó",
+   "url": "https://www.primeraedicion.com.ar/nota/101161167/posadas-choque-tres-vehiculos-quaranta-las-heras-conductor-escapo/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "San Roque González de Santa Cruz: el santo que sigue inspirando a la juventud",
+   "url": "https://www.primeraedicion.com.ar/nota/101160967/san-roque-gonzalez-de-santa-cruz-el-santo-que-sigue-inspirando-a-la-juventud/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-17",
+   "lugares": []
+  },
+  {
+   "titulo": "Un hombre y su sobrino fueron acribillados en una vivienda de un tradicional barrio de Santa Fe",
+   "url": "https://www.lanacion.com.ar/seguridad/un-hombre-y-su-sobrino-fueron-acribillados-en-una-vivienda-de-un-tradicional-barrio-de-santa-fe-nid17112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
    "titulo": "Inauguran la renovada avenida Newbery con música y actividades",
    "url": "https://www.pagina12.com.ar/2026/11/17/inauguran-la-renovada-avenida-newbery-con-musica-y-actividades/",
    "dominio": "pagina12.com.ar",
@@ -938,6 +1079,15 @@
    "fecha": "2026-11-16",
    "lugares": [
     "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "Así es la cárcel “El infierno”, que alojará a los narcos y sicarios más peligrosos del país",
+   "url": "https://www.lanacion.com.ar/seguridad/asi-es-la-carcel-el-infierno-que-alojara-a-los-narcos-y-sicarios-mas-peligrosos-del-pais-nid16112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-16",
+   "lugares": [
+    "Santa Fe"
    ]
   },
   {
@@ -1000,15 +1150,6 @@
    "dominio": "lanacion.com.ar",
    "fecha": "2026-11-16",
    "lugares": []
-  },
-  {
-   "titulo": "Así es la cárcel “El infierno”, que alojará a los narcos y sicarios más peligrosos del país",
-   "url": "https://www.lanacion.com.ar/seguridad/asi-es-la-carcel-el-infierno-que-alojara-a-los-narcos-y-sicarios-mas-peligrosos-del-pais-nid16112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-16",
-   "lugares": [
-    "Santa Fe"
-   ]
   },
   {
    "titulo": "Río Paraguay: sigue bajando en Asunción y en casi todo el país",
@@ -1157,6 +1298,15 @@
    "lugares": []
   },
   {
+   "titulo": "Grupo de chineses escapa de imóvel onde teria sido mantido em cárcere privado e pede ajuda à polícia no Paraná",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/13/grupo-de-chineses-carcere-privado.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-13",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
    "titulo": "Derlis Gauto es nombrado como nuevo director financiero interino de Itaipú",
    "url": "https://www.abc.com.py/politica/2026/11/13/derlis-gauto-es-nombrado-como-nuevo-director-financiero-interino-de-itaipu/",
    "dominio": "abc.com.py",
@@ -1272,6 +1422,34 @@
    "fecha": "2026-11-12",
    "lugares": [
     "Rosario"
+   ]
+  },
+  {
+   "titulo": "Ex-policial militar suspeito de integrar grupo de extermínio é preso no Paraná após 15 anos foragido",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/11/ex-policial-e-preso-no-parana.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-11",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "Onça-pintada preta nascida no Paraná viaja mais de 2 mil km para conhecer novo 'namorado' no Tocantins",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/11/onca-pintada-preta-viaja-tocantins.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-11",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Turista sequestrado após marcar encontro pelas redes sociais no Paraná ficou cerca de 7 horas em cativeiro no Paraguai",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/11/turista-sequestrado-apos-marcar-encontro.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-11",
+   "lugares": [
+    "Foz do Iguaçu"
    ]
   },
   {
@@ -1834,26 +2012,6 @@
    "dominio": "elobservador.com.uy",
    "fecha": "2026-11-03",
    "lugares": []
-  },
-  {
-   "titulo": "Remezowski asume la Intendencia con eje en barrios, Yacyretá e integración",
-   "url": "http://www.lanacion.com.py/politica/2026/11/03/remezowski-asume-la-intendencia-con-eje-en-barrios-yacyreta-e-integracion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-03",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Femicidio en CDE: víctima recibió cuatro impactos y se espera otra inspección en la morgue de Asunción",
-   "url": "http://www.lanacion.com.py/pais/2026/11/02/femicidio-en-cde-victima-recibio-cuatro-impactos-y-se-espera-otra-inspeccion-en-la-morgue-de-asuncion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-03",
-   "lugares": [
-    "Asunción",
-    "Ciudad del Este",
-    "Alto Paraná"
-   ]
   }
  ]
 }
