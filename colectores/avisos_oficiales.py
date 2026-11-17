@@ -6,7 +6,8 @@ Fuentes (todas de acceso libre, sin clave):
     Porto Murtinho, Cáceres, Foz do Iguaçu, Ponta Porã, Guaíra).
   · Dirección de Meteorología e Hidrología de Paraguay: la página de avisos dice si hay un aviso vigente (se lee el título de la página).
   · GDACS (ONU y Comisión Europea): alertas de desastres del mundo; se conservan las que caen dentro del corredor.
-  · Prefectura Naval Argentina: avisos a los navegantes (la página dice «Sin Avisos» cuando no hay ninguno vigente).
+  · Prefectura Naval Argentina (sólo con AVISOS_PNA=1): avisos a los navegantes (la página dice «Sin Avisos» cuando no hay ninguno vigente). Responde desde
+    Argentina pero no desde GitHub, por eso no está en la corrida automática.
   · Servicio Meteorológico Nacional de Argentina (SMN): feed GeoRSS de avisos (licencia CC BY 4.0, sin clave); se conservan los que tocan provincias
     del corredor con un vértice del polígono dentro de la franja Paraná-Paraguay-Uruguay. (Su API de pronósticos sí exige clave: no se usa.)
 NO consultado, y declarado así en el archivo: el INUMET de Uruguay (sin API pública). Un «sin avisos» sólo vale para las fuentes consultadas.
@@ -130,7 +131,10 @@ def main():
     carpeta = Path(os.environ.get("DATOS_DIR", "datos/publico"))
     carpeta.mkdir(parents=True, exist_ok=True)
     avisos, fuentes = [], []
-    for nombre, f in (("INMET (Brasil)", inmet), ("Meteorología de Paraguay", dmh), ("SMN (Argentina)", smn), ("Prefectura Naval Argentina", pna), ("GDACS", gdacs)):
+    fuentes_a_consultar = [("INMET (Brasil)", inmet), ("Meteorología de Paraguay", dmh), ("SMN (Argentina)", smn), ("GDACS", gdacs)]
+    if os.environ.get("AVISOS_PNA"):     # la página de la Prefectura responde desde Argentina pero no desde los servidores de GitHub (se queda sin responder): sólo se consulta si se pide
+        fuentes_a_consultar.insert(3, ("Prefectura Naval Argentina", pna))
+    for nombre, f in fuentes_a_consultar:
         try:
             r = f()
             avisos += r
