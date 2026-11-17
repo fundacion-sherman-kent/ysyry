@@ -6,6 +6,7 @@ Fuentes (todas de acceso libre, sin clave):
     Porto Murtinho, Cáceres, Foz do Iguaçu, Ponta Porã, Guaíra).
   · Dirección de Meteorología e Hidrología de Paraguay: la página de avisos dice si hay un aviso vigente (se lee el título de la página).
   · GDACS (ONU y Comisión Europea): alertas de desastres del mundo; se conservan las que caen dentro del corredor.
+  · Prefectura Naval Argentina: avisos a los navegantes (la página dice «Sin Avisos» cuando no hay ninguno vigente).
   · Servicio Meteorológico Nacional de Argentina (SMN): feed GeoRSS de avisos (licencia CC BY 4.0, sin clave); se conservan los que tocan provincias
     del corredor con un vértice del polígono dentro de la franja Paraná-Paraguay-Uruguay. (Su API de pronósticos sí exige clave: no se usa.)
 NO consultado, y declarado así en el archivo: el INUMET de Uruguay (sin API pública). Un «sin avisos» sólo vale para las fuentes consultadas.
@@ -93,6 +94,22 @@ def smn():
     return out
 
 
+def pna():
+    """Avisos a los navegantes de la Prefectura Naval Argentina (contenidosweb.prefecturanaval.gob.ar/avisos): una página simple que dice «Sin Avisos» cuando no hay
+    ninguno vigente. Si hay, se publica el texto tal cual, sin interpretarlo: el formato con avisos no se conoce de antemano. Es la fuente oficial de Argentina para
+    restricciones y novedades de la vía navegable; no incluye los radioavisos del Servicio de Hidrografía Naval, que no se pueden leer por máquina."""
+    t = bajar("https://contenidosweb.prefecturanaval.gob.ar/avisos/")
+    cuerpo = re.sub(r"<script.*?</script>|<style.*?</style>|<head.*?</head>", " ", t, flags=re.S | re.I)
+    texto = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", cuerpo)).strip()
+    if not texto or "Aviso" not in texto:
+        raise ValueError("la página cambió: no se reconoce el contenido")
+    if re.search(r"(?i)sin avisos", texto):
+        return []
+    contenido = re.split(r"(?i)aviso a los navegantes", texto)[-1].strip() or texto
+    return [{"fuente": "Prefectura Naval Argentina (avisos a los navegantes)", "pais": "ARG", "fenomeno": contenido[:240], "severidad": "", "color": "", "inicio": "", "fin": "",
+             "lugares": ["Argentina"], "riesgos": contenido[:300], "id": "pna-vigente"}]
+
+
 def gdacs():
     t = bajar("https://www.gdacs.org/xml/rss.xml")
     out = []
@@ -113,7 +130,7 @@ def main():
     carpeta = Path(os.environ.get("DATOS_DIR", "datos/publico"))
     carpeta.mkdir(parents=True, exist_ok=True)
     avisos, fuentes = [], []
-    for nombre, f in (("INMET (Brasil)", inmet), ("Meteorología de Paraguay", dmh), ("SMN (Argentina)", smn), ("GDACS", gdacs)):
+    for nombre, f in (("INMET (Brasil)", inmet), ("Meteorología de Paraguay", dmh), ("SMN (Argentina)", smn), ("Prefectura Naval Argentina", pna), ("GDACS", gdacs)):
         try:
             r = f()
             avisos += r
