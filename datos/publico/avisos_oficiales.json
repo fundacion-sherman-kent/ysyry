@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-17T16:07:34Z",
+ "obtenido": "2026-11-17T16:15:07Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -15,11 +15,6 @@
    "nombre": "SMN (Argentina)",
    "ok": true,
    "avisos_en_el_corredor": 3
-  },
-  {
-   "nombre": "Prefectura Naval Argentina",
-   "ok": false,
-   "error": "<urlopen error timed out>"
   },
   {
    "nombre": "GDACS",
@@ -101,7 +96,7 @@
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
+   "fenomeno": "Fenómeno esperado:  Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
