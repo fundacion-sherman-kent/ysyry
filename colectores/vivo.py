@@ -52,7 +52,8 @@ def main():
             por_mmsi[mmsi] = {"i": mmsi, "x": round(P["ax"] * lon + P["bx"], 1), "y": round(P["ay"] * lat + P["by"], 1), "la": round(lat, 5), "lo": round(lon, 5),
                               "c": p.get("cog"), "k": color, "t": categoria, "n": nombre_b, "b": p.get("flag"), "v": p.get("sog"),
                               "d": (p.get("destination") or "").strip() or None, "q": p.get("draught"), "e": p.get("eta"), "l": p.get("length"),
-                              "s": seen, "u": 1 if es_estado(punto) else 0}
+                              "s": seen, "u": 1 if es_estado(punto) else 0,
+                              "m": ais_vivo.imo_valido(p.get("imo")), "cs": (p.get("callsign") or "").strip() or None, "ty": p.get("type")}
             n += 1
         tramos.append({"tramo": nombre, "ok": True, "n": n})
         print("  %s -> %d" % (nombre, n), flush=True)

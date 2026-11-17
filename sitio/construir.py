@@ -565,6 +565,15 @@ if marcos:
                           os.environ.get("SITIO_REPORTE_SALA") or (_raiz / "datos" / "publico" / "reporte-sala-ar.json"), _segs, _dtm.strptime(_fecha, "%Y-%m-%d").date())
     for _z, _l in _rep.indicios(_presas).items():
         _flu_extra.setdefault(_z, []).extend(_l)
+    import anomalias as _ani
+    _ruta_ident = Path(os.environ.get("SITIO_IDENT") or (D / "identidades.json"))
+    if _ruta_ident.exists():
+        try:
+            _reg_ident = json.load(open(_ruta_ident, encoding="utf-8"))
+            for _z, _l in _ani.indicios(_reg_ident, _dt.datetime.now(_dt.timezone.utc).replace(tzinfo=None)).items():
+                _flu_extra.setdefault(_z, []).extend(_l)
+        except Exception as _e:
+            print("aviso: no se pudo leer el registro de identidades:", str(_e)[:80])
     if _OFAC:
         _imos_vistos = {str(_imo_valido(p.get("imo"))) for m in _ventana for p in m["puntos"] if _imo_valido(p.get("imo"))}
         _coinc = {k: v for k, v in _OFAC_VISTOS.items()}

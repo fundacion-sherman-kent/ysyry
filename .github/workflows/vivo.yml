@@ -36,3 +36,23 @@ jobs:
           git commit -q -m "Capa viva ($(date -u +%Y-%m-%dT%H:%MZ))"
           git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git push -q --force origin datos-vivo
+      - name: Actualizar el registro de identidades (rama datos-identidades)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p /tmp/ident
+          if git fetch -q --depth=1 origin datos-identidades 2>/dev/null; then
+            git show FETCH_HEAD:identidades.json > /tmp/ident/previo.json || echo '{}' > /tmp/ident/previo.json
+          else
+            echo '{}' > /tmp/ident/previo.json
+          fi
+          python3 -u colectores/identidades_ais.py /tmp/vivo/vivo.json /tmp/ident/previo.json /tmp/ident/identidades.json
+          mkdir -p /tmp/ident_pub && cp /tmp/ident/identidades.json /tmp/ident_pub/identidades.json
+          cd /tmp/ident_pub
+          git init -q -b datos-identidades
+          git config user.name "ysyry-robot"
+          git config user.email "ysyry-robot@users.noreply.github.com"
+          git add identidades.json
+          git commit -q -m "Registro de identidades de AIS ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push -q --force origin datos-identidades

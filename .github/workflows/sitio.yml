@@ -41,6 +41,10 @@ jobs:
             echo "Todavía no hay historial del pulso: se empieza de cero"; rm -f sitio/datos/pulso.json
           fi
 
+      - name: Traer el registro de identidades de AIS (rama datos-identidades)
+        run: |
+          curl -sf "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/datos-identidades/identidades.json" -o sitio/datos/identidades.json || { echo "Todavía no hay registro de identidades"; rm -f sitio/datos/identidades.json; }
+
       - name: Traer la imagen satelital más reciente (rama datos-satelite)
         run: |
           base="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/datos-satelite/satelite"
