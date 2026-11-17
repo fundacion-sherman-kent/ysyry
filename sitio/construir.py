@@ -577,6 +577,9 @@ if marcos:
     import hechos_decomiso as _dec
     for _z, _l in _dec.indicios(os.environ.get("SITIO_DECOMISOS") or (_raiz / "datos" / "publico" / "decomisos-corredor.json"), _dt.datetime.now(_dt.timezone.utc).replace(tzinfo=None)).items():
         _flu_extra.setdefault(_z, []).extend(_l)
+    import hechos_siniestro as _sin
+    for _z, _l in _sin.indicios(os.environ.get("SITIO_SINIESTROS") or (_raiz / "datos" / "publico" / "siniestros-corredor.json"), _dt.datetime.now(_dt.timezone.utc).replace(tzinfo=None)).items():
+        _flu_extra.setdefault(_z, []).extend(_l)
     import alimentos as _ali
     for _z, _l in _ali.indicios(os.environ.get("SITIO_RASFF") or (_raiz / "datos" / "publico" / "rasff-corredor.json"), _dt.datetime.now(_dt.timezone.utc).replace(tzinfo=None)).items():
         _flu_extra.setdefault(_z, []).extend(_l)

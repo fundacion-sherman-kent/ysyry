@@ -23,12 +23,14 @@ jobs:
       - name: Acumular decomisos en la base de 12 meses
         env:
           DATOS_DIR: datos/publico
-        run: python3 -u colectores/decomisos.py
+        run: |
+          python3 -u colectores/decomisos.py
+          python3 -u colectores/siniestros.py
       - name: Guardar
         run: |
           git config user.name "ysyry-robot"
           git config user.email "ysyry-robot@users.noreply.github.com"
-          git add datos/publico/escaner.json datos/publico/decomisos-corredor.json
+          git add datos/publico/escaner.json datos/publico/decomisos-corredor.json datos/publico/siniestros-corredor.json
           if git diff --cached --quiet; then
             echo "Sin cambios"
           else
