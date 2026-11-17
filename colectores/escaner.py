@@ -58,6 +58,17 @@ FUENTES = [
     ("mpf.mp.br", "https://www.mpf.mp.br/rss.xml", "oficial", "pt"),
     ("senad.gov.py", "https://senad.gov.py/feed", "oficial", "es"),
     ("policianacional.gov.py", "https://www.policianacional.gov.py/feed/", "oficial", "es"),
+    ("campograndenews.com.br", "https://www.campograndenews.com.br/rss", "prensa", "pt"),
+    ("correiodoestado.com.br", "https://www.correiodoestado.com.br/rss", "prensa", "pt"),
+    ("pontaporainforma.com.br", "https://www.pontaporainforma.com.br/feed", "prensa", "pt"),
+    ("g1.globo.com", "https://g1.globo.com/rss/g1/pr/oeste-sudoeste/", "prensa", "pt"),
+    ("misionesonline.net", "https://www.misionesonline.net/feed/", "prensa", "es"),
+    ("primeraedicion.com.ar", "https://www.primeraedicion.com.ar/feed/", "prensa", "es"),
+    ("diarioepoca.com", "https://www.diarioepoca.com/rss", "prensa", "es"),
+    ("lanacion.com.ar", "https://www.lanacion.com.ar/arcio/rss/category/seguridad/", "prensa", "es"),
+    ("clarin.com", "https://www.clarin.com/rss/policiales/", "prensa", "es"),
+    ("abc.com.py", "https://www.abc.com.py/arc/outboundfeeds/rss/category/nacionales/?outputType=xml", "prensa", "es"),
+    ("opinion.com.bo", "https://www.opinion.com.bo/rss", "prensa", "es"),
 ]
 
 # lugares del corredor: nombre normalizado -> (etiqueta, lat, lon). Ubicación aproximada del lugar mencionado, no del hecho.
@@ -76,6 +87,15 @@ LUGARES = {
     "pedro juan caballero": ("Pedro Juan Caballero", -22.55, -55.73), "ponta pora": ("Ponta Porã", -22.54, -55.73), "canindeyu": ("Canindeyú", -24.20, -55.30),
     "alto parana": ("Alto Paraná", -25.30, -54.80), "triple frontera": ("Triple Frontera", -25.55, -54.58), "itaipu": ("Itaipú", -25.41, -54.59), "yacyreta": ("Yacyretá", -27.40, -56.72),
     "corumba": ("Corumbá", -19.01, -57.65), "ladario": ("Ladário", -19.00, -57.60), "porto murtinho": ("Porto Murtinho", -21.70, -57.88), "caceres": ("Cáceres", -16.07, -57.68),
+    # municipios de la frontera seca y de los accesos a la hidrovía (se suman el 17/11/2026)
+    "mundo novo": ("Mundo Novo", -23.94, -54.28), "paranhos": ("Paranhos", -23.89, -55.43), "coronel sapucaia": ("Coronel Sapucaia", -23.27, -55.53),
+    "capitan bado": ("Capitán Bado", -23.27, -55.54), "aral moreira": ("Aral Moreira", -22.94, -55.63), "antonio joao": ("Antônio João", -22.19, -55.95),
+    "dourados": ("Dourados", -22.22, -54.81), "marechal candido rondon": ("Marechal Cândido Rondon", -24.56, -54.06), "santa terezinha de itaipu": ("Santa Terezinha de Itaipu", -25.43, -54.43),
+    "sao miguel do iguacu": ("São Miguel do Iguaçu", -25.35, -54.24), "dionisio cerqueira": ("Dionísio Cerqueira", -26.27, -53.64), "bernardo de irigoyen": ("Bernardo de Irigoyen", -26.25, -53.65),
+    "uruguaiana": ("Uruguaiana", -29.76, -57.09), "sao borja": ("São Borja", -28.66, -56.0), "paso de los libres": ("Paso de los Libres", -29.71, -57.09),
+    "puerto suarez": ("Puerto Suárez", -18.96, -57.8), "presidente franco": ("Presidente Franco", -25.55, -54.61), "hernandarias": ("Hernandarias", -25.4, -54.64),
+    "minga guazu": ("Minga Guazú", -25.5, -54.8), "villa hayes": ("Villa Hayes", -25.09, -57.52), "puerto falcon": ("Puerto Falcón", -25.47, -57.42),
+    "salvador mazza": ("Salvador Mazza", -22.05, -63.7), "yacuiba": ("Yacuiba", -22.02, -63.68),
     "bahia negra": ("Bahía Negra", -20.23, -58.17), "fuerte olimpo": ("Fuerte Olimpo", -21.04, -57.87), "puerto quijarro": ("Puerto Quijarro", -17.78, -57.77),
 }
 RIO = re.compile(r"\b(hidrovia|parana river|paraguay river|paraguay parana waterway|waterway|rio parana|rio paraguay|rio uruguay|rio de la plata|rio paraguai|barcazas?|convoyes? fluviales?|empujador|puerto fluvial|via navegable|puerto de rosario)\b")
@@ -149,6 +169,9 @@ def fecha_iso(s):
 # Nombres de lugar que también son apellidos, santos o ciudades de otro país: sin su contexto no cuentan (la misma trampa que «Ciudad del Este»
 # con el centro comercial de Costa Rica). `excluye` anula el lugar si aparece; `exige` pide una pista del corredor en el mismo titular.
 AMBIGUOS = {
+    "mundo novo": {"exige": r"(mato grosso do sul|ms|fronteira|paraguai|policia|apreen|maconha|cocain)"},
+    "paranhos": {"exige": r"(mato grosso do sul|ms|fronteira|paraguai|policia|apreen|maconha|cocain|ponta pora)"},
+    "dourados": {"exige": r"(mato grosso do sul|ms|fronteira|paraguai|apreen|maconha|cocain|contraband|pf|policia federal)"},
     "caceres": {"exige": r"(mato grosso|\bmt\b|porto caceres|puerto caceres|pantanal|paraguai|corumba|hidrovia)"},
     "rosario": {"excluye": r"(rosario central|del rosario|virgen del rosario|villa del rosario|rosario del tala|rosario oeste|rezar|parroquia|rosario de santa fe y)",
                 "exige": r"(santa fe|puerto|puertos|\brio\b|parana|hidrovia|terminal|agro|aceit|granos|gran rosario|san lorenzo|barcaza)"},
