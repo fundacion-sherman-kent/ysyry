@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-17T22:01:49Z",
+ "obtenido": "2026-11-17T22:16:28Z",
  "dias": 14,
  "fuentes": [
   {
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 56
+   "fallos_seguidos": 57
   },
   {
    "dominio": "senad.gov.py",
@@ -198,10 +198,11 @@
   {
    "dominio": "campograndenews.com.br",
    "url": "https://www.campograndenews.com.br/rss",
-   "ok": true,
-   "items": 20,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "HTTP Error 403: Forbidden",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -224,7 +225,7 @@
    "url": "https://g1.globo.com/rss/g1/pr/oeste-sudoeste/",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -232,7 +233,7 @@
    "url": "https://www.misionesonline.net/feed/",
    "ok": true,
    "items": 10,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -255,7 +256,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 25,
+   "items": 26,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -320,6 +321,40 @@
    "verificado": true
   },
   {
+   "titulo": "Avião com compartimento secreto era usado para transportar emagrecedores e eletrônicos do Paraná a São Paulo",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/17/aviao-com-compartimento-secreto.ghtml",
+   "dominio": "g1.globo.com",
+   "clase": "prensa",
+   "fecha": "2026-11-17",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Foz do Iguaçu"
+   ],
+   "ubicacion": [
+    -25.53,
+    -54.58
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "g1.globo.com",
+     "clase": "prensa",
+     "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/17/aviao-com-compartimento-secreto.ghtml"
+    }
+   ],
+   "id": "7087bc3b08",
+   "verificado": true
+  },
+  {
    "titulo": "Dura condena para un contrabandista de cigarrillos que atropelló y mató a un gendarme para escapar de un control en la ruta",
    "url": "https://www.lanacion.com.ar/seguridad/dura-condena-para-un-contrabandista-de-cigarrillos-que-atropello-y-mato-a-un-gendarme-para-escapar-nid17112026/",
    "dominio": "lanacion.com.ar",
@@ -378,6 +413,35 @@
     }
    ],
    "id": "cc9bd37de0",
+   "verificado": true
+  },
+  {
+   "titulo": "El Niño | Ituzaingó comienza a recuperar sus playas tras la bajante del río Paraná, pero advierten que aún no están aptas para su uso",
+   "url": "https://misionesonline.net/2026/11/17/ituzaingo-comienza-a-recuperar-sus-playas/",
+   "dominio": "misionesonline.net",
+   "clase": "prensa",
+   "fecha": "2026-11-17",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "misionesonline.net",
+     "clase": "prensa",
+     "url": "https://misionesonline.net/2026/11/17/ituzaingo-comienza-a-recuperar-sus-playas/"
+    }
+   ],
+   "id": "f68e58b916",
    "verificado": true
   },
   {
@@ -1002,15 +1066,6 @@
    ]
   },
   {
-   "titulo": "Avião com compartimento secreto era usado para transportar emagrecedores e eletrônicos do Paraná a São Paulo",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/17/aviao-com-compartimento-secreto.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Foz do Iguaçu"
-   ]
-  },
-  {
    "titulo": "Como cinco operações de alimentação atendem às rotinas no Itaipu Parquetec",
    "url": "https://g1.globo.com/pr/oeste-sudoeste/especial-publicitario/apetit/noticia/2026/11/17/como-cinco-operacoes-de-alimentacao-atendem-as-rotinas-no-itaipu-parquetec.ghtml",
    "dominio": "g1.globo.com",
@@ -1027,6 +1082,15 @@
    "fecha": "2026-11-17",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Puerto Iguazú | Rompieron una camioneta de Energía de Misiones y robaron herramientas: detuvieron a dos sospechosos",
+   "url": "https://misionesonline.net/2026/11/17/puerto-iguazu-rompieron-una-camioneta-de-energia-de-misiones/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Puerto Iguazú"
    ]
   },
   {
@@ -1052,6 +1116,15 @@
    "fecha": "2026-11-17",
    "lugares": [
     "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Avião com compartimento secreto era usado para transportar emagrecedores e eletrônicos do Paraná a São Paulo",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/17/aviao-com-compartimento-secreto.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Foz do Iguaçu"
    ]
   },
   {
@@ -2005,13 +2078,6 @@
    "lugares": [
     "Yacyretá"
    ]
-  },
-  {
-   "titulo": "En la era post Lionel Messi en Argentina, las razones detrás de las ausencias de De Paul, Lo Celso, Cuti Romero y Lautaro Martínez ante Uruguay de Diego Forlán",
-   "url": "https://www.elobservador.com.uy/futbol-internacional/en-la-era-post-lionel-messi-argentina-las-razones-detras-las-ausencias-de-paul-lo-celso-cuti-romero-y-lautaro-martinez-uruguay-diego-forlan-n6062623",
-   "dominio": "elobservador.com.uy",
-   "fecha": "2026-11-03",
-   "lugares": []
   }
  ]
 }
