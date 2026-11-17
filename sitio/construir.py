@@ -1112,10 +1112,10 @@ body.ficha-abierta .guia{right:calc(340px + 18px)}
 .solo-aereo{display:none}
 svg.fam-aereo .solo-aereo{display:inline}
 .pista{cursor:pointer}
-.pista-p{fill:#e9e3d2;stroke:var(--azul-noche);stroke-width:.6}
+.pista-p{fill:#F9F9F7;stroke:var(--azul-noche);stroke-width:.6}
 .pista-closed .pista-p{fill:transparent;stroke:#667B89;stroke-dasharray:1.5 1}
-.avion{fill:#ffd400;stroke:var(--azul-noche);stroke-width:.8;stroke-linejoin:round}
-.avion-mil{fill:#ff6a6a}
+.avion{fill:#F9F9F7;stroke:var(--azul-noche);stroke-width:.8;stroke-linejoin:round}
+.avion-mil{fill:var(--naranja)}
 .frontera{fill:#FB6500;stroke:#fff;stroke-width:1.3;stroke-linejoin:round}
 .frontera-raya{stroke:#fff;stroke-width:1.4}
 .solo-fam{display:none}
@@ -1392,7 +1392,7 @@ footer{flex-direction:column}
   <span><span class="sw" style="background:var(--naranja)"></span>Ruta de flujo ilícito registrada por SIWA en los últimos 24 meses (pestaña «Flujos ilícitos»); en claro, las más antiguas: registros de terceros, no flujos medidos</span>
   <span><svg width="12" height="12" viewBox="-7 -7 14 14"><path d="M0,-5.5L5.5,0L0,5.5L-5.5,0Z" fill="#e9e3d2" stroke="#FB6500" stroke-width="1.4"/></svg>Hechos detectados por el escáner en los últimos 7 días (candidatos sin verificar; el rombo marca el lugar mencionado, no el del hecho)</span>
   <span><svg width="12" height="12" viewBox="-7 -7 14 14"><path d="M0,-6.5L6.5,0L0,6.5L-6.5,0Z" fill="#FB6500" stroke="#fff" stroke-width="1.3"/></svg>Paso de frontera seca (capa curada; 7 de 9 contrastados con una segunda fuente): marca dónde están, no mide cuánto tráfico ilícito pasa · click para ver qué se sabe y qué no</span>
-  <span><svg width="12" height="12" viewBox="-7 -7 14 14"><path d="M0,-6 L1.2,-1.5 L6,1.5 L6,2.8 L1.2,1.2 L0.8,4.6 L2.4,5.8 L2.4,6.8 L0,6.2 L-2.4,6.8 L-2.4,5.8 L-0.8,4.6 L-1.2,1.2 L-6,2.8 L-6,1.5 L-1.2,-1.5 Z" fill="#ffd400" stroke="#00121E" stroke-width=".8"/></svg>Aeronave pequeña o mediana (ADS-B abierto, en vivo) · punto claro: pista registrada (pestaña «Tráfico aéreo y pistas»). <span id="aereo-estado">Cargando tráfico aéreo…</span> Las pistas clandestinas no figuran en ninguna base abierta.</span>
+  <span><svg width="12" height="12" viewBox="-7 -7 14 14"><path d="M0,-6 L1.2,-1.5 L6,1.5 L6,2.8 L1.2,1.2 L0.8,4.6 L2.4,5.8 L2.4,6.8 L0,6.2 L-2.4,6.8 L-2.4,5.8 L-0.8,4.6 L-1.2,1.2 L-6,2.8 L-6,1.5 L-1.2,-1.5 Z" fill="#F9F9F7" stroke="#00121E" stroke-width=".8"/></svg>Aeronave pequeña o mediana (ADS-B abierto, en vivo) · punto claro: pista registrada (pestaña «Tráfico aéreo y pistas»). <span id="aereo-estado">Cargando tráfico aéreo…</span> Las pistas clandestinas no figuran en ninguna base abierta.</span>
   <span><span class="dot" style="background:var(--naranja);opacity:.6"></span>Foco de calor a menos de 25 km del río (NASA FIRMS, últimos 3 días; no es un incendio confirmado)</span>
   <span><span class="dot" style="background:#8fd9c4"></span>Boya de pulso por zona · naranja: hay un indicio a mirar · punteada: sin datos de AIS</span>
 </div>
@@ -1779,7 +1779,7 @@ document.querySelectorAll(".familia-tab").forEach(function(btn){
     document.querySelectorAll(".familia-tab").forEach(function(b){ b.classList.remove("activa"); });
     btn.classList.add("activa");
     const fam = btn.dataset.familia;
-    document.querySelectorAll("[data-familia]").forEach(function(el){
+    document.querySelectorAll("[data-familia]:not(.familia-tab)").forEach(function(el){
       const suyas = (el.dataset.familia || "").split(" ");
       const coincide = !fam || suyas.indexOf(fam) !== -1;
       el.classList.toggle("dim", !coincide);
