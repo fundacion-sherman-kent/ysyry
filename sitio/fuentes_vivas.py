@@ -19,6 +19,7 @@ FUENTES = [
     ("Mareógrafos del Servicio de Hidrografía Naval (Río de la Plata)", "nivel-rio-shn.json", "obtenido", 6, "Alturas horarias"),
     ("Nivel del río, Meteorología de Paraguay", "nivel-rio-py.json", "obtenido", 24, "El organismo actualiza a diario, no en vivo"),
     ("Lista de sanciones OFAC (buques con IMO)", "ofac_buques.json", "obtenido", 24 * 7, "Semanal"),
+    ("Lista de sanciones del Reino Unido y la ONU (buques con IMO)", "sanciones_uk_buques.json", "obtenido", 24 * 7, "Semanal"),
 ]
 
 

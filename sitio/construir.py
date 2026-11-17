@@ -395,7 +395,12 @@ try:
     _OFAC = json.load(open(Path(os.environ.get("SITIO_OFAC") or (Path(__file__).resolve().parents[1] / "datos" / "publico" / "ofac_buques.json")), encoding="utf-8"))
 except Exception:
     _OFAC = None
+try:
+    _UK = json.load(open(Path(os.environ.get("SITIO_SANCIONES_UK") or (Path(__file__).resolve().parents[1] / "datos" / "publico" / "sanciones_uk_buques.json")), encoding="utf-8"))
+except Exception:
+    _UK = None
 _OFAC_VISTOS = {}     # imo -> (nombre transmitido, ficha de OFAC)
+_UK_VISTOS = {}       # imo -> (nombre transmitido, ficha de la lista del Reino Unido, que incluye las designaciones de la ONU)
 buque_info = []
 grupos_hora = []
 for i, m in enumerate(marcos):
@@ -441,13 +446,17 @@ for i, m in enumerate(marcos):
         else:
             dest_txt = "destino declarado por el buque, sin validar: %s" % destino
         tipo_txt = "Bandera %s · %s (tipo autodeclarado) · %s · %s" % (bandera, cat, mov, dest_txt)
-        _imo = _imo_valido(p.get("imo"))
+        _imo = str(_imo_valido(p.get("imo")) or "") or None
         if _imo:
             tipo_txt += " · IMO %s" % _imo
             if _OFAC and _imo in _OFAC["buques"]:
                 _o = _OFAC["buques"][_imo]
                 _OFAC_VISTOS[_imo] = (nombre, _o)
                 tipo_txt += " · El IMO que transmite este buque figura en la lista de sanciones SDN de OFAC (EE.UU.), programa %s, con el nombre «%s». Es una pista para mirar, no una acusación: el IMO transmitido por AIS puede estar mal cargado y estar en esa lista es una decisión de un Estado extranjero" % (_o["programa"], _o["nombre"])
+        if _imo and _UK and _imo in _UK["buques"]:
+            _u = _UK["buques"][_imo]
+            _UK_VISTOS[_imo] = (nombre, _u)
+            tipo_txt += " · El IMO que transmite este buque figura en la lista de sanciones del Reino Unido (designación %s), régimen «%s», con el nombre «%s». Es una pista para mirar, no una acusación: el IMO transmitido por AIS puede estar mal cargado y estar en esa lista es una decisión de un Estado extranjero o del Consejo de Seguridad de la ONU" % (_u["origen"], _u["programa"], _u["nombre"])
         if estado:
             tipo_txt += " · Fuerza probable (inferida del nombre, no la transmite el buque y puede ser incorrecta): " + fuerza_inferida(p)
         buque_info.append({"id": bid,
@@ -574,17 +583,29 @@ if marcos:
                 _flu_extra.setdefault(_z, []).extend(_l)
         except Exception as _e:
             print("aviso: no se pudo leer el registro de identidades:", str(_e)[:80])
-    if _OFAC:
+    if _OFAC or _UK:
         _imos_vistos = {str(_imo_valido(p.get("imo"))) for m in _ventana for p in m["puntos"] if _imo_valido(p.get("imo"))}
-        _coinc = {k: v for k, v in _OFAC_VISTOS.items()}
         _f_ofac = {"nombre": "OFAC, lista SDN (Departamento del Tesoro de EE.UU.)", "familia": "oficial", "calificacion": "A2"}
+        _f_uk = {"nombre": "Lista consolidada de sanciones del Reino Unido (FCDO), con designaciones de la ONU", "familia": "oficial", "calificacion": "A2"}
+        _n_lista = (len(_OFAC["buques"]) if _OFAC else 0) + (len(_UK["buques"]) if _UK else 0)
+        _piezas = []
+        for _k, (_nom, _o) in _OFAC_VISTOS.items():
+            _piezas.append("%s (IMO %s): OFAC, programa %s" % (_nom, _k, _o["programa"]))
+        for _k, (_nom, _o) in _UK_VISTOS.items():
+            _en_ofac = " y también OFAC" if _k in _OFAC_VISTOS else ""
+            if _k in _OFAC_VISTOS:
+                _piezas = [x for x in _piezas if "(IMO %s)" % _k not in x]
+            _piezas.append("%s (IMO %s): lista del Reino Unido%s, designación %s, régimen «%s»" % (_nom, _k, _en_ofac, _o["origen"], _o["programa"]))
+        _hay = set(_OFAC_VISTOS) | set(_UK_VISTOS)
         _flu_extra.setdefault("gen", []).append({
-            "id": "SAN", "tipo": "Sanciones", "titulo": "Buques del corredor cuyo IMO figura en la lista SDN de OFAC",
-            "texto": ("%d coincidencias entre %d números IMO transmitidos en las últimas 24 h y %d buques de la lista SDN%s." % (
-                len(_coinc), len(_imos_vistos), len(_OFAC["buques"]), (": " + "; ".join("%s (IMO %s, programa %s)" % (n, i, o["programa"]) for i, (n, o) in _coinc.items())) if _coinc else "")),
-            "fuentes": [_f_ofac], "nivel": "Fuente única",
-            "no_dice": "Se cruza sólo por IMO. Una coincidencia es una pista para mirar, no una acusación: el IMO transmitido por AIS puede estar mal cargado, estar en la lista es una decisión de un Estado extranjero y los buques sin IMO transmitido no se pueden cruzar.",
-            "dato": {"coincidencias": len(_coinc)}})
+            "id": "SAN", "tipo": "Sanciones", "titulo": "Buques del corredor cuyo IMO figura en listas de sanciones (OFAC, Reino Unido y ONU)",
+            "texto": ("%d coincidencias entre %d números IMO transmitidos en las últimas 24 h y %d buques de las listas%s." % (
+                len(_hay), len(_imos_vistos), _n_lista, (": " + "; ".join(_piezas)) if _piezas else "")),
+            "fuentes": [f for f in (_f_ofac if _OFAC else None, _f_uk if _UK else None) if f], "nivel": "Fuente única",
+            "no_dice": "Se cruza sólo por IMO. Una coincidencia es una pista para mirar, no una acusación: el IMO transmitido por AIS puede estar mal cargado, estar en una lista es una decisión de un Estado extranjero "
+                       "o del Consejo de Seguridad de la ONU, y los buques sin IMO transmitido no se pueden cruzar. Que un buque figure en dos listas no cuenta como dos fuentes independientes sobre lo que hace: "
+                       "esas listas se coordinan entre sí, y en todos los casos la presencia del buque en el corredor la da una sola fuente, el AIS. La lista de la Unión Europea no se usa: su archivo público no trae los buques con IMO.",
+            "dato": {"coincidencias": len(_hay), "ofac": len(_OFAC_VISTOS), "reino_unido": len(_UK_VISTOS)}})
     for _z, _i in _esc_ind.items():
         _flu_extra.setdefault(_z, []).append(_i)
     _indicios = _ind.indicios(_calc, _ventana, es_estado, _ests, _FUENTES_SIWA, _siwa.UNIDADES_POR_ZONA, _hechos_f, _siwa, _prensa_ind, _focos_ind, _flu_extra)

@@ -1,4 +1,4 @@
-name: Sanciones OFAC (buques con IMO)
+name: Sanciones OFAC, Reino Unido y ONU (buques con IMO)
 
 # Semanal, público. Baja la lista SDN de OFAC (dominio público) y se queda con los buques que tienen número IMO, para cruzarlos con los
 # que transmiten AIS en el corredor. No consume tokens de Claude.
@@ -20,11 +20,15 @@ jobs:
         env:
           DATOS_DIR: datos/publico
         run: python3 -u colectores/ofac_buques.py
+      - name: Leer la lista del Reino Unido (incluye las designaciones de la ONU)
+        env:
+          DATOS_DIR: datos/publico
+        run: python3 -u colectores/sanciones_uk.py
       - name: Guardar
         run: |
           git config user.name "ysyry-robot"
           git config user.email "ysyry-robot@users.noreply.github.com"
-          git add datos/publico/ofac_buques.json
+          git add datos/publico/ofac_buques.json datos/publico/sanciones_uk_buques.json
           if git diff --cached --quiet; then
             echo "Sin cambios"
           else
