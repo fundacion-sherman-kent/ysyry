@@ -9,6 +9,7 @@ from pathlib import Path
 FUENTES = [
     ("Posiciones de buques (AIS)", None, None, 1, "Una captura por hora; los robots de GitHub se retrasan a veces"),
     ("Escáner de hechos (RSS de medios y organismos)", "escaner.json", "obtenido", 3, "Candidatos sin verificar"),
+    ("Base de decomisos e incautaciones (acumula el escáner)", "decomisos-corredor.json", "obtenido", 24, "Cada 3 horas"),
     ("Avisos oficiales (INMET, Meteorología de Paraguay, SMN Argentina, GDACS)", "avisos_oficiales.json", "obtenido", 3, "No incluye el INUMET de Uruguay"),
     ("Focos de calor cerca del río (NASA FIRMS)", "focos_corredor.json", "obtenido", 3, "Dos satélites VIIRS"),
     ("Escalas de la Prefectura vía INA (nivel del río, Argentina)", "nivel-rio-ar.json", "obtenido", 24, "Lectura diaria de cada escala"),
