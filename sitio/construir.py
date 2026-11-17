@@ -1267,6 +1267,7 @@ footer{flex-direction:column}
   .entra.r2{animation-delay:.08s} .entra.r3{animation-delay:.16s} .entra.r4{animation-delay:.24s}
   @keyframes entrar{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 }
+__diseno_css__
 </style>
 <div class="topbar"><div class="topbar-in">
   <div class="brand">
@@ -1687,6 +1688,7 @@ const SAT = __sat_meta_json__;
     setTimeout(function(){ el.dispatchEvent(new MouseEvent("click", {bubbles: true})); }, 80);
     return true;
   };
+__volar_js__
   svg.addEventListener("wheel", function(ev){
     ev.preventDefault();
     const p = puntoSvg(ev);
@@ -1870,6 +1872,7 @@ document.querySelectorAll(".clicable").forEach(function(el){
   });
 });
 __capa_viva_js__
+__diseno_js__
 (function(){
   const el = document.getElementById("latido"), tx = document.getElementById("latido-txt");
   if (!el || !tx) return;
@@ -2030,7 +2033,9 @@ _ETIQUETAS_TPL += '<script type="application/ld+json">' + _seo.jsonld() + '</scr
 assert _TITULO_TPL in TPL
 TPL = TPL.replace(_TITULO_TPL, _ETIQUETAS_TPL, 1)
 html = TPL
+import diseno as _dis
 SUST = {
+    "diseno_css": _dis.CSS, "diseno_js": _dis.js(), "volar_js": _dis.VOLAR,
     "capa_viva_js": CAPA_VIVA_JS,      # primero: su texto lleva el marcador de la dirección
     "vivo_url": _dir.VIVO,
     "provincias": "\n    ".join(prov_svg),

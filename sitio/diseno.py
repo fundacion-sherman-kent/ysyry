@@ -1,0 +1,243 @@
+"""Capa de diseño y movimiento de la página: todo con la paleta cerrada de Ysyry (variables --acento, --naranja, --azul-*, --gris-acero, --papel, --linea),
+mejora progresiva (sin JavaScript la página se ve igual que antes) y respetando «reducir movimiento» del sistema. Nada acá cambia ni inventa datos: sólo presenta los que ya están en la página.
+
+Contiene: barra de progreso de lectura, río animado en el encabezado, cifras que cuentan hacia arriba, aparición escalonada al hacer scroll, tarjetas interactivas por zona
+(armadas a partir de la tabla «Pulso por zona», que queda debajo para quien la quiera) que llevan el mapa a esa zona, y un recorrido guiado por las cinco zonas."""
+import json
+
+import pulso as _pulso
+
+CSS = r"""
+/* ===== capa de diseño (sitio/diseno.py) ===== */
+.progreso{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--acento);z-index:80;pointer-events:none}
+.hero{position:relative;isolation:isolate;overflow:hidden}
+.hero-rio{position:absolute;right:-4%;top:-10%;width:min(62%,640px);height:130%;z-index:-1;opacity:.55;pointer-events:none}
+.hero-rio path{fill:none;stroke:var(--acento);stroke-width:1.6;stroke-linecap:round;opacity:.32}
+.hero-rio path.f{stroke-dasharray:3 14;opacity:.55}
+.hero h1 .pal{display:inline-block}
+.metrica{transition:background .25s ease}
+.metrica:hover{background:color-mix(in srgb,var(--acento) 7%,transparent)}
+.familia-tab{transition:background .2s ease,border-color .2s ease,color .2s ease,transform .2s ease,box-shadow .2s ease}
+.familia-tab:hover{border-color:var(--acento);transform:translateY(-1px)}
+.familia-tab.activa{box-shadow:0 4px 14px color-mix(in srgb,var(--acento) 38%,transparent)}
+svg.mapa .clicable{transition:filter .15s ease}
+svg.mapa .clicable:hover{filter:drop-shadow(0 0 3px var(--naranja))}
+.panel{transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .25s ease}
+
+/* tarjetas por zona */
+.zonas-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:14px 0 18px}
+.zc{background:var(--papel);border:1px solid var(--linea);border-radius:14px;padding:16px 16px 14px;display:flex;flex-direction:column;gap:6px;position:relative;overflow:hidden;
+  cursor:pointer;text-align:left;font-family:inherit;color:var(--fg);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.zc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--acento);transform:scaleY(0);transform-origin:50% 0;transition:transform .3s ease}
+.zc:hover,.zc:focus-visible{transform:translateY(-3px);border-color:var(--acento);box-shadow:0 10px 26px color-mix(in srgb,var(--acento) 18%,transparent);outline:none}
+.zc:hover::before,.zc:focus-visible::before{transform:scaleY(1)}
+.zc .zn{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gris-acero);font-weight:700}
+.zc .zt{font-size:15px;font-weight:700;line-height:1.25}
+.zc .zb{font-size:34px;font-weight:800;line-height:1;color:var(--acento-texto);margin-top:4px;font-variant-numeric:tabular-nums}
+.zc .zk{font-size:11.5px;color:var(--gris-acero)}
+.zc svg{max-width:100%;height:auto}
+.zc .zchips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.zc .zchip{font-size:11.5px;font-weight:700;border-radius:999px;padding:3px 9px;border:1px solid var(--linea);background:var(--bg)}
+.zc .zchip.sube{border-color:var(--acento);color:var(--acento-texto)}
+.zc .zchip.baja{border-color:var(--naranja)}
+.zc .zir{font-size:12px;font-weight:700;color:var(--acento-texto);margin-top:6px;display:flex;align-items:center;gap:6px}
+.zc .zir i{display:inline-block;transition:transform .25s ease;font-style:normal}
+.zc:hover .zir i{transform:translateX(4px)}
+details.tabla-det{margin:6px 0 4px}
+details.tabla-det>summary{cursor:pointer;font-weight:700;font-size:13px;color:var(--acento-texto);padding:8px 0;list-style:none}
+details.tabla-det>summary::before{content:"▸ ";display:inline-block;transition:transform .2s ease}
+details.tabla-det[open]>summary::before{transform:rotate(90deg)}
+
+/* recorrido guiado */
+.mapa-cab .tour-btn{width:auto;min-width:0;background:transparent;border:1px solid var(--gris-acero);color:#F9F9F7;border-radius:999px;padding:0 14px;height:32px;font-weight:700;font-size:12px;cursor:pointer;font-family:inherit;margin:0 8px;transition:background .2s ease,border-color .2s ease}
+.mapa-cab .tour-btn:hover{border-color:var(--acento);background:color-mix(in srgb,var(--acento) 25%,transparent)}
+.tour-card{position:absolute;left:18px;bottom:18px;max-width:min(360px,calc(100% - 36px));background:color-mix(in srgb,var(--azul-profundo) 88%,transparent);color:#F9F9F7;border:1px solid var(--acento);border-radius:14px;
+  padding:14px 16px;z-index:5;backdrop-filter:blur(6px);animation:tourIn .4s cubic-bezier(.2,.8,.2,1) both}
+.tour-card .tn{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#C6C6C5;font-weight:700}
+.tour-card .tt{font-size:17px;font-weight:800;margin:2px 0 4px}
+.tour-card p{margin:0 0 8px;font-size:13px;line-height:1.45;color:#C6C6C5}
+.tour-card .tb{display:flex;align-items:center;gap:8px}
+.tour-card button{font-family:inherit;font-weight:700;font-size:12px;border-radius:999px;padding:6px 12px;cursor:pointer;border:1px solid var(--acento);background:var(--acento);color:var(--acento-sobre)}
+.tour-card button.sec{background:transparent;color:#F9F9F7;border-color:var(--gris-acero)}
+.tour-card .pts{display:flex;gap:5px;margin-left:auto}
+.tour-card .pts i{width:7px;height:7px;border-radius:50%;background:var(--gris-acero);transition:background .3s ease,transform .3s ease}
+.tour-card .pts i.on{background:var(--acento);transform:scale(1.35)}
+@keyframes tourIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+@media (prefers-reduced-motion:no-preference){
+  .rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1);transition-delay:var(--rd,0s)}
+  .rv.rv-in{opacity:1;transform:none}
+  .hero-rio path.f{animation:rioFluye 9s linear infinite}
+  .hero-rio path.f.b{animation-duration:14s}
+  .hero h1 .pal{opacity:0;transform:translateY(.5em);animation:palIn .7s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:var(--pd,0s)}
+  @keyframes rioFluye{to{stroke-dashoffset:-34}}
+  @keyframes palIn{to{opacity:1;transform:none}}
+}
+@media (prefers-reduced-motion:reduce){.tour-card{animation:none}}
+@media print{.rv{opacity:1!important;transform:none!important}.progreso,.hero-rio,.tour-btn,.tour-card{display:none!important}}
+@media (max-width:640px){.zc .zb{font-size:28px}.tour-card{left:10px;right:10px;bottom:10px;max-width:none}}
+"""
+
+JS = r"""
+/* ===== capa de diseño (sitio/diseno.py): mejora progresiva ===== */
+(function(){
+  const REDUCIDO = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const ZT = __ZT__;
+  function $(s, r){ return (r||document).querySelector(s); }
+
+  // barra de progreso de lectura
+  const barra = document.createElement("div"); barra.className = "progreso"; document.body.appendChild(barra);
+  let pend = false;
+  function progreso(){ pend = false; const h = document.documentElement.scrollHeight - window.innerHeight; barra.style.transform = "scaleX(" + (h > 0 ? Math.min(1, window.scrollY / h) : 0) + ")"; }
+  window.addEventListener("scroll", function(){ if (!pend){ pend = true; requestAnimationFrame(progreso); } }, {passive:true});
+
+  // río animado en el encabezado y titular palabra por palabra
+  const hero = $(".hero");
+  if (hero){
+    const NS = "http://www.w3.org/2000/svg";
+    const s = document.createElementNS(NS, "svg"); s.setAttribute("class", "hero-rio"); s.setAttribute("viewBox", "0 0 400 300"); s.setAttribute("preserveAspectRatio", "xMaxYMid slice"); s.setAttribute("aria-hidden", "true");
+    [["M-10 40 C 90 10, 130 120, 220 100 S 330 190, 410 150", ""], ["M-10 90 C 80 60, 150 170, 230 150 S 340 240, 410 200", "f"], ["M-10 140 C 100 110, 140 220, 240 200 S 330 280, 410 250", "f b"]].forEach(function(d){
+      const p = document.createElementNS(NS, "path"); p.setAttribute("d", d[0]); if (d[1]) p.setAttribute("class", d[1]); s.appendChild(p);
+    });
+    hero.insertBefore(s, hero.firstChild);
+    const h1 = $("h1", hero);
+    if (h1 && !REDUCIDO){
+      const txt = h1.textContent; h1.setAttribute("aria-label", txt); h1.textContent = "";
+      txt.split(" ").forEach(function(w, i){
+        const sp = document.createElement("span"); sp.className = "pal"; sp.setAttribute("aria-hidden", "true"); sp.style.setProperty("--pd", (0.08 * i + 0.1) + "s"); sp.textContent = w;
+        h1.appendChild(sp); h1.appendChild(document.createTextNode(" "));
+      });
+    }
+  }
+
+  // cifras que cuentan hacia arriba al entrar en pantalla
+  function contar(el){
+    const m = /^([+\-]?)(\d{1,3}(?:\.\d{3})+|\d+)(?:,(\d+))?(.*)$/.exec(el.textContent.trim());
+    if (!m || REDUCIDO) return;
+    const dec = m[3] ? m[3].length : 0, fin = parseFloat(m[2].replace(/\./g, "") + (m[3] ? "." + m[3] : ""));
+    const t0 = performance.now(), D = 1100;
+    function fmt(v){ return m[1] + v.toLocaleString("es-AR", {minimumFractionDigits:dec, maximumFractionDigits:dec}) + m[4]; }
+    (function paso(t){ const k = Math.min(1, (t - t0) / D), e = 1 - Math.pow(1 - k, 3); el.textContent = fmt(fin * e); if (k < 1) requestAnimationFrame(paso); else el.textContent = fmt(fin); })(t0);
+  }
+  if ("IntersectionObserver" in window){
+    const io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ contar(e.target); io.unobserve(e.target); } }); }, {threshold:.6});
+    document.querySelectorAll(".metrica .n").forEach(function(n){ io.observe(n); });
+
+    // aparición escalonada al hacer scroll (sólo con movimiento permitido)
+    if (!REDUCIDO){
+      const rv = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add("rv-in"); rv.unobserve(e.target); } }); }, {rootMargin:"0px 0px -6% 0px", threshold:0});
+      document.querySelectorAll(".pulso, .prospectiva, .metodo, .leyenda, .zc").forEach(function(el, i){
+        if (el.getBoundingClientRect().top < window.innerHeight) return;      // lo que ya se ve no se esconde
+        el.classList.add("rv"); el.style.setProperty("--rd", ((i % 4) * 0.07) + "s"); rv.observe(el);
+      });
+    }
+  }
+
+  // tarjetas por zona, armadas desde la tabla «Pulso por zona»
+  const cont = $("#pulso-zonas"), tabla = cont && $("table", cont);
+  function irZona(i){
+    const z = ZT[i]; if (!z) return;
+    const mapa = $("#mapa"); if (mapa) mapa.scrollIntoView({behavior: REDUCIDO ? "auto" : "smooth", block:"start"});
+    if (window.__volar) setTimeout(function(){ window.__volar(z.x, z.y, z.w, REDUCIDO ? 0 : 1600); }, REDUCIDO ? 0 : 450);
+  }
+  if (tabla){
+    const filas = tabla.querySelectorAll("tbody tr"), grid = document.createElement("div"); grid.className = "zonas-cards";
+    filas.forEach(function(tr, i){
+      const c = tr.children; if (!ZT[i]) return;
+      const nombre = ((c[0].querySelector("b, strong") || c[0].firstChild).textContent || "").trim() || ZT[i].nombre;
+      if (c.length < 7){      // zona sin datos en esta captura: se muestra igual, rotulada
+        const v = document.createElement("button"); v.type = "button"; v.className = "zc"; v.setAttribute("aria-label", "Ver " + nombre + " en el mapa");
+        v.innerHTML = '<span class="zn">Zona ' + (i + 1) + '</span><span class="zt"></span><span class="zb">—</span><span class="zk">sin datos en esta captura</span><span class="zchips"><span class="zchip">Sin datos</span></span><span class="zir">Ver en el mapa <i>→</i></span>';
+        v.querySelector(".zt").textContent = nombre; v.dataset.b = "—"; v.addEventListener("click", function(){ irZona(i); }); grid.appendChild(v); return;
+      }
+      const b = document.createElement("button"); b.type = "button"; b.className = "zc"; b.setAttribute("aria-label", "Ver " + nombre + " en el mapa");
+      const num = (c[1].textContent.match(/^\s*([\d.,]+)/) || [,"—"])[1], barras = c[1].querySelector("svg");
+      const ahora = c[3].textContent.trim().split(" · ")[0].replace(/\s*\(.*?\)\s*/g, " ").trim(), cmp = c[5].textContent.trim(), hechos = c[6].textContent.trim();
+      const pct = /([+\-−–]?\d+[\.,]?\d*)\s*%/.exec(cmp), signo = pct ? (/^[\-−–]/.test(pct[1]) ? "baja" : "sube") : "";
+      b.innerHTML = '<span class="zn">Zona ' + (i + 1) + '</span><span class="zt"></span><span class="zb"></span><span class="zk">buques por captura (mediana)</span><span class="zbar"></span><span class="zchips"></span><span class="zir">Ver en el mapa <i>→</i></span>';
+      b.querySelector(".zt").textContent = nombre; b.querySelector(".zb").textContent = num; b.dataset.b = num;
+      if (barras) b.querySelector(".zbar").appendChild(barras.cloneNode(true));
+      const chips = b.querySelector(".zchips");
+      [[ahora, ""], [pct ? (signo === "baja" ? "▼ " : "▲ ") + pct[0].trim() + " vs. su historia" : "", signo], [/^ninguno/i.test(hechos) ? "" : "Hechos informados", ""]].forEach(function(x){
+        if (!x[0]) return; const s = document.createElement("span"); s.className = "zchip " + x[1]; s.textContent = x[0]; chips.appendChild(s);
+      });
+      b.addEventListener("click", function(){ irZona(i); });
+      grid.appendChild(b);
+    });
+    if (grid.children.length){
+      const det = document.createElement("details"); det.className = "tabla-det";
+      det.innerHTML = "<summary>Ver la tabla completa con todas las columnas</summary>";
+      const caja = tabla.closest(".tabla-pulso") || tabla.parentNode; caja.parentNode.insertBefore(grid, caja); caja.parentNode.insertBefore(det, caja); det.appendChild(caja);
+    }
+  }
+
+  // recorrido guiado por las cinco zonas
+  const cab = $(".mapa-cab .zoom-ctrl"), colmapa = $(".col-mapa");
+  if (cab && colmapa){
+    const bt = document.createElement("button"); bt.type = "button"; bt.className = "tour-btn"; bt.textContent = "▶ Recorrido"; bt.setAttribute("aria-label", "Recorrido guiado por las cinco zonas");
+    cab.parentNode.insertBefore(bt, cab.nextSibling);
+    let card = null, i = 0, timer = null, activo = false;
+    function parar(){ activo = false; clearTimeout(timer); if (card){ card.remove(); card = null; } bt.textContent = "▶ Recorrido"; }
+    function paso(n){
+      clearTimeout(timer); i = n;
+      if (i >= ZT.length){ parar(); if (window.__volar) window.__volar(null); return; }
+      const z = ZT[i];
+      if (card) card.remove();
+      card = document.createElement("div"); card.className = "tour-card"; card.setAttribute("role", "status");
+      const zc = document.querySelectorAll(".zc")[i], b = zc && zc.dataset.b;
+      card.innerHTML = '<div class="tn"></div><div class="tt"></div><p></p><div class="tb"><button type="button" class="sig"></button><button type="button" class="sec">Salir</button><span class="pts"></span></div>';
+      $(".tn", card).textContent = "Zona " + (i + 1) + " de " + ZT.length + (b ? " · " + b + " buques por captura" : "");
+      $(".tt", card).textContent = z.nombre; $("p", card).textContent = z.desc;
+      $(".sig", card).textContent = i === ZT.length - 1 ? "Ver todo" : "Siguiente →";
+      ZT.forEach(function(_, k){ const d = document.createElement("i"); if (k === i) d.className = "on"; $(".pts", card).appendChild(d); });
+      $(".sig", card).addEventListener("click", function(){ paso(i + 1); });
+      $(".sec", card).addEventListener("click", parar);
+      colmapa.appendChild(card);
+      if (window.__volar) window.__volar(z.x, z.y, z.w, REDUCIDO ? 0 : 1800);
+      if (!REDUCIDO) timer = setTimeout(function(){ if (activo) paso(i + 1); }, 8000);
+    }
+    bt.addEventListener("click", function(){
+      if (activo){ parar(); return; }
+      activo = true; bt.textContent = "■ Detener"; colmapa.scrollIntoView({behavior: REDUCIDO ? "auto" : "smooth", block:"start"});
+      setTimeout(function(){ if (activo) paso(0); }, REDUCIDO ? 0 : 400);
+    });
+    // si la persona toma el control del mapa, el recorrido se detiene
+    const sv = $("#svg-mapa"); ["pointerdown", "wheel"].forEach(function(ev){ sv.addEventListener(ev, function(){ if (activo) parar(); }, {passive:true}); });
+  }
+})();
+"""
+
+# vuelo del mapa: se inyecta DENTRO del bloque de zoom (necesita vb, aplicar y las constantes del mapa)
+VOLAR = r"""
+  // vuelo suave a una región (lo usan las tarjetas por zona y el recorrido guiado); volar(null) vuelve a la vista completa
+  let vueloRAF = null;
+  window.__volar = function(cx, cy, w, ms){
+    cancelAnimationFrame(vueloRAF);
+    let t;
+    if (cx === null || cx === undefined) t = {x:0, y:0, w:W0, h:H0};
+    else { const h = w * H0 / W0; t = {x: Math.max(0, Math.min(W0 - w, cx - w / 2)), y: Math.max(0, Math.min(H0 - h, cy - h / 2)), w: w, h: h}; }
+    if (!ms){ vb = t; aplicar(); return; }
+    const s = {x:vb.x, y:vb.y, w:vb.w, h:vb.h}, t0 = performance.now();
+    (function paso(t1){
+      const k = Math.min(1, (t1 - t0) / ms), e = k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
+      vb = {x: s.x + (t.x - s.x) * e, y: s.y + (t.y - s.y) * e, w: s.w + (t.w - s.w) * e, h: s.h + (t.h - s.h) * e};
+      aplicar();
+      if (k < 1) vueloRAF = requestAnimationFrame(paso);
+    })(t0);
+  };
+  ["pointerdown", "wheel"].forEach(function(ev){ svg.addEventListener(ev, function(){ cancelAnimationFrame(vueloRAF); }, {passive:true}); });
+"""
+
+ANCHOS = {"z1": 0.30, "z2": 0.12, "z3": 0.34, "z4": 0.24, "z5": 0.42}
+
+
+def zonas_tour():
+    out = []
+    for z, nombre, desc in _pulso.ZONAS:
+        la, lo = _pulso.BOYAS[z]
+        out.append({"id": z, "nombre": nombre, "desc": desc, "x": round(_pulso.AX * lo + _pulso.BX, 1), "y": round(_pulso.AY * la + _pulso.BY, 1), "w": round(760 * ANCHOS[z], 1)})
+    return out
+
+
+def js():
+    return JS.replace("__ZT__", json.dumps(zonas_tour(), ensure_ascii=False))
