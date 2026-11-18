@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-18T11:30:30Z",
+ "obtenido": "2026-11-18T20:25:06Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 45,
+   "items": 48,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 97,
+   "items": 90,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -151,7 +151,7 @@
    "url": "https://www.pagina12.com.ar/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 25,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 327,
+   "items": 354,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 59
+   "fallos_seguidos": 60
   },
   {
    "dominio": "senad.gov.py",
@@ -248,14 +248,14 @@
    "url": "https://www.diarioepoca.com/rss",
    "ok": true,
    "items": 20,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 25,
+   "items": 29,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -286,6 +286,71 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "El INA anticipa un nuevo repunte del río Paraná en Corrientes",
+   "url": "https://www.diarioepoca.com/1395496-el-ina-anticipa-un-nuevo-repunte-del-rio-parana-en-corrientes?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "clase": "prensa",
+   "fecha": "2026-11-18",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes",
+    "Reconquista",
+    "Santa Fe"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "diarioepoca.com",
+     "clase": "prensa",
+     "url": "https://www.diarioepoca.com/1395496-el-ina-anticipa-un-nuevo-repunte-del-rio-parana-en-corrientes?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed"
+    }
+   ],
+   "id": "bcf74486f0",
+   "verificado": false
+  },
+  {
+   "titulo": "Se cayó la sesión especial en Diputados: ¿cuándo podrían tratarse los proyectos?",
+   "url": "https://www.pagina12.com.ar/2026/11/18/se-cayo-la-sesion-especial-en-diputados-cuando-podrian-tratarse-los-proyectos/",
+   "dominio": "pagina12.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-11-18",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "pagina12.com.ar",
+     "clase": "prensa",
+     "url": "https://www.pagina12.com.ar/2026/11/18/se-cayo-la-sesion-especial-en-diputados-cuando-podrian-tratarse-los-proyectos/"
+    }
+   ],
+   "id": "e60d7d1bfa",
+   "verificado": true
+  },
   {
    "titulo": "Marcelo Rossal: “El discurso de la política” sobre el sinhogarismo es adecuado, pero persisten problemas en su aplicación",
    "url": "https://ladiaria.com.uy/politica/articulo/2026/11/marcelo-rossal-el-discurso-de-la-politica-sobre-el-sinhogarismo-es-adecuado-pero-persisten-problemas-en-su-aplicacion/",
@@ -1050,6 +1115,44 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Esto dice la carta de despedida de Justo Zacarías como director de Itaipú",
+   "url": "https://www.abc.com.py/politica/2026/11/18/esto-dice-la-carta-de-despedida-de-justo-zacarias-como-director-de-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Anexo C y tarifa: Paraguay prepara dos negociaciones clave para el futuro de Itaipú",
+   "url": "http://www.lanacion.com.py/negocios/2026/11/18/anexo-c-y-tarifa-paraguay-prepara-dos-negociaciones-clave-para-el-futuro-de-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "LN PM: edición del 18 de noviembre",
+   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/11/18/ln-pm-edicion-del-18-de-noviembre/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Alliana designa a Hugo Zárate como nuevo director general de Itaipú",
+   "url": "http://www.lanacion.com.py/politica/2026/11/18/alliana-designa-a-hugo-zarate-como-nuevo-director-general-de-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "MEF: son USD 888 millones de dinero público comprometidos",
    "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/11/18/mef-son-usd-888-millones-de-dinero-publico-comprometidos/",
    "dominio": "lanacion.com.py",
@@ -1068,12 +1171,86 @@
    ]
   },
   {
+   "titulo": "Hugo Zárate es el nuevo director paraguayo de Itaipú",
+   "url": "https://www.npy.com.py/noticias/nacionales/politica/hugo-zarate-es-el-nuevo-director-paraguayo-de-itaipu",
+   "dominio": "npy.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Agreden a adolescente en Asunción y su madre cuestiona inacción de la Fiscalía",
    "url": "https://www.npy.com.py/noticias/nacionales/sucesos/agreden-a-adolescente-en-asuncion-y-su-madre-cuestiona-inaccion-de-la-fiscalia",
    "dominio": "npy.com.py",
    "fecha": "2026-11-18",
    "lugares": [
     "Asunción"
+   ]
+  },
+  {
+   "titulo": "Escabiose atinge 6 cidades do sul de MS com pelo menos 144 casos",
+   "url": "https://www.campograndenews.com.br/cidades/interior/escabiose-atinge-6-cidades-do-sul-de-ms-com-pelo-menos-144-casos",
+   "dominio": "campograndenews.com.br",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Dourados"
+   ]
+  },
+  {
+   "titulo": "Moradia gratuita e um dia de folga: a oportunidade para voluntários na Argentina",
+   "url": "https://correiodoestado.com.br/extra/2026/11/18/moradia-gratuita-e-um-dia-de-folga-a-oportunidade-para-voluntarios-na-argentina.html",
+   "dominio": "correiodoestado.com.br",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "Condenan al Estado a pagar por la muerte de Matías Chirino en un \"bautismo\" del Ejército",
+   "url": "https://www.diarioepoca.com/1395494-condenan-al-estado-a-pagar-por-la-muerte-de-matias-chirino-en-un-bautismo-del-ejercito?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Corrientes",
+    "Paso de los Libres"
+   ]
+  },
+  {
+   "titulo": "Itaipú: Relevan al director general Zacarías Irún, salpicado también por la crisis de Ueno",
+   "url": "https://www.abc.com.py/economia/2026/11/18/itaipu-cambian-al-director-general-zacarias-irun-por-quien-era-el-director-tecnico-hugo-zarate/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "El documento de Itaipú que prohibía depositar en Ueno Bank: exigía cinco años en el mercado",
+   "url": "https://www.abc.com.py/economia/2026/11/18/el-documento-de-itaipu-que-prohibia-depositar-en-ueno-bank-exigia-cinco-anos-en-el-mercado/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "“Me quedo en el Senado”: Gustavo Leite responde a los rumores sobre Itaipú",
+   "url": "https://www.abc.com.py/politica/2026/11/18/me-quedo-en-el-senado-gustavo-leite-responde-a-los-rumores-sobre-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Posible pérdida de millonarios recursos en Ueno Bank de la Itaipú generarían cambios en la Binacional",
+   "url": "https://www.abc.com.py/politica/2026/11/18/posible-perdida-de-millonarios-recursos-en-ueno-bank-de-la-itaipu-generarian-cambios-en-la-binacional/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -1092,22 +1269,6 @@
    "fecha": "2026-11-18",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Buscan a un adolescente de 13 años que desapareció en el río Uruguay cuando se bañaba con otros jóvenes",
-   "url": "https://www.elobservador.com.uy/buscan-un-adolescente-13-anos-que-desaparecio-el-rio-uruguay-n6064212",
-   "dominio": "elobservador.com.uy",
-   "fecha": "2026-11-17",
-   "lugares": []
-  },
-  {
-   "titulo": "PF inicia demolição de construções irregulares às margens do Rio Paraguai em MS",
-   "url": "https://correiodoestado.com.br/cidades/2026/11/17/pf-inicia-demolicao-de-construcoes-irregulares-as-margens-do-rio-paraguai-em-ms.html",
-   "dominio": "correiodoestado.com.br",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Corumbá"
    ]
   },
   {
@@ -1130,21 +1291,37 @@
    ]
   },
   {
-   "titulo": "Denuncian que un automovilista persiguió a una niña de 12 años en Itaembé Guazú",
-   "url": "https://www.primeraedicion.com.ar/nota/101161203/itaembe-guazu-denuncia-automovilista-persiguio-nina/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
    "titulo": "Un hombre y su sobrino fueron acribillados en una vivienda de un tradicional barrio de Santa Fe",
    "url": "https://www.lanacion.com.ar/seguridad/un-hombre-y-su-sobrino-fueron-acribillados-en-una-vivienda-de-un-tradicional-barrio-de-santa-fe-nid17112026/",
    "dominio": "lanacion.com.ar",
    "fecha": "2026-11-17",
    "lugares": [
     "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Buscan a un adolescente de 13 años que desapareció en el río Uruguay cuando se bañaba con otros jóvenes",
+   "url": "https://www.elobservador.com.uy/buscan-un-adolescente-13-anos-que-desaparecio-el-rio-uruguay-n6064212",
+   "dominio": "elobservador.com.uy",
+   "fecha": "2026-11-17",
+   "lugares": []
+  },
+  {
+   "titulo": "PF inicia demolição de construções irregulares às margens do Rio Paraguai em MS",
+   "url": "https://correiodoestado.com.br/cidades/2026/11/17/pf-inicia-demolicao-de-construcoes-irregulares-as-margens-do-rio-paraguai-em-ms.html",
+   "dominio": "correiodoestado.com.br",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Corumbá"
+   ]
+  },
+  {
+   "titulo": "Denuncian que un automovilista persiguió a una niña de 12 años en Itaembé Guazú",
+   "url": "https://www.primeraedicion.com.ar/nota/101161203/itaembe-guazu-denuncia-automovilista-persiguio-nina/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Posadas"
    ]
   },
   {
@@ -2000,112 +2177,6 @@
    "lugares": [
     "Asunción"
    ]
-  },
-  {
-   "titulo": "Tres niñas heridas tras violento choque en Asunción: denuncian que policías provocaron el accidente",
-   "url": "http://www.lanacion.com.py/pais/2026/11/06/tres-ninas-heridas-tras-violento-choque-en-asuncion-denuncian-que-policias-provocaron-el-accidente/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-06",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Itaipú transfirió USD 381 millones",
-   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/11/06/itaipu-transfirio-usd-381-millones/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-06",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Caso ueno bank: allanan la empresa itti del Grupo Vázquez",
-   "url": "http://www.lanacion.com.py/judiciales/2026/11/05/caso-ueno-bank-allanan-la-empresa-itti-del-grupo-vazquez/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-06",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Ciudad del Este: imputan a adolescente brasileño que ingresó al país con camioneta robada",
-   "url": "http://www.lanacion.com.py/pais/2026/11/05/ciudad-del-este-imputan-a-adolescente-brasileno-que-ingreso-al-pais-con-camioneta-robada/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-05",
-   "lugares": [
-    "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "Itaipú transfirió USD 381 millones al Estado paraguayo hasta octubre por obligaciones del Anexo C",
-   "url": "http://www.lanacion.com.py/negocios/2026/11/05/itaipu-transfirio-usd-381-millones-al-estado-paraguayo-hasta-octubre-por-obligaciones-del-anexo-c/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-05",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Condenaron con 25 años de prisión a un hombre por un homicidio ocurrido en Colonia en octubre de 2025",
-   "url": "https://ladiaria.com.uy/colonia/articulo/2026/11/condenaron-con-25-anos-de-prision-a-un-hombre-por-un-homicidio-ocurrido-en-colonia-en-octubre-de-2025/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-11-05",
-   "lugares": [
-    "Colonia"
-   ]
-  },
-  {
-   "titulo": "Fondos de Itaipú en Ueno Bank: la binacional no responde cuánto quedó congelado tras la intervención",
-   "url": "https://www.abc.com.py/economia/2026/11/05/fondos-de-itaipu-en-ueno-bank-la-binacional-no-responde-cuanto-quedo-congelado-tras-la-intervencion/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-05",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Una fiscal de Comodoro Py pidió investigar si hubo algún delito en el escape de Flavio Bolsonaro",
-   "url": "https://www.lanacion.com.ar/politica/una-fiscal-de-comodoro-py-pidio-investigar-si-hubo-algun-delito-en-el-escape-de-flavio-bolsonaro-nid05112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-05",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Video: Policía reprime con gas pimienta y balines a manifestantes en Asunción",
-   "url": "https://www.abc.com.py/nacionales/2026/11/04/video-policia-reprime-con-gas-pimienta-y-balines-a-manifestantes-en-asuncion/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-05",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "LN PM: edición del 4 de noviembre",
-   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/11/04/ln-pm-edicion-del-4-de-noviembre/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-04",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "\"Robó mi futuro y mi presente\": ahorristas de Ueno Bank reclaman la devolución de su dinero",
-   "url": "https://www.npy.com.py/noticias/nacionales/robo-mi-futuro-y-mi-presente-ahorristas-de-ueno-bank-reclaman-la-devolucion-de-su-dinero",
-   "dominio": "npy.com.py",
-   "fecha": "2026-11-04",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Lazo sobre investigación de la muerte de tres buzos en Fray Bentos: “No podemos dar información a la ligera en un caso tan serio”",
-   "url": "https://ladiaria.com.uy/politica/articulo/2026/11/lazo-sobre-investigacion-de-la-muerte-de-tres-buzos-en-fray-bentos-no-podemos-dar-informacion-a-la-ligera-en-un-caso-tan-serio/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-11-04",
-   "lugares": []
   }
  ]
 }
