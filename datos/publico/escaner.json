@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-18T00:55:00Z",
+ "obtenido": "2026-11-18T11:30:30Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 47,
+   "items": 45,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -55,14 +55,14 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 94,
+   "items": 97,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,8 +166,8 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 357,
-   "candidatos": 1,
+   "items": 327,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -177,14 +177,14 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 58
+   "fallos_seguidos": 59
   },
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 4,
+   "candidatos": 3,
    "fallos_seguidos": 0
   },
   {
@@ -198,11 +198,10 @@
   {
    "dominio": "campograndenews.com.br",
    "url": "https://www.campograndenews.com.br/rss",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 20,
    "candidatos": 0,
-   "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 2
+   "fallos_seguidos": 0
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -256,7 +255,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 24,
+   "items": 25,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -1051,9 +1050,9 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Itaipú violó su regla de cinco años de antigüedad para meter plata en Ueno Bank, según CNN",
-   "url": "https://www.abc.com.py/internacionales/2026/11/17/itaipu-violo-su-regla-de-cinco-anos-de-antiguedad-para-meter-plata-en-ueno-bank-segun-cnn/",
-   "dominio": "abc.com.py",
+   "titulo": "MEF: son USD 888 millones de dinero público comprometidos",
+   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/11/18/mef-son-usd-888-millones-de-dinero-publico-comprometidos/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-11-18",
    "lugares": [
     "Itaipú"
@@ -1069,22 +1068,30 @@
    ]
   },
   {
-   "titulo": "Itaipú lado brasileño cuestionó depósitos de fondos en Ueno Bank, según Nicanor",
-   "url": "https://www.abc.com.py/economia/2026/11/17/itaipu-lado-brasileno-cuestiono-depositos-de-fondos-en-ueno-bank-segun-nicanor/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-17",
+   "titulo": "Agreden a adolescente en Asunción y su madre cuestiona inacción de la Fiscalía",
+   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/agreden-a-adolescente-en-asuncion-y-su-madre-cuestiona-inaccion-de-la-fiscalia",
+   "dominio": "npy.com.py",
+   "fecha": "2026-11-18",
    "lugares": [
-    "Itaipú"
+    "Asunción"
    ]
   },
   {
-   "titulo": "Altura de los ríos en la Argentina, según Prefectura: esta es la situación en el Paraná hoy, martes 17 de noviembre",
-   "url": "https://www.lanacion.com.ar/sociedad/altura-de-los-rios-en-la-argentina-segun-prefectura-esta-es-la-situacion-en-el-parana-hoy-martes-17-nid17112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-17",
+   "titulo": "Mario Maidana reconoció el femicidio de Natalia Castro y aceptó prisión perpetua",
+   "url": "https://www.primeraedicion.com.ar/nota/101161263/femicidio-natalia-castro-maidana-prision-perpetua-posadas/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-18",
    "lugares": [
-    "San Lorenzo",
-    "Santa Fe"
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Itaipú violó su regla de cinco años de antigüedad para meter plata en Ueno Bank, según CNN",
+   "url": "https://www.abc.com.py/internacionales/2026/11/17/itaipu-violo-su-regla-de-cinco-anos-de-antiguedad-para-meter-plata-en-ueno-bank-segun-cnn/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -1093,15 +1100,6 @@
    "dominio": "elobservador.com.uy",
    "fecha": "2026-11-17",
    "lugares": []
-  },
-  {
-   "titulo": "Argentina creará la cárcel “el Infierno” para narcos y el centro penitenciario “el rinconcito del Edén” para quienes lavan dinero",
-   "url": "https://ladiaria.com.uy/humor/articulo/2026/11/argentina-creara-la-carcel-el-infierno-para-narcos-y-el-centro-penitenciario-el-rinconcito-del-eden-para-quienes-lavan-dinero/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Santa Fe"
-   ]
   },
   {
    "titulo": "PF inicia demolição de construções irregulares às margens do Rio Paraguai em MS",
@@ -1141,15 +1139,6 @@
    ]
   },
   {
-   "titulo": "Choque triple en Quaranta y Las Heras: uno de los conductores escapó",
-   "url": "https://www.primeraedicion.com.ar/nota/101161167/posadas-choque-tres-vehiculos-quaranta-las-heras-conductor-escapo/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
    "titulo": "Un hombre y su sobrino fueron acribillados en una vivienda de un tradicional barrio de Santa Fe",
    "url": "https://www.lanacion.com.ar/seguridad/un-hombre-y-su-sobrino-fueron-acribillados-en-una-vivienda-de-un-tradicional-barrio-de-santa-fe-nid17112026/",
    "dominio": "lanacion.com.ar",
@@ -1159,12 +1148,49 @@
    ]
   },
   {
+   "titulo": "Itaipú lado brasileño cuestionó depósitos de fondos en Ueno Bank, según Nicanor",
+   "url": "https://www.abc.com.py/economia/2026/11/17/itaipu-lado-brasileno-cuestiono-depositos-de-fondos-en-ueno-bank-segun-nicanor/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Tras caída de Peña, Diputados vuelve a crear intendencias pro-Itaipú",
    "url": "https://www.abc.com.py/politica/2026/11/17/tras-caida-de-pena-diputados-vuelve-a-crear-intendencias-pro-itaipu/",
    "dominio": "abc.com.py",
    "fecha": "2026-11-17",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Altura de los ríos en la Argentina, según Prefectura: esta es la situación en el Paraná hoy, martes 17 de noviembre",
+   "url": "https://www.lanacion.com.ar/sociedad/altura-de-los-rios-en-la-argentina-segun-prefectura-esta-es-la-situacion-en-el-parana-hoy-martes-17-nid17112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "San Lorenzo",
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Argentina creará la cárcel “el Infierno” para narcos y el centro penitenciario “el rinconcito del Edén” para quienes lavan dinero",
+   "url": "https://ladiaria.com.uy/humor/articulo/2026/11/argentina-creara-la-carcel-el-infierno-para-narcos-y-el-centro-penitenciario-el-rinconcito-del-eden-para-quienes-lavan-dinero/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Choque triple en Quaranta y Las Heras: uno de los conductores escapó",
+   "url": "https://www.primeraedicion.com.ar/nota/101161167/posadas-choque-tres-vehiculos-quaranta-las-heras-conductor-escapo/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Posadas"
    ]
   },
   {
@@ -2080,35 +2106,6 @@
    "dominio": "ladiaria.com.uy",
    "fecha": "2026-11-04",
    "lugares": []
-  },
-  {
-   "titulo": "Itaipú transfirió US$ 18 millones menos al Estado que en 2025: caen pagos por cesión de energía",
-   "url": "https://www.abc.com.py/economia/2026/11/04/itaipu-transfirio-us-18-millones-menos-al-estado-que-en-2025-caen-pagos-por-cesion-de-energia/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-04",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Remezowski asume en Encarnación con eje en barrios, Yacyretá e integración",
-   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/04/remezowski-asume-en-encarnacion-con-eje-en-barrios-yacyreta-e-integracion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-04",
-   "lugares": [
-    "Asunción",
-    "Encarnación",
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Procesan por violencia familiar a un hombre tras presunta agresión y amenazas a su pareja",
-   "url": "http://www.lanacion.com.py/pais/2026/11/03/procesan-por-violencia-familiar-a-un-hombre-tras-presunta-agresion-y-amenazas-a-su-pareja/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-04",
-   "lugares": [
-    "Ciudad del Este"
-   ]
   }
  ]
 }
