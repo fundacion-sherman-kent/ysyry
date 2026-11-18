@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-11-18T01:01:53Z",
+ "obtenido": "2026-11-18T11:57:28Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 4
+   "avisos_en_el_corredor": 3
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 3
   },
   {
    "nombre": "GDACS",
@@ -23,26 +23,6 @@
   }
  ],
  "avisos": [
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-17 09:00",
-   "fin": "2026-11-17 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres",
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28720"
-  },
   {
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
@@ -67,22 +47,6 @@
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
    "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-19 00:00",
-   "fin": "2026-11-19 23:59",
-   "lugares": [
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28722"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
    "severidad": "Perigo",
    "color": "#F96602",
    "inicio": "2026-11-18 00:00",
@@ -96,9 +60,25 @@
    "id": "inmet-28723"
   },
   {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-19 00:00",
+   "fin": "2026-11-19 23:59",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28722"
+  },
+  {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la probabilidad de caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la alta probabilidad de caída de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -115,13 +95,41 @@
    "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-11-17 21:39",
+   "inicio": "2026-11-18 08:09",
    "fin": "",
    "lugares": [
-    "BUENOS AIRES: Berazategui - Berisso - Ensenada - Florencio Varela - La Plata - Lomas de Zamora - Magdalena - Quilmes.; ; RIO DE LA PLATA: Rio de la Plata Interior."
+    "CORRIENTES: Bella Vista - Concepcion - Curuzu Cuatia - Esquina - Goya - Ituzaingo - Lavalle - Mburucuya - Mercedes - Monte Caseros - Paso de los Libres - Saladas - San Martin - San Miguel - San Roque - Sauce."
    ],
    "riesgos": "",
-   "id": "smn-4230"
+   "id": "smn-4250"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-18 08:03",
+   "fin": "",
+   "lugares": [
+    "FORMOSA: Formosa - Laishi - Pirane.; ; CHACO: Gral Donovan - 1 de Mayo - Bermejo - Ldor Gral S. Martin - Sargento Cabral.; ; CORRIENTES: San Cosme."
+   ],
+   "riesgos": "",
+   "id": "smn-4249"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-18 07:51",
+   "fin": "",
+   "lugares": [
+    "CHACO: San Fernando.; ; CORRIENTES: Beron de Astrada - Concepcion - Corrientes - Empedrado - Gral Paz - Itati - Mburucuya - Saladas - San Cosme - San Luis del Palmar - San Miguel."
+   ],
+   "riesgos": "",
+   "id": "smn-4248"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
