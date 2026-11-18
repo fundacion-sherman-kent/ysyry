@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-17T22:16:28Z",
+ "obtenido": "2026-11-18T00:55:00Z",
  "dias": 14,
  "fuentes": [
   {
@@ -55,15 +55,15 @@
    "url": "https://www.perfil.com/feed",
    "ok": true,
    "items": 50,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
-   "candidatos": 1,
+   "items": 94,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 340,
+   "items": 357,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 57
+   "fallos_seguidos": 58
   },
   {
    "dominio": "senad.gov.py",
@@ -202,7 +202,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 2
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -233,7 +233,7 @@
    "url": "https://www.misionesonline.net/feed/",
    "ok": true,
    "items": 10,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -256,7 +256,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 26,
+   "items": 24,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -442,6 +442,35 @@
     }
    ],
    "id": "f68e58b916",
+   "verificado": true
+  },
+  {
+   "titulo": "Inundaciones en el Litoral: el mapa de los lugares afectados por las crecidas del río Paraná",
+   "url": "https://perfil.com/clima/inundaciones-en-el-litoral-el-mapa-de-los-lugares-afectados-por-las-crecidas-del-rio-parana-awKBQ8k0khm4",
+   "dominio": "perfil.com",
+   "clase": "prensa",
+   "fecha": "2026-11-17",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "perfil.com",
+     "clase": "prensa",
+     "url": "https://perfil.com/clima/inundaciones-en-el-litoral-el-mapa-de-los-lugares-afectados-por-las-crecidas-del-rio-parana-awKBQ8k0khm4"
+    }
+   ],
+   "id": "8d44b7f322",
    "verificado": true
   },
   {
@@ -1022,17 +1051,26 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Itaipú lado brasileño cuestionó depósitos de fondos en Ueno Bank, según Nicanor",
-   "url": "https://www.abc.com.py/economia/2026/11/17/itaipu-lado-brasileno-cuestiono-depositos-de-fondos-en-ueno-bank-segun-nicanor/",
+   "titulo": "Itaipú violó su regla de cinco años de antigüedad para meter plata en Ueno Bank, según CNN",
+   "url": "https://www.abc.com.py/internacionales/2026/11/17/itaipu-violo-su-regla-de-cinco-anos-de-antiguedad-para-meter-plata-en-ueno-bank-segun-cnn/",
    "dominio": "abc.com.py",
-   "fecha": "2026-11-17",
+   "fecha": "2026-11-18",
    "lugares": [
     "Itaipú"
    ]
   },
   {
-   "titulo": "Tras caída de Peña, Diputados vuelve a crear intendencias pro-Itaipú",
-   "url": "https://www.abc.com.py/politica/2026/11/17/tras-caida-de-pena-diputados-vuelve-a-crear-intendencias-pro-itaipu/",
+   "titulo": "Investigación periodística revela dudas sobre autorización de Itaipú a Ueno Bank",
+   "url": "http://www.lanacion.com.py/politica/2026/11/17/investigacion-periodistica-revela-dudas-sobre-autorizacion-de-itaipu-a-ueno-bank/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Itaipú lado brasileño cuestionó depósitos de fondos en Ueno Bank, según Nicanor",
+   "url": "https://www.abc.com.py/economia/2026/11/17/itaipu-lado-brasileno-cuestiono-depositos-de-fondos-en-ueno-bank-segun-nicanor/",
    "dominio": "abc.com.py",
    "fecha": "2026-11-17",
    "lugares": [
@@ -1066,6 +1104,15 @@
    ]
   },
   {
+   "titulo": "PF inicia demolição de construções irregulares às margens do Rio Paraguai em MS",
+   "url": "https://correiodoestado.com.br/cidades/2026/11/17/pf-inicia-demolicao-de-construcoes-irregulares-as-margens-do-rio-paraguai-em-ms.html",
+   "dominio": "correiodoestado.com.br",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Corumbá"
+   ]
+  },
+  {
    "titulo": "Como cinco operações de alimentação atendem às rotinas no Itaipu Parquetec",
    "url": "https://g1.globo.com/pr/oeste-sudoeste/especial-publicitario/apetit/noticia/2026/11/17/como-cinco-operacoes-de-alimentacao-atendem-as-rotinas-no-itaipu-parquetec.ghtml",
    "dominio": "g1.globo.com",
@@ -1085,12 +1132,12 @@
    ]
   },
   {
-   "titulo": "Puerto Iguazú | Rompieron una camioneta de Energía de Misiones y robaron herramientas: detuvieron a dos sospechosos",
-   "url": "https://misionesonline.net/2026/11/17/puerto-iguazu-rompieron-una-camioneta-de-energia-de-misiones/",
-   "dominio": "misionesonline.net",
+   "titulo": "Denuncian que un automovilista persiguió a una niña de 12 años en Itaembé Guazú",
+   "url": "https://www.primeraedicion.com.ar/nota/101161203/itaembe-guazu-denuncia-automovilista-persiguio-nina/",
+   "dominio": "primeraedicion.com.ar",
    "fecha": "2026-11-17",
    "lugares": [
-    "Puerto Iguazú"
+    "Posadas"
    ]
   },
   {
@@ -1103,13 +1150,6 @@
    ]
   },
   {
-   "titulo": "San Roque González de Santa Cruz: el santo que sigue inspirando a la juventud",
-   "url": "https://www.primeraedicion.com.ar/nota/101160967/san-roque-gonzalez-de-santa-cruz-el-santo-que-sigue-inspirando-a-la-juventud/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-17",
-   "lugares": []
-  },
-  {
    "titulo": "Un hombre y su sobrino fueron acribillados en una vivienda de un tradicional barrio de Santa Fe",
    "url": "https://www.lanacion.com.ar/seguridad/un-hombre-y-su-sobrino-fueron-acribillados-en-una-vivienda-de-un-tradicional-barrio-de-santa-fe-nid17112026/",
    "dominio": "lanacion.com.ar",
@@ -1117,6 +1157,31 @@
    "lugares": [
     "Santa Fe"
    ]
+  },
+  {
+   "titulo": "Tras caída de Peña, Diputados vuelve a crear intendencias pro-Itaipú",
+   "url": "https://www.abc.com.py/politica/2026/11/17/tras-caida-de-pena-diputados-vuelve-a-crear-intendencias-pro-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Puerto Iguazú | Rompieron una camioneta de Energía de Misiones y robaron herramientas: detuvieron a dos sospechosos",
+   "url": "https://misionesonline.net/2026/11/17/puerto-iguazu-rompieron-una-camioneta-de-energia-de-misiones/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-17",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "San Roque González de Santa Cruz: el santo que sigue inspirando a la juventud",
+   "url": "https://www.primeraedicion.com.ar/nota/101160967/san-roque-gonzalez-de-santa-cruz-el-santo-que-sigue-inspirando-a-la-juventud/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-17",
+   "lugares": []
   },
   {
    "titulo": "Avião com compartimento secreto era usado para transportar emagrecedores e eletrônicos do Paraná a São Paulo",
@@ -1146,21 +1211,21 @@
    ]
   },
   {
-   "titulo": "Ypytá: con custodia policial realizan constitución judicial a la  Universidad San Sebastián y otros",
-   "url": "http://www.lanacion.com.py/judiciales/2026/11/16/ypyta-con-custodia-policial-realizan-constitucion-judicial-a-la-universidad-san-sebastian-y-otros/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-16",
-   "lugares": [
-    "Pedro Juan Caballero"
-   ]
-  },
-  {
    "titulo": "Así es la cárcel “El infierno”, que alojará a los narcos y sicarios más peligrosos del país",
    "url": "https://www.lanacion.com.ar/seguridad/asi-es-la-carcel-el-infierno-que-alojara-a-los-narcos-y-sicarios-mas-peligrosos-del-pais-nid16112026/",
    "dominio": "lanacion.com.ar",
    "fecha": "2026-11-16",
    "lugares": [
     "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Ypytá: con custodia policial realizan constitución judicial a la  Universidad San Sebastián y otros",
+   "url": "http://www.lanacion.com.py/judiciales/2026/11/16/ypyta-con-custodia-policial-realizan-constitucion-judicial-a-la-universidad-san-sebastian-y-otros/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-16",
+   "lugares": [
+    "Pedro Juan Caballero"
    ]
   },
   {
@@ -2043,40 +2108,6 @@
    "fecha": "2026-11-04",
    "lugares": [
     "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "Fiscales allanan la residencia del CEO de ueno bank en Asunción",
-   "url": "http://www.lanacion.com.py/pais/2026/11/03/fiscales-allanan-la-residencia-del-ceo-de-ueno-bank-en-asuncion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-04",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Entradas para Argentina vs Uruguay: cuándo salen a la venta, precios y por dónde comprar",
-   "url": "https://perfil.com/deportes/entradas-argentina-vs-uruguay-en-la-bombonera-precios-y-como-comprar-ajjyM4z2geeQ",
-   "dominio": "perfil.com",
-   "fecha": "2026-11-04",
-   "lugares": []
-  },
-  {
-   "titulo": "Santa Fe: investigan un posible femicidio seguido de suicidio tras la muerte de una docente",
-   "url": "https://www.lanacion.com.ar/sociedad/santa-fe-investigan-un-posible-femicidio-seguido-de-suicidio-tras-la-muerte-de-una-docente-nid04112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-04",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "LN PM: edición del 3 de noviembre",
-   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/11/03/ln-pm-edicion-del-3-de-noviembre/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-03",
-   "lugares": [
-    "Yacyretá"
    ]
   }
  ]
