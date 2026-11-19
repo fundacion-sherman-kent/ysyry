@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-19T02:30:13Z",
+ "obtenido": "2026-11-19T11:29:44Z",
  "dias": 14,
  "fuentes": [
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 375,
+   "items": 334,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 61
+   "fallos_seguidos": 62
   },
   {
    "dominio": "senad.gov.py",
@@ -200,7 +200,7 @@
    "url": "https://www.campograndenews.com.br/rss",
    "ok": true,
    "items": 20,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -248,14 +248,14 @@
    "url": "https://www.diarioepoca.com/rss",
    "ok": true,
    "items": 20,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 31,
+   "items": 30,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -286,6 +286,40 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Comboio é interceptado na fronteira com R$ 600 mil em contrabando",
+   "url": "https://www.campograndenews.com.br/cidades/interior/comboio-e-interceptado-na-fronteira-com-r-600-mil-em-contrabando",
+   "dominio": "campograndenews.com.br",
+   "clase": "prensa",
+   "fecha": "2026-11-19",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Ponta Porã"
+   ],
+   "ubicacion": [
+    -22.54,
+    -55.73
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "campograndenews.com.br",
+     "clase": "prensa",
+     "url": "https://www.campograndenews.com.br/cidades/interior/comboio-e-interceptado-na-fronteira-com-r-600-mil-em-contrabando"
+    }
+   ],
+   "id": "59d44e76e5",
+   "verificado": true
+  },
   {
    "titulo": "En la costa brasileña incautan 73 kilos de drogas en capullo enviados desde Paraguay",
    "url": "http://www.lanacion.com.py/pais/2026/11/18/en-la-costa-brasilena-incautan-73-kilos-de-drogas-en-capullo-enviados-desde-paraguay/",
@@ -1138,12 +1172,38 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Rapaz achado decapitado na MS-386 tinha passagens por furto e tráfico",
-   "url": "https://www.campograndenews.com.br/cidades/interior/rapaz-achado-decapitado-na-ms-386-tinha-passagens-por-furto-e-trafico",
-   "dominio": "campograndenews.com.br",
+   "titulo": "Itaipú: ministros consejeros cobrarán desde ahora de la binacional y no de sus cargos, incluyendo el canciller",
+   "url": "https://www.abc.com.py/economia/2026/11/19/itaipu-ministros-consejeros-cobraran-desde-ahora-de-la-binacional-y-no-de-sus-cargos-incluyendo-el-canciller/",
+   "dominio": "abc.com.py",
    "fecha": "2026-11-19",
    "lugares": [
-    "Ponta Porã"
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Nombran a Hugo Zárate como nuevo titular de Itaipú y renuevan Consejo",
+   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/19/nombran-a-hugo-zarate-como-nuevo-titular-de-itaipu-y-renuevan-consejo/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Los puertos náuticos de Uruguay están listos para recibir a los argentinos este verano",
+   "url": "https://perfil.com/turismo/los-puertos-nauticos-de-uruguay-estan-listos-para-recibir-a-los-argentinos-este-verano-aEIBs6m94Ekn",
+   "dominio": "perfil.com",
+   "fecha": "2026-11-19",
+   "lugares": []
+  },
+  {
+   "titulo": "Encapuchados armados raptan, roban y maniatan a dos policías en Asunción",
+   "url": "https://www.pontaporainforma.com.br/encapuchados-armados-raptan-roban-y-m/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Asunción"
    ]
   },
   {
@@ -1156,12 +1216,28 @@
    ]
   },
   {
-   "titulo": "Nuevo director de Itaipú firmó resolución que habilitó a Ueno Bank, pero dice que no sabía de los depósitos",
-   "url": "https://www.abc.com.py/economia/2026/11/18/nuevo-director-de-itaipu-firmo-resolucion-que-habilito-a-ueno-bank-pero-dice-que-no-sabia-de-los-depositos/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-18",
+   "titulo": "Quieren echar de \nun barrio a dos \nhermanos ladrones",
+   "url": "https://www.diarioepoca.com/1395540-quieren-echar-de-un-barrio-a-dos-hermanos-ladrones?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-19",
+   "lugares": []
+  },
+  {
+   "titulo": "Recuperan moto \ncerca de la ribera",
+   "url": "https://www.diarioepoca.com/1395541-recuperan-moto-cerca-de-la-ribera?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-19",
    "lugares": [
-    "Itaipú"
+    "Corrientes"
+   ]
+  },
+  {
+   "titulo": "Rapaz achado decapitado na MS-386 tinha passagens por furto e tráfico",
+   "url": "https://www.campograndenews.com.br/cidades/interior/rapaz-achado-decapitado-na-ms-386-tinha-passagens-por-furto-e-trafico",
+   "dominio": "campograndenews.com.br",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Ponta Porã"
    ]
   },
   {
@@ -1194,15 +1270,6 @@
    ]
   },
   {
-   "titulo": "MEF: son USD 888 millones de dinero público comprometidos",
-   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/11/18/mef-son-usd-888-millones-de-dinero-publico-comprometidos/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
    "titulo": "Hugo Zárate es el nuevo director paraguayo de Itaipú",
    "url": "https://www.npy.com.py/noticias/nacionales/politica/hugo-zarate-es-el-nuevo-director-paraguayo-de-itaipu",
    "dominio": "npy.com.py",
@@ -1210,24 +1277,6 @@
    "lugares": [
     "Zárate",
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Agreden a adolescente en Asunción y su madre cuestiona inacción de la Fiscalía",
-   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/agreden-a-adolescente-en-asuncion-y-su-madre-cuestiona-inaccion-de-la-fiscalia",
-   "dominio": "npy.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Corpo sem roupas é encontrado às margens da MS-386",
-   "url": "https://www.campograndenews.com.br/cidades/interior/corpo-sem-roupas-e-encontrado-as-margens-da-ms-386",
-   "dominio": "campograndenews.com.br",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Ponta Porã"
    ]
   },
   {
@@ -1240,19 +1289,21 @@
    ]
   },
   {
-   "titulo": "El Niño | Reabrieron el paso fronterizo entre Montecarlo y Ape Aime- Paraguay tras el descenso del río Paraná",
-   "url": "https://misionesonline.net/2026/11/18/reabrieron-el-paso-fronterizo-entre-montecarlo-y-ape-aime-paraguay/",
-   "dominio": "misionesonline.net",
-   "fecha": "2026-11-18",
-   "lugares": []
-  },
-  {
    "titulo": "Juicio por Loan: en un careo, una de las acusadas intentó que un policía la reconociera como informante",
    "url": "https://www.clarin.com/policiales/juicio-loan-careo-acusadas-intento-policia-reconociera-informante_0_emm59QmJn1.html",
    "dominio": "clarin.com",
    "fecha": "2026-11-18",
    "lugares": [
     "Corrientes"
+   ]
+  },
+  {
+   "titulo": "Nuevo director de Itaipú firmó resolución que habilitó a Ueno Bank, pero dice que no sabía de los depósitos",
+   "url": "https://www.abc.com.py/economia/2026/11/18/nuevo-director-de-itaipu-firmo-resolucion-que-habilito-a-ueno-bank-pero-dice-que-no-sabia-de-los-depositos/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -1281,6 +1332,40 @@
    "lugares": [
     "Itaipú"
    ]
+  },
+  {
+   "titulo": "MEF: son USD 888 millones de dinero público comprometidos",
+   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/11/18/mef-son-usd-888-millones-de-dinero-publico-comprometidos/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Agreden a adolescente en Asunción y su madre cuestiona inacción de la Fiscalía",
+   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/agreden-a-adolescente-en-asuncion-y-su-madre-cuestiona-inaccion-de-la-fiscalia",
+   "dominio": "npy.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Corpo sem roupas é encontrado às margens da MS-386",
+   "url": "https://www.campograndenews.com.br/cidades/interior/corpo-sem-roupas-e-encontrado-as-margens-da-ms-386",
+   "dominio": "campograndenews.com.br",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Ponta Porã"
+   ]
+  },
+  {
+   "titulo": "El Niño | Reabrieron el paso fronterizo entre Montecarlo y Ape Aime- Paraguay tras el descenso del río Paraná",
+   "url": "https://misionesonline.net/2026/11/18/reabrieron-el-paso-fronterizo-entre-montecarlo-y-ape-aime-paraguay/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-18",
+   "lugares": []
   },
   {
    "titulo": "“Me quedo en el Senado”: Gustavo Leite responde a los rumores sobre Itaipú",
@@ -2143,60 +2228,6 @@
    "fecha": "2026-11-08",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "“Puerto Madero” de Asunción: Ueno Bank tomó el control de contrato de ANNP y ahora las obras están paradas",
-   "url": "https://www.abc.com.py/economia/2026/11/08/puerto-madero-de-asuncion-ueno-bank-tomo-el-control-de-contrato-de-annp-y-ahora-las-obras-estan-paradas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-08",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Gastos sociales de Itaipú: 43% de la tarifa vs. sobrecosto para ANDE",
-   "url": "https://www.abc.com.py/edicion-impresa/suplementos/economico/2026/11/08/gastos-sociales-de-itaipu-43-de-la-tarifa-vs-sobrecosto-para-ande/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-08",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Itaipú dice tener unos 183 millones de dólares en Ueno bank",
-   "url": "https://www.abc.com.py/internacionales/2026/11/07/itaipu-dice-tener-unos-183-millones-de-dolares-en-ueno-bank/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-08",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "El hombre vestido de blanco llegó al Río de la Plata",
-   "url": "https://www.infobae.com/opinion/2026/11/08/el-hombre-vestido-de-blanco-llego-al-rio-de-la-plata/",
-   "dominio": "infobae.com",
-   "fecha": "2026-11-08",
-   "lugares": []
-  },
-  {
-   "titulo": "Policía busca a cinco personas desaparecidas en Asunción, Central y Caaguazú",
-   "url": "https://www.abc.com.py/policiales/2026/11/07/policia-busca-a-cinco-personas-desaparecidas-en-asuncion-central-y-caaguazu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-07",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Festival Latinoamericano de Cine 3 Margens: CDE impulsa la creación de su comisión fílmica",
-   "url": "http://www.lanacion.com.py/espectaculo/2026/11/07/festival-latinoamericano-de-cine-3-margens-cde-impulsa-la-creacion-de-su-comision-filmica/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-07",
-   "lugares": [
-    "Ciudad del Este",
-    "Foz do Iguaçu",
-    "Puerto Iguazú"
    ]
   }
  ]
