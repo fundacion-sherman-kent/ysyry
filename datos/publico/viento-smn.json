@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-19T02:27:45Z",
+ "obtenido": "2026-11-19T11:25:44Z",
  "fuente": {
   "nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente",
   "url": "https://www.smn.gob.ar/",
@@ -8,11 +8,11 @@
  "estaciones": [
   {
    "nombre": "La Plata",
-   "fecha": "18-noviembre-2026",
-   "hora": "22:00",
-   "direccion": "Oeste",
-   "kmh": 5,
-   "estado": "Despejado"
+   "fecha": "19-noviembre-2026",
+   "hora": "08:00",
+   "direccion": "Sudoeste",
+   "kmh": 9,
+   "estado": "Parcialmente nublado con neblina"
   },
   {
    "nombre": "Punta Indio B.A.",
@@ -24,27 +24,27 @@
   },
   {
    "nombre": "San Fernando",
-   "fecha": "18-noviembre-2026",
-   "hora": "23:00",
-   "direccion": "Noroeste",
-   "kmh": 7,
-   "estado": "Despejado"
+   "fecha": "19-noviembre-2026",
+   "hora": "08:00",
+   "direccion": "Oeste",
+   "kmh": 9,
+   "estado": "Algo nublado"
   },
   {
    "nombre": "Aeroparque Buenos Aires",
-   "fecha": "18-noviembre-2026",
-   "hora": "23:00",
-   "direccion": "Oeste",
-   "kmh": 7,
-   "estado": "Despejado"
+   "fecha": "19-noviembre-2026",
+   "hora": "08:00",
+   "direccion": "Direcciones Variables",
+   "kmh": 3,
+   "estado": "Parcialmente nublado"
   },
   {
    "nombre": "Buenos Aires",
-   "fecha": "18-noviembre-2026",
-   "hora": "23:00",
-   "direccion": "Calma",
-   "kmh": 0,
-   "estado": "Despejado"
+   "fecha": "19-noviembre-2026",
+   "hora": "08:00",
+   "direccion": "Oeste",
+   "kmh": 3,
+   "estado": "Algo nublado"
   }
  ]
 }
