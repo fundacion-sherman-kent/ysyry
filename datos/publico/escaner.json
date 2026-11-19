@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-18T20:25:06Z",
+ "obtenido": "2026-11-19T02:30:13Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 48,
+   "items": 45,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -151,7 +151,7 @@
    "url": "https://www.pagina12.com.ar/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 25,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 354,
+   "items": 375,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 60
+   "fallos_seguidos": 61
   },
   {
    "dominio": "senad.gov.py",
@@ -208,7 +208,7 @@
    "url": "https://www.correiodoestado.com.br/rss",
    "ok": true,
    "items": 30,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -255,7 +255,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 29,
+   "items": 31,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -286,6 +286,38 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "En la costa brasileña incautan 73 kilos de drogas en capullo enviados desde Paraguay",
+   "url": "http://www.lanacion.com.py/pais/2026/11/18/en-la-costa-brasilena-incautan-73-kilos-de-drogas-en-capullo-enviados-desde-paraguay/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-18",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": {
+    "valor": 73.0,
+    "unidad": "kilos"
+   },
+   "puntaje": 6,
+   "rio": true,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/11/18/en-la-costa-brasilena-incautan-73-kilos-de-drogas-en-capullo-enviados-desde-paraguay/"
+    }
+   ],
+   "id": "a5cc75c07f",
+   "verificado": true
+  },
   {
    "titulo": "El INA anticipa un nuevo repunte del río Paraná en Corrientes",
    "url": "https://www.diarioepoca.com/1395496-el-ina-anticipa-un-nuevo-repunte-del-rio-parana-en-corrientes?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
@@ -323,6 +355,40 @@
    "verificado": false
   },
   {
+   "titulo": "PF prende seis por contrabando e apreende R$ 600 mil em Ponta Porã",
+   "url": "https://correiodoestado.com.br/cidades/2026/11/18/pf-prende-seis-por-contrabando-e-apreende-r-600-mil-em-ponta-pora.html",
+   "dominio": "correiodoestado.com.br",
+   "clase": "prensa",
+   "fecha": "2026-11-18",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Ponta Porã"
+   ],
+   "ubicacion": [
+    -22.54,
+    -55.73
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "correiodoestado.com.br",
+     "clase": "prensa",
+     "url": "https://correiodoestado.com.br/cidades/2026/11/18/pf-prende-seis-por-contrabando-e-apreende-r-600-mil-em-ponta-pora.html"
+    }
+   ],
+   "id": "a35691540e",
+   "verificado": true
+  },
+  {
    "titulo": "Se cayó la sesión especial en Diputados: ¿cuándo podrían tratarse los proyectos?",
    "url": "https://www.pagina12.com.ar/2026/11/18/se-cayo-la-sesion-especial-en-diputados-cuando-podrian-tratarse-los-proyectos/",
    "dominio": "pagina12.com.ar",
@@ -350,6 +416,35 @@
    ],
    "id": "e60d7d1bfa",
    "verificado": true
+  },
+  {
+   "titulo": "Prefectura rescató a dos perros atrapados por la inundación",
+   "url": "https://www.diarioepoca.com/1395519-prefectura-rescato-a-dos-perros-atrapados-por-la-inundacion?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "clase": "prensa",
+   "fecha": "2026-11-18",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "diarioepoca.com",
+     "clase": "prensa",
+     "url": "https://www.diarioepoca.com/1395519-prefectura-rescato-a-dos-perros-atrapados-por-la-inundacion?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed"
+    }
+   ],
+   "id": "380562d5f7",
+   "verificado": false
   },
   {
    "titulo": "Marcelo Rossal: “El discurso de la política” sobre el sinhogarismo es adecuado, pero persisten problemas en su aplicación",
@@ -1039,84 +1134,30 @@
    ],
    "id": "f25f7c48d3",
    "verificado": true
-  },
-  {
-   "titulo": "PARAGUAY Y BRASIL INICIAN NUEVA OFENSIVA CONTRA LA PRODUCCIÓN DE MARIHUANA EN CANINDEYÚ",
-   "url": "https://senad.gov.py/paraguay-y-brasil-inician-nueva-ofensiva-contra-la-produccion-de-marihuana-en-canindeyu/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-11-04",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ]
-   ],
-   "lugares": [
-    "Canindeyú"
-   ],
-   "ubicacion": [
-    -24.2,
-    -55.3
-   ],
-   "zona": "z4",
-   "cantidad": {
-    "valor": 48.0,
-    "unidad": "toneladas"
-   },
-   "puntaje": 7,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/paraguay-y-brasil-inician-nueva-ofensiva-contra-la-produccion-de-marihuana-en-canindeyu/"
-    }
-   ],
-   "id": "e8b6a42439",
-   "verificado": true
-  },
-  {
-   "titulo": "SENAD DETECTA CENTRO DE ACOPIO DE MARIHUANA EN MARACANÁ",
-   "url": "https://senad.gov.py/senad-detecta-centro-de-acopio-de-marihuana-en-maracana/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-11-04",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ]
-   ],
-   "lugares": [
-    "Salto del Guairá"
-   ],
-   "ubicacion": [
-    -24.06,
-    -54.34
-   ],
-   "zona": "z4",
-   "cantidad": {
-    "valor": 1668.0,
-    "unidad": "kilos"
-   },
-   "puntaje": 7,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/senad-detecta-centro-de-acopio-de-marihuana-en-maracana/"
-    }
-   ],
-   "id": "9cf2479803",
-   "verificado": true
   }
  ],
  "sin_tipo": [
   {
-   "titulo": "Esto dice la carta de despedida de Justo Zacarías como director de Itaipú",
-   "url": "https://www.abc.com.py/politica/2026/11/18/esto-dice-la-carta-de-despedida-de-justo-zacarias-como-director-de-itaipu/",
+   "titulo": "Rapaz achado decapitado na MS-386 tinha passagens por furto e tráfico",
+   "url": "https://www.campograndenews.com.br/cidades/interior/rapaz-achado-decapitado-na-ms-386-tinha-passagens-por-furto-e-trafico",
+   "dominio": "campograndenews.com.br",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Ponta Porã"
+   ]
+  },
+  {
+   "titulo": "Policías auxiliaron a dos adolescentes durante emergencias médicas en Alberdi y Florentino Ameghino",
+   "url": "https://www.primeraedicion.com.ar/nota/101161593/policias-auxiliaron-a-dos-adolescentes-durante-emergencias-medicas-en-alberdi-y-florentino-ameghino/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Alberdi"
+   ]
+  },
+  {
+   "titulo": "Nuevo director de Itaipú firmó resolución que habilitó a Ueno Bank, pero dice que no sabía de los depósitos",
+   "url": "https://www.abc.com.py/economia/2026/11/18/nuevo-director-de-itaipu-firmo-resolucion-que-habilito-a-ueno-bank-pero-dice-que-no-sabia-de-los-depositos/",
    "dominio": "abc.com.py",
    "fecha": "2026-11-18",
    "lugares": [
@@ -1162,15 +1203,6 @@
    ]
   },
   {
-   "titulo": "Investigación periodística revela dudas sobre autorización de Itaipú a Ueno Bank",
-   "url": "http://www.lanacion.com.py/politica/2026/11/17/investigacion-periodistica-revela-dudas-sobre-autorizacion-de-itaipu-a-ueno-bank/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
    "titulo": "Hugo Zárate es el nuevo director paraguayo de Itaipú",
    "url": "https://www.npy.com.py/noticias/nacionales/politica/hugo-zarate-es-el-nuevo-director-paraguayo-de-itaipu",
    "dominio": "npy.com.py",
@@ -1187,6 +1219,85 @@
    "fecha": "2026-11-18",
    "lugares": [
     "Asunción"
+   ]
+  },
+  {
+   "titulo": "Corpo sem roupas é encontrado às margens da MS-386",
+   "url": "https://www.campograndenews.com.br/cidades/interior/corpo-sem-roupas-e-encontrado-as-margens-da-ms-386",
+   "dominio": "campograndenews.com.br",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Ponta Porã"
+   ]
+  },
+  {
+   "titulo": "Homem é morto com golpes de barra de ferro dentro de academia no Paraná",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/18/homem-e-morto-com-golpes-de-barra-de-ferro-dentro-de-academia-no-parana.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "El Niño | Reabrieron el paso fronterizo entre Montecarlo y Ape Aime- Paraguay tras el descenso del río Paraná",
+   "url": "https://misionesonline.net/2026/11/18/reabrieron-el-paso-fronterizo-entre-montecarlo-y-ape-aime-paraguay/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-18",
+   "lugares": []
+  },
+  {
+   "titulo": "Juicio por Loan: en un careo, una de las acusadas intentó que un policía la reconociera como informante",
+   "url": "https://www.clarin.com/policiales/juicio-loan-careo-acusadas-intento-policia-reconociera-informante_0_emm59QmJn1.html",
+   "dominio": "clarin.com",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
+   "titulo": "Esto dice la carta de despedida de Justo Zacarías como director de Itaipú",
+   "url": "https://www.abc.com.py/politica/2026/11/18/esto-dice-la-carta-de-despedida-de-justo-zacarias-como-director-de-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Itaipú: Relevan al director general Zacarías Irún, salpicado también por la crisis de Ueno",
+   "url": "https://www.abc.com.py/economia/2026/11/18/itaipu-cambian-al-director-general-zacarias-irun-por-quien-era-el-director-tecnico-hugo-zarate/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "El documento de Itaipú que prohibía depositar en Ueno Bank: exigía cinco años en el mercado",
+   "url": "https://www.abc.com.py/economia/2026/11/18/el-documento-de-itaipu-que-prohibia-depositar-en-ueno-bank-exigia-cinco-anos-en-el-mercado/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "“Me quedo en el Senado”: Gustavo Leite responde a los rumores sobre Itaipú",
+   "url": "https://www.abc.com.py/politica/2026/11/18/me-quedo-en-el-senado-gustavo-leite-responde-a-los-rumores-sobre-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Investigación periodística revela dudas sobre autorización de Itaipú a Ueno Bank",
+   "url": "http://www.lanacion.com.py/politica/2026/11/17/investigacion-periodistica-revela-dudas-sobre-autorizacion-de-itaipu-a-ueno-bank/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -1215,33 +1326,6 @@
    "lugares": [
     "Corrientes",
     "Paso de los Libres"
-   ]
-  },
-  {
-   "titulo": "Itaipú: Relevan al director general Zacarías Irún, salpicado también por la crisis de Ueno",
-   "url": "https://www.abc.com.py/economia/2026/11/18/itaipu-cambian-al-director-general-zacarias-irun-por-quien-era-el-director-tecnico-hugo-zarate/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "El documento de Itaipú que prohibía depositar en Ueno Bank: exigía cinco años en el mercado",
-   "url": "https://www.abc.com.py/economia/2026/11/18/el-documento-de-itaipu-que-prohibia-depositar-en-ueno-bank-exigia-cinco-anos-en-el-mercado/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "“Me quedo en el Senado”: Gustavo Leite responde a los rumores sobre Itaipú",
-   "url": "https://www.abc.com.py/politica/2026/11/18/me-quedo-en-el-senado-gustavo-leite-responde-a-los-rumores-sobre-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Itaipú"
    ]
   },
   {
@@ -2113,69 +2197,6 @@
     "Ciudad del Este",
     "Foz do Iguaçu",
     "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Una mujer fue detenida por violencia familiar ante denuncia de su expareja",
-   "url": "http://www.lanacion.com.py/pais/2026/11/07/una-mujer-fue-detenida-por-violencia-familiar-ante-denuncia-de-su-expareja/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-07",
-   "lugares": [
-    "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "Itaipú formula denuncia penal por afectación de sus fondos y de FPTI-PY en ueno bank",
-   "url": "http://www.lanacion.com.py/judiciales/2026/11/07/itaipu-formula-denuncia-penal-por-afectacion-de-sus-fondos-y-de-fpti-py-en-ueno-bank/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-07",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Vecinos exigen que Peña sea trasladado a un centro penitenciario",
-   "url": "http://www.lanacion.com.py/politica/2026/11/06/vecinos-exigen-que-pena-sea-trasladado-a-un-centro-penitenciario/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-07",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Itaipú presenta denuncia penal contra Ueno Bank y sus directivos para recuperar fondos",
-   "url": "https://www.abc.com.py/economia/2026/11/07/itaipu-presenta-denuncia-penal-contra-ueno-bank-y-sus-directivos-para-recuperar-fondos/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-07",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Silicon Misiones, el hub tecnológico que apuesta a la economía del conocimiento como motor de desarrollo",
-   "url": "https://www.infobae.com/def/2026/11/07/silicon-misiones-el-hub-tecnologico-que-apuesta-a-la-economia-del-conocimiento-como-motor-de-desarrollo/",
-   "dominio": "infobae.com",
-   "fecha": "2026-11-07",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "El ex presidente del Banco Central de Paraguay se entregó ante la Justicia tras el escándalo de Ueno Bank",
-   "url": "https://www.infobae.com/america/america-latina/2026/11/07/el-ex-presidente-del-banco-central-de-paraguay-se-entrego-ante-la-justicia-tras-el-escandalo-de-ueno-bank/",
-   "dominio": "infobae.com",
-   "fecha": "2026-11-07",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Cuestionan actuar policial tras difundirse videos de un comisario golpeando a manifestantes",
-   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/cuestionan-actuar-policial-tras-difundirse-videos-de-un-comisario-golpeando-a-manifestantes",
-   "dominio": "npy.com.py",
-   "fecha": "2026-11-06",
-   "lugares": [
-    "Asunción"
    ]
   }
  ]
