@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-19T11:29:44Z",
+ "obtenido": "2026-11-19T20:28:24Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 45,
+   "items": 41,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
+   "items": 88,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -159,14 +159,14 @@
    "url": "https://www.npy.com.py/index.rss",
    "ok": true,
    "items": 18,
-   "candidatos": 0,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 334,
+   "items": 353,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 62
+   "fallos_seguidos": 63
   },
   {
    "dominio": "senad.gov.py",
@@ -200,7 +200,7 @@
    "url": "https://www.campograndenews.com.br/rss",
    "ok": true,
    "items": 20,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -208,7 +208,7 @@
    "url": "https://www.correiodoestado.com.br/rss",
    "ok": true,
    "items": 30,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -224,7 +224,7 @@
    "url": "https://g1.globo.com/rss/g1/pr/oeste-sudoeste/",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -232,7 +232,7 @@
    "url": "https://www.misionesonline.net/feed/",
    "ok": true,
    "items": 10,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -256,7 +256,7 @@
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
    "items": 30,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -270,10 +270,11 @@
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/nacionales/?outputType=xml",
-   "ok": true,
-   "items": 100,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "no element found: line 1, column 38",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "opinion.com.bo",
@@ -286,6 +287,86 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Operativo antinarcótico desmantela presunto centro logístico criminal en Presidente Franco",
+   "url": "https://www.npy.com.py/noticias/nacionales/operativo-antinarcotico-desmantela-presunto-centro-logistico-criminal-en-presidente-franco",
+   "dominio": "npy.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-19",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Presidente Franco"
+   ],
+   "ubicacion": [
+    -25.55,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 8,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "npy.com.py",
+     "clase": "prensa",
+     "url": "https://www.npy.com.py/noticias/nacionales/operativo-antinarcotico-desmantela-presunto-centro-logistico-criminal-en-presidente-franco"
+    }
+   ],
+   "id": "28c8624bc4",
+   "verificado": true
+  },
+  {
+   "titulo": "Imputaron a dos detenidos tras hallazgo de seis armas de fuego, silenciador y droga",
+   "url": "http://www.lanacion.com.py/pais/2026/11/19/imputaron-a-dos-detenidos-tras-hallazgo-de-seis-armas-de-fuego-silenciador-y-droga/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-19",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Alto Paraná"
+   ],
+   "ubicacion": [
+    -25.3,
+    -54.8
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 7,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/11/19/imputaron-a-dos-detenidos-tras-hallazgo-de-seis-armas-de-fuego-silenciador-y-droga/"
+    }
+   ],
+   "id": "a54ee04269",
+   "verificado": true
+  },
   {
    "titulo": "Comboio é interceptado na fronteira com R$ 600 mil em contrabando",
    "url": "https://www.campograndenews.com.br/cidades/interior/comboio-e-interceptado-na-fronteira-com-r-600-mil-em-contrabando",
@@ -318,6 +399,74 @@
     }
    ],
    "id": "59d44e76e5",
+   "verificado": true
+  },
+  {
+   "titulo": "Jovem de 18 anos ostenta armas nas redes sociais, vira alvo de operação e acaba preso com outras três pessoas no Paraná",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/19/jovem-ostenta-armas-nas-redes-sociais.ghtml",
+   "dominio": "g1.globo.com",
+   "clase": "prensa",
+   "fecha": "2026-11-19",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Foz do Iguaçu"
+   ],
+   "ubicacion": [
+    -25.53,
+    -54.58
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "g1.globo.com",
+     "clase": "prensa",
+     "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/19/jovem-ostenta-armas-nas-redes-sociais.ghtml"
+    }
+   ],
+   "id": "86a8e4d3e1",
+   "verificado": true
+  },
+  {
+   "titulo": "El Niño en Corrientes: tras la crecida del río Paraná, bajó el agua en Itatí y los vecinos volvieron a ver el emblemático monumento al pacú",
+   "url": "https://misionesonline.net/2026/11/19/el-nino-corrientes-itati/",
+   "dominio": "misionesonline.net",
+   "clase": "prensa",
+   "fecha": "2026-11-19",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "misionesonline.net",
+     "clase": "prensa",
+     "url": "https://misionesonline.net/2026/11/19/el-nino-corrientes-itati/"
+    }
+   ],
+   "id": "2408657fb0",
    "verificado": true
   },
   {
@@ -1172,9 +1321,37 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Itaipú: ministros consejeros cobrarán desde ahora de la binacional y no de sus cargos, incluyendo el canciller",
-   "url": "https://www.abc.com.py/economia/2026/11/19/itaipu-ministros-consejeros-cobraran-desde-ahora-de-la-binacional-y-no-de-sus-cargos-incluyendo-el-canciller/",
+   "titulo": "Hugo Zárate asumió en Itaipú, pero no explica aún su firma en la resolución que habilitó a Ueno Bank",
+   "url": "https://www.abc.com.py/economia/2026/11/19/hugo-zarate-asumio-en-itaipu-pero-no-explica-aun-su-firma-en-la-resolucion-que-habilito-a-ueno-bank/",
    "dominio": "abc.com.py",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Asalto y toma de rehenes a policías en Asunción apuntan a una banda fronteriza",
+   "url": "https://www.abc.com.py/policiales/2026/11/19/asalto-y-toma-de-rehenes-a-policias-en-asuncion-apunta-a-banda-fronteriza/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Investigan rapto y posterior robo de armas a agentes policiales en Asunción",
+   "url": "http://www.lanacion.com.py/pais/2026/11/19/investigan-rapto-y-posterior-robo-de-armas-a-agentes-policiales-en-asuncion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Nicanor afirma que se debe fortalecer nuevamente la institucionalidad de Itaipú",
+   "url": "http://www.lanacion.com.py/politica/2026/11/19/nicanor-afirma-que-se-debe-fortalecer-nuevamente-la-institucionalidad-de-itaipu/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-11-19",
    "lugares": [
     "Itaipú"
@@ -1187,6 +1364,24 @@
    "fecha": "2026-11-19",
    "lugares": [
     "Zárate",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Relacionamento amoroso pode ter motivado morte de homem atacado com barra de ferro em academia no Paraná, diz polícia",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/19/relacionamento-amoroso-pode-ter-motivado-morte-de-homem-em-academia.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "Itaipú: ministros consejeros cobrarán desde ahora de la binacional y no de sus cargos, incluyendo el canciller",
+   "url": "https://www.abc.com.py/economia/2026/11/19/itaipu-ministros-consejeros-cobraran-desde-ahora-de-la-binacional-y-no-de-sus-cargos-incluyendo-el-canciller/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-19",
+   "lugares": [
     "Itaipú"
    ]
   },
@@ -1241,6 +1436,24 @@
    ]
   },
   {
+   "titulo": "Homem é morto com golpes de barra de ferro dentro de academia no Paraná",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/18/homem-e-morto-com-golpes-de-barra-de-ferro-dentro-de-academia-no-parana.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "Juicio por Loan: en un careo, una de las acusadas intentó que un policía la reconociera como informante",
+   "url": "https://www.clarin.com/policiales/juicio-loan-careo-acusadas-intento-policia-reconociera-informante_0_emm59QmJn1.html",
+   "dominio": "clarin.com",
+   "fecha": "2026-11-18",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
    "titulo": "Anexo C y tarifa: Paraguay prepara dos negociaciones clave para el futuro de Itaipú",
    "url": "http://www.lanacion.com.py/negocios/2026/11/18/anexo-c-y-tarifa-paraguay-prepara-dos-negociaciones-clave-para-el-futuro-de-itaipu/",
    "dominio": "lanacion.com.py",
@@ -1277,24 +1490,6 @@
    "lugares": [
     "Zárate",
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Homem é morto com golpes de barra de ferro dentro de academia no Paraná",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/18/homem-e-morto-com-golpes-de-barra-de-ferro-dentro-de-academia-no-parana.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Foz do Iguaçu"
-   ]
-  },
-  {
-   "titulo": "Juicio por Loan: en un careo, una de las acusadas intentó que un policía la reconociera como informante",
-   "url": "https://www.clarin.com/policiales/juicio-loan-careo-acusadas-intento-policia-reconociera-informante_0_emm59QmJn1.html",
-   "dominio": "clarin.com",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Corrientes"
    ]
   },
   {
@@ -2185,47 +2380,6 @@
    "url": "https://www.abc.com.py/politica/2026/11/09/gustavo-leite-pide-barrida-de-consejeros-de-itaipu/",
    "dominio": "abc.com.py",
    "fecha": "2026-11-09",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Roque Alonso recupera una salida al río Paraguay y proyecta mirador",
-   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/11/09/roque-alonso-recupera-una-salida-al-rio-paraguay-y-proyecta-mirador/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-09",
-   "lugares": []
-  },
-  {
-   "titulo": "Vallemí: un hombre se arrojó al río con su pareja en un auto, ella sobrevivió y él murió ahogado",
-   "url": "http://www.lanacion.com.py/pais/2026/11/08/vallemi-un-hombre-se-arrojo-al-rio-con-su-pareja-en-un-auto-ella-sobrevivio-y-el-murio-ahogado/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-08",
-   "lugares": [
-    "Concepción"
-   ]
-  },
-  {
-   "titulo": "Mariano Roque Alonso recupera un antiguo acceso al río Paraguay y proyecta un mirador",
-   "url": "http://www.lanacion.com.py/pais/2026/11/08/mariano-roque-alonso-recupera-un-antiguo-acceso-al-rio-paraguay-y-proyecta-un-mirador/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-08",
-   "lugares": []
-  },
-  {
-   "titulo": "Itaipú Binacional realiza denuncia penal por afectación de fondos en ueno bank",
-   "url": "http://www.lanacion.com.py/politica/2026/11/08/itaipu-binacional-realiza-denuncia-penal-por-afectacion-de-fondos-en-ueno-bank/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-08",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Itaipú realiza denuncia penal por afectación de fondos en ueno bank",
-   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/08/itaipu-realiza-denuncia-penal-por-afectacion-de-fondos-en-ueno-bank/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-08",
    "lugares": [
     "Itaipú"
    ]
