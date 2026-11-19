@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-18T20:43:36Z",
+ "obtenido": "2026-11-19T02:39:47Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -19,7 +19,7 @@
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 4
+   "avisos_en_el_corredor": 1
   }
  ],
  "avisos": [
@@ -119,7 +119,7 @@
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la alta probabilidad de caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Lluvias intensas con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional probabilidad de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -133,64 +133,16 @@
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-11-18 16:38",
+   "inicio": "2026-11-18 22:32",
    "fin": "",
    "lugares": [
-    "CHACO: Gral Donovan - 1 de Mayo - Bermejo - Libertad - Pres de la Plaza - San Fernando - Sargento Cabral - Tapenaga.; ; CORRIENTES: Corrientes - Empedrado - San Cosme - San Luis del Palmar."
+    "FORMOSA: Formosa - Pilagas - Pilcomayo - Pirane."
    ],
    "riesgos": "",
-   "id": "smn-4266"
-  },
-  {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
-   "fenomeno": "Green forest fire notification in Bolivia",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "-18.16, -60.18"
-   ],
-   "riesgos": "",
-   "id": "gdacs-&amp;eventid=1033835",
-   "lat": -18.155277568190417,
-   "lon": -60.17723508251929
-  },
-  {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
-   "fenomeno": "Green forest fire notification in Argentina",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "-24.50, -60.58"
-   ],
-   "riesgos": "",
-   "id": "gdacs-&amp;eventid=1033788",
-   "lat": -24.496200118463634,
-   "lon": -60.57712488164639
-  },
-  {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
-   "fenomeno": "Green forest fire notification in Bolivia",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "-16.04, -64.64"
-   ],
-   "riesgos": "",
-   "id": "gdacs-&amp;eventid=1033775",
-   "lat": -16.04340221135372,
-   "lon": -64.64087960920678
+   "id": "smn-4279"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
