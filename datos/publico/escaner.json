@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-19T20:28:24Z",
+ "obtenido": "2026-11-20T02:15:06Z",
  "dias": 14,
  "fuentes": [
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 88,
+   "items": 89,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 353,
+   "items": 374,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 63
+   "fallos_seguidos": 64
   },
   {
    "dominio": "senad.gov.py",
@@ -198,10 +198,11 @@
   {
    "dominio": "campograndenews.com.br",
    "url": "https://www.campograndenews.com.br/rss",
-   "ok": true,
-   "items": 20,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "HTTP Error 403: Forbidden",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -232,7 +233,7 @@
    "url": "https://www.misionesonline.net/feed/",
    "ok": true,
    "items": 10,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -255,7 +256,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 30,
+   "items": 33,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -274,7 +275,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "no element found: line 1, column 38",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 2
   },
   {
    "dominio": "opinion.com.bo",
@@ -1252,81 +1253,15 @@
    ],
    "id": "27e1c4ed52",
    "verificado": true
-  },
-  {
-   "titulo": "COCAÍNA RUMBO A CONCEPCIÓN: SENAD EVITÓ QUE 6.000 DOSIS LLEGUEN AL MICROTRÁFICO",
-   "url": "https://senad.gov.py/cocaina-rumbo-a-concepcion-senad-evito-que-6-000-dosis-lleguen-al-microtrafico/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-11-05",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 7,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/cocaina-rumbo-a-concepcion-senad-evito-que-6-000-dosis-lleguen-al-microtrafico/"
-    }
-   ],
-   "id": "10e938c691",
-   "verificado": true
-  },
-  {
-   "titulo": "El peligroso \"barco fantasma\" de 107 metros volvió a quedar a la deriva en el río Paraná",
-   "url": "https://perfil.com/sociedad/barco-fantasma-uros-z-navega-a-la-deriva-en-el-rio-parana-a50-bgd-aZ03b7e1yamp",
-   "dominio": "perfil.com",
-   "clase": "prensa",
-   "fecha": "2026-11-05",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": null,
-   "puntaje": 3,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "perfil.com",
-     "clase": "prensa",
-     "url": "https://perfil.com/sociedad/barco-fantasma-uros-z-navega-a-la-deriva-en-el-rio-parana-a50-bgd-aZ03b7e1yamp"
-    }
-   ],
-   "id": "f25f7c48d3",
-   "verificado": true
   }
  ],
  "sin_tipo": [
   {
-   "titulo": "Hugo Zárate asumió en Itaipú, pero no explica aún su firma en la resolución que habilitó a Ueno Bank",
-   "url": "https://www.abc.com.py/economia/2026/11/19/hugo-zarate-asumio-en-itaipu-pero-no-explica-aun-su-firma-en-la-resolucion-que-habilito-a-ueno-bank/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-19",
+   "titulo": "Brasil solicita reevaluar bancos autorizados por Paraguay para operar con Itaipú",
+   "url": "http://www.lanacion.com.py/politica/2026/11/19/brasil-solicita-reevaluar-bancos-autorizados-por-paraguay-para-operar-con-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-20",
    "lugares": [
-    "Zárate",
     "Itaipú"
    ]
   },
@@ -1337,6 +1272,15 @@
    "fecha": "2026-11-19",
    "lugares": [
     "Asunción"
+   ]
+  },
+  {
+   "titulo": "Fiscalía imputó a dos mujeres por supuesta venta de medicamentos en el Hospital IPS de CDE",
+   "url": "http://www.lanacion.com.py/pais/2026/11/19/fiscalia-imputo-a-dos-mujeres-por-supuesta-venta-de-medicamentos-en-el-hospital-ips-de-cde/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Ciudad del Este"
    ]
   },
   {
@@ -1374,6 +1318,25 @@
    "fecha": "2026-11-19",
    "lugares": [
     "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "Posadas: quiso viajar sin tener pasaje, se resistió y mordió a una policía en la Terminal de Ómnibus",
+   "url": "https://www.primeraedicion.com.ar/nota/101161886/posadas-quiso-viajar-sin-tener-pasaje-se-resistio-y-mordio-a-una-policia-en-la-terminal-de-omnibus/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Hugo Zárate asumió en Itaipú, pero no explica aún su firma en la resolución que habilitó a Ueno Bank",
+   "url": "https://www.abc.com.py/economia/2026/11/19/hugo-zarate-asumio-en-itaipu-pero-no-explica-aun-su-firma-en-la-resolucion-que-habilito-a-ueno-bank/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
    ]
   },
   {
@@ -2355,33 +2318,6 @@
     "Ciudad del Este",
     "Canindeyú",
     "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "La Fiscalía de Paraguay allanó las viviendas de Santiago Peña en Asunción por el escándalo de Ueno bank",
-   "url": "https://www.infobae.com/america/america-latina/2026/11/10/la-fiscalia-de-paraguay-allano-las-viviendas-de-santiago-pena-en-asuncion-por-el-escandalo-de-ueno-bank/",
-   "dominio": "infobae.com",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Itaipú proyecta ampliar la generación de energía solar desde su embalse",
-   "url": "http://www.lanacion.com.py/tendencias/2026/11/09/itaipu-proyecta-ampliar-la-generacion-de-energia-solar-desde-su-embalse/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-09",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Gustavo Leite pide “barrida” de consejeros de Itaipú",
-   "url": "https://www.abc.com.py/politica/2026/11/09/gustavo-leite-pide-barrida-de-consejeros-de-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-09",
-   "lugares": [
-    "Itaipú"
    ]
   }
  ]
