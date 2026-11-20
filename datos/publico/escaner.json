@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-20T11:24:55Z",
+ "obtenido": "2026-11-20T15:51:00Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 42,
+   "items": 46,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 94,
+   "items": 86,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -101,10 +101,11 @@
   {
    "dominio": "ip.gov.py",
    "url": "https://www.ip.gov.py/ip/feed/",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "agenciabrasil.ebc.com.br",
@@ -133,18 +134,20 @@
   {
    "dominio": "annp.gov.py",
    "url": "https://annp.gov.py/?feed=rss2",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "armadaparaguaya.mil.py",
    "url": "https://armadaparaguaya.mil.py/feed",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "pagina12.com.ar",
@@ -166,7 +169,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 347,
+   "items": 351,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,32 +180,33 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 65
+   "fallos_seguidos": 66
   },
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
-   "ok": true,
-   "items": 10,
-   "candidatos": 3,
-   "fallos_seguidos": 0
+   "ok": false,
+   "items": 0,
+   "candidatos": 0,
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "policianacional.gov.py",
    "url": "https://www.policianacional.gov.py/feed/",
-   "ok": true,
-   "items": 5,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "<urlopen error timed out>",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "campograndenews.com.br",
    "url": "https://www.campograndenews.com.br/rss",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 20,
    "candidatos": 0,
-   "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 2
+   "fallos_seguidos": 0
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -217,7 +221,7 @@
    "url": "https://www.pontaporainforma.com.br/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -233,7 +237,7 @@
    "url": "https://www.misionesonline.net/feed/",
    "ok": true,
    "items": 10,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -256,7 +260,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 35,
+   "items": 33,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -271,11 +275,10 @@
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/nacionales/?outputType=xml",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 100,
    "candidatos": 0,
-   "error": "no element found: line 1, column 38",
-   "fallos_seguidos": 3
+   "fallos_seguidos": 0
   },
   {
    "dominio": "opinion.com.bo",
@@ -288,6 +291,74 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Força Tática do 4ºBPM prende procurado por homicídio e apreende drogas e armas no Nova Itamarati",
+   "url": "https://www.pontaporainforma.com.br/forca-tatica-do-4obpm-prende-procurado-por-homicidio-e-apreende-drogas-e-armas-no-nova-itamarati/",
+   "dominio": "pontaporainforma.com.br",
+   "clase": "prensa",
+   "fecha": "2026-11-20",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Ponta Porã"
+   ],
+   "ubicacion": [
+    -22.54,
+    -55.73
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "pontaporainforma.com.br",
+     "clase": "prensa",
+     "url": "https://www.pontaporainforma.com.br/forca-tatica-do-4obpm-prende-procurado-por-homicidio-e-apreende-drogas-e-armas-no-nova-itamarati/"
+    }
+   ],
+   "id": "95658af0da",
+   "verificado": true
+  },
+  {
+   "titulo": "Amenazas por Instagram y pista digital en Puerto Libertad: tres detenidos y secuestro de escopetas tras un intento de robo",
+   "url": "https://misionesonline.net/2026/11/20/amenazas-por-instagram-y-pista-digital-en-puerto-libertad-tres-detenidos-y-secuestro-de-escopetas-tras-un-intento-de-robo/",
+   "dominio": "misionesonline.net",
+   "clase": "prensa",
+   "fecha": "2026-11-20",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Misiones (ubicación imprecisa)"
+   ],
+   "ubicacion": [
+    -26.9,
+    -54.7
+   ],
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": true,
+   "medios": [
+    {
+     "dominio": "misionesonline.net",
+     "clase": "prensa",
+     "url": "https://misionesonline.net/2026/11/20/amenazas-por-instagram-y-pista-digital-en-puerto-libertad-tres-detenidos-y-secuestro-de-escopetas-tras-un-intento-de-robo/"
+    }
+   ],
+   "id": "31462aade8",
+   "verificado": true
+  },
   {
    "titulo": "Operativo antinarcótico desmantela presunto centro logístico criminal en Presidente Franco",
    "url": "https://www.npy.com.py/noticias/nacionales/operativo-antinarcotico-desmantela-presunto-centro-logistico-criminal-en-presidente-franco",
@@ -1257,12 +1328,28 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Alliana respalda a Benítez en Yacyretá pese a que es accionista de Ueno y autorizó colocar allí US$ 10 millones",
-   "url": "https://www.abc.com.py/economia/2026/11/20/alliana-respalda-a-benitez-en-yacyreta-pese-a-que-es-accionista-de-ueno-y-autorizo-colocar-alli-us-10-millones/",
+   "titulo": "El Niño: desplazados por el río Paraná vuelven a sus casas, mientras el Chaco sigue afectado",
+   "url": "https://www.abc.com.py/nacionales/2026/11/20/el-nino-desplazados-por-el-rio-parana-vuelven-a-sus-casas-mientras-el-chaco-sigue-afectado/",
    "dominio": "abc.com.py",
    "fecha": "2026-11-20",
+   "lugares": []
+  },
+  {
+   "titulo": "Se acabó la “diversión”: policías de tránsito de Asunción empezarán a aplicar sanciones",
+   "url": "http://www.lanacion.com.py/pais/2026/11/20/se-acabo-la-diversion-policias-de-transito-de-asuncion-empezaran-a-aplicar-sanciones/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-20",
    "lugares": [
-    "Yacyretá"
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "LN PM: edición del 20 de noviembre",
+   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/11/20/ln-pm-edicion-del-20-de-noviembre/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Encarnación"
    ]
   },
   {
@@ -1272,6 +1359,56 @@
    "fecha": "2026-11-20",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Un empresario advirtió sobre la crisis de las pymes en Corrientes: \"No hay reactivación, hay desesperación\"",
+   "url": "https://perfil.com/nea/un-empresario-advirtio-sobre-la-crisis-de-las-pymes-en-corrientes-no-hay-reactivacion-hay-desesperacion-agsH77p0OLPg",
+   "dominio": "perfil.com",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
+   "titulo": "El Niño seguirá durante el verano y advierten que el río Paraná continúa en nivel de alerta",
+   "url": "https://perfil.com/nea/el-nino-seguira-durante-el-verano-y-advierten-que-el-rio-parana-continua-en-nivel-de-alerta-apnMn9D0PPia",
+   "dominio": "perfil.com",
+   "fecha": "2026-11-20",
+   "lugares": []
+  },
+  {
+   "titulo": "Soberana dependencia",
+   "url": "https://www.pagina12.com.ar/2026/11/20/soberana-dependencia/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-11-20",
+   "lugares": []
+  },
+  {
+   "titulo": "PM de Ponta Porã cumpre mandado de prisão no bairro Jardim Ipanema",
+   "url": "https://www.pontaporainforma.com.br/pm-de-ponta-pora-cumpre-mandado-de-prisao-no-bairro-jardim-ipanema/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Ponta Porã"
+   ]
+  },
+  {
+   "titulo": "Autoridades do lado brasileiro da Itaipu estão preocupadas com a crise bancaria no Paraguai",
+   "url": "https://www.pontaporainforma.com.br/autoridades-do-lado-brasileiro-da-itaipu/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Alliana respalda a Benítez en Yacyretá pese a que es accionista de Ueno y autorizó colocar allí US$ 10 millones",
+   "url": "https://www.abc.com.py/economia/2026/11/20/alliana-respalda-a-benitez-en-yacyreta-pese-a-que-es-accionista-de-ueno-y-autorizo-colocar-alli-us-10-millones/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Yacyretá"
    ]
   },
   {
@@ -1318,6 +1455,43 @@
    ]
   },
   {
+   "titulo": "Relacionamento amoroso pode ter motivado morte de homem atacado com barra de ferro em academia no Paraná, diz polícia",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/19/relacionamento-amoroso-pode-ter-motivado-morte-de-homem-em-academia.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "Senadora Esperanza rechaza acuerdo a nuevo director de Itaipú por caso Ueno",
+   "url": "https://www.abc.com.py/politica/2026/11/19/senadora-esperanza-rechaza-acuerdo-a-nuevo-director-de-itaipu-por-caso-ueno/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Justo Zacarías designó a un dirigente de su entorno en Tesãi antes de dejar Itaipú",
+   "url": "https://www.abc.com.py/este/2026/11/19/justo-zacarias-designo-a-un-dirigente-de-su-entorno-en-tesai-antes-de-dejar-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Hugo Zárate asumió en Itaipú, pero no explica aún su firma en la resolución que habilitó a Ueno Bank",
+   "url": "https://www.abc.com.py/economia/2026/11/19/hugo-zarate-asumio-en-itaipu-pero-no-explica-aun-su-firma-en-la-resolucion-que-habilito-a-ueno-bank/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Investigan rapto y posterior robo de armas a agentes policiales en Asunción",
    "url": "http://www.lanacion.com.py/pais/2026/11/19/investigan-rapto-y-posterior-robo-de-armas-a-agentes-policiales-en-asuncion/",
    "dominio": "lanacion.com.py",
@@ -1336,15 +1510,6 @@
    ]
   },
   {
-   "titulo": "Relacionamento amoroso pode ter motivado morte de homem atacado com barra de ferro em academia no Paraná, diz polícia",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/19/relacionamento-amoroso-pode-ter-motivado-morte-de-homem-em-academia.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Foz do Iguaçu"
-   ]
-  },
-  {
    "titulo": "Posadas: quiso viajar sin tener pasaje, se resistió y mordió a una policía en la Terminal de Ómnibus",
    "url": "https://www.primeraedicion.com.ar/nota/101161886/posadas-quiso-viajar-sin-tener-pasaje-se-resistio-y-mordio-a-una-policia-en-la-terminal-de-omnibus/",
    "dominio": "primeraedicion.com.ar",
@@ -1357,16 +1522,6 @@
    "titulo": "Nombran a Hugo Zárate como nuevo titular de Itaipú y renuevan Consejo",
    "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/19/nombran-a-hugo-zarate-como-nuevo-titular-de-itaipu-y-renuevan-consejo/",
    "dominio": "lanacion.com.py",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Zárate",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Hugo Zárate asumió en Itaipú, pero no explica aún su firma en la resolución que habilitó a Ueno Bank",
-   "url": "https://www.abc.com.py/economia/2026/11/19/hugo-zarate-asumio-en-itaipu-pero-no-explica-aun-su-firma-en-la-resolucion-que-habilito-a-ueno-bank/",
-   "dominio": "abc.com.py",
    "fecha": "2026-11-19",
    "lugares": [
     "Zárate",
@@ -2223,97 +2378,6 @@
    "fecha": "2026-11-11",
    "lugares": [
     "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Itaipú proyecta generar mayor energía solar desde el embalse",
-   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/11/11/itaipu-proyecta-generar-mayor-energia-solar-desde-el-embalse/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-11",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "La ANNP toma el control y terminará las obras del Puerto de Asunción",
-   "url": "http://www.lanacion.com.py/negocios/2026/11/10/la-annp-toma-el-control-y-terminara-las-obras-del-puerto-de-asuncion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Ejecutivo remueve a dos consejeros y acepta la renuncia de otros dos de Itaipú",
-   "url": "http://www.lanacion.com.py/politica/2026/11/10/ejecutivo-remueve-a-dos-consejeros-y-acepta-la-renuncia-de-otros-dos-de-itaipu/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Allanan la vivienda de Carlos Fernández Valdovinos",
-   "url": "http://www.lanacion.com.py/politica/2026/11/10/allanan-la-vivienda-de-carlos-fernandez-valdovinos/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Asunción",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Detenido con tres órdenes de captura destrozó calabozo y atacó a policías en Encarnación",
-   "url": "http://www.lanacion.com.py/pais/2026/11/10/detenido-con-tres-ordenes-de-captura-destrozo-calabozo-y-ataco-a-policias-en-encarnacion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Encarnación"
-   ]
-  },
-  {
-   "titulo": "LN PM: edición del 10 de noviembre",
-   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/11/10/ln-pm-edicion-del-10-de-noviembre/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "Exasesor jurídico de Santiago Peña deja el Consejo de Itaipú Binacional",
-   "url": "https://www.abc.com.py/politica/2026/11/09/exasesor-juridico-de-santiago-pena-deja-el-consejo-de-itaipu-binacional/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Exigen la salida de Zacarías de Itaipú y una investigación fiscal por depósitos en ueno",
-   "url": "https://www.abc.com.py/este/2026/11/10/exigen-salida-de-zacarias-de-itaipu-e-investigacion-fiscal-por-depositos-en-ueno/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "El río Paraná baja, pero mantiene niveles de inundabilidad en Ayolas",
-   "url": "https://www.abc.com.py/clima/2026/11/10/el-rio-parana-baja-pero-mantiene-niveles-de-inundabilidad-en-ayolas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Ayolas"
-   ]
-  },
-  {
-   "titulo": "Itaipú: Ejecutivo echa a dos consejeros y acepta la renuncia de otros dos, en plena crisis de Ueno",
-   "url": "https://www.abc.com.py/economia/2026/11/10/itaipu-ejecutivo-echa-a-dos-consejeros-y-acepta-la-renuncia-de-otros-dos-en-plena-crisis-de-ueno/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Itaipú"
    ]
   }
  ]
