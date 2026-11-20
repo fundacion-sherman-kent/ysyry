@@ -104,10 +104,6 @@ def main():
     d.text((cx, 488 * S), "Dos fuentes independientes como mínimo", font=fuente("arial.ttf", 25), fill=MENTA, anchor="ma")
     d.text((cx, 544 * S), "ysyry.fundacionkent.org", font=fuente("arialbd.ttf", 30), fill=PAPEL, anchor="ma")
     d.text((cx, 586 * S), "Fundación Sherman Kent", font=fuente("arial.ttf", 22), fill=ACERO, anchor="ma")
-    # sello beta, a la izquierda arriba (queda fuera del recorte cuadrado)
-    d.rounded_rectangle([64 * S, 30 * S, 184 * S, 72 * S], radius=21 * S, outline=NARANJA, width=3 * S)
-    d.text((124 * S, 51 * S), "BETA", font=fuente("arialbd.ttf", 22), fill=NARANJA, anchor="mm")
-
     destino.parent.mkdir(parents=True, exist_ok=True)
     final = fondo.resize((W, H), Image.LANCZOS)
     # paleta reducida y sin tramado: un fondo plano con trazos pesa unos 50 KB y WhatsApp sólo muestra la tarjeta grande con imágenes livianas
