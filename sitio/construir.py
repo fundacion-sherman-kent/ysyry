@@ -2069,7 +2069,7 @@ SUST = {
     "guia_json": json.dumps(_GUIA, ensure_ascii=False),
     "guia_sug": json.dumps(_guia.PREGUNTAS_SUGERIDAS, ensure_ascii=False),
     "indicios": _indicios_html,
-    "calados": __import__("calados").bloque_html(D / "calados.json"),
+    "calados": __import__("nivel_grafico").bloque_html(_raiz / "datos" / "publico", D / "calados.json"),
     "ultima_iso": marcos[-1]["hora"] if marcos else "",
     "poi_etq": "\n    ".join(poi_etq_svg),
     "grupos_hora": "\n    ".join(grupos_hora),
