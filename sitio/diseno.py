@@ -86,8 +86,8 @@ details.lz[open]>summary::before{transform:rotate(45deg)}
 @media (max-width:640px){details.lz>summary{grid-template-columns:auto 1fr}.lz-c,.lz-ch{grid-column:2;grid-row:auto;justify-content:flex-start;text-align:left}.lz-grid{grid-template-columns:1fr}.lib-ab{margin-left:0}}
 
 /* barra superior en la línea de FEMÓNOE: una sola fila, nombre en mayúsculas espaciadas con el color de la plataforma, estado a la derecha */
-.topbar-in{flex-wrap:nowrap;padding:12px 24px;gap:16px;max-width:1760px}
-.inicio{flex:0 0 auto}
+.topbar .topbar-in{flex-wrap:nowrap;padding:12px 24px;gap:16px;max-width:1760px}
+.topbar .brand,.topbar .inicio{flex:0 0 auto}
 .topbar nav{flex:0 1 auto;min-width:0}
 .brand{flex:0 1 auto}
 .inicio .nombre{text-transform:uppercase;letter-spacing:.14em;font-size:17.3px;color:var(--acento);margin-bottom:3px}
