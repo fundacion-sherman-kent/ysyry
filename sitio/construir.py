@@ -1285,7 +1285,7 @@ __diseno_css__
     </a>
   </div>
   <div class="franja-derecha">
-    <nav><a href="#mapa">Corredor</a><a href="#metodo">Método</a><a href="https://fundacionkent.org/?utm_source=ysyry&amp;utm_medium=referral&amp;utm_campaign=marca&amp;utm_content=nav" target="_blank" rel="noopener">Fundación Sherman Kent ↗</a></nav>
+    <nav><a href="#mapa">Corredor</a><a href="#metodo">Método</a><a href="https://fundacionkent.org/?utm_source=ysyry&amp;utm_medium=referral&amp;utm_campaign=marca&amp;utm_content=nav" target="_blank" rel="noopener">Fundación Sherman Kent ↗</a><a href="https://fundacionkent.org/articulos/?utm_source=ysyry&amp;utm_medium=referral&amp;utm_campaign=informes&amp;utm_content=nav" target="_blank" rel="noopener" title="Análisis de la Fundación Sherman Kent sobre América Latina y el Caribe">Análisis ↗</a></nav>
     <span class="ultima">Última captura <b>__ultima_captura__</b></span>
     <button type="button" id="tema" class="tema" aria-pressed="false">Fondo oscuro</button>
   </div>
@@ -1438,7 +1438,7 @@ __prospectiva__
 </div>
 
 <footer>
-  <span><a href="https://fundacionkent.org/?utm_source=ysyry&amp;utm_medium=referral&amp;utm_campaign=marca&amp;utm_content=pie" target="_blank" rel="noopener">Fundación Sherman Kent</a> · código GPL-3.0 · datos propios CC BY 4.0 · los datos derivados de OpenStreetMap (rutas y geocodificación) se rigen por la ODbL</span>
+  <span><a href="https://fundacionkent.org/?utm_source=ysyry&amp;utm_medium=referral&amp;utm_campaign=marca&amp;utm_content=pie" target="_blank" rel="noopener">Fundación Sherman Kent</a> · <a href="https://fundacionkent.org/articulos/?utm_source=ysyry&amp;utm_medium=referral&amp;utm_campaign=informes&amp;utm_content=pie" target="_blank" rel="noopener">Análisis sobre América Latina y el Caribe</a> · <a href="https://fundacionkent.org/membresias/?utm_source=ysyry&amp;utm_medium=referral&amp;utm_campaign=membresias&amp;utm_content=pie" target="_blank" rel="noopener">Membresías</a> · código GPL-3.0 · datos propios CC BY 4.0 · los datos derivados de OpenStreetMap (rutas y geocodificación) se rigen por la ODbL</span>
   <span>AIS: AISHub y aisstream.io, vía Open Waters AIS · Límites: geoBoundaries (CC BY 4.0) · Ríos: Natural Earth · Rutas y geocodificación: © colaboradores de OpenStreetMap (ODbL)</span>
   <span>Satélite: NASA GIBS (NASA ESDIS), GOES-East de NOAA, VIIRS NOAA-20 · Fotos: Wikipedia y Wikimedia Commons, con autor y licencia en cada ficha · Comercio: Bolsa de Comercio de Rosario</span>
 </footer>
