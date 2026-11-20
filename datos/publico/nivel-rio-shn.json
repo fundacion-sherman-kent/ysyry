@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-20T02:41:16Z",
+ "obtenido": "2026-11-20T12:14:35Z",
  "fuente": {
   "nombre": "Servicio de Hidrografía Naval (Argentina), Datos Horarios de Marea",
   "url": "https://www.hidro.gob.ar/oceanografia/alturashorarias.asp",
@@ -10,9 +10,9 @@
    "nombre": "Martín García",
    "lat": -34.183,
    "lon": -58.25,
-   "hora_local": "2026-11-19 22:45",
-   "nivel_m": 0.99,
-   "media_dia_m": 1.174,
+   "hora_local": "2026-11-20 08:45",
+   "nivel_m": 1.33,
+   "media_dia_m": 1.172,
    "dia_media": "2026-11-19",
    "var_cm": -21
   },
@@ -20,21 +20,21 @@
    "nombre": "San Fernando",
    "lat": -34.443,
    "lon": -58.53,
-   "hora_local": "2026-11-19 22:45",
-   "nivel_m": 0.89,
-   "media_dia_m": 0.962,
+   "hora_local": "2026-11-20 08:45",
+   "nivel_m": 1.11,
+   "media_dia_m": 0.974,
    "dia_media": "2026-11-19",
-   "var_cm": -24
+   "var_cm": -23
   },
   {
    "nombre": "Buenos Aires",
    "lat": -34.571,
    "lon": -58.366,
-   "hora_local": "2026-11-19 22:45",
-   "nivel_m": 1.16,
-   "media_dia_m": 0.964,
+   "hora_local": "2026-11-20 08:45",
+   "nivel_m": 1.01,
+   "media_dia_m": 0.981,
    "dia_media": "2026-11-19",
-   "var_cm": -23
+   "var_cm": -22
   }
  ]
 }
