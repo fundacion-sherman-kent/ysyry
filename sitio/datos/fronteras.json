@@ -2,7 +2,7 @@
  "titulo": "Fronteras secas del corredor (capa curada)",
  "aviso": "CAPA CURADA, CONTRASTADA EN PARTE. Las posiciones son aproximadas (±5 km) y se contrastaron con OpenStreetMap. Los flujos salen de prensa regional e informes públicos, no de una medición: no existe una fuente abierta que mida el tráfico de personas, animales, flora o mercaderías en una frontera seca. Cada flujo dice cuántos medios DISTINTOS lo respaldan; dos medios pueden repetir una misma agencia, y las fechas de varias notas no se pudieron confirmar. Marcar un paso NO implica que todo lo que lo cruza sea ilícito: son ciudades gemelas con comercio, familias y trabajo legítimos.",
  "curada_por": "Dirección de la Fundación Sherman Kent (preparada el 17/11/2026 por Claude; contrastada el mismo día contra OpenStreetMap y prensa regional: ver cada ficha)",
- "ultima_revision": "2026-11-17",
+ "ultima_revision": "2026-11-20",
  "como_agregar": "Añadir un objeto a «pasos» con id, nombre, paises, lat, lon, tipo, descripcion, flujos (clave: personas | animales | flora | contrabando; valor: texto o null) y fuente. Un flujo sólo se escribe si hay informe público que lo sustente; si no, queda en null. Registrar en «contraste» el nivel («dos medios distintos», «una sola fuente» o «no confirmado») y los enlaces. «verificado» pasa a true sólo con la posición contrastada y al menos un flujo con dos medios distintos.",
  "pasos": [
   {
@@ -82,15 +82,18 @@
     "personas": null,
     "animales": null,
     "flora": null,
-    "contrabando": "Estupefacientes en la frontera Canindeyú–Mato Grosso do Sul, sólo en términos generales (ninguna nota de la revisión menciona Paranhos ni Ypejhú)"
+    "contrabando": "Marihuana. Del lado brasileño, Correio do Estado informa que el DOF incautó unas 10,77 toneladas en Japorã, Paranhos e Iguatemi, con una camioneta que huyó de un control en la zona rural de Paranhos (MS-295) y quedó volcada con cerca de 1.030 kg; la fecha de la nota no se pudo confirmar. Del lado paraguayo, Campo Grande News relata una incautación de la policía paraguaya de ocho camionetas con marihuana en Canindeyú, cerca de los municipios de Paranhos y Sete Quedas (diciembre de 2024). Ninguna nota nombra Ypejhú: el flujo se respalda a escala de Paranhos y su frontera con Canindeyú, no del paso puntual"
    },
-   "fuente": "Informes públicos generales; este paso en particular no tiene nota que lo respalde (revisión del 17/11/2026)",
-   "verificado": false,
-   "verificacion_posicion": "Contrastada con OpenStreetMap (Paranhos e Ypejhú): diferencia de 1,5 km del punto medio. El flujo sigue sin respaldo.",
+   "fuente": "Prensa regional de Brasil contrastada el 20/11/2026 (ver enlaces); sin nota que nombre Ypejhú",
+   "verificado": true,
+   "verificacion_posicion": "Contrastada con OpenStreetMap (Paranhos e Ypejhú): diferencia de 1,5 km del punto medio. Ypejhú no figura por nombre en ninguna nota de la revisión del 20/11/2026.",
    "contraste": {
     "contrabando": {
-     "nivel": "no confirmado",
-     "enlaces": []
+     "nivel": "dos medios distintos (a escala de la frontera Paranhos–Canindeyú; ninguno nombra Ypejhú)",
+     "enlaces": [
+      "https://correiodoestado.com.br/noticia/detalhe/dof-apreende-107-toneladas-de-maconha-avaliadas-em-r-218-milhoes/445405/",
+      "https://www.campograndenews.com.br/cidades/interior/policia-apreende-oito-veiculos-carregados-com-maconha-na-fronteira"
+     ]
     }
    }
   },
@@ -179,16 +182,19 @@
     "personas": null,
     "animales": null,
     "flora": null,
-    "contrabando": "Cocaína y pasta base de San Matías hacia Mato Grosso, por tierra y en avionetas: eju.tv la describe como «zona roja» del tráfico de drogas, con avionetas y cargas incautadas. Falta una segunda fuente específica de este paso (hay notas de aeronaves desde Bolivia con cocaína, pero en otros puntos de la frontera)"
+    "contrabando": "Cocaína y pasta base desde San Matías hacia Brasil, por tierra y en avionetas. eju.tv describe a San Matías como «zona roja» del tráfico de drogas y reporta que la FELCN halló 400 paquetes (419,75 kg de clorhidrato) camuflados cerca de una pista clandestina en el municipio (marzo de 2025) y que la Policía Federal de Brasil interceptó una avioneta con cocaína y detuvo a un concejal de San Matías. Prensa Mercosur recoge que la FELCN atribuye al PCC y al Comando Vermelho la violencia en San Matías (2022), y Los Tiempos cita al entonces ministro de Gobierno Carlos Romero diciendo que el narcotráfico penetró estructuras locales (2018). No se encontró cobertura de 2026 específica de este paso"
    },
-   "fuente": "eju.tv (Bolivia) y notas generales sobre aeronaves desde Bolivia; una sola fuente específica (revisión del 17/11/2026)",
-   "verificado": false,
+   "fuente": "Prensa de Bolivia (eju.tv, Los Tiempos) y Prensa Mercosur, contrastada el 20/11/2026 (ver enlaces); notas de 2018 a 2025, sin cobertura de 2026 hallada",
+   "verificado": true,
    "verificacion_posicion": "El punto coincide con San Matías en OpenStreetMap (0 km). Cáceres está a 83 km: es el par funcional del paso (la ruta Cáceres–San Matías), no una ciudad gemela.",
    "contraste": {
     "contrabando": {
-     "nivel": "una sola fuente",
+     "nivel": "dos medios distintos",
      "enlaces": [
-      "https://eju.tv/?p=57382"
+      "https://eju.tv/2025/03/la-felcn-incauta-droga-hongos-alucinogenos-bienes-inmuebles-y-afecta-al-narcotrafico-en-mas-de-us-16-millones/",
+      "https://eju.tv/?p=57218",
+      "https://prensamercosur.org/2022/01/31/bolivia-felcn-revela-que-el-pcc-y-comando-vermelho-siembran-la-muerte-en-san-matias/",
+      "https://www.lostiempos.com/actualidad/pais/20181018/romero-narcotrafico-penetro-estructuras-locales-san-matias"
      ]
     }
    }
