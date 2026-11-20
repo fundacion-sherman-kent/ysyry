@@ -1285,7 +1285,7 @@ __diseno_css__
     </a>
   </div>
   <div class="franja-derecha">
-    <nav><a href="#mapa">Corredor</a><a href="#metodo">Método</a><a href="https://fundacionkent.org/?utm_source=ysyry&amp;utm_medium=referral&amp;utm_campaign=marca&amp;utm_content=nav" target="_blank" rel="noopener">Fundación Sherman Kent ↗</a><a href="https://fundacionkent.org/articulos/?utm_source=ysyry&amp;utm_medium=referral&amp;utm_campaign=informes&amp;utm_content=nav" target="_blank" rel="noopener" title="Análisis de la Fundación Sherman Kent sobre América Latina y el Caribe">Análisis ↗</a></nav>
+    <nav><a href="#mapa">Corredor</a><a href="#metodo">Método</a><a href="https://fundacionkent.org/?utm_source=ysyry&amp;utm_medium=referral&amp;utm_campaign=marca&amp;utm_content=nav" target="_blank" rel="noopener">Fundación Sherman Kent ↗</a><a href="https://fundacionkent.org/articulos/?utm_source=ysyry&amp;utm_medium=referral&amp;utm_campaign=informes&amp;utm_content=nav" target="_blank" rel="noopener" title="Análisis de la Fundación Sherman Kent sobre América Latina y el Caribe">Análisis de la región ↗</a></nav>
     <span class="ultima">Última captura <b>__ultima_captura__</b></span>
     <button type="button" id="tema" class="tema" aria-pressed="false">Fondo oscuro</button>
   </div>
