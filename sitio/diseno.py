@@ -86,7 +86,9 @@ details.lz[open]>summary::before{transform:rotate(45deg)}
 @media (max-width:640px){details.lz>summary{grid-template-columns:auto 1fr}.lz-c,.lz-ch{grid-column:2;grid-row:auto;justify-content:flex-start;text-align:left}.lz-grid{grid-template-columns:1fr}.lib-ab{margin-left:0}}
 
 /* barra superior en la línea de FEMÓNOE: una sola fila, nombre en mayúsculas espaciadas con el color de la plataforma, estado a la derecha */
-.topbar-in{flex-wrap:nowrap;padding:12px 24px;gap:16px}
+.topbar-in{flex-wrap:nowrap;padding:12px 24px;gap:16px;max-width:1760px}
+.inicio{flex:0 0 auto}
+.topbar nav{flex:0 1 auto;min-width:0}
 .brand{flex:0 1 auto}
 .inicio .nombre{text-transform:uppercase;letter-spacing:.14em;font-size:17.3px;color:var(--acento);margin-bottom:3px}
 .inicio small{text-transform:none;font-size:11.7px;letter-spacing:.04em;line-height:1.3;white-space:nowrap}
@@ -96,7 +98,8 @@ details.lz[open]>summary::before{transform:rotate(45deg)}
 .topbar nav a{font-size:12.5px;white-space:nowrap}
 .estado-top{font-size:13px;color:var(--gris-acero);white-space:nowrap}
 .estado-top b{color:var(--fg);font-variant-numeric:tabular-nums}
-@media (max-width:1500px){.topbar nav{display:none}}
+@media (max-width:1600px){.topbar nav{display:none}}
+@media (max-width:1800px){.ultima{display:none}}
 @media (max-width:1100px){.ultima{display:none}}
 @media (max-width:900px){.estado-top{display:none}}
 @media (max-width:560px){.inicio small{display:none}.topbar-in{flex-wrap:wrap}}
