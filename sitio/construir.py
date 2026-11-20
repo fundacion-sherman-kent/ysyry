@@ -1294,7 +1294,6 @@ __diseno_css__
   </div>
 </div></div>
 <div class="envoltorio">
-<div class="aviso">Versión Beta - en desarrollo</div>
 
 <div class="hero entra">
   <p class="et">Corredor Hidrovía Paraguay-Paraná</p>
