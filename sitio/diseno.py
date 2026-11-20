@@ -84,6 +84,39 @@ details.lz[open]>summary::before{transform:rotate(45deg)}
 .ic.oculto,details.lz.oculto{display:none}
 @media (max-width:640px){details.lz>summary{grid-template-columns:auto 1fr}.lz-c,.lz-ch{grid-column:2;grid-row:auto;justify-content:flex-start;text-align:left}.lz-grid{grid-template-columns:1fr}.lib-ab{margin-left:0}}
 
+/* barra superior en la línea de FEMÓNOE: una sola fila, nombre en mayúsculas espaciadas con el color de la plataforma, estado a la derecha */
+.topbar-in{flex-wrap:nowrap;padding:12px 24px;gap:16px}
+.brand{flex:0 1 auto}
+.inicio .nombre{text-transform:uppercase;letter-spacing:.14em;font-size:17.3px;color:var(--acento);margin-bottom:3px}
+.inicio small{text-transform:none;font-size:11.7px;letter-spacing:.04em;line-height:1.3;white-space:nowrap}
+.tema{white-space:nowrap}
+.franja-derecha{flex-wrap:nowrap;gap:22px}
+.topbar nav{gap:20px}
+.topbar nav a{font-size:12.5px;white-space:nowrap}
+.estado-top{font-size:13px;color:var(--gris-acero);white-space:nowrap}
+.estado-top b{color:var(--fg);font-variant-numeric:tabular-nums}
+@media (max-width:1500px){.topbar nav{display:none}}
+@media (max-width:1100px){.ultima{display:none}}
+@media (max-width:900px){.estado-top{display:none}}
+@media (max-width:560px){.inicio small{display:none}.topbar-in{flex-wrap:wrap}}
+
+/* vista Seguridad del mapa */
+.fam-grupo{flex-basis:100%;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gris-acero);font-weight:700;margin:6px 0 -2px}
+.fam-grupo:first-child{margin-top:0}
+svg.fam-seguridad .solo-fam{display:inline}
+svg.fam-seguridad .dim{opacity:.16!important}
+svg.fam-seguridad .esc-g,svg.fam-seguridad .frontera-g{filter:drop-shadow(0 0 4px color-mix(in srgb,var(--naranja) 70%,transparent))}
+.seg-hoy{margin:20px 0 4px}
+.seg-hoy h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 2px;color:var(--gris-acero)}
+.seg-hoy .sub{font-size:12.5px;color:var(--gris-acero);margin:0 0 10px;max-width:90ch}
+.seg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:10px}
+.sc{font-family:inherit;text-align:left;cursor:pointer;color:var(--fg);background:var(--papel);border:1px solid var(--linea);border-left:3px solid var(--acento);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:2px;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.sc:hover,.sc:focus-visible{transform:translateY(-2px);border-color:var(--acento);box-shadow:0 8px 22px color-mix(in srgb,var(--acento) 16%,transparent);outline:none}
+.sc.senal{border-left-color:var(--naranja)}
+.sc .sn{font-size:28px;font-weight:800;line-height:1.05;font-variant-numeric:tabular-nums}
+.sc .sk{font-size:12.5px;font-weight:700;line-height:1.3}
+.sc .sv{font-size:11px;color:var(--gris-acero);margin-top:3px}
+
 /* recorrido guiado */
 .mapa-cab .tour-btn{width:auto;min-width:0;background:transparent;border:1px solid var(--gris-acero);color:#F9F9F7;border-radius:999px;padding:0 14px;height:32px;font-weight:700;font-size:12px;cursor:pointer;font-family:inherit;margin:0 8px;transition:background .2s ease,border-color .2s ease}
 .mapa-cab .tour-btn:hover{border-color:var(--acento);background:color-mix(in srgb,var(--acento) 25%,transparent)}
@@ -227,6 +260,17 @@ JS = r"""
     });
   }
 
+  // franja «Seguridad hoy»: cada tarjeta lleva a su capa del mapa o a su indicador
+  document.querySelectorAll(".sc").forEach(function(c){
+    c.addEventListener("click", function(){
+      const a = c.dataset.act || "";
+      if (a.indexOf("tab:") === 0){ const t = $('.familia-tab[data-familia="' + a.slice(4) + '"]'); if (t) t.click(); const m = $("#mapa"); if (m) m.scrollIntoView({behavior: REDUCIDO ? "auto" : "smooth", block:"start"}); }
+      else if (a.indexOf("ancla:") === 0){ const el = $(a.slice(6)); if (el) el.scrollIntoView({behavior: REDUCIDO ? "auto" : "smooth", block:"start"}); }
+    });
+  });
+  // el mapa arranca en la vista de seguridad (la prioridad de Ysyry); «Todo el mapa» la deja a un clic
+  const t0 = $('.familia-tab[data-familia="seguridad"]'); if (t0) t0.click();
+
   // recorrido guiado por las cinco zonas
   const cab = $(".mapa-cab .zoom-ctrl"), colmapa = $(".col-mapa");
   if (cab && colmapa){
@@ -283,6 +327,42 @@ VOLAR = r"""
   };
   ["pointerdown", "wheel"].forEach(function(ev){ svg.addEventListener(ev, function(){ cancelAnimationFrame(vueloRAF); }, {passive:true}); });
 """
+
+def tarjetas(flu_extra, n_rutas, n_esc, fron):
+    """Franja «Seguridad hoy»: cifras que ya están en la página, con su nivel de evidencia, y a dónde lleva cada una."""
+    import html
+    e = html.escape
+    items = {}
+    for lst in flu_extra.values():
+        for i in lst:
+            items.setdefault(i["id"], []).append(i)
+
+    def suma(i, k):
+        return sum((x.get("dato") or {}).get(k, 0) or 0 for x in items.get(i, []))
+
+    def nivel(i):
+        return items[i][0]["nivel"] if items.get(i) else "sin dato hoy"
+    pasos = (fron or {}).get("pasos", [])
+    ver = sum(1 for p in pasos if p.get("verificado"))
+    c = []
+    c.append((str(n_esc), "hechos de seguridad detectados en 7 días", "detección automática, sin verificar", "tab:seguridad", False))
+    if items.get("DEC"):
+        c.append((str(suma("DEC", "hechos_30")), "decomisos e incautaciones en 30 días", nivel("DEC"), "ancla:#indicios-zonas", False))
+    c.append((str(len(pasos)), "pasos de frontera seca marcados", "%d de %d contrastados con una segunda fuente" % (ver, len(pasos)), "tab:fronteras", False))
+    c.append((str(n_rutas), "rutas ilícitas de SIWA cerca del río", "capa de terceros (SIWA), calificada por ellos", "tab:flujos", False))
+    if items.get("ANI"):
+        c.append((str(max((x.get("dato") or {}).get("mmsi_inconsistentes", 0) for x in items["ANI"])), "identidades de AIS inconsistentes", nivel("ANI"), "ancla:#indicios-zonas", False))
+    if items.get("SAN"):
+        n = suma("SAN", "coincidencias")
+        c.append((str(n), "buques con IMO en listas de sanciones", "OFAC, Reino Unido y ONU; " + nivel("SAN").lower(), "ancla:#indicios-zonas", n > 0))
+    if items.get("RAS"):
+        c.append((str(suma("RAS", "ultimos_90_dias")), "alertas de la UE por alimentos del corredor (90 días)", nivel("RAS"), "ancla:#indicios-zonas", False))
+    if items.get("SIN"):
+        c.append((str(suma("SIN", "hechos_30")), "siniestros y derrames en 30 días", nivel("SIN"), "ancla:#indicios-zonas", False))
+    tj = "".join('<button type="button" class="sc%s" data-act="%s"><span class="sn">%s</span><span class="sk">%s</span><span class="sv">%s</span></button>' % (" senal" if s else "", e(a), e(n), e(k), e(v)) for n, k, v, a, s in c)
+    return ('<div class="seg-hoy"><h2>Seguridad hoy</h2><p class="sub">Lo que la página ve sobre crimen organizado, contrabando, sanciones y riesgos para el Estado y las empresas. Son indicios con su nivel de evidencia, no hechos confirmados: tocá una tarjeta para verla en el mapa o en el libro de indicios.</p>'
+            '<div class="seg-grid">%s</div></div>' % tj)
+
 
 ANCHOS = {"z1": 0.30, "z2": 0.12, "z3": 0.34, "z4": 0.24, "z5": 0.42}
 

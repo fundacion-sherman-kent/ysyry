@@ -541,7 +541,7 @@ def marcas_escaner(recientes):
     for k, ((lat, lon), lst) in enumerate(sorted(por.items())):
         x, y = _pulso.AX * lon + _pulso.BX, _pulso.AY * lat + _pulso.BY
         lugar = lst[0]["lugares"][0] if lst[0]["lugares"] else "Corredor"
-        svgs.append('<g class="esc-g clicable" data-i="ev%d" data-familia="indicios" transform="translate(%.1f,%.1f)"><circle class="hit" r="12"/><path class="esc" d="M0,-5.5L5.5,0L0,5.5L-5.5,0Z"/></g>' % (k, x, y))
+        svgs.append('<g class="esc-g clicable" data-i="ev%d" data-familia="indicios seguridad" transform="translate(%.1f,%.1f)"><circle class="hit" r="12"/><path class="esc" d="M0,-5.5L5.5,0L0,5.5L-5.5,0Z"/></g>' % (k, x, y))
         ctx = []
         for e in sorted(lst, key=lambda e: (e["fecha"], e["puntaje"]), reverse=True)[:6]:
             q = (" · %s %s" % (("%g" % e["cantidad"]["valor"]).replace(".", ","), e["cantidad"]["unidad"])) if e.get("cantidad") else ""
@@ -678,7 +678,7 @@ def focos(ruta):
 
 
 def marca_foco(p):
-    return '<g class="foco-g" data-familia="indicios" transform="translate(%.1f,%.1f)"><circle class="foco%s" r="%s"/></g>' % (p["x"], p["y"], " foco-alto" if p["conf"] == "h" else "", "2.6" if p["conf"] == "h" else "2")
+    return '<g class="foco-g" data-familia="indicios seguridad" transform="translate(%.1f,%.1f)"><circle class="foco%s" r="%s"/></g>' % (p["x"], p["y"], " foco-alto" if p["conf"] == "h" else "", "2.6" if p["conf"] == "h" else "2")
 
 
 # ---------------------------------------------------------------- prensa (segunda familia de fuentes)

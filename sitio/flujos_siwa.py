@@ -101,9 +101,9 @@ def trazo_svg(i, r):
     d = "M" + "L".join("%.1f,%.1f" % (x, y) for x, y, *_ in r["pts"]) if len(r["pts"]) > 1 else ""
     if not d:
         x, y = r["pts"][0][0], r["pts"][0][1]
-        return ('<g class="flujo-g solo-fam clicable" data-i="fl%d" data-familia="flujos" transform="translate(%.1f,%.1f)">'
+        return ('<g class="flujo-g solo-fam clicable" data-i="fl%d" data-familia="flujos seguridad" transform="translate(%.1f,%.1f)">'
                 '<circle class="hit" r="12"/><circle class="flujo-pt%s" r="3.4"/></g>' % (i, x, y, " flujo-act" if r["activa"] else ""))
-    return ('<g class="flujo-g solo-fam clicable" data-i="fl%d" data-familia="flujos"><path class="flujo-hit" d="%s"/><path class="flujo%s" d="%s"/></g>'
+    return ('<g class="flujo-g solo-fam clicable" data-i="fl%d" data-familia="flujos seguridad"><path class="flujo-hit" d="%s"/><path class="flujo%s" d="%s"/></g>'
             % (i, d, " flujo-act" if r["activa"] else "", d))
 
 

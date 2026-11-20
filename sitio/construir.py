@@ -411,7 +411,7 @@ for i, m in enumerate(marcos):
         cat, color = categoria_ais(p.get("tipo_ais"))
         nombre = (p.get("nombre") or "").strip() or "(sin nombre transmitido)"
         estado = es_estado(p)
-        fam = "estado" if estado else "comercio"
+        fam = "estado seguridad" if estado else "comercio"
         if estado:
             # triángulo azul, más grande y con borde blanco: se distingue de todo lo demás
             cog = p.get("cog") if p.get("cog") is not None else 0
@@ -808,7 +808,7 @@ let vivoDatos = null;
   function dibujar(d){
     while (capa.firstChild) capa.removeChild(capa.firstChild);
     d.buques.slice().sort(function(a, b){ return (a.u | 0) - (b.u | 0); }).forEach(function(b){
-      const g = el("g", {"class": "buque-g clicable buque-vivo" + (b.u ? " buque-estado" : ""), "data-familia": b.u ? "estado" : "comercio", "data-i": "vv" + b.i,
+      const g = el("g", {"class": "buque-g clicable buque-vivo" + (b.u ? " buque-estado" : ""), "data-familia": b.u ? "estado seguridad" : "comercio", "data-i": "vv" + b.i,
         "transform": "translate(" + b.x + "," + b.y + ")" + (b.c === null || b.c === undefined ? "" : " rotate(" + b.c + ")")});
       g.appendChild(el("circle", {"class": "hit", "r": "13"}));
       if (b.u) g.appendChild(el("path", {"d": "M0,-8 L6,6 L-6,6 Z", "style": "fill:#2f7bff;stroke:#fff;stroke-width:1.2;stroke-linejoin:round"}));
@@ -1281,11 +1281,12 @@ __diseno_css__
         <circle cx="23" cy="23" r="4.6" fill="#2C6E93"/>
         <circle cx="23" cy="23" r="8.2" fill="none" stroke="#2C6E93" stroke-width="1.3" opacity=".55"/>
       </svg>
-      <span><span class="nombre">Ysyry</span><small>Corredor Hidrovía Paraguay-Paraná</small></span>
+      <span><span class="nombre">Ysyry</span><small>Evidencia, alertas y prospectiva · Hidrovía Paraguay-Paraná</small></span>
     </a>
   </div>
   <div class="franja-derecha">
     <nav><a href="#mapa">Corredor</a><a href="#metodo">Método</a><a href="https://fundacionkent.org/?utm_source=ysyry&amp;utm_medium=referral&amp;utm_campaign=marca&amp;utm_content=nav" target="_blank" rel="noopener">Fundación Sherman Kent ↗</a><a href="https://fundacionkent.org/articulos/?utm_source=ysyry&amp;utm_medium=referral&amp;utm_campaign=informes&amp;utm_content=nav" target="_blank" rel="noopener" title="Análisis de la Fundación Sherman Kent sobre América Latina y el Caribe">Análisis de la región ↗</a></nav>
+    <span class="estado-top"><b>__n_buques__</b> embarcaciones con AIS</span>
     <span class="ultima">Última captura <b>__ultima_captura__</b></span>
     <button type="button" id="tema" class="tema" aria-pressed="false">Fondo oscuro</button>
   </div>
@@ -1307,16 +1308,19 @@ __diseno_css__
   <div class="metrica"><div class="n">__n_capturas__</div><div class="k">Capturas horarias de AIS (≈ 1 día de historial); el AIS no cubre el río alto</div></div>
 </div>
 
+__seg_cards__
 <div class="familias" id="mapa">
-  <button class="familia-tab activa" data-familia="">Todo</button>
-  <button class="familia-tab" data-familia="seguridad">Crimen organizado y riesgo</button>
+  <span class="fam-grupo">Seguridad</span>
+  <button class="familia-tab activa" data-familia="seguridad">Toda la seguridad</button>
+  <button class="familia-tab" data-familia="fronteras">Fronteras secas</button>
+  <button class="familia-tab" data-familia="flujos">Flujos ilícitos (SIWA)</button>
+  <button class="familia-tab" data-familia="aereo">Tráfico aéreo y pistas</button>
+  <span class="fam-grupo">Contexto</span>
+  <button class="familia-tab" data-familia="">Todo el mapa</button>
   <button class="familia-tab" data-familia="comercio">Comercio y puertos</button>
   <button class="familia-tab" data-familia="estado">Fuerzas del Estado</button>
   <button class="familia-tab" data-familia="regulatorio">Regulatorio</button>
-  <button class="familia-tab" data-familia="indicios">Indicios y nivel del río</button>
-  <button class="familia-tab" data-familia="flujos">Flujos ilícitos (SIWA)</button>
-  <button class="familia-tab" data-familia="fronteras">Fronteras secas</button>
-  <button class="familia-tab" data-familia="aereo">Tráfico aéreo y pistas</button>
+  <button class="familia-tab" data-familia="indicios">Nivel del río e indicios</button>
 </div>
 
 <div class="col-mapa entra r3">
@@ -1788,6 +1792,7 @@ document.querySelectorAll(".familia-tab").forEach(function(btn){
     });
     document.getElementById("svg-mapa").classList.toggle("fam-flujos", fam === "flujos");
     document.getElementById("svg-mapa").classList.toggle("fam-aereo", fam === "aereo");
+    document.getElementById("svg-mapa").classList.toggle("fam-seguridad", fam === "seguridad");
   });
 });
 
@@ -2035,7 +2040,7 @@ TPL = TPL.replace(_TITULO_TPL, _ETIQUETAS_TPL, 1)
 html = TPL
 import diseno as _dis
 SUST = {
-    "diseno_css": _dis.CSS, "diseno_js": _dis.js(), "volar_js": _dis.VOLAR,
+    "seg_cards": _dis.tarjetas(_flu_extra, len(_flu_rutas), sum(1 for _e in _esc_rec if any(_t[0] in ("decomiso", "detencion", "pirateria", "siniestro", "estado") for _t in _e["tipos"])), _fron), "diseno_css": _dis.CSS, "diseno_js": _dis.js(), "volar_js": _dis.VOLAR,
     "capa_viva_js": CAPA_VIVA_JS,      # primero: su texto lleva el marcador de la dirección
     "vivo_url": _dir.VIVO,
     "provincias": "\n    ".join(prov_svg),
