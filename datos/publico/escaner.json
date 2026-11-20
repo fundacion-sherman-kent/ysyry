@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-20T02:15:06Z",
+ "obtenido": "2026-11-20T11:24:55Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 41,
+   "items": 42,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 89,
+   "items": 94,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -159,14 +159,14 @@
    "url": "https://www.npy.com.py/index.rss",
    "ok": true,
    "items": 18,
-   "candidatos": 2,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 374,
+   "items": 347,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 64
+   "fallos_seguidos": 65
   },
   {
    "dominio": "senad.gov.py",
@@ -202,7 +202,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 2
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -256,7 +256,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 33,
+   "items": 35,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -275,7 +275,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "no element found: line 1, column 38",
-   "fallos_seguidos": 2
+   "fallos_seguidos": 3
   },
   {
    "dominio": "opinion.com.bo",
@@ -1257,6 +1257,15 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Alliana respalda a Benítez en Yacyretá pese a que es accionista de Ueno y autorizó colocar allí US$ 10 millones",
+   "url": "https://www.abc.com.py/economia/2026/11/20/alliana-respalda-a-benitez-en-yacyreta-pese-a-que-es-accionista-de-ueno-y-autorizo-colocar-alli-us-10-millones/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
    "titulo": "Brasil solicita reevaluar bancos autorizados por Paraguay para operar con Itaipú",
    "url": "http://www.lanacion.com.py/politica/2026/11/19/brasil-solicita-reevaluar-bancos-autorizados-por-paraguay-para-operar-con-itaipu/",
    "dominio": "lanacion.com.py",
@@ -1264,6 +1273,31 @@
    "lugares": [
     "Itaipú"
    ]
+  },
+  {
+   "titulo": "Empujones, corridas y una PlayStation 5 a precio regalado: el caos del Black Friday en Ciudad del Este",
+   "url": "https://misionesonline.net/2026/11/20/empujones-corridas-y-una-playstation-5-a-precio-regalado-el-caos-del-black-friday-en-ciudad-del-este/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "“Hoy hay víctimas de trata por una coerción mucho más sutil y eficaz, las endeudan”",
+   "url": "https://www.primeraedicion.com.ar/nota/101161990/hoy-hay-victimas-de-trata-por-una-coercion-mucho-mas-sutil-y-eficaz-las-endeudan/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "La batalla por la que se celebra el Día de la Soberanía Nacional",
+   "url": "https://www.primeraedicion.com.ar/nota/100363972/vuelta-de-obligado-la-batalla-por-la-que-se-celebra-el-dia-de-la-soberania-nacional/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-20",
+   "lugares": []
   },
   {
    "titulo": "Asalto y toma de rehenes a policías en Asunción apuntan a una banda fronteriza",
@@ -1302,16 +1336,6 @@
    ]
   },
   {
-   "titulo": "Nombran a Hugo Zárate como nuevo titular de Itaipú y renuevan Consejo",
-   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/19/nombran-a-hugo-zarate-como-nuevo-titular-de-itaipu-y-renuevan-consejo/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Zárate",
-    "Itaipú"
-   ]
-  },
-  {
    "titulo": "Relacionamento amoroso pode ter motivado morte de homem atacado com barra de ferro em academia no Paraná, diz polícia",
    "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/19/relacionamento-amoroso-pode-ter-motivado-morte-de-homem-em-academia.ghtml",
    "dominio": "g1.globo.com",
@@ -1327,6 +1351,16 @@
    "fecha": "2026-11-19",
    "lugares": [
     "Posadas"
+   ]
+  },
+  {
+   "titulo": "Nombran a Hugo Zárate como nuevo titular de Itaipú y renuevan Consejo",
+   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/19/nombran-a-hugo-zarate-como-nuevo-titular-de-itaipu-y-renuevan-consejo/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
    ]
   },
   {
@@ -2280,44 +2314,6 @@
    "fecha": "2026-11-10",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Funcionaria de Ueno Casa de Bolsa guardó silencio y según su abogado rompió solo “proyectos”",
-   "url": "http://www.lanacion.com.py/pais/2026/11/10/funcionaria-de-ueno-casa-de-bolsa-guardo-silencio-y-segun-su-abogado-rompio-solo-proyectos/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Golpe al narcotráfico: primera semana de Nueva Alianza 59 deja pérdidas por USD 17 millones",
-   "url": "http://www.lanacion.com.py/pais/2026/11/10/golpe-al-narcotrafico-primera-semana-de-nueva-alianza-59-deja-perdidas-por-usd-17-millones/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Canindeyú"
-   ]
-  },
-  {
-   "titulo": "Director de Yacyretá, cercano a Alliana, es accionista de Ueno Bank y autorizó colocar allí US$ 10 millones del fondo jubilatorio",
-   "url": "https://www.abc.com.py/economia/2026/11/10/director-de-yacyreta-cercano-a-alliana-es-accionista-de-ueno-bank-y-autorizo-colocar-alli-us-10-millones-del-fondo-jubilatorio/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Trata de personas: 62 chinos rescatados de un hotel de CDE declararon ante juez",
-   "url": "http://www.lanacion.com.py/pais/2026/11/09/trata-de-personas-62-chinos-rescatados-de-un-hotel-de-cde-declararon-ante-juez/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-10",
-   "lugares": [
-    "Ciudad del Este",
-    "Canindeyú",
-    "Alto Paraná"
    ]
   }
  ]
