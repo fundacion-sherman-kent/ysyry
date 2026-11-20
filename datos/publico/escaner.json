@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-20T15:51:00Z",
+ "obtenido": "2026-11-20T20:02:07Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 46,
+   "items": 43,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 86,
+   "items": 89,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -101,11 +101,10 @@
   {
    "dominio": "ip.gov.py",
    "url": "https://www.ip.gov.py/ip/feed/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 10,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "agenciabrasil.ebc.com.br",
@@ -134,20 +133,18 @@
   {
    "dominio": "annp.gov.py",
    "url": "https://annp.gov.py/?feed=rss2",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 10,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "armadaparaguaya.mil.py",
    "url": "https://armadaparaguaya.mil.py/feed",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 10,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "pagina12.com.ar",
@@ -169,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 351,
+   "items": 356,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -180,33 +177,32 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 66
+   "fallos_seguidos": 67
   },
   {
    "dominio": "senad.gov.py",
    "url": "https://senad.gov.py/feed",
-   "ok": false,
-   "items": 0,
-   "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "ok": true,
+   "items": 10,
+   "candidatos": 1,
+   "fallos_seguidos": 0
   },
   {
    "dominio": "policianacional.gov.py",
    "url": "https://www.policianacional.gov.py/feed/",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 5,
    "candidatos": 0,
-   "error": "<urlopen error timed out>",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "campograndenews.com.br",
    "url": "https://www.campograndenews.com.br/rss",
-   "ok": true,
-   "items": 20,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "HTTP Error 403: Forbidden",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -237,7 +233,7 @@
    "url": "https://www.misionesonline.net/feed/",
    "ok": true,
    "items": 10,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -1328,11 +1324,22 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "El Niño: desplazados por el río Paraná vuelven a sus casas, mientras el Chaco sigue afectado",
-   "url": "https://www.abc.com.py/nacionales/2026/11/20/el-nino-desplazados-por-el-rio-parana-vuelven-a-sus-casas-mientras-el-chaco-sigue-afectado/",
+   "titulo": "Capturan en Pedro Juan Caballero a brasileño condenado por tráfico de drogas en su país",
+   "url": "https://www.abc.com.py/policiales/2026/11/20/capturan-en-pedro-juan-caballero-a-brasileno-condenado-por-trafico-de-drogas-en-su-pais/",
    "dominio": "abc.com.py",
    "fecha": "2026-11-20",
-   "lugares": []
+   "lugares": [
+    "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "Hernandarias: allanaron casas por robo de energía e incautaron 41 máquinas de criptomonedas",
+   "url": "http://www.lanacion.com.py/pais/2026/11/20/hernandarias-allanaron-casas-por-robo-de-energia-e-incautaron-41-maquinas-de-criptomonedas/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Hernandarias"
+   ]
   },
   {
    "titulo": "Se acabó la “diversión”: policías de tránsito de Asunción empezarán a aplicar sanciones",
@@ -1362,6 +1369,84 @@
    ]
   },
   {
+   "titulo": "Kicillof hizo un llamado a “escribir” una nueva historia en Argentina y prometió el Canal Magdalena",
+   "url": "https://www.pagina12.com.ar/2026/11/20/kicillof-hizo-un-llamado-a-escribir-una-nueva-historia-en-argentina-y-prometio-el-canal-magdalena/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-11-20",
+   "lugares": []
+  },
+  {
+   "titulo": "Femicidio seguido de suicidio",
+   "url": "https://www.pagina12.com.ar/2026/11/20/femicidio-seguido-de-suicidio/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "SENAD DESARTICULA DOS FOCOS DE VENTA DE DROGAS EN EL BARRIO SAJONIA",
+   "url": "https://senad.gov.py/senad-desarticula-dos-focos-de-venta-de-drogas-en-el-barrio-sajonia/",
+   "dominio": "senad.gov.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "SENAD CORTA IMPORTANTE RUTA DE ABASTECIMIENTO DE CHESPI EN CDE",
+   "url": "https://senad.gov.py/senad-corta-importante-ruta-de-abastecimiento-de-chespi-en-cde/",
+   "dominio": "senad.gov.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Ciudad del Este",
+    "Alto Paraná"
+   ]
+  },
+  {
+   "titulo": "PM de Ponta Porã cumpre mandado de prisão no bairro Jardim Ipanema",
+   "url": "https://www.pontaporainforma.com.br/pm-de-ponta-pora-cumpre-mandado-de-prisao-no-bairro-jardim-ipanema/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Ponta Porã"
+   ]
+  },
+  {
+   "titulo": "Autoridades do lado brasileiro da Itaipu estão preocupadas com a crise bancaria no Paraguai",
+   "url": "https://www.pontaporainforma.com.br/autoridades-do-lado-brasileiro-da-itaipu/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Fuertes tormentas provocaron caída de postes y cortes de luz en Iguazú y San Antonio",
+   "url": "https://www.primeraedicion.com.ar/nota/101162150/fuertes-tormentas-provocaron-caida-de-postes-y-cortes-de-luz-en-iguazu-y-san-antonio/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "El Niño: desplazados por el río Paraná vuelven a sus casas, mientras el Chaco sigue afectado",
+   "url": "https://www.abc.com.py/nacionales/2026/11/20/el-nino-desplazados-por-el-rio-parana-vuelven-a-sus-casas-mientras-el-chaco-sigue-afectado/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-20",
+   "lugares": []
+  },
+  {
+   "titulo": "Alliana respalda a Benítez en Yacyretá pese a que es accionista de Ueno y autorizó colocar allí US$ 10 millones",
+   "url": "https://www.abc.com.py/economia/2026/11/20/alliana-respalda-a-benitez-en-yacyreta-pese-a-que-es-accionista-de-ueno-y-autorizo-colocar-alli-us-10-millones/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
    "titulo": "Un empresario advirtió sobre la crisis de las pymes en Corrientes: \"No hay reactivación, hay desesperación\"",
    "url": "https://perfil.com/nea/un-empresario-advirtio-sobre-la-crisis-de-las-pymes-en-corrientes-no-hay-reactivacion-hay-desesperacion-agsH77p0OLPg",
    "dominio": "perfil.com",
@@ -1383,33 +1468,6 @@
    "dominio": "pagina12.com.ar",
    "fecha": "2026-11-20",
    "lugares": []
-  },
-  {
-   "titulo": "PM de Ponta Porã cumpre mandado de prisão no bairro Jardim Ipanema",
-   "url": "https://www.pontaporainforma.com.br/pm-de-ponta-pora-cumpre-mandado-de-prisao-no-bairro-jardim-ipanema/",
-   "dominio": "pontaporainforma.com.br",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Ponta Porã"
-   ]
-  },
-  {
-   "titulo": "Autoridades do lado brasileiro da Itaipu estão preocupadas com a crise bancaria no Paraguai",
-   "url": "https://www.pontaporainforma.com.br/autoridades-do-lado-brasileiro-da-itaipu/",
-   "dominio": "pontaporainforma.com.br",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Alliana respalda a Benítez en Yacyretá pese a que es accionista de Ueno y autorizó colocar allí US$ 10 millones",
-   "url": "https://www.abc.com.py/economia/2026/11/20/alliana-respalda-a-benitez-en-yacyreta-pese-a-que-es-accionista-de-ueno-y-autorizo-colocar-alli-us-10-millones/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Yacyretá"
-   ]
   },
   {
    "titulo": "Empujones, corridas y una PlayStation 5 a precio regalado: el caos del Black Friday en Ciudad del Este",
@@ -1446,21 +1504,21 @@
    ]
   },
   {
-   "titulo": "Fiscalía imputó a dos mujeres por supuesta venta de medicamentos en el Hospital IPS de CDE",
-   "url": "http://www.lanacion.com.py/pais/2026/11/19/fiscalia-imputo-a-dos-mujeres-por-supuesta-venta-de-medicamentos-en-el-hospital-ips-de-cde/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Ciudad del Este"
-   ]
-  },
-  {
    "titulo": "Relacionamento amoroso pode ter motivado morte de homem atacado com barra de ferro em academia no Paraná, diz polícia",
    "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/19/relacionamento-amoroso-pode-ter-motivado-morte-de-homem-em-academia.ghtml",
    "dominio": "g1.globo.com",
    "fecha": "2026-11-19",
    "lugares": [
     "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "Fiscalía imputó a dos mujeres por supuesta venta de medicamentos en el Hospital IPS de CDE",
+   "url": "http://www.lanacion.com.py/pais/2026/11/19/fiscalia-imputo-a-dos-mujeres-por-supuesta-venta-de-medicamentos-en-el-hospital-ips-de-cde/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Ciudad del Este"
    ]
   },
   {
@@ -2317,67 +2375,6 @@
    "lugares": [
     "Alto Paraná",
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Vicepresidente Barrios se disculpa con empresarios y califica el episodio de “muy amargo”",
-   "url": "http://www.lanacion.com.py/politica/2026/11/11/vicepresidente-barrios-se-disculpa-con-empresarios-y-califica-el-episodio-de-muy-amargo/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-11",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "EBY recurrirá a la Justicia para recuperar USD 10 millones colocados en Ueno Bank",
-   "url": "http://www.lanacion.com.py/negocios/2026/11/11/eby-recurrira-a-la-justicia-para-recuperar-usd-10-millones-colocados-en-ueno-bank/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-11",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "La represa Yacyretá descarta haber depositado fondos en el intervenido Ueno bank",
-   "url": "https://www.abc.com.py/internacionales/2026/11/11/la-represa-yacyreta-descarta-haber-depositado-fondos-en-el-intervenido-ueno-bank/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-11",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Río Paraná podría descender casi cinco metros hasta el domingo",
-   "url": "https://www.abc.com.py/este/2026/11/11/rio-parana-podria-descender-casi-cinco-metros-hasta-el-domingo/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-11",
-   "lugares": []
-  },
-  {
-   "titulo": "Itaipú entregó 16% más de energía a la ANDE en los 10 primeros meses",
-   "url": "https://www.abc.com.py/economia/2026/11/11/itaipu-entrego-16-mas-de-energia-a-la-ande-en-los-10-primeros-meses/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-11",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Hugel, el reconocido DJ francés, desembarca con fiesta en el Puerto de Asunción",
-   "url": "https://www.abc.com.py/espectaculos/musica/2026/11/11/hugel-el-reconocido-dj-frances-desembarca-con-fiesta-en-el-puerto-de-asuncion/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-11",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Yacyretá rompe el silencio sobre Ueno, pero no aclara que su director es accionista del banco intervenido",
-   "url": "https://www.abc.com.py/economia/2026/11/11/yacyreta-rompe-el-silencio-sobre-ueno-pero-no-aclara-que-su-director-es-accionista-del-banco-intervenido/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-11",
-   "lugares": [
-    "Yacyretá"
    ]
   }
  ]
