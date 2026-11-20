@@ -915,6 +915,7 @@ let vivoDatos = null;
 })();
 """
 TPL = r"""<!doctype html>
+<html lang="es">
 <!-- Medicion. Es la MISMA etiqueta de la Fundacion que ya usa SIWA: una sola
      propiedad y un solo flujo para las tres plataformas, que se separan despues
      por nombre de host. Si la propiedad cambia, se cambia SOLO esta linea.
@@ -1008,6 +1009,7 @@ html{scroll-padding-top:var(--alto-cab,72px)}
   display:flex;align-items:center;justify-content:center;font-family:inherit;line-height:1}
 .zoom-ctrl button:hover{background:rgba(255,255,255,.2)}
 .mapa-marco{overflow:hidden;border-radius:8px;touch-action:none}
+.mapa-lugar{width:100%;aspect-ratio:__W__/__H__;max-height:70vh}
 svg.mapa{width:100%;height:auto;display:block;max-height:70vh;cursor:grab;user-select:none;-webkit-user-select:none}
 svg.mapa.arrastrando{cursor:grabbing}
 .sat-img{display:none}
@@ -1342,29 +1344,7 @@ __seg_cards__
     <span class="sat-info" id="sat-info"></span>
   </div>
   <div class="mapa-marco">
-  <svg class="mapa" id="svg-mapa" viewBox="0 0 __W__ __H__" preserveAspectRatio="xMidYMid meet">
-    __sat_imgs__
-    __provincias__
-    __agua_osm__
-    __paises__
-    __rutas__
-    __bioceanico__
-    __rio_pilco__
-    __rio_bermejo__
-    __rio_parana__
-    __rio_paraguay__
-    __zonas__
-    __amarres__
-    __poi__
-    __grupos_hora__
-    <g id="capa-viva" style="display:none"></g>
-    __pistas__
-    <g id="capa-aerea"></g>
-    __riesgos__
-    __zonas_etq__
-    __poi_etq__
-    __riesgos_etq__
-  </svg>
+  <div id="mapa-lugar" class="mapa-lugar" aria-hidden="true"></div>
   </div>
 </div>
 
@@ -1486,6 +1466,32 @@ __prospectiva__
     <button type="submit">Enviar</button>
   </form>
 </section>
+<template id="mapa-tpl">
+  <svg class="mapa" id="svg-mapa" viewBox="0 0 __W__ __H__" preserveAspectRatio="xMidYMid meet">
+    __sat_imgs__
+    __provincias__
+    __agua_osm__
+    __paises__
+    __rutas__
+    __bioceanico__
+    __rio_pilco__
+    __rio_bermejo__
+    __rio_parana__
+    __rio_paraguay__
+    __zonas__
+    __amarres__
+    __poi__
+    __grupos_hora__
+    <g id="capa-viva" style="display:none"></g>
+    __pistas__
+    <g id="capa-aerea"></g>
+    __riesgos__
+    __zonas_etq__
+    __poi_etq__
+    __riesgos_etq__
+  </svg>
+</template>
+<script>(function(){var h=document.getElementById("mapa-lugar"),t=document.getElementById("mapa-tpl");if(h&&t)h.replaceWith(t.content.cloneNode(true));})();</script>
 <script>
 const INFO = __info_json__;
 const REF = __info_ref__;
