@@ -8,8 +8,6 @@ cada dato con su origen y su fecha, y lo que todavía no sabemos o no cubrimos, 
 
 **Sitio:** <https://ysyry.fundacionkent.org/sitio/> (la raíz `https://ysyry.fundacionkent.org/` es la página que se comparte y redirige ahí, como en SIWA)
 
-**Estado: versión beta, en desarrollo.**
-
 ## Regla de verificación
 
 **Dos fuentes independientes como mínimo.** Ningún dato se presenta como un hecho verificado con una sola: se rotula «fuente única, no verificado». Con dos o más independientes de la misma familia (por ejemplo, varios medios) es «corroborado»; con dos o más de al menos dos familias (por ejemplo, prensa y una fuente oficial), «fuerte». Varias estaciones de un mismo organismo, las dos redes de AIS o varios medios que copian a una misma agencia cuentan como una sola fuente. Un detector automático, como el escáner de titulares, nunca pasa de «corroborado». La corroboración es por afirmación: dos hechos distintos no se corroboran entre sí. Está en `sitio/indicios.py` y se ve en la página.

@@ -637,7 +637,7 @@ if marcos:
     shutil.copytree(Path(__file__).resolve().parent / "marca", _dir_salida / "marca", dirs_exist_ok=True)
     shutil.copyfile(D / "calados.json", _dir_salida / "datos" / "calados.json")      # tabla curada de calados, también como dato abierto
     # archivo liviano y estable para la franja del ecosistema de la web institucional (la portada pesa más de 8 MB y no se le puede preguntar en cada visita)
-    _cifras = {"plataforma": "Ysyry", "version": "beta", "url": _dir.APP,
+    _cifras = {"plataforma": "Ysyry", "url": _dir.APP,
                "actualizado_utc": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                "corredor": {"estados": 5, "nombres": ["Argentina", "Bolivia", "Brasil", "Paraguay", "Uruguay"]},
                "ultima_captura": {"hora_utc": marcos[-1]["hora"], "embarcaciones": len(marcos[-1]["puntos"])},
