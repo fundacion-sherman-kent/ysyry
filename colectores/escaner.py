@@ -104,7 +104,7 @@ TIPOS = [
                                                 r"(cocain|marihuan|cannabis|droga|estupefac|cigarrill|armas|municion|combustible|oro\b|madera|contraband|maconha|mercaderia)"]),
     ("detencion", "Detención u operativo contra el crimen organizado", 2, [r"(operativo|allanamiento|detien\w+|deten\w+|detuv\w+|aprehend|capturad|desbarat|desarticul|prision|presos?|expuls\w+|arrest|raid\b|dismantl)",
                                                                            r"(narco|trafico|contraband|banda|organizacion criminal|pcc|comando vermelho|crimen organizado|lavado|traffick|gang|criminal)"]),
-    ("pirateria", "Piratería o robo de carga", 3, [r"(pirater|piratas|piracy|river pirates|cargo theft|robo de carga|asalt\w+ (a|al|una) (barcaza|buque|embarcacion|convoy)|abordaje|roubo de carga)"]),
+    ("pirateria", "Piratería o robo de carga", 3, [r"(pirater|piratas|piracy|river pirates|cargo theft|robo de carga|asalt\w+ (a|al|una) (barcaza|buque|embarcacion|convoy)|abordaje (de|a|al) (un|una|la|el) (barcaza|buque|embarcacion|convoy|barco)|roubo de carga)"]),
     ("siniestro", "Siniestro náutico", 2, [r"(colision|choque|varadur|encall|hundimient|naufrag|derrame|incendio)", r"(barcaza|buque|convoy|embarcacion|remolcador|balsa|navio|barco)"]),
     ("navegabilidad", "Bajante, calado y navegabilidad", 1, [r"(bajante|calado|altura del rio|nivel del rio|dragado|dragagem|vazante|crecida|creciente|inundaci)"]),
     ("regulatorio", "Licitación, peaje o conflicto gremial", 1, [r"(licitacion|peaje|concesion|paro\b|huelga|practicos|conflicto gremial|greve)", r"(hidrovia|puerto|portuari|navegacion|via navegable|porto)"]),

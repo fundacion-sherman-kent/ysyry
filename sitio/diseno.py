@@ -4,6 +4,7 @@ mejora progresiva (sin JavaScript la página se ve igual que antes) y respetando
 Contiene: barra de progreso de lectura, río animado en el encabezado, cifras que cuentan hacia arriba, aparición escalonada al hacer scroll, tarjetas interactivas por zona
 (armadas a partir de la tabla «Pulso por zona», que queda debajo para quien la quiera) que llevan el mapa a esa zona, y un recorrido guiado por las cinco zonas."""
 import json
+import re
 
 import pulso as _pulso
 
@@ -104,6 +105,8 @@ details.lz[open]>summary::before{transform:rotate(45deg)}
 .fam-grupo{flex-basis:100%;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gris-acero);font-weight:700;margin:6px 0 -2px}
 .fam-grupo:first-child{margin-top:0}
 svg.fam-seguridad .solo-fam{display:inline}
+svg.fam-seguridad .flujo-g{opacity:.38;transition:opacity .2s ease}
+svg.fam-seguridad .flujo-g:hover{opacity:1}
 svg.fam-seguridad .dim{opacity:.16!important}
 svg.fam-seguridad .esc-g,svg.fam-seguridad .frontera-g{filter:drop-shadow(0 0 4px color-mix(in srgb,var(--naranja) 70%,transparent))}
 .seg-hoy{margin:20px 0 4px}
@@ -116,6 +119,20 @@ svg.fam-seguridad .esc-g,svg.fam-seguridad .frontera-g{filter:drop-shadow(0 0 4p
 .sc .sn{font-size:28px;font-weight:800;line-height:1.05;font-variant-numeric:tabular-nums}
 .sc .sk{font-size:12.5px;font-weight:700;line-height:1.3}
 .sc .sv{font-size:11px;color:var(--gris-acero);margin-top:3px}
+.lu-box{margin-top:14px;border:1px solid var(--linea);border-radius:14px;background:var(--papel);padding:14px 16px}
+.lu-box h3{margin:0;font-size:15px}
+.lu-box .sub{font-size:12px;color:var(--gris-acero);margin:2px 0 8px;max-width:90ch}
+.lu-lista{list-style:none;margin:0;padding:0}
+.lu{width:100%;display:grid;grid-template-columns:46px 118px 1fr auto auto 18px;gap:6px 12px;align-items:center;text-align:left;font-family:inherit;color:var(--fg);background:transparent;border:0;border-top:1px solid var(--linea);padding:9px 4px;cursor:pointer;transition:background .2s ease}
+.lu:hover,.lu:focus-visible{background:color-mix(in srgb,var(--acento) 8%,transparent);outline:none}
+.lu-f{font-weight:800;font-variant-numeric:tabular-nums;font-size:13px}
+.lu-t{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--acento-texto);border:1px solid var(--acento);border-radius:999px;padding:2px 8px;text-align:center;white-space:nowrap}
+.lu-x{font-size:13px;line-height:1.35}.lu-x b{font-weight:500}.lu-x{color:var(--fg)}
+.lu-l{font-size:12px;color:var(--gris-acero);white-space:nowrap}
+.lu-e{font-size:11px;font-weight:700;color:var(--gris-acero);border:1px dashed var(--gris-acero);border-radius:999px;padding:2px 8px;white-space:nowrap}
+.lu i{font-style:normal;color:var(--acento);transition:transform .2s ease}.lu:hover i{transform:translateX(3px)}
+.lu-mas>summary{cursor:pointer;font-weight:700;font-size:12.5px;color:var(--acento-texto);padding:8px 4px;list-style:none;border-top:1px solid var(--linea)}
+@media (max-width:760px){.lu{grid-template-columns:44px 1fr 18px;grid-template-areas:"f t i" "x x x" "l e e"}.lu-f{grid-area:f}.lu-t{grid-area:t;justify-self:start}.lu-x{grid-area:x}.lu-l{grid-area:l}.lu-e{grid-area:e;justify-self:start}.lu i{grid-area:i}}
 
 /* recorrido guiado */
 .mapa-cab .tour-btn{width:auto;min-width:0;background:transparent;border:1px solid var(--gris-acero);color:#F9F9F7;border-radius:999px;padding:0 14px;height:32px;font-weight:700;font-size:12px;cursor:pointer;font-family:inherit;margin:0 8px;transition:background .2s ease,border-color .2s ease}
@@ -268,6 +285,17 @@ JS = r"""
       else if (a.indexOf("ancla:") === 0){ const el = $(a.slice(6)); if (el) el.scrollIntoView({behavior: REDUCIDO ? "auto" : "smooth", block:"start"}); }
     });
   });
+  // lista «lo último»: lleva el mapa al hecho (si la ubicación es de una región entera, con una vista amplia) y abre su ficha
+  document.querySelectorAll(".lu").forEach(function(b){
+    b.addEventListener("click", function(){
+      const sv = $("#svg-mapa"), el = sv && sv.querySelector('[data-i="' + b.dataset.i + '"]'); if (!el) return;
+      const tab = $(".familia-tab.activa"); if (!tab || tab.dataset.familia !== "seguridad"){ const t = $('.familia-tab[data-familia="seguridad"]'); if (t) t.click(); }
+      const m = /translate\(([-\d.]+),\s*([-\d.]+)\)/.exec(el.getAttribute("transform") || ""), mp = $("#mapa");
+      if (mp) mp.scrollIntoView({behavior: REDUCIDO ? "auto" : "smooth", block:"start"});
+      if (m && window.__volar) setTimeout(function(){ window.__volar(+m[1], +m[2], b.dataset.imp === "1" ? 260 : 46, REDUCIDO ? 0 : 1500); }, REDUCIDO ? 0 : 400);
+      setTimeout(function(){ el.dispatchEvent(new MouseEvent("click", {bubbles: true})); }, REDUCIDO ? 100 : 2000);
+    });
+  });
   // el mapa arranca en la vista de seguridad (la prioridad de Ysyry); «Todo el mapa» la deja a un clic
   const t0 = $('.familia-tab[data-familia="seguridad"]'); if (t0) t0.click();
 
@@ -328,7 +356,54 @@ VOLAR = r"""
   ["pointerdown", "wheel"].forEach(function(ev){ svg.addEventListener(ev, function(){ cancelAnimationFrame(vueloRAF); }, {passive:true}); });
 """
 
-def tarjetas(flu_extra, n_rutas, n_esc, fron):
+SEG_TIPOS = [("pirateria", "Piratería"), ("decomiso", "Decomiso"), ("detencion", "Detención"), ("siniestro", "Siniestro"), ("estado", "Fuerza del Estado")]
+
+
+def _titulo(t):
+    t = (t or "").strip()
+    letras = [c for c in t if c.isalpha()]
+    if letras and sum(1 for c in letras if c.isupper()) / len(letras) > 0.6:      # titulares en MAYÚSCULAS (SENAD): se pasan a oración, conservando las siglas
+        t = t.lower().capitalize()
+        for a, b in (("Senad", "SENAD"), ("Usd", "USD"), ("Pcc", "PCC"), ("Brasil", "Brasil")):
+            t = t.replace(a, b)
+    return t if len(t) <= 125 else t[:122].rsplit(" ", 1)[0] + "…"
+
+
+def lo_ultimo(esc_rec):
+    """Lista «lo último»: los hechos de seguridad detectados en los últimos 7 días, del más nuevo al más viejo; cada uno lleva al marcador del escáner en el mapa."""
+    import html
+    e = html.escape
+    if not esc_rec:
+        return ""
+    claves = sorted({tuple(x["ubicacion"]) for x in esc_rec})
+    ids = {k: "ev%d" % i for i, k in enumerate(claves)}
+    orden = {t: i for i, (t, _) in enumerate(SEG_TIPOS)}
+    rot = dict(SEG_TIPOS)
+    filas = []
+    for x in sorted(esc_rec, key=lambda x: (x["fecha"], x.get("puntaje", 0)), reverse=True):
+        tipos = [t[0] for t in x["tipos"] if t[0] in orden]
+        if not tipos:
+            continue
+        tp = sorted(tipos, key=lambda t: orden[t])[0]
+        if tp == "pirateria" and not re.search(r"(barcaza|buque|embarcaci|convoy|pirat|robo de carga|roubo|hidrov|puerto|rio|río)", x["titulo"].lower()):
+            continue      # «abordaje» también es «enfoque» de un problema social: sin palabra del río en el titular no se muestra
+        n = len({m["dominio"] for m in x["medios"]})
+        ofi = any(m.get("clase") == "oficial" for m in x["medios"])
+        ev = ("%d medios" % n) if n > 1 else ("Fuente oficial" if ofi else "Fuente única")
+        q = x.get("cantidad")
+        cant = (" · %s %s" % (("%g" % q["valor"]).replace(".", ","), q["unidad"])) if q else ""
+        lug = (x.get("lugares") or ["—"])[0]
+        filas.append('<li><button type="button" class="lu" data-i="%s" data-imp="%d"><span class="lu-f">%s/%s</span><span class="lu-t">%s</span><span class="lu-x"><b>%s</b>%s</span><span class="lu-l">%s</span><span class="lu-e">%s</span><i>→</i></button></li>'
+                     % (ids[tuple(x["ubicacion"])], 1 if x.get("imprecisa") else 0, e(x["fecha"][8:10]), e(x["fecha"][5:7]), e(rot[tp]), e(_titulo(x["titulo"])), e(cant), e(lug), e(ev)))
+    if not filas:
+        return ""
+    vis, resto = filas[:6], filas[6:12]
+    return ('<div class="lu-box"><h3>Lo último</h3><p class="sub">Hechos de seguridad detectados por el escáner en los últimos 7 días. Son titulares de prensa y de organismos, sin verificar: tocá uno para verlo en el mapa.</p>'
+            '<ul class="lu-lista">%s</ul>%s</div>'
+            % ("".join(vis), ('<details class="lu-mas"><summary>Ver %d más</summary><ul class="lu-lista">%s</ul></details>' % (len(resto), "".join(resto))) if resto else ""))
+
+
+def tarjetas(flu_extra, n_rutas, n_esc, fron, esc_rec=None):
     """Franja «Seguridad hoy»: cifras que ya están en la página, con su nivel de evidencia, y a dónde lleva cada una."""
     import html
     e = html.escape
@@ -361,7 +436,7 @@ def tarjetas(flu_extra, n_rutas, n_esc, fron):
         c.append((str(suma("SIN", "hechos_30")), "siniestros y derrames en 30 días", nivel("SIN"), "ancla:#indicios-zonas", False))
     tj = "".join('<button type="button" class="sc%s" data-act="%s"><span class="sn">%s</span><span class="sk">%s</span><span class="sv">%s</span></button>' % (" senal" if s else "", e(a), e(n), e(k), e(v)) for n, k, v, a, s in c)
     return ('<div class="seg-hoy"><h2>Seguridad hoy</h2><p class="sub">Lo que la página ve sobre crimen organizado, contrabando, sanciones y riesgos para el Estado y las empresas. Son indicios con su nivel de evidencia, no hechos confirmados: tocá una tarjeta para verla en el mapa o en el libro de indicios.</p>'
-            '<div class="seg-grid">%s</div></div>' % tj)
+            '<div class="seg-grid">%s</div>%s</div>' % (tj, lo_ultimo(esc_rec)))
 
 
 ANCHOS = {"z1": 0.30, "z2": 0.12, "z3": 0.34, "z4": 0.24, "z5": 0.42}

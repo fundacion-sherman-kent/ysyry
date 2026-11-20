@@ -2040,7 +2040,7 @@ TPL = TPL.replace(_TITULO_TPL, _ETIQUETAS_TPL, 1)
 html = TPL
 import diseno as _dis
 SUST = {
-    "seg_cards": _dis.tarjetas(_flu_extra, len(_flu_rutas), sum(1 for _e in _esc_rec if any(_t[0] in ("decomiso", "detencion", "pirateria", "siniestro", "estado") for _t in _e["tipos"])), _fron), "diseno_css": _dis.CSS, "diseno_js": _dis.js(), "volar_js": _dis.VOLAR,
+    "seg_cards": _dis.tarjetas(_flu_extra, len(_flu_rutas), sum(1 for _e in _esc_rec if any(_t[0] in ("decomiso", "detencion", "pirateria", "siniestro", "estado") for _t in _e["tipos"])), _fron, _esc_rec), "diseno_css": _dis.CSS, "diseno_js": _dis.js(), "volar_js": _dis.VOLAR,
     "capa_viva_js": CAPA_VIVA_JS,      # primero: su texto lleva el marcador de la dirección
     "vivo_url": _dir.VIVO,
     "provincias": "\n    ".join(prov_svg),
