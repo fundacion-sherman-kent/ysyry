@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-19T20:49:21Z",
+ "obtenido": "2026-11-20T02:25:05Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -9,12 +9,12 @@
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 2
   },
   {
    "nombre": "GDACS",
@@ -125,6 +125,48 @@
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
    "id": "inmet-28735"
+  },
+  {
+   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
+   "pais": "PRY",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "Paraguay"
+   ],
+   "riesgos": "",
+   "id": "dmh-vigente"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-19 23:06",
+   "fin": "",
+   "lugares": [
+    "FORMOSA: Bermejo - Patino."
+   ],
+   "riesgos": "",
+   "id": "smn-4328"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-19 22:55",
+   "fin": "",
+   "lugares": [
+    "CORRIENTES: Curuzu Cuatia - Monte Caseros - Paso de los Libres.; ; ENTRE RIOS: Federacion - S. J. de Feliciano."
+   ],
+   "riesgos": "",
+   "id": "smn-4327"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
