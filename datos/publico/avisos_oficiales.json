@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-11-21T11:26:31Z",
+ "obtenido": "2026-11-21T19:29:36Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 4
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -29,15 +29,36 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-11-21 00:00",
-   "fin": "2026-11-21 23:59",
+   "inicio": "2026-11-21 09:28",
+   "fin": "2026-11-22 23:59",
    "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres",
     "Foz do Iguaçu",
     "Ponta Porã",
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28737"
+   "id": "inmet-28741"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo",
+   "color": "#F96602",
+   "inicio": "2026-11-21 08:56",
+   "fin": "2026-11-21 23:59",
+   "lugares": [
+    "Corumbá",
+    "Porto Murtinho",
+    "Ponta Porã",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
+   "id": "inmet-28742"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -45,21 +66,44 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-11-22 00:00",
-   "fin": "2026-11-23 23:59",
+   "inicio": "2026-11-21 09:28",
+   "fin": "2026-11-22 23:59",
    "lugares": [
+    "Corumbá",
+    "Ladário",
     "Porto Murtinho",
+    "Cáceres",
     "Foz do Iguaçu",
     "Ponta Porã",
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28738"
+   "id": "inmet-28741"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-23 00:00",
+   "fin": "2026-11-23 23:59",
+   "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres",
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28743"
   },
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias intensas con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la probabilidad de caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la probabilidad de caída de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
