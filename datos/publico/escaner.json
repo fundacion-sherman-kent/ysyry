@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-21T10:54:22Z",
+ "obtenido": "2026-11-21T19:06:56Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 50,
+   "items": 44,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 88,
+   "items": 76,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 69
+   "fallos_seguidos": 70
   },
   {
    "dominio": "senad.gov.py",
@@ -255,7 +255,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 31,
+   "items": 25,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -1323,6 +1323,25 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Rapto de policías en Asunción: localizan aguantadero de la gavilla en Luque",
+   "url": "https://www.abc.com.py/policiales/2026/11/21/rapto-de-policias-en-asuncion-localizan-aguantadero-de-la-gavilla-en-luque/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-21",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Denuncian robo de vehículo a mujer en Foz de Iguazú y Policía refuerza alerta en frontera",
+   "url": "http://www.lanacion.com.py/pais/2026/11/21/denuncian-robo-de-vehiculo-a-mujer-en-foz-de-iguazu-y-policia-refuerza-alerta-en-frontera/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-21",
+   "lugares": [
+    "Ciudad del Este",
+    "Alto Paraná"
+   ]
+  },
+  {
    "titulo": "El “corazón” de Central: Ypané apunta al desarrollo industrial y portuario",
    "url": "http://www.lanacion.com.py/negocios/2026/11/21/el-corazon-de-central-ypane-apunta-al-desarrollo-industrial-y-portuario/",
    "dominio": "lanacion.com.py",
@@ -1340,11 +1359,37 @@
    ]
   },
   {
-   "titulo": "Cómo funciona la “llave de paso” que frena la entrada de basura al Riachuelo",
-   "url": "https://perfil.com/sociedad/como-funciona-la-llave-de-paso-que-frena-la-entrada-de-basura-al-riachuelo-a4SIB5d57sZF",
-   "dominio": "perfil.com",
+   "titulo": "Pela segunda vez em 3 dias, temporal deixa Porto Murtinho debaixo d’água",
+   "url": "https://www.campograndenews.com.br/cidades/interior/pela-segunda-vez-em-3-dias-temporal-deixa-porto-murtinho-debaixo-d-agua",
+   "dominio": "campograndenews.com.br",
+   "fecha": "2026-11-21",
+   "lugares": [
+    "Porto Murtinho"
+   ]
+  },
+  {
+   "titulo": "Seilog diz que ponte sobre Rio Paraguai tem 75% de obras concluídas",
+   "url": "https://correiodoestado.com.br/cidades/2026/11/21/ponte-rio-paraguai-interdicao-semana.html",
+   "dominio": "correiodoestado.com.br",
    "fecha": "2026-11-21",
    "lugares": []
+  },
+  {
+   "titulo": "Concessão da hidrovia do Rio Paraguai é adiada para 2029",
+   "url": "https://correiodoestado.com.br/economia/2026/11/21/concessao-da-hidrovia-do-rio-paraguai-e-adiada-para-2029.html",
+   "dominio": "correiodoestado.com.br",
+   "fecha": "2026-11-21",
+   "lugares": []
+  },
+  {
+   "titulo": "Cataratas y CAPRI van por la gloria",
+   "url": "https://www.primeraedicion.com.ar/nota/101162292/cataratas-capri-final-torneo-integracion-rugby-puerto-iguazu-2026/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-21",
+   "lugares": [
+    "Posadas",
+    "Puerto Iguazú"
+   ]
   },
   {
    "titulo": "Doble crimen en Santa Fe: la hipótesis de los sicarios paraguayos detrás de los asesinatos de “Cachito” y su sobrino",
@@ -1354,6 +1399,13 @@
    "lugares": [
     "Santa Fe"
    ]
+  },
+  {
+   "titulo": "Cómo funciona la “llave de paso” que frena la entrada de basura al Riachuelo",
+   "url": "https://perfil.com/sociedad/como-funciona-la-llave-de-paso-que-frena-la-entrada-de-basura-al-riachuelo-a4SIB5d57sZF",
+   "dominio": "perfil.com",
+   "fecha": "2026-11-21",
+   "lugares": []
   },
   {
    "titulo": "12 postales argentinas de otro tiempo",
@@ -1408,6 +1460,34 @@
    ]
   },
   {
+   "titulo": "SENAD DESARTICULA DOS FOCOS DE VENTA DE DROGAS EN EL BARRIO SAJONIA",
+   "url": "https://senad.gov.py/senad-desarticula-dos-focos-de-venta-de-drogas-en-el-barrio-sajonia/",
+   "dominio": "senad.gov.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "SENAD CORTA IMPORTANTE RUTA DE ABASTECIMIENTO DE CHESPI EN CDE",
+   "url": "https://senad.gov.py/senad-corta-importante-ruta-de-abastecimiento-de-chespi-en-cde/",
+   "dominio": "senad.gov.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Ciudad del Este",
+    "Alto Paraná"
+   ]
+  },
+  {
+   "titulo": "Dos policías de Santa Fe y Salta mataron a sus parejas y se suicidaron",
+   "url": "https://www.lanacion.com.ar/seguridad/un-policia-mato-a-su-pareja-frente-a-su-hijo-de-7-anos-y-se-suicido-nid20112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
    "titulo": "Hernandarias: allanaron casas por robo de energía e incautaron 41 máquinas de criptomonedas",
    "url": "http://www.lanacion.com.py/pais/2026/11/20/hernandarias-allanaron-casas-por-robo-de-energia-e-incautaron-41-maquinas-de-criptomonedas/",
    "dominio": "lanacion.com.py",
@@ -1432,25 +1512,6 @@
    "fecha": "2026-11-20",
    "lugares": [
     "Encarnación"
-   ]
-  },
-  {
-   "titulo": "SENAD DESARTICULA DOS FOCOS DE VENTA DE DROGAS EN EL BARRIO SAJONIA",
-   "url": "https://senad.gov.py/senad-desarticula-dos-focos-de-venta-de-drogas-en-el-barrio-sajonia/",
-   "dominio": "senad.gov.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "SENAD CORTA IMPORTANTE RUTA DE ABASTECIMIENTO DE CHESPI EN CDE",
-   "url": "https://senad.gov.py/senad-corta-importante-ruta-de-abastecimiento-de-chespi-en-cde/",
-   "dominio": "senad.gov.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Ciudad del Este",
-    "Alto Paraná"
    ]
   },
   {
@@ -1487,15 +1548,6 @@
    "fecha": "2026-11-20",
    "lugares": [
     "Posadas"
-   ]
-  },
-  {
-   "titulo": "Dos policías de Santa Fe y Salta mataron a sus parejas y se suicidaron",
-   "url": "https://www.lanacion.com.ar/seguridad/un-policia-mato-a-su-pareja-frente-a-su-hijo-de-7-anos-y-se-suicido-nid20112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Santa Fe"
    ]
   },
   {
@@ -2324,54 +2376,6 @@
    "dominio": "elobservador.com.uy",
    "fecha": "2026-11-14",
    "lugares": []
-  },
-  {
-   "titulo": "Emilia Milich brilló en el Sudamericano de canotaje",
-   "url": "https://ladiaria.com.uy/deporte/articulo/2026/11/emilia-milich-brillo-en-el-sudamericano-de-canotaje/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-11-13",
-   "lugares": []
-  },
-  {
-   "titulo": "Grupo de chineses escapa de imóvel onde teria sido mantido em cárcere privado e pede ajuda à polícia no Paraná",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/13/grupo-de-chineses-carcere-privado.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-13",
-   "lugares": [
-    "Foz do Iguaçu"
-   ]
-  },
-  {
-   "titulo": "Derlis Gauto es nombrado como nuevo director financiero interino de Itaipú",
-   "url": "https://www.abc.com.py/politica/2026/11/13/derlis-gauto-es-nombrado-como-nuevo-director-financiero-interino-de-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-13",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Rescatan a los 129 ocupantes de un crucero tras chocar con una barcaza en Nueva Orleans",
-   "url": "https://www.abc.com.py/internacionales/2026/11/13/rescatan-a-los-129-ocupantes-de-un-crucero-tras-chocar-con-una-barcaza-en-nueva-orleans/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-13",
-   "lugares": []
-  },
-  {
-   "titulo": "Una barcaza choca con un crucero con 129 personas a bordo en Luisiana y lo deja escorado",
-   "url": "https://www.abc.com.py/internacionales/2026/11/13/una-barcaza-choca-con-un-crucero-con-129-personas-a-bordo-en-luisiana-y-lo-deja-escorado/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-13",
-   "lugares": []
-  },
-  {
-   "titulo": "Certifican a trabajadores hoteleros para elevar la calidad del turismo",
-   "url": "http://www.lanacion.com.py/foco/2026/11/13/certifican-a-trabajadores-hoteleros-para-elevar-la-calidad-del-turismo/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-13",
-   "lugares": [
-    "Ciudad del Este"
-   ]
   }
  ]
 }
