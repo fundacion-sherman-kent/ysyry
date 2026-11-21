@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-20T20:02:07Z",
+ "obtenido": "2026-11-21T02:08:28Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 43,
+   "items": 49,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 356,
+   "items": 372,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 67
+   "fallos_seguidos": 68
   },
   {
    "dominio": "senad.gov.py",
@@ -198,11 +198,10 @@
   {
    "dominio": "campograndenews.com.br",
    "url": "https://www.campograndenews.com.br/rss",
-   "ok": false,
-   "items": 0,
+   "ok": true,
+   "items": 20,
    "candidatos": 0,
-   "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 1
+   "fallos_seguidos": 0
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -217,7 +216,7 @@
    "url": "https://www.pontaporainforma.com.br/feed",
    "ok": true,
    "items": 10,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -256,7 +255,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 33,
+   "items": 30,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -1324,12 +1323,39 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Detienen a brasileño buscado por millonaria estafa en su país, que lavaba su dinero en la Triple Frontera",
+   "url": "https://www.abc.com.py/este/2026/11/20/detienen-a-brasileno-buscado-por-millonaria-estafa-en-su-pais-que-lavaba-su-dinero-en-la-triple-frontera/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Triple Frontera"
+   ]
+  },
+  {
+   "titulo": "FTC captura a presunto narco con orden de captura internacional en Encarnación",
+   "url": "https://www.abc.com.py/policiales/2026/11/20/ftc-captura-a-presunto-narco-con-orden-de-captura-internacional-en-encarnacion/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Encarnación"
+   ]
+  },
+  {
    "titulo": "Capturan en Pedro Juan Caballero a brasileño condenado por tráfico de drogas en su país",
    "url": "https://www.abc.com.py/policiales/2026/11/20/capturan-en-pedro-juan-caballero-a-brasileno-condenado-por-trafico-de-drogas-en-su-pais/",
    "dominio": "abc.com.py",
    "fecha": "2026-11-20",
    "lugares": [
     "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "Alliana designa a exintendenta de Yegros como consejera en Yacyretá",
+   "url": "http://www.lanacion.com.py/politica/2026/11/20/alliana-designa-a-exintendenta-de-yegros-como-consejera-en-yacyreta/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Yacyretá"
    ]
   },
   {
@@ -1360,25 +1386,9 @@
    ]
   },
   {
-   "titulo": "Brasil solicita reevaluar bancos autorizados por Paraguay para operar con Itaipú",
-   "url": "http://www.lanacion.com.py/politica/2026/11/19/brasil-solicita-reevaluar-bancos-autorizados-por-paraguay-para-operar-con-itaipu/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Kicillof hizo un llamado a “escribir” una nueva historia en Argentina y prometió el Canal Magdalena",
-   "url": "https://www.pagina12.com.ar/2026/11/20/kicillof-hizo-un-llamado-a-escribir-una-nueva-historia-en-argentina-y-prometio-el-canal-magdalena/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-11-20",
-   "lugares": []
-  },
-  {
-   "titulo": "Femicidio seguido de suicidio",
-   "url": "https://www.pagina12.com.ar/2026/11/20/femicidio-seguido-de-suicidio/",
-   "dominio": "pagina12.com.ar",
+   "titulo": "Dos policías de Santa Fe y Salta mataron a sus parejas y se suicidaron",
+   "url": "https://www.lanacion.com.ar/seguridad/un-policia-mato-a-su-pareja-frente-a-su-hijo-de-7-anos-y-se-suicido-nid20112026/",
+   "dominio": "lanacion.com.ar",
    "fecha": "2026-11-20",
    "lugares": [
     "Santa Fe"
@@ -1401,6 +1411,74 @@
    "lugares": [
     "Ciudad del Este",
     "Alto Paraná"
+   ]
+  },
+  {
+   "titulo": "Sarna humana já é registrada em ao menos 12 cidades de MS",
+   "url": "https://www.campograndenews.com.br/brasil/cidades/sarna-humana-ja-e-registrada-em-ao-menos-12-cidades-de-ms",
+   "dominio": "campograndenews.com.br",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Dourados"
+   ]
+  },
+  {
+   "titulo": "Soldado da PM é encontrada morta após publicar bilhetes",
+   "url": "https://correiodoestado.com.br/cidades/2026/11/20/soldado-da-pm-e-encontrada-morta-apos-publicar-bilhetes.html",
+   "dominio": "correiodoestado.com.br",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Corumbá"
+   ]
+  },
+  {
+   "titulo": "Ponta Porã: Emagrecedores são apreendidos escondidos em caminhão de encomendas",
+   "url": "https://www.pontaporainforma.com.br/ponta-pora-emagrecedores-sao-apreendidos-escondidos-em-caminhao-de-encomendas/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Ponta Porã"
+   ]
+  },
+  {
+   "titulo": "Una enorme rama cayó sobre una camioneta y cables eléctricos en la Bajada Vieja de Posadas",
+   "url": "https://www.primeraedicion.com.ar/nota/101162183/una-enorme-rama-cayo-sobre-una-camioneta-y-cables-electricos-en-la-bajada-vieja-de-posadas/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "El Niño: desplazados por el río Paraná vuelven a sus casas, mientras el Chaco sigue afectado",
+   "url": "https://www.abc.com.py/nacionales/2026/11/20/el-nino-desplazados-por-el-rio-parana-vuelven-a-sus-casas-mientras-el-chaco-sigue-afectado/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-20",
+   "lugares": []
+  },
+  {
+   "titulo": "Brasil solicita reevaluar bancos autorizados por Paraguay para operar con Itaipú",
+   "url": "http://www.lanacion.com.py/politica/2026/11/19/brasil-solicita-reevaluar-bancos-autorizados-por-paraguay-para-operar-con-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Kicillof hizo un llamado a “escribir” una nueva historia en Argentina y prometió el Canal Magdalena",
+   "url": "https://www.pagina12.com.ar/2026/11/20/kicillof-hizo-un-llamado-a-escribir-una-nueva-historia-en-argentina-y-prometio-el-canal-magdalena/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-11-20",
+   "lugares": []
+  },
+  {
+   "titulo": "Femicidio seguido de suicidio",
+   "url": "https://www.pagina12.com.ar/2026/11/20/femicidio-seguido-de-suicidio/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Santa Fe"
    ]
   },
   {
@@ -1429,13 +1507,6 @@
    "lugares": [
     "Puerto Iguazú"
    ]
-  },
-  {
-   "titulo": "El Niño: desplazados por el río Paraná vuelven a sus casas, mientras el Chaco sigue afectado",
-   "url": "https://www.abc.com.py/nacionales/2026/11/20/el-nino-desplazados-por-el-rio-parana-vuelven-a-sus-casas-mientras-el-chaco-sigue-afectado/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-20",
-   "lugares": []
   },
   {
    "titulo": "Alliana respalda a Benítez en Yacyretá pese a que es accionista de Ueno y autorizó colocar allí US$ 10 millones",
@@ -2302,78 +2373,6 @@
    "dominio": "abc.com.py",
    "fecha": "2026-11-12",
    "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Molinos Río de la Plata revierte sus números: logra un resultado operativo de $53.000 millones a pesar de la caída del consumo",
-   "url": "https://www.lanacion.com.ar/economia/negocios/molinos-rio-de-la-plata-revierte-sus-numeros-logra-un-resultado-operativo-de-53000-millones-a-pesar-nid12112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-12",
-   "lugares": []
-  },
-  {
-   "titulo": "Por El Niño, apareció un \"barco fantasma\" que navega en dirección al Río de la Plata",
-   "url": "https://www.elobservador.com.uy/mundo/por-el-nino-aparecio-un-barco-fantasma-que-navega-direccion-al-rio-la-plata-n6063493",
-   "dominio": "elobservador.com.uy",
-   "fecha": "2026-11-12",
-   "lugares": [
-    "Corrientes"
-   ]
-  },
-  {
-   "titulo": "Tras caída de Ueno, fracasó el plan del “Puerto Madero” de Asunción",
-   "url": "https://www.abc.com.py/economia/2026/11/12/tras-caida-de-ueno-fracaso-el-plan-del-puerto-madero-de-asuncion/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-12",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "El río Paraná sigue subiendo y Rosario alcanzaría niveles de alerta en las próximas semanas",
-   "url": "https://www.pagina12.com.ar/2026/11/11/el-rio-parana-sigue-subiendo-y-rosario-alcanzaria-niveles-de-alerta-en-las-proximas-semanas/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-11-12",
-   "lugares": [
-    "Rosario"
-   ]
-  },
-  {
-   "titulo": "Ex-policial militar suspeito de integrar grupo de extermínio é preso no Paraná após 15 anos foragido",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/11/ex-policial-e-preso-no-parana.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-11",
-   "lugares": [
-    "Foz do Iguaçu"
-   ]
-  },
-  {
-   "titulo": "Onça-pintada preta nascida no Paraná viaja mais de 2 mil km para conhecer novo 'namorado' no Tocantins",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/11/onca-pintada-preta-viaja-tocantins.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-11",
-   "lugares": [
-    "Foz do Iguaçu",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Turista sequestrado após marcar encontro pelas redes sociais no Paraná ficou cerca de 7 horas em cativeiro no Paraguai",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/11/turista-sequestrado-apos-marcar-encontro.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-11",
-   "lugares": [
-    "Foz do Iguaçu"
-   ]
-  },
-  {
-   "titulo": "Alto Paraná: dirigentes colorados respaldan la gestión del director de Itaipú",
-   "url": "http://www.lanacion.com.py/politica/2026/11/11/alto-parana-dirigentes-colorados-respaldan-la-gestion-del-director-de-itaipu/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-11",
-   "lugares": [
-    "Alto Paraná",
     "Itaipú"
    ]
   }
