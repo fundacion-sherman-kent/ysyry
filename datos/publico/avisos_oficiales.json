@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-20T20:33:19Z",
+ "obtenido": "2026-11-21T02:31:40Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,12 +14,12 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 1
   }
  ],
  "avisos": [
@@ -106,46 +106,16 @@
   {
    "fuente": "Servicio Meteorológico Nacional (Argentina)",
    "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
    "severidad": "",
    "color": "",
-   "inicio": "2026-11-20 16:43",
+   "inicio": "2026-11-20 23:26",
    "fin": "",
    "lugares": [
-    "FORMOSA: Formosa - Pilagas - Pilcomayo - Pirane."
+    "FORMOSA: Bermejo - Patino."
    ],
    "riesgos": "",
-   "id": "smn-4361"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-20 15:26",
-   "fin": "",
-   "lugares": [
-    "BUENOS AIRES: Berisso - Ensenada - La Plata - Magdalena - Punta Indio.; ; RIO DE LA PLATA: Rio de la Plata Interior."
-   ],
-   "riesgos": "",
-   "id": "smn-4358"
-  },
-  {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
-   "fenomeno": "Green flood alert in Argentina",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "-27.78, -67.17"
-   ],
-   "riesgos": "",
-   "id": "gdacs-&amp;eventid=1104277",
-   "lat": -27.7758659,
-   "lon": -67.171292
+   "id": "smn-4364"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
