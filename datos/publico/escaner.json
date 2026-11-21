@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-21T02:08:28Z",
+ "obtenido": "2026-11-21T10:54:22Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 49,
+   "items": 50,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 89,
+   "items": 88,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 372,
+   "items": 362,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 68
+   "fallos_seguidos": 69
   },
   {
    "dominio": "senad.gov.py",
@@ -255,7 +255,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 30,
+   "items": 31,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -1323,6 +1323,55 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "El “corazón” de Central: Ypané apunta al desarrollo industrial y portuario",
+   "url": "http://www.lanacion.com.py/negocios/2026/11/21/el-corazon-de-central-ypane-apunta-al-desarrollo-industrial-y-portuario/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-21",
+   "lugares": []
+  },
+  {
+   "titulo": "Brasil pide revisar bancos autorizados por Paraguay",
+   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/21/brasil-pide-revisar-bancos-autorizados-por-paraguay/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-21",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Cómo funciona la “llave de paso” que frena la entrada de basura al Riachuelo",
+   "url": "https://perfil.com/sociedad/como-funciona-la-llave-de-paso-que-frena-la-entrada-de-basura-al-riachuelo-a4SIB5d57sZF",
+   "dominio": "perfil.com",
+   "fecha": "2026-11-21",
+   "lugares": []
+  },
+  {
+   "titulo": "Doble crimen en Santa Fe: la hipótesis de los sicarios paraguayos detrás de los asesinatos de “Cachito” y su sobrino",
+   "url": "https://www.lanacion.com.ar/seguridad/doble-crimen-en-santa-fe-la-hipotesis-de-los-sicarios-paraguayos-detras-de-los-asesinatos-de-cachito-nid21112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-21",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "12 postales argentinas de otro tiempo",
+   "url": "https://www.lanacion.com.ar/revista-lugares/12-postales-argentinas-de-otro-tiempo-nid21112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-21",
+   "lugares": []
+  },
+  {
+   "titulo": "Corrientes palpita el carnaval \ncon el inicio del Samba Wings 2026",
+   "url": "https://www.diarioepoca.com/1395693-corrientes-palpita-el-carnaval-con-el-inicio-del-samba-wings-2026?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-21",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
    "titulo": "Detienen a brasileño buscado por millonaria estafa en su país, que lavaba su dinero en la Triple Frontera",
    "url": "https://www.abc.com.py/este/2026/11/20/detienen-a-brasileno-buscado-por-millonaria-estafa-en-su-pais-que-lavaba-su-dinero-en-la-triple-frontera/",
    "dominio": "abc.com.py",
@@ -1386,15 +1435,6 @@
    ]
   },
   {
-   "titulo": "Dos policías de Santa Fe y Salta mataron a sus parejas y se suicidaron",
-   "url": "https://www.lanacion.com.ar/seguridad/un-policia-mato-a-su-pareja-frente-a-su-hijo-de-7-anos-y-se-suicido-nid20112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
    "titulo": "SENAD DESARTICULA DOS FOCOS DE VENTA DE DROGAS EN EL BARRIO SAJONIA",
    "url": "https://senad.gov.py/senad-desarticula-dos-focos-de-venta-de-drogas-en-el-barrio-sajonia/",
    "dominio": "senad.gov.py",
@@ -1447,6 +1487,15 @@
    "fecha": "2026-11-20",
    "lugares": [
     "Posadas"
+   ]
+  },
+  {
+   "titulo": "Dos policías de Santa Fe y Salta mataron a sus parejas y se suicidaron",
+   "url": "https://www.lanacion.com.ar/seguridad/un-policia-mato-a-su-pareja-frente-a-su-hijo-de-7-anos-y-se-suicido-nid20112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Santa Fe"
    ]
   },
   {
@@ -2322,58 +2371,6 @@
    "fecha": "2026-11-13",
    "lugares": [
     "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "En Rosario: el río Paraná subió casi dos metros en nueve semanas y quedó a 53 centímetros del nivel de alerta",
-   "url": "https://www.lanacion.com.ar/economia/campo/en-rosario-el-rio-parana-subio-casi-dos-metros-en-nueve-semanas-y-quedo-a-53-centimetros-del-nivel-nid13112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-13",
-   "lugares": [
-    "Rosario"
-   ]
-  },
-  {
-   "titulo": "Alliana dispone que la Comandancia de la Policía vuelva a su histórica sede",
-   "url": "http://www.lanacion.com.py/politica/2026/11/12/alliana-dispone-que-la-comandancia-de-la-policia-vuelva-a-su-historica-sede/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-12",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Jaguar nacido en Itaipú cruzó todo Brasil en busca de la preservación de especie",
-   "url": "http://www.lanacion.com.py/pais/2026/11/12/jaguar-nacido-en-itaipu-cruzo-todo-brasil-en-busca-de-la-preservacion-de-especie/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-12",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "PJC: acribillaron a un hombre en una cancha de fútbol y su hijo menor quedó aprehendido",
-   "url": "http://www.lanacion.com.py/pais/2026/11/12/pjc-acribillaron-a-un-hombre-en-una-cancha-de-futbol-y-su-hijo-menor-quedo-aprehendido/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-12",
-   "lugares": [
-    "Pedro Juan Caballero"
-   ]
-  },
-  {
-   "titulo": "Argentina y Uruguay se ponen a prueba en un nuevo Clásico del Río de la Plata",
-   "url": "https://www.abc.com.py/deportes/futbol/internacional/2026/11/12/argentina-y-uruguay-se-ponen-a-prueba-en-un-nuevo-clasico-del-rio-de-la-plata/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-12",
-   "lugares": []
-  },
-  {
-   "titulo": "Yaguareté nacida en Itaipú viajará 2.100 km para contribuir a conservar su especie",
-   "url": "https://www.abc.com.py/este/2026/11/12/yaguarete-nacida-en-itaipu-viajara-2100-km-para-contribuir-a-conservar-su-especie/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-12",
-   "lugares": [
-    "Itaipú"
    ]
   }
  ]
