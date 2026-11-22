@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-21T19:06:56Z",
+ "obtenido": "2026-11-22T01:11:12Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 44,
+   "items": 42,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 76,
+   "items": 89,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 362,
+   "items": 370,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 70
+   "fallos_seguidos": 71
   },
   {
    "dominio": "senad.gov.py",
@@ -255,7 +255,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 25,
+   "items": 17,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -1323,6 +1323,15 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Discusión y disparos: hallaron muerta a una pareja de policías en Santa Fe e investigan un femicidio seguido de suicidio",
+   "url": "https://www.infobae.com/sociedad/policiales/2026/11/22/hallaron-muerta-a-una-pareja-de-policias-en-santa-fe-e-investigan-un-femicidio-seguido-de-suicidio-vecinos-escucharon-una-discusion-y-disparos/",
+   "dominio": "infobae.com",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
    "titulo": "Rapto de policías en Asunción: localizan aguantadero de la gavilla en Luque",
    "url": "https://www.abc.com.py/policiales/2026/11/21/rapto-de-policias-en-asuncion-localizan-aguantadero-de-la-gavilla-en-luque/",
    "dominio": "abc.com.py",
@@ -1359,12 +1368,21 @@
    ]
   },
   {
-   "titulo": "Pela segunda vez em 3 dias, temporal deixa Porto Murtinho debaixo d’água",
-   "url": "https://www.campograndenews.com.br/cidades/interior/pela-segunda-vez-em-3-dias-temporal-deixa-porto-murtinho-debaixo-d-agua",
+   "titulo": "Motorista preso com emagrecedores em carga da Shopee é solto",
+   "url": "https://www.campograndenews.com.br/cidades/interior/motorista-preso-com-emagrecedores-em-carga-da-shopee-e-solto",
    "dominio": "campograndenews.com.br",
    "fecha": "2026-11-21",
    "lugares": [
-    "Porto Murtinho"
+    "Ponta Porã"
+   ]
+  },
+  {
+   "titulo": "Ponte sobre o Rio Paraguai terá 7º bloqueio nesta semana",
+   "url": "https://www.campograndenews.com.br/cidades/interior/ponte-sobre-o-rio-paraguai-tera-7o-bloqueio-nesta-semana",
+   "dominio": "campograndenews.com.br",
+   "fecha": "2026-11-21",
+   "lugares": [
+    "Corumbá"
    ]
   },
   {
@@ -1373,6 +1391,52 @@
    "dominio": "correiodoestado.com.br",
    "fecha": "2026-11-21",
    "lugares": []
+  },
+  {
+   "titulo": "Rugby: CAPRI campeón  del Integración",
+   "url": "https://www.primeraedicion.com.ar/nota/101162437/rugby-capri-campeon-del-integracion/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-21",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "Puerto Iguazú: interceptaron a un adolescente de 15 años con dosis de cocaína",
+   "url": "https://www.primeraedicion.com.ar/nota/101162407/puerto-iguazu-interceptaron-a-un-adolescente-de-15-anos-con-dosis-de-cocaina/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-21",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "Quiso cruzar el puente Posadas-Encarnación con marihuana y terminó detenido",
+   "url": "https://www.diarioepoca.com/1395729-quiso-cruzar-el-puente-posadas-encarnacion-con-marihuana-y-termino-detenido?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-21",
+   "lugares": [
+    "Encarnación",
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Doble crimen en Santa Fe: la hipótesis de los sicarios paraguayos detrás de los asesinatos de “Cachito” y su sobrino",
+   "url": "https://www.lanacion.com.ar/seguridad/doble-crimen-en-santa-fe-la-hipotesis-de-los-sicarios-paraguayos-detras-de-los-asesinatos-de-cachito-nid21112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-21",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Pela segunda vez em 3 dias, temporal deixa Porto Murtinho debaixo d’água",
+   "url": "https://www.campograndenews.com.br/cidades/interior/pela-segunda-vez-em-3-dias-temporal-deixa-porto-murtinho-debaixo-d-agua",
+   "dominio": "campograndenews.com.br",
+   "fecha": "2026-11-21",
+   "lugares": [
+    "Porto Murtinho"
+   ]
   },
   {
    "titulo": "Concessão da hidrovia do Rio Paraguai é adiada para 2029",
@@ -1389,15 +1453,6 @@
    "lugares": [
     "Posadas",
     "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Doble crimen en Santa Fe: la hipótesis de los sicarios paraguayos detrás de los asesinatos de “Cachito” y su sobrino",
-   "url": "https://www.lanacion.com.ar/seguridad/doble-crimen-en-santa-fe-la-hipotesis-de-los-sicarios-paraguayos-detras-de-los-asesinatos-de-cachito-nid21112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-21",
-   "lugares": [
-    "Santa Fe"
    ]
   },
   {
@@ -1451,15 +1506,6 @@
    ]
   },
   {
-   "titulo": "Alliana designa a exintendenta de Yegros como consejera en Yacyretá",
-   "url": "http://www.lanacion.com.py/politica/2026/11/20/alliana-designa-a-exintendenta-de-yegros-como-consejera-en-yacyreta/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
    "titulo": "SENAD DESARTICULA DOS FOCOS DE VENTA DE DROGAS EN EL BARRIO SAJONIA",
    "url": "https://senad.gov.py/senad-desarticula-dos-focos-de-venta-de-drogas-en-el-barrio-sajonia/",
    "dominio": "senad.gov.py",
@@ -1485,6 +1531,15 @@
    "fecha": "2026-11-20",
    "lugares": [
     "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Alliana designa a exintendenta de Yegros como consejera en Yacyretá",
+   "url": "http://www.lanacion.com.py/politica/2026/11/20/alliana-designa-a-exintendenta-de-yegros-como-consejera-en-yacyreta/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Yacyretá"
    ]
   },
   {
@@ -1667,21 +1722,21 @@
    "lugares": []
   },
   {
-   "titulo": "Asalto y toma de rehenes a policías en Asunción apuntan a una banda fronteriza",
-   "url": "https://www.abc.com.py/policiales/2026/11/19/asalto-y-toma-de-rehenes-a-policias-en-asuncion-apunta-a-banda-fronteriza/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
    "titulo": "Relacionamento amoroso pode ter motivado morte de homem atacado com barra de ferro em academia no Paraná, diz polícia",
    "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/19/relacionamento-amoroso-pode-ter-motivado-morte-de-homem-em-academia.ghtml",
    "dominio": "g1.globo.com",
    "fecha": "2026-11-19",
    "lugares": [
     "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "Asalto y toma de rehenes a policías en Asunción apuntan a una banda fronteriza",
+   "url": "https://www.abc.com.py/policiales/2026/11/19/asalto-y-toma-de-rehenes-a-policias-en-asuncion-apunta-a-banda-fronteriza/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-19",
+   "lugares": [
+    "Asunción"
    ]
   },
   {
@@ -2327,55 +2382,6 @@
    "lugares": [
     "Triple Frontera"
    ]
-  },
-  {
-   "titulo": "Una emblemática marca de galletitas pasó a manos de un gigante de los alimentos",
-   "url": "https://perfil.com/economia/una-emblematica-marca-de-galletitas-paso-a-manos-de-un-gigante-de-los-alimentos-a3Yfk7s78Dre",
-   "dominio": "perfil.com",
-   "fecha": "2026-11-14",
-   "lugares": []
-  },
-  {
-   "titulo": "Concejal liberal de Misiones pide destitución de autoridades de Yacyretá por caso Ueno Bank",
-   "url": "https://www.abc.com.py/politica/2026/11/14/concejal-liberal-de-misiones-pide-destitucion-de-autoridades-de-yacyreta-por-caso-ueno-bank/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-14",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Con manifestación, piden destitución de Justo Zacarías de Itaipú",
-   "url": "https://www.abc.com.py/este/2026/11/13/con-manifestacion-piden-destitucion-de-justo-zacarias-de-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-14",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Molinos Rio de la Plata compró Tía Maruca",
-   "url": "https://www.lanacion.com.ar/economia/negocios/molinos-compro-tia-maruca-nid13112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-14",
-   "lugares": []
-  },
-  {
-   "titulo": "Crece el nivel de río en Rosario y en la ciudad de Santa Fe ya hay vecinos evacuados",
-   "url": "https://www.pagina12.com.ar/2026/11/14/crece-el-nivel-de-rio-en-rosario-y-en-la-ciudad-de-santa-fe-ya-hay-vecinos-evacuados/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-11-14",
-   "lugares": [
-    "Rosario",
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Argentina vs Uruguay EN VIVO: el arquero Rulli le sacó el tercero a Darwin Núñez",
-   "url": "https://www.elobservador.com.uy/seleccion/argentina-vs-uruguay-vito-los-dirigidos-diego-forlan-ya-estan-confirmados-el-clasico-un-duro-rival-n6063810",
-   "dominio": "elobservador.com.uy",
-   "fecha": "2026-11-14",
-   "lugares": []
   }
  ]
 }
