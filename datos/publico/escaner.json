@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-22T11:09:36Z",
+ "obtenido": "2026-11-22T19:29:41Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,15 +7,15 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 39,
-   "candidatos": 0,
+   "items": 27,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 79,
+   "items": 91,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 370,
+   "items": 372,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 72
+   "fallos_seguidos": 73
   },
   {
    "dominio": "senad.gov.py",
@@ -255,7 +255,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 17,
+   "items": 11,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -272,7 +272,7 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/nacionales/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -286,6 +286,82 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Senad desarticula dos focos de microtráfico y se incautan de más de 500 dosis de droga en Sajonia",
+   "url": "http://www.lanacion.com.py/judiciales/2026/11/22/senad-desarticula-dos-focos-de-microtrafico-y-se-incautan-de-mas-de-500-dosis-de-droga-en-sajonia/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-22",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Asunción"
+   ],
+   "ubicacion": [
+    -25.28,
+    -57.63
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 8,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/judiciales/2026/11/22/senad-desarticula-dos-focos-de-microtrafico-y-se-incautan-de-mas-de-500-dosis-de-droga-en-sajonia/"
+    }
+   ],
+   "id": "79f63ad719",
+   "verificado": true
+  },
+  {
+   "titulo": "Allanamiento en Luque vincula a “piratas del asfalto” con el rapto de dos policías en Asunción",
+   "url": "https://www.abc.com.py/policiales/2026/11/22/allanamiento-en-luque-vincula-a-piratas-del-asfalto-con-el-rapto-de-dos-policias-en-asuncion/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-22",
+   "tipos": [
+    [
+     "pirateria",
+     "Piratería o robo de carga"
+    ]
+   ],
+   "lugares": [
+    "Asunción"
+   ],
+   "ubicacion": [
+    -25.28,
+    -57.63
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/policiales/2026/11/22/allanamiento-en-luque-vincula-a-piratas-del-asfalto-con-el-rapto-de-dos-policias-en-asuncion/"
+    }
+   ],
+   "id": "d37e5eed58",
+   "verificado": true
+  },
   {
    "titulo": "Força Tática do 4ºBPM prende procurado por homicídio e apreende drogas e armas no Nova Itamarati",
    "url": "https://www.pontaporainforma.com.br/forca-tatica-do-4obpm-prende-procurado-por-homicidio-e-apreende-drogas-e-armas-no-nova-itamarati/",
@@ -1323,6 +1399,105 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "El río Paraguay vuelve a subir en Asunción luego de varios días de descenso",
+   "url": "https://www.abc.com.py/clima/2026/11/22/el-rio-paraguay-vuelve-a-subir-en-asuncion-luego-de-varios-dias-de-descenso/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Juzgado de Paz informará sobre ocupantes de inmuebles en caso Ypytá",
+   "url": "http://www.lanacion.com.py/judiciales/2026/11/22/juzgado-de-paz-informara-sobre-ocupantes-de-inmuebles-en-caso-ypyta/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Pedro Juan Caballero"
+   ]
+  },
+  {
+   "titulo": "La Municipalidad aclara que sigue firme el proceso de eliminación de la PMT",
+   "url": "http://www.lanacion.com.py/politica/2026/11/22/la-municipalidad-aclara-que-sigue-firme-el-proceso-de-eliminacion-de-la-pmt/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "La rica historia de un edificio emblemático del centro",
+   "url": "http://www.lanacion.com.py/gran-diario-domingo/2026/11/22/la-rica-historia-de-un-edificio-emblematico-del-centro/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Chuva faz lago transbordar em Paranhos e abre cratera em Naviraí",
+   "url": "https://www.campograndenews.com.br/cidades/interior/chuva-faz-lago-transbordar-em-paranhos-e-abre-cratera-em-navirai",
+   "dominio": "campograndenews.com.br",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Ponta Porã",
+    "Paranhos",
+    "Dourados"
+   ]
+  },
+  {
+   "titulo": "O mistério das águas pantaneiras: a criatura lendária que assusta quem se aventura pelos rios",
+   "url": "https://correiodoestado.com.br/extra/2026/11/22/o-misterio-das-aguas-pantaneiras-a-criatura-lendaria-que-assusta-quem-se-aventura-pelos-rios.html",
+   "dominio": "correiodoestado.com.br",
+   "fecha": "2026-11-22",
+   "lugares": []
+  },
+  {
+   "titulo": "Herói das Sete Quedas: homem salvou seis pessoas de tragédia que matou 32 antes do maior conjunto de cachoeiras do mundo desaparecer",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/22/heroi-das-sete-quedas-relembre-tragedia-ponte-guaira.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Le pidió permiso a un hombre de 72 años para usar el baño, le robó el celular y terminó detenida en Posadas",
+   "url": "https://misionesonline.net/2026/11/22/le-pidio-permiso-a-un-hombre-de-72-anos-para-usar-el-bano-le-robo-el-celular-y-termino-detenida-en-posadas/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Posadas | Detuvieron a cuatro jóvenes por presunta agresión a otros dos en un boliche",
+   "url": "https://misionesonline.net/2026/11/22/posadas-detuvieron-a-cuatro-jovenes-por-presunta-agresion-a-otros-dos-en-un-boliche/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Golpearon a dos jóvenes a la salida de un boliche y terminaron detenidos",
+   "url": "https://www.primeraedicion.com.ar/nota/101162552/golpearon-a-dos-jovenes-a-la-salida-de-un-boliche-y-terminaron-detenidos/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "\"Mientras no haya cuerpo, no hay nada\": el pacto de silencio en la desaparición de un joven detenido por policías",
+   "url": "https://www.clarin.com/policiales/cuerpo-pacto-silencio-desaparicion-joven-detenido-policias_0_nXIZYSBAwj.html",
+   "dominio": "clarin.com",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
    "titulo": "Itaipú adjudicó a Dobrestec, ligada a Ueno, la vigilancia de área de embalse y oficinas, por G. 32.746 millones en dos lotes",
    "url": "https://www.abc.com.py/economia/2026/11/22/itaipu-adjudico-a-dobrestec-ligada-a-ueno-la-vigilancia-de-area-de-embalse-y-oficinas-por-g-32746-millones-en-dos-lotes/",
    "dominio": "abc.com.py",
@@ -1341,33 +1516,6 @@
    ]
   },
   {
-   "titulo": "La rica historia de un edificio emblemático del centro",
-   "url": "http://www.lanacion.com.py/gran-diario-domingo/2026/11/22/la-rica-historia-de-un-edificio-emblematico-del-centro/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Herói das Sete Quedas: homem salvou seis pessoas de tragédia que matou 32 antes do maior conjunto de cachoeiras do mundo desaparecer",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/22/heroi-das-sete-quedas-relembre-tragedia-ponte-guaira.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "\"Mientras no haya cuerpo, no hay nada\": el pacto de silencio en la desaparición de un joven detenido por policías",
-   "url": "https://www.clarin.com/policiales/cuerpo-pacto-silencio-desaparicion-joven-detenido-policias_0_nXIZYSBAwj.html",
-   "dominio": "clarin.com",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
    "titulo": "Discusión y disparos: hallaron muerta a una pareja de policías en Santa Fe e investigan un femicidio seguido de suicidio",
    "url": "https://www.infobae.com/sociedad/policiales/2026/11/22/hallaron-muerta-a-una-pareja-de-policias-en-santa-fe-e-investigan-un-femicidio-seguido-de-suicidio-vecinos-escucharon-una-discusion-y-disparos/",
    "dominio": "infobae.com",
@@ -1383,6 +1531,15 @@
    "fecha": "2026-11-21",
    "lugares": [
     "Asunción"
+   ]
+  },
+  {
+   "titulo": "Doble crimen en Santa Fe: la hipótesis de los sicarios paraguayos detrás de los asesinatos de “Cachito” y su sobrino",
+   "url": "https://www.lanacion.com.ar/seguridad/doble-crimen-en-santa-fe-la-hipotesis-de-los-sicarios-paraguayos-detras-de-los-asesinatos-de-cachito-nid21112026/",
+   "dominio": "lanacion.com.ar",
+   "fecha": "2026-11-21",
+   "lugares": [
+    "Santa Fe"
    ]
   },
   {
@@ -1434,15 +1591,6 @@
    "fecha": "2026-11-21",
    "lugares": [
     "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Doble crimen en Santa Fe: la hipótesis de los sicarios paraguayos detrás de los asesinatos de “Cachito” y su sobrino",
-   "url": "https://www.lanacion.com.ar/seguridad/doble-crimen-en-santa-fe-la-hipotesis-de-los-sicarios-paraguayos-detras-de-los-asesinatos-de-cachito-nid21112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-21",
-   "lugares": [
-    "Santa Fe"
    ]
   },
   {
@@ -1542,15 +1690,6 @@
    ]
   },
   {
-   "titulo": "Capturan en Pedro Juan Caballero a brasileño condenado por tráfico de drogas en su país",
-   "url": "https://www.abc.com.py/policiales/2026/11/20/capturan-en-pedro-juan-caballero-a-brasileno-condenado-por-trafico-de-drogas-en-su-pais/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Pedro Juan Caballero"
-   ]
-  },
-  {
    "titulo": "SENAD DESARTICULA DOS FOCOS DE VENTA DE DROGAS EN EL BARRIO SAJONIA",
    "url": "https://senad.gov.py/senad-desarticula-dos-focos-de-venta-de-drogas-en-el-barrio-sajonia/",
    "dominio": "senad.gov.py",
@@ -1576,6 +1715,15 @@
    "fecha": "2026-11-20",
    "lugares": [
     "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Capturan en Pedro Juan Caballero a brasileño condenado por tráfico de drogas en su país",
+   "url": "https://www.abc.com.py/policiales/2026/11/20/capturan-en-pedro-juan-caballero-a-brasileno-condenado-por-trafico-de-drogas-en-su-pais/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Pedro Juan Caballero"
    ]
   },
   {
@@ -2311,76 +2459,6 @@
    "fecha": "2026-11-16",
    "lugares": [
     "Colonia"
-   ]
-  },
-  {
-   "titulo": "El río Paraná superó el nivel de evacuación en Santa Fe y anticipan focos de precipitaciones de 200 milímetros",
-   "url": "https://perfil.com/clima/el-rio-parana-supero-el-nivel-de-evacuacion-en-santa-fe-a50-y-anticipan-focos-de-precipitaciones-de-200-milimetros-a03Af4I6JcNb",
-   "dominio": "perfil.com",
-   "fecha": "2026-11-16",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Súper Niño 2026 en Argentina, EN VIVO: el río Paraná sigue creciendo y superó el nivel de evacuación en Santa Fe",
-   "url": "https://www.lanacion.com.ar/sociedad/super-nino-2026-en-argentina-en-vivo-el-rio-parana-sigue-creciendo-y-supero-el-nivel-de-evacuacion-nid16112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-16",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Instalaron una “llave de paso” para impedir que la basura llegue al Río de la Plata",
-   "url": "https://www.lanacion.com.ar/sociedad/instalaron-una-llave-de-paso-para-impedir-que-la-basura-llegue-al-rio-de-la-plata-nid16112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-16",
-   "lugares": []
-  },
-  {
-   "titulo": "Río Paraguay: sigue bajando en Asunción y en casi todo el país",
-   "url": "https://www.abc.com.py/nacionales/2026/11/15/rio-paraguay-sigue-bajando-en-asuncion-y-en-casi-todo-el-pais/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-15",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Itaipú tiene nuevo director financiero interino",
-   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/15/itaipu-tiene-nuevo-director-financiero-interino/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-15",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "El río Paraná superó el nivel de evacuación en Santa Fe: trasladaron a más de 200 personas a centros de asistencia",
-   "url": "https://www.lanacion.com.ar/sociedad/el-rio-parana-supero-el-nivel-de-evacuacion-en-santa-fe-trasladaron-a-mas-de-200-personas-a-centros-nid15112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-15",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "A causa de El Niño, advirtieron que el río Paraná volverá a registrar caudales altos en noviembre",
-   "url": "https://www.infobae.com/sociedad/2026/11/15/a-causa-de-el-nino-advirtieron-que-el-rio-parana-volvera-a-registrar-caudales-altos-en-noviembre/",
-   "dominio": "infobae.com",
-   "fecha": "2026-11-15",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Ciudad del Este: Policía mata a uno y hiere a otro tras pelea en el tránsito",
-   "url": "https://www.abc.com.py/policiales/2026/11/14/ciudad-del-este-policia-mata-a-uno-y-hiere-a-otro-tras-pelea-en-el-transito/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-14",
-   "lugares": [
-    "Ciudad del Este"
    ]
   }
  ]
