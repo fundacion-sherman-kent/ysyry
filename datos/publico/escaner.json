@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-22T19:29:41Z",
+ "obtenido": "2026-11-23T01:35:58Z",
  "dias": 14,
  "fuentes": [
   {
@@ -7,14 +7,14 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 27,
+   "items": 18,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 372,
+   "items": 335,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 73
+   "fallos_seguidos": 74
   },
   {
    "dominio": "senad.gov.py",
@@ -255,7 +255,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 11,
+   "items": 10,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -1364,47 +1364,34 @@
    ],
    "id": "0558aeebe4",
    "verificado": true
-  },
-  {
-   "titulo": "Entregan 5.000 kilos de víveres a familias afectadas por crecida del río Paraná en Cerrito",
-   "url": "https://www.abc.com.py/nacionales/2026/11/08/entregan-5000-kilos-de-viveres-a-familias-afectadas-por-crecida-del-rio-parana-en-cerrito/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-11-08",
-   "tipos": [
-    [
-     "navegabilidad",
-     "Bajante, calado y navegabilidad"
-    ]
-   ],
-   "lugares": [],
-   "ubicacion": null,
-   "zona": "general",
-   "cantidad": {
-    "valor": 5000.0,
-    "unidad": "kilos"
-   },
-   "puntaje": 4,
-   "rio": true,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/nacionales/2026/11/08/entregan-5000-kilos-de-viveres-a-familias-afectadas-por-crecida-del-rio-parana-en-cerrito/"
-    }
-   ],
-   "id": "27e1c4ed52",
-   "verificado": true
   }
  ],
  "sin_tipo": [
   {
-   "titulo": "El río Paraguay vuelve a subir en Asunción luego de varios días de descenso",
-   "url": "https://www.abc.com.py/clima/2026/11/22/el-rio-paraguay-vuelve-a-subir-en-asuncion-luego-de-varios-dias-de-descenso/",
-   "dominio": "abc.com.py",
+   "titulo": "Posadas | Aprovecharon los festejos de Boca para salir a delinquir, pero los videovigiladores del 911 los detectaron y fueron detenidos",
+   "url": "https://misionesonline.net/2026/11/22/festejos-boca-para-salir-delinquir/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Canindeyú: hallaron sin vida a niña de 11 años desaparecida en el río Carapá hace una semana",
+   "url": "http://www.lanacion.com.py/pais/2026/11/22/canindeyu-hallaron-sin-vida-a-nina-de-11-anos-desaparecida-en-el-rio-carapa-hace-una-semana/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-11-22",
    "lugares": [
-    "Asunción"
+    "Canindeyú"
+   ]
+  },
+  {
+   "titulo": "Anexo C y tarifa de Itaipú: esta semana se define reunión entre Alliana y Lula",
+   "url": "http://www.lanacion.com.py/politica/2026/11/22/anexo-c-y-tarifa-de-itaipu-esta-semana-se-define-reunion-entre-alliana-y-lula/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -1435,14 +1422,12 @@
    ]
   },
   {
-   "titulo": "Chuva faz lago transbordar em Paranhos e abre cratera em Naviraí",
-   "url": "https://www.campograndenews.com.br/cidades/interior/chuva-faz-lago-transbordar-em-paranhos-e-abre-cratera-em-navirai",
+   "titulo": "Chuva de 200 milímetros transborda rio e alaga casas em Ponta Porã",
+   "url": "https://www.campograndenews.com.br/direto-das-ruas/chuva-de-200-milimetros-transborda-rio-e-alaga-casas-em-ponta-pora",
    "dominio": "campograndenews.com.br",
    "fecha": "2026-11-22",
    "lugares": [
-    "Ponta Porã",
-    "Paranhos",
-    "Dourados"
+    "Ponta Porã"
    ]
   },
   {
@@ -1459,6 +1444,62 @@
    "fecha": "2026-11-22",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Buscan a Alma Agüero de 13 años en Posadas",
+   "url": "https://www.primeraedicion.com.ar/nota/101162648/buscan-a-alma-aguero-de-13-anos-en-posadas/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Posadas: pidió permiso a un jubilado para usar el baño y le robó el celular",
+   "url": "https://www.primeraedicion.com.ar/nota/101162585/posadas-pidio-permiso-a-un-jubilado-para-usar-el-bano-robo-celular/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "\"Mientras no haya cuerpo, no hay nada\": el pacto de silencio en la desaparición de un joven detenido por policías",
+   "url": "https://www.clarin.com/policiales/cuerpo-pacto-silencio-desaparicion-joven-detenido-policias_0_nXIZYSBAwj.html",
+   "dominio": "clarin.com",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "El río Paraguay vuelve a subir en Asunción luego de varios días de descenso",
+   "url": "https://www.abc.com.py/clima/2026/11/22/el-rio-paraguay-vuelve-a-subir-en-asuncion-luego-de-varios-dias-de-descenso/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Itaipú adjudicó a Dobrestec, ligada a Ueno, la vigilancia de área de embalse y oficinas, por G. 32.746 millones en dos lotes",
+   "url": "https://www.abc.com.py/economia/2026/11/22/itaipu-adjudico-a-dobrestec-ligada-a-ueno-la-vigilancia-de-area-de-embalse-y-oficinas-por-g-32746-millones-en-dos-lotes/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Chuva faz lago transbordar em Paranhos e abre cratera em Naviraí",
+   "url": "https://www.campograndenews.com.br/cidades/interior/chuva-faz-lago-transbordar-em-paranhos-e-abre-cratera-em-navirai",
+   "dominio": "campograndenews.com.br",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Ponta Porã",
+    "Paranhos",
+    "Dourados"
    ]
   },
   {
@@ -1486,24 +1527,6 @@
    "fecha": "2026-11-22",
    "lugares": [
     "Posadas"
-   ]
-  },
-  {
-   "titulo": "\"Mientras no haya cuerpo, no hay nada\": el pacto de silencio en la desaparición de un joven detenido por policías",
-   "url": "https://www.clarin.com/policiales/cuerpo-pacto-silencio-desaparicion-joven-detenido-policias_0_nXIZYSBAwj.html",
-   "dominio": "clarin.com",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Itaipú adjudicó a Dobrestec, ligada a Ueno, la vigilancia de área de embalse y oficinas, por G. 32.746 millones en dos lotes",
-   "url": "https://www.abc.com.py/economia/2026/11/22/itaipu-adjudico-a-dobrestec-ligada-a-ueno-la-vigilancia-de-area-de-embalse-y-oficinas-por-g-32746-millones-en-dos-lotes/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Itaipú"
    ]
   },
   {
@@ -1672,24 +1695,6 @@
    ]
   },
   {
-   "titulo": "Detienen a brasileño buscado por millonaria estafa en su país, que lavaba su dinero en la Triple Frontera",
-   "url": "https://www.abc.com.py/este/2026/11/20/detienen-a-brasileno-buscado-por-millonaria-estafa-en-su-pais-que-lavaba-su-dinero-en-la-triple-frontera/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Triple Frontera"
-   ]
-  },
-  {
-   "titulo": "FTC captura a presunto narco con orden de captura internacional en Encarnación",
-   "url": "https://www.abc.com.py/policiales/2026/11/20/ftc-captura-a-presunto-narco-con-orden-de-captura-internacional-en-encarnacion/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Encarnación"
-   ]
-  },
-  {
    "titulo": "SENAD DESARTICULA DOS FOCOS DE VENTA DE DROGAS EN EL BARRIO SAJONIA",
    "url": "https://senad.gov.py/senad-desarticula-dos-focos-de-venta-de-drogas-en-el-barrio-sajonia/",
    "dominio": "senad.gov.py",
@@ -1706,6 +1711,24 @@
    "lugares": [
     "Ciudad del Este",
     "Alto Paraná"
+   ]
+  },
+  {
+   "titulo": "Detienen a brasileño buscado por millonaria estafa en su país, que lavaba su dinero en la Triple Frontera",
+   "url": "https://www.abc.com.py/este/2026/11/20/detienen-a-brasileno-buscado-por-millonaria-estafa-en-su-pais-que-lavaba-su-dinero-en-la-triple-frontera/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Triple Frontera"
+   ]
+  },
+  {
+   "titulo": "FTC captura a presunto narco con orden de captura internacional en Encarnación",
+   "url": "https://www.abc.com.py/policiales/2026/11/20/ftc-captura-a-presunto-narco-con-orden-de-captura-internacional-en-encarnacion/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-20",
+   "lugares": [
+    "Encarnación"
    ]
   },
   {
@@ -2405,60 +2428,6 @@
    "fecha": "2026-11-17",
    "lugares": [
     "Rosario"
-   ]
-  },
-  {
-   "titulo": "Así es la cárcel “El infierno”, que alojará a los narcos y sicarios más peligrosos del país",
-   "url": "https://www.lanacion.com.ar/seguridad/asi-es-la-carcel-el-infierno-que-alojara-a-los-narcos-y-sicarios-mas-peligrosos-del-pais-nid16112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-16",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Ypytá: con custodia policial realizan constitución judicial a la  Universidad San Sebastián y otros",
-   "url": "http://www.lanacion.com.py/judiciales/2026/11/16/ypyta-con-custodia-policial-realizan-constitucion-judicial-a-la-universidad-san-sebastian-y-otros/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-16",
-   "lugares": [
-    "Pedro Juan Caballero"
-   ]
-  },
-  {
-   "titulo": "Sindicatos de Yacyretá blindan a Benítez,  director que depositó US$ 10 millones en Ueno Bank, del que es accionista",
-   "url": "https://www.abc.com.py/economia/2026/11/16/sindicatos-de-yacyreta-blindan-a-benitez-director-que-deposito-us-10-millones-en-ueno-bank-del-que-es-accionista/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-16",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Detienen a un hombre con orden de captura por amenaza a su expareja vía audio WhatsApp",
-   "url": "http://www.lanacion.com.py/pais/2026/11/16/detienen-a-un-hombre-con-orden-de-captura-por-amenaza-a-su-expareja-via-audio-whatsapp/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-16",
-   "lugares": [
-    "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "Caso Ueno: incautan más vehículos en la vivienda de Miguel Vázquez",
-   "url": "http://www.lanacion.com.py/pais/2026/11/16/caso-ueno-incautan-mas-vehiculos-en-la-vivienda-de-miguel-vazquez/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-16",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Diversidad todo el año",
-   "url": "https://ladiaria.com.uy/articulo/2026/11/diversidad-todo-el-ano/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-11-16",
-   "lugares": [
-    "Colonia"
    ]
   }
  ]
