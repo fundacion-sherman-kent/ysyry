@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-22T19:51:45Z",
+ "obtenido": "2026-11-23T01:50:12Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,7 +14,7 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "GDACS",
@@ -109,20 +109,6 @@
    ],
    "riesgos": "",
    "id": "dmh-vigente"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-22 15:14",
-   "fin": "",
-   "lugares": [
-    "FORMOSA: Bermejo.; ; CHACO: Gral Guemes."
-   ],
-   "riesgos": "",
-   "id": "smn-4386"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
