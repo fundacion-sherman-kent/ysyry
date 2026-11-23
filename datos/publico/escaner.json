@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-23T01:35:58Z",
+ "obtenido": "2026-11-23T12:18:19Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 18,
+   "items": 19,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 91,
+   "items": 94,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 335,
+   "items": 305,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 74
+   "fallos_seguidos": 75
   },
   {
    "dominio": "senad.gov.py",
@@ -198,10 +198,11 @@
   {
    "dominio": "campograndenews.com.br",
    "url": "https://www.campograndenews.com.br/rss",
-   "ok": true,
-   "items": 20,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "syntax error: line 1, column 0",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -255,7 +256,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 10,
+   "items": 9,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -286,6 +287,82 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Ciudad del Este: incautan dos fusiles de guerra y desarticulan estructura criminal",
+   "url": "http://www.lanacion.com.py/pais/2026/11/23/ciudad-del-este-incautan-dos-fusiles-de-guerra-y-desarticulan-estructura-criminal/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-23",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ],
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ],
+    [
+     "estado",
+     "Operativo de una fuerza del Estado"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 8,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/11/23/ciudad-del-este-incautan-dos-fusiles-de-guerra-y-desarticulan-estructura-criminal/"
+    }
+   ],
+   "id": "ea02c3c944",
+   "verificado": true
+  },
+  {
+   "titulo": "SENAD CAPTURA A CUATRO PERSONAS CON FUSILES Y MUNICIONES DE ALTO CALIBRE EN CIUDAD DEL ESTE",
+   "url": "https://senad.gov.py/senad-captura-a-cuatro-personas-con-fusiles-y-municiones-de-alto-calibre-en-ciudad-del-este/",
+   "dominio": "senad.gov.py",
+   "clase": "oficial",
+   "fecha": "2026-11-23",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "senad.gov.py",
+     "clase": "oficial",
+     "url": "https://senad.gov.py/senad-captura-a-cuatro-personas-con-fusiles-y-municiones-de-alto-calibre-en-ciudad-del-este/"
+    }
+   ],
+   "id": "8b32a7f518",
+   "verificado": true
+  },
   {
    "titulo": "Senad desarticula dos focos de microtráfico y se incautan de más de 500 dosis de droga en Sajonia",
    "url": "http://www.lanacion.com.py/judiciales/2026/11/22/senad-desarticula-dos-focos-de-microtrafico-y-se-incautan-de-mas-de-500-dosis-de-droga-en-sajonia/",
@@ -1368,6 +1445,15 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Polícia Militar recupera veículo com registro de roubo/furto em Ponta Porã",
+   "url": "https://www.pontaporainforma.com.br/policia-militar-recupera-veiculo-com-registro-de-roubo-furto-em-ponta-pora/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Ponta Porã"
+   ]
+  },
+  {
    "titulo": "Posadas | Aprovecharon los festejos de Boca para salir a delinquir, pero los videovigiladores del 911 los detectaron y fueron detenidos",
    "url": "https://misionesonline.net/2026/11/22/festejos-boca-para-salir-delinquir/",
    "dominio": "misionesonline.net",
@@ -1404,33 +1490,6 @@
    ]
   },
   {
-   "titulo": "La Municipalidad aclara que sigue firme el proceso de eliminación de la PMT",
-   "url": "http://www.lanacion.com.py/politica/2026/11/22/la-municipalidad-aclara-que-sigue-firme-el-proceso-de-eliminacion-de-la-pmt/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "La rica historia de un edificio emblemático del centro",
-   "url": "http://www.lanacion.com.py/gran-diario-domingo/2026/11/22/la-rica-historia-de-un-edificio-emblematico-del-centro/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Chuva de 200 milímetros transborda rio e alaga casas em Ponta Porã",
-   "url": "https://www.campograndenews.com.br/direto-das-ruas/chuva-de-200-milimetros-transborda-rio-e-alaga-casas-em-ponta-pora",
-   "dominio": "campograndenews.com.br",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Ponta Porã"
-   ]
-  },
-  {
    "titulo": "O mistério das águas pantaneiras: a criatura lendária que assusta quem se aventura pelos rios",
    "url": "https://correiodoestado.com.br/extra/2026/11/22/o-misterio-das-aguas-pantaneiras-a-criatura-lendaria-que-assusta-quem-se-aventura-pelos-rios.html",
    "dominio": "correiodoestado.com.br",
@@ -1444,24 +1503,6 @@
    "fecha": "2026-11-22",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Buscan a Alma Agüero de 13 años en Posadas",
-   "url": "https://www.primeraedicion.com.ar/nota/101162648/buscan-a-alma-aguero-de-13-anos-en-posadas/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Posadas: pidió permiso a un jubilado para usar el baño y le robó el celular",
-   "url": "https://www.primeraedicion.com.ar/nota/101162585/posadas-pidio-permiso-a-un-jubilado-para-usar-el-bano-robo-celular/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Posadas"
    ]
   },
   {
@@ -1489,6 +1530,51 @@
    "fecha": "2026-11-22",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "La Municipalidad aclara que sigue firme el proceso de eliminación de la PMT",
+   "url": "http://www.lanacion.com.py/politica/2026/11/22/la-municipalidad-aclara-que-sigue-firme-el-proceso-de-eliminacion-de-la-pmt/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "La rica historia de un edificio emblemático del centro",
+   "url": "http://www.lanacion.com.py/gran-diario-domingo/2026/11/22/la-rica-historia-de-un-edificio-emblematico-del-centro/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Chuva de 200 milímetros transborda rio e alaga casas em Ponta Porã",
+   "url": "https://www.campograndenews.com.br/direto-das-ruas/chuva-de-200-milimetros-transborda-rio-e-alaga-casas-em-ponta-pora",
+   "dominio": "campograndenews.com.br",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Ponta Porã"
+   ]
+  },
+  {
+   "titulo": "Buscan a Alma Agüero de 13 años en Posadas",
+   "url": "https://www.primeraedicion.com.ar/nota/101162648/buscan-a-alma-aguero-de-13-anos-en-posadas/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Posadas: pidió permiso a un jubilado para usar el baño y le robó el celular",
+   "url": "https://www.primeraedicion.com.ar/nota/101162585/posadas-pidio-permiso-a-un-jubilado-para-usar-el-bano-robo-celular/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Posadas"
    ]
   },
   {
@@ -2416,15 +2502,6 @@
    "titulo": "Inauguran la renovada avenida Newbery con música y actividades",
    "url": "https://www.pagina12.com.ar/2026/11/17/inauguran-la-renovada-avenida-newbery-con-musica-y-actividades/",
    "dominio": "pagina12.com.ar",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Rosario"
-   ]
-  },
-  {
-   "titulo": "Super Niño: el río Paraná superó los 4 metros de altura en Rosario y alcanzó su nivel más alto en 30 años",
-   "url": "https://perfil.com/clima/supernino-el-rio-parana-supero-los-4-metros-de-altura-en-rosario-y-alcanzo-su-nivel-mas-alto-en-30-anos-a50-jsm-ao6q87b3Z1mA",
-   "dominio": "perfil.com",
    "fecha": "2026-11-17",
    "lugares": [
     "Rosario"
