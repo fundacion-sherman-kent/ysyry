@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-24T13:57:38Z",
+ "obtenido": "2026-11-24T23:57:08Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -14,12 +14,12 @@
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 1
   }
  ],
  "avisos": [
@@ -135,7 +135,7 @@
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Lluvias intensas con tormentas eléctricas moderadas a fuertes, ráfagas de vientos fuertes a muy fuertes y la ocasional caída de granizos.",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -145,34 +145,6 @@
    ],
    "riesgos": "",
    "id": "dmh-vigente"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-24 10:08",
-   "fin": "",
-   "lugares": [
-    "MISIONES: El Dorado - Gral Manuel Belgrano - Iguazu - San Pedro."
-   ],
-   "riesgos": "",
-   "id": "smn-4437"
-  },
-  {
-   "fuente": "Servicio Meteorológico Nacional (Argentina)",
-   "pais": "ARG",
-   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
-   "severidad": "",
-   "color": "",
-   "inicio": "2026-11-24 09:47",
-   "fin": "",
-   "lugares": [
-    "FORMOSA: Formosa - Laishi - Pirane.; ; CHACO: 25 de Mayo - Bermejo - Ldor Gral S. Martin - Sargento Cabral."
-   ],
-   "riesgos": "",
-   "id": "smn-4436"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -189,22 +161,6 @@
    "id": "gdacs-&amp;eventid=1034027",
    "lat": -16.18709087988219,
    "lon": -64.75308428410227
-  },
-  {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
-   "fenomeno": "Green flood alert in Brazil",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "-20.46, -54.62"
-   ],
-   "riesgos": "",
-   "id": "gdacs-&amp;eventid=1104216",
-   "lat": -20.4640173,
-   "lon": -54.6162947
   }
  ],
  "no_consultadas": [
