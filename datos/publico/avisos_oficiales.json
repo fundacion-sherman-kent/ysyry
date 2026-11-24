@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-24T02:23:04Z",
+ "obtenido": "2026-11-24T13:57:38Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -9,12 +9,12 @@
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "SMN (Argentina)",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 2
   },
   {
    "nombre": "GDACS",
@@ -29,40 +29,7 @@
    "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-11-23 09:00",
-   "fin": "2026-11-23 23:59",
-   "lugares": [
-    "Corumbá",
-    "Porto Murtinho",
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28748"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo",
-   "color": "#F96602",
-   "inicio": "2026-11-23 09:00",
-   "fin": "2026-11-23 23:59",
-   "lugares": [
-    "Foz do Iguaçu",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
-   "id": "inmet-28750"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-24 00:00",
+   "inicio": "2026-11-24 09:06",
    "fin": "2026-11-24 23:59",
    "lugares": [
     "Corumbá",
@@ -74,22 +41,7 @@
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28754"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Grande Perigo",
-   "color": "#F80703",
-   "inicio": "2026-11-24 00:00",
-   "fin": "2026-11-24 23:59",
-   "lugares": [
-    "Foz do Iguaçu",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva superior a 60 mm/h ou maior que 100 mm/dia, ventos superiores a 100 km/h, e queda de granizo. Grande risco de danos em edificações, corte de energia elétrica, estragos em plantações, queda de árvores, alagamentos e transtornos no transporte rodoviário.",
-   "id": "inmet-28756"
+   "id": "inmet-28759"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -113,6 +65,21 @@
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
    "fenomeno": "Tempestade",
+   "severidad": "Grande Perigo",
+   "color": "#F80703",
+   "inicio": "2026-11-24 00:00",
+   "fin": "2026-11-24 23:59",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva superior a 60 mm/h ou maior que 100 mm/dia, ventos superiores a 100 km/h, e queda de granizo. Grande risco de danos em edificações, corte de energia elétrica, estragos em plantações, queda de árvores, alagamentos e transtornos no transporte rodoviário.",
+   "id": "inmet-28756"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
    "inicio": "2026-11-25 00:00",
@@ -127,7 +94,85 @@
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28758"
+   "id": "inmet-28760"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo",
+   "color": "#F96602",
+   "inicio": "2026-11-25 00:00",
+   "fin": "2026-11-25 23:59",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h), e queda de granizo. Risco de corte de energia elétrica, estragos em plantações,  queda de árvores e de alagamentos.",
+   "id": "inmet-28761"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Chuvas Intensas",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-26 00:00",
+   "fin": "2026-11-26 23:59",
+   "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres",
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
+   "id": "inmet-28762"
+  },
+  {
+   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
+   "pais": "PRY",
+   "fenomeno": "Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "Paraguay"
+   ],
+   "riesgos": "",
+   "id": "dmh-vigente"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-24 10:08",
+   "fin": "",
+   "lugares": [
+    "MISIONES: El Dorado - Gral Manuel Belgrano - Iguazu - San Pedro."
+   ],
+   "riesgos": "",
+   "id": "smn-4437"
+  },
+  {
+   "fuente": "Servicio Meteorológico Nacional (Argentina)",
+   "pais": "ARG",
+   "fenomeno": "AVISO A CORTO PLAZO por ocurrencia de TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
+   "severidad": "",
+   "color": "",
+   "inicio": "2026-11-24 09:47",
+   "fin": "",
+   "lugares": [
+    "FORMOSA: Formosa - Laishi - Pirane.; ; CHACO: 25 de Mayo - Bermejo - Ldor Gral S. Martin - Sargento Cabral."
+   ],
+   "riesgos": "",
+   "id": "smn-4436"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -142,8 +187,8 @@
    ],
    "riesgos": "",
    "id": "gdacs-&amp;eventid=1034027",
-   "lat": -16.18635551068074,
-   "lon": -64.7526241796992
+   "lat": -16.18709087988219,
+   "lon": -64.75308428410227
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
