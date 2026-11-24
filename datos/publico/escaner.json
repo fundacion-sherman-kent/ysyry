@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-23T12:18:19Z",
+ "obtenido": "2026-11-24T02:08:53Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 19,
+   "items": 26,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 94,
+   "items": 90,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 305,
+   "items": 351,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 75
+   "fallos_seguidos": 76
   },
   {
    "dominio": "senad.gov.py",
@@ -201,8 +201,8 @@
    "ok": false,
    "items": 0,
    "candidatos": 0,
-   "error": "syntax error: line 1, column 0",
-   "fallos_seguidos": 1
+   "error": "HTTP Error 403: Forbidden",
+   "fallos_seguidos": 2
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -256,7 +256,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 9,
+   "items": 12,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -273,7 +273,7 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/nacionales/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -361,6 +361,74 @@
     }
    ],
    "id": "8b32a7f518",
+   "verificado": true
+  },
+  {
+   "titulo": "Hidrólogo de Yacyretá expone en la NASA avances sobre el pronóstico del río Paraná",
+   "url": "http://www.lanacion.com.py/pais/2026/11/23/hidrologo-de-yacyreta-expone-en-la-nasa-avances-sobre-el-pronostico-del-rio-parana/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-23",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Yacyretá"
+   ],
+   "ubicacion": [
+    -27.4,
+    -56.72
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/11/23/hidrologo-de-yacyreta-expone-en-la-nasa-avances-sobre-el-pronostico-del-rio-parana/"
+    }
+   ],
+   "id": "cf777fded7",
+   "verificado": true
+  },
+  {
+   "titulo": "Imputan a joven detenido con dos fusiles de uso privativo de las fuerzas públicas",
+   "url": "http://www.lanacion.com.py/pais/2026/11/23/imputan-a-joven-detenido-con-dos-fusiles-de-uso-privativo-de-las-fuerzas-publicas/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-23",
+   "tipos": [
+    [
+     "detencion",
+     "Detención u operativo contra el crimen organizado"
+    ]
+   ],
+   "lugares": [
+    "Alto Paraná"
+   ],
+   "ubicacion": [
+    -25.3,
+    -54.8
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 4,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/11/23/imputan-a-joven-detenido-con-dos-fusiles-de-uso-privativo-de-las-fuerzas-publicas/"
+    }
+   ],
+   "id": "94039af96b",
    "verificado": true
   },
   {
@@ -1445,6 +1513,133 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Policial civil é preso com celulares importados sem nota fiscal em Ponta Porã",
+   "url": "https://www.pontaporainforma.com.br/policial-civil-e-preso-com-celulares-importados-sem-nota-fiscal-em-ponta-pora/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Ponta Porã"
+   ]
+  },
+  {
+   "titulo": "Un oficial de Policía resultó gravemente herido al ser atacado por delincuentes mientras realizaba tareas de prevención en Posadas",
+   "url": "https://misionesonline.net/2026/11/23/atacado-por-delincuentes-cv/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Playas, tereré y tardes en familia: vecinos y turistas disfrutaron del calor durante el fin de semana largo en Posadas",
+   "url": "https://misionesonline.net/2026/11/23/fin-de-semana-largo-fg/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Dos policías terminaron hospitalizados tras ser atacados a piedrazos en Posadas",
+   "url": "https://www.primeraedicion.com.ar/nota/101162916/dos-policias-terminaron-hospitalizados-tras-ser-atacados-a-piedrazos-en-posadas/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Canciller de Brasil llega a Asunción para tratar la tarifa de Itaipú con Paraguay",
+   "url": "https://www.abc.com.py/economia/2026/11/23/canciller-de-brasil-llega-a-asuncion-para-tratar-la-tarifa-de-itaipu-con-paraguay/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Asunción",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Sorpresa en Asunción: un jurumí ingresó a una vivienda y presume que llegó nadando desde Chaco’i",
+   "url": "http://www.lanacion.com.py/pais/2026/11/23/sorpresa-en-asuncion-un-jurumi-ingreso-a-una-vivienda-y-presume-que-llego-nadando-desde-chacoi/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Asumen nuevos miembros del Consejo de Administración de Itaipú",
+   "url": "http://www.lanacion.com.py/negocios/2026/11/23/asumen-nuevos-miembros-del-consejo-de-administracion-de-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Fiscalía imputará a joven que agredió a persona con discapacidad en feria de Encarnación",
+   "url": "http://www.lanacion.com.py/pais/2026/11/23/fiscalia-imputara-a-joven-que-agredio-a-persona-con-discapacidad-en-feria-de-encarnacion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Encarnación"
+   ]
+  },
+  {
+   "titulo": "Suspeito de matar homem com barra de ferro dentro de academia no Paraná se apresenta à polícia e é liberado",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/23/suspeito-de-matar-homem-academia-liberado.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "Bomberos rescataron a un gato herido que estaba atrapado en una boca de tormenta en Posadas",
+   "url": "https://www.primeraedicion.com.ar/nota/101162831/bomberos-rescataron-a-un-gato-herido-que-estaba-atrapado-en-una-boca-de-tormenta-en-posadas/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Corrientes, entre las provincias con mejor calificación en transparencia fiscal del país",
+   "url": "https://www.diarioepoca.com/1395898-corrientes-entre-las-provincias-con-mejor-calificacion-en-transparencia-fiscal-del-pais?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
+   "titulo": "Buscan a un adolescente de 16 años que se ausentó de un hogar de Corrientes",
+   "url": "https://www.diarioepoca.com/1395896-buscan-a-un-adolescente-de-16-anos-que-se-ausento-de-un-hogar-de-corrientes?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
+   "titulo": "Itaipú: Nicanor Duarte Frutos y tres ministros asumen en el Consejo, y Cancillería queda sin representante",
+   "url": "https://www.abc.com.py/economia/2026/11/23/itaipu-nicanor-duarte-frutos-y-tres-ministros-asumen-en-el-consejo-y-cancilleria-queda-sin-representante/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "El río Paraguay sigue en ascenso y supera los dos metros en Asunción",
+   "url": "https://www.abc.com.py/nacionales/2026/11/23/el-rio-paraguay-sigue-en-ascenso-y-supera-los-dos-metros-en-asuncion/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
    "titulo": "Polícia Militar recupera veículo com registro de roubo/furto em Ponta Porã",
    "url": "https://www.pontaporainforma.com.br/policia-militar-recupera-veiculo-com-registro-de-roubo-furto-em-ponta-pora/",
    "dominio": "pontaporainforma.com.br",
@@ -1458,6 +1653,24 @@
    "url": "https://misionesonline.net/2026/11/22/festejos-boca-para-salir-delinquir/",
    "dominio": "misionesonline.net",
    "fecha": "2026-11-23",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Herói das Sete Quedas: homem salvou seis pessoas de tragédia que matou 32 antes do maior conjunto de cachoeiras do mundo desaparecer",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/22/heroi-das-sete-quedas-relembre-tragedia-ponte-guaira.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-22",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "\"Mientras no haya cuerpo, no hay nada\": el pacto de silencio en la desaparición de un joven detenido por policías",
+   "url": "https://www.clarin.com/policiales/cuerpo-pacto-silencio-desaparicion-joven-detenido-policias_0_nXIZYSBAwj.html",
+   "dominio": "clarin.com",
+   "fecha": "2026-11-22",
    "lugares": [
     "Posadas"
    ]
@@ -1495,24 +1708,6 @@
    "dominio": "correiodoestado.com.br",
    "fecha": "2026-11-22",
    "lugares": []
-  },
-  {
-   "titulo": "Herói das Sete Quedas: homem salvou seis pessoas de tragédia que matou 32 antes do maior conjunto de cachoeiras do mundo desaparecer",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/22/heroi-das-sete-quedas-relembre-tragedia-ponte-guaira.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "\"Mientras no haya cuerpo, no hay nada\": el pacto de silencio en la desaparición de un joven detenido por policías",
-   "url": "https://www.clarin.com/policiales/cuerpo-pacto-silencio-desaparicion-joven-detenido-policias_0_nXIZYSBAwj.html",
-   "dominio": "clarin.com",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Posadas"
-   ]
   },
   {
    "titulo": "El río Paraguay vuelve a subir en Asunción luego de varios días de descenso",
@@ -2382,129 +2577,6 @@
    "lugares": [
     "Foz do Iguaçu",
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Orçamento para compra de terras indígenas no Paraná dobra e chega a R$ 480 milhões após acordo de reparação histórica com Itaipu",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/17/orcamento-compra-terras-indigenas.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Un hombre y su sobrino fueron acribillados en una vivienda de un tradicional barrio de Santa Fe",
-   "url": "https://www.lanacion.com.ar/seguridad/un-hombre-y-su-sobrino-fueron-acribillados-en-una-vivienda-de-un-tradicional-barrio-de-santa-fe-nid17112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Buscan a un adolescente de 13 años que desapareció en el río Uruguay cuando se bañaba con otros jóvenes",
-   "url": "https://www.elobservador.com.uy/buscan-un-adolescente-13-anos-que-desaparecio-el-rio-uruguay-n6064212",
-   "dominio": "elobservador.com.uy",
-   "fecha": "2026-11-17",
-   "lugares": []
-  },
-  {
-   "titulo": "PF inicia demolição de construções irregulares às margens do Rio Paraguai em MS",
-   "url": "https://correiodoestado.com.br/cidades/2026/11/17/pf-inicia-demolicao-de-construcoes-irregulares-as-margens-do-rio-paraguai-em-ms.html",
-   "dominio": "correiodoestado.com.br",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Corumbá"
-   ]
-  },
-  {
-   "titulo": "Denuncian que un automovilista persiguió a una niña de 12 años en Itaembé Guazú",
-   "url": "https://www.primeraedicion.com.ar/nota/101161203/itaembe-guazu-denuncia-automovilista-persiguio-nina/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Itaipú lado brasileño cuestionó depósitos de fondos en Ueno Bank, según Nicanor",
-   "url": "https://www.abc.com.py/economia/2026/11/17/itaipu-lado-brasileno-cuestiono-depositos-de-fondos-en-ueno-bank-segun-nicanor/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Tras caída de Peña, Diputados vuelve a crear intendencias pro-Itaipú",
-   "url": "https://www.abc.com.py/politica/2026/11/17/tras-caida-de-pena-diputados-vuelve-a-crear-intendencias-pro-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Altura de los ríos en la Argentina, según Prefectura: esta es la situación en el Paraná hoy, martes 17 de noviembre",
-   "url": "https://www.lanacion.com.ar/sociedad/altura-de-los-rios-en-la-argentina-segun-prefectura-esta-es-la-situacion-en-el-parana-hoy-martes-17-nid17112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "San Lorenzo",
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Argentina creará la cárcel “el Infierno” para narcos y el centro penitenciario “el rinconcito del Edén” para quienes lavan dinero",
-   "url": "https://ladiaria.com.uy/humor/articulo/2026/11/argentina-creara-la-carcel-el-infierno-para-narcos-y-el-centro-penitenciario-el-rinconcito-del-eden-para-quienes-lavan-dinero/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Choque triple en Quaranta y Las Heras: uno de los conductores escapó",
-   "url": "https://www.primeraedicion.com.ar/nota/101161167/posadas-choque-tres-vehiculos-quaranta-las-heras-conductor-escapo/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Puerto Iguazú | Rompieron una camioneta de Energía de Misiones y robaron herramientas: detuvieron a dos sospechosos",
-   "url": "https://misionesonline.net/2026/11/17/puerto-iguazu-rompieron-una-camioneta-de-energia-de-misiones/",
-   "dominio": "misionesonline.net",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "San Roque González de Santa Cruz: el santo que sigue inspirando a la juventud",
-   "url": "https://www.primeraedicion.com.ar/nota/101160967/san-roque-gonzalez-de-santa-cruz-el-santo-que-sigue-inspirando-a-la-juventud/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-17",
-   "lugares": []
-  },
-  {
-   "titulo": "Avião com compartimento secreto era usado para transportar emagrecedores e eletrônicos do Paraná a São Paulo",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/17/aviao-com-compartimento-secreto.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Foz do Iguaçu"
-   ]
-  },
-  {
-   "titulo": "Inauguran la renovada avenida Newbery con música y actividades",
-   "url": "https://www.pagina12.com.ar/2026/11/17/inauguran-la-renovada-avenida-newbery-con-musica-y-actividades/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Rosario"
    ]
   }
  ]
