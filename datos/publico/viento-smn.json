@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-24T02:06:21Z",
+ "obtenido": "2026-11-24T13:30:39Z",
  "fuente": {
   "nombre": "Servicio Meteorológico Nacional (Argentina), estado del tiempo presente",
   "url": "https://www.smn.gob.ar/",
@@ -8,43 +8,43 @@
  "estaciones": [
   {
    "nombre": "La Plata",
-   "fecha": "23-noviembre-2026",
-   "hora": "22:00",
+   "fecha": "24-noviembre-2026",
+   "hora": "10:00",
    "direccion": "Oeste",
-   "kmh": 3,
-   "estado": "Nublado"
+   "kmh": 9,
+   "estado": "Algo nublado"
   },
   {
    "nombre": "Punta Indio B.A.",
-   "fecha": "23-noviembre-2026",
-   "hora": "21:00",
-   "direccion": "Norte",
-   "kmh": 9,
-   "estado": "Nublado"
+   "fecha": "24-noviembre-2026",
+   "hora": "10:00",
+   "direccion": "Noroeste",
+   "kmh": 22,
+   "estado": "Algo nublado"
   },
   {
    "nombre": "San Fernando",
-   "fecha": "23-noviembre-2026",
-   "hora": "22:00",
-   "direccion": "Noroeste",
-   "kmh": 13,
-   "estado": "Nublado"
+   "fecha": "24-noviembre-2026",
+   "hora": "10:00",
+   "direccion": "Oeste",
+   "kmh": 22,
+   "estado": "Algo nublado"
   },
   {
    "nombre": "Aeroparque Buenos Aires",
-   "fecha": "23-noviembre-2026",
-   "hora": "22:00",
-   "direccion": "Oeste",
-   "kmh": 9,
-   "estado": "Cubierto"
+   "fecha": "24-noviembre-2026",
+   "hora": "10:00",
+   "direccion": "Direcciones Variables",
+   "kmh": 11,
+   "estado": "Algo nublado"
   },
   {
    "nombre": "Buenos Aires",
-   "fecha": "23-noviembre-2026",
-   "hora": "22:00",
-   "direccion": "Oeste",
-   "kmh": 5,
-   "estado": "Nublado"
+   "fecha": "24-noviembre-2026",
+   "hora": "10:00",
+   "direccion": "Sudoeste",
+   "kmh": 11,
+   "estado": "Despejado"
   }
  ]
 }
