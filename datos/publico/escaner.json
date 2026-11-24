@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-24T02:08:53Z",
+ "obtenido": "2026-11-24T13:33:16Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 26,
+   "items": 33,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 90,
+   "items": 97,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 351,
+   "items": 331,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 76
+   "fallos_seguidos": 77
   },
   {
    "dominio": "senad.gov.py",
@@ -202,7 +202,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 2
+   "fallos_seguidos": 3
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -256,7 +256,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 12,
+   "items": 14,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -1513,6 +1513,86 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Vídeo: intendenta de Asunción fiscaliza derrumbe de un muro levantado en plena vía pública",
+   "url": "https://www.abc.com.py/nacionales/2026/11/24/video-intendenta-de-asuncion-fiscaliza-derrumbe-de-un-muro-levantado-en-plena-via-publica/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Itaipú se reunió con Dobrestec: la firma allanada por el caso Ueno dice que su vínculo fue solo de guardias",
+   "url": "https://www.abc.com.py/economia/2026/11/24/itaipu-se-reunio-con-dobrestec-la-firma-allanada-por-el-caso-ueno-dice-que-su-vinculo-fue-solo-de-guardias/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Ciudad del Este: presunto adicto fue descubierto violentando un cajero automático",
+   "url": "http://www.lanacion.com.py/pais/2026/11/24/ciudad-del-este-presunto-adicto-fue-descubierto-violentando-un-cajero-automatico/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Itaipú en la mira: Mauro Vieira llega a Asunción para reunirse con Rubén Ramírez Lezcano",
+   "url": "http://www.lanacion.com.py/politica/2026/11/24/itaipu-en-la-mira-mauro-vieira-llega-a-asuncion-para-reunirse-con-ruben-ramirez-lezcano/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Asunción",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Detienen a hermano y a cuñada de Santiago Peña",
+   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/24/detienen-a-hermano-y-a-cunada-de-santiago-pena/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Jurumi ingresó a una casa en Sajonia",
+   "url": "http://www.lanacion.com.py/pais_edicion_impresa/2026/11/24/jurumi-ingreso-a-una-casa-en-sajonia/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-24",
+   "lugares": []
+  },
+  {
+   "titulo": "Yacyretá inició el montaje de turbinas en Aña Cuá y aumentará un 10 % su generación energética",
+   "url": "https://perfil.com/nea/yacyreta-inicio-el-montaje-de-turbinas-en-ana-cua-y-aumentara-un-10-su-generacion-energetica-aeIsh0s2tcBu",
+   "dominio": "perfil.com",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Detuvieron en Posadas a un joven acusado de robarles a sus hermanas",
+   "url": "https://misionesonline.net/2026/11/24/joven-acusado-de-robarles-a-sus-hermanas/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Abrieron las inscripciones para ingresar a la Escuela de Suboficiales de la Policía de Corrientes",
+   "url": "https://www.diarioepoca.com/1395942-abrieron-las-inscripciones-para-ingresar-a-la-escuela-de-suboficiales-de-la-policia-de-corrientes?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
    "titulo": "Policial civil é preso com celulares importados sem nota fiscal em Ponta Porã",
    "url": "https://www.pontaporainforma.com.br/policial-civil-e-preso-com-celulares-importados-sem-nota-fiscal-em-ponta-pora/",
    "dominio": "pontaporainforma.com.br",
@@ -1549,16 +1629,6 @@
    ]
   },
   {
-   "titulo": "Canciller de Brasil llega a Asunción para tratar la tarifa de Itaipú con Paraguay",
-   "url": "https://www.abc.com.py/economia/2026/11/23/canciller-de-brasil-llega-a-asuncion-para-tratar-la-tarifa-de-itaipu-con-paraguay/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-23",
-   "lugares": [
-    "Asunción",
-    "Itaipú"
-   ]
-  },
-  {
    "titulo": "Sorpresa en Asunción: un jurumí ingresó a una vivienda y presume que llegó nadando desde Chaco’i",
    "url": "http://www.lanacion.com.py/pais/2026/11/23/sorpresa-en-asuncion-un-jurumi-ingreso-a-una-vivienda-y-presume-que-llego-nadando-desde-chacoi/",
    "dominio": "lanacion.com.py",
@@ -1577,21 +1647,49 @@
    ]
   },
   {
-   "titulo": "Fiscalía imputará a joven que agredió a persona con discapacidad en feria de Encarnación",
-   "url": "http://www.lanacion.com.py/pais/2026/11/23/fiscalia-imputara-a-joven-que-agredio-a-persona-con-discapacidad-en-feria-de-encarnacion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-23",
-   "lugares": [
-    "Encarnación"
-   ]
-  },
-  {
    "titulo": "Suspeito de matar homem com barra de ferro dentro de academia no Paraná se apresenta à polícia e é liberado",
    "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/23/suspeito-de-matar-homem-academia-liberado.ghtml",
    "dominio": "g1.globo.com",
    "fecha": "2026-11-23",
    "lugares": [
     "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "Canciller de Brasil llega a Asunción para tratar la tarifa de Itaipú con Paraguay",
+   "url": "https://www.abc.com.py/economia/2026/11/23/canciller-de-brasil-llega-a-asuncion-para-tratar-la-tarifa-de-itaipu-con-paraguay/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Asunción",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Itaipú: Nicanor Duarte Frutos y tres ministros asumen en el Consejo, y Cancillería queda sin representante",
+   "url": "https://www.abc.com.py/economia/2026/11/23/itaipu-nicanor-duarte-frutos-y-tres-ministros-asumen-en-el-consejo-y-cancilleria-queda-sin-representante/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "El río Paraguay sigue en ascenso y supera los dos metros en Asunción",
+   "url": "https://www.abc.com.py/nacionales/2026/11/23/el-rio-paraguay-sigue-en-ascenso-y-supera-los-dos-metros-en-asuncion/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Fiscalía imputará a joven que agredió a persona con discapacidad en feria de Encarnación",
+   "url": "http://www.lanacion.com.py/pais/2026/11/23/fiscalia-imputara-a-joven-que-agredio-a-persona-con-discapacidad-en-feria-de-encarnacion/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Encarnación"
    ]
   },
   {
@@ -1619,24 +1717,6 @@
    "fecha": "2026-11-23",
    "lugares": [
     "Corrientes"
-   ]
-  },
-  {
-   "titulo": "Itaipú: Nicanor Duarte Frutos y tres ministros asumen en el Consejo, y Cancillería queda sin representante",
-   "url": "https://www.abc.com.py/economia/2026/11/23/itaipu-nicanor-duarte-frutos-y-tres-ministros-asumen-en-el-consejo-y-cancilleria-queda-sin-representante/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-23",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "El río Paraguay sigue en ascenso y supera los dos metros en Asunción",
-   "url": "https://www.abc.com.py/nacionales/2026/11/23/el-rio-paraguay-sigue-en-ascenso-y-supera-los-dos-metros-en-asuncion/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-23",
-   "lugares": [
-    "Asunción"
    ]
   },
   {
@@ -2495,89 +2575,6 @@
    "dominio": "misionesonline.net",
    "fecha": "2026-11-18",
    "lugares": []
-  },
-  {
-   "titulo": "“Me quedo en el Senado”: Gustavo Leite responde a los rumores sobre Itaipú",
-   "url": "https://www.abc.com.py/politica/2026/11/18/me-quedo-en-el-senado-gustavo-leite-responde-a-los-rumores-sobre-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Investigación periodística revela dudas sobre autorización de Itaipú a Ueno Bank",
-   "url": "http://www.lanacion.com.py/politica/2026/11/17/investigacion-periodistica-revela-dudas-sobre-autorizacion-de-itaipu-a-ueno-bank/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Escabiose atinge 6 cidades do sul de MS com pelo menos 144 casos",
-   "url": "https://www.campograndenews.com.br/cidades/interior/escabiose-atinge-6-cidades-do-sul-de-ms-com-pelo-menos-144-casos",
-   "dominio": "campograndenews.com.br",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Dourados"
-   ]
-  },
-  {
-   "titulo": "Moradia gratuita e um dia de folga: a oportunidade para voluntários na Argentina",
-   "url": "https://correiodoestado.com.br/extra/2026/11/18/moradia-gratuita-e-um-dia-de-folga-a-oportunidade-para-voluntarios-na-argentina.html",
-   "dominio": "correiodoestado.com.br",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Condenan al Estado a pagar por la muerte de Matías Chirino en un \"bautismo\" del Ejército",
-   "url": "https://www.diarioepoca.com/1395494-condenan-al-estado-a-pagar-por-la-muerte-de-matias-chirino-en-un-bautismo-del-ejercito?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
-   "dominio": "diarioepoca.com",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Corrientes",
-    "Paso de los Libres"
-   ]
-  },
-  {
-   "titulo": "Posible pérdida de millonarios recursos en Ueno Bank de la Itaipú generarían cambios en la Binacional",
-   "url": "https://www.abc.com.py/politica/2026/11/18/posible-perdida-de-millonarios-recursos-en-ueno-bank-de-la-itaipu-generarian-cambios-en-la-binacional/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Mario Maidana reconoció el femicidio de Natalia Castro y aceptó prisión perpetua",
-   "url": "https://www.primeraedicion.com.ar/nota/101161263/femicidio-natalia-castro-maidana-prision-perpetua-posadas/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Itaipú violó su regla de cinco años de antigüedad para meter plata en Ueno Bank, según CNN",
-   "url": "https://www.abc.com.py/internacionales/2026/11/17/itaipu-violo-su-regla-de-cinco-anos-de-antiguedad-para-meter-plata-en-ueno-bank-segun-cnn/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Como cinco operações de alimentação atendem às rotinas no Itaipu Parquetec",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/especial-publicitario/apetit/noticia/2026/11/17/como-cinco-operacoes-de-alimentacao-atendem-as-rotinas-no-itaipu-parquetec.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-17",
-   "lugares": [
-    "Foz do Iguaçu",
-    "Itaipú"
-   ]
   }
  ]
 }
