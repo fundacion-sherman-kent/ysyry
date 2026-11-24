@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-24T13:33:16Z",
+ "obtenido": "2026-11-24T23:51:32Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 33,
+   "items": 41,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 97,
+   "items": 86,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 331,
+   "items": 366,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 77
+   "fallos_seguidos": 78
   },
   {
    "dominio": "senad.gov.py",
@@ -202,7 +202,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 3
+   "fallos_seguidos": 4
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -256,8 +256,8 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 14,
-   "candidatos": 0,
+   "items": 19,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -273,7 +273,7 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/nacionales/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -287,6 +287,74 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Requisa en cárcel de Minga Guazú: incautan celulares, armas blancas y drogas",
+   "url": "https://www.abc.com.py/este/2026/11/24/requisa-en-carcel-de-minga-guazu-incautan-celulares-armas-blancas-y-drogas/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-24",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Minga Guazú"
+   ],
+   "ubicacion": [
+    -25.5,
+    -54.8
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/este/2026/11/24/requisa-en-carcel-de-minga-guazu-incautan-celulares-armas-blancas-y-drogas/"
+    }
+   ],
+   "id": "60dc77fb71",
+   "verificado": true
+  },
+  {
+   "titulo": "Encuentran dos cuerpos carbonizados dentro de un auto en Zárate y se sospecha que fueron víctimas de una venganza narco",
+   "url": "https://www.lanacion.com.ar/seguridad/encuentran-dos-cuerpos-carbonizados-dentro-de-un-auto-en-zarate-y-se-sospecha-que-fueron-victimas-de-nid24112026/",
+   "dominio": "lanacion.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-11-24",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Zárate"
+   ],
+   "ubicacion": [
+    -34.1,
+    -59.03
+   ],
+   "zona": "z1",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.ar",
+     "clase": "prensa",
+     "url": "https://www.lanacion.com.ar/seguridad/encuentran-dos-cuerpos-carbonizados-dentro-de-un-auto-en-zarate-y-se-sospecha-que-fueron-victimas-de-nid24112026/"
+    }
+   ],
+   "id": "ecd474db9a",
+   "verificado": true
+  },
   {
    "titulo": "Ciudad del Este: incautan dos fusiles de guerra y desarticulan estructura criminal",
    "url": "http://www.lanacion.com.py/pais/2026/11/23/ciudad-del-este-incautan-dos-fusiles-de-guerra-y-desarticulan-estructura-criminal/",
@@ -1513,20 +1581,42 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Vídeo: intendenta de Asunción fiscaliza derrumbe de un muro levantado en plena vía pública",
-   "url": "https://www.abc.com.py/nacionales/2026/11/24/video-intendenta-de-asuncion-fiscaliza-derrumbe-de-un-muro-levantado-en-plena-via-publica/",
-   "dominio": "abc.com.py",
+   "titulo": "Hernandarias: intendente pedirá a Itaipú desagües pluviales, iluminación y más obras viales",
+   "url": "http://www.lanacion.com.py/pais/2026/11/24/hernandarias-intendente-pedira-a-itaipu-desagues-pluviales-iluminacion-y-mas-obras-viales/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-11-24",
    "lugares": [
-    "Asunción"
+    "Itaipú",
+    "Hernandarias"
    ]
   },
   {
-   "titulo": "Itaipú se reunió con Dobrestec: la firma allanada por el caso Ueno dice que su vínculo fue solo de guardias",
-   "url": "https://www.abc.com.py/economia/2026/11/24/itaipu-se-reunio-con-dobrestec-la-firma-allanada-por-el-caso-ueno-dice-que-su-vinculo-fue-solo-de-guardias/",
-   "dominio": "abc.com.py",
+   "titulo": "Caazapá conquista representación histórica en el Consejo de la EBY con Claudia Sosa",
+   "url": "http://www.lanacion.com.py/politica/2026/11/24/caazapa-conquista-representacion-historica-en-el-consejo-de-la-eby-con-claudia-sosa/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-11-24",
    "lugares": [
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Comercio de CDE vendió 15 % más en feria de ofertas, aunque por debajo de lo proyectado",
+   "url": "http://www.lanacion.com.py/negocios/2026/11/24/comercio-de-cde-vendio-15-mas-en-feria-de-ofertas-aunque-por-debajo-de-lo-proyectado/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Ciudad del Este",
+    "Alto Paraná",
+    "Triple Frontera"
+   ]
+  },
+  {
+   "titulo": "LN PM: edición del mediodía del 24 de noviembre",
+   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/11/24/ln-pm-edicion-del-mediodia-del-24-de-noviembre/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Asunción",
     "Itaipú"
    ]
   },
@@ -1556,6 +1646,122 @@
    "fecha": "2026-11-24",
    "lugares": [
     "Asunción"
+   ]
+  },
+  {
+   "titulo": "Exobreros de Salto Grande convocan a una caravana para exigir una reparación histórica",
+   "url": "https://ladiaria.com.uy/salto/articulo/2026/11/exobreros-de-salto-grande-convocan-a-una-caravana-para-exigir-una-reparacion-historica/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-11-24",
+   "lugares": []
+  },
+  {
+   "titulo": "Empresário e pai de criança de 8 anos: motorista de van morreu em batida com caminhão carregado de cigarros contrabandeados no Paraná",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/24/motorista-de-van-morreu-em-batida-com-caminhao.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Marechal Cândido Rondon"
+   ]
+  },
+  {
+   "titulo": "Motorista de van que transportava universitários morre em batida com caminhão carregado com cigarros contrabandeados no Paraná",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/24/motorista-de-van-que-transportava-universitarios-morre-em-batida-com-caminhao-carregado-com-cigarros-contrabandeados-no-parana.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Marechal Cândido Rondon"
+   ]
+  },
+  {
+   "titulo": "Ex-prefeito condenado por mandar matar opositores políticos no Paraná é preso no Paraguai",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/24/ex-prefeito-condenado-por-mandar-matar-opositores-politicos-no-parana-e-preso-no-paraguai.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Salto del Guairá",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Puente Tancredo Neves: Puerto Iguazú abrió el registro biométrico para la próxima implementación del cruce a Foz con reconocimiento facial",
+   "url": "https://misionesonline.net/2026/11/24/puente-tancredo-neves-puerto-iguazu-abrio-el-registro-biometrico/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "¿Tenés una empresa o emprendimiento en Misiones? Inscribite gratis para venderles a hoteles y restaurantes de Iguazú",
+   "url": "https://misionesonline.net/2026/11/24/tenes-una-empresa-o-emprendimiento-en-misiones/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "Incendio en una vivienda deshabitada de Posadas: investigan cómo se originaron las llamas",
+   "url": "https://www.primeraedicion.com.ar/nota/101163239/incendio-en-una-vivienda-deshabitada-de-posadas-investigan-como-se-originaron-las-llamas/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Operarán de urgencia al policía atacado a piedrazos durante un patrullaje en Posadas",
+   "url": "https://www.primeraedicion.com.ar/nota/101163233/operaran-de-urgencia-al-policia-atacado-a-piedrazos-durante-un-patrullaje-en-posadas/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Preocupación en los barrios de Posadas ante la posibilidad de que el Municipio retire cámaras de seguridad",
+   "url": "https://www.primeraedicion.com.ar/nota/101163225/preocupacion-en-los-barrios-de-posadas-ante-la-posibilidad-de-que-el-municipio-retire-camaras-de-seguridad/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Macabro hallazgo en Zárate: encontraron a dos hombres calcinados dentro de un auto",
+   "url": "https://www.clarin.com/policiales/macabro-hallazgo-zarate-encontraron-hombres-calcinados-dentro-auto_0_piW0RuGVPq.html",
+   "dominio": "clarin.com",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Zárate"
+   ]
+  },
+  {
+   "titulo": "Canciller de Brasil llega hoy y mañana se reúne con Ramírez Lezcano, con Itaipú y Ueno Bank en agenda",
+   "url": "https://www.abc.com.py/economia/2026/11/24/canciller-de-brasil-llega-hoy-y-manana-se-reune-con-ramirez-lezcano-con-itaipu-y-ueno-bank-en-agenda/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Vídeo: intendenta de Asunción fiscaliza derrumbe de un muro levantado en plena vía pública",
+   "url": "https://www.abc.com.py/nacionales/2026/11/24/video-intendenta-de-asuncion-fiscaliza-derrumbe-de-un-muro-levantado-en-plena-via-publica/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Itaipú se reunió con Dobrestec: la firma allanada por el caso Ueno dice que su vínculo fue solo de guardias",
+   "url": "https://www.abc.com.py/economia/2026/11/24/itaipu-se-reunio-con-dobrestec-la-firma-allanada-por-el-caso-ueno-dice-que-su-vinculo-fue-solo-de-guardias/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -1629,6 +1835,15 @@
    ]
   },
   {
+   "titulo": "Suspeito de matar homem com barra de ferro dentro de academia no Paraná se apresenta à polícia e é liberado",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/23/suspeito-de-matar-homem-academia-liberado.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-23",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
    "titulo": "Sorpresa en Asunción: un jurumí ingresó a una vivienda y presume que llegó nadando desde Chaco’i",
    "url": "http://www.lanacion.com.py/pais/2026/11/23/sorpresa-en-asuncion-un-jurumi-ingreso-a-una-vivienda-y-presume-que-llego-nadando-desde-chacoi/",
    "dominio": "lanacion.com.py",
@@ -1644,15 +1859,6 @@
    "fecha": "2026-11-23",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Suspeito de matar homem com barra de ferro dentro de academia no Paraná se apresenta à polícia e é liberado",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/23/suspeito-de-matar-homem-academia-liberado.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-23",
-   "lugares": [
-    "Foz do Iguaçu"
    ]
   },
   {
@@ -2439,142 +2645,6 @@
    "lugares": [
     "Corrientes"
    ]
-  },
-  {
-   "titulo": "Rapaz achado decapitado na MS-386 tinha passagens por furto e tráfico",
-   "url": "https://www.campograndenews.com.br/cidades/interior/rapaz-achado-decapitado-na-ms-386-tinha-passagens-por-furto-e-trafico",
-   "dominio": "campograndenews.com.br",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Ponta Porã"
-   ]
-  },
-  {
-   "titulo": "Homem é morto com golpes de barra de ferro dentro de academia no Paraná",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/18/homem-e-morto-com-golpes-de-barra-de-ferro-dentro-de-academia-no-parana.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Foz do Iguaçu"
-   ]
-  },
-  {
-   "titulo": "Juicio por Loan: en un careo, una de las acusadas intentó que un policía la reconociera como informante",
-   "url": "https://www.clarin.com/policiales/juicio-loan-careo-acusadas-intento-policia-reconociera-informante_0_emm59QmJn1.html",
-   "dominio": "clarin.com",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Corrientes"
-   ]
-  },
-  {
-   "titulo": "Anexo C y tarifa: Paraguay prepara dos negociaciones clave para el futuro de Itaipú",
-   "url": "http://www.lanacion.com.py/negocios/2026/11/18/anexo-c-y-tarifa-paraguay-prepara-dos-negociaciones-clave-para-el-futuro-de-itaipu/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "LN PM: edición del 18 de noviembre",
-   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/11/18/ln-pm-edicion-del-18-de-noviembre/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Zárate",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Alliana designa a Hugo Zárate como nuevo director general de Itaipú",
-   "url": "http://www.lanacion.com.py/politica/2026/11/18/alliana-designa-a-hugo-zarate-como-nuevo-director-general-de-itaipu/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Zárate",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Hugo Zárate es el nuevo director paraguayo de Itaipú",
-   "url": "https://www.npy.com.py/noticias/nacionales/politica/hugo-zarate-es-el-nuevo-director-paraguayo-de-itaipu",
-   "dominio": "npy.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Zárate",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Nuevo director de Itaipú firmó resolución que habilitó a Ueno Bank, pero dice que no sabía de los depósitos",
-   "url": "https://www.abc.com.py/economia/2026/11/18/nuevo-director-de-itaipu-firmo-resolucion-que-habilito-a-ueno-bank-pero-dice-que-no-sabia-de-los-depositos/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Esto dice la carta de despedida de Justo Zacarías como director de Itaipú",
-   "url": "https://www.abc.com.py/politica/2026/11/18/esto-dice-la-carta-de-despedida-de-justo-zacarias-como-director-de-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Itaipú: Relevan al director general Zacarías Irún, salpicado también por la crisis de Ueno",
-   "url": "https://www.abc.com.py/economia/2026/11/18/itaipu-cambian-al-director-general-zacarias-irun-por-quien-era-el-director-tecnico-hugo-zarate/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "El documento de Itaipú que prohibía depositar en Ueno Bank: exigía cinco años en el mercado",
-   "url": "https://www.abc.com.py/economia/2026/11/18/el-documento-de-itaipu-que-prohibia-depositar-en-ueno-bank-exigia-cinco-anos-en-el-mercado/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "MEF: son USD 888 millones de dinero público comprometidos",
-   "url": "http://www.lanacion.com.py/negocios_edicion_impresa/2026/11/18/mef-son-usd-888-millones-de-dinero-publico-comprometidos/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Agreden a adolescente en Asunción y su madre cuestiona inacción de la Fiscalía",
-   "url": "https://www.npy.com.py/noticias/nacionales/sucesos/agreden-a-adolescente-en-asuncion-y-su-madre-cuestiona-inaccion-de-la-fiscalia",
-   "dominio": "npy.com.py",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Corpo sem roupas é encontrado às margens da MS-386",
-   "url": "https://www.campograndenews.com.br/cidades/interior/corpo-sem-roupas-e-encontrado-as-margens-da-ms-386",
-   "dominio": "campograndenews.com.br",
-   "fecha": "2026-11-18",
-   "lugares": [
-    "Ponta Porã"
-   ]
-  },
-  {
-   "titulo": "El Niño | Reabrieron el paso fronterizo entre Montecarlo y Ape Aime- Paraguay tras el descenso del río Paraná",
-   "url": "https://misionesonline.net/2026/11/18/reabrieron-el-paso-fronterizo-entre-montecarlo-y-ape-aime-paraguay/",
-   "dominio": "misionesonline.net",
-   "fecha": "2026-11-18",
-   "lugares": []
   }
  ]
 }
