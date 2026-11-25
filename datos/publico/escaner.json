@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-24T23:51:32Z",
+ "obtenido": "2026-11-25T08:18:59Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 41,
+   "items": 42,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 86,
+   "items": 88,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 366,
+   "items": 342,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 78
+   "fallos_seguidos": 79
   },
   {
    "dominio": "senad.gov.py",
@@ -202,7 +202,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 4
+   "fallos_seguidos": 5
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -225,7 +225,7 @@
    "url": "https://g1.globo.com/rss/g1/pr/oeste-sudoeste/",
    "ok": true,
    "items": 100,
-   "candidatos": 2,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -287,6 +287,40 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Allanan casa del Paraná Country y se incautan de armas, municiones, chalecos y adelgazantes",
+   "url": "http://www.lanacion.com.py/pais/2026/11/24/allanan-casa-del-parana-country-e-incautan-armas-municiones-chalecos-antibala-y-adelgazantes/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-25",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Hernandarias"
+   ],
+   "ubicacion": [
+    -25.4,
+    -54.64
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/11/24/allanan-casa-del-parana-country-e-incautan-armas-municiones-chalecos-antibala-y-adelgazantes/"
+    }
+   ],
+   "id": "c6da03b3ae",
+   "verificado": true
+  },
   {
    "titulo": "Requisa en cárcel de Minga Guazú: incautan celulares, armas blancas y drogas",
    "url": "https://www.abc.com.py/este/2026/11/24/requisa-en-carcel-de-minga-guazu-incautan-celulares-armas-blancas-y-drogas/",
@@ -1500,86 +1534,56 @@
    ],
    "id": "3fc4b9a9d9",
    "verificado": true
-  },
-  {
-   "titulo": "SENAD CAPTURA A PAREJA DE DISTRIBUIDORES CON MÁS DE 11.000 DOSIS DE DROGAS EN PRESIDENTE FRANCO",
-   "url": "https://senad.gov.py/senad-captura-a-pareja-de-distribuidores-con-mas-de-11-000-dosis-de-drogas-en-presidente-franco/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-11-10",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este",
-    "Alto Paraná"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": {
-    "valor": 1.5,
-    "unidad": "kilos"
-   },
-   "puntaje": 8,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/senad-captura-a-pareja-de-distribuidores-con-mas-de-11-000-dosis-de-drogas-en-presidente-franco/"
-    }
-   ],
-   "id": "73c14186cb",
-   "verificado": true
-  },
-  {
-   "titulo": "OFENSIVA ENTRE PARAGUAY Y BRASIL GENERA USD 17 MILLONES DE PÉRDIDAS AL NARCOTRÁFICO",
-   "url": "https://senad.gov.py/ofensiva-entre-paraguay-y-brasil-genera-usd-17-millones-de-perdidas-al-narcotrafico/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-11-10",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ]
-   ],
-   "lugares": [
-    "Canindeyú"
-   ],
-   "ubicacion": [
-    -24.2,
-    -55.3
-   ],
-   "zona": "z4",
-   "cantidad": {
-    "valor": 113.0,
-    "unidad": "toneladas"
-   },
-   "puntaje": 7,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/ofensiva-entre-paraguay-y-brasil-genera-usd-17-millones-de-perdidas-al-narcotrafico/"
-    }
-   ],
-   "id": "0558aeebe4",
-   "verificado": true
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "PTI Itaipú era la “caja chica” de Peña, dice Nicanor y cuestiona el desdén a Lula",
+   "url": "https://www.abc.com.py/politica/2026/11/24/nicanor-afirma-que-pti-itaipu-era-la-caja-chica-de-pena-y-cuestiona-el-desden-a-lula/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Incumplimiento de condiciones de depósitos en Ueno podría generar problemas en renegociación de Itaipú",
+   "url": "https://www.abc.com.py/economia/2026/11/24/incumplimiento-de-condiciones-de-depositos-en-ueno-podria-generar-problemas-en-renegociacion-de-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "El Paraná está sobre el nivel de alerta en Rosario y seguirá subiendo",
+   "url": "https://www.pagina12.com.ar/2026/11/25/el-parana-esta-sobre-el-nivel-de-alerta-en-rosario-y-seguira-subiendo/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Rosario",
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Foros de seguridad de Posadas destacan la importancia de la videovigilancia policial para prevenir y esclarecer delitos: “Esas cámaras deben ser intocables”",
+   "url": "https://misionesonline.net/2026/11/25/foros-remarcan-necesidad-camaras-de-seguridad-26/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Detuvieron a venezolano por una estafa en la terminal",
+   "url": "https://www.diarioepoca.com/1396021-detuvieron-a-venezolano-por-una-estafa-en-la-terminal?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Corrientes",
+    "Goya"
+   ]
+  },
   {
    "titulo": "Hernandarias: intendente pedirá a Itaipú desagües pluviales, iluminación y más obras viales",
    "url": "http://www.lanacion.com.py/pais/2026/11/24/hernandarias-intendente-pedira-a-itaipu-desagues-pluviales-iluminacion-y-mas-obras-viales/",
@@ -1630,32 +1634,6 @@
    ]
   },
   {
-   "titulo": "Itaipú en la mira: Mauro Vieira llega a Asunción para reunirse con Rubén Ramírez Lezcano",
-   "url": "http://www.lanacion.com.py/politica/2026/11/24/itaipu-en-la-mira-mauro-vieira-llega-a-asuncion-para-reunirse-con-ruben-ramirez-lezcano/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-24",
-   "lugares": [
-    "Asunción",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Detienen a hermano y a cuñada de Santiago Peña",
-   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/24/detienen-a-hermano-y-a-cunada-de-santiago-pena/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-24",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Exobreros de Salto Grande convocan a una caravana para exigir una reparación histórica",
-   "url": "https://ladiaria.com.uy/salto/articulo/2026/11/exobreros-de-salto-grande-convocan-a-una-caravana-para-exigir-una-reparacion-historica/",
-   "dominio": "ladiaria.com.uy",
-   "fecha": "2026-11-24",
-   "lugares": []
-  },
-  {
    "titulo": "Empresário e pai de criança de 8 anos: motorista de van morreu em batida com caminhão carregado de cigarros contrabandeados no Paraná",
    "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/24/motorista-de-van-morreu-em-batida-com-caminhao.ghtml",
    "dominio": "g1.globo.com",
@@ -1681,24 +1659,6 @@
    "lugares": [
     "Salto del Guairá",
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Puente Tancredo Neves: Puerto Iguazú abrió el registro biométrico para la próxima implementación del cruce a Foz con reconocimiento facial",
-   "url": "https://misionesonline.net/2026/11/24/puente-tancredo-neves-puerto-iguazu-abrio-el-registro-biometrico/",
-   "dominio": "misionesonline.net",
-   "fecha": "2026-11-24",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "¿Tenés una empresa o emprendimiento en Misiones? Inscribite gratis para venderles a hoteles y restaurantes de Iguazú",
-   "url": "https://misionesonline.net/2026/11/24/tenes-una-empresa-o-emprendimiento-en-misiones/",
-   "dominio": "misionesonline.net",
-   "fecha": "2026-11-24",
-   "lugares": [
-    "Puerto Iguazú"
    ]
   },
   {
@@ -1744,6 +1704,50 @@
    "fecha": "2026-11-24",
    "lugares": [
     "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Itaipú en la mira: Mauro Vieira llega a Asunción para reunirse con Rubén Ramírez Lezcano",
+   "url": "http://www.lanacion.com.py/politica/2026/11/24/itaipu-en-la-mira-mauro-vieira-llega-a-asuncion-para-reunirse-con-ruben-ramirez-lezcano/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Asunción",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Detienen a hermano y a cuñada de Santiago Peña",
+   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/24/detienen-a-hermano-y-a-cunada-de-santiago-pena/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Exobreros de Salto Grande convocan a una caravana para exigir una reparación histórica",
+   "url": "https://ladiaria.com.uy/salto/articulo/2026/11/exobreros-de-salto-grande-convocan-a-una-caravana-para-exigir-una-reparacion-historica/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-11-24",
+   "lugares": []
+  },
+  {
+   "titulo": "Puente Tancredo Neves: Puerto Iguazú abrió el registro biométrico para la próxima implementación del cruce a Foz con reconocimiento facial",
+   "url": "https://misionesonline.net/2026/11/24/puente-tancredo-neves-puerto-iguazu-abrio-el-registro-biometrico/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "¿Tenés una empresa o emprendimiento en Misiones? Inscribite gratis para venderles a hoteles y restaurantes de Iguazú",
+   "url": "https://misionesonline.net/2026/11/24/tenes-una-empresa-o-emprendimiento-en-misiones/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Puerto Iguazú"
    ]
   },
   {
@@ -2603,47 +2607,6 @@
    "fecha": "2026-11-19",
    "lugares": [
     "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Los puertos náuticos de Uruguay están listos para recibir a los argentinos este verano",
-   "url": "https://perfil.com/turismo/los-puertos-nauticos-de-uruguay-estan-listos-para-recibir-a-los-argentinos-este-verano-aEIBs6m94Ekn",
-   "dominio": "perfil.com",
-   "fecha": "2026-11-19",
-   "lugares": []
-  },
-  {
-   "titulo": "Encapuchados armados raptan, roban y maniatan a dos policías en Asunción",
-   "url": "https://www.pontaporainforma.com.br/encapuchados-armados-raptan-roban-y-m/",
-   "dominio": "pontaporainforma.com.br",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Policías auxiliaron a dos adolescentes durante emergencias médicas en Alberdi y Florentino Ameghino",
-   "url": "https://www.primeraedicion.com.ar/nota/101161593/policias-auxiliaron-a-dos-adolescentes-durante-emergencias-medicas-en-alberdi-y-florentino-ameghino/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Alberdi"
-   ]
-  },
-  {
-   "titulo": "Quieren echar de \nun barrio a dos \nhermanos ladrones",
-   "url": "https://www.diarioepoca.com/1395540-quieren-echar-de-un-barrio-a-dos-hermanos-ladrones?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
-   "dominio": "diarioepoca.com",
-   "fecha": "2026-11-19",
-   "lugares": []
-  },
-  {
-   "titulo": "Recuperan moto \ncerca de la ribera",
-   "url": "https://www.diarioepoca.com/1395541-recuperan-moto-cerca-de-la-ribera?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
-   "dominio": "diarioepoca.com",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Corrientes"
    ]
   }
  ]
