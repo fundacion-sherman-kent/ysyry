@@ -1,10 +1,10 @@
 {
- "obtenido": "2026-11-25T08:51:05Z",
+ "obtenido": "2026-11-25T19:26:11Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 3
+   "avisos_en_el_corredor": 4
   },
   {
    "nombre": "Meteorología de Paraguay",
@@ -13,8 +13,8 @@
   },
   {
    "nombre": "SMN (Argentina)",
-   "ok": true,
-   "avisos_en_el_corredor": 0
+   "ok": false,
+   "error": "HTTP Error 503: Service Unavailable"
   },
   {
    "nombre": "GDACS",
@@ -65,6 +65,23 @@
    "fenomeno": "Chuvas Intensas",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
+   "inicio": "2026-11-27 00:00",
+   "fin": "2026-11-27 23:59",
+   "lugares": [
+    "Porto Murtinho",
+    "Foz do Iguaçu",
+    "Ponta Porã",
+    "Guaíra"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
+   "id": "inmet-28765"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Chuvas Intensas",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
    "inicio": "2026-11-26 00:00",
    "fin": "2026-11-26 23:59",
    "lugares": [
@@ -82,7 +99,7 @@
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias intensas con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizos.",
+   "fenomeno": "Fenómeno esperado: Lluvias intensas con tormentas eléctricas moderadas y ráfagas de vientos moderadas a fuertes.",
    "severidad": "",
    "color": "",
    "inicio": "",
