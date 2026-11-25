@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-25T08:18:59Z",
+ "obtenido": "2026-11-25T19:09:55Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 42,
+   "items": 48,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 88,
+   "items": 95,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 342,
+   "items": 357,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 79
+   "fallos_seguidos": 80
   },
   {
    "dominio": "senad.gov.py",
@@ -202,14 +202,14 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 5
+   "fallos_seguidos": 6
   },
   {
    "dominio": "correiodoestado.com.br",
    "url": "https://www.correiodoestado.com.br/rss",
    "ok": true,
    "items": 30,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -249,14 +249,14 @@
    "url": "https://www.diarioepoca.com/rss",
    "ok": true,
    "items": 20,
-   "candidatos": 0,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 19,
+   "items": 22,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -273,7 +273,7 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/nacionales/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -287,6 +287,43 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "TJMS eleva pena de homem preso com quase 600 kg de drogas na fronteira",
+   "url": "https://correiodoestado.com.br/cidades/2026/11/25/tjms-eleva-pena-de-homem-preso-com-quase-600-kg-de-drogas-na-fronteira.html",
+   "dominio": "correiodoestado.com.br",
+   "clase": "prensa",
+   "fecha": "2026-11-25",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Ponta Porã"
+   ],
+   "ubicacion": [
+    -22.54,
+    -55.73
+   ],
+   "zona": "z4",
+   "cantidad": {
+    "valor": 600.0,
+    "unidad": "kg"
+   },
+   "puntaje": 6,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "correiodoestado.com.br",
+     "clase": "prensa",
+     "url": "https://correiodoestado.com.br/cidades/2026/11/25/tjms-eleva-pena-de-homem-preso-com-quase-600-kg-de-drogas-na-fronteira.html"
+    }
+   ],
+   "id": "f1c4ed705a",
+   "verificado": true
+  },
   {
    "titulo": "Allanan casa del Paraná Country y se incautan de armas, municiones, chalecos y adelgazantes",
    "url": "http://www.lanacion.com.py/pais/2026/11/24/allanan-casa-del-parana-country-e-incautan-armas-municiones-chalecos-antibala-y-adelgazantes/",
@@ -320,6 +357,103 @@
    ],
    "id": "c6da03b3ae",
    "verificado": true
+  },
+  {
+   "titulo": "Detienen a un hombre e incautan dos pistolas durante un allanamiento en Ciudad del Este",
+   "url": "http://www.lanacion.com.py/pais/2026/11/25/detienen-a-un-hombre-e-incautan-dos-pistolas-durante-un-allanamiento-en-ciudad-del-este/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-25",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Ciudad del Este"
+   ],
+   "ubicacion": [
+    -25.51,
+    -54.61
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/11/25/detienen-a-un-hombre-e-incautan-dos-pistolas-durante-un-allanamiento-en-ciudad-del-este/"
+    }
+   ],
+   "id": "400801c33c",
+   "verificado": true
+  },
+  {
+   "titulo": "Secuestraron un cargamento de bebidas valuado en $46,8 millones en Corrientes",
+   "url": "https://www.diarioepoca.com/1396080-secuestraron-un-cargamento-de-bebidas-valuado-en-468-millones-en-corrientes?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "clase": "prensa",
+   "fecha": "2026-11-25",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Corrientes"
+   ],
+   "ubicacion": [
+    -27.47,
+    -58.83
+   ],
+   "zona": "z5",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "diarioepoca.com",
+     "clase": "prensa",
+     "url": "https://www.diarioepoca.com/1396080-secuestraron-un-cargamento-de-bebidas-valuado-en-468-millones-en-corrientes?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed"
+    }
+   ],
+   "id": "01641b614e",
+   "verificado": false
+  },
+  {
+   "titulo": "Cierran tres pasos fronterizos por la crecida del río Uruguay",
+   "url": "https://www.diarioepoca.com/1396085-cierran-tres-pasos-fronterizos-por-la-crecida-del-rio-uruguay?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "clase": "prensa",
+   "fecha": "2026-11-25",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "diarioepoca.com",
+     "clase": "prensa",
+     "url": "https://www.diarioepoca.com/1396085-cierran-tres-pasos-fronterizos-por-la-crecida-del-rio-uruguay?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed"
+    }
+   ],
+   "id": "90dda89a1c",
+   "verificado": false
   },
   {
    "titulo": "Requisa en cárcel de Minga Guazú: incautan celulares, armas blancas y drogas",
@@ -1538,6 +1672,160 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Cancilleres de Paraguay y Brasil anuncian avances en negociaciones sobre Itaipú",
+   "url": "http://www.lanacion.com.py/politica/2026/11/25/cancilleres-de-paraguay-y-brasil-anuncian-avances-en-negociaciones-sobre-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "En Foz, encontraron siete pistolas de 9 mm en cajas de jabón en polvo y equipo de sonido",
+   "url": "http://www.lanacion.com.py/pais/2026/11/25/en-foz-encontraron-siete-pistolas-de-9-mm-en-cajas-de-jabon-en-polvo-y-equipo-de-sonido/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Experto destaca acercamiento entre Paraguay y Brasil por la tarifa de Itaipú",
+   "url": "http://www.lanacion.com.py/politica/2026/11/25/experto-destaca-acercamiento-entre-paraguay-y-brasil-por-la-tarifa-de-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Duarte Frutos pide recuperar fondos de Itaipú y esclarecer las operaciones con Ueno",
+   "url": "http://www.lanacion.com.py/politica/2026/11/25/duarte-frutos-pide-recuperar-fondos-de-itaipu-y-esclarecer-las-operaciones-con-ueno/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Itaipú inicia inspecciones para evaluar la seguridad de sus estructuras civiles",
+   "url": "http://www.lanacion.com.py/politica/2026/11/25/itaipu-inicia-inspecciones-para-evaluar-la-seguridad-de-sus-estructuras-civiles/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Encarnación: formalizaron la denuncia por agresión contra joven con discapacidad",
+   "url": "http://www.lanacion.com.py/pais/2026/11/25/encarnacion-formalizaron-la-denuncia-por-agresion-contra-joven-con-discapacidad/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Encarnación"
+   ]
+  },
+  {
+   "titulo": "Alliana recibe al canciller brasileño en medio de negociaciones por Itaipú y el caso Ueno",
+   "url": "http://www.lanacion.com.py/politica/2026/11/25/alliana-recibe-al-canciller-brasileno-en-medio-de-negociaciones-por-itaipu-y-el-caso-ueno/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "María Sánchez, la candidata de Adelante Andalucía e ingeniera del metal que lleva el casco y las botas a la pugna por el octavo escaño de Cádiz",
+   "url": "https://www.infobae.com/espana/2026/11/25/maria-sanchez-la-candidata-de-adelante-andalucia-ingeniera-del-metal-que-puede-conseguir-un-escano-por-cadiz/",
+   "dominio": "infobae.com",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Campana"
+   ]
+  },
+  {
+   "titulo": "Presentaron la Ley tributaria 2027: una política de reducción de daños a la recesión nacional",
+   "url": "https://www.pagina12.com.ar/2026/11/25/presentaron-la-ley-tributaria-2027-una-politica-de-reduccion-de-danos-a-la-recesion-nacional/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Arrúa cuestionó la falta de inversión nacional en el paso fronterizo entre Puerto Iguazú y Foz de Iguazú",
+   "url": "https://misionesonline.net/2026/11/25/arrua-cuestiono-la-falta-de-inversion-nacional-en-el-paso-fronterizo-entre-puerto-iguazu-y-foz-de-iguazu/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "Operaron al policía atacado a piedrazos en Posadas: permanece estable",
+   "url": "https://www.primeraedicion.com.ar/nota/101163505/operaron-al-policia-atacado-a-piedrazos-en-posadas-permanece-estable/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "“Bajo ninguna circunstancia la Policía de Misiones va a retirar las cámaras” de los barrios de Posadas",
+   "url": "https://www.primeraedicion.com.ar/nota/101163429/la-policia-no-retirara-camaras-de-seguridad-de-los-barrios-de-posadas/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "El misionero Krakowiechi cumplió la meta y llegó al Obelisco",
+   "url": "https://www.primeraedicion.com.ar/nota/101163357/el-misionero-krakowiechi-cumplio-la-meta-y-llego-al-obelisco/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "Monte Caseros, Bella Unión y Barra do Quaraí buscan crear una marca para la Triple Frontera",
+   "url": "https://www.diarioepoca.com/1396087-monte-caseros-bella-union-y-barra-do-quarai-buscan-crear-una-marca-para-la-triple-frontera?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Triple Frontera"
+   ]
+  },
+  {
+   "titulo": "Canciller promete a Brasil restituir fondos de Itaipú que quedaron en Ueno, pero no dice cómo",
+   "url": "https://www.abc.com.py/economia/2026/11/25/canciller-promete-a-brasil-restituir-fondos-de-itaipu-que-quedaron-en-ueno-pero-no-dice-como/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Mario Varela pide la renuncia de la titular de Seprelad y anuncia voto contra Hugo Zárate para Itaipú",
+   "url": "https://www.abc.com.py/politica/2026/11/25/mario-varela-pide-la-renuncia-de-la-titular-de-seprelad-y-anuncia-voto-contra-hugo-zarate-para-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Itaipú: aseguran que ANDE pierde US$ 389 millones este año y piden a Alliana cambiar el cálculo de la tarifa",
+   "url": "https://www.abc.com.py/economia/2026/11/25/itaipu-aseguran-que-ande-pierde-us-389-millones-este-ano-y-piden-a-alliana-cambiar-el-calculo-de-la-tarifa/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "PTI Itaipú era la “caja chica” de Peña, dice Nicanor y cuestiona el desdén a Lula",
    "url": "https://www.abc.com.py/politica/2026/11/24/nicanor-afirma-que-pti-itaipu-era-la-caja-chica-de-pena-y-cuestiona-el-desden-a-lula/",
    "dominio": "abc.com.py",
@@ -1582,6 +1870,43 @@
    "lugares": [
     "Corrientes",
     "Goya"
+   ]
+  },
+  {
+   "titulo": "Empresário e pai de criança de 8 anos: motorista de van morreu em batida com caminhão carregado de cigarros contrabandeados no Paraná",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/24/motorista-de-van-morreu-em-batida-com-caminhao.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Marechal Cândido Rondon"
+   ]
+  },
+  {
+   "titulo": "Motorista de van que transportava universitários morre em batida com caminhão carregado com cigarros contrabandeados no Paraná",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/24/motorista-de-van-que-transportava-universitarios-morre-em-batida-com-caminhao-carregado-com-cigarros-contrabandeados-no-parana.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Marechal Cândido Rondon"
+   ]
+  },
+  {
+   "titulo": "Ex-prefeito condenado por mandar matar opositores políticos no Paraná é preso no Paraguai",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/24/ex-prefeito-condenado-por-mandar-matar-opositores-politicos-no-parana-e-preso-no-paraguai.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Salto del Guairá",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Macabro hallazgo en Zárate: encontraron a dos hombres calcinados dentro de un auto",
+   "url": "https://www.clarin.com/policiales/macabro-hallazgo-zarate-encontraron-hombres-calcinados-dentro-auto_0_piW0RuGVPq.html",
+   "dominio": "clarin.com",
+   "fecha": "2026-11-24",
+   "lugares": [
+    "Zárate"
    ]
   },
   {
@@ -1634,34 +1959,6 @@
    ]
   },
   {
-   "titulo": "Empresário e pai de criança de 8 anos: motorista de van morreu em batida com caminhão carregado de cigarros contrabandeados no Paraná",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/24/motorista-de-van-morreu-em-batida-com-caminhao.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-24",
-   "lugares": [
-    "Marechal Cândido Rondon"
-   ]
-  },
-  {
-   "titulo": "Motorista de van que transportava universitários morre em batida com caminhão carregado com cigarros contrabandeados no Paraná",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/24/motorista-de-van-que-transportava-universitarios-morre-em-batida-com-caminhao-carregado-com-cigarros-contrabandeados-no-parana.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-24",
-   "lugares": [
-    "Marechal Cândido Rondon"
-   ]
-  },
-  {
-   "titulo": "Ex-prefeito condenado por mandar matar opositores políticos no Paraná é preso no Paraguai",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/24/ex-prefeito-condenado-por-mandar-matar-opositores-politicos-no-parana-e-preso-no-paraguai.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-24",
-   "lugares": [
-    "Salto del Guairá",
-    "Itaipú"
-   ]
-  },
-  {
    "titulo": "Incendio en una vivienda deshabitada de Posadas: investigan cómo se originaron las llamas",
    "url": "https://www.primeraedicion.com.ar/nota/101163239/incendio-en-una-vivienda-deshabitada-de-posadas-investigan-como-se-originaron-las-llamas/",
    "dominio": "primeraedicion.com.ar",
@@ -1686,15 +1983,6 @@
    "fecha": "2026-11-24",
    "lugares": [
     "Posadas"
-   ]
-  },
-  {
-   "titulo": "Macabro hallazgo en Zárate: encontraron a dos hombres calcinados dentro de un auto",
-   "url": "https://www.clarin.com/policiales/macabro-hallazgo-zarate-encontraron-hombres-calcinados-dentro-auto_0_piW0RuGVPq.html",
-   "dominio": "clarin.com",
-   "fecha": "2026-11-24",
-   "lugares": [
-    "Zárate"
    ]
   },
   {
@@ -2458,155 +2746,6 @@
    "fecha": "2026-11-20",
    "lugares": [
     "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Un empresario advirtió sobre la crisis de las pymes en Corrientes: \"No hay reactivación, hay desesperación\"",
-   "url": "https://perfil.com/nea/un-empresario-advirtio-sobre-la-crisis-de-las-pymes-en-corrientes-no-hay-reactivacion-hay-desesperacion-agsH77p0OLPg",
-   "dominio": "perfil.com",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Corrientes"
-   ]
-  },
-  {
-   "titulo": "El Niño seguirá durante el verano y advierten que el río Paraná continúa en nivel de alerta",
-   "url": "https://perfil.com/nea/el-nino-seguira-durante-el-verano-y-advierten-que-el-rio-parana-continua-en-nivel-de-alerta-apnMn9D0PPia",
-   "dominio": "perfil.com",
-   "fecha": "2026-11-20",
-   "lugares": []
-  },
-  {
-   "titulo": "Soberana dependencia",
-   "url": "https://www.pagina12.com.ar/2026/11/20/soberana-dependencia/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-11-20",
-   "lugares": []
-  },
-  {
-   "titulo": "Empujones, corridas y una PlayStation 5 a precio regalado: el caos del Black Friday en Ciudad del Este",
-   "url": "https://misionesonline.net/2026/11/20/empujones-corridas-y-una-playstation-5-a-precio-regalado-el-caos-del-black-friday-en-ciudad-del-este/",
-   "dominio": "misionesonline.net",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "“Hoy hay víctimas de trata por una coerción mucho más sutil y eficaz, las endeudan”",
-   "url": "https://www.primeraedicion.com.ar/nota/101161990/hoy-hay-victimas-de-trata-por-una-coercion-mucho-mas-sutil-y-eficaz-las-endeudan/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "La batalla por la que se celebra el Día de la Soberanía Nacional",
-   "url": "https://www.primeraedicion.com.ar/nota/100363972/vuelta-de-obligado-la-batalla-por-la-que-se-celebra-el-dia-de-la-soberania-nacional/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-20",
-   "lugares": []
-  },
-  {
-   "titulo": "Relacionamento amoroso pode ter motivado morte de homem atacado com barra de ferro em academia no Paraná, diz polícia",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/19/relacionamento-amoroso-pode-ter-motivado-morte-de-homem-em-academia.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Foz do Iguaçu"
-   ]
-  },
-  {
-   "titulo": "Asalto y toma de rehenes a policías en Asunción apuntan a una banda fronteriza",
-   "url": "https://www.abc.com.py/policiales/2026/11/19/asalto-y-toma-de-rehenes-a-policias-en-asuncion-apunta-a-banda-fronteriza/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Fiscalía imputó a dos mujeres por supuesta venta de medicamentos en el Hospital IPS de CDE",
-   "url": "http://www.lanacion.com.py/pais/2026/11/19/fiscalia-imputo-a-dos-mujeres-por-supuesta-venta-de-medicamentos-en-el-hospital-ips-de-cde/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Ciudad del Este"
-   ]
-  },
-  {
-   "titulo": "Senadora Esperanza rechaza acuerdo a nuevo director de Itaipú por caso Ueno",
-   "url": "https://www.abc.com.py/politica/2026/11/19/senadora-esperanza-rechaza-acuerdo-a-nuevo-director-de-itaipu-por-caso-ueno/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Justo Zacarías designó a un dirigente de su entorno en Tesãi antes de dejar Itaipú",
-   "url": "https://www.abc.com.py/este/2026/11/19/justo-zacarias-designo-a-un-dirigente-de-su-entorno-en-tesai-antes-de-dejar-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Hugo Zárate asumió en Itaipú, pero no explica aún su firma en la resolución que habilitó a Ueno Bank",
-   "url": "https://www.abc.com.py/economia/2026/11/19/hugo-zarate-asumio-en-itaipu-pero-no-explica-aun-su-firma-en-la-resolucion-que-habilito-a-ueno-bank/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Zárate",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Investigan rapto y posterior robo de armas a agentes policiales en Asunción",
-   "url": "http://www.lanacion.com.py/pais/2026/11/19/investigan-rapto-y-posterior-robo-de-armas-a-agentes-policiales-en-asuncion/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Nicanor afirma que se debe fortalecer nuevamente la institucionalidad de Itaipú",
-   "url": "http://www.lanacion.com.py/politica/2026/11/19/nicanor-afirma-que-se-debe-fortalecer-nuevamente-la-institucionalidad-de-itaipu/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Posadas: quiso viajar sin tener pasaje, se resistió y mordió a una policía en la Terminal de Ómnibus",
-   "url": "https://www.primeraedicion.com.ar/nota/101161886/posadas-quiso-viajar-sin-tener-pasaje-se-resistio-y-mordio-a-una-policia-en-la-terminal-de-omnibus/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Nombran a Hugo Zárate como nuevo titular de Itaipú y renuevan Consejo",
-   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/19/nombran-a-hugo-zarate-como-nuevo-titular-de-itaipu-y-renuevan-consejo/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Zárate",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Itaipú: ministros consejeros cobrarán desde ahora de la binacional y no de sus cargos, incluyendo el canciller",
-   "url": "https://www.abc.com.py/economia/2026/11/19/itaipu-ministros-consejeros-cobraran-desde-ahora-de-la-binacional-y-no-de-sus-cargos-incluyendo-el-canciller/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-19",
-   "lugares": [
-    "Itaipú"
    ]
   }
  ]
