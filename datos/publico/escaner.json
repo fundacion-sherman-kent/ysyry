@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-25T19:09:55Z",
+ "obtenido": "2026-11-26T03:30:13Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 48,
+   "items": 51,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 95,
+   "items": 88,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 357,
+   "items": 404,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 80
+   "fallos_seguidos": 81
   },
   {
    "dominio": "senad.gov.py",
@@ -202,14 +202,14 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 6
+   "fallos_seguidos": 7
   },
   {
    "dominio": "correiodoestado.com.br",
    "url": "https://www.correiodoestado.com.br/rss",
    "ok": true,
    "items": 30,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -249,7 +249,7 @@
    "url": "https://www.diarioepoca.com/rss",
    "ok": true,
    "items": 20,
-   "candidatos": 2,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -1632,45 +1632,47 @@
    ],
    "id": "5689cd35eb",
    "verificado": true
-  },
-  {
-   "titulo": "Cae brasileño con más de dos kilos de marihuana en la Aduana de Ciudad del Este",
-   "url": "http://www.lanacion.com.py/judiciales/2026/11/11/cae-brasileno-con-mas-de-dos-kilos-de-marihuana-en-la-aduana-de-ciudad-del-este/",
-   "dominio": "lanacion.com.py",
-   "clase": "prensa",
-   "fecha": "2026-11-11",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": {
-    "valor": 2.2,
-    "unidad": "kilogramos"
-   },
-   "puntaje": 6,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "lanacion.com.py",
-     "clase": "prensa",
-     "url": "http://www.lanacion.com.py/judiciales/2026/11/11/cae-brasileno-con-mas-de-dos-kilos-de-marihuana-en-la-aduana-de-ciudad-del-este/"
-    }
-   ],
-   "id": "3fc4b9a9d9",
-   "verificado": true
   }
  ],
  "sin_tipo": [
+  {
+   "titulo": "Itaipú en Ueno: Zárate dijo que la regla de cinco años no se expuso al directorio y mostrará documentos solo a la Justicia",
+   "url": "https://www.abc.com.py/economia/2026/11/25/itaipu-en-ueno-zarate-dijo-que-la-regla-de-cinco-anos-no-se-expuso-al-directorio-y-mostrara-documentos-solo-a-la-justicia/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Itaipú: equipos técnicos vuelven a la mesa para negociar Anexo C",
+   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/26/itaipu-equipos-tecnicos-vuelven-a-la-mesa-para-negociar-anexo-c/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Valeria Segovia Mattos, especialista en recursos humanos, sobre el currículum: “Cuando se arma con inteligencia artificial y sin criterio, en la entrevista se nota”",
+   "url": "https://misionesonline.net/2026/11/25/valeria-segovia-mattos/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "JetSMART se adelanta a los descuentos con el Black SMART, con hasta 40 % menos para viajar a Buenos Aires",
+   "url": "http://www.lanacion.com.py/negocios/2026/11/25/jetsmart-se-adelanta-a-los-descuentos-con-el-black-smart-con-hasta-40-menos-para-viajar-a-buenos-aires/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Campana",
+    "Asunción"
+   ]
+  },
   {
    "titulo": "Cancilleres de Paraguay y Brasil anuncian avances en negociaciones sobre Itaipú",
    "url": "http://www.lanacion.com.py/politica/2026/11/25/cancilleres-de-paraguay-y-brasil-anuncian-avances-en-negociaciones-sobre-itaipu/",
@@ -1687,6 +1689,95 @@
    "fecha": "2026-11-25",
    "lugares": [
     "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Presentaron la Ley tributaria 2027: una política de reducción de daños a la recesión nacional",
+   "url": "https://www.pagina12.com.ar/2026/11/25/presentaron-la-ley-tributaria-2027-una-politica-de-reduccion-de-danos-a-la-recesion-nacional/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Marcelo Cattani llevará Río místico a la Udelar y al Muelle Negro para reivindicar el vínculo de Salto con el río",
+   "url": "https://ladiaria.com.uy/salto/articulo/2026/11/marcelo-cattani-llevara-rio-mistico-a-la-udelar-y-al-muelle-negro-para-reivindicar-el-vinculo-de-salto-con-el-rio/",
+   "dominio": "ladiaria.com.uy",
+   "fecha": "2026-11-25",
+   "lugares": []
+  },
+  {
+   "titulo": "Rescataron una yarará de casi un metro y medio en el Jardín Botánico de Posadas",
+   "url": "https://www.primeraedicion.com.ar/nota/101163599/rescataron-una-yarara-de-casi-un-metro-y-medio-en-el-jardin-botanico-de-posadas/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Están abiertas las inscripciones para ser parte del Campeonato Posadeño de Aguas Abiertas",
+   "url": "https://www.primeraedicion.com.ar/nota/101163522/estan-abiertas-las-inscripciones-para-ser-parte-del-campeonato-posadeno-de-aguas-abiertas/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Intentó escapar de un control policial en Posadas y llevaba cocaína fraccionada",
+   "url": "https://www.primeraedicion.com.ar/nota/101163476/posadas-joven-cocaina-moto-sin-patente-control-policial/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Corrientes: rescataron a un ciervo que era arrastrado por el río Paraná",
+   "url": "https://www.diarioepoca.com/1396089-corrientes-rescataron-a-un-ciervo-que-era-arrastrado-por-el-rio-parana?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
+   "titulo": "Caso Loan: el enojo del arrendatario del campo donde \"plantaron\" una prueba clave y la falta de memoria de un policía",
+   "url": "https://www.clarin.com/policiales/caso-loan-enojo-arrendatario-campo-plantaron-prueba-clave-falta-memoria-policia_0_HwgxBVynhF.html",
+   "dominio": "clarin.com",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
+   "titulo": "Fondos de Itaipú en Ueno rondan US$ 220 millones y el Gobierno no dice cómo los repondrá",
+   "url": "https://www.abc.com.py/economia/2026/11/25/fondos-de-itaipu-en-ueno-rondan-us-220-millones-y-el-gobierno-no-dice-como-los-repondra/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Canciller promete a Brasil restituir fondos de Itaipú que quedaron en Ueno, pero no dice cómo",
+   "url": "https://www.abc.com.py/economia/2026/11/25/canciller-promete-a-brasil-restituir-fondos-de-itaipu-que-quedaron-en-ueno-pero-no-dice-como/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Mario Varela pide la renuncia de la titular de Seprelad y anuncia voto contra Hugo Zárate para Itaipú",
+   "url": "https://www.abc.com.py/politica/2026/11/25/mario-varela-pide-la-renuncia-de-la-titular-de-seprelad-y-anuncia-voto-contra-hugo-zarate-para-itaipu/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
    ]
   },
   {
@@ -1744,15 +1835,6 @@
    ]
   },
   {
-   "titulo": "Presentaron la Ley tributaria 2027: una política de reducción de daños a la recesión nacional",
-   "url": "https://www.pagina12.com.ar/2026/11/25/presentaron-la-ley-tributaria-2027-una-politica-de-reduccion-de-danos-a-la-recesion-nacional/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-11-25",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
    "titulo": "Arrúa cuestionó la falta de inversión nacional en el paso fronterizo entre Puerto Iguazú y Foz de Iguazú",
    "url": "https://misionesonline.net/2026/11/25/arrua-cuestiono-la-falta-de-inversion-nacional-en-el-paso-fronterizo-entre-puerto-iguazu-y-foz-de-iguazu/",
    "dominio": "misionesonline.net",
@@ -1795,25 +1877,6 @@
    "fecha": "2026-11-25",
    "lugares": [
     "Triple Frontera"
-   ]
-  },
-  {
-   "titulo": "Canciller promete a Brasil restituir fondos de Itaipú que quedaron en Ueno, pero no dice cómo",
-   "url": "https://www.abc.com.py/economia/2026/11/25/canciller-promete-a-brasil-restituir-fondos-de-itaipu-que-quedaron-en-ueno-pero-no-dice-como/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-25",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Mario Varela pide la renuncia de la titular de Seprelad y anuncia voto contra Hugo Zárate para Itaipú",
-   "url": "https://www.abc.com.py/politica/2026/11/25/mario-varela-pide-la-renuncia-de-la-titular-de-seprelad-y-anuncia-voto-contra-hugo-zarate-para-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-25",
-   "lugares": [
-    "Zárate",
-    "Itaipú"
    ]
   },
   {
@@ -2651,101 +2714,6 @@
    "fecha": "2026-11-20",
    "lugares": [
     "Dourados"
-   ]
-  },
-  {
-   "titulo": "Soldado da PM é encontrada morta após publicar bilhetes",
-   "url": "https://correiodoestado.com.br/cidades/2026/11/20/soldado-da-pm-e-encontrada-morta-apos-publicar-bilhetes.html",
-   "dominio": "correiodoestado.com.br",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Corumbá"
-   ]
-  },
-  {
-   "titulo": "Ponta Porã: Emagrecedores são apreendidos escondidos em caminhão de encomendas",
-   "url": "https://www.pontaporainforma.com.br/ponta-pora-emagrecedores-sao-apreendidos-escondidos-em-caminhao-de-encomendas/",
-   "dominio": "pontaporainforma.com.br",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Ponta Porã"
-   ]
-  },
-  {
-   "titulo": "Una enorme rama cayó sobre una camioneta y cables eléctricos en la Bajada Vieja de Posadas",
-   "url": "https://www.primeraedicion.com.ar/nota/101162183/una-enorme-rama-cayo-sobre-una-camioneta-y-cables-electricos-en-la-bajada-vieja-de-posadas/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "El Niño: desplazados por el río Paraná vuelven a sus casas, mientras el Chaco sigue afectado",
-   "url": "https://www.abc.com.py/nacionales/2026/11/20/el-nino-desplazados-por-el-rio-parana-vuelven-a-sus-casas-mientras-el-chaco-sigue-afectado/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-20",
-   "lugares": []
-  },
-  {
-   "titulo": "Brasil solicita reevaluar bancos autorizados por Paraguay para operar con Itaipú",
-   "url": "http://www.lanacion.com.py/politica/2026/11/19/brasil-solicita-reevaluar-bancos-autorizados-por-paraguay-para-operar-con-itaipu/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Kicillof hizo un llamado a “escribir” una nueva historia en Argentina y prometió el Canal Magdalena",
-   "url": "https://www.pagina12.com.ar/2026/11/20/kicillof-hizo-un-llamado-a-escribir-una-nueva-historia-en-argentina-y-prometio-el-canal-magdalena/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-11-20",
-   "lugares": []
-  },
-  {
-   "titulo": "Femicidio seguido de suicidio",
-   "url": "https://www.pagina12.com.ar/2026/11/20/femicidio-seguido-de-suicidio/",
-   "dominio": "pagina12.com.ar",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "PM de Ponta Porã cumpre mandado de prisão no bairro Jardim Ipanema",
-   "url": "https://www.pontaporainforma.com.br/pm-de-ponta-pora-cumpre-mandado-de-prisao-no-bairro-jardim-ipanema/",
-   "dominio": "pontaporainforma.com.br",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Ponta Porã"
-   ]
-  },
-  {
-   "titulo": "Autoridades do lado brasileiro da Itaipu estão preocupadas com a crise bancaria no Paraguai",
-   "url": "https://www.pontaporainforma.com.br/autoridades-do-lado-brasileiro-da-itaipu/",
-   "dominio": "pontaporainforma.com.br",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Fuertes tormentas provocaron caída de postes y cortes de luz en Iguazú y San Antonio",
-   "url": "https://www.primeraedicion.com.ar/nota/101162150/fuertes-tormentas-provocaron-caida-de-postes-y-cortes-de-luz-en-iguazu-y-san-antonio/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Alliana respalda a Benítez en Yacyretá pese a que es accionista de Ueno y autorizó colocar allí US$ 10 millones",
-   "url": "https://www.abc.com.py/economia/2026/11/20/alliana-respalda-a-benitez-en-yacyreta-pese-a-que-es-accionista-de-ueno-y-autorizo-colocar-alli-us-10-millones/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Yacyretá"
    ]
   }
  ]
