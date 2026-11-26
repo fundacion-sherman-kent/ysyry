@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-26T03:30:13Z",
+ "obtenido": "2026-11-26T16:46:31Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 51,
+   "items": 47,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 88,
+   "items": 93,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 404,
+   "items": 342,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 81
+   "fallos_seguidos": 82
   },
   {
    "dominio": "senad.gov.py",
@@ -202,7 +202,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 7
+   "fallos_seguidos": 8
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -225,7 +225,7 @@
    "url": "https://g1.globo.com/rss/g1/pr/oeste-sudoeste/",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -233,7 +233,7 @@
    "url": "https://www.misionesonline.net/feed/",
    "ok": true,
    "items": 10,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -241,7 +241,7 @@
    "url": "https://www.primeraedicion.com.ar/feed/",
    "ok": true,
    "items": 20,
-   "candidatos": 0,
+   "candidatos": 2,
    "fallos_seguidos": 0
   },
   {
@@ -256,7 +256,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 22,
+   "items": 23,
    "candidatos": 1,
    "fallos_seguidos": 0
   },
@@ -287,6 +287,103 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Yacyretá abrió todas sus compuertas ante un nuevo incremento del caudal del Paraná",
+   "url": "https://www.primeraedicion.com.ar/nota/101163841/yacyreta-abrio-18-compuertas-nueva-crecida-rio-parana/",
+   "dominio": "primeraedicion.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-11-26",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Yacyretá"
+   ],
+   "ubicacion": [
+    -27.4,
+    -56.72
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "primeraedicion.com.ar",
+     "clase": "prensa",
+     "url": "https://www.primeraedicion.com.ar/nota/101163841/yacyreta-abrio-18-compuertas-nueva-crecida-rio-parana/"
+    }
+   ],
+   "id": "6dd4fad92e",
+   "verificado": true
+  },
+  {
+   "titulo": "Abandonó cocaína valuada en más de $41 millones",
+   "url": "https://www.primeraedicion.com.ar/nota/101163821/puerto-iguazu-abandono-cocaina-41-millones-escapo-policia/",
+   "dominio": "primeraedicion.com.ar",
+   "clase": "prensa",
+   "fecha": "2026-11-26",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Puerto Iguazú"
+   ],
+   "ubicacion": [
+    -25.6,
+    -54.57
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "primeraedicion.com.ar",
+     "clase": "prensa",
+     "url": "https://www.primeraedicion.com.ar/nota/101163821/puerto-iguazu-abandono-cocaina-41-millones-escapo-policia/"
+    }
+   ],
+   "id": "3d16ff79d3",
+   "verificado": true
+  },
+  {
+   "titulo": "Efecto El Niño en la región | Preocupación en Porto Mauá por las reiteradas crecidas del río Uruguay que paralizan el paso fronterizo con Misiones",
+   "url": "https://misionesonline.net/2026/11/26/porto-maua-brasil-el-nino-misiones/",
+   "dominio": "misionesonline.net",
+   "clase": "prensa",
+   "fecha": "2026-11-26",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "misionesonline.net",
+     "clase": "prensa",
+     "url": "https://misionesonline.net/2026/11/26/porto-maua-brasil-el-nino-misiones/"
+    }
+   ],
+   "id": "7d7168664f",
+   "verificado": true
+  },
   {
    "titulo": "TJMS eleva pena de homem preso com quase 600 kg de drogas na fronteira",
    "url": "https://correiodoestado.com.br/cidades/2026/11/25/tjms-eleva-pena-de-homem-preso-com-quase-600-kg-de-drogas-na-fronteira.html",
@@ -1636,9 +1733,27 @@
  ],
  "sin_tipo": [
   {
-   "titulo": "Itaipú en Ueno: Zárate dijo que la regla de cinco años no se expuso al directorio y mostrará documentos solo a la Justicia",
-   "url": "https://www.abc.com.py/economia/2026/11/25/itaipu-en-ueno-zarate-dijo-que-la-regla-de-cinco-anos-no-se-expuso-al-directorio-y-mostrara-documentos-solo-a-la-justicia/",
+   "titulo": "Vídeo: desmantelan foco de distribución de drogas en la ciudad de Alberdi",
+   "url": "https://www.abc.com.py/policiales/2026/11/26/desmantelan-un-foco-de-distribucion-de-drogas-en-la-ciudad-de-alberdi/",
    "dominio": "abc.com.py",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Alberdi"
+   ]
+  },
+  {
+   "titulo": "LN PM: edición del 26 de noviembre",
+   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/11/26/ln-pm-edicion-del-26-de-noviembre/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Itaipú busca recuperar millonarios depósitos atrapados en Ueno Bank",
+   "url": "http://www.lanacion.com.py/politica/2026/11/26/itaipu-busca-recuperar-millonarios-depositos-atrapados-en-ueno-bank/",
+   "dominio": "lanacion.com.py",
    "fecha": "2026-11-26",
    "lugares": [
     "Zárate",
@@ -1655,12 +1770,113 @@
    ]
   },
   {
+   "titulo": "Rio Paraguai tem alta atípica e atinge maior nível em 18 meses",
+   "url": "https://correiodoestado.com.br/cidades/2026/11/26/rio-paraguai-tem-alta-atipica-e-atinge-maior-nivel-em-18-meses.html",
+   "dominio": "correiodoestado.com.br",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Porto Murtinho"
+   ]
+  },
+  {
+   "titulo": "Homem que matou radialista em São Paulo é preso em Dourados",
+   "url": "https://correiodoestado.com.br/cidades/2026/11/26/dourados-foragido-30-anos-radialista-sao-paulo.html",
+   "dominio": "correiodoestado.com.br",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Dourados"
+   ]
+  },
+  {
+   "titulo": "Itaipu se transforma em polo de inovação e atrai milhares para festival de tecnologia e empreendedorismo",
+   "url": "https://www.pontaporainforma.com.br/itaipu-se-transforma-em-polo-de-inovacao-e-atrai-milhares-para-festival-de-tecnologia-e-empreendedorismo/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Meio ambiente: Imasul mostra níveis de emergência nos rios Aquidauana, Miranda e Dourados",
+   "url": "https://www.pontaporainforma.com.br/imasul-mostra-niveis-de-emergencia-nos/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Dourados"
+   ]
+  },
+  {
+   "titulo": "VÍDEO: Passarela das Cataratas é interditada após vazão aumentar seis vezes no Paraná",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/26/video-passarela-das-cataratas-e-interditada-parana.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "La modernización del aeropuerto busca potenciar el desarrollo económico y turístico de Posadas",
+   "url": "https://misionesonline.net/2026/11/26/la-modernizacion-del-aeropuerto-busca-potenciar-el-desarrollo-economico-y-turistico-de-posadas/",
+   "dominio": "misionesonline.net",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Cámaras de seguridad en Posadas: referentes barriales desmienten al Municipio y aseguran tener la nota que exige su retiro",
+   "url": "https://www.primeraedicion.com.ar/nota/101163787/camaras-seguridad-posadas-vecinos-cuestionan-desmentido-municipal/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Itaipú en Ueno: Zárate dijo que la regla de cinco años no se expuso al directorio y mostrará documentos solo a la Justicia",
+   "url": "https://www.abc.com.py/economia/2026/11/25/itaipu-en-ueno-zarate-dijo-que-la-regla-de-cinco-anos-no-se-expuso-al-directorio-y-mostrara-documentos-solo-a-la-justicia/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Valeria Segovia Mattos, especialista en recursos humanos, sobre el currículum: “Cuando se arma con inteligencia artificial y sin criterio, en la entrevista se nota”",
    "url": "https://misionesonline.net/2026/11/25/valeria-segovia-mattos/",
    "dominio": "misionesonline.net",
    "fecha": "2026-11-26",
    "lugares": [
     "Posadas"
+   ]
+  },
+  {
+   "titulo": "Caso Loan: el enojo del arrendatario del campo donde \"plantaron\" una prueba clave y la falta de memoria de un policía",
+   "url": "https://www.clarin.com/policiales/caso-loan-enojo-arrendatario-campo-plantaron-prueba-clave-falta-memoria-policia_0_HwgxBVynhF.html",
+   "dominio": "clarin.com",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
+   "titulo": "Fondos de Itaipú en Ueno rondan US$ 220 millones y el Gobierno no dice cómo los repondrá",
+   "url": "https://www.abc.com.py/economia/2026/11/25/fondos-de-itaipu-en-ueno-rondan-us-220-millones-y-el-gobierno-no-dice-como-los-repondra/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Canciller promete a Brasil restituir fondos de Itaipú que quedaron en Ueno, pero no dice cómo",
+   "url": "https://www.abc.com.py/economia/2026/11/25/canciller-promete-a-brasil-restituir-fondos-de-itaipu-que-quedaron-en-ueno-pero-no-dice-como/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-25",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -1741,33 +1957,6 @@
    "fecha": "2026-11-25",
    "lugares": [
     "Corrientes"
-   ]
-  },
-  {
-   "titulo": "Caso Loan: el enojo del arrendatario del campo donde \"plantaron\" una prueba clave y la falta de memoria de un policía",
-   "url": "https://www.clarin.com/policiales/caso-loan-enojo-arrendatario-campo-plantaron-prueba-clave-falta-memoria-policia_0_HwgxBVynhF.html",
-   "dominio": "clarin.com",
-   "fecha": "2026-11-25",
-   "lugares": [
-    "Corrientes"
-   ]
-  },
-  {
-   "titulo": "Fondos de Itaipú en Ueno rondan US$ 220 millones y el Gobierno no dice cómo los repondrá",
-   "url": "https://www.abc.com.py/economia/2026/11/25/fondos-de-itaipu-en-ueno-rondan-us-220-millones-y-el-gobierno-no-dice-como-los-repondra/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-25",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Canciller promete a Brasil restituir fondos de Itaipú que quedaron en Ueno, pero no dice cómo",
-   "url": "https://www.abc.com.py/economia/2026/11/25/canciller-promete-a-brasil-restituir-fondos-de-itaipu-que-quedaron-en-ueno-pero-no-dice-como/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-25",
-   "lugares": [
-    "Itaipú"
    ]
   },
   {
@@ -2623,97 +2812,6 @@
    "fecha": "2026-11-20",
    "lugares": [
     "Asunción"
-   ]
-  },
-  {
-   "titulo": "SENAD CORTA IMPORTANTE RUTA DE ABASTECIMIENTO DE CHESPI EN CDE",
-   "url": "https://senad.gov.py/senad-corta-importante-ruta-de-abastecimiento-de-chespi-en-cde/",
-   "dominio": "senad.gov.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Ciudad del Este",
-    "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "Detienen a brasileño buscado por millonaria estafa en su país, que lavaba su dinero en la Triple Frontera",
-   "url": "https://www.abc.com.py/este/2026/11/20/detienen-a-brasileno-buscado-por-millonaria-estafa-en-su-pais-que-lavaba-su-dinero-en-la-triple-frontera/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Triple Frontera"
-   ]
-  },
-  {
-   "titulo": "FTC captura a presunto narco con orden de captura internacional en Encarnación",
-   "url": "https://www.abc.com.py/policiales/2026/11/20/ftc-captura-a-presunto-narco-con-orden-de-captura-internacional-en-encarnacion/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Encarnación"
-   ]
-  },
-  {
-   "titulo": "Dos policías de Santa Fe y Salta mataron a sus parejas y se suicidaron",
-   "url": "https://www.lanacion.com.ar/seguridad/un-policia-mato-a-su-pareja-frente-a-su-hijo-de-7-anos-y-se-suicido-nid20112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Capturan en Pedro Juan Caballero a brasileño condenado por tráfico de drogas en su país",
-   "url": "https://www.abc.com.py/policiales/2026/11/20/capturan-en-pedro-juan-caballero-a-brasileno-condenado-por-trafico-de-drogas-en-su-pais/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Pedro Juan Caballero"
-   ]
-  },
-  {
-   "titulo": "Alliana designa a exintendenta de Yegros como consejera en Yacyretá",
-   "url": "http://www.lanacion.com.py/politica/2026/11/20/alliana-designa-a-exintendenta-de-yegros-como-consejera-en-yacyreta/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Yacyretá"
-   ]
-  },
-  {
-   "titulo": "Hernandarias: allanaron casas por robo de energía e incautaron 41 máquinas de criptomonedas",
-   "url": "http://www.lanacion.com.py/pais/2026/11/20/hernandarias-allanaron-casas-por-robo-de-energia-e-incautaron-41-maquinas-de-criptomonedas/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Hernandarias"
-   ]
-  },
-  {
-   "titulo": "Se acabó la “diversión”: policías de tránsito de Asunción empezarán a aplicar sanciones",
-   "url": "http://www.lanacion.com.py/pais/2026/11/20/se-acabo-la-diversion-policias-de-transito-de-asuncion-empezaran-a-aplicar-sanciones/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "LN PM: edición del 20 de noviembre",
-   "url": "http://www.lanacion.com.py/tapa-lnpm/2026/11/20/ln-pm-edicion-del-20-de-noviembre/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Encarnación"
-   ]
-  },
-  {
-   "titulo": "Sarna humana já é registrada em ao menos 12 cidades de MS",
-   "url": "https://www.campograndenews.com.br/brasil/cidades/sarna-humana-ja-e-registrada-em-ao-menos-12-cidades-de-ms",
-   "dominio": "campograndenews.com.br",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Dourados"
    ]
   }
  ]
