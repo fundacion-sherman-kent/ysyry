@@ -1,15 +1,15 @@
 {
- "obtenido": "2026-11-27T01:49:49Z",
+ "obtenido": "2026-11-27T12:47:26Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
    "ok": true,
-   "avisos_en_el_corredor": 4
+   "avisos_en_el_corredor": 5
   },
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 0
+   "avisos_en_el_corredor": 1
   },
   {
    "nombre": "SMN (Argentina)",
@@ -19,7 +19,7 @@
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 2
   }
  ],
  "avisos": [
@@ -29,8 +29,8 @@
    "fenomeno": "Chuvas Intensas",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-11-26 09:10",
-   "fin": "2026-11-26 23:59",
+   "inicio": "2026-11-27 09:12",
+   "fin": "2026-11-27 23:59",
    "lugares": [
     "Corumbá",
     "Ladário",
@@ -41,7 +41,21 @@
     "Guaíra"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
-   "id": "inmet-28767"
+   "id": "inmet-28772"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Chuvas Intensas",
+   "severidad": "Perigo",
+   "color": "#F96602",
+   "inicio": "2026-11-27 09:40",
+   "fin": "2026-11-27 23:59",
+   "lugares": [
+    "Foz do Iguaçu"
+   ],
+   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h). Risco de corte de energia elétrica,  queda de galhos de árvores, alagamentos e de descargas elétricas.",
+   "id": "inmet-28770"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -64,32 +78,46 @@
    "fenomeno": "Chuvas Intensas",
    "severidad": "Perigo Potencial",
    "color": "#FFFE00",
-   "inicio": "2026-11-27 09:30",
-   "fin": "2026-11-27 23:59",
+   "inicio": "2026-11-28 00:00",
+   "fin": "2026-11-28 23:59",
    "lugares": [
     "Corumbá",
     "Ladário",
-    "Porto Murtinho",
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
+    "Cáceres"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
-   "id": "inmet-28769"
+   "id": "inmet-28775"
   },
   {
    "fuente": "INMET (Brasil)",
    "pais": "BRA",
    "fenomeno": "Chuvas Intensas",
-   "severidad": "Perigo",
-   "color": "#F96602",
-   "inicio": "2026-11-27 09:40",
-   "fin": "2026-11-27 23:59",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-29 00:00",
+   "fin": "2026-11-29 23:59",
    "lugares": [
-    "Foz do Iguaçu"
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres"
    ],
-   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h). Risco de corte de energia elétrica,  queda de galhos de árvores, alagamentos e de descargas elétricas.",
-   "id": "inmet-28770"
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
+   "id": "inmet-28776"
+  },
+  {
+   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
+   "pais": "PRY",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes.",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "Paraguay"
+   ],
+   "riesgos": "",
+   "id": "dmh-vigente"
   },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
@@ -106,6 +134,22 @@
    "id": "gdacs-&amp;eventid=1034027",
    "lat": -16.187221307477706,
    "lon": -64.75325565210554
+  },
+  {
+   "fuente": "GDACS (ONU y Comisión Europea)",
+   "pais": "",
+   "fenomeno": "Green flood alert in Paraguay",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "-20.50, -59.17"
+   ],
+   "riesgos": "",
+   "id": "gdacs-&amp;eventid=1104302",
+   "lat": -20.5,
+   "lon": -59.166667
   }
  ],
  "no_consultadas": [
