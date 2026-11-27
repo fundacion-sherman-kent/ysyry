@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-27T12:47:26Z",
+ "obtenido": "2026-11-27T23:33:45Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
@@ -19,7 +19,7 @@
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 2
+   "avisos_en_el_corredor": 1
   }
  ],
  "avisos": [
@@ -67,26 +67,12 @@
    "fin": "2026-11-28 23:59",
    "lugares": [
     "Corumbá",
-    "Cáceres"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
-   "id": "inmet-28771"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Chuvas Intensas",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-28 00:00",
-   "fin": "2026-11-28 23:59",
-   "lugares": [
-    "Corumbá",
     "Ladário",
+    "Porto Murtinho",
     "Cáceres"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
-   "id": "inmet-28775"
+   "id": "inmet-28779"
   },
   {
    "fuente": "INMET (Brasil)",
@@ -103,12 +89,29 @@
     "Cáceres"
    ],
    "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
-   "id": "inmet-28776"
+   "id": "inmet-28780"
+  },
+  {
+   "fuente": "INMET (Brasil)",
+   "pais": "BRA",
+   "fenomeno": "Tempestade",
+   "severidad": "Perigo Potencial",
+   "color": "#FFFE00",
+   "inicio": "2026-11-30 00:00",
+   "fin": "2026-11-30 23:59",
+   "lugares": [
+    "Corumbá",
+    "Ladário",
+    "Porto Murtinho",
+    "Cáceres"
+   ],
+   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
+   "id": "inmet-28778"
   },
   {
    "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
    "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes.",
+   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizo.",
    "severidad": "",
    "color": "",
    "inicio": "",
@@ -134,22 +137,6 @@
    "id": "gdacs-&amp;eventid=1034027",
    "lat": -16.187221307477706,
    "lon": -64.75325565210554
-  },
-  {
-   "fuente": "GDACS (ONU y Comisión Europea)",
-   "pais": "",
-   "fenomeno": "Green flood alert in Paraguay",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "-20.50, -59.17"
-   ],
-   "riesgos": "",
-   "id": "gdacs-&amp;eventid=1104302",
-   "lat": -20.5,
-   "lon": -59.166667
   }
  ],
  "no_consultadas": [
