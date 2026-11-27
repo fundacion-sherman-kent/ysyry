@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-27T12:02:38Z",
+ "obtenido": "2026-11-27T21:07:02Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 44,
+   "items": 41,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 91,
+   "items": 84,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 360,
+   "items": 377,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 84
+   "fallos_seguidos": 85
   },
   {
    "dominio": "senad.gov.py",
@@ -202,14 +202,14 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 10
+   "fallos_seguidos": 11
   },
   {
    "dominio": "correiodoestado.com.br",
    "url": "https://www.correiodoestado.com.br/rss",
    "ok": true,
    "items": 30,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -256,7 +256,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 21,
+   "items": 20,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -273,7 +273,7 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/nacionales/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -287,6 +287,74 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "Retiraron armas caseras, celulares y bebidas artesanales de la cárcel de Misiones",
+   "url": "http://www.lanacion.com.py/pais/2026/11/27/retiraron-armas-caseras-celulares-y-bebidas-artesanales-de-la-carcel-de-misiones/",
+   "dominio": "lanacion.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-27",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Misiones (ubicación imprecisa)"
+   ],
+   "ubicacion": [
+    -26.9,
+    -54.7
+   ],
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": true,
+   "medios": [
+    {
+     "dominio": "lanacion.com.py",
+     "clase": "prensa",
+     "url": "http://www.lanacion.com.py/pais/2026/11/27/retiraron-armas-caseras-celulares-y-bebidas-artesanales-de-la-carcel-de-misiones/"
+    }
+   ],
+   "id": "bd49e482b9",
+   "verificado": true
+  },
+  {
+   "titulo": "PF apreende duas armas .50 em Ponta Porã e investiga possível ataque a autoridades",
+   "url": "https://correiodoestado.com.br/cidades/2026/11/27/pf-apreende-duas-armas-50-em-ponta-pora-e-investiga-possivel-ataque-a-autoridades.html",
+   "dominio": "correiodoestado.com.br",
+   "clase": "prensa",
+   "fecha": "2026-11-27",
+   "tipos": [
+    [
+     "decomiso",
+     "Decomiso o incautación"
+    ]
+   ],
+   "lugares": [
+    "Ponta Porã"
+   ],
+   "ubicacion": [
+    -22.54,
+    -55.73
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": false,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "correiodoestado.com.br",
+     "clase": "prensa",
+     "url": "https://correiodoestado.com.br/cidades/2026/11/27/pf-apreende-duas-armas-50-em-ponta-pora-e-investiga-possivel-ataque-a-autoridades.html"
+    }
+   ],
+   "id": "521af8a46e",
+   "verificado": true
+  },
   {
    "titulo": "Yacyretá abrió todas sus compuertas ante un nuevo incremento del caudal del Paraná",
    "url": "https://www.primeraedicion.com.ar/nota/101163841/yacyreta-abrio-18-compuertas-nueva-crecida-rio-parana/",
@@ -1767,6 +1835,173 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Itaipú asegura que las obras no pararán, pero la salida para financiarlas sigue en estudio",
+   "url": "https://www.abc.com.py/economia/2026/11/27/itaipu-asegura-que-las-obras-no-pararan-pero-la-salida-para-financiarlas-sigue-en-estudio/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "El río Paraná se acerca a los 5 metros en el puerto de Ayolas",
+   "url": "https://www.abc.com.py/clima/2026/11/27/el-rio-parana-se-acerca-a-los-5-metros-en-el-puerto-de-ayolas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Ayolas"
+   ]
+  },
+  {
+   "titulo": "Itaipú niega pedido de adelanto de royalties y aclara que solvencia no está comprometida",
+   "url": "http://www.lanacion.com.py/negocios/2026/11/27/itaipu-niega-pedido-de-adelanto-de-royalties-y-aclara-que-solvencia-no-esta-comprometida/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Ministro Riquelme asegura que Paraguay adoptará “posturas patrióticas” en negociación por Itaipú",
+   "url": "http://www.lanacion.com.py/politica/2026/11/27/ministro-riquelme-asegura-que-paraguay-adoptara-posturas-patrioticas-en-negociacion-por-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Hallan vehículo abandonado en la vía pública, chaleco antibalas y pasamontañas",
+   "url": "http://www.lanacion.com.py/pais/2026/11/27/hallan-vehiculo-abandonado-en-la-via-publica-chaleco-antibalas-y-pasamontanas/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Ciudad del Este"
+   ]
+  },
+  {
+   "titulo": "Itaipú garantiza sus compromisos financieros pese a fondos inmovilizados en Ueno",
+   "url": "http://www.lanacion.com.py/negocios/2026/11/27/itaipu-garantiza-sus-compromisos-financieros-pese-a-fondos-inmovilizados-en-ueno/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Ordenan la detención del exministro Carlos Fernández Valdovinos",
+   "url": "http://www.lanacion.com.py/judiciales/2026/11/27/ordenan-la-detencion-del-exministro-carlos-fernandez-valdovinos/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Depósito de Itaipú en Ueno: Balmelli señala responsabilidades en ambos directorios",
+   "url": "http://www.lanacion.com.py/politica/2026/11/27/deposito-de-itaipu-en-ueno-balmelli-senala-responsabilidades-en-ambos-directorios/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Juez deja en prisión a Israel “N”, chofer de transporte acusado de atropellar y asesinar a Joselyn Rocha en Santa Fe",
+   "url": "https://www.infobae.com/mexico/2026/11/27/juez-deja-en-prision-a-israel-n-chofer-de-transporte-acusado-de-atropellar-y-asesinar-a-joselyn-rocha-en-santa-fe/",
+   "dominio": "infobae.com",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "La mística pincharrata cruza el Río de la Plata con la ilusión de la quinta Copa Libertadores",
+   "url": "https://www.pagina12.com.ar/2026/11/27/la-mistica-pincharrata-cruza-el-rio-de-la-plata-con-la-ilusion-de-la-quinta-copa-libertadores/",
+   "dominio": "pagina12.com.ar",
+   "fecha": "2026-11-27",
+   "lugares": []
+  },
+  {
+   "titulo": "Receita Federal estende até 2027 autorização alfandegária ligada à construção da ponte da Rota Bioceânica",
+   "url": "https://correiodoestado.com.br/economia/2026/11/27/receita-federal-estende-ate-2027-autorizacao-alfandegaria-ligada-a-construcao-da-ponte-da-rota-bioceanica.html",
+   "dominio": "correiodoestado.com.br",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Porto Murtinho"
+   ]
+  },
+  {
+   "titulo": "Aluno de 12 anos agride professora com socos após se recusar a fazer atividade em escola no Paraná",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/27/aluno-agride-professora.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Imputaron a misioneros por enviar droga a Santa Fe",
+   "url": "https://www.primeraedicion.com.ar/nota/101164216/imputaron-a-misioneros-por-enviar-droga-a-santa-fe/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Santa Fe"
+   ]
+  },
+  {
+   "titulo": "Posadas: cobraba “peaje” para dejar pasar a los vecinos y terminó detenido",
+   "url": "https://www.primeraedicion.com.ar/nota/101164221/posadas-detenido-joven-exigia-dinero-vecinos-peaje/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "La nueva Aduana entre Argentina y Brasil comenzará a funcionar el 30 de noviembre",
+   "url": "https://www.diarioepoca.com/1396271-la-nueva-aduana-entre-argentina-y-brasil-comenzara-a-funcionar-el-30-de-noviembre?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "Condenaron a 20 años de cárcel a una mujer trans por abusar de sus hijos",
+   "url": "https://www.diarioepoca.com/1396269-condenaron-a-20-anos-de-carcel-a-una-mujer-trans-por-abusar-de-sus-hijos?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Desmantelaron un punto de venta de drogas en el interior de Corrientes",
+   "url": "https://www.diarioepoca.com/1396267-desmantelaron-un-punto-de-venta-de-drogas-en-el-interior-de-corrientes?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Corrientes"
+   ]
+  },
+  {
+   "titulo": "Rescataron en plena noche a dos jóvenes tras darse vuelta su embarcación en el río Paraná",
+   "url": "https://www.diarioepoca.com/1396263-rescataron-en-plena-noche-a-dos-jovenes-tras-darse-vuelta-su-embarcacion-en-el-rio-parana?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-27",
+   "lugares": []
+  },
+  {
+   "titulo": "Veda pesquera: retiran redes y espineles de aguas del río Paraná",
+   "url": "https://www.abc.com.py/economia/2026/11/27/veda-pesquera-retiran-redes-y-espineles-de-aguas-del-rio-parana/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-27",
+   "lugares": []
+  },
+  {
    "titulo": "Itaipú analiza usar otros fondos para cubrir proyectos que quedaron sin plata debido a la caída de Ueno",
    "url": "https://www.abc.com.py/economia/2026/11/27/itaipu-analiza-usar-otros-fondos-para-cubrir-proyectos-que-quedaron-sin-plata-debido-a-la-caida-de-ueno/",
    "dominio": "abc.com.py",
@@ -1831,6 +2066,15 @@
    ]
   },
   {
+   "titulo": "VÍDEO: Passarela das Cataratas é interditada após vazão aumentar seis vezes no Paraná",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/26/video-passarela-das-cataratas-e-interditada-parana.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
    "titulo": "Denuncian ante la fiscala General a fiscales de CDE por irregularidades en  una causa penal",
    "url": "http://www.lanacion.com.py/judiciales/2026/11/26/denuncian-ante-la-fiscala-general-a-fiscales-de-cde-por-irregularidades-en-una-causa-penal/",
    "dominio": "lanacion.com.py",
@@ -1856,15 +2100,6 @@
    "fecha": "2026-11-26",
    "lugares": [
     "Ponta Porã"
-   ]
-  },
-  {
-   "titulo": "VÍDEO: Passarela das Cataratas é interditada após vazão aumentar seis vezes no Paraná",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/26/video-passarela-das-cataratas-e-interditada-parana.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-26",
-   "lugares": [
-    "Foz do Iguaçu"
    ]
   },
   {
@@ -2680,176 +2915,6 @@
    "url": "https://correiodoestado.com.br/extra/2026/11/22/o-misterio-das-aguas-pantaneiras-a-criatura-lendaria-que-assusta-quem-se-aventura-pelos-rios.html",
    "dominio": "correiodoestado.com.br",
    "fecha": "2026-11-22",
-   "lugares": []
-  },
-  {
-   "titulo": "El río Paraguay vuelve a subir en Asunción luego de varios días de descenso",
-   "url": "https://www.abc.com.py/clima/2026/11/22/el-rio-paraguay-vuelve-a-subir-en-asuncion-luego-de-varios-dias-de-descenso/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Itaipú adjudicó a Dobrestec, ligada a Ueno, la vigilancia de área de embalse y oficinas, por G. 32.746 millones en dos lotes",
-   "url": "https://www.abc.com.py/economia/2026/11/22/itaipu-adjudico-a-dobrestec-ligada-a-ueno-la-vigilancia-de-area-de-embalse-y-oficinas-por-g-32746-millones-en-dos-lotes/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "La Municipalidad aclara que sigue firme el proceso de eliminación de la PMT",
-   "url": "http://www.lanacion.com.py/politica/2026/11/22/la-municipalidad-aclara-que-sigue-firme-el-proceso-de-eliminacion-de-la-pmt/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "La rica historia de un edificio emblemático del centro",
-   "url": "http://www.lanacion.com.py/gran-diario-domingo/2026/11/22/la-rica-historia-de-un-edificio-emblematico-del-centro/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Chuva de 200 milímetros transborda rio e alaga casas em Ponta Porã",
-   "url": "https://www.campograndenews.com.br/direto-das-ruas/chuva-de-200-milimetros-transborda-rio-e-alaga-casas-em-ponta-pora",
-   "dominio": "campograndenews.com.br",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Ponta Porã"
-   ]
-  },
-  {
-   "titulo": "Buscan a Alma Agüero de 13 años en Posadas",
-   "url": "https://www.primeraedicion.com.ar/nota/101162648/buscan-a-alma-aguero-de-13-anos-en-posadas/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Posadas: pidió permiso a un jubilado para usar el baño y le robó el celular",
-   "url": "https://www.primeraedicion.com.ar/nota/101162585/posadas-pidio-permiso-a-un-jubilado-para-usar-el-bano-robo-celular/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Chuva faz lago transbordar em Paranhos e abre cratera em Naviraí",
-   "url": "https://www.campograndenews.com.br/cidades/interior/chuva-faz-lago-transbordar-em-paranhos-e-abre-cratera-em-navirai",
-   "dominio": "campograndenews.com.br",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Ponta Porã",
-    "Paranhos",
-    "Dourados"
-   ]
-  },
-  {
-   "titulo": "Le pidió permiso a un hombre de 72 años para usar el baño, le robó el celular y terminó detenida en Posadas",
-   "url": "https://misionesonline.net/2026/11/22/le-pidio-permiso-a-un-hombre-de-72-anos-para-usar-el-bano-le-robo-el-celular-y-termino-detenida-en-posadas/",
-   "dominio": "misionesonline.net",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Posadas | Detuvieron a cuatro jóvenes por presunta agresión a otros dos en un boliche",
-   "url": "https://misionesonline.net/2026/11/22/posadas-detuvieron-a-cuatro-jovenes-por-presunta-agresion-a-otros-dos-en-un-boliche/",
-   "dominio": "misionesonline.net",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Golpearon a dos jóvenes a la salida de un boliche y terminaron detenidos",
-   "url": "https://www.primeraedicion.com.ar/nota/101162552/golpearon-a-dos-jovenes-a-la-salida-de-un-boliche-y-terminaron-detenidos/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Es momento de que las leyes paraguayas entren a regir de lleno en Itaipú",
-   "url": "https://www.abc.com.py/edicion-impresa/editorial/2026/11/22/es-momento-de-que-las-leyes-paraguayas-entren-a-regir-de-lleno-en-itaipu/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Discusión y disparos: hallaron muerta a una pareja de policías en Santa Fe e investigan un femicidio seguido de suicidio",
-   "url": "https://www.infobae.com/sociedad/policiales/2026/11/22/hallaron-muerta-a-una-pareja-de-policias-en-santa-fe-e-investigan-un-femicidio-seguido-de-suicidio-vecinos-escucharon-una-discusion-y-disparos/",
-   "dominio": "infobae.com",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Rapto de policías en Asunción: localizan aguantadero de la gavilla en Luque",
-   "url": "https://www.abc.com.py/policiales/2026/11/21/rapto-de-policias-en-asuncion-localizan-aguantadero-de-la-gavilla-en-luque/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-21",
-   "lugares": [
-    "Asunción"
-   ]
-  },
-  {
-   "titulo": "Doble crimen en Santa Fe: la hipótesis de los sicarios paraguayos detrás de los asesinatos de “Cachito” y su sobrino",
-   "url": "https://www.lanacion.com.ar/seguridad/doble-crimen-en-santa-fe-la-hipotesis-de-los-sicarios-paraguayos-detras-de-los-asesinatos-de-cachito-nid21112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-21",
-   "lugares": [
-    "Santa Fe"
-   ]
-  },
-  {
-   "titulo": "Denuncian robo de vehículo a mujer en Foz de Iguazú y Policía refuerza alerta en frontera",
-   "url": "http://www.lanacion.com.py/pais/2026/11/21/denuncian-robo-de-vehiculo-a-mujer-en-foz-de-iguazu-y-policia-refuerza-alerta-en-frontera/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-21",
-   "lugares": [
-    "Ciudad del Este",
-    "Alto Paraná"
-   ]
-  },
-  {
-   "titulo": "El “corazón” de Central: Ypané apunta al desarrollo industrial y portuario",
-   "url": "http://www.lanacion.com.py/negocios/2026/11/21/el-corazon-de-central-ypane-apunta-al-desarrollo-industrial-y-portuario/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-21",
-   "lugares": []
-  },
-  {
-   "titulo": "Motorista preso com emagrecedores em carga da Shopee é solto",
-   "url": "https://www.campograndenews.com.br/cidades/interior/motorista-preso-com-emagrecedores-em-carga-da-shopee-e-solto",
-   "dominio": "campograndenews.com.br",
-   "fecha": "2026-11-21",
-   "lugares": [
-    "Ponta Porã"
-   ]
-  },
-  {
-   "titulo": "Seilog diz que ponte sobre Rio Paraguai tem 75% de obras concluídas",
-   "url": "https://correiodoestado.com.br/cidades/2026/11/21/ponte-rio-paraguai-interdicao-semana.html",
-   "dominio": "correiodoestado.com.br",
-   "fecha": "2026-11-21",
    "lugares": []
   }
  ]
