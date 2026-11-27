@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-27T01:41:09Z",
+ "obtenido": "2026-11-27T12:02:38Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 47,
+   "items": 44,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 87,
+   "items": 91,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 378,
+   "items": 360,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 83
+   "fallos_seguidos": 84
   },
   {
    "dominio": "senad.gov.py",
@@ -202,7 +202,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 9
+   "fallos_seguidos": 10
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -256,7 +256,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 19,
+   "items": 21,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -1767,6 +1767,15 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Itaipú analiza usar otros fondos para cubrir proyectos que quedaron sin plata debido a la caída de Ueno",
+   "url": "https://www.abc.com.py/economia/2026/11/27/itaipu-analiza-usar-otros-fondos-para-cubrir-proyectos-que-quedaron-sin-plata-debido-a-la-caida-de-ueno/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Plantean pedidos de informes sobre lista de funcionarios de Itaipú y Yacyretá",
    "url": "http://www.lanacion.com.py/politica/2026/11/26/plantean-pedidos-de-informes-sobre-lista-de-funcionarios-de-itaipu-y-yacyreta/",
    "dominio": "lanacion.com.py",
@@ -1774,6 +1783,24 @@
    "lugares": [
     "Itaipú",
     "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Super El Niño é o primeiro de uma série, alerta climatologista",
+   "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/super-el-nino-e-o-primeiro-de-uma-serie-alerta-climatologista",
+   "dominio": "agenciabrasil.ebc.com.br",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Itaipú garantiza sus compromisos financieros pese a fondos retenidos en ueno bank",
+   "url": "https://www.pontaporainforma.com.br/itaipu-garantiza-sus-compromisos-finan/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Itaipú"
    ]
   },
   {
@@ -1786,12 +1813,12 @@
    ]
   },
   {
-   "titulo": "Concepción: río Paraguay empieza a inundar la isla Chaco’i y piden asistencia",
-   "url": "https://www.abc.com.py/clima/2026/11/26/concepcion-rio-paraguay-empieza-a-inundar-la-isla-chacoi-y-piden-asistencia/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-26",
+   "titulo": "Allanaron casa de mujer que tenía un \"kiosco\" de cocaína",
+   "url": "https://www.diarioepoca.com/1396228-allanaron-casa-de-mujer-que-tenia-un-kiosco-de-cocaina?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-27",
    "lugares": [
-    "Concepción"
+    "Corrientes"
    ]
   },
   {
@@ -1823,6 +1850,43 @@
    ]
   },
   {
+   "titulo": "Ponta Porã: Palestra sobre prevenção ao suicídio reúne Policiais Militares do 4º BPM em Ponta Porã",
+   "url": "https://www.pontaporainforma.com.br/palestra-sobre-prevencao-ao-suicidio/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Ponta Porã"
+   ]
+  },
+  {
+   "titulo": "VÍDEO: Passarela das Cataratas é interditada após vazão aumentar seis vezes no Paraná",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/26/video-passarela-das-cataratas-e-interditada-parana.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "Concepción: río Paraguay empieza a inundar la isla Chaco’i y piden asistencia",
+   "url": "https://www.abc.com.py/clima/2026/11/26/concepcion-rio-paraguay-empieza-a-inundar-la-isla-chacoi-y-piden-asistencia/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Concepción"
+   ]
+  },
+  {
+   "titulo": "Itaipú en Ueno: Zárate dijo que la regla de cinco años no se expuso al directorio y mostrará documentos solo a la Justicia",
+   "url": "https://www.abc.com.py/economia/2026/11/25/itaipu-en-ueno-zarate-dijo-que-la-regla-de-cinco-anos-no-se-expuso-al-directorio-y-mostrara-documentos-solo-a-la-justicia/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
+   ]
+  },
+  {
    "titulo": "Itaipú busca recuperar millonarios depósitos atrapados en Ueno Bank",
    "url": "http://www.lanacion.com.py/politica/2026/11/26/itaipu-busca-recuperar-millonarios-depositos-atrapados-en-ueno-bank/",
    "dominio": "lanacion.com.py",
@@ -1842,24 +1906,6 @@
    ]
   },
   {
-   "titulo": "Ponta Porã: Palestra sobre prevenção ao suicídio reúne Policiais Militares do 4º BPM em Ponta Porã",
-   "url": "https://www.pontaporainforma.com.br/palestra-sobre-prevencao-ao-suicidio/",
-   "dominio": "pontaporainforma.com.br",
-   "fecha": "2026-11-26",
-   "lugares": [
-    "Ponta Porã"
-   ]
-  },
-  {
-   "titulo": "VÍDEO: Passarela das Cataratas é interditada após vazão aumentar seis vezes no Paraná",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/26/video-passarela-das-cataratas-e-interditada-parana.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-26",
-   "lugares": [
-    "Foz do Iguaçu"
-   ]
-  },
-  {
    "titulo": "Turistas que desisten y reservas canceladas: el costo de las demoras en el Tancredo Neves",
    "url": "https://www.primeraedicion.com.ar/nota/101164023/puente-tancredo-neves-demoras-impacto-economico-turismo-iguazu/",
    "dominio": "primeraedicion.com.ar",
@@ -1875,16 +1921,6 @@
    "dominio": "primeraedicion.com.ar",
    "fecha": "2026-11-26",
    "lugares": []
-  },
-  {
-   "titulo": "Itaipú en Ueno: Zárate dijo que la regla de cinco años no se expuso al directorio y mostrará documentos solo a la Justicia",
-   "url": "https://www.abc.com.py/economia/2026/11/25/itaipu-en-ueno-zarate-dijo-que-la-regla-de-cinco-anos-no-se-expuso-al-directorio-y-mostrara-documentos-solo-a-la-justicia/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-26",
-   "lugares": [
-    "Zárate",
-    "Itaipú"
-   ]
   },
   {
    "titulo": "Itaipú: equipos técnicos vuelven a la mesa para negociar Anexo C",
@@ -2815,43 +2851,6 @@
    "dominio": "correiodoestado.com.br",
    "fecha": "2026-11-21",
    "lugares": []
-  },
-  {
-   "titulo": "Rugby: CAPRI campeón  del Integración",
-   "url": "https://www.primeraedicion.com.ar/nota/101162437/rugby-capri-campeon-del-integracion/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-21",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Puerto Iguazú: interceptaron a un adolescente de 15 años con dosis de cocaína",
-   "url": "https://www.primeraedicion.com.ar/nota/101162407/puerto-iguazu-interceptaron-a-un-adolescente-de-15-anos-con-dosis-de-cocaina/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-21",
-   "lugares": [
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Brasil pide revisar bancos autorizados por Paraguay",
-   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/21/brasil-pide-revisar-bancos-autorizados-por-paraguay/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-21",
-   "lugares": [
-    "Zárate",
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Ponte sobre o Rio Paraguai terá 7º bloqueio nesta semana",
-   "url": "https://www.campograndenews.com.br/cidades/interior/ponte-sobre-o-rio-paraguai-tera-7o-bloqueio-nesta-semana",
-   "dominio": "campograndenews.com.br",
-   "fecha": "2026-11-21",
-   "lugares": [
-    "Corumbá"
-   ]
   }
  ]
 }
