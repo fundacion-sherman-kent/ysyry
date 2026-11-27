@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-26T16:46:31Z",
+ "obtenido": "2026-11-27T01:41:09Z",
  "dias": 14,
  "fuentes": [
   {
@@ -15,7 +15,7 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
    "items": 47,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 93,
+   "items": 87,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 342,
+   "items": 378,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 82
+   "fallos_seguidos": 83
   },
   {
    "dominio": "senad.gov.py",
@@ -202,7 +202,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 8
+   "fallos_seguidos": 9
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -233,7 +233,7 @@
    "url": "https://www.misionesonline.net/feed/",
    "ok": true,
    "items": 10,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -241,7 +241,7 @@
    "url": "https://www.primeraedicion.com.ar/feed/",
    "ok": true,
    "items": 20,
-   "candidatos": 2,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -256,8 +256,8 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 23,
-   "candidatos": 1,
+   "items": 19,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -273,7 +273,7 @@
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/nacionales/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
@@ -353,6 +353,40 @@
     }
    ],
    "id": "3d16ff79d3",
+   "verificado": true
+  },
+  {
+   "titulo": "EBY alerta sobre una nueva crecida del río Paraná en Ayolas",
+   "url": "https://www.abc.com.py/clima/2026/11/26/eby-alerta-sobre-una-nueva-crecida-del-rio-parana-en-ayolas/",
+   "dominio": "abc.com.py",
+   "clase": "prensa",
+   "fecha": "2026-11-26",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [
+    "Ayolas"
+   ],
+   "ubicacion": [
+    -27.39,
+    -56.84
+   ],
+   "zona": "z4",
+   "cantidad": null,
+   "puntaje": 5,
+   "rio": true,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "abc.com.py",
+     "clase": "prensa",
+     "url": "https://www.abc.com.py/clima/2026/11/26/eby-alerta-sobre-una-nueva-crecida-del-rio-parana-en-ayolas/"
+    }
+   ],
+   "id": "03eb6c1049",
    "verificado": true
   },
   {
@@ -1733,12 +1767,50 @@
  ],
  "sin_tipo": [
   {
+   "titulo": "Plantean pedidos de informes sobre lista de funcionarios de Itaipú y Yacyretá",
+   "url": "http://www.lanacion.com.py/politica/2026/11/26/plantean-pedidos-de-informes-sobre-lista-de-funcionarios-de-itaipu-y-yacyreta/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Itaipú",
+    "Yacyretá"
+   ]
+  },
+  {
+   "titulo": "Insólito: reportan un cerdo muerto flotando en la costanera posadeña",
+   "url": "https://www.primeraedicion.com.ar/nota/101164054/insolito-reportan-un-cerdo-muerto-flotando-en-la-costanera-posadena/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Posadas"
+   ]
+  },
+  {
+   "titulo": "Concepción: río Paraguay empieza a inundar la isla Chaco’i y piden asistencia",
+   "url": "https://www.abc.com.py/clima/2026/11/26/concepcion-rio-paraguay-empieza-a-inundar-la-isla-chacoi-y-piden-asistencia/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Concepción"
+   ]
+  },
+  {
    "titulo": "Vídeo: desmantelan foco de distribución de drogas en la ciudad de Alberdi",
    "url": "https://www.abc.com.py/policiales/2026/11/26/desmantelan-un-foco-de-distribucion-de-drogas-en-la-ciudad-de-alberdi/",
    "dominio": "abc.com.py",
    "fecha": "2026-11-26",
    "lugares": [
     "Alberdi"
+   ]
+  },
+  {
+   "titulo": "Denuncian ante la fiscala General a fiscales de CDE por irregularidades en  una causa penal",
+   "url": "http://www.lanacion.com.py/judiciales/2026/11/26/denuncian-ante-la-fiscala-general-a-fiscales-de-cde-por-irregularidades-en-una-causa-penal/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Ciudad del Este",
+    "Alto Paraná"
    ]
   },
   {
@@ -1754,6 +1826,60 @@
    "titulo": "Itaipú busca recuperar millonarios depósitos atrapados en Ueno Bank",
    "url": "http://www.lanacion.com.py/politica/2026/11/26/itaipu-busca-recuperar-millonarios-depositos-atrapados-en-ueno-bank/",
    "dominio": "lanacion.com.py",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Zárate",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Rio Dourados transborda e deixa famílias desabrigadas em Fátima do Sul",
+   "url": "https://correiodoestado.com.br/cidades/2026/11/26/rio-dourados-transborda-e-deixa-familias-desabrigadas-em-fatima-do-sul.html",
+   "dominio": "correiodoestado.com.br",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Dourados"
+   ]
+  },
+  {
+   "titulo": "Ponta Porã: Palestra sobre prevenção ao suicídio reúne Policiais Militares do 4º BPM em Ponta Porã",
+   "url": "https://www.pontaporainforma.com.br/palestra-sobre-prevencao-ao-suicidio/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Ponta Porã"
+   ]
+  },
+  {
+   "titulo": "VÍDEO: Passarela das Cataratas é interditada após vazão aumentar seis vezes no Paraná",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/26/video-passarela-das-cataratas-e-interditada-parana.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "Turistas que desisten y reservas canceladas: el costo de las demoras en el Tancredo Neves",
+   "url": "https://www.primeraedicion.com.ar/nota/101164023/puente-tancredo-neves-demoras-impacto-economico-turismo-iguazu/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-26",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "Argentina y Paraguay volvieron a poner el proyecto de la represa de Corpus en la agenda bilateral",
+   "url": "https://www.primeraedicion.com.ar/nota/101164013/argentina-paraguay-represa-corpus-agenda-bilateral/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-26",
+   "lugares": []
+  },
+  {
+   "titulo": "Itaipú en Ueno: Zárate dijo que la regla de cinco años no se expuso al directorio y mostrará documentos solo a la Justicia",
+   "url": "https://www.abc.com.py/economia/2026/11/25/itaipu-en-ueno-zarate-dijo-que-la-regla-de-cinco-anos-no-se-expuso-al-directorio-y-mostrara-documentos-solo-a-la-justicia/",
+   "dominio": "abc.com.py",
    "fecha": "2026-11-26",
    "lugares": [
     "Zárate",
@@ -1807,15 +1933,6 @@
    ]
   },
   {
-   "titulo": "VÍDEO: Passarela das Cataratas é interditada após vazão aumentar seis vezes no Paraná",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/26/video-passarela-das-cataratas-e-interditada-parana.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-26",
-   "lugares": [
-    "Foz do Iguaçu"
-   ]
-  },
-  {
    "titulo": "La modernización del aeropuerto busca potenciar el desarrollo económico y turístico de Posadas",
    "url": "https://misionesonline.net/2026/11/26/la-modernizacion-del-aeropuerto-busca-potenciar-el-desarrollo-economico-y-turistico-de-posadas/",
    "dominio": "misionesonline.net",
@@ -1831,16 +1948,6 @@
    "fecha": "2026-11-26",
    "lugares": [
     "Posadas"
-   ]
-  },
-  {
-   "titulo": "Itaipú en Ueno: Zárate dijo que la regla de cinco años no se expuso al directorio y mostrará documentos solo a la Justicia",
-   "url": "https://www.abc.com.py/economia/2026/11/25/itaipu-en-ueno-zarate-dijo-que-la-regla-de-cinco-anos-no-se-expuso-al-directorio-y-mostrara-documentos-solo-a-la-justicia/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-26",
-   "lugares": [
-    "Zárate",
-    "Itaipú"
    ]
   },
   {
@@ -2744,74 +2851,6 @@
    "fecha": "2026-11-21",
    "lugares": [
     "Corumbá"
-   ]
-  },
-  {
-   "titulo": "Quiso cruzar el puente Posadas-Encarnación con marihuana y terminó detenido",
-   "url": "https://www.diarioepoca.com/1395729-quiso-cruzar-el-puente-posadas-encarnacion-con-marihuana-y-termino-detenido?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
-   "dominio": "diarioepoca.com",
-   "fecha": "2026-11-21",
-   "lugares": [
-    "Encarnación",
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Pela segunda vez em 3 dias, temporal deixa Porto Murtinho debaixo d’água",
-   "url": "https://www.campograndenews.com.br/cidades/interior/pela-segunda-vez-em-3-dias-temporal-deixa-porto-murtinho-debaixo-d-agua",
-   "dominio": "campograndenews.com.br",
-   "fecha": "2026-11-21",
-   "lugares": [
-    "Porto Murtinho"
-   ]
-  },
-  {
-   "titulo": "Concessão da hidrovia do Rio Paraguai é adiada para 2029",
-   "url": "https://correiodoestado.com.br/economia/2026/11/21/concessao-da-hidrovia-do-rio-paraguai-e-adiada-para-2029.html",
-   "dominio": "correiodoestado.com.br",
-   "fecha": "2026-11-21",
-   "lugares": []
-  },
-  {
-   "titulo": "Cataratas y CAPRI van por la gloria",
-   "url": "https://www.primeraedicion.com.ar/nota/101162292/cataratas-capri-final-torneo-integracion-rugby-puerto-iguazu-2026/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-21",
-   "lugares": [
-    "Posadas",
-    "Puerto Iguazú"
-   ]
-  },
-  {
-   "titulo": "Cómo funciona la “llave de paso” que frena la entrada de basura al Riachuelo",
-   "url": "https://perfil.com/sociedad/como-funciona-la-llave-de-paso-que-frena-la-entrada-de-basura-al-riachuelo-a4SIB5d57sZF",
-   "dominio": "perfil.com",
-   "fecha": "2026-11-21",
-   "lugares": []
-  },
-  {
-   "titulo": "12 postales argentinas de otro tiempo",
-   "url": "https://www.lanacion.com.ar/revista-lugares/12-postales-argentinas-de-otro-tiempo-nid21112026/",
-   "dominio": "lanacion.com.ar",
-   "fecha": "2026-11-21",
-   "lugares": []
-  },
-  {
-   "titulo": "Corrientes palpita el carnaval \ncon el inicio del Samba Wings 2026",
-   "url": "https://www.diarioepoca.com/1395693-corrientes-palpita-el-carnaval-con-el-inicio-del-samba-wings-2026?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
-   "dominio": "diarioepoca.com",
-   "fecha": "2026-11-21",
-   "lugares": [
-    "Corrientes"
-   ]
-  },
-  {
-   "titulo": "SENAD DESARTICULA DOS FOCOS DE VENTA DE DROGAS EN EL BARRIO SAJONIA",
-   "url": "https://senad.gov.py/senad-desarticula-dos-focos-de-venta-de-drogas-en-el-barrio-sajonia/",
-   "dominio": "senad.gov.py",
-   "fecha": "2026-11-20",
-   "lugares": [
-    "Asunción"
    ]
   }
  ]
