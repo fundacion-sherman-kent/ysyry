@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-28T03:16:01Z",
+ "obtenido": "2026-11-28T15:25:34Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 40,
+   "items": 37,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -62,7 +62,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/",
    "ok": true,
-   "items": 84,
+   "items": 82,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -93,10 +93,11 @@
   {
    "dominio": "hoy.com.py",
    "url": "https://www.hoy.com.py/feed",
-   "ok": true,
-   "items": 10,
+   "ok": false,
+   "items": 0,
    "candidatos": 0,
-   "fallos_seguidos": 0
+   "error": "HTTP Error 415: Unsupported Media Type",
+   "fallos_seguidos": 1
   },
   {
    "dominio": "ip.gov.py",
@@ -166,7 +167,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 391,
+   "items": 375,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +178,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 86
+   "fallos_seguidos": 87
   },
   {
    "dominio": "senad.gov.py",
@@ -202,7 +203,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 12
+   "fallos_seguidos": 13
   },
   {
    "dominio": "correiodoestado.com.br",
@@ -249,14 +250,14 @@
    "url": "https://www.diarioepoca.com/rss",
    "ok": true,
    "items": 20,
-   "candidatos": 0,
+   "candidatos": 1,
    "fallos_seguidos": 0
   },
   {
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 16,
+   "items": 17,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -287,6 +288,35 @@
  ],
  "aviso": "Candidatos detectados por reglas (palabras clave, lugares y cantidades) sobre titulares: no los verificó una persona y no son hechos confirmados.",
  "eventos": [
+  {
+   "titulo": "El río Uruguay superó los 10 metros en Santo Tomé y cerraron el paseo costero",
+   "url": "https://www.diarioepoca.com/1396336-el-rio-uruguay-supero-los-10-metros-en-santo-tome-y-cerraron-el-paseo-costero?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "clase": "prensa",
+   "fecha": "2026-11-28",
+   "tipos": [
+    [
+     "navegabilidad",
+     "Bajante, calado y navegabilidad"
+    ]
+   ],
+   "lugares": [],
+   "ubicacion": null,
+   "zona": "general",
+   "cantidad": null,
+   "puntaje": 3,
+   "rio": true,
+   "imprecisa": false,
+   "medios": [
+    {
+     "dominio": "diarioepoca.com",
+     "clase": "prensa",
+     "url": "https://www.diarioepoca.com/1396336-el-rio-uruguay-supero-los-10-metros-en-santo-tome-y-cerraron-el-paseo-costero?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed"
+    }
+   ],
+   "id": "b14953e9ba",
+   "verificado": false
+  },
   {
    "titulo": "Retiraron armas caseras, celulares y bebidas artesanales de la cárcel de Misiones",
    "url": "http://www.lanacion.com.py/pais/2026/11/27/retiraron-armas-caseras-celulares-y-bebidas-artesanales-de-la-carcel-de-misiones/",
@@ -1617,6 +1647,40 @@
    ]
   },
   {
+   "titulo": "La paradoja del Mercosur: por qué un “hub” privado de Taiwán en Paraguay es la llave para destrabar el comercio con el Río de la Plata",
+   "url": "https://www.infobae.com/opinion/2026/11/28/la-paradoja-del-mercosur-por-que-un-hub-privado-de-taiwan-en-paraguay-es-la-llave-para-destrabar-el-comercio-con-el-rio-de-la-plata/",
+   "dominio": "infobae.com",
+   "fecha": "2026-11-28",
+   "lugares": [
+    "Asunción"
+   ]
+  },
+  {
+   "titulo": "Alta do Rio Paraguai força Porto Murtinho a fechar comportas",
+   "url": "https://correiodoestado.com.br/cidades/2026/11/28/alta-do-rio-paraguai-forca-porto-murtinho-a-fechar-comportas.html",
+   "dominio": "correiodoestado.com.br",
+   "fecha": "2026-11-28",
+   "lugares": [
+    "Porto Murtinho"
+   ]
+  },
+  {
+   "titulo": "PF apreende armamento de grosso calibre em Ponta Porã",
+   "url": "https://www.pontaporainforma.com.br/pf-apreende-armamento-de-grosso-calibre-em-ponta-pora/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-28",
+   "lugares": [
+    "Ponta Porã"
+   ]
+  },
+  {
+   "titulo": "El río Paraná vuelve a crecer en Itatí y ya supera los 6,20 metros",
+   "url": "https://www.diarioepoca.com/1396331-el-rio-parana-vuelve-a-crecer-en-itati-y-ya-supera-los-620-metros?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
+   "dominio": "diarioepoca.com",
+   "fecha": "2026-11-28",
+   "lugares": []
+  },
+  {
    "titulo": "PMs do 4º BPM de Ponta Porã recebem medalhas de prata e ouro por 20 e 30 anos de serviços prestados",
    "url": "https://www.pontaporainforma.com.br/pms-do-4o-bpm-de-ponta-pora-recebem-medalhas-de-prata-e-ouro-por-20-e-30-anos-de-servicos-prestados/",
    "dominio": "pontaporainforma.com.br",
@@ -1649,6 +1713,57 @@
    "lugares": [
     "Itaipú"
    ]
+  },
+  {
+   "titulo": "Agricultor ameaça funcionários de companhia de energia do Paraná; oscilação no abastecimento gera revolta entre produtores rurais",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/27/agricultor-ameaca-copel-oscilacao-abastecimento-revolta-produtores-rurais.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "Aluno de 12 anos agride professora com socos após se recusar a fazer atividade em escola no Paraná",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/27/aluno-agride-professora.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "La Virgen de los Pobres de Itacuá: una aparición que sigue guiando a miles de devotos hasta la orilla del río Paraná",
+   "url": "https://www.abc.com.py/viajes/2026/11/27/la-virgen-de-los-pobres-de-itacua-una-aparicion-que-sigue-guiando-a-miles-de-devotos-hasta-la-orilla-del-rio-parana/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-27",
+   "lugares": []
+  },
+  {
+   "titulo": "Itaipú asegura que las obras no pararán, pero la salida para financiarlas sigue en estudio",
+   "url": "https://www.abc.com.py/economia/2026/11/27/itaipu-asegura-que-las-obras-no-pararan-pero-la-salida-para-financiarlas-sigue-en-estudio/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "El río Paraná se acerca a los 5 metros en el puerto de Ayolas",
+   "url": "https://www.abc.com.py/clima/2026/11/27/el-rio-parana-se-acerca-a-los-5-metros-en-el-puerto-de-ayolas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Ayolas"
+   ]
+  },
+  {
+   "titulo": "Veda pesquera: retiran redes y espineles de aguas del río Paraná",
+   "url": "https://www.abc.com.py/economia/2026/11/27/veda-pesquera-retiran-redes-y-espineles-de-aguas-del-rio-parana/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-27",
+   "lugares": []
   },
   {
    "titulo": "Ministro Riquelme asegura que Paraguay adoptará “posturas patrióticas” en negociación por Itaipú",
@@ -1706,25 +1821,6 @@
    ]
   },
   {
-   "titulo": "Agricultor ameaça funcionários de companhia de energia do Paraná; oscilação no abastecimento gera revolta entre produtores rurais",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/27/agricultor-ameaca-copel-oscilacao-abastecimento-revolta-produtores-rurais.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-27",
-   "lugares": [
-    "Foz do Iguaçu"
-   ]
-  },
-  {
-   "titulo": "Aluno de 12 anos agride professora com socos após se recusar a fazer atividade em escola no Paraná",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/27/aluno-agride-professora.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-27",
-   "lugares": [
-    "Foz do Iguaçu",
-    "Itaipú"
-   ]
-  },
-  {
    "titulo": "Iguazú: una nueva línea aérea reemplazará a la red subterránea en las 600 Hectáreas",
    "url": "https://www.primeraedicion.com.ar/nota/101164356/iguazu-una-nueva-linea-aerea-reemplazara-a-la-red-subterranea-en-las-600-hectareas/",
    "dominio": "primeraedicion.com.ar",
@@ -1732,38 +1828,6 @@
    "lugares": [
     "Puerto Iguazú"
    ]
-  },
-  {
-   "titulo": "La Virgen de los Pobres de Itacuá: una aparición que sigue guiando a miles de devotos hasta la orilla del río Paraná",
-   "url": "https://www.abc.com.py/viajes/2026/11/27/la-virgen-de-los-pobres-de-itacua-una-aparicion-que-sigue-guiando-a-miles-de-devotos-hasta-la-orilla-del-rio-parana/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-27",
-   "lugares": []
-  },
-  {
-   "titulo": "Itaipú asegura que las obras no pararán, pero la salida para financiarlas sigue en estudio",
-   "url": "https://www.abc.com.py/economia/2026/11/27/itaipu-asegura-que-las-obras-no-pararan-pero-la-salida-para-financiarlas-sigue-en-estudio/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-27",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "El río Paraná se acerca a los 5 metros en el puerto de Ayolas",
-   "url": "https://www.abc.com.py/clima/2026/11/27/el-rio-parana-se-acerca-a-los-5-metros-en-el-puerto-de-ayolas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-27",
-   "lugares": [
-    "Ayolas"
-   ]
-  },
-  {
-   "titulo": "Veda pesquera: retiran redes y espineles de aguas del río Paraná",
-   "url": "https://www.abc.com.py/economia/2026/11/27/veda-pesquera-retiran-redes-y-espineles-de-aguas-del-rio-parana/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-27",
-   "lugares": []
   },
   {
    "titulo": "Juez deja en prisión a Israel “N”, chofer de transporte acusado de atropellar y asesinar a Joselyn Rocha en Santa Fe",
@@ -2650,42 +2714,6 @@
    "fecha": "2026-11-23",
    "lugares": [
     "Encarnación"
-   ]
-  },
-  {
-   "titulo": "Bomberos rescataron a un gato herido que estaba atrapado en una boca de tormenta en Posadas",
-   "url": "https://www.primeraedicion.com.ar/nota/101162831/bomberos-rescataron-a-un-gato-herido-que-estaba-atrapado-en-una-boca-de-tormenta-en-posadas/",
-   "dominio": "primeraedicion.com.ar",
-   "fecha": "2026-11-23",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Corrientes, entre las provincias con mejor calificación en transparencia fiscal del país",
-   "url": "https://www.diarioepoca.com/1395898-corrientes-entre-las-provincias-con-mejor-calificacion-en-transparencia-fiscal-del-pais?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
-   "dominio": "diarioepoca.com",
-   "fecha": "2026-11-23",
-   "lugares": [
-    "Corrientes"
-   ]
-  },
-  {
-   "titulo": "Buscan a un adolescente de 16 años que se ausentó de un hogar de Corrientes",
-   "url": "https://www.diarioepoca.com/1395896-buscan-a-un-adolescente-de-16-anos-que-se-ausento-de-un-hogar-de-corrientes?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
-   "dominio": "diarioepoca.com",
-   "fecha": "2026-11-23",
-   "lugares": [
-    "Corrientes"
-   ]
-  },
-  {
-   "titulo": "Polícia Militar recupera veículo com registro de roubo/furto em Ponta Porã",
-   "url": "https://www.pontaporainforma.com.br/policia-militar-recupera-veiculo-com-registro-de-roubo-furto-em-ponta-pora/",
-   "dominio": "pontaporainforma.com.br",
-   "fecha": "2026-11-23",
-   "lugares": [
-    "Ponta Porã"
    ]
   }
  ]
