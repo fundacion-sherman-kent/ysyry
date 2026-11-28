@@ -1,15 +1,15 @@
 {
- "obtenido": "2026-11-27T23:33:45Z",
+ "obtenido": "2026-11-28T08:07:19Z",
  "fuentes": [
   {
    "nombre": "INMET (Brasil)",
-   "ok": true,
-   "avisos_en_el_corredor": 5
+   "ok": false,
+   "error": "<urlopen error timed out>"
   },
   {
    "nombre": "Meteorología de Paraguay",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 0
   },
   {
    "nombre": "SMN (Argentina)",
@@ -19,109 +19,10 @@
   {
    "nombre": "GDACS",
    "ok": true,
-   "avisos_en_el_corredor": 1
+   "avisos_en_el_corredor": 2
   }
  ],
  "avisos": [
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Chuvas Intensas",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-27 09:12",
-   "fin": "2026-11-27 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres",
-    "Foz do Iguaçu",
-    "Ponta Porã",
-    "Guaíra"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
-   "id": "inmet-28772"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Chuvas Intensas",
-   "severidad": "Perigo",
-   "color": "#F96602",
-   "inicio": "2026-11-27 09:40",
-   "fin": "2026-11-27 23:59",
-   "lugares": [
-    "Foz do Iguaçu"
-   ],
-   "riesgos": "Chuva entre 30 e 60 mm/h ou 50 e 100 mm/dia, ventos intensos (60-100 km/h). Risco de corte de energia elétrica,  queda de galhos de árvores, alagamentos e de descargas elétricas.",
-   "id": "inmet-28770"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Chuvas Intensas",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-28 00:00",
-   "fin": "2026-11-28 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
-   "id": "inmet-28779"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Chuvas Intensas",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-29 00:00",
-   "fin": "2026-11-29 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.",
-   "id": "inmet-28780"
-  },
-  {
-   "fuente": "INMET (Brasil)",
-   "pais": "BRA",
-   "fenomeno": "Tempestade",
-   "severidad": "Perigo Potencial",
-   "color": "#FFFE00",
-   "inicio": "2026-11-30 00:00",
-   "fin": "2026-11-30 23:59",
-   "lugares": [
-    "Corumbá",
-    "Ladário",
-    "Porto Murtinho",
-    "Cáceres"
-   ],
-   "riesgos": "Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-   "id": "inmet-28778"
-  },
-  {
-   "fuente": "Dirección de Meteorología e Hidrología (Paraguay)",
-   "pais": "PRY",
-   "fenomeno": "Fenómeno esperado: Lluvias con tormentas eléctricas moderadas a fuertes, ráfagas de vientos moderadas a fuertes y la ocasional caída de granizo.",
-   "severidad": "",
-   "color": "",
-   "inicio": "",
-   "fin": "",
-   "lugares": [
-    "Paraguay"
-   ],
-   "riesgos": "",
-   "id": "dmh-vigente"
-  },
   {
    "fuente": "GDACS (ONU y Comisión Europea)",
    "pais": "",
@@ -137,6 +38,22 @@
    "id": "gdacs-&amp;eventid=1034027",
    "lat": -16.187221307477706,
    "lon": -64.75325565210554
+  },
+  {
+   "fuente": "GDACS (ONU y Comisión Europea)",
+   "pais": "",
+   "fenomeno": "Green flood alert in Paraguay",
+   "severidad": "",
+   "color": "",
+   "inicio": "",
+   "fin": "",
+   "lugares": [
+    "-23.50, -58.83"
+   ],
+   "riesgos": "",
+   "id": "gdacs-&amp;eventid=1104302",
+   "lat": -23.5,
+   "lon": -58.833333
   }
  ],
  "no_consultadas": [
