@@ -1,5 +1,5 @@
 {
- "obtenido": "2026-11-27T21:07:02Z",
+ "obtenido": "2026-11-28T03:16:01Z",
  "dias": 14,
  "fuentes": [
   {
@@ -14,7 +14,7 @@
    "dominio": "abc.com.py",
    "url": "https://www.abc.com.py/arc/outboundfeeds/rss/category/policiales/?outputType=xml",
    "ok": true,
-   "items": 41,
+   "items": 40,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -23,7 +23,7 @@
    "url": "https://www.lanacion.com.py/arc/outboundfeeds/rss/?outputType=xml",
    "ok": true,
    "items": 100,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -166,7 +166,7 @@
    "dominio": "ladiaria.com.uy",
    "url": "https://ladiaria.com.uy/feeds/articulos/",
    "ok": true,
-   "items": 377,
+   "items": 391,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -177,7 +177,7 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 500: Internal Server Error",
-   "fallos_seguidos": 85
+   "fallos_seguidos": 86
   },
   {
    "dominio": "senad.gov.py",
@@ -202,14 +202,14 @@
    "items": 0,
    "candidatos": 0,
    "error": "HTTP Error 403: Forbidden",
-   "fallos_seguidos": 11
+   "fallos_seguidos": 12
   },
   {
    "dominio": "correiodoestado.com.br",
    "url": "https://www.correiodoestado.com.br/rss",
    "ok": true,
    "items": 30,
-   "candidatos": 1,
+   "candidatos": 0,
    "fallos_seguidos": 0
   },
   {
@@ -256,7 +256,7 @@
    "dominio": "lanacion.com.ar",
    "url": "https://www.lanacion.com.ar/arcio/rss/category/seguridad/",
    "ok": true,
-   "items": 20,
+   "items": 16,
    "candidatos": 0,
    "fallos_seguidos": 0
   },
@@ -1604,253 +1604,42 @@
    ],
    "id": "ee607b126d",
    "verificado": true
-  },
-  {
-   "titulo": "MODISTA TRAÍA DESDE BOLIVIA COCAÍNA IMPREGNADA EN TELAS: SENAD INCAUTÓ 6,25 KILOS",
-   "url": "https://senad.gov.py/modista-traia-desde-bolivia-cocaina-impregnada-en-telas-senad-incauto-625-kilos/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-11-13",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Asunción"
-   ],
-   "ubicacion": [
-    -25.28,
-    -57.63
-   ],
-   "zona": "z5",
-   "cantidad": {
-    "valor": 6.25,
-    "unidad": "kilos"
-   },
-   "puntaje": 10,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/modista-traia-desde-bolivia-cocaina-impregnada-en-telas-senad-incauto-625-kilos/"
-    }
-   ],
-   "id": "dbfd83e036",
-   "verificado": true
-  },
-  {
-   "titulo": "SENAD DESMANTELA LABORATORIO DE COCAÍNA EN PRESIDENTE FRANCO",
-   "url": "https://senad.gov.py/senad-desmantela-laboratorio-de-cocaina-en-presidente-franco/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-11-13",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ],
-    [
-     "estado",
-     "Operativo de una fuerza del Estado"
-    ]
-   ],
-   "lugares": [
-    "Ciudad del Este"
-   ],
-   "ubicacion": [
-    -25.51,
-    -54.61
-   ],
-   "zona": "z4",
-   "cantidad": {
-    "valor": 2.0,
-    "unidad": "kilos"
-   },
-   "puntaje": 10,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/senad-desmantela-laboratorio-de-cocaina-en-presidente-franco/"
-    }
-   ],
-   "id": "246f251efe",
-   "verificado": true
-  },
-  {
-   "titulo": "OPERACIÓN BINACIONAL GENERA USD 46,2 MILLONES DE PÉRDIDAS AL NARCOTRÁFICO",
-   "url": "https://senad.gov.py/operacion-binacional-genera-usd-462-millones-de-perdidas-al-narcotrafico/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-11-13",
-   "tipos": [
-    [
-     "decomiso",
-     "Decomiso o incautación"
-    ],
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ]
-   ],
-   "lugares": [
-    "Canindeyú"
-   ],
-   "ubicacion": [
-    -24.2,
-    -55.3
-   ],
-   "zona": "z4",
-   "cantidad": {
-    "valor": 308.0,
-    "unidad": "toneladas"
-   },
-   "puntaje": 9,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/operacion-binacional-genera-usd-462-millones-de-perdidas-al-narcotrafico/"
-    }
-   ],
-   "id": "089da17381",
-   "verificado": true
-  },
-  {
-   "titulo": "SENAD DESACTIVA UNA BOCA DE EXPENDIO DE COCAÍNA EN EL BARRIO SAN PABLO DE ASUNCIÓN.",
-   "url": "https://senad.gov.py/senad-desactiva-una-boca-de-expendio-de-cocaina-en-el-barrio-san-pablo-de-asuncion/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-11-13",
-   "tipos": [
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ]
-   ],
-   "lugares": [
-    "Asunción"
-   ],
-   "ubicacion": [
-    -25.28,
-    -57.63
-   ],
-   "zona": "z5",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/senad-desactiva-una-boca-de-expendio-de-cocaina-en-el-barrio-san-pablo-de-asuncion/"
-    }
-   ],
-   "id": "0a67268848",
-   "verificado": true
-  },
-  {
-   "titulo": "8 DETENIDOS DE 4 NACIONALIDADES EN MEGA LABORATORIO DE DROGAS Y ANIMALES EXÓTICOS EN CAUTIVERIO",
-   "url": "https://senad.gov.py/8-detenidos-de-4-nacionalidades-en-mega-laboratorio-de-drogas-y-animales-exoticos-en-cautiverio/",
-   "dominio": "senad.gov.py",
-   "clase": "oficial",
-   "fecha": "2026-11-13",
-   "tipos": [
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ]
-   ],
-   "lugares": [
-    "Pedro Juan Caballero"
-   ],
-   "ubicacion": [
-    -22.55,
-    -55.73
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 5,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "senad.gov.py",
-     "clase": "oficial",
-     "url": "https://senad.gov.py/8-detenidos-de-4-nacionalidades-en-mega-laboratorio-de-drogas-y-animales-exoticos-en-cautiverio/"
-    }
-   ],
-   "id": "4ab5fab926",
-   "verificado": true
-  },
-  {
-   "titulo": "Detienen en Canindeyú a dos presuntos sicarios vinculados al grupo criminal de “Macho”",
-   "url": "https://www.abc.com.py/policiales/2026/11/12/detienen-en-canindeyu-a-dos-presuntos-sicarios-vinculados-al-grupo-criminal-de-macho/",
-   "dominio": "abc.com.py",
-   "clase": "prensa",
-   "fecha": "2026-11-13",
-   "tipos": [
-    [
-     "detencion",
-     "Detención u operativo contra el crimen organizado"
-    ]
-   ],
-   "lugares": [
-    "Canindeyú"
-   ],
-   "ubicacion": [
-    -24.2,
-    -55.3
-   ],
-   "zona": "z4",
-   "cantidad": null,
-   "puntaje": 4,
-   "rio": false,
-   "medios": [
-    {
-     "dominio": "abc.com.py",
-     "clase": "prensa",
-     "url": "https://www.abc.com.py/policiales/2026/11/12/detienen-en-canindeyu-a-dos-presuntos-sicarios-vinculados-al-grupo-criminal-de-macho/"
-    }
-   ],
-   "id": "5689cd35eb",
-   "verificado": true
   }
  ],
  "sin_tipo": [
   {
-   "titulo": "Itaipú asegura que las obras no pararán, pero la salida para financiarlas sigue en estudio",
-   "url": "https://www.abc.com.py/economia/2026/11/27/itaipu-asegura-que-las-obras-no-pararan-pero-la-salida-para-financiarlas-sigue-en-estudio/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-27",
+   "titulo": "Aseguran “posturas patrióticas” en negociación por Itaipú",
+   "url": "http://www.lanacion.com.py/politica_edicion_impresa/2026/11/28/aseguran-posturas-patrioticas-en-negociacion-por-itaipu/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-28",
    "lugares": [
     "Itaipú"
    ]
   },
   {
-   "titulo": "El río Paraná se acerca a los 5 metros en el puerto de Ayolas",
-   "url": "https://www.abc.com.py/clima/2026/11/27/el-rio-parana-se-acerca-a-los-5-metros-en-el-puerto-de-ayolas/",
-   "dominio": "abc.com.py",
-   "fecha": "2026-11-27",
+   "titulo": "PMs do 4º BPM de Ponta Porã recebem medalhas de prata e ouro por 20 e 30 anos de serviços prestados",
+   "url": "https://www.pontaporainforma.com.br/pms-do-4o-bpm-de-ponta-pora-recebem-medalhas-de-prata-e-ouro-por-20-e-30-anos-de-servicos-prestados/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-28",
    "lugares": [
-    "Ayolas"
+    "Ponta Porã"
    ]
+  },
+  {
+   "titulo": "Palestra sobre prevenção ao suicídio reúne Policiais Militares do 4º BPM em Ponta Porã",
+   "url": "https://www.pontaporainforma.com.br/palestra-sobre-prevencao-ao-suicidio-reune-policiais-militares-do-4o-bpm-em-ponta-pora/",
+   "dominio": "pontaporainforma.com.br",
+   "fecha": "2026-11-28",
+   "lugares": [
+    "Ponta Porã"
+   ]
+  },
+  {
+   "titulo": "Cuerpo hallado en el río Paraguay es del joven desaparecido en Ñemby",
+   "url": "http://www.lanacion.com.py/pais/2026/11/27/cuerpo-hallado-en-el-rio-paraguay-es-del-joven-desaparecido-en-nemby/",
+   "dominio": "lanacion.com.py",
+   "fecha": "2026-11-27",
+   "lugares": []
   },
   {
    "titulo": "Itaipú niega pedido de adelanto de royalties y aclara que solvencia no está comprometida",
@@ -1908,6 +1697,75 @@
    ]
   },
   {
+   "titulo": "Receita Federal estende até 2027 autorização alfandegária ligada à construção da ponte da Rota Bioceânica",
+   "url": "https://correiodoestado.com.br/economia/2026/11/27/receita-federal-estende-ate-2027-autorizacao-alfandegaria-ligada-a-construcao-da-ponte-da-rota-bioceanica.html",
+   "dominio": "correiodoestado.com.br",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Porto Murtinho"
+   ]
+  },
+  {
+   "titulo": "Agricultor ameaça funcionários de companhia de energia do Paraná; oscilação no abastecimento gera revolta entre produtores rurais",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/27/agricultor-ameaca-copel-oscilacao-abastecimento-revolta-produtores-rurais.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Foz do Iguaçu"
+   ]
+  },
+  {
+   "titulo": "Aluno de 12 anos agride professora com socos após se recusar a fazer atividade em escola no Paraná",
+   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/27/aluno-agride-professora.ghtml",
+   "dominio": "g1.globo.com",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Foz do Iguaçu",
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "Iguazú: una nueva línea aérea reemplazará a la red subterránea en las 600 Hectáreas",
+   "url": "https://www.primeraedicion.com.ar/nota/101164356/iguazu-una-nueva-linea-aerea-reemplazara-a-la-red-subterranea-en-las-600-hectareas/",
+   "dominio": "primeraedicion.com.ar",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Puerto Iguazú"
+   ]
+  },
+  {
+   "titulo": "La Virgen de los Pobres de Itacuá: una aparición que sigue guiando a miles de devotos hasta la orilla del río Paraná",
+   "url": "https://www.abc.com.py/viajes/2026/11/27/la-virgen-de-los-pobres-de-itacua-una-aparicion-que-sigue-guiando-a-miles-de-devotos-hasta-la-orilla-del-rio-parana/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-27",
+   "lugares": []
+  },
+  {
+   "titulo": "Itaipú asegura que las obras no pararán, pero la salida para financiarlas sigue en estudio",
+   "url": "https://www.abc.com.py/economia/2026/11/27/itaipu-asegura-que-las-obras-no-pararan-pero-la-salida-para-financiarlas-sigue-en-estudio/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Itaipú"
+   ]
+  },
+  {
+   "titulo": "El río Paraná se acerca a los 5 metros en el puerto de Ayolas",
+   "url": "https://www.abc.com.py/clima/2026/11/27/el-rio-parana-se-acerca-a-los-5-metros-en-el-puerto-de-ayolas/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-27",
+   "lugares": [
+    "Ayolas"
+   ]
+  },
+  {
+   "titulo": "Veda pesquera: retiran redes y espineles de aguas del río Paraná",
+   "url": "https://www.abc.com.py/economia/2026/11/27/veda-pesquera-retiran-redes-y-espineles-de-aguas-del-rio-parana/",
+   "dominio": "abc.com.py",
+   "fecha": "2026-11-27",
+   "lugares": []
+  },
+  {
    "titulo": "Juez deja en prisión a Israel “N”, chofer de transporte acusado de atropellar y asesinar a Joselyn Rocha en Santa Fe",
    "url": "https://www.infobae.com/mexico/2026/11/27/juez-deja-en-prision-a-israel-n-chofer-de-transporte-acusado-de-atropellar-y-asesinar-a-joselyn-rocha-en-santa-fe/",
    "dominio": "infobae.com",
@@ -1922,25 +1780,6 @@
    "dominio": "pagina12.com.ar",
    "fecha": "2026-11-27",
    "lugares": []
-  },
-  {
-   "titulo": "Receita Federal estende até 2027 autorização alfandegária ligada à construção da ponte da Rota Bioceânica",
-   "url": "https://correiodoestado.com.br/economia/2026/11/27/receita-federal-estende-ate-2027-autorizacao-alfandegaria-ligada-a-construcao-da-ponte-da-rota-bioceanica.html",
-   "dominio": "correiodoestado.com.br",
-   "fecha": "2026-11-27",
-   "lugares": [
-    "Porto Murtinho"
-   ]
-  },
-  {
-   "titulo": "Aluno de 12 anos agride professora com socos após se recusar a fazer atividade em escola no Paraná",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/27/aluno-agride-professora.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-27",
-   "lugares": [
-    "Foz do Iguaçu",
-    "Itaipú"
-   ]
   },
   {
    "titulo": "Imputaron a misioneros por enviar droga a Santa Fe",
@@ -1991,13 +1830,6 @@
    "titulo": "Rescataron en plena noche a dos jóvenes tras darse vuelta su embarcación en el río Paraná",
    "url": "https://www.diarioepoca.com/1396263-rescataron-en-plena-noche-a-dos-jovenes-tras-darse-vuelta-su-embarcacion-en-el-rio-parana?utm_source=feed&utm_medium=rss&utm_term=rss&utm_campaign=Rss%20Feed",
    "dominio": "diarioepoca.com",
-   "fecha": "2026-11-27",
-   "lugares": []
-  },
-  {
-   "titulo": "Veda pesquera: retiran redes y espineles de aguas del río Paraná",
-   "url": "https://www.abc.com.py/economia/2026/11/27/veda-pesquera-retiran-redes-y-espineles-de-aguas-del-rio-parana/",
-   "dominio": "abc.com.py",
    "fecha": "2026-11-27",
    "lugares": []
   },
@@ -2855,67 +2687,6 @@
    "lugares": [
     "Ponta Porã"
    ]
-  },
-  {
-   "titulo": "Posadas | Aprovecharon los festejos de Boca para salir a delinquir, pero los videovigiladores del 911 los detectaron y fueron detenidos",
-   "url": "https://misionesonline.net/2026/11/22/festejos-boca-para-salir-delinquir/",
-   "dominio": "misionesonline.net",
-   "fecha": "2026-11-23",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Herói das Sete Quedas: homem salvou seis pessoas de tragédia que matou 32 antes do maior conjunto de cachoeiras do mundo desaparecer",
-   "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2026/11/22/heroi-das-sete-quedas-relembre-tragedia-ponte-guaira.ghtml",
-   "dominio": "g1.globo.com",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "\"Mientras no haya cuerpo, no hay nada\": el pacto de silencio en la desaparición de un joven detenido por policías",
-   "url": "https://www.clarin.com/policiales/cuerpo-pacto-silencio-desaparicion-joven-detenido-policias_0_nXIZYSBAwj.html",
-   "dominio": "clarin.com",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Posadas"
-   ]
-  },
-  {
-   "titulo": "Canindeyú: hallaron sin vida a niña de 11 años desaparecida en el río Carapá hace una semana",
-   "url": "http://www.lanacion.com.py/pais/2026/11/22/canindeyu-hallaron-sin-vida-a-nina-de-11-anos-desaparecida-en-el-rio-carapa-hace-una-semana/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Canindeyú"
-   ]
-  },
-  {
-   "titulo": "Anexo C y tarifa de Itaipú: esta semana se define reunión entre Alliana y Lula",
-   "url": "http://www.lanacion.com.py/politica/2026/11/22/anexo-c-y-tarifa-de-itaipu-esta-semana-se-define-reunion-entre-alliana-y-lula/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Itaipú"
-   ]
-  },
-  {
-   "titulo": "Juzgado de Paz informará sobre ocupantes de inmuebles en caso Ypytá",
-   "url": "http://www.lanacion.com.py/judiciales/2026/11/22/juzgado-de-paz-informara-sobre-ocupantes-de-inmuebles-en-caso-ypyta/",
-   "dominio": "lanacion.com.py",
-   "fecha": "2026-11-22",
-   "lugares": [
-    "Pedro Juan Caballero"
-   ]
-  },
-  {
-   "titulo": "O mistério das águas pantaneiras: a criatura lendária que assusta quem se aventura pelos rios",
-   "url": "https://correiodoestado.com.br/extra/2026/11/22/o-misterio-das-aguas-pantaneiras-a-criatura-lendaria-que-assusta-quem-se-aventura-pelos-rios.html",
-   "dominio": "correiodoestado.com.br",
-   "fecha": "2026-11-22",
-   "lugares": []
   }
  ]
 }
